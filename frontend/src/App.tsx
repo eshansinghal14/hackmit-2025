@@ -7,7 +7,6 @@ import {
   Settings, 
   AccountTree, 
   School, 
-  Help,
   Fullscreen,
   FullscreenExit
 } from '@mui/icons-material'
@@ -18,7 +17,6 @@ import TldrawWhiteboard from '@/components/TldrawWhiteboard'
 import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel'
 import SettingsPanel from '@/components/SettingsPanel'
 import SubtitleDisplay from '@/components/SubtitleDisplay'
-import ConnectionStatus from '@/components/ConnectionStatus'
 import WelcomeModal from '@/components/WelcomeModal'
 
 // Hooks and services
@@ -173,8 +171,7 @@ const App: React.FC = () => {
               AI Whiteboard Tutor
             </Typography>
             
-            {/* Connection Status */}
-            <ConnectionStatus />
+            {/* Connection Status removed */}
           </Box>
           
           {/* Voice Controls */}
@@ -241,34 +238,17 @@ const App: React.FC = () => {
               {/* TLdraw Whiteboard */}
               <TldrawWhiteboard />
               
-              {/* Subtitle Display */}
+              {/* Subtitle Display - Skip initial welcome message */}
               <AnimatePresence>
-                {currentSubtitle && (
+                {currentSubtitle && currentSubtitle.text !== "Hi! I'm your AI math tutor. Start drawing or speaking, and I'll help guide you." && (
                   <SubtitleDisplay 
                     text={currentSubtitle.text} 
                     mode={currentSubtitle.mode}
                   />
                 )}
-              </AnimatePresence>
+                </AnimatePresence>
               
-              {/* Floating Voice Button (Mobile/Tablet) */}
-              <Fab
-                color={isListening ? "primary" : "default"}
-                onClick={handleVoiceToggle}
-                disabled={!speechSupported}
-                sx={{
-                  position: 'fixed',
-                  bottom: 24,
-                  right: 24,
-                  display: { xs: 'flex', md: 'none' },
-                  zIndex: 1000,
-                  '&:disabled': {
-                    background: 'grey.300'
-                  }
-                }}
-              >
-                {isListening ? <Mic /> : <MicOff />}
-              </Fab>
+              {/* Floating Voice Button removed */}
               
               {/* Live Transcript Indicator */}
               <AnimatePresence>
@@ -325,36 +305,7 @@ const App: React.FC = () => {
         )}
       </AnimatePresence>
       
-      {/* Help Tooltip */}
-      <Tooltip 
-        title={
-          <Box>
-            <Typography variant="body2" sx={{ mb: 1, fontWeight: 600 }}>
-              Keyboard Shortcuts:
-            </Typography>
-            <Typography variant="caption" component="div">Space: Toggle Voice</Typography>
-            <Typography variant="caption" component="div">Ctrl+S: Settings</Typography>
-            <Typography variant="caption" component="div">Ctrl+G: Knowledge Graph</Typography>
-            <Typography variant="caption" component="div">F11: Fullscreen</Typography>
-          </Box>
-        }
-        placement="top-end"
-        arrow
-      >
-        <Fab
-          size="small"
-          color="info"
-          sx={{
-            position: 'fixed',
-            bottom: 24,
-            left: 24,
-            opacity: 0.7,
-            '&:hover': { opacity: 1 }
-          }}
-        >
-          <Help fontSize="small" />
-        </Fab>
-      </Tooltip>
+      {/* Help Tooltip removed */}
     </Box>
   )
 }
