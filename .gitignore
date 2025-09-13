@@ -1,0 +1,298 @@
+# AI Whiteboard Tutor - Git Ignore File
+
+# ================================================
+# ENVIRONMENT & SECRETS
+# ================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+*.key
+*.pem
+
+# ================================================
+# NODE.JS / FRONTEND
+# ================================================
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+frontend/dist/
+frontend/build/
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ================================================
+# PYTHON / BACKEND
+# ================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+backend/venv/
+backend/env/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# FastAPI / Uvicorn
+*.log
+uvicorn.log
+
+# ================================================
+# DATABASE & STORAGE
+# ================================================
+*.db
+*.sqlite
+*.sqlite3
+database.db
+redis-dump.rdb
+
+# ================================================
+# LOGS & DEBUGGING
+# ================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.eslintcache
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ================================================
+# IDE & EDITOR FILES
+# ================================================
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Cursor
+.cursor/
+
+# IntelliJ / PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ================================================
+# OPERATING SYSTEM FILES
+# ================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================================
+# TEMPORARY & CACHE FILES
+# ================================================
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.gatsby/
+
+# ================================================
+# DEPLOYMENT & CI/CD
+# ================================================
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# Docker
+Dockerfile.prod
+docker-compose.prod.yml
+
+# ================================================
+# AI & ML FILES
+# ================================================
+# Model files (if any)
+*.pkl
+*.model
+*.h5
+*.pb
+
+# Data files
+data/
+datasets/
+*.csv
+*.json.bak
+
+# ================================================
+# PROJECT SPECIFIC
+# ================================================
+# TLdraw local storage
+.tldraw/
+
+# Audio recordings (if any)
+*.wav
+*.mp3
+*.m4a
+
+# Screenshots/exports
+screenshots/
+exports/
+
+# Development test files
+test-output/
+debug-*
+
+# Backup files
+*.backup
+backup/
+
+# ================================================
+# SECURITY & COMPLIANCE
+# ================================================
+# API keys and secrets
+secrets/
+.secrets/
+api-keys.txt
+credentials.json
+
+# SSL certificates
+*.crt
+*.csr
+
+# ================================================
+# DOCUMENTATION BUILDS
+# ================================================
+# Sphinx documentation
+docs/_build/
+_build/
+
+# MkDocs documentation
+site/
+
+# ================================================
+# MONITORING & ANALYTICS
+# ================================================
+# Error tracking
+.sentry-native/
+
+# Performance monitoring
+.clinic/

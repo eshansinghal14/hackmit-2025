@@ -1,0 +1,297 @@
+import React, { useState, useEffect } from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { Box, AppBar, Toolbar, Typography, IconButton, Fab, Tooltip } from '@mui/material'
+import { 
+  Mic, 
+  MicOff, 
+  Settings, 
+  AccountTree, 
+  School, 
+  Help,
+  Fullscreen,
+  FullscreenExit
+} from '@mui/icons-material'
+import { motion, AnimatePresence } from 'framer-motion'
+
+// Components
+import TldrawWhiteboard from '@/components/TldrawWhiteboard'
+import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel'
+import SettingsPanel from '@/components/SettingsPanel'
+import SubtitleDisplay from '@/components/SubtitleDisplay'
+import ConnectionStatus from '@/components/ConnectionStatus'
+import WelcomeModal from '@/components/WelcomeModal'
+
+// Hooks and services
+import { useWebSocket } from '@/hooks/useWebSocket'
+import { useVoiceRecording } from '@/hooks/useVoiceRecording'
+import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
+
+// Store
+import { useAppStore } from '@/store/appStore'
+
+const App: React.FC = () => {
+  // State management
+  const [isFullscreen, setIsFullscreen] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
+  const [showKnowledgeGraph, setShowKnowledgeGraph] = useState(false)
+  const [showWelcome, setShowWelcome] = useState(true)
+  
+  // Global store
+  const { 
+    sessionId, 
+    currentSubtitle,
+    voiceEnabled,
+    setVoiceEnabled,
+    initialize 
+  } = useAppStore()
+  
+  // Custom hooks
+  const { connect, disconnect } = useWebSocket()
+  const { isRecording, startRecording, stopRecording, toggleRecording } = useVoiceRecording()
+  
+  // Initialize app
+  useEffect(() => {
+    initialize()
+  }, []) // Empty dependency array - only run once on mount
+  
+  // Connect WebSocket on mount
+  useEffect(() => {
+    if (sessionId) {
+      connect(sessionId)
+    }
+    
+    return () => disconnect()
+  }, [sessionId]) // Only depend on sessionId, not the functions
+  
+  // Keyboard shortcuts - memoize the shortcuts object to prevent re-renders
+  const keyboardShortcuts = React.useMemo(() => ({
+    'Space': () => toggleRecording(),
+    'Escape': () => setIsFullscreen(false),
+    'F11': () => toggleFullscreen(),
+    'KeyS': (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault()
+        setShowSettings(true)
+      }
+    },
+    'KeyG': (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault()
+        setShowKnowledgeGraph(true)
+      }
+    }
+  }), [toggleRecording])
+  
+  useKeyboardShortcuts(keyboardShortcuts)
+  
+  // Fullscreen handling
+  const toggleFullscreen = () => {
+    if (!isFullscreen) {
+      document.documentElement.requestFullscreen?.()
+      setIsFullscreen(true)
+    } else {
+      document.exitFullscreen?.()
+      setIsFullscreen(false)
+    }
+  }
+  
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement)
+    }
+    
+    document.addEventListener('fullscreenchange', handleFullscreenChange)
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange)
+  }, [])
+  
+  // Voice recording toggle
+  const handleVoiceToggle = () => {
+    if (voiceEnabled) {
+      setVoiceEnabled(false)
+      stopRecording()
+    } else {
+      setVoiceEnabled(true)
+      startRecording()
+    }
+  }
+  
+  return (
+    <Box sx={{ 
+      height: '100vh', 
+      display: 'flex', 
+      flexDirection: 'column',
+      overflow: 'hidden',
+      background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
+    }}>
+      {/* Header */}
+      <AppBar 
+        position="static" 
+        elevation={0}
+        sx={{ 
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
+          color: 'text.primary'
+        }}
+      >
+        <Toolbar sx={{ minHeight: '64px !important' }}>
+          {/* Logo and Title */}
+          <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <School sx={{ mr: 2, color: 'primary.main', fontSize: 32 }} />
+            </motion.div>
+            <Typography variant="h6" sx={{ fontWeight: 700, color: 'text.primary' }}>
+              AI Whiteboard Tutor
+            </Typography>
+            
+            {/* Connection Status */}
+            <ConnectionStatus />
+          </Box>
+          
+          {/* Voice Controls */}
+          <Tooltip title={voiceEnabled ? 'Disable Voice (Space)' : 'Enable Voice (Space)'}>
+            <IconButton
+              onClick={handleVoiceToggle}
+              sx={{ 
+                mr: 1,
+                background: voiceEnabled ? 'primary.main' : 'grey.200',
+                color: voiceEnabled ? 'white' : 'grey.600',
+                '&:hover': {
+                  background: voiceEnabled ? 'primary.dark' : 'grey.300'
+                }
+              }}
+            >
+              {voiceEnabled && isRecording ? <Mic /> : <MicOff />}
+            </IconButton>
+          </Tooltip>
+          
+          {/* Knowledge Graph */}
+          <Tooltip title="Knowledge Graph (Ctrl+G)">
+            <IconButton 
+              onClick={() => setShowKnowledgeGraph(true)}
+              sx={{ mr: 1 }}
+            >
+              <AccountTree />
+            </IconButton>
+          </Tooltip>
+          
+          {/* Settings */}
+          <Tooltip title="Settings (Ctrl+S)">
+            <IconButton 
+              onClick={() => setShowSettings(true)}
+              sx={{ mr: 1 }}
+            >
+              <Settings />
+            </IconButton>
+          </Tooltip>
+          
+          {/* Fullscreen */}
+          <Tooltip title={isFullscreen ? 'Exit Fullscreen (F11)' : 'Fullscreen (F11)'}>
+            <IconButton onClick={toggleFullscreen}>
+              {isFullscreen ? <FullscreenExit /> : <Fullscreen />}
+            </IconButton>
+          </Tooltip>
+        </Toolbar>
+      </AppBar>
+      
+      {/* Main Content */}
+      <Box sx={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
+        <Routes>
+          <Route path="/" element={
+            <>
+              {/* TLdraw Whiteboard */}
+              <TldrawWhiteboard />
+              
+              {/* Subtitle Display */}
+              <AnimatePresence>
+                {currentSubtitle && (
+                  <SubtitleDisplay 
+                    text={currentSubtitle.text} 
+                    mode={currentSubtitle.mode}
+                  />
+                )}
+              </AnimatePresence>
+              
+              {/* Floating Voice Button (Mobile/Tablet) */}
+              <Fab
+                color={voiceEnabled ? "primary" : "default"}
+                onClick={handleVoiceToggle}
+                sx={{
+                  position: 'fixed',
+                  bottom: 24,
+                  right: 24,
+                  display: { xs: 'flex', md: 'none' },
+                  zIndex: 1000
+                }}
+              >
+                {voiceEnabled && isRecording ? <Mic /> : <MicOff />}
+              </Fab>
+            </>
+          } />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Box>
+      
+      {/* Panels and Modals */}
+      <AnimatePresence>
+        {showWelcome && (
+          <WelcomeModal 
+            open={showWelcome} 
+            onClose={() => setShowWelcome(false)} 
+          />
+        )}
+        
+        {showKnowledgeGraph && (
+          <KnowledgeGraphPanel
+            open={showKnowledgeGraph}
+            onClose={() => setShowKnowledgeGraph(false)}
+          />
+        )}
+        
+        {showSettings && (
+          <SettingsPanel
+            open={showSettings}
+            onClose={() => setShowSettings(false)}
+          />
+        )}
+      </AnimatePresence>
+      
+      {/* Help Tooltip */}
+      <Tooltip 
+        title={
+          <Box>
+            <Typography variant="body2" sx={{ mb: 1, fontWeight: 600 }}>
+              Keyboard Shortcuts:
+            </Typography>
+            <Typography variant="caption" component="div">Space: Toggle Voice</Typography>
+            <Typography variant="caption" component="div">Ctrl+S: Settings</Typography>
+            <Typography variant="caption" component="div">Ctrl+G: Knowledge Graph</Typography>
+            <Typography variant="caption" component="div">F11: Fullscreen</Typography>
+          </Box>
+        }
+        placement="top-end"
+        arrow
+      >
+        <Fab
+          size="small"
+          color="info"
+          sx={{
+            position: 'fixed',
+            bottom: 24,
+            left: 24,
+            opacity: 0.7,
+            '&:hover': { opacity: 1 }
+          }}
+        >
+          <Help fontSize="small" />
+        </Fab>
+      </Tooltip>
+    </Box>
+  )
+}
+
+export default App
