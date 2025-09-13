@@ -57,24 +57,7 @@ export default function VoiceAssistant() {
     setIsListening(!isListening);
   };
 
-  return (
-    <div style={styles.container}>
-      <button 
-        onClick={toggleListening}
-        style={{
-          ...styles.button,
-          backgroundColor: isListening ? '#ff4d4f' : '#1890ff',
-        }}
-      >
-        {isListening ? 'Stop Listening' : 'Start Voice Input'}
-      </button>
-      {transcript && (
-        <div style={styles.transcript}>
-          {transcript}
-        </div>
-      )}
-    </div>
-  );
+  return ;
 }
 
 const styles = {
