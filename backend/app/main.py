@@ -122,6 +122,10 @@ async def websocket_endpoint(session_id: str, websocket: WebSocket):
                 # New handler for whiteboard screenshot analysis
                 await handle_screenshot_analysis(websocket, state, msg, kg)
                 
+            elif msg_type == "screenshot_context":
+                # Handler for voice-triggered screenshot context
+                await handle_screenshot_context(websocket, state, msg, kg)
+                
             elif msg_type == "interrupt":
                 await handle_user_interrupt(websocket, state, conv_manager)
                 
@@ -325,6 +329,68 @@ async def handle_voice_input_message(ws: WebSocket, state: SessionState, msg: di
             "mode": "correction",
             "ttlMs": 3000
         })
+
+async def handle_screenshot_context(ws: WebSocket, state: SessionState, msg: dict, kg: KnowledgeGraph):
+    """Handle screenshot context messages from voice-triggered captures"""
+    try:
+        print(f"🎤📸 Processing voice-triggered screenshot context...")
+        
+        # Extract screenshot data
+        image_data = msg.get("image")
+        trigger = msg.get("trigger", "speech_end")
+        metadata = msg.get("metadata", {})
+        
+        if not image_data:
+            print("❌ No image data in screenshot context message")
+            return
+            
+        # Store the screenshot in state
+        state.canvas_buf.append({
+            "type": "screenshot_context",
+            "pngBase64": image_data,
+            "trigger": trigger,
+            "metadata": metadata,
+            "timestamp": time.time()
+        })
+        state.last_activity_ts = time.time()
+        
+        # Build context for AI analysis
+        context = await build_mcp_context(state, kg_state=kg)
+        context["visual_state"]["canvas_screenshot"] = image_data
+        context["visual_state"]["screenshot_timestamp"] = time.time()
+        context["visual_state"]["trigger"] = trigger
+        
+        # Use Claude for multimodal analysis of the whiteboard
+        print(f"🧠 Analyzing whiteboard screenshot with Claude...")
+        tutor_response = await claude_tutor_plan(context)
+        
+        # Send AI response based on visual analysis
+        await ws.send_json({
+            "type": "subtitle",
+            "text": tutor_response.get("say", "I can see your work now! Let me take a look..."),
+            "mode": tutor_response.get("mode", "analysis"),
+            "ttlMs": 8000
+        })
+        
+        # Update knowledge graph based on visual analysis
+        if "concepts" in tutor_response:
+            kg.update_from_interaction(tutor_response["concepts"], tutor_response.get("outcome", "neutral"))
+            
+        print(f"✅ Screenshot context processed successfully")
+            
+    except Exception as e:
+        print(f"❌ Error handling screenshot context: {e}")
+        await ws.send_json({
+            "type": "subtitle",
+            "text": "I'm having trouble seeing your work right now. Could you try again?",
+            "mode": "correction",
+            "ttlMs": 4000
+        })
+
+async def handle_screenshot_analysis(ws: WebSocket, state: SessionState, msg: dict, kg: KnowledgeGraph):
+    """Handle legacy screenshot analysis messages"""
+    # Redirect to the new screenshot context handler
+    await handle_screenshot_context(ws, state, msg, kg)
 
 async def handle_user_interrupt(ws: WebSocket, state: SessionState, conv_manager: ConversationManager):
     """Handle user interruption of AI speech"""

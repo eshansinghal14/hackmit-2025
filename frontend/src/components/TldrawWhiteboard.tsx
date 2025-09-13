@@ -1,49 +1,40 @@
-import React, { useCallback, useRef, useState, useEffect } from 'react'
+import React, { useCallback, useRef, useEffect } from 'react'
 import { 
   Tldraw, 
   useEditor, 
-  createShapeId,
   Editor
 } from 'tldraw'
 import 'tldraw/tldraw.css'
-import { Box, IconButton, Paper } from '@mui/material'
-import { Close } from '@mui/icons-material'
-import { motion } from 'framer-motion'
-import { useScreenshotCapture } from '@/hooks/useScreenshotCapture'
-import { useWebSocket } from '@/hooks/useWebSocket'
+import { Box } from '@mui/material'
+import { useVoiceScreenshotIntegration } from '@/hooks/useVoiceScreenshotIntegration'
 
-// Custom AI Drawing Component with Human-like Collaboration
+// Custom AI Drawing Component with Voice Screenshot Integration
 const AIDrawingOverlay = () => {
   const editor = useEditor()
-  const [showWelcome, setShowWelcome] = useState(true)
-  const { captureWhiteboardArea, isCapturing } = useScreenshotCapture()
-  const { sendMessage } = useAppStore()
+  const { handleVoiceActivity, captureOnSpeechEnd } = useVoiceScreenshotIntegration(editor) as any
   
-  // Auto-capture on significant changes
+  // Set up global handlers for voice recording integration
   useEffect(() => {
-    if (!editor) return
-    
-    let timeoutId: NodeJS.Timeout
-    
-    const handleChange = () => {
-      // Debounce screenshot capture to avoid too many requests
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(() => {
-        const shapes = editor.getCurrentPageShapeIds()
-        if (shapes.size > 0) {
-          // Removed auto-capture functionality
-        }
-      }, 3000) // Wait 3 seconds after last change
+    if (typeof window !== 'undefined') {
+      // Set global voice activity handler
+      ;(window as any).handleVoiceActivity = handleVoiceActivity
+      // Set global speech end callback
+      ;(window as any).onSpeechEnd = captureOnSpeechEnd
+      
+      console.log('🎤📸 Voice screenshot integration initialized')
+      console.log('🎤📸 Global callbacks set:', {
+        handleVoiceActivity: typeof (window as any).handleVoiceActivity,
+        onSpeechEnd: typeof (window as any).onSpeechEnd
+      })
     }
-    
-    // Listen for shape changes
-    const unsubscribe = editor.store.listen(handleChange)
     
     return () => {
-      clearTimeout(timeoutId)
-      unsubscribe()
+      if (typeof window !== 'undefined') {
+        delete (window as any).handleVoiceActivity
+        delete (window as any).onSpeechEnd
+      }
     }
-  }, [editor])
+  }, [handleVoiceActivity, captureOnSpeechEnd])
   
   return (
     <>

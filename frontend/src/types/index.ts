@@ -55,6 +55,18 @@ export interface InterruptMessage extends WebSocketMessage {
   who: 'user' | 'ai'
 }
 
+export interface ScreenshotContextMessage extends WebSocketMessage {
+  type: 'screenshot_context'
+  image: string // base64 encoded image
+  trigger: 'speech_end' | 'manual' | 'auto'
+  metadata?: {
+    captureTime: string
+    source: string
+    format?: string
+    quality?: number
+  }
+}
+
 // AI Response Types
 export interface SubtitleMessage extends WebSocketMessage {
   type: 'subtitle'
