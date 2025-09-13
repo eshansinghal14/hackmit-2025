@@ -1,9 +1,14 @@
-import { Tldraw, createShapeId } from 'tldraw'
+import { Tldraw, createShapeId, DefaultToolbar, DefaultToolbarContent, TldrawUiToolbarButton, TldrawUiButtonIcon } from 'tldraw'
 import 'tldraw/tldraw.css'
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 
 export default function App() {
   const editorRef = useRef(null)
+  const recognitionRef = useRef(null)
+  const [isListening, setIsListening] = useState(false)
+  const [isSpeechSupported, setIsSpeechSupported] = useState(true)
+  const [transcript, setTranscript] = useState('')
+  const [interimTranscript, setInterimTranscript] = useState('')
 
   useEffect(() => {
     const pollCommands = async () => {
@@ -53,14 +58,127 @@ export default function App() {
     return () => clearInterval(interval)
   }, [])
 
+  // Initialize Web Speech API for mic toggle
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+    if (!SpeechRecognition) {
+      setIsSpeechSupported(false)
+      return
+    }
+
+    const recognition = new SpeechRecognition()
+    recognition.continuous = true
+    recognition.interimResults = true
+
+    recognition.onstart = () => setIsListening(true)
+    recognition.onend = () => {
+      setIsListening(false)
+      setTranscript('')
+      setInterimTranscript('')
+    }
+    recognition.onerror = () => {
+      setIsListening(false)
+      setTranscript('')
+      setInterimTranscript('')
+    }
+
+    recognition.onresult = (event) => {
+      let finalTranscript = ''
+      let currentInterim = ''
+
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcript = event.results[i][0].transcript
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript + ' '
+        } else {
+          currentInterim += transcript
+        }
+      }
+
+      if (finalTranscript) {
+        setTranscript(finalTranscript)
+        setInterimTranscript('')
+      } else {
+        setInterimTranscript(currentInterim)
+      }
+    }
+
+    recognitionRef.current = recognition
+
+    return () => {
+      try {
+        recognition.stop()
+      } catch (_) {}
+    }
+  }, [])
+
+  const handleToggleMic = () => {
+    if (!recognitionRef.current) return
+    try {
+      if (isListening) {
+        recognitionRef.current.stop()
+      } else {
+        recognitionRef.current.start()
+      }
+    } catch (_) {
+      // Some browsers throw if start/stop called too quickly
+    }
+  }
+
+  // Add mic button to the bottom toolbar via components override
+  const components = useMemo(() => {
+    const Toolbar = () => (
+      <DefaultToolbar>
+        <>
+          <DefaultToolbarContent />
+          <TldrawUiToolbarButton
+            type="icon"
+            title={isSpeechSupported ? (isListening ? 'Stop recording' : 'Start recording') : 'Speech recognition not supported'}
+            disabled={!isSpeechSupported}
+            onClick={handleToggleMic}
+          >
+            <TldrawUiButtonIcon small icon={isListening ? 'toggle-off' : 'toggle-on'} />
+          </TldrawUiToolbarButton>
+        </>
+      </DefaultToolbar>
+    )
+    return { Toolbar }
+  }, [isListening, isSpeechSupported])
+
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
       <Tldraw 
+        components={components}
         onMount={(editor) => {
           editorRef.current = editor
           console.log(' tldraw editor ready for Python commands')
         }}
       />
+      {/* Floating captions box */}
+      {(transcript || interimTranscript) && (
+        <div style={{
+          position: 'absolute',
+          bottom: '80px', // Position above the navigation bar
+          left: '50%',
+          transform: 'translateX(-50%)',
+          maxWidth: '80%',
+          background: 'rgba(0, 0, 0, 0.7)',
+          color: 'white',
+          padding: '8px 16px',
+          borderRadius: '8px',
+          fontSize: '16px',
+          fontFamily: 'system-ui, -apple-system, sans-serif',
+          textAlign: 'center',
+          zIndex: 1000,
+          backdropFilter: 'blur(4px)',
+          WebkitBackdropFilter: 'blur(4px)',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+          transition: 'opacity 0.2s ease',
+          opacity: isListening ? 1 : 0,
+        }}>
+          {transcript || interimTranscript}
+        </div>
+      )}
       <div style={{
         position: 'absolute',
         bottom: '10px',
