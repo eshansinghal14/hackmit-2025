@@ -249,24 +249,7 @@ const App: React.FC = () => {
                 )}
               </AnimatePresence>
               
-              {/* Floating Voice Button (Mobile/Tablet) */}
-              <Fab
-                color={isListening ? "primary" : "default"}
-                onClick={handleVoiceToggle}
-                disabled={!speechSupported}
-                sx={{
-                  position: 'fixed',
-                  bottom: 24,
-                  right: 24,
-                  display: { xs: 'flex', md: 'none' },
-                  zIndex: 1000,
-                  '&:disabled': {
-                    background: 'grey.300'
-                  }
-                }}
-              >
-                {isListening ? <Mic /> : <MicOff />}
-              </Fab>
+              {/* Floating Voice Button removed */}
               
               {/* Live Transcript Indicator */}
               <AnimatePresence>

@@ -8,7 +8,6 @@ import {
 import 'tldraw/tldraw.css'
 import { Box, IconButton, Tooltip, Paper, Fab } from '@mui/material'
 import { 
-  AutoAwesome, 
   Psychology, 
   Gesture,
   Functions,
@@ -438,30 +437,7 @@ const AIDrawingOverlay = () => {
         </Tooltip>
       </Paper>
       
-      {/* AI Status Indicator */}
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        style={{
-          position: 'absolute',
-          bottom: 16,
-          right: 16,
-          zIndex: 1000
-        }}
-      >
-        <Fab
-          size="small"
-          sx={{
-            background: 'linear-gradient(45deg, #FF6B6B, #4ECDC4)',
-            color: 'white',
-            '&:hover': {
-              background: 'linear-gradient(45deg, #FF5252, #26C6DA)'
-            }
-          }}
-        >
-          <AutoAwesome />
-        </Fab>
-      </motion.div>
+      {/* AI Status Indicator removed */}
       
       {/* Welcome instruction overlay - Dismissible */}
       {showWelcome && (
