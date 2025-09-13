@@ -11,6 +11,7 @@ import {
   FullscreenExit
 } from '@mui/icons-material'
 import { motion, AnimatePresence } from 'framer-motion'
+import 'tldraw/tldraw.css'
 
 // Components
 import TldrawWhiteboard from '@/components/TldrawWhiteboard'
@@ -29,6 +30,7 @@ import { useAppStore } from '@/store/appStore'
 
 const App: React.FC = () => {
   // State management
+  const editorRef = useRef(null)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showKnowledgeGraph, setShowKnowledgeGraph] = useState(false)
@@ -76,6 +78,72 @@ const App: React.FC = () => {
     
     return () => disconnect()
   }, [sessionId]) // Only depend on sessionId, not the functions
+
+  // AI drawing use effect
+  useEffect(() => {
+    const pollCommands = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/commands')
+        const commands = await response.json()
+        
+        if (commands.length > 0 && editorRef.current) {
+          commands.forEach(command => {
+            if (command.type === 'create_shape') {
+              // Calculate total delay counter for consistent timing
+              let totalDelay = 0;
+              
+              command.symbols.forEach((points, symbolIndex) => {
+                // Draw lines between consecutive point pairs with consistent delays
+                for (let i = 0; i < points.length - 1; i++) {
+                  const start = points[i];
+                  const end = points[i + 1];
+                  
+                  setTimeout(() => {
+                    editorRef.current.createShapes([{
+                      type: 'line',
+                      x: 0,
+                      y: 0,
+                      props: {
+                        color: 'black',
+                        dash: 'solid',
+                        size: 's', 
+                        spline: 'line',
+                        points: {
+                          'a1': { id: 'a1', index: 'a1', x: start[0], y: start[1] },
+                          'a2': { id: 'a2', index: 'a2', x: end[0], y: end[1] }
+                        }
+                      }
+                    }]);
+                  }, totalDelay * 5); // 3ms delay between each line
+                  
+                  totalDelay++; // Increment for next line
+                }
+              })
+            } else if (command.type === 'clear_all') {
+              editorRef.current.selectAll()
+              editorRef.current.deleteShapes(editorRef.current.getSelectedShapeIds())
+            }
+          })
+          
+          // Clear processed commands
+          await fetch('http://localhost:5000/api/commands', { method: 'DELETE' })
+        }
+      } catch (error) {
+        // Only log if it's not a network error (server actually down)
+        if (error.name === 'TypeError' && error.message.includes('fetch')) {
+          // Network error - server likely not running
+          console.log('Flask server not running')
+        } else {
+          // Other errors - log the actual error
+          console.error('Error polling commands:', error.message)
+        }
+      }
+    }
+
+    // Poll every 5ms for new commands (fastest response)
+    const interval = setInterval(pollCommands, 500)
+    return () => clearInterval(interval)
+  }, [])
   
   // Keyboard shortcuts - memoize the shortcuts object to prevent re-renders
   const keyboardShortcuts = React.useMemo(() => ({
@@ -139,6 +207,14 @@ const App: React.FC = () => {
   }
   
   return (
+    <div style={{ position: 'fixed', inset: 0 }}>
+      <Tldraw 
+        components={components}
+        onMount={(editor) => {
+          editorRef.current = editor
+          console.log(' tldraw editor ready for Python commands')
+        }}
+      />
     <Box sx={{ 
       height: '100vh', 
       display: 'flex', 
