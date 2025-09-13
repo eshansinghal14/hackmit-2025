@@ -47,56 +47,8 @@ const AIDrawingOverlay = () => {
   
   return (
     <>
-      {/* AI Demo Controls removed */}
       
-      {/* AI Status Indicator removed */}
-      
-      {/* Welcome instruction overlay - Dismissible */}
-      {showWelcome && (
-        <Paper
-          sx={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            p: 3,
-            zIndex: 999,
-            background: 'rgba(255, 255, 255, 0.95)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: 2,
-            textAlign: 'center',
-            maxWidth: 400
-          }}
-        >
-          {/* Close button */}
-          <IconButton
-            onClick={() => setShowWelcome(false)}
-            size="small"
-            sx={{
-              position: 'absolute',
-              top: 8,
-              right: 8,
-              color: 'text.secondary',
-              '&:hover': {
-                color: 'text.primary'
-              }
-            }}
-          >
-            <Close />
-          </IconButton>
-          
-          <Box sx={{ mb: 2, fontSize: '2rem' }}>🤖✏️</Box>
-          <Box sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 1 }}>
-            AI Whiteboard Collaborator
-          </Box>
-          <Box sx={{ fontSize: '0.9rem', color: 'text.secondary', mb: 2 }}>
-            Watch the AI draw like a human tutor - circling, annotating, and handwriting!
-          </Box>
-          <Box sx={{ fontSize: '0.8rem', color: 'text.secondary' }}>
-            • Circles important areas • Handwritten annotations • Natural drawing
-          </Box>
-        </Paper>
-      )}
+     
     </>
   )
 }

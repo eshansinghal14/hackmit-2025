@@ -78,7 +78,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ open, onClose }) => {
           <Card variant="outlined" sx={{ mt: 2, bgcolor: 'primary.50' }}>
             <CardContent>
               <Typography variant="subtitle2" gutterBottom>
-                🎯 What makes this special:
+                What makes this special:
               </Typography>
               <List dense>
                 <ListItem>
