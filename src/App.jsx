@@ -1,6 +1,7 @@
+import React, { useEffect, useRef } from 'react'
 import { Tldraw, createShapeId } from 'tldraw'
 import 'tldraw/tldraw.css'
-import { useEffect, useRef } from 'react'
+import VoiceAssistant from './VoiceAssistant'
 
 export default function App() {
   const editorRef = useRef(null)
@@ -44,7 +45,14 @@ export default function App() {
           await fetch('http://localhost:5000/api/commands', { method: 'DELETE' })
         }
       } catch (error) {
-        console.log('Flask server not running')
+        // Only log if it's not a network error (server actually down)
+        if (error.name === 'TypeError' && error.message.includes('fetch')) {
+          // Network error - server likely not running
+          console.log('Flask server not running')
+        } else {
+          // Other errors - log the actual error
+          console.error('Error polling commands:', error.message)
+        }
       }
     }
 
@@ -74,6 +82,7 @@ export default function App() {
       }}>
         Python API: http://localhost:5000
       </div>
+      <VoiceAssistant />
     </div>
   )
 }
