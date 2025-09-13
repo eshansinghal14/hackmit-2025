@@ -1,39 +1,22 @@
 import React, { useState } from 'react'
 import {
   Dialog,
-  DialogTitle,
   DialogContent,
-  DialogActions,
   Button,
   Typography,
   Box,
+  IconButton,
   Stepper,
   Step,
   StepLabel,
   StepContent,
-  Card,
-  CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Chip,
-  Divider
 } from '@mui/material'
 import {
-  School,
-  Mic,
-  Draw,
-  AutoAwesome,
-  AccountTree,
-  Keyboard,
-  VolumeUp,
-  Gesture,
-  Info,
-  CheckCircle
+  Close as CloseIcon,
+  Draw as DrawIcon,
+  Mic as MicIcon,
+  AutoAwesome as AutoAwesomeIcon
 } from '@mui/icons-material'
-import { motion } from 'framer-motion'
-import { useAppStore } from '@/store/appStore'
 
 interface WelcomeModalProps {
   open: boolean
@@ -42,374 +25,732 @@ interface WelcomeModalProps {
 
 const WelcomeModal: React.FC<WelcomeModalProps> = ({ open, onClose }) => {
   const [activeStep, setActiveStep] = useState(0)
-  const { setVoiceEnabled } = useAppStore()
   
   const steps = [
     {
-      label: 'Welcome to AI Whiteboard Tutor',
+      label: 'Setup',
       content: (
-        <Box>
-          <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
-            <motion.div
-              animate={{ 
-                scale: [1, 1.1, 1],
-                rotate: [0, 5, -5, 0]
-              }}
-              transition={{ 
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              <School sx={{ fontSize: 80, color: 'primary.main' }} />
-            </motion.div>
-          </Box>
-          
-          <Typography variant="h6" gutterBottom align="center">
-            Your AI-Powered Math Learning Companion
-          </Typography>
-          
-          <Typography variant="body1" paragraph>
-            Welcome to an interactive learning experience where AI meets mathematics! 
-            This intelligent whiteboard provides real-time tutoring with voice interaction, 
-            visual feedback, and personalized guidance.
-          </Typography>
-          
-          <Card variant="outlined" sx={{ mt: 2, bgcolor: 'primary.50' }}>
-            <CardContent>
-              <Typography variant="subtitle2" gutterBottom>
-                What makes this special:
-              </Typography>
-              <List dense>
-                <ListItem>
-                  <ListItemIcon><AutoAwesome color="primary" /></ListItemIcon>
-                  <ListItemText primary="AI tutor that observes your work and provides intelligent hints" />
-                </ListItem>
-                <ListItem>
-                  <ListItemIcon><VolumeUp color="primary" /></ListItemIcon>
-                  <ListItemText primary="Voice interaction - just speak naturally" />
-                </ListItem>
-                <ListItem>
-                  <ListItemIcon><Gesture color="primary" /></ListItemIcon>
-                  <ListItemText primary="Interactive annotations and visual guidance" />
-                </ListItem>
-              </List>
-            </CardContent>
-          </Card>
-        </Box>
-      )
-    },
-    {
-      label: 'Drawing & Interaction',
-      content: (
-        <Box>
-          <Typography variant="h6" gutterBottom>
-            <Draw sx={{ mr: 1, verticalAlign: 'middle' }} />
-            Interactive Whiteboard
-          </Typography>
-          
-          <Typography variant="body1" paragraph>
-            Use the whiteboard just like a real one! Draw mathematical expressions, 
-            diagrams, and work through problems step by step.
-          </Typography>
-          
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, mt: 2 }}>
-            <Card variant="outlined">
-              <CardContent>
-                <Typography variant="subtitle2" color="primary" gutterBottom>
-                  Drawing Tools
-                </Typography>
-                <List dense>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Pen" 
-                      secondary="Precise drawing (E key)" 
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Brush" 
-                      secondary="Thicker strokes (B key)" 
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Highlighter" 
-                      secondary="Emphasize content (H key)" 
-                    />
-                  </ListItem>
-                </List>
-              </CardContent>
-            </Card>
-            
-            <Card variant="outlined">
-              <CardContent>
-                <Typography variant="subtitle2" color="primary" gutterBottom>
-                  Quick Actions
-                </Typography>
-                <List dense>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Undo/Redo" 
-                      secondary="Ctrl+Z / Ctrl+Y" 
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Clear Canvas" 
-                      secondary="Ctrl+Shift+C" 
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText 
-                      primary="Zoom Controls" 
-                      secondary="Mouse wheel or toolbar" 
-                    />
-                  </ListItem>
-                </List>
-              </CardContent>
-            </Card>
-          </Box>
-        </Box>
-      )
-    },
-    {
-      label: 'Voice Interaction',
-      content: (
-        <Box>
-          <Typography variant="h6" gutterBottom>
-            <Mic sx={{ mr: 1, verticalAlign: 'middle' }} />
-            Talk to Your AI Tutor
-          </Typography>
-          
-          <Typography variant="body1" paragraph>
-            Enable voice to have natural conversations with your AI tutor. 
-            Ask questions, request help, or simply think out loud!
-          </Typography>
-          
-          <Card variant="outlined" sx={{ mb: 2, bgcolor: 'info.50' }}>
-            <CardContent>
-              <Typography variant="subtitle2" gutterBottom>
-                📢 What you can say:
-              </Typography>
-              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                <Chip label="How do I solve this?" size="small" />
-                <Chip label="I'm stuck on this step" size="small" />
-                <Chip label="Can you explain derivatives?" size="small" />
-                <Chip label="Is this correct?" size="small" />
-                <Chip label="I need a hint" size="small" />
-              </Box>
-            </CardContent>
-          </Card>
-          
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, p: 2, bgcolor: 'warning.50', borderRadius: 2 }}>
-            <Info color="warning" />
-            <Box>
-              <Typography variant="subtitle2">
-                Press <strong>Space</strong> to toggle voice recording
-              </Typography>
-              <Typography variant="caption" color="text.secondary">
-                The AI listens continuously and responds when appropriate
-              </Typography>
-            </Box>
-          </Box>
-          
-          <Box sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <Box sx={{ p: 1.5, border: '1px solid', borderColor: 'primary.main', borderRadius: 1, bgcolor: 'primary.50' }}>
+            <Typography variant="subtitle2" sx={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: 1,
+              color: 'primary.main',
+              fontSize: '0.8125rem'
+            }}>
+              <MicIcon sx={{ fontSize: 16 }} />
+              Enable Voice Input
+            </Typography>
             <Button
-              variant="outlined"
-              startIcon={<Mic />}
-              onClick={() => setVoiceEnabled(true)}
+              variant="contained"
+              size="small"
+              startIcon={<MicIcon />}
+              onClick={async () => {
+                try {
+                  const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
+                  if (result.state === 'granted') {
+                    console.log('Microphone permission already granted');
+                  } else if (result.state === 'prompt') {
+                    // Just check permission without activating
+                    await navigator.mediaDevices.getUserMedia({ audio: true });
+                    console.log('Microphone permission granted');
+                  }
+                } catch (err) {
+                  console.error('Error checking microphone permission:', err);
+                }
+              }}
+              sx={{ 
+                mt: 1.5,
+                textTransform: 'none',
+                fontSize: '0.75rem'
+              }}
             >
-              Enable Voice Now
+              Enable Microphone
             </Button>
           </Box>
         </Box>
       )
     },
     {
-      label: 'AI Features & Knowledge',
+      label: 'Tools',
       content: (
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Box>
-          <Typography variant="h6" gutterBottom>
-            <AutoAwesome sx={{ mr: 1, verticalAlign: 'middle' }} />
-            Intelligent Tutoring Features
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Drawing Tools
+            </Typography>
+            <Box sx={{ display: 'grid', gridTemplateColumns: '1fr', gap: 0.75 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <DrawIcon sx={{ fontSize: 16 }} /> Pen
+                </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  P
+                </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <DrawIcon sx={{ fontSize: 16 }} /> Eraser
           </Typography>
-          
-          <Typography variant="body1" paragraph>
-            Your AI tutor uses advanced reasoning to provide personalized guidance 
-            and tracks your learning progress.
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  E
           </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <AutoAwesomeIcon sx={{ fontSize: 16 }} /> LaTeX
+                </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  L
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+
+        <Box>
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Shapes & Functions
+            </Typography>
+            <Box sx={{ display: 'grid', gridTemplateColumns: '1fr', gap: 0.75 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  Rectangle
+                </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  R
+          </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  Ellipse
+          </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  O
+              </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  Line
+              </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  /
+              </Typography>
+              </Box>
+            </Box>
+          </Box>
           
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr', gap: 2 }}>
-            <Card variant="outlined" sx={{ bgcolor: 'success.50' }}>
-              <CardContent>
-                <Typography variant="subtitle2" color="success.dark" gutterBottom>
-                  <AccountTree sx={{ mr: 1, verticalAlign: 'middle' }} />
-                  Knowledge Graph
+        <Box>
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Actions
+          </Typography>
+            <Box sx={{ display: 'grid', gridTemplateColumns: '1fr', gap: 0.75 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  Undo / Redo
                 </Typography>
-                <Typography variant="body2">
-                  View your learning progress and concept mastery in an interactive graph. 
-                  Access it via <strong>Ctrl+G</strong> or the toolbar.
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  ⌘Z / ⌘⇧Z
                 </Typography>
-              </CardContent>
-            </Card>
-            
-            <Card variant="outlined" sx={{ bgcolor: 'primary.50' }}>
-              <CardContent>
-                <Typography variant="subtitle2" color="primary.dark" gutterBottom>
-                  <AutoAwesome sx={{ mr: 1, verticalAlign: 'middle' }} />
-                  Smart Interventions
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  Select All
                 </Typography>
-                <Typography variant="body2">
-                  The AI observes your work and intervenes only when needed - 
-                  offering hints, corrections, or encouragement at the right moment.
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  ⌘A
                 </Typography>
-              </CardContent>
-            </Card>
-            
-            <Card variant="outlined" sx={{ bgcolor: 'info.50' }}>
-              <CardContent>
-                <Typography variant="subtitle2" color="info.dark" gutterBottom>
-                  <Gesture sx={{ mr: 1, verticalAlign: 'middle' }} />
-                  Visual Annotations
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <MicIcon sx={{ fontSize: 16 }} /> Voice Input
                 </Typography>
-                <Typography variant="body2">
-                  Watch as the AI cursor highlights important parts, 
-                  draws arrows, and adds visual explanations to your work.
+                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'text.secondary' }}>
+                  Space
                 </Typography>
-              </CardContent>
-            </Card>
+              </Box>
+            </Box>
           </Box>
         </Box>
       )
     },
     {
-      label: 'Ready to Learn!',
+      label: 'Commands',
       content: (
-        <Box textAlign="center">
-          <motion.div
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <CheckCircle sx={{ fontSize: 80, color: 'success.main', mb: 2 }} />
-          </motion.div>
-          
-          <Typography variant="h6" gutterBottom>
-            You're All Set!
-          </Typography>
-          
-          <Typography variant="body1" paragraph>
-            Start by drawing a math problem or asking a question. 
-            Your AI tutor is ready to help you learn and explore mathematics!
-          </Typography>
-          
-          <Divider sx={{ my: 2 }} />
-          
-          <Card variant="outlined" sx={{ bgcolor: 'grey.50' }}>
-            <CardContent>
-              <Typography variant="subtitle2" gutterBottom>
-                💡 Quick Reminder - Keyboard Shortcuts:
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Mathematical Help
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.75 }}>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Solve this equation"
               </Typography>
-              <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 1, mt: 1 }}>
-                <Typography variant="caption"><Keyboard sx={{ fontSize: 14, mr: 0.5 }} />Space: Toggle Voice</Typography>
-                <Typography variant="caption"><Keyboard sx={{ fontSize: 14, mr: 0.5 }} />Ctrl+G: Knowledge Graph</Typography>
-                <Typography variant="caption"><Keyboard sx={{ fontSize: 14, mr: 0.5 }} />F11: Fullscreen</Typography>
-                <Typography variant="caption"><Keyboard sx={{ fontSize: 14, mr: 0.5 }} />Ctrl+S: Settings</Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Find the derivative of..."
+              </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Graph this function"
+              </Typography>
+            </Box>
+          </Box>
+
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Learning Support
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.75 }}>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Explain the concept of..."
+              </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Show me a similar example"
+              </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "What's the next step?"
+          </Typography>
+            </Box>
+          </Box>
+
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              fontSize: '0.75rem', 
+              color: 'text.primary', 
+              fontWeight: 500,
+              mb: 1
+            }}>
+              Drawing Commands
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.75 }}>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Draw a coordinate plane"
+              </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Plot points at..."
+          </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
+                • "Clear the board"
+              </Typography>
+            </Box>
               </Box>
-            </CardContent>
-          </Card>
         </Box>
       )
     }
   ]
   
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1)
-  }
-  
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1)
-  }
-  
-  const handleClose = () => {
-    onClose()
-  }
-  
   return (
     <Dialog 
       open={open} 
-      onClose={handleClose}
-      maxWidth="md" 
-      fullWidth
+      onClose={onClose}
+      maxWidth={false}
       PaperProps={{
         sx: {
-          borderRadius: 3,
-          minHeight: 600
+          width: '90%',
+          maxWidth: '900px',
+          height: '90%',
+          maxHeight: '550px',
+          m: 2,
+          borderRadius: 0,
+          bgcolor: '#ffffff',
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden'
         }
       }}
     >
-      <DialogTitle>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <School color="primary" />
-          <Typography variant="h6">
-            AI Whiteboard Tutor - Quick Start
+      <IconButton
+        onClick={onClose}
+        sx={{
+          position: 'absolute',
+          right: 16,
+          top: 16,
+          color: 'text.secondary'
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
+
+      <DialogContent sx={{ p: 0, display: 'flex', overflow: 'hidden' }}>
+        {/* Left Panel - Navigation */}
+        <Box sx={{
+          width: 240,
+          minWidth: 240,
+          borderRight: '1px solid',
+          borderColor: 'divider',
+          p: 1.5,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 1.5,
+          overflowY: 'auto',
+          overflowX: 'hidden'
+        }}>
+          <Box>
+            <Typography variant="h6" sx={{
+              fontSize: '0.9375rem',
+              fontWeight: 400,
+              letterSpacing: '-0.01em',
+              color: 'text.primary',
+              mb: 0.5
+            }}>
+              Whiteboard
+            </Typography>
+            <Typography variant="body2" sx={{ 
+              color: 'text.secondary',
+              fontSize: '0.8125rem',
+              letterSpacing: '0.01em'
+            }}>
+              Advanced mathematical collaboration
           </Typography>
         </Box>
-      </DialogTitle>
       
-      <DialogContent>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
-              <StepLabel>
-                <Typography variant="subtitle1" fontWeight={600}>
+                <StepLabel onClick={() => setActiveStep(index)} sx={{ cursor: 'pointer' }}>
+                  <Typography variant="subtitle2" sx={{ 
+                    fontWeight: 500,
+                    fontSize: '0.8125rem'
+                  }}>
                   {step.label}
                 </Typography>
               </StepLabel>
               <StepContent>
-                <Box sx={{ mt: 2, mb: 2 }}>
                   {step.content}
-                </Box>
               </StepContent>
             </Step>
           ))}
         </Stepper>
-      </DialogContent>
-      
-      <DialogActions sx={{ p: 3, justifyContent: 'space-between' }}>
-        <Button 
-          onClick={handleClose} 
-          color="inherit"
-        >
-          Skip Tutorial
-        </Button>
-        
-        <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button
-            disabled={activeStep === 0}
-            onClick={handleBack}
-          >
-            Back
-          </Button>
-          
-          {activeStep === steps.length - 1 ? (
-            <Button
-              variant="contained"
-              onClick={handleClose}
-              startIcon={<CheckCircle />}
-            >
-              Start Learning!
-            </Button>
-          ) : (
-            <Button
-              variant="contained"
-              onClick={handleNext}
-            >
-              Next
-            </Button>
-          )}
         </Box>
-      </DialogActions>
+
+        {/* Right Panel - Preview */}
+        <Box sx={{
+          flex: 1,
+          bgcolor: '#fafafa',
+          display: 'flex',
+          flexDirection: 'column',
+          position: 'relative'
+        }}>
+          <Box sx={{
+            flex: 1,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            p: 4,
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            <Box sx={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '90%',
+              height: '90%'
+            }}>
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 800 400"
+                style={{
+                  overflow: 'visible'
+                }}
+              >
+                {/* Grid lines */}
+                {[...Array(15)].map((_, i) => (
+                  <line
+                    key={`vgrid-${i}`}
+                    x1={100 + i * 50}
+                    y1="50"
+                    x2={100 + i * 50}
+                    y2="350"
+                    stroke="#f0f0f0"
+                    strokeWidth="1"
+                  />
+                ))}
+                {[...Array(7)].map((_, i) => (
+                  <line
+                    key={`hgrid-${i}`}
+                    x1="50"
+                    y1={75 + i * 50}
+                    x2="750"
+                    y2={75 + i * 50}
+                    stroke="#f0f0f0"
+                    strokeWidth="1"
+                  />
+                ))}
+
+                {/* Axes */}
+                <line
+                  x1="50"
+                  y1="200"
+                  x2="750"
+                  y2="200"
+                  stroke="#ccc"
+                  strokeWidth="1.5"
+                />
+                <line
+                  x1="400"
+                  y1="50"
+                  x2="400"
+                  y2="350"
+                  stroke="#ccc"
+                  strokeWidth="1.5"
+                />
+
+                {/* Function Set 1: Quadratic and Linear */}
+                <g style={{ animation: 'sequence1 16s infinite' }}>
+                  <g>
+                    <path
+                      d="M 100,200 Q 400,50 700,200"
+                      fill="none"
+                      stroke="#2196f3"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <path
+                      d="M 100,350 L 700,50"
+                      fill="none"
+                      stroke="#9c27b0"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <text
+                      x="120"
+                      y="100"
+                      fill="#2196f3"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      f(x) = ax² + bx + c
+                    </text>
+                    <text
+                      x="120"
+                      y="130"
+                      fill="#9c27b0"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      g(x) = mx + b
+                    </text>
+                  </g>
+                </g>
+
+                {/* Function Set 2: Sine and Cosine */}
+                <g style={{ animation: 'sequence2 16s infinite' }}>
+                  <g>
+                    <path
+                      d="M 100,200 C 200,120 300,280 400,200 C 500,120 600,280 700,200"
+                      fill="none"
+                      stroke="#2196f3"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <path
+                      d="M 100,280 C 200,200 300,120 400,200 C 500,280 600,120 700,200"
+                      fill="none"
+                      stroke="#9c27b0"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <text
+                      x="120"
+                      y="100"
+                      fill="#2196f3"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      f(x) = sin(x)
+                    </text>
+                    <text
+                      x="120"
+                      y="130"
+                      fill="#9c27b0"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      g(x) = cos(x)
+                    </text>
+                  </g>
+                </g>
+
+                {/* Function Set 3: Exponential and Logarithmic */}
+                <g style={{ animation: 'sequence3 16s infinite' }}>
+                  <g>
+                    <path
+                      d="M 100,350 C 250,350 400,50 700,50"
+                      fill="none"
+                      stroke="#2196f3"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <path
+                      d="M 100,350 C 200,350 600,200 700,50"
+                      fill="none"
+                      stroke="#9c27b0"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <text
+                      x="120"
+                      y="100"
+                      fill="#2196f3"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      f(x) = eˣ
+                    </text>
+                    <text
+                      x="120"
+                      y="130"
+                      fill="#9c27b0"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      g(x) = ln(x)
+                    </text>
+                  </g>
+                </g>
+
+                {/* Function Set 4: Polynomial and its Derivative */}
+                <g style={{ animation: 'sequence4 16s infinite' }}>
+                  <g>
+                    <path
+                      d="M 100,200 C 200,350 300,50 400,200 C 500,350 600,50 700,200"
+                      fill="none"
+                      stroke="#2196f3"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <path
+                      d="M 100,200 C 200,50 300,350 400,200 C 500,50 600,350 700,200"
+                      fill="none"
+                      stroke="#9c27b0"
+                      strokeWidth="2.5"
+                      strokeDasharray="800"
+                      strokeDashoffset="800"
+                      style={{
+                        animation: 'drawPath 4s ease-out infinite'
+                      }}
+                    />
+                    <text
+                      x="120"
+                      y="100"
+                      fill="#2196f3"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      f(x) = x³ - 3x
+                    </text>
+                    <text
+                      x="120"
+                      y="130"
+                      fill="#9c27b0"
+                      style={{
+                        fontFamily: 'monospace',
+                        fontSize: '16px',
+                        opacity: 0,
+                        animation: 'showText 4s ease-out infinite'
+                      }}
+                    >
+                      f′(x) = 3x² - 3
+                    </text>
+                  </g>
+                </g>
+              </svg>
+            </Box>
+            
+            <style>
+              {`
+                @keyframes sequence1 {
+                  0% {
+                    visibility: visible;
+                  }
+                  20%, 100% {
+                    visibility: hidden;
+                  }
+                }
+                
+                @keyframes sequence2 {
+                  0%, 24% {
+                    visibility: hidden;
+                  }
+                  25% {
+                    visibility: visible;
+                  }
+                  45%, 100% {
+                    visibility: hidden;
+                  }
+                }
+                
+                @keyframes sequence3 {
+                  0%, 49% {
+                    visibility: hidden;
+                  }
+                  50% {
+                    visibility: visible;
+                  }
+                  70%, 100% {
+                    visibility: hidden;
+                  }
+                }
+                
+                @keyframes sequence4 {
+                  0%, 74% {
+                    visibility: hidden;
+                  }
+                  75% {
+                    visibility: visible;
+                  }
+                  95%, 100% {
+                    visibility: hidden;
+                  }
+                }
+                
+                @keyframes drawPath {
+                  0% {
+                    stroke-dashoffset: 800;
+                  }
+                  40% {
+                    stroke-dashoffset: 0;
+                  }
+                  80%, 100% {
+                    stroke-dashoffset: 800;
+                  }
+                }
+                
+                @keyframes showText {
+                  0% {
+                    opacity: 0;
+                  }
+                  40% {
+                    opacity: 1;
+                  }
+                  80%, 100% {
+                    opacity: 0;
+                  }
+                }
+              `}
+            </style>
+          </Box>
+
+          {/* Navigation Buttons */}
+          <Box sx={{ 
+            p: 2, 
+            borderTop: '1px solid', 
+            borderColor: 'divider',
+            display: 'flex',
+            justifyContent: 'flex-end',
+            gap: 1,
+            bgcolor: 'background.paper'
+          }}>
+          <Button
+              color="inherit"
+              onClick={onClose}
+              sx={{
+                textTransform: 'none',
+                fontWeight: 400,
+                letterSpacing: '0.02em'
+              }}
+            >
+              Skip
+          </Button>
+            <Button
+              disabled={activeStep === 0}
+              onClick={() => setActiveStep(prev => prev - 1)}
+            >
+              Back
+            </Button>
+            <Button
+              variant="contained"
+              onClick={() => activeStep === steps.length - 1 ? onClose() : setActiveStep(prev => prev + 1)}
+            >
+              {activeStep === steps.length - 1 ? 'Begin' : 'Next'}
+            </Button>
+          </Box>
+        </Box>
+      </DialogContent>
     </Dialog>
   )
 }
