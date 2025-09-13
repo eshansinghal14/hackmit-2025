@@ -7,7 +7,6 @@ import {
   Settings, 
   AccountTree, 
   School, 
-  Help,
   Fullscreen,
   FullscreenExit
 } from '@mui/icons-material'
@@ -306,36 +305,7 @@ const App: React.FC = () => {
         )}
       </AnimatePresence>
       
-      {/* Help Tooltip */}
-      <Tooltip 
-        title={
-          <Box>
-            <Typography variant="body2" sx={{ mb: 1, fontWeight: 600 }}>
-              Keyboard Shortcuts:
-            </Typography>
-            <Typography variant="caption" component="div">Space: Toggle Voice</Typography>
-            <Typography variant="caption" component="div">Ctrl+S: Settings</Typography>
-            <Typography variant="caption" component="div">Ctrl+G: Knowledge Graph</Typography>
-            <Typography variant="caption" component="div">F11: Fullscreen</Typography>
-          </Box>
-        }
-        placement="top-end"
-        arrow
-      >
-        <Fab
-          size="small"
-          color="info"
-          sx={{
-            position: 'fixed',
-            bottom: 24,
-            left: 24,
-            opacity: 0.7,
-            '&:hover': { opacity: 1 }
-          }}
-        >
-          <Help fontSize="small" />
-        </Fab>
-      </Tooltip>
+      {/* Help Tooltip removed */}
     </Box>
   )
 }
