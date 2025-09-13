@@ -90,7 +90,10 @@ export const useScreenshotCapture = (): UseScreenshotCaptureReturn => {
       } = options
 
       // Use TLdraw's built-in export functionality
-      const svg = await editor.getSvgString(editor.getCurrentPageShapeIds(), {
+      const shapeIds = editor.getCurrentPageShapeIds()
+      const shapeIdsArray = Array.from(shapeIds) // Convert Set to Array
+      
+      const svg = await editor.getSvgString(shapeIdsArray, {
         background: true,
         bounds: editor.getCurrentPageBounds(),
         darkMode,

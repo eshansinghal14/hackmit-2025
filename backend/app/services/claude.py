@@ -18,7 +18,7 @@ class ClaudeService:
     def __init__(self):
         self.api_key = os.getenv("ANTHROPIC_API_KEY")
         self.base_url = "https://api.anthropic.com/v1"
-        self.model = "claude-sonnet-4-20250514"
+        self.model = "claude-3-haiku-20240307"
         self.max_tokens = 1000
         
         if not self.api_key:
@@ -30,8 +30,11 @@ class ClaudeService:
         system_prompt = self._build_system_prompt()
         user_prompt = self._build_user_prompt(context)
         
+        # Extract image data if available
+        image_data = context.get("visual_state", {}).get("canvas_screenshot")
+        
         try:
-            response = await self._make_request(system_prompt, user_prompt)
+            response = await self._make_request(system_prompt, user_prompt, image_data)
             return self._parse_tutoring_response(response)
             
         except Exception as e:
@@ -54,7 +57,7 @@ class ClaudeService:
     
     def _build_system_prompt(self) -> str:
         """Build the system prompt for Claude tutoring"""
-        return """You are an expert math tutor observing a student's whiteboard and listening to their voice. Use the multimodal context (recent screenshots, drawing patterns, and transcribed speech) to provide helpful, timely guidance.
+        return """You are an expert math tutor with vision capabilities. You can see the student's whiteboard screenshots and listen to their voice. Use the multimodal context to provide helpful, timely guidance.
 
 TUTORING PRINCIPLES:
 - Be helpful, concise, and context-aware
@@ -95,47 +98,56 @@ Keep responses encouraging and concise. Focus on one key point at a time."""
 
     def _build_knowledge_graph_system_prompt(self) -> str:
         """Build system prompt for knowledge graph generation"""
-        return """You are an expert math education analyst. Your job is to analyze a student's mathematical work and update their knowledge graph with concept relationships and mastery levels.
+        return """You are an expert mathematics education analyst specializing in building hierarchical knowledge graphs. Create focused, subject-specific mathematical concept hierarchies.
 
-KNOWLEDGE GRAPH STRUCTURE:
-- Nodes represent mathematical concepts (e.g., "quadratic_equations", "derivative_rules", "triangle_properties")
-- Edges represent prerequisite relationships and concept connections
-- Each node has a mastery level (0.0 to 1.0) and importance weight
+MATHEMATICAL HIERARCHY PRINCIPLES:
+- Build clear prerequisite chains: Arithmetic → Algebra → Precalculus → Calculus
+- Use specific mathematical concepts, not generic terms like "communication" or "problem solving"
+- Create meaningful pedagogical progressions within each domain
+- Focus on mathematical content knowledge, not meta-skills
 
-ANALYSIS GUIDELINES:
-1. Identify all mathematical concepts present in the student's work
-2. Assess the student's demonstrated mastery of each concept
-3. Identify prerequisite relationships between concepts
-4. Determine concept importance for the current learning objectives
-5. Consider common misconceptions and error patterns
+CONCEPT NAMING CONVENTIONS:
+- Use specific mathematical terms: "linear_equations", "quadratic_formula", "derivative_chain_rule"
+- Include grade-level context: "algebra1_", "precalc_", "calc1_" prefixes when relevant
+- Avoid vague terms like "math_concepts", "understanding", "communication"
+
+HIERARCHICAL EXAMPLES:
+Algebra Track: basic_operations → linear_equations → systems_of_equations → quadratic_equations → polynomial_functions
+Geometry Track: basic_shapes → triangle_properties → pythagorean_theorem → trigonometric_ratios → trigonometric_identities
+Calculus Track: functions → limits → derivatives → derivative_applications → integrals
 
 RESPONSE FORMAT:
-Respond with JSON containing:
 {
     "concepts_identified": [
         {
-            "id": "concept_identifier",
-            "name": "Human readable concept name", 
+            "id": "specific_math_concept_id",
+            "name": "Precise mathematical concept name",
+            "domain": "algebra|geometry|trigonometry|precalculus|calculus|statistics",
+            "level": "basic|intermediate|advanced",
             "mastery_evidence": 0.0-1.0,
             "importance": 0.0-1.0,
-            "misconceptions": ["misconception1", "misconception2"],
-            "demonstrated_skills": ["skill1", "skill2"]
+            "prerequisite_concepts": ["concept1", "concept2"],
+            "leads_to_concepts": ["concept3", "concept4"]
         }
     ],
     "concept_relationships": [
         {
-            "prerequisite": "concept_id1",
-            "dependent": "concept_id2", 
+            "prerequisite": "foundational_concept_id",
+            "dependent": "advanced_concept_id",
             "strength": 0.0-1.0,
-            "relationship_type": "prerequisite|related|application"
+            "relationship_type": "prerequisite|builds_upon|applies_to",
+            "pedagogical_distance": 1-5
         }
     ],
-    "learning_objectives": ["objective1", "objective2"],
-    "recommended_focus": ["concept_id1", "concept_id2"],
-    "mastery_gaps": ["gap1", "gap2"]
+    "domain_progression": {
+        "current_domain": "algebra|geometry|etc",
+        "mastery_level": "basic|intermediate|advanced",
+        "next_concepts": ["concept1", "concept2"],
+        "review_needed": ["concept3", "concept4"]
+    }
 }
 
-Focus on mathematical accuracy and pedagogical relationships."""
+CRITICAL: Only identify concepts that are actually mathematical content. Ignore generic learning skills."""
 
     def _build_user_prompt(self, context: Dict[str, Any]) -> str:
         """Build user prompt with context information"""
@@ -177,6 +189,12 @@ Focus on mathematical accuracy and pedagogical relationships."""
         # Current user text/intent
         if context.get("user_text"):
             prompt_parts.append(f"- Current user input: \"{context['user_text']}\"")
+        
+        # Visual context
+        if context.get("visual_state", {}).get("canvas_screenshot"):
+            prompt_parts.append("- Whiteboard screenshot: PROVIDED (analyze the image)")
+        else:
+            prompt_parts.append("- Whiteboard screenshot: NOT AVAILABLE")
         
         prompt_parts.append("\nWhat is your tutoring response? Respond only with valid JSON.")
         
@@ -223,13 +241,40 @@ Focus on mathematical accuracy and pedagogical relationships."""
         
         return "\n".join(prompt_parts)
     
-    async def _make_request(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
-        """Make request to Claude API"""
+    async def _make_request(self, system_prompt: str, user_prompt: str, image_data: str = None) -> Dict[str, Any]:
+        """Make request to Claude API with optional image"""
         headers = {
             "Content-Type": "application/json",
             "x-api-key": self.api_key,
             "anthropic-version": "2023-06-01"
         }
+        
+        # Build message content
+        if image_data:
+            # Extract base64 data from data URL
+            if image_data.startswith("data:image/"):
+                image_base64 = image_data.split(",")[1]
+                media_type = image_data.split(";")[0].split(":")[1]
+            else:
+                image_base64 = image_data
+                media_type = "image/png"
+            
+            message_content = [
+                {
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": media_type,
+                        "data": image_base64
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": f"{system_prompt}\n\n{user_prompt}"
+                }
+            ]
+        else:
+            message_content = f"{system_prompt}\n\n{user_prompt}"
         
         payload = {
             "model": self.model,
@@ -237,7 +282,7 @@ Focus on mathematical accuracy and pedagogical relationships."""
             "messages": [
                 {
                     "role": "user", 
-                    "content": f"{system_prompt}\n\n{user_prompt}"
+                    "content": message_content
                 }
             ],
             "temperature": 0.7

@@ -234,7 +234,7 @@ const Whiteboard: React.FC<WhiteboardProps> = ({
     }
   }
   
-  const handleMouseMove = (e: Konva.KonvaEventObject<MouseEvent | TouchEvent>) => {
+  const handleMouseMove = () => {
     if (!isDrawingRef.current) return
     
     const pos = stageRef.current?.getPointerPosition()
@@ -315,15 +315,19 @@ const Whiteboard: React.FC<WhiteboardProps> = ({
           
           {/* Actions */}
           <Tooltip title="Undo (Ctrl+Z)">
-            <IconButton onClick={undo} disabled={historyStep <= 0} size="small">
-              <Undo />
-            </IconButton>
+            <span>
+              <IconButton onClick={undo} disabled={historyStep <= 0} size="small">
+                <Undo />
+              </IconButton>
+            </span>
           </Tooltip>
           
           <Tooltip title="Redo (Ctrl+Y)">
-            <IconButton onClick={redo} disabled={historyStep >= history.length - 1} size="small">
-              <Redo />
-            </IconButton>
+            <span>
+              <IconButton onClick={redo} disabled={historyStep >= history.length - 1} size="small">
+                <Redo />
+              </IconButton>
+            </span>
           </Tooltip>
           
           <Tooltip title="Clear (Ctrl+Shift+C)">

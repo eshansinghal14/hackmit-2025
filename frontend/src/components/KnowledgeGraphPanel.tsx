@@ -35,7 +35,7 @@ import {
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts'
 // import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore } from '@/store/appStore'
-import type { KnowledgeGraphData, KnowledgeNode } from '@/types'
+import type { KnowledgeGraphData } from '@/types'
 
 interface KnowledgeGraphPanelProps {
   open: boolean

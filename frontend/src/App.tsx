@@ -40,7 +40,6 @@ const App: React.FC = () => {
   const { 
     sessionId, 
     currentSubtitle,
-    voiceEnabled,
     setVoiceEnabled,
     initialize 
   } = useAppStore()
@@ -53,8 +52,7 @@ const App: React.FC = () => {
     isListening, 
     transcript, 
     isSupported: speechSupported,
-    toggleListening,
-    error: speechError
+    toggleListening
   } = useWebSpeechAPI({
     onFinalTranscript: (finalText: string) => {
       console.log('🎤 Sending voice input to AI:', finalText)
@@ -184,24 +182,26 @@ const App: React.FC = () => {
             !speechSupported ? 'Speech not supported' :
             isListening ? 'Stop Voice Input (Space)' : 'Start Voice Input (Space)'
           }>
-            <IconButton
-              onClick={handleVoiceToggle}
-              disabled={!speechSupported}
-              sx={{ 
-                mr: 1,
-                background: isListening ? 'primary.main' : 'grey.200',
-                color: isListening ? 'white' : 'grey.600',
-                '&:hover': {
-                  background: isListening ? 'primary.dark' : 'grey.300'
-                },
-                '&:disabled': {
-                  background: 'grey.100',
-                  color: 'grey.400'
-                }
-              }}
-            >
-              {isListening ? <Mic /> : <MicOff />}
-            </IconButton>
+            <span>
+              <IconButton
+                onClick={handleVoiceToggle}
+                disabled={!speechSupported}
+                sx={{ 
+                  mr: 1,
+                  background: isListening ? 'primary.main' : 'grey.200',
+                  color: isListening ? 'white' : 'grey.600',
+                  '&:hover': {
+                    background: isListening ? 'primary.dark' : 'grey.300'
+                  },
+                  '&:disabled': {
+                    background: 'grey.100',
+                    color: 'grey.400'
+                  }
+                }}
+              >
+                {isListening ? <Mic /> : <MicOff />}
+              </IconButton>
+            </span>
           </Tooltip>
           
           {/* Knowledge Graph */}

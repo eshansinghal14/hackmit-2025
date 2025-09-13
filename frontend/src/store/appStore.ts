@@ -50,6 +50,7 @@ interface AppStore {
   setCurrentSubtitle: (subtitle: SubtitleMessage | null) => void
   addTranscript: (transcript: TranscriptSegment) => void
   updateKnowledgeGraph: (data: KnowledgeGraphData) => void
+  clearKnowledgeGraph: () => void
   setVoiceEnabled: (enabled: boolean) => void
   setIsRecording: (recording: boolean) => void
   setAudioLevel: (level: number) => void
@@ -125,7 +126,7 @@ const defaultUserProfile: UserProfile = {
 export const useAppStore = create<AppStore>()(
   devtools(
     persist(
-      (set, get) => ({
+      (set) => ({
         // Initial State
         sessionId: '',
         connectionState: 'DISCONNECTED',
@@ -157,7 +158,8 @@ export const useAppStore = create<AppStore>()(
             sessionId,
             lastActivity: Date.now(),
             connectionState: 'DISCONNECTED',
-            isConnected: false
+            isConnected: false,
+            knowledgeGraph: null // Clear knowledge graph on new session
           })
           console.log(`🎯 Session initialized: ${sessionId}`)
         },
@@ -197,6 +199,11 @@ export const useAppStore = create<AppStore>()(
         updateKnowledgeGraph: (data) => {
           set({ knowledgeGraph: data })
           console.log(`🧠 Knowledge graph updated: ${data.nodes.length} concepts`)
+        },
+        
+        clearKnowledgeGraph: () => {
+          set({ knowledgeGraph: null })
+          console.log('🧠 Knowledge graph cleared')
         },
         
         setVoiceEnabled: (enabled) => {
@@ -364,14 +371,15 @@ export const useVoiceActions = () => {
 }
 
 export const useAIActions = () => {
-  const { setCurrentSubtitle, setAICursorPosition, updateKnowledgeGraph } = useAppStore()
+  const { setCurrentSubtitle, setAICursorPosition, updateKnowledgeGraph, clearKnowledgeGraph } = useAppStore()
   
   return {
     showSubtitle: setCurrentSubtitle,
     hideSubtitle: () => setCurrentSubtitle(null),
     moveAICursor: setAICursorPosition,
     hideAICursor: () => setAICursorPosition(null),
-    updateKnowledge: updateKnowledgeGraph
+    updateKnowledge: updateKnowledgeGraph,
+    clearKnowledge: clearKnowledgeGraph
   }
 }
 

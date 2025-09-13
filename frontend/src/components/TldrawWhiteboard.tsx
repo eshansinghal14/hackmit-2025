@@ -9,10 +9,8 @@ import 'tldraw/tldraw.css'
 import { Box, IconButton, Tooltip, Paper, Fab } from '@mui/material'
 import { 
   AutoAwesome, 
-  Psychology, 
   Gesture,
   Functions,
-  Category,
   Edit,
   RadioButtonUnchecked,
   Close,
@@ -20,18 +18,18 @@ import {
 } from '@mui/icons-material'
 import { motion } from 'framer-motion'
 import { useScreenshotCapture } from '@/hooks/useScreenshotCapture'
-import { useAppStore } from '@/store/appStore'
+import { useWebSocket } from '@/hooks/useWebSocket'
 
 // Custom AI Drawing Component with Human-like Collaboration
 const AIDrawingOverlay = () => {
   const editor = useEditor()
   const [showWelcome, setShowWelcome] = useState(true)
   const { captureWhiteboardArea, isCapturing } = useScreenshotCapture()
-  const { sendMessage } = useAppStore()
+  const { sendMessage, isConnected, reconnect } = useWebSocket()
   
   // Helper function to create smooth drawing paths
   const createDrawingPath = (points: number[][]) => {
-    return points.map((point, index) => ({
+    return points.map((point) => ({
       x: point[0],
       y: point[1],
       z: 0.5
@@ -181,7 +179,7 @@ const AIDrawingOverlay = () => {
         { delay: 3000, x: 320, y: 180, points: [[0, -20], [10, -15], [5, -10], [10, -5], [0, 0]] }, // "3"
       ]
       
-      steps.forEach((step, index) => {
+      steps.forEach((step) => {
         setTimeout(() => {
           const stepId = createShapeId()
           editor.createShape({
@@ -328,7 +326,31 @@ const AIDrawingOverlay = () => {
 
   // Screenshot and AI Analysis
   const captureAndAnalyze = useCallback(async () => {
-    if (!editor || isCapturing) return
+    console.log(`🔍 Capture check: editor=${!!editor}, isCapturing=${isCapturing}, isConnected=${isConnected}`)
+    
+    if (!editor || isCapturing) {
+      if (isCapturing) {
+        console.log('⚠️ Skipping screenshot capture - Already capturing')
+      }
+      if (!editor) {
+        console.log('⚠️ Skipping screenshot capture - No editor')
+      }
+      return
+    }
+    
+    // If not connected, try to reconnect first
+    if (!isConnected) {
+      console.log('🔄 WebSocket not connected, attempting to reconnect before screenshot')
+      reconnect()
+      // Wait a moment for reconnection
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      
+      // Check again after reconnection attempt
+      if (!isConnected) {
+        console.log('⚠️ Still not connected after reconnect attempt, skipping screenshot')
+        return
+      }
+    }
     
     console.log('📸 Capturing whiteboard for AI analysis...')
     
@@ -341,23 +363,53 @@ const AIDrawingOverlay = () => {
       
       if (screenshot) {
         // Send screenshot to backend for Cerebras analysis
-        sendMessage({
-          type: 'screenshot_analysis',
-          image: screenshot,
-          timestamp: Date.now(),
-          context: 'whiteboard_capture'
-        })
+        const message = {
+          type: 'canvas_update',
+          pngBase64: screenshot,
+          width: editor.getViewportPageBounds().width,
+          height: editor.getViewportPageBounds().height,
+          timestamp: Date.now()
+        }
         
-        console.log('📸 Screenshot sent for AI analysis')
+        // Try sending the message, with a small retry if needed
+        try {
+          sendMessage(message)
+          console.log('📸 Screenshot sent for AI analysis')
+        } catch (error) {
+          console.error('❌ Failed to send screenshot:', error)
+          // Try once more after a brief delay
+          setTimeout(() => {
+            try {
+              sendMessage(message)
+              console.log('📸 Screenshot sent for AI analysis (retry)')
+            } catch (retryError) {
+              console.error('❌ Failed to send screenshot on retry:', retryError)
+            }
+          }, 1000)
+        }
       } else {
         console.error('❌ Failed to capture screenshot')
       }
     } catch (error) {
       console.error('❌ Error in screenshot analysis:', error)
     }
-  }, [editor, captureWhiteboardArea, isCapturing, sendMessage])
+  }, [editor, captureWhiteboardArea, isCapturing, sendMessage, isConnected, reconnect])
 
-  // Auto-capture on significant changes
+  // Auto-capture every 5 seconds for continuous AI analysis
+  useEffect(() => {
+    if (!editor) return
+    
+    const intervalId = setInterval(() => {
+      const shapes = editor.getCurrentPageShapeIds()
+      if (shapes.size > 0) {
+        captureAndAnalyze()
+      }
+    }, 5000) // Capture every 5 seconds
+    
+    return () => clearInterval(intervalId)
+  }, [editor, captureAndAnalyze])
+  
+  // Also capture on significant changes (debounced)
   useEffect(() => {
     if (!editor) return
     
@@ -371,7 +423,7 @@ const AIDrawingOverlay = () => {
         if (shapes.size > 0) {
           captureAndAnalyze()
         }
-      }, 2000) // Wait 2 seconds after last change
+      }, 3000) // Wait 3 seconds after last change
     }
     
     // Listen for shape changes
@@ -426,15 +478,17 @@ const AIDrawingOverlay = () => {
           </IconButton>
         </Tooltip>
         
-        <Tooltip title="Capture & Analyze" placement="left">
-          <IconButton 
-            onClick={captureAndAnalyze} 
-            size="small" 
-            color="secondary"
-            disabled={isCapturing}
-          >
-            <CameraAlt />
-          </IconButton>
+        <Tooltip title={`Capture & Analyze ${isConnected ? '(Connected)' : '(Disconnected)'}`} placement="left">
+          <span>
+            <IconButton 
+              onClick={captureAndAnalyze} 
+              size="small" 
+              color={isConnected ? "secondary" : "error"}
+              disabled={isCapturing || !isConnected}
+            >
+              <CameraAlt />
+            </IconButton>
+          </span>
         </Tooltip>
       </Paper>
       
@@ -462,6 +516,7 @@ const AIDrawingOverlay = () => {
           <AutoAwesome />
         </Fab>
       </motion.div>
+      
       
       {/* Welcome instruction overlay - Dismissible */}
       {showWelcome && (

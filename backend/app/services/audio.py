@@ -66,13 +66,8 @@ async def handle_voice_input(websocket: WebSocket, state: SessionState, voice_da
             "source": processed["source"]
         })
         
-        # Send confirmation subtitle (brief echo)
-        await websocket.send_json({
-            "type": "subtitle",
-            "text": f"🎤 \"{processed['text']}\"",
-            "mode": "speak",
-            "ttlMs": 2000
-        })
+        # Don't send echo - let AI response be the only subtitle
+        # The AI will process this and send its own response
         
         print(f"🎤 Voice input processed successfully: {processed['text']}")
         

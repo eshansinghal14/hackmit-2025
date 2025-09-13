@@ -240,7 +240,10 @@ Respond only with valid JSON."""
         diagrams = drawing_analysis.get("diagrams", [])
         text_annotations = drawing_analysis.get("text", [])
         
-        prompt = f"""You are an AI math tutor providing real-time feedback. Analyze the student's work and provide helpful guidance.
+        # Check if we have visual context
+        has_visual_context = bool(equations or diagrams or text_annotations or canvas_data)
+        
+        prompt = f"""You are an AI math tutor providing real-time feedback. {'Analyze the student\'s work and provide helpful guidance.' if has_visual_context else 'The student is speaking to you but you cannot see their whiteboard yet.'}
 
 STUDENT CONTEXT:
 - Recent input: "{user_text}"
@@ -248,9 +251,10 @@ STUDENT CONTEXT:
 - Struggling with: {weak_concepts[:3]}
 
 WHITEBOARD ANALYSIS:
-- Equations detected: {equations[:3]}
-- Diagrams present: {diagrams[:3]}  
-- Text annotations: {text_annotations[:3]}
+- Can see whiteboard: {has_visual_context}
+- Equations detected: {equations[:3] if equations else 'None visible'}
+- Diagrams present: {diagrams[:3] if diagrams else 'None visible'}  
+- Text annotations: {text_annotations[:3] if text_annotations else 'None visible'}
 
 TUTORING GUIDELINES:
 1. Be encouraging and supportive
@@ -258,13 +262,20 @@ TUTORING GUIDELINES:
 3. If you spot errors, gently correct them
 4. Ask guiding questions to promote understanding
 5. Keep responses concise but helpful
-6. Focus on the math concepts being worked on
+6. Focus on specific mathematical concepts being worked on
+7. If you can't see the whiteboard, ask the student to describe what they're working on
+
+CONCEPT IDENTIFICATION:
+- Identify SPECIFIC mathematical concepts (e.g., "linear_equations", "quadratic_formula", "pythagorean_theorem")
+- Avoid generic terms like "math", "problem_solving", "communication"
+- Focus on mathematical content knowledge, not meta-skills
+- Use domain-specific terms: "algebra1_linear_systems", "geometry_triangle_properties", "calc1_derivatives"
 
 Respond with JSON:
 {{
-    "message": "your encouraging tutoring message",
+    "message": "your encouraging tutoring message (under 20 words)",
     "feedback_type": "encouragement|hint|correction|question|explanation",
-    "concepts": ["concept1", "concept2"],
+    "concepts": ["specific_math_concept_1", "specific_math_concept_2"],
     "urgency": "low|medium|high",
     "visual_annotations": [
         {{"type": "circle", "target": "equation_1", "message": "Check this step"}},
@@ -273,7 +284,7 @@ Respond with JSON:
     "should_interrupt": true|false
 }}
 
-Focus on being helpful and maintaining student engagement."""
+CRITICAL: Only include specific mathematical concepts in the concepts array."""
         
         return prompt
     

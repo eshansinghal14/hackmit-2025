@@ -76,7 +76,14 @@ async def websocket_endpoint(session_id: str, websocket: WebSocket):
     # Initialize session state
     state = sessions.setdefault(session_id, SessionState())
     conv_manager = conv_managers.setdefault(session_id, ConversationManager(state))
-    kg = knowledge_graphs.setdefault(session_id, KnowledgeGraph())
+    
+    # Create a fresh knowledge graph for each new session
+    if session_id not in knowledge_graphs:
+        kg = KnowledgeGraph()
+        knowledge_graphs[session_id] = kg
+        print(f"🧠 Created fresh knowledge graph for session: {session_id}")
+    else:
+        kg = knowledge_graphs[session_id]
     
     try:
         # Send welcome message
@@ -144,13 +151,38 @@ async def handle_canvas_update(ws: WebSocket, state: SessionState, msg: dict, kg
     state.last_activity_ts = time.time()
     
     # Quick routing decision with Cerebras
-    context = build_mcp_context(state, kg_state=kg)
+    context = await build_mcp_context(state, kg_state=kg)
     
     try:
         route_decision = await cerebras_route(context)
         
+        # For canvas updates with visual content, use Claude for multimodal analysis
+        if msg.get("pngBase64"):
+            print(f"📸 Processing screenshot with Claude (multimodal)")
+            try:
+                # Add the screenshot to the context
+                context["visual_state"]["canvas_screenshot"] = msg.get("pngBase64")
+                context["visual_state"]["screenshot_timestamp"] = time.time()
+                
+                # Use Claude for visual analysis and tutoring
+                tutor_response = await claude_tutor_plan(context)
+                
+                await ws.send_json({
+                    "type": "subtitle",
+                    "text": tutor_response.get("say", "I can see your work! Let me analyze it."),
+                    "mode": tutor_response.get("mode", "explanation"),
+                    "ttlMs": 8000
+                })
+                
+                # Update knowledge graph based on visual analysis
+                if "concepts" in tutor_response:
+                    kg.update_from_interaction(tutor_response["concepts"], tutor_response.get("outcome", "neutral"))
+                    
+            except Exception as e:
+                print(f"❌ Error in Claude visual analysis: {e}")
+        
         # Check if AI should interrupt (urgent correction needed)
-        if (route_decision.get("interrupt") == "urgent" and 
+        elif (route_decision.get("interrupt") == "urgent" and 
             state.ai_can_interrupt and 
             not state.speaking):
             
@@ -212,8 +244,8 @@ async def handle_user_intent(ws: WebSocket, state: SessionState, text: str, kg: 
         "timestamp": time.time()
     })
     
-    # Build comprehensive context for Claude
-    context = build_mcp_context(state, user_text=text, kg_state=kg)
+    # Build comprehensive context for AI processing
+    context = await build_mcp_context(state, user_text=text, kg_state=kg)
     
     try:
         # Get real-time tutoring response from Cerebras (low-latency)

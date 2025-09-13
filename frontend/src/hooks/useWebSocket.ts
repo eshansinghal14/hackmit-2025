@@ -21,8 +21,8 @@ export const useWebSocket = (): UseWebSocketReturn => {
   const wsRef = useRef<WebSocket | null>(null)
   const reconnectTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const reconnectAttemptsRef = useRef(0)
-  const maxReconnectAttempts = 5
-  const reconnectDelay = 3000
+  const maxReconnectAttempts = 10
+  const reconnectDelay = 1000
   
   const { 
     setConnectionState, 
@@ -111,7 +111,8 @@ export const useWebSocket = (): UseWebSocketReturn => {
   }, [showSubtitle, moveAICursor, updateKnowledge, reportError])
   
   const handleOpen = useCallback(() => {
-    console.log('🔗 WebSocket connected')
+    console.log('🔗 WebSocket connected successfully!')
+    console.log(`🔗 WebSocket readyState: ${wsRef.current?.readyState}`)
     setConnectionState('CONNECTED')
     reconnectAttemptsRef.current = 0
     
@@ -121,9 +122,11 @@ export const useWebSocket = (): UseWebSocketReturn => {
       reconnectTimeoutRef.current = null
     }
     
-    // Send initial ping
-    if (wsRef.current) {
-      sendMessage({ type: 'ping', timestamp: Date.now() })
+    // Send initial ping - use direct WebSocket send to avoid recursion
+    if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+      const pingMessage = { type: 'ping', timestamp: Date.now() }
+      wsRef.current.send(JSON.stringify(pingMessage))
+      console.log('📤 Sent initial ping message')
     }
   }, [setConnectionState])
   
@@ -215,6 +218,24 @@ export const useWebSocket = (): UseWebSocketReturn => {
   }, [setConnectionState])
   
   const sendMessage = useCallback((message: WebSocketMessage) => {
+    const wsState = wsRef.current?.readyState
+    const stateNames = ['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED']
+    
+    console.log(`📡 WebSocket state: ${stateNames[wsState ?? 3]} (${wsState}), isConnected: ${isConnected}`)
+    console.log(`📡 WebSocket exists: ${!!wsRef.current}, readyState: ${wsState}`)
+    
+    // Only sync state if we actually have a WebSocket reference
+    if (wsRef.current && typeof wsState === 'number' && wsState !== WebSocket.OPEN && isConnected) {
+      console.log('🔄 Syncing store state - WebSocket is not open but store shows connected')
+      setConnectionState('DISCONNECTED')
+      
+      // Trigger reconnection if we have a session ID
+      if (sessionId && wsState === WebSocket.CLOSED) {
+        console.log('🔄 Triggering reconnection due to state mismatch')
+        setTimeout(() => connect(sessionId), 100)
+      }
+    }
+    
     if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
       try {
         const messageWithTimestamp = {
@@ -223,7 +244,7 @@ export const useWebSocket = (): UseWebSocketReturn => {
         }
         
         wsRef.current.send(JSON.stringify(messageWithTimestamp))
-        console.log('📤 Sent WebSocket message:', messageWithTimestamp.type, messageWithTimestamp)
+        console.log('📤 Sent WebSocket message:', messageWithTimestamp.type)
       } catch (error) {
         console.error('❌ Failed to send WebSocket message:', error)
         reportError(
@@ -234,9 +255,31 @@ export const useWebSocket = (): UseWebSocketReturn => {
         )
       }
     } else {
-      console.warn('⚠️ WebSocket not connected, message not sent:', message)
+      console.warn(`⚠️ WebSocket not ready for sending. State: ${stateNames[wsState ?? 3]}, message:`, message.type)
+      
+      // If we're connecting, wait a bit and try again
+      if (wsState === WebSocket.CONNECTING) {
+        console.log('🔄 WebSocket is connecting, will retry sending message in 500ms')
+        setTimeout(() => {
+          if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+            console.log('🔄 Retrying message send after connection established')
+            sendMessage(message)
+          } else {
+            console.warn('🔄 Retry failed - WebSocket still not ready')
+          }
+        }, 500)
+      } else if (!wsRef.current && sessionId) {
+        console.log('🔄 No WebSocket reference, attempting to reconnect')
+        connect(sessionId)
+        // Queue the message to be sent after reconnection
+        setTimeout(() => {
+          if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+            sendMessage(message)
+          }
+        }, 1000)
+      }
     }
-  }, [reportError])
+  }, [reportError, isConnected, setConnectionState, sessionId, connect])
   
   const reconnect = useCallback(() => {
     if (sessionId) {
@@ -258,18 +301,23 @@ export const useWebSocket = (): UseWebSocketReturn => {
     }
   }, [])
   
-  // Heartbeat to keep connection alive
+  // Heartbeat to keep connection alive and check health
   useEffect(() => {
     if (!isConnected) return
     
     const heartbeatInterval = setInterval(() => {
-      if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+      const wsState = wsRef.current?.readyState
+      
+      if (wsRef.current && wsState === WebSocket.OPEN) {
         sendMessage({ type: 'ping', timestamp: Date.now() })
+      } else if (wsState === WebSocket.CLOSED && sessionId) {
+        console.log('💓 Heartbeat detected closed connection, reconnecting...')
+        connect(sessionId)
       }
-    }, 30000) // Every 30 seconds
+    }, 10000) // Every 10 seconds for more frequent checks
     
     return () => clearInterval(heartbeatInterval)
-  }, [isConnected, sendMessage])
+  }, [isConnected, sendMessage, sessionId, connect])
   
   return {
     connect,
