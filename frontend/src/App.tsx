@@ -239,15 +239,15 @@ const App: React.FC = () => {
               {/* TLdraw Whiteboard */}
               <TldrawWhiteboard />
               
-              {/* Subtitle Display */}
+              {/* Subtitle Display - Skip initial welcome message */}
               <AnimatePresence>
-                {currentSubtitle && (
+                {currentSubtitle && currentSubtitle.text !== "Hi! I'm your AI math tutor. Start drawing or speaking, and I'll help guide you." && (
                   <SubtitleDisplay 
                     text={currentSubtitle.text} 
                     mode={currentSubtitle.mode}
                   />
                 )}
-              </AnimatePresence>
+                </AnimatePresence>
               
               {/* Floating Voice Button removed */}
               
