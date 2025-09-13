@@ -18,7 +18,7 @@ class ClaudeService:
     def __init__(self):
         self.api_key = os.getenv("ANTHROPIC_API_KEY")
         self.base_url = "https://api.anthropic.com/v1"
-        self.model = "claude-3-haiku-20240307"
+        self.model = "claude-sonnet-4-20250514"
         self.max_tokens = 1000
         
         if not self.api_key:
