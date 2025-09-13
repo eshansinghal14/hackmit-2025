@@ -30,6 +30,7 @@ import { useAppStore } from '@/store/appStore'
 
 const App: React.FC = () => {
   // State management
+  const editorRef = useRef(null)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showKnowledgeGraph, setShowKnowledgeGraph] = useState(false)
@@ -206,6 +207,14 @@ const App: React.FC = () => {
   }
   
   return (
+    <div style={{ position: 'fixed', inset: 0 }}>
+      <Tldraw 
+        components={components}
+        onMount={(editor) => {
+          editorRef.current = editor
+          console.log(' tldraw editor ready for Python commands')
+        }}
+      />
     <Box sx={{ 
       height: '100vh', 
       display: 'flex', 
