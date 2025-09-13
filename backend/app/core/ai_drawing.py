@@ -3,7 +3,65 @@ import json
 import numpy as np
 from skimage import morphology, measure
 import cv2
-from ai_writing import latex_to_pixels
+import matplotlib.pyplot as plt
+import io
+from PIL import Image
+
+def latex_to_pixels(latex_text, width_pixels, dpi=100, background='white', text_color='black'):
+    """Convert LaTeX text to pixel array"""
+    fig = plt.figure(figsize=(10, 2), dpi=dpi)
+    ax = fig.add_subplot(111)
+    
+    if not latex_text.startswith('$'):
+        latex_text = f'${latex_text}$'
+    
+    text_obj = ax.text(0.5, 0.5, latex_text, 
+                      transform=ax.transAxes,
+                      fontsize=20,
+                      ha='center', va='center',
+                      color=text_color)
+    
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis('off')
+    
+    if background == 'transparent':
+        fig.patch.set_alpha(0)
+        ax.patch.set_alpha(0)
+    else:
+        fig.patch.set_facecolor(background)
+        ax.patch.set_facecolor(background)
+    
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png', bbox_inches='tight', 
+                pad_inches=0.1, dpi=dpi, 
+                facecolor=background if background != 'transparent' else 'none',
+                transparent=(background == 'transparent'))
+    buf.seek(0)
+    plt.close(fig)
+    
+    img = Image.open(buf)
+    original_width = img.width
+    scale_factor = width_pixels / original_width if original_width > width_pixels else 1.0
+    
+    if scale_factor < 1.0:
+        new_width = width_pixels
+        new_height = int(img.height * scale_factor)
+        img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+    
+    img_array = np.array(img)
+    if len(img_array.shape) == 3:
+        if img_array.shape[2] == 4:  # RGBA
+            rgb = img_array[:,:,:3]
+            alpha = img_array[:,:,3] / 255.0
+            grayscale = np.dot(rgb, [0.299, 0.587, 0.114])
+            grayscale = grayscale * alpha + 255 * (1 - alpha)
+        else:  # RGB
+            grayscale = np.dot(img_array, [0.299, 0.587, 0.114])
+    else:
+        grayscale = img_array
+    
+    return grayscale.astype(np.uint8)
 
 def draw_latex_to_tldraw(latex_text, start_x=100, start_y=100):
     """
