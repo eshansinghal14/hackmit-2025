@@ -13,9 +13,9 @@ from dataclasses import dataclass, field
 
 from .core.session import SessionState
 from .core.context import build_mcp_context
-from .services.cerebras import cerebras_route
-from .services.claude import claude_tutor_plan
-from .services.audio import WisprClient
+from .services.cerebras import cerebras_route, cerebras_tutor
+from .services.claude import claude_tutor_plan, claude_knowledge_graph
+from .services.audio import handle_voice_input
 from .core.conversation import ConversationManager
 from .core.annotations import animate_annotation, realize_tutor_plan
 from .core.knowledge_graph import KnowledgeGraph
@@ -62,9 +62,7 @@ async def health():
         "timestamp": time.time(),
         "environment": {
             "anthropic": bool(os.getenv("ANTHROPIC_API_KEY")),
-            "cerebras": bool(os.getenv("CEREBRAS_API_KEY")),
-            "wispr": bool(os.getenv("WISPR_API_KEY")),
-            "fetchai": bool(os.getenv("FETCHAI_AGENT_KEY"))
+            "cerebras": bool(os.getenv("CEREBRAS_API_KEY"))
         },
         "active_sessions": len(sessions)
     }
@@ -105,8 +103,17 @@ async def websocket_endpoint(session_id: str, websocket: WebSocket):
             elif msg_type == "user_intent":
                 await handle_user_intent(websocket, state, msg["text"], kg)
                 
+            elif msg_type == "voice_input":
+                # New handler for Web Speech API transcribed voice input
+                await handle_voice_input_message(websocket, state, msg, kg)
+                
             elif msg_type == "voice_chunk":
+                # Legacy voice chunk handler (for Wispr/audio streaming)
                 await handle_voice_chunk(websocket, state, msg)
+                
+            elif msg_type == "screenshot_analysis":
+                # New handler for whiteboard screenshot analysis
+                await handle_screenshot_analysis(websocket, state, msg, kg)
                 
             elif msg_type == "interrupt":
                 await handle_user_interrupt(websocket, state, conv_manager)
@@ -147,7 +154,22 @@ async def handle_canvas_update(ws: WebSocket, state: SessionState, msg: dict, kg
             state.ai_can_interrupt and 
             not state.speaking):
             
-            await inject_ai_intervention(ws, state, reason="urgent_issue")
+            # Get immediate tutoring response for urgent issues
+            tutor_response = await cerebras_tutor(context)
+            
+            await ws.send_json({
+                "type": "subtitle", 
+                "text": tutor_response["message"],
+                "mode": "urgent",
+                "ttlMs": 6000
+            })
+            
+            # Send visual annotations if any
+            if tutor_response.get("visual_annotations"):
+                await ws.send_json({
+                    "type": "visual_annotations",
+                    "annotations": tutor_response["visual_annotations"]
+                })
             
         # Update knowledge graph based on visual analysis
         if "concepts" in route_decision:
@@ -194,15 +216,30 @@ async def handle_user_intent(ws: WebSocket, state: SessionState, text: str, kg: 
     context = build_mcp_context(state, user_text=text, kg_state=kg)
     
     try:
-        # Get tutoring plan from Claude
-        plan = await claude_tutor_plan(context)
+        # Get real-time tutoring response from Cerebras (low-latency)
+        tutor_response = await cerebras_tutor(context)
         
-        # Execute the tutoring plan
-        await realize_tutor_plan(ws, state, plan)
+        # Send tutoring response to client
+        await ws.send_json({
+            "type": "subtitle",
+            "text": tutor_response["message"],
+            "mode": tutor_response["feedback_type"],
+            "ttlMs": 8000
+        })
+        
+        # Send visual annotations if any
+        if tutor_response.get("visual_annotations"):
+            await ws.send_json({
+                "type": "visual_annotations",
+                "annotations": tutor_response["visual_annotations"]
+            })
         
         # Update knowledge graph based on interaction
-        if "concepts" in plan:
-            kg.update_from_interaction(plan["concepts"], plan.get("outcome", "success"))
+        if "concepts" in tutor_response:
+            kg.update_from_interaction(tutor_response["concepts"], "success")
+        
+        # Generate comprehensive knowledge graph update in background using Claude
+        asyncio.create_task(update_knowledge_graph_background(context, kg, ws))
             
     except Exception as e:
         print(f"❌ Error handling user intent: {e}")
@@ -220,12 +257,9 @@ async def handle_voice_chunk(ws: WebSocket, state: SessionState, msg: dict):
         "timestamp": time.time()
     })
     
-    # In a real implementation, you'd stream this to Wispr
+    # Process audio chunks (using Web Speech API on frontend)
     # For now, we'll simulate transcription
     try:
-        # Placeholder for Wispr integration
-        # wispr = WisprClient(api_key=os.getenv("WISPR_API_KEY"))
-        # transcript = await wispr.transcribe_chunk(msg["audioBytes"])
         
         # Simulated response
         if len(state.audio_chunks) > 10:  # Process every 10 chunks
@@ -239,6 +273,26 @@ async def handle_voice_chunk(ws: WebSocket, state: SessionState, msg: dict):
             
     except Exception as e:
         print(f"❌ Error processing voice chunk: {e}")
+
+async def handle_voice_input_message(ws: WebSocket, state: SessionState, msg: dict, kg: KnowledgeGraph):
+    """Handle voice input from Web Speech API (already transcribed)"""
+    try:
+        # Process the voice input using our new audio service
+        processed_transcript = await handle_voice_input(ws, state, msg)
+        
+        if processed_transcript and processed_transcript.get("text"):
+            # Treat the transcribed voice input as a user intent
+            text = processed_transcript["text"]
+            await handle_user_intent(ws, state, text, kg)
+            
+    except Exception as e:
+        print(f"❌ Error handling voice input: {e}")
+        await ws.send_json({
+            "type": "subtitle",
+            "text": "Sorry, there was an error processing your voice input.",
+            "mode": "correction",
+            "ttlMs": 3000
+        })
 
 async def handle_user_interrupt(ws: WebSocket, state: SessionState, conv_manager: ConversationManager):
     """Handle user interruption of AI speech"""
@@ -308,6 +362,71 @@ async def reset_session(session_id: str):
         del knowledge_graphs[session_id]
     
     return {"message": f"Session {session_id} reset successfully"}
+
+async def update_knowledge_graph_background(context: Dict[str, Any], kg: KnowledgeGraph, ws: WebSocket):
+    """Update knowledge graph using Claude analysis in background"""
+    try:
+        # Generate comprehensive knowledge graph analysis using Claude
+        kg_analysis = await claude_knowledge_graph(context)
+        
+        # Update the knowledge graph with Claude's analysis
+        for concept in kg_analysis.get("concepts_identified", []):
+            # Add concept if it doesn't exist
+            if concept["id"] not in kg.nodes:
+                kg.add_concept(concept["id"], concept.get("importance", 0.5))
+            
+            # Update mastery based on evidence
+            node = kg.nodes[concept["id"]]
+            node.mastery = concept["mastery_evidence"]
+            node.last_updated = time.time()
+        
+        # Add concept relationships
+        for rel in kg_analysis.get("concept_relationships", []):
+            if rel["prerequisite"] not in kg.nodes:
+                kg.add_concept(rel["prerequisite"], 0.5)
+            if rel["dependent"] not in kg.nodes:
+                kg.add_concept(rel["dependent"], 0.5)
+                
+            kg.add_relationship(
+                rel["prerequisite"],
+                rel["dependent"],
+                rel["strength"],
+                rel.get("relationship_type", "requires")
+            )
+        
+        # Send updated knowledge graph to client
+        await ws.send_json({
+            "type": "knowledge_graph_update",
+            "nodes": [
+                {
+                    "id": node.id,
+                    "name": getattr(node, 'name', node.id),
+                    "mastery": node.mastery,
+                    "importance": node.importance,
+                    "misconceptions": kg_analysis.get("mastery_gaps", [])
+                }
+                for node in kg.nodes.values()
+            ],
+            "edges": [
+                {
+                    "source": edge[0],
+                    "target": edge[1],
+                    "strength": strength,
+                    "type": "prerequisite"
+                }
+                for edge, strength in kg.edges.items()
+            ],
+            "analysis": {
+                "learning_objectives": kg_analysis.get("learning_objectives", []),
+                "recommended_focus": kg_analysis.get("recommended_focus", []),
+                "mastery_gaps": kg_analysis.get("mastery_gaps", [])
+            }
+        })
+        
+        print(f"✅ Knowledge graph updated with {len(kg_analysis.get('concepts_identified', []))} concepts")
+        
+    except Exception as e:
+        print(f"❌ Error updating knowledge graph: {e}")
 
 if __name__ == "__main__":
     import uvicorn

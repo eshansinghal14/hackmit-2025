@@ -1,14 +1,11 @@
 # AI Whiteboard Tutor - Environment Configuration
 # Copy this file to .env and fill in your API keys
 
-# Required API Keys (Get these from the respective services)
+# Required API Keys
 ANTHROPIC_API_KEY=your_anthropic_api_key_here
 CEREBRAS_API_KEY=your_cerebras_api_key_here
-WISPR_API_KEY=your_wispr_api_key_here
-FETCHAI_AGENT_KEY=your_fetchai_agent_key_here
 
-# Optional Advanced Features
-MODAL_TOKEN=your_modal_token_here
+# Optional Advanced Features  
 MCP_ENDPOINT=your_mcp_endpoint_here
 
 # Server Configuration (Optional - defaults shown)
@@ -28,7 +25,9 @@ LOG_LEVEL=INFO
 # 2. Get API keys from:
 #    - Anthropic: https://console.anthropic.com/
 #    - Cerebras: https://cloud.cerebras.ai/
-#    - Wispr: https://wispr.ai/ (if available)
-#    - FetchAI: https://fetch.ai/
 # 3. Replace the placeholder values with your actual API keys
 # 4. Save the file and start the application with: python run.py
+
+# Architecture Notes:
+# - Cerebras: Real-time AI tutoring (low latency inference)
+# - Anthropic Claude: Knowledge graph generation and complex reasoning

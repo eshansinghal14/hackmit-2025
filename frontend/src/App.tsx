@@ -23,7 +23,7 @@ import WelcomeModal from '@/components/WelcomeModal'
 
 // Hooks and services
 import { useWebSocket } from '@/hooks/useWebSocket'
-import { useVoiceRecording } from '@/hooks/useVoiceRecording'
+import { useWebSpeechAPI } from '@/hooks/useWebSpeechAPI'
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 
 // Store
@@ -46,8 +46,26 @@ const App: React.FC = () => {
   } = useAppStore()
   
   // Custom hooks
-  const { connect, disconnect } = useWebSocket()
-  const { isRecording, startRecording, stopRecording, toggleRecording } = useVoiceRecording()
+  const { connect, disconnect, sendMessage } = useWebSocket()
+  
+  // Web Speech API for voice input
+  const { 
+    isListening, 
+    transcript, 
+    isSupported: speechSupported,
+    toggleListening,
+    error: speechError
+  } = useWebSpeechAPI({
+    onFinalTranscript: (finalText: string) => {
+      console.log('🎤 Sending voice input to AI:', finalText)
+      // Send the transcribed voice input to the AI backend
+      sendMessage({
+        type: 'voice_input',
+        text: finalText,
+        timestamp: Date.now()
+      })
+    }
+  })
   
   // Initialize app
   useEffect(() => {
@@ -65,7 +83,11 @@ const App: React.FC = () => {
   
   // Keyboard shortcuts - memoize the shortcuts object to prevent re-renders
   const keyboardShortcuts = React.useMemo(() => ({
-    'Space': () => toggleRecording(),
+    'Space': () => {
+      if (speechSupported) {
+        toggleListening()
+      }
+    },
     'Escape': () => setIsFullscreen(false),
     'F11': () => toggleFullscreen(),
     'KeyS': (e: KeyboardEvent) => {
@@ -80,7 +102,7 @@ const App: React.FC = () => {
         setShowKnowledgeGraph(true)
       }
     }
-  }), [toggleRecording])
+  }), [toggleListening, speechSupported])
   
   useKeyboardShortcuts(keyboardShortcuts)
   
@@ -106,12 +128,17 @@ const App: React.FC = () => {
   
   // Voice recording toggle
   const handleVoiceToggle = () => {
-    if (voiceEnabled) {
+    if (!speechSupported) {
+      console.warn('Speech recognition not supported in this browser')
+      return
+    }
+    
+    if (isListening) {
       setVoiceEnabled(false)
-      stopRecording()
+      toggleListening()
     } else {
       setVoiceEnabled(true)
-      startRecording()
+      toggleListening()
     }
   }
   
@@ -153,19 +180,27 @@ const App: React.FC = () => {
           </Box>
           
           {/* Voice Controls */}
-          <Tooltip title={voiceEnabled ? 'Disable Voice (Space)' : 'Enable Voice (Space)'}>
+          <Tooltip title={
+            !speechSupported ? 'Speech not supported' :
+            isListening ? 'Stop Voice Input (Space)' : 'Start Voice Input (Space)'
+          }>
             <IconButton
               onClick={handleVoiceToggle}
+              disabled={!speechSupported}
               sx={{ 
                 mr: 1,
-                background: voiceEnabled ? 'primary.main' : 'grey.200',
-                color: voiceEnabled ? 'white' : 'grey.600',
+                background: isListening ? 'primary.main' : 'grey.200',
+                color: isListening ? 'white' : 'grey.600',
                 '&:hover': {
-                  background: voiceEnabled ? 'primary.dark' : 'grey.300'
+                  background: isListening ? 'primary.dark' : 'grey.300'
+                },
+                '&:disabled': {
+                  background: 'grey.100',
+                  color: 'grey.400'
                 }
               }}
             >
-              {voiceEnabled && isRecording ? <Mic /> : <MicOff />}
+              {isListening ? <Mic /> : <MicOff />}
             </IconButton>
           </Tooltip>
           
@@ -218,18 +253,48 @@ const App: React.FC = () => {
               
               {/* Floating Voice Button (Mobile/Tablet) */}
               <Fab
-                color={voiceEnabled ? "primary" : "default"}
+                color={isListening ? "primary" : "default"}
                 onClick={handleVoiceToggle}
+                disabled={!speechSupported}
                 sx={{
                   position: 'fixed',
                   bottom: 24,
                   right: 24,
                   display: { xs: 'flex', md: 'none' },
-                  zIndex: 1000
+                  zIndex: 1000,
+                  '&:disabled': {
+                    background: 'grey.300'
+                  }
                 }}
               >
-                {voiceEnabled && isRecording ? <Mic /> : <MicOff />}
+                {isListening ? <Mic /> : <MicOff />}
               </Fab>
+              
+              {/* Live Transcript Indicator */}
+              <AnimatePresence>
+                {isListening && transcript && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    style={{
+                      position: 'fixed',
+                      bottom: 100,
+                      right: 24,
+                      zIndex: 1000,
+                      background: 'rgba(33, 150, 243, 0.9)',
+                      color: 'white',
+                      padding: '8px 16px',
+                      borderRadius: '20px',
+                      fontSize: '14px',
+                      maxWidth: '300px',
+                      backdropFilter: 'blur(10px)'
+                    }}
+                  >
+                    🎤 "{transcript}"
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </>
           } />
           <Route path="*" element={<Navigate to="/" replace />} />

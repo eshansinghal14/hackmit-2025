@@ -5,15 +5,16 @@ Handles environment variables and application settings
 import os
 from typing import List, Dict, Any
 from dataclasses import dataclass
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 @dataclass
 class APIConfig:
     """API service configuration"""
     anthropic_api_key: str
     cerebras_api_key: str
-    wispr_api_key: str
-    fetchai_agent_key: str
-    modal_token: str = ""
     mcp_endpoint: str = ""
 
 @dataclass
@@ -102,9 +103,6 @@ class ApplicationConfig:
         return APIConfig(
             anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", ""),
             cerebras_api_key=os.getenv("CEREBRAS_API_KEY", ""),
-            wispr_api_key=os.getenv("WISPR_API_KEY", ""),
-            fetchai_agent_key=os.getenv("FETCHAI_AGENT_KEY", ""),
-            modal_token=os.getenv("MODAL_TOKEN", ""),
             mcp_endpoint=os.getenv("MCP_ENDPOINT", "")
         )
     
@@ -181,9 +179,7 @@ class ApplicationConfig:
         """Validate required configuration values"""
         required_keys = [
             "ANTHROPIC_API_KEY",
-            "CEREBRAS_API_KEY", 
-            "WISPR_API_KEY",
-            "FETCHAI_AGENT_KEY"
+            "CEREBRAS_API_KEY"
         ]
         
         missing_keys = []
@@ -205,9 +201,7 @@ class ApplicationConfig:
             },
             "api_keys_configured": {
                 "anthropic": bool(self.api.anthropic_api_key),
-                "cerebras": bool(self.api.cerebras_api_key),
-                "wispr": bool(self.api.wispr_api_key),
-                "fetchai": bool(self.api.fetchai_agent_key)
+                "cerebras": bool(self.api.cerebras_api_key)
             },
             "audio": {
                 "sample_rate": self.audio.sample_rate,
@@ -240,9 +234,6 @@ def get_api_keys_status() -> Dict[str, bool]:
     return {
         "anthropic": bool(config.api.anthropic_api_key),
         "cerebras": bool(config.api.cerebras_api_key),
-        "wispr": bool(config.api.wispr_api_key),
-        "fetchai": bool(config.api.fetchai_agent_key),
-        "modal": bool(config.api.modal_token),
         "mcp": bool(config.api.mcp_endpoint)
     }
 
@@ -252,7 +243,7 @@ def print_config_summary():
     print("🔧 Configuration Summary:")
     print(f"   Server: {summary['server']['host']}:{summary['server']['port']}")
     print(f"   Debug: {summary['server']['debug']}")
-    print(f"   API Keys: {sum(summary['api_keys_configured'].values())}/4 configured")
+    print(f"   API Keys: {sum(summary['api_keys_configured'].values())}/2 configured")
     print(f"   Audio: {summary['audio']['sample_rate']}Hz (mock: {summary['audio']['mock_mode']})")
     print(f"   Tutoring: {summary['tutoring']['stall_threshold']}s stall threshold")
     print(f"   Knowledge Graph: {summary['knowledge_graph']['max_concepts']} max concepts")
@@ -266,11 +257,8 @@ def create_env_template():
 # Required API Keys
 ANTHROPIC_API_KEY=your_anthropic_api_key_here
 CEREBRAS_API_KEY=your_cerebras_api_key_here
-WISPR_API_KEY=your_wispr_api_key_here
-FETCHAI_AGENT_KEY=your_fetchai_agent_key_here
 
 # Optional
-MODAL_TOKEN=your_modal_token_here
 MCP_ENDPOINT=your_mcp_endpoint_here
 
 # Server Settings (optional)
