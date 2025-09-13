@@ -129,6 +129,14 @@ export const useWebSpeechAPI = (
         
         console.log('🎤 Final transcript:', cleanFinalTranscript)
         onFinalTranscript?.(cleanFinalTranscript)
+        
+        // Trigger screenshot capture after final transcript (speech ended)
+        if (typeof window !== 'undefined' && (window as any).onSpeechEnd) {
+          console.log('🎤📸 Triggering screenshot capture after final transcript')
+          setTimeout(() => {
+            ;(window as any).onSpeechEnd()
+          }, 500) // Small delay to ensure speech has ended
+        }
       }
     }
 
@@ -142,6 +150,17 @@ export const useWebSpeechAPI = (
     recognition.current.onend = () => {
       console.log('🎤 Speech recognition ended')
       setIsListening(false)
+      
+      // Debug: Check if callback exists
+      console.log('🎤📸 Checking for onSpeechEnd callback:', typeof (window as any).onSpeechEnd)
+      
+      // Trigger screenshot capture when speech ends
+      if (typeof window !== 'undefined' && (window as any).onSpeechEnd) {
+        console.log('🎤📸 Triggering screenshot capture after speech ended')
+        ;(window as any).onSpeechEnd()
+      } else {
+        console.warn('🎤📸 onSpeechEnd callback not found on window object')
+      }
     }
 
     return () => {

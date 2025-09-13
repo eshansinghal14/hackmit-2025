@@ -43,8 +43,15 @@ export const useVoiceRecording = (
   const [audioLevel, setAudioLevel] = useState(0)
   const [error, setError] = useState<string | null>(null)
   const [isSupported] = useState(() => {
-    return !!(navigator?.mediaDevices?.getUserMedia && 
-             (window.AudioContext || (window as any).webkitAudioContext))
+    try {
+      return !!(
+        navigator?.mediaDevices?.getUserMedia && 
+        (typeof window !== 'undefined') &&
+        (window.AudioContext || (window as any).webkitAudioContext)
+      )
+    } catch {
+      return false
+    }
   })
   
   // Refs
@@ -58,8 +65,8 @@ export const useVoiceRecording = (
   
   // Store actions
   const { voiceEnabled } = useAppStore()
-  const { updateAudioLevel, addTranscript } = useVoiceActions()
-  const { sendVoiceChunk, sendUserIntent } = useVoiceWebSocket()
+  const { updateAudioLevel } = useVoiceActions()
+  const { sendVoiceChunk } = useVoiceWebSocket()
   
   // Audio level monitoring
   const monitorAudioLevel = useCallback(() => {
@@ -85,6 +92,11 @@ export const useVoiceRecording = (
     // Voice Activity Detection (simple threshold-based)
     const isVoiceDetected = level > finalConfig.vadThreshold
     
+    // Call external voice activity handler if provided
+    if (typeof window !== 'undefined' && (window as any).handleVoiceActivity) {
+      (window as any).handleVoiceActivity(isVoiceDetected, level)
+    }
+    
     if (isVoiceDetected) {
       // Clear silence timeout if voice is detected
       if (vadTimeoutRef.current) {
@@ -97,6 +109,10 @@ export const useVoiceRecording = (
         vadTimeoutRef.current = setTimeout(() => {
           // Handle silence (could trigger automatic pause or processing)
           console.log('🔇 Voice activity ended')
+          // Trigger speech end callback if provided
+          if (typeof window !== 'undefined' && (window as any).onSpeechEnd) {
+            (window as any).onSpeechEnd()
+          }
         }, finalConfig.silenceDuration)
       }
     }
