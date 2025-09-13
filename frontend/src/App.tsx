@@ -11,7 +11,6 @@ import {
   FullscreenExit
 } from '@mui/icons-material'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Tldraw } from 'tldraw'
 import 'tldraw/tldraw.css'
 
 // Components
