@@ -239,7 +239,4 @@ def extract_splines(latex_text, pixel_width):
     ordered_splines = order_splines_left_to_right(splines)
     return ordered_splines
 
-if __name__ == '__main__':
-    # Generate LaTeX image and extract splines
-    latex_text = r'\sum_{i=1}^n i = \frac{n(n+1)}{2}'
     
