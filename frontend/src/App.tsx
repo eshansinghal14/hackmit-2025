@@ -18,7 +18,6 @@ import TldrawWhiteboard from '@/components/TldrawWhiteboard'
 import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel'
 import SettingsPanel from '@/components/SettingsPanel'
 import SubtitleDisplay from '@/components/SubtitleDisplay'
-import ConnectionStatus from '@/components/ConnectionStatus'
 import WelcomeModal from '@/components/WelcomeModal'
 
 // Hooks and services
@@ -175,8 +174,7 @@ const App: React.FC = () => {
               AI Whiteboard Tutor
             </Typography>
             
-            {/* Connection Status */}
-            <ConnectionStatus />
+            {/* Connection Status removed */}
           </Box>
           
           {/* Voice Controls */}
