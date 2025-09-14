@@ -77,7 +77,7 @@ Respond with a JSON object containing:
     "outcome": "success|error|neutral|progress",
     "annotations": [
         {
-            "type": "highlight|circle|arrow|underline|text|math",
+            "type": "circle|text",
             "position": {"x": 100, "y": 200},
             "content": "annotation content",
             "color": "#color"

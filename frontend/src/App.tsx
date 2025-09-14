@@ -5,6 +5,7 @@ import TopicSearch from './components/TopicSearch'
 import LoadingPage from './components/LoadingPage'
 import DiagnosticTest from './components/DiagnosticTest'
 import KnowledgeGraph from './components/KnowledgeGraph'
+import MicrophoneWhiteboard from './components/MicrophoneWhiteboard'
 
 type AppState = 'search' | 'loading' | 'diagnostic' | 'graph' | 'whiteboard'
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>('search')
   const [selectedTopic, setSelectedTopic] = useState('')
   const [graphKey, setGraphKey] = useState(0)
+  const [showSettings, setShowSettings] = useState(false)
 
   const handleTopicSearch = (topic: string) => {
     setSelectedTopic(topic)
@@ -156,48 +158,7 @@ const App: React.FC = () => {
       )}
       
       {appState === 'whiteboard' && (
-        <>
-          <div style={{ height: '100vh' }}>
-            <Tldraw 
-              onMount={(editor) => {
-                editorRef.current = editor
-                console.log('🎨 tldraw editor ready for Python commands')
-              }}
-            />
-          </div>
-          
-          <div style={{
-            position: 'absolute',
-            bottom: '10px',
-            right: '10px',
-            background: 'rgba(0, 0, 0, 0.8)',
-            color: 'white',
-            padding: '8px 12px',
-            borderRadius: '4px',
-            fontSize: '12px',
-            fontFamily: 'monospace'
-          }}>
-            Python API: http://localhost:5000
-          </div>
-          <button
-            onClick={() => setAppState('search')}
-            style={{
-              position: 'absolute',
-              top: '10px',
-              left: '10px',
-              background: 'rgba(0, 0, 0, 0.8)',
-              color: 'white',
-              border: 'none',
-              padding: '8px 12px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '12px',
-              zIndex: 1000
-            }}
-          >
-            ← Back to Search
-          </button>
-        </>
+        <MicrophoneWhiteboard onBack={() => setAppState('search')} />
       )}
     </div>
   )
