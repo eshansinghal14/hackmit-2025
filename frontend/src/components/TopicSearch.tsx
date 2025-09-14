@@ -9,18 +9,88 @@ interface TopicSearchProps {
 
 const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
   const [topic, setTopic] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const [roadmapData, setRoadmapData] = useState(null)
+  const [error, setError] = useState('')
+
+  const generateRoadmap = async (searchTopic: string) => {
+    if (!searchTopic.trim() || isLoading) return
+    
+    // Immediately navigate to loading page
+    onSearch(searchTopic.trim())
+    
+    // Start the API call in the background
+    setIsLoading(true)
+    setError('')
+    
+    try {
+      const response = await fetch('http://localhost:5001/api/generate-roadmap', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ topic: searchTopic.trim() })
+      })
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const data = await response.json()
+      
+      if (data.status === 'success') {
+        // Save roadmap data to localStorage for the LoadingPage to access
+        localStorage.setItem('currentRoadmap', JSON.stringify({
+          topic: searchTopic.trim(),
+          roadmap: data.roadmap,
+          timestamp: new Date().toISOString()
+        }))
+        setRoadmapData(data.roadmap)
+      } else {
+        // Save error to localStorage
+        localStorage.setItem('roadmapError', data.error || 'Failed to generate roadmap')
+        setError(data.error || 'Failed to generate roadmap')
+      }
+    } catch (err) {
+      console.error('Error generating roadmap:', err)
+      const errorMessage = 'Failed to connect to the server. Please make sure the backend is running.'
+      localStorage.setItem('roadmapError', errorMessage)
+      setError(errorMessage)
+    } finally {
+      setIsLoading(false)
+      // Signal that the API call is complete
+      localStorage.setItem('roadmapLoading', 'false')
+    }
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (topic.trim()) {
-      onSearch(topic.trim())
+      // Clear any previous roadmap data
+      localStorage.removeItem('currentRoadmap')
+      localStorage.removeItem('roadmapError')
+      localStorage.setItem('roadmapLoading', 'true')
+      generateRoadmap(topic)
     }
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && topic.trim()) {
-      onSearch(topic.trim())
+      // Clear any previous roadmap data
+      localStorage.removeItem('currentRoadmap')
+      localStorage.removeItem('roadmapError')
+      localStorage.setItem('roadmapLoading', 'true')
+      generateRoadmap(topic)
     }
+  }
+
+  const handleSuggestionClick = (suggestion: string) => {
+    setTopic(suggestion)
+    // Clear any previous roadmap data
+    localStorage.removeItem('currentRoadmap')
+    localStorage.removeItem('roadmapError')
+    localStorage.setItem('roadmapLoading', 'true')
+    generateRoadmap(suggestion)
   }
 
   return (
@@ -101,7 +171,18 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
                 },
                 '&.Mui-focused': {
                   borderColor: '#10a37f',
-                  boxShadow: '0 0 0 3px rgba(16, 163, 127, 0.1)'
+                  boxShadow: 'none',
+                  outline: 'none'
+                },
+                '& .MuiOutlinedInput-notchedOutline': {
+                  border: '1px solid #d1d5db'
+                },
+                '&:hover .MuiOutlinedInput-notchedOutline': {
+                  borderColor: '#10a37f'
+                },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                  borderColor: '#10a37f',
+                  borderWidth: '1px'
                 }
               }
             }}
@@ -111,7 +192,7 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
                   <Button
                     type="submit"
                     variant="contained"
-                    disabled={!topic.trim()}
+                    disabled={!topic.trim() || isLoading}
                     sx={{
                       minWidth: 'auto',
                       borderRadius: 1.5,
@@ -127,13 +208,66 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
                       }
                     }}
                   >
-                    <Send sx={{ fontSize: 18 }} />
+                    {isLoading ? (
+                      <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                        <Box
+                          sx={{
+                            width: 16,
+                            height: 16,
+                            border: '2px solid #ffffff',
+                            borderTop: '2px solid transparent',
+                            borderRadius: '50%',
+                            animation: 'spin 1s linear infinite',
+                            '@keyframes spin': {
+                              '0%': { transform: 'rotate(0deg)' },
+                              '100%': { transform: 'rotate(360deg)' }
+                            }
+                          }}
+                        />
+                      </Box>
+                    ) : (
+                      <Send sx={{ fontSize: 18 }} />
+                    )}
                   </Button>
                 </InputAdornment>
               )
             }}
           />
         </Box>
+
+        {/* Error Display */}
+        {error && (
+          <Box sx={{ mb: 4, textAlign: 'center' }}>
+            <Typography variant="body2" sx={{ 
+              color: '#dc2626',
+              backgroundColor: '#fef2f2',
+              border: '1px solid #fecaca',
+              borderRadius: 2,
+              px: 3,
+              py: 2,
+              fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+            }}>
+              {error}
+            </Typography>
+          </Box>
+        )}
+
+        {/* Success Display */}
+        {roadmapData && (
+          <Box sx={{ mb: 4, textAlign: 'center' }}>
+            <Typography variant="body2" sx={{ 
+              color: '#059669',
+              backgroundColor: '#f0fdf4',
+              border: '1px solid #bbf7d0',
+              borderRadius: 2,
+              px: 3,
+              py: 2,
+              fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+            }}>
+              ✅ Roadmap generated successfully! Check the console for details.
+            </Typography>
+          </Box>
+        )}
 
         {/* Suggestions */}
         <Box sx={{ textAlign: 'center', mb: 6 }}>
@@ -167,7 +301,7 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
               <Button
                 key={suggestion}
                 variant="outlined"
-                onClick={() => onSearch(suggestion)}
+                onClick={() => handleSuggestionClick(suggestion)}
                 sx={{
                   borderRadius: 20,
                   textTransform: 'none',
