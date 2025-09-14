@@ -279,11 +279,11 @@ Output ONLY a valid JSON array with exactly 2 elements in this format:
 
 [
   {{
-    "1": {{"name": "Lesson Name 1", "weight": 1, "prerequisites": [2, 3]}},
-    "2": {{"name": "Lesson Name 2", "weight": 1, "prerequisites": [4]}},
-    "3": {{"name": "Lesson Name 3", "weight": 1, "prerequisites": [4, 5]}},
-    "4": {{"name": "Lesson Name 4", "weight": 1, "prerequisites": []}},
-    "5": {{"name": "Lesson Name 5", "weight": 1, "prerequisites": []}}
+    "1": {{"name": "Lesson Name 1", "weight": 0, "prerequisites": [2, 3]}},
+    "2": {{"name": "Lesson Name 2", "weight": 0, "prerequisites": [4]}},
+    "3": {{"name": "Lesson Name 3", "weight": 0, "prerequisites": [4, 5]}},
+    "4": {{"name": "Lesson Name 4", "weight": 0, "prerequisites": []}},
+    "5": {{"name": "Lesson Name 5", "weight": 0, "prerequisites": []}}
   }},
   [
     "Do you know what a limit is in calculus? (Yes/No)",
@@ -295,7 +295,7 @@ Output ONLY a valid JSON array with exactly 2 elements in this format:
 ]
 
 CRITICAL REQUIREMENTS:
-- First dict: Node numbers (as strings) mapped to objects with "name", "weight", and "prerequisites" array (weight always 1)
+- First dict: Node numbers (as strings) mapped to objects with "name", "weight", and "prerequisites" array (weight always 0)
 - Second element: Array of exactly 5 diagnostic questions
 - Graph must be connected (every node reachable from node 1)
 - Focus on TEACHABLE CONCEPTS only
