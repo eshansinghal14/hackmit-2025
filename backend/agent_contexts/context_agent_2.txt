@@ -1,0 +1,111 @@
+You are Agent 2 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 2 Research Context
+
+## Assignment
+You are Agent 2 of 5 specialized research agents analyzing: "Machine Learning Basics"
+
+## Your Data Subset
+- Agent ID: 2/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 3 to 4
+
+## Your Research Sources
+
+### Source 3: What is Machine Learning?
+
+**Content:**
+- [ML - Home](https://www.tutorialspoint.com/machine_learning/index.htm)
+- [ML - Introduction](https://www.tutorialspoint.com/machine_learning/machine_learning_introduction.htm)
+- [ML - Getting Started](https://www.tutorialspoint.com/machine_learning/machine_learning_getting_started.htm)
+- [ML - Basic Concepts](https://www.tutorialspoint.com/machine_learning/machine_learning_basics.htm)
+- [ML - Ecosystem](https://www.tutorialspoint.com/machine_learning/machine_learning_ecosystem.htm)
+- [ML - Python Libraries](https://www.tutorialspoint.com/machine_learning/machine_learning_python_libraries.htm)
+- [ML - Applications](https://www.tutorialspoint.com/machine_learning/machine_learning_applications.htm)
+- [ML - Life Cycle](https://www.tutorialspoint.com/machine_learning/machine_learning_life_cycle.htm)
+- [ML - Required Skills](https://www.tutorialspoint.com/machine_learning/machine_learning_skills.htm)
+- [ML - Implementation](https://www.tutorialspoint.com/machine_learning/machine_learning_implementing.htm)
+- [ML - Challenges & Common Issues](https://www.tutorialspoint.com/machine_learning/machine_learning_challenges_common_issues.htm)
+- [ML - Limitations](https://www.tutorialspoint.com/machine_learning/machine_learning_limitations.htm)
+- [ML - Reallife Examples](https://www.tutorialspoint.com/machine_learning/machine_learning_real_life_examples.htm)
+- [ML - Data Structure](https://www.tutorialspoint.com/machine_learning/machine_learning_data_structure.htm)
+- [ML - Mathematics](https://www.tutorialspoint.com/machine_learning/machine_learning_mathematics.htm)
+- [ML - Artificial Intelligence](https://www.tutorialspoint.com/machine_learning/machine_learning_traditional_ai.htm)
+- [ML - Neural Networks](https://www.tutorialspoint.com/machine_learning/machine_learning_artificial_neural_networks.htm)
+- [ML - Deep Learning](https://www.tutorialspoint.com/machine_learning/deep_machine_learning.htm)
+- [ML - Getting Datasets](https://www.tutorialspoint.com/machine_learning/machine_learning_getting_datasets.htm)
+- [ML - Categorical Data](https://www.tutorialspoint.com/machine_learning/machine_learning_categorical_data.htm)
+- [ML - Data Loading](https://www.tutorialspoint.com/machine_learning/machine_learning_data_loading.htm)
+- [ML - Data Understanding](https://www.tutorialspoint.com/machine_learning/machine_learning_data_understanding.htm)
+- [ML - Data Preparation](https://www.tutorialspoint.com/machine_learning/machine_learning_preparing_data.htm)
+- [ML - Models](https://www.tutorialspoint.com/machine_learning/machine_learning_models.htm)
+- [ML - Supervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_supervised.htm)
+- [ML - Unsupervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_unsupervised.htm)
+- [ML - Semi-supervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_semi_supervised_learning.htm)
+- [ML - Reinforcement Learning](https://www.tutorialspoint.com/machine_learnin... [Content truncated for context window]
+
+
+---
+
+### Source 4: Python Machine Learning - W3Schools
+
+**Content:**
+[Menu](javascript:void(0))
+
+Search field
+
+_×_
+
+[__](javascript:void(0);)
+
+Sign In
+
+[★+1](https://profile.w3schools.com/log-in) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://www.w3schools.com/spaces/index.php) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://spaces.w3schools.com/space/)
+
+❮
+
+     ❯
+
+[HTML](https://www.w3schools.com/html/default.asp) [CSS](https://www.w3schools.com/css/default.asp) [JAVASCRIPT](https://www.w3schools.com/js/default.asp) [SQL](https://www.w3schools.com/sql/default.asp) [PYTHON](https://www.w3schools.com/python/default.asp) [JAVA](https://www.w3schools.com/java/default.asp) [PHP](https://www.w3schools.com/php/default.asp) [HOW TO](https://www.w3schools.com/howto/default.asp) [W3.CSS](https://www.w3schools.com/w3css/default.asp) [C](https://www.w3schools.com/c/index.php) [C++](https://www.w3schools.com/cpp/default.asp) [C#](https://www.w3schools.com/cs/index.php) [BOOTSTRAP](https://www.w3schools.com/bootstrap/bootstrap_ver.asp) [REACT](https://www.w3schools.com/react/default.asp) [MYSQL](https://www.w3schools.com/mysql/default.asp) [JQUERY](https://www.w3schools.com/jquery/default.asp) [EXCEL](https://www.w3schools.com/excel/index.php) [XML](https://www.w3schools.com/xml/default.asp) [DJANGO](https://www.w3schools.com/django/index.php) [NUMPY](https://www.w3schools.com/python/numpy/default.asp) [PANDAS](https://www.w3schools.com/python/pandas/default.asp) [NODEJS](https://www.w3schools.com/nodejs/default.asp) [DSA](https://www.w3schools.com/dsa/index.php) [TYPESCRIPT](https://www.w3schools.com/typescript/index.php) [ANGULAR](https://www.w3schools.com/angular/default.asp) [GIT](https://www.w3schools.com/git/default.asp) [POSTGRESQL](https://www.w3schools.com/postgresql/index.php) [MONGODB](https://www.w3schools.com/mongodb/index.php) [ASP](https://www.w3schools.com/asp/default.asp) [AI](https://www.w3schools.com/ai/default.asp) [R](https://www.w3schools.com/r/default.asp) [GO](https://www.w3schools.com/go/index.php) [KOTLIN](https://www.w3schools.com/kotlin/index.php) [SASS](https://www.w3schools.com/sass/default.php) [VUE](https://www.w3schools.com/vue/index.php) [GEN AI](https://www.w3schools.com/gen_ai/index.php) [SCIPY](https://www.w3schools.com/python/scipy/index.php) [CYBERSECURITY](https://www.w3schools.com/cybersecurity/index.php) [DATA SCIENCE](https://www.w3schools.com/datascience/default.asp) [INTRO TO PROGRAMMING](https://www.w3schools.com/programming/index.php) [BASH](https://www.w3schools.com/bash/index.php) [RUST](https://www.w3schools.com/rust/index.php)
+
+## Python Tutorial
+
+[Python HOME](https://www.w3schools.com/default.asp) [Python Intro](https://www.w3schools.com/python_intro.asp) [Python Get Started](https://... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 2:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 2 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 2 Knowledge Nodes for: Machine Learning Basics**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -1,15 +1,15 @@
-**Agent 2 Knowledge Nodes for: Linear Algebra**
+**Agent 2 Knowledge Nodes for: Machine Learning Basics**
 
-1. **Gaussian Elimination & System Solving** – Core method for solving linear systems; emphasized in MIT’s 18.06 lectures and reinforced through Hefferon’s extensive problem sets and solution manual.  
+1. **Machine Learning Life Cycle** – End‑to‑end workflow covering problem definition, data collection, data preparation, model selection, training, evaluation, deployment, and monitoring.  
 
-2. **Vector Spaces, Subspaces & Linear Maps** – Formal definition of vector spaces, basis, dimension, and linear transformations; presented with geometric intuition in Strang’s videos and developed rigorously in Hefferon’s textbook.  
+2. **Supervised vs. Unsupervised Learning Paradigms** – Core categories of algorithms (e.g., classification & regression vs. clustering & dimensionality reduction) with typical use‑cases and evaluation approaches.  
 
-3. **Determinants & Matrix Properties** – Computation techniques, multilinearity, and the role of determinants in invertibility and volume scaling; covered in both the MIT syllabus and Hefferon’s chapter on determinants.  
+3. **Data Preparation & Feature Engineering** – Techniques for loading data, handling missing values, encoding categorical variables, scaling/normalizing features, and splitting datasets into training/validation/test sets.  
 
-4. **Eigenvalues, Eigenvectors & Diagonalization** – Theory of spectral decomposition, similarity transformations, and applications to stability and dynamics; highlighted in MIT’s course topics and reinforced with proofs and exercises in Hefferon’s text.  
+4. **Python Machine‑Learning Toolchain** – Essential libraries and their roles: **NumPy** for numerical operations, **Pandas** for data manipulation, **Matplotlib/Seaborn** for visualization, **Scikit‑learn** for classic algorithms, and **TensorFlow/Keras** for deep‑learning models.  
 
-5. **Positive‑Definite Matrices & Applications** – Characterization, Cholesky factorization, and use in optimization and statistics; included as a distinct topic in Strang’s curriculum and supported by Hefferon’s applied supplemental sections.  
+5. **Model Implementation & Evaluation with Scikit‑learn** – Practical steps to instantiate models, fit on training data, make predictions, and assess performance using metrics such as accuracy, precision, recall, F1‑score, ROC‑AUC, and confusion matrices.  
 
 **Source Summary:**
-- Sources Analyzed: 2 (MIT OpenCourseWare Linear Algebra – Spring 2010; Jim Hefferon’s Free Linear Algebra Textbook)
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 2  
+- Agent Coverage: 2 of 8 total sources  

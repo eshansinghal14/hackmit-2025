@@ -1,13 +1,11 @@
-**Agent 1 Knowledge Nodes for: Linear Algebra**
+**Agent 1 Knowledge Nodes for: Machine Learning Basics**
 
-1. **Linear Equations and Vector Spaces**
-2. **Linear Maps and Matrix Representations**
-3. **Applications in Geometry and Functional Analysis**
-4. **Modeling Natural Phenomena and First-Order Approximations**
-5. **Foundational Concepts in Mathematics and Engineering**
+1. **Supervised Learning**: A type of machine learning where models are trained on labeled data to predict or classify new, unseen data. This paradigm involves feeding input data into a machine learning algorithm, which adjusts its weights until the model has been fitted appropriately, and is commonly used in applications such as email spam filters, face recognition tech, and Internet ad placement.
+2. **Unsupervised Learning**: A machine learning method that helps find unknown patterns in data by combing through unlabeled data to discover patterns that ultimately solve association or clustering problems. Unsupervised learning algorithms are fed large amounts of data and equipped with the tools to understand the data, then learn to cluster or organize that data in a way that a human could understand.
+3. **Reinforcement Learning**: A type of machine learning that involves training models to make a series of decisions to maximize rewards, ideal for decision-making tasks. This method learns through trial and error, making it suitable for applications where the goal is to achieve a specific outcome through a sequence of actions.
+4. **Machine Learning Paradigms**: Machine learning is mainly divided into three core types: Supervised, Unsupervised, and Reinforcement Learning, with additional types including Semi-Supervised and Self-Supervised Learning. Understanding these paradigms is crucial for applying machine learning effectively in various real-world applications.
+5. **Pattern Recognition**: Machine learning uses statistics to find patterns in massive amounts of data, including numbers, words, images, clicks, and anything else that can be stored digitally. This ability to recognize patterns is fundamental to machine learning and powers many services we rely on today, such as recommendation systems, search engines, and voice assistants.
 
 **Source Summary:**
 - Sources Analyzed: 2
 - Agent Coverage: 2 of 8 total sources
-
-Note: The Khan Academy source was not usable due to the error message, so the analysis is based solely on the Wikipedia source.

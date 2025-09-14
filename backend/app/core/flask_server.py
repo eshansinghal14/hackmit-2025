@@ -63,34 +63,12 @@ def clear_canvas():
     print("🧹 Clearing canvas")
     return jsonify({'status': 'cleared'})
 
-@app.route('/api/draw-circle', methods=['POST'])
-def draw_circle():
-    """API endpoint to draw a circle in tldraw"""
-    data = request.json
-    
-    # Extract circle data from request
-    center = data.get('center', {'x': 100, 'y': 100})
-    radius = data.get('radius', 50)
-    
-    # Create tldraw circle shape command
-    command = {
-        'type': 'create_circle',
-        'center': center,
-        'radius': radius
-    }
-    
-    # Add command to queue
-    drawing_commands.append(command)
-    print(f"⭕ Drawing circle at ({center['x']}, {center['y']}) with radius {radius}")
-        
-    return jsonify({'status': 'success', 'command': command})
-
 @app.route('/api/nodes', methods=['GET'])
 def get_nodes():
     """Get the current node data with weights"""
     try:
         json_file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
-                                     'node_outputs/final_consolidated_nodes_basic_calculus.json')
+                                     'node_outputs/final_consolidated_roadmap.json')
         
         with open(json_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -107,7 +85,7 @@ def analyze_diagnostic_response():
         data = request.json
         question = data.get("question", "")
         answer = data.get("answer", False)
-        json_file_path = data.get("json_file_path", "node_outputs/final_consolidated_nodes_basic_calculus.json")
+        json_file_path = data.get("json_file_path", "node_outputs/final_consolidated_roadmap.json")
         
         # Convert relative path to absolute path from backend directory
         if not os.path.isabs(json_file_path):
@@ -149,27 +127,6 @@ def analyze_diagnostic_response():
     except Exception as e:
         print(f"❌ Error in diagnostic analysis: {e}")
         return jsonify({"success": False, "error": str(e)})
-
-@app.route('/api/process-annotations', methods=['POST'])
-def process_annotations():
-    """Process Claude annotations and execute them"""
-    try:
-        data = request.json
-        
-        # Import the function here to avoid circular imports
-        sys.path.append(os.path.dirname(__file__))
-        from annotations import process_claude_annotations
-        
-        success = process_claude_annotations(data)
-        
-        return jsonify({
-            'status': 'success' if success else 'partial_failure',
-            'success': success
-        })
-        
-    except Exception as e:
-        print(f"❌ Error processing annotations: {e}")
-        return jsonify({'status': 'error', 'error': str(e)}), 500
 @app.route('/api/generate-roadmap', methods=['POST'])
 def generate_roadmap():
     """Generate a complete learning roadmap using Cerebras multi-agent system"""

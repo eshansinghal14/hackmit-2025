@@ -1,0 +1,124 @@
+You are Agent 4 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 4 Research Context
+
+## Assignment
+You are Agent 4 of 5 specialized research agents analyzing: "Machine Learning Basics"
+
+## Your Data Subset
+- Agent ID: 4/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 7 to 8
+
+## Your Research Sources
+
+### Source 7: Machine Learning Tutorial for Beginners: What is, Basics of ML
+
+**Content:**
+[Skip to content](https://www.guru99.com/machine-learning-tutorial.html#main)
+
+## What is Machine Learning?
+
+**Machine Learning** is a system of computer algorithms that can learn from example through self-improvement without being explicitly coded by a programmer. Machine learning is a part of artificial Intelligence which combines data with statistical tools to predict an output which can be used to make actionable insights.
+
+The breakthrough comes with the idea that a machine can singularly learn from the data (i.e., example) to produce accurate results. Machine learning is closely related to data mining and Bayesian predictive modeling. The machine receives data as input and uses an algorithm to formulate answers.
+
+A typical machine learning tasks are to provide a recommendation. For those who have a Netflix account, all recommendations of movies or series are based on the user’s historical data. Tech companies are using [unsupervised learning](https://www.guru99.com/unsupervised-machine-learning.html) to improve the user experience with personalizing recommendation.
+
+Machine learning is also used for a variety of tasks like fraud detection, predictive maintenance, portfolio optimization, automatize task and so on.
+
+## Machine Learning vs. Traditional Programming
+
+Traditional programming differs significantly from machine learning. In traditional programming, a programmer code all the rules in consultation with an expert in the industry for which software is being developed. Each rule is based on a logical foundation; the machine will execute an output following the logical statement. When the system grows complex, more rules need to be written. It can quickly become unsustainable to maintain.
+
+[![Traditional Programming](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20883%20359'%3E%3C/svg%3E)](https://www.guru99.com/images/tensorflow/082918_1102_WhatisMachi1.png) Traditional Programming
+
+Machine learning is supposed to overcome this issue. The machine learns how the input and output data are correlated and it writes a rule. The programmers do not need to write new rules each time there is new data. The algorithms adapt in response to new data and experiences to improve efficacy over time.
+
+[![Machine Learning](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20868%20235'%3E%3C/svg%3E)](https://www.guru99.com/images/tensorflow/082918_1102_WhatisMachi2.png)
+
+Machine Learning
+
+## How does Machine Learning Work?
+
+Now in this Machine learning basics for beginners tutorial, we will learn how Machine Learning (ML) works:
+
+Machine learning is the brain where all the learning takes place. The way the machine learns is similar to the human being. Humans learn from experience. The more we know, the more easily we can predict. By analogy, when we face an unknown situation, the likelihood of success is lower than the known situation. Machines are trained the same. To make an accurate predic... [Content truncated for context window]
+
+
+---
+
+### Source 8: Quick Intro to Machine Learning for Beginners
+
+**Content:**
+[Skip to content](https://huspi.com/huspi.com#main)
+
+Machine learning (ML), Artificial Intelligence (AI), and Data Science have been the top trends for the last few years. However, what does it all mean?
+
+In this article, we’ll focus on ML technology, its algorithms, how it can help various industries, and what are the successful business examples of machine learning implementation.
+
+```
+If you would like to read more about Pattern Recognition, which is a part of Machine Learning technology, we have a separate detailed article about it with graphs, schemes, and useful information in plain English (or, as plain English as possible.)
+```
+
+## What Is Machine Learning Algorithms: Definition of Machine Learning
+
+Before we define machine learning (ML) itself, let’s take a look at the general scheme of things. Machine Learning (ML) is a part of Artificial Intelligence (AI), which is a part of Computer and Data Science. Check out this helpful graph below:
+
+Machine Learning, AI, and Computer Science Dependencies \[ [Source](https://www.oliverwyman.com/our-expertise/insights/2018/dec/risk-journal-vol-8/rethinking-tactics/the-risk-of-machine-learning-bias-and-how-to-prevent-it.html)\]
+
+**What’s an algorithm?** An algorithm is a sequence of instructions one must perform to solve a problem. For example, the flowchart below is a simple example of a straightforward algorithm.
+
+Introduction to Flow Charts \[Source: [www.phdcomics.com](http://www.phdcomics.com)\]
+
+**Machine Learning is a system of automated data processing algorithms that help to make decision-making more natural and enhance performance based on the results.** The “learning” implies that the algorithm can glean new information and insights without being explicitly programmed. There are several models of machine learning:
+
+- **Supervised ML** (the outputs are labeled, and the inputs are mapped to corresponding outputs)
+- **Unsupervised ML** (the inputs are unlabeled, and the algorithms have to find patterns)
+- **Reinforcement ML** (similar to supervised ML, but in this case, instead of a labeled output, there are rewards and the algorithm’s goal is to maximize rewards)
+
+Artificial intelligence (AI) is a part of Computer Science that focuses on systems that can solve problems and perform tasks that require human (or human-like) intelligence. What does machine learning do in this process? It learns, just like a human(like) brain, acquiring new information.
+
+Despite being a top trend in the last decade, machine learning as a term dates [back to 1952](https://www.dataversity.net/a-brief-history-of-machine-learning/), when an IBM expert, Arthur Samuel, wrote a program for playing checkers. For a long time, it was just a mathematical thing. However, when ML started to become more hands-on thanks to advances in computers, numerous industries started looking for ways to apply this empowering technology for their business purposes.
+
+## How Do Machine Learning Algorithms Work: Machine Learning Principles
+
+M... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 4:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 4 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 4 Knowledge Nodes for: Machine Learning Basics**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

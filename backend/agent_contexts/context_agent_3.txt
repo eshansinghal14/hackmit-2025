@@ -1,0 +1,178 @@
+You are Agent 3 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 3 Research Context
+
+## Assignment
+You are Agent 3 of 5 specialized research agents analyzing: "Machine Learning Basics"
+
+## Your Data Subset
+- Agent ID: 3/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 5 to 6
+
+## Your Research Sources
+
+### Source 5: Machine Learning Crash Course - Google for Developers
+
+**Content:**
+[Skip to main content](https://developers.google.com/developers.google.com#main-content)
+
+- [**Machine Learning**](https://developers.google.com/machine-learning)
+
+`/`
+
+- English
+- Deutsch
+- Español
+- Español – América Latina
+- Français
+- Indonesia
+- Italiano
+- Polski
+- Português – Brasil
+- Tiếng Việt
+- Türkçe
+- Русский
+- Українська
+- עברית
+- العربيّة
+- فارسی
+- हिंदी
+- বাংলা
+- ภาษาไทย
+- 中文 – 简体
+- 中文 – 繁體
+- 日本語
+- 한국어
+
+Sign in
+
+- [Home](https://developers.google.com/)
+- [Products](https://developers.google.com/products)
+- [Machine Learning](https://developers.google.com/machine-learning)
+- [ML Concepts](https://developers.google.com/machine-learning/crash-course)
+
+Send feedback
+
+Stay organized with collections
+Save and categorize content based on your preferences.
+
+### What's new in Machine Learning Crash Course?
+
+Since 2018, millions of people worldwide have relied on Machine Learning Crash Course to learn how machine learning works, and how machine learning can work for them. We're delighted to announce the launch of a refreshed version of MLCC that covers recent advances in AI, with an increased focus on interactive learning. Watch this video to learn more about the new-and-improved MLCC.
+
+### [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression)
+
+An introduction to linear regression, covering linear models, loss, gradient descent, and hyperparameter tuning.
+
+### [Logistic Regression](https://developers.google.com/machine-learning/crash-course/logistic-regression)
+
+An introduction to logistic regression, where ML models are designed to predict the probability of a given outcome.
+
+### [Classification](https://developers.google.com/machine-learning/crash-course/classification)
+
+An introduction to binary classification models, covering thresholding, confusion matrices, and metrics like accuracy, precision, recall, and AUC.
+
+### [Working with Numerical Data](https://developers.google.com/machine-learning/crash-course/numerical-data)
+
+Learn how to analyze and transform numerical data to help train ML models more effectively.
+
+### [Working with Categorical Data](https://developers.google.com/machine-learning/crash-course/categorical-data)
+
+Learn the fundamentals of working with categorical data: how to distinguish categorical data from numerical data; how to represent categorical data numerically using one-hot encoding, feature hashing, and mean encoding; and how to perform feature crosses.
+
+### [Datasets, Generalization, and Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting)
+
+An introduction to the characteristics of machine learning datasets, and how to prepare your data to ensure high-quality results when training and evaluating your model.
+
+### [Neural Networks](https://developers.google.com/machine-learning/crash-course/neural-networks)
+
+An introduction to the fundamental principles of neural network architectures, including perceptrons, hidden layers, and activatio... [Content truncated for context window]
+
+
+---
+
+### Source 6: What is Machine Learning? ML Tutorial for Beginners
+
+**Content:**
+[‘Funmi](https://www.freecodecamp.org/news/author/Heyfunmi/)
+
+The term “Machine Learning” was coined by a computer gamer named Arthur Samuel in 1959. He defined it like this:
+
+> "\[Machine learning is a\] Field of study that gives computers the ability to learn and make predictions without being explicitly programmed."
+
+ML is a sub-field of Artificial Intelligence. It's based on the idea that computers can learn from historical experiences, make vital decisions, and predict future happenings without human intervention.
+
+Machine Learning is behind product suggestions on e-commerce sites, your movie suggestions on Netflix, and so many more things. The computer is able to make these suggestions and predictions by learning from your previous data input and past experiences.
+
+In recent years, Machine Learning has garnered a lot of attention around the world, it has become one of the most important ways that people use Artificial Intelligence.
+
+## How Does Machine Learning Work?
+
+Machine Learning involves building algorithms. Data Scientists build these algorithms, and the type of algorithm they build depends on the type of data they're working on.
+
+The Machine Learning process begins with gathering data (numbers, text, photos, comments, letters, and so on). These data, often called “training data,” are used in training the Machine Learning algorithm. Training essentially "teaches" the algorithm how to learn by using tons of data.
+
+Following the end of the “training”, new input data is then fed into the algorithm and the algorithm uses the previously developed model to make predictions.
+
+The algorithm is trained several times until it reaches a desired outcome. This enables the Machine Learning algorithms to continually learn on their own. This produces optimal answers and increasing accuracy and predictions over time.
+
+Here's a helpful [overview of Machine Learning basics for developers](https://www.freecodecamp.org/news/machine-learning-basics-for-developers/) to get you started.
+
+## Types Of Machine Learning
+
+There are three types of Machine Learning, which include:
+
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+
+Let's look at each one briefly.
+
+### What is Supervised Learning?
+
+Supervised Learning is the most common type of Machine Learning. It involves training the algorithm with a “labelled” dataset. The labelled training data helps the Machine Learning algorithm make accurate predictions in the future.
+
+A practical example of supervised learning is training a Machine Learning algorithm with pictures of an apple. After that training, the algorithm is able to identify and retain this information and is able to give accurate predictions of an apple in the future. That is, it will typically be able to correctly identify if an image is of an apple.
+
+### What is Unsupervised Learning?
+
+In Unsupervised Learning, the training data is **NOT** labelled or named. The unlabeled data are used in training the Machine Learning algorith... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 3:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 3 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 3 Knowledge Nodes for: Machine Learning Basics**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.
