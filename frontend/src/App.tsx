@@ -1,9 +1,38 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Tldraw } from 'tldraw'
 import 'tldraw/tldraw.css'
+import TopicSearch from './components/TopicSearch'
+import LoadingPage from './components/LoadingPage'
+import DiagnosticTest from './components/DiagnosticTest'
+
+type AppState = 'search' | 'loading' | 'diagnostic' | 'whiteboard'
 
 const App: React.FC = () => {
   const editorRef = useRef<any>(null)
+  const [appState, setAppState] = useState<AppState>('search')
+  const [selectedTopic, setSelectedTopic] = useState('')
+  const [diagnosticQuestions, setDiagnosticQuestions] = useState<string[]>([])
+
+  const handleTopicSearch = (topic: string) => {
+    setSelectedTopic(topic)
+    setAppState('loading')
+  }
+
+  const handleLoadingComplete = (questions: string[]) => {
+    setDiagnosticQuestions(questions)
+    setAppState('diagnostic')
+  }
+
+  const handleDiagnosticComplete = (answers: boolean[]) => {
+    console.log('Diagnostic results for', selectedTopic, ':', answers)
+    const yesCount = answers.filter(Boolean).length
+    console.log(`Student answered "Yes" to ${yesCount}/${answers.length} questions`)
+    setAppState('whiteboard')
+  }
+
+  const handleDiagnosticClose = () => {
+    setAppState('search')
+  }
   
   // Poll for drawing commands from Flask server
   useEffect(() => {
@@ -74,25 +103,62 @@ const App: React.FC = () => {
 
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
-      <Tldraw 
-        onMount={(editor) => {
-          editorRef.current = editor
-          console.log('🎨 tldraw editor ready for Python commands')
-        }}
-      />
-      <div style={{
-        position: 'absolute',
-        bottom: '10px',
-        left: '10px',
-        background: 'rgba(0, 0, 0, 0.8)',
-        color: 'white',
-        padding: '8px 12px',
-        borderRadius: '4px',
-        fontSize: '12px',
-        fontFamily: 'monospace'
-      }}>
-        Python API: http://localhost:5000
-      </div>
+      {appState === 'search' && (
+        <TopicSearch onSearch={handleTopicSearch} />
+      )}
+      
+      {appState === 'loading' && (
+        <LoadingPage topic={selectedTopic} onComplete={handleLoadingComplete} />
+      )}
+      
+      {appState === 'diagnostic' && (
+        <DiagnosticTest 
+          questions={diagnosticQuestions}
+          onComplete={handleDiagnosticComplete}
+          onClose={handleDiagnosticClose}
+        />
+      )}
+      
+      {appState === 'whiteboard' && (
+        <>
+          <Tldraw 
+            onMount={(editor) => {
+              editorRef.current = editor
+              console.log('🎨 tldraw editor ready for Python commands')
+            }}
+          />
+          <div style={{
+            position: 'absolute',
+            bottom: '10px',
+            left: '10px',
+            background: 'rgba(0, 0, 0, 0.8)',
+            color: 'white',
+            padding: '8px 12px',
+            borderRadius: '4px',
+            fontSize: '12px',
+            fontFamily: 'monospace'
+          }}>
+            Python API: http://localhost:5000
+          </div>
+          <button
+            onClick={() => setAppState('search')}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              left: '10px',
+              background: 'rgba(0, 0, 0, 0.8)',
+              color: 'white',
+              border: 'none',
+              padding: '8px 12px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px'
+            }}
+          >
+            ← Back to Search
+          </button>
+        </>
+      )}
     </div>
   )
 }
