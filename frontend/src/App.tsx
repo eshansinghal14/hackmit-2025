@@ -14,7 +14,7 @@ const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>('search')
   const [selectedTopic, setSelectedTopic] = useState('')
   const [graphKey, setGraphKey] = useState(0)
-  const [showSettings, setShowSettings] = useState(false)
+  const [currentLearningTopic, setCurrentLearningTopic] = useState('')
 
   const handleTopicSearch = (topic: string) => {
     setSelectedTopic(topic)
@@ -133,6 +133,7 @@ const App: React.FC = () => {
             key={graphKey} 
             onLearnTopic={(topic) => {
               console.log('Learning:', topic)
+              setCurrentLearningTopic(topic)
               setAppState('whiteboard')
             }} 
           />
@@ -158,7 +159,10 @@ const App: React.FC = () => {
       )}
       
       {appState === 'whiteboard' && (
-        <MicrophoneWhiteboard onBack={() => setAppState('search')} />
+        <MicrophoneWhiteboard 
+          onBack={() => setAppState('search')} 
+          selectedTopic={currentLearningTopic || selectedTopic}
+        />
       )}
     </div>
   )

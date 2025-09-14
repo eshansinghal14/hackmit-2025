@@ -5,9 +5,10 @@ import SettingsPanel from './SettingsPanel'
 
 interface MicrophoneWhiteboardProps {
   onBack: () => void
+  selectedTopic?: string
 }
 
-const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack }) => {
+const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, selectedTopic }) => {
   const editorRef = useRef<any>(null)
   const [showSettings, setShowSettings] = useState(false)
   const [isListening, setIsListening] = useState(false)
@@ -72,17 +73,20 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack }) =
 
   const drawInitialLatex = async () => {
     try {
-      // Draw x^2 in the middle of the screen
+      // Draw initial content based on selected topic
+      const topicContent = selectedTopic ? `Let's learn ${selectedTopic}!` : 'x²'
+      
       const response = await fetch('http://localhost:5001/api/process-annotations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          topic: selectedTopic || 'Basic Calculus',
           annotations: [
             {
-              type: 'latex',
-              content: 'x^2',
-              x: 400,
-              y: 300
+              type: 'text',
+              position: { x: 400, y: 300 },
+              content: topicContent,
+              color: '#000000'
             }
           ]
         })
@@ -97,7 +101,9 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack }) =
   }
 
   const askInitialQuestion = () => {
-    const question = "Hi! I see we have x² on the board. Can you tell me what you know about quadratic functions?"
+    const question = selectedTopic 
+      ? `Hi! Let's explore ${selectedTopic}. What would you like to know about this topic?`
+      : "Hi! I see we have x² on the board. Can you tell me what you know about quadratic functions?"
     setCurrentQuestion(question)
     
     // Speak the question using text-to-speech
