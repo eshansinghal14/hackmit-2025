@@ -5,6 +5,7 @@ import TopicSearch from './components/TopicSearch'
 import LoadingPage from './components/LoadingPage'
 import DiagnosticTest from './components/DiagnosticTest'
 import KnowledgeGraph from './components/KnowledgeGraph'
+import SettingsPanel from './components/SettingsPanel'
 
 type AppState = 'search' | 'loading' | 'diagnostic' | 'graph' | 'whiteboard'
 
@@ -14,6 +15,7 @@ const App: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState('')
   const [diagnosticQuestions, setDiagnosticQuestions] = useState<string[]>([])
   const [graphKey, setGraphKey] = useState(0)
+  const [showSettings, setShowSettings] = useState(false)
 
   const handleTopicSearch = (topic: string) => {
     setSelectedTopic(topic)
@@ -164,6 +166,44 @@ const App: React.FC = () => {
               onMount={(editor) => {
                 editorRef.current = editor
                 console.log('🎨 tldraw editor ready for Python commands')
+                
+                // Handle circle drawing commands
+                const pollCommands = async () => {
+                  try {
+                    const response = await fetch('http://localhost:5001/api/commands')
+                    const commands = await response.json()
+                    
+                    if (commands.length > 0 && editorRef.current) {
+                      commands.forEach((command: { type: string; center?: {x: number, y: number}; radius?: number }) => {
+                        if (command.type === 'create_circle' && command.center && command.radius) {
+                          editorRef.current.createShapes([{
+                            type: 'geo',
+                            x: command.center.x - command.radius,
+                            y: command.center.y - command.radius,
+                            props: {
+                              geo: 'ellipse',
+                              w: command.radius * 2,
+                              h: command.radius * 2,
+                              color: 'blue',
+                              fill: 'none',
+                              dash: 'solid',
+                              size: 'm'
+                            }
+                          }]);
+                        }
+                      })
+                      
+                      // Clear processed commands
+                      await fetch('http://localhost:5001/api/commands', { method: 'DELETE' })
+                    }
+                  } catch (error) {
+                    // Silently handle connection errors
+                  }
+                }
+                
+                // Poll for circle commands every 100ms
+                const circleInterval = setInterval(pollCommands, 100)
+                return () => clearInterval(circleInterval)
               }}
             />
           </div>
@@ -179,8 +219,9 @@ const App: React.FC = () => {
             fontSize: '12px',
             fontFamily: 'monospace'
           }}>
-            Python API: http://localhost:5000
+            Python API: http://localhost:5001
           </div>
+          
           <button
             onClick={() => setAppState('search')}
             style={{
@@ -199,6 +240,30 @@ const App: React.FC = () => {
           >
             ← Back to Search
           </button>
+          
+          <button
+            onClick={() => setShowSettings(true)}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              right: '10px',
+              background: 'rgba(0, 0, 0, 0.8)',
+              color: 'white',
+              border: 'none',
+              padding: '8px 12px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px',
+              zIndex: 1000
+            }}
+          >
+            ⚙️ Settings
+          </button>
+          
+          <SettingsPanel
+            open={showSettings}
+            onClose={() => setShowSettings(false)}
+          />
         </>
       )}
     </div>
