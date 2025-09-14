@@ -1,15 +1,11 @@
-**Agent 2 Knowledge Nodes for: Machine Learning Basics**
+**Agent 2 Knowledge Nodes for: Data Structures**
 
-1. **Machine Learning Life Cycle** – End‑to‑end workflow covering problem definition, data collection, data preparation, model selection, training, evaluation, deployment, and monitoring.  
-
-2. **Supervised vs. Unsupervised Learning Paradigms** – Core categories of algorithms (e.g., classification & regression vs. clustering & dimensionality reduction) with typical use‑cases and evaluation approaches.  
-
-3. **Data Preparation & Feature Engineering** – Techniques for loading data, handling missing values, encoding categorical variables, scaling/normalizing features, and splitting datasets into training/validation/test sets.  
-
-4. **Python Machine‑Learning Toolchain** – Essential libraries and their roles: **NumPy** for numerical operations, **Pandas** for data manipulation, **Matplotlib/Seaborn** for visualization, **Scikit‑learn** for classic algorithms, and **TensorFlow/Keras** for deep‑learning models.  
-
-5. **Model Implementation & Evaluation with Scikit‑learn** – Practical steps to instantiate models, fit on training data, make predictions, and assess performance using metrics such as accuracy, precision, recall, F1‑score, ROC‑AUC, and confusion matrices.  
+1. **Linear Data Structures**: Linear data structures, such as arrays, stacks, queues, and linked lists, organize data sequentially, allowing for efficient storage and retrieval. These structures are fundamental in programming and are used in various applications, including algorithms and software development.
+2. **Data Structure Classification**: Data structures can be broadly classified into two types: linear and non-linear. Linear data structures (e.g., arrays, linked lists) organize data sequentially, while non-linear data structures (e.g., trees, graphs) organize data hierarchically or interconnectedly, enabling complex relationships between data elements.
+3. **Hash Data Structures**: Hash data structures, such as hash tables and hash maps, enable efficient lookup, insertion, and deletion of data elements using keys. These structures are crucial in programming, providing fast data retrieval and manipulation capabilities, with average time complexities of O(1) for read, write, insert, and delete operations.
+4. **Tree Data Structures**: Tree data structures, including binary trees and binary search trees, organize data hierarchically, allowing for efficient searching, inserting, and deleting of data elements. Balanced trees, such as AVL trees and red-black trees, ensure a height of O(log n), making read and write operations more efficient.
+5. **Algorithmic Complexity**: Understanding algorithmic complexity, including time and space complexity, is essential when working with data structures. This knowledge helps developers analyze and optimize the performance of their algorithms, ensuring efficient use of resources and scalability in various applications.
 
 **Source Summary:**
-- Sources Analyzed: 2  
-- Agent Coverage: 2 of 8 total sources  
+- Sources Analyzed: 10
+- Agent Coverage: Sites 11 to 20 of 50 total sources

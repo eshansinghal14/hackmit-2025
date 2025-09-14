@@ -10,40 +10,94 @@ interface LoadingPageProps {
 const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
   const [currentStep, setCurrentStep] = useState(0)
   const [progress, setProgress] = useState(0)
-
-  // Questions are now loaded dynamically by DiagnosticTest component
+  const [isGenerating, setIsGenerating] = useState(false)
 
   const analysisSteps = [
     {
       icon: <Psychology sx={{ fontSize: 40, color: 'primary.main' }} />,
-      title: 'Analyzing Topic',
-      description: `Understanding "${topic}" and its key concepts...`,
-      duration: 2000
+      title: 'Researching Topic',
+      description: `Gathering information about "${topic}"...`,
+      duration: 3000
     },
     {
       icon: <AutoAwesome sx={{ fontSize: 40, color: 'secondary.main' }} />,
-      title: 'Generating Questions',
-      description: 'Creating personalized diagnostic questions...',
-      duration: 2500
+      title: 'Analyzing with AI Agents',
+      description: 'Running 5 specialized AI agents in parallel...',
+      duration: 0 // Will be determined by actual API response
     },
     {
       icon: <QuestionAnswer sx={{ fontSize: 40, color: 'success.main' }} />,
-      title: 'Preparing Assessment',
-      description: 'Setting up your learning experience...',
-      duration: 1500
+      title: 'Finalizing Roadmap',
+      description: 'Consolidating results and preparing assessment...',
+      duration: 2000
     }
   ]
 
   useEffect(() => {
     let stepTimer: NodeJS.Timeout
     let progressTimer: NodeJS.Timeout
+    let pollTimer: NodeJS.Timeout | undefined
+
+    const generateRoadmap = async () => {
+      try {
+        setIsGenerating(true)
+        setCurrentStep(1) // Move to "Analyzing with AI Agents" step
+        setProgress(0)
+
+        const response = await fetch('http://localhost:5001/api/generate-roadmap', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ topic })
+        })
+
+        if (response.ok) {
+          const result = await response.json()
+          console.log('Roadmap generation completed:', result)
+          
+          // Move to final step
+          setCurrentStep(2)
+          setProgress(0)
+          
+          // Animate final step
+          const finalStepDuration = analysisSteps[2].duration
+          const progressInterval = 50
+          const progressIncrement = 100 / (finalStepDuration / progressInterval)
+
+          progressTimer = setInterval(() => {
+            setProgress(prev => {
+              const newProgress = prev + progressIncrement
+              if (newProgress >= 100) {
+                clearInterval(progressTimer)
+                setTimeout(() => onComplete(), 500)
+                return 100
+              }
+              return newProgress
+            })
+          }, progressInterval)
+        } else {
+          console.error('Roadmap generation failed:', response.statusText)
+          // Still proceed to diagnostic for now
+          setTimeout(() => onComplete(), 1000)
+        }
+      } catch (error) {
+        console.error('Error generating roadmap:', error)
+        // Still proceed to diagnostic for now
+        setTimeout(() => onComplete(), 1000)
+      } finally {
+        setIsGenerating(false)
+      }
+    }
 
     const startStep = (stepIndex: number) => {
+      if (stepIndex === 1) {
+        // Start actual roadmap generation
+        generateRoadmap()
+        return
+      }
+
       if (stepIndex >= analysisSteps.length) {
-        // All steps complete - proceed to diagnostic test
-        setTimeout(() => {
-          onComplete()
-        }, 500)
         return
       }
 
@@ -52,7 +106,7 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
 
       // Animate progress for current step
       const stepDuration = analysisSteps[stepIndex].duration
-      const progressInterval = 50 // Update every 50ms
+      const progressInterval = 50
       const progressIncrement = 100 / (stepDuration / progressInterval)
 
       progressTimer = setInterval(() => {
@@ -78,6 +132,7 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
     return () => {
       if (stepTimer) clearTimeout(stepTimer)
       if (progressTimer) clearInterval(progressTimer)
+      if (pollTimer) clearTimeout(pollTimer)
     }
   }, [topic, onComplete])
 
@@ -170,9 +225,9 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
               fontWeight: 400,
               fontStyle: 'italic'
             }}>
-              {currentStep === 0 && "Analyzing content..."}
-              {currentStep === 1 && "Generating questions..."}
-              {currentStep === 2 && "Finalizing..."}
+              {currentStep === 0 && "Researching topic..."}
+              {currentStep === 1 && (isGenerating ? "AI agents analyzing..." : "Preparing agents...")}
+              {currentStep === 2 && "Consolidating results..."}
             </Typography>
           </Box>
 

@@ -1,11 +1,20 @@
-**Agent 1 Knowledge Nodes for: Machine Learning Basics**
+**Agent 1 Knowledge Nodes for: Data Structures**
 
-1. **Supervised Learning**: A type of machine learning where models are trained on labeled data to predict or classify new, unseen data. This paradigm involves feeding input data into a machine learning algorithm, which adjusts its weights until the model has been fitted appropriately, and is commonly used in applications such as email spam filters, face recognition tech, and Internet ad placement.
-2. **Unsupervised Learning**: A machine learning method that helps find unknown patterns in data by combing through unlabeled data to discover patterns that ultimately solve association or clustering problems. Unsupervised learning algorithms are fed large amounts of data and equipped with the tools to understand the data, then learn to cluster or organize that data in a way that a human could understand.
-3. **Reinforcement Learning**: A type of machine learning that involves training models to make a series of decisions to maximize rewards, ideal for decision-making tasks. This method learns through trial and error, making it suitable for applications where the goal is to achieve a specific outcome through a sequence of actions.
-4. **Machine Learning Paradigms**: Machine learning is mainly divided into three core types: Supervised, Unsupervised, and Reinforcement Learning, with additional types including Semi-Supervised and Self-Supervised Learning. Understanding these paradigms is crucial for applying machine learning effectively in various real-world applications.
-5. **Pattern Recognition**: Machine learning uses statistics to find patterns in massive amounts of data, including numbers, words, images, clicks, and anything else that can be stored digitally. This ability to recognize patterns is fundamental to machine learning and powers many services we rely on today, such as recommendation systems, search engines, and voice assistants.
+1. **Array Fundamentals and Dynamic Arrays**  
+   Arrays are foundational, fixed-size data structures offering constant-time access by index. Dynamic arrays (e.g., Java’s `ArrayList`, Python’s `list`) automatically resize when elements exceed capacity, typically doubling in size. Understanding their time complexities (`O(1)` access, `O(n)` insertion/deletion) and use cases is essential for efficient data handling and implementing other data structures.
 
-**Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+2. **Linked List Implementation and Operations**  
+   Linked lists consist of nodes connected via pointers, allowing for efficient insertions and deletions but `O(n)` access time. Implementing singly and doubly linked lists, including operations like insert, delete, and reverse, is critical. They are often used in interview questions and systems where memory allocation is non-contiguous.
+
+3. **Stack and Queue Principles and Use Cases**  
+   Stacks follow LIFO (Last In, First Out) and are ideal for recursive algorithm management and undo mechanisms. Queues follow FIFO (First In, First Out) and are essential for breadth-first search and job scheduling. Both can be implemented using arrays or linked lists, depending on performance and memory considerations.
+
+4. **Binary Search Trees (BST) Structure and Algorithms**  
+   BSTs maintain sorted data with `O(log n)` average time complexity for search, insert, and delete operations. Each node’s left subtree contains smaller keys and the right subtree larger keys. Handling insertion, deletion (including two-child removal via in-order successor), and traversal (in-order, pre-order, post-order) is vital for applications requiring dynamic sorting and searching.
+
+5. **Hash Tables and Hashing Techniques**  
+   Hash tables store data in key-value pairs, offering average `O(1)` time complexity for lookups, insertions, and deletions. Concepts like hash functions, collision resolution (chaining, open addressing), and load factors are crucial. Hashing is widely used in dictionaries, caches, and indexing systems to enable fast data retrieval.
+
+**Source Summary:**  
+- Sources Analyzed: 10  
+- Agent Coverage: 10 of 50 total sources

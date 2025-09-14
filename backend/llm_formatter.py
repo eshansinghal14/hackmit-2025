@@ -26,15 +26,13 @@ def split_results_into_chunks(results: Dict, num_chunks: int = 5) -> List[Dict]:
     if not sites:
         return [results] * num_chunks
     
-    # Calculate chunk size
-    chunk_size = ceil(len(sites) / num_chunks)
-    
+    # Distribute sources evenly across agents using round-robin
     chunks = []
     for i in range(num_chunks):
-        start_idx = i * chunk_size
-        end_idx = min((i + 1) * chunk_size, len(sites))
-        
-        chunk_sites = sites[start_idx:end_idx]
+        chunk_sites = []
+        # Assign every 5th source to this agent (round-robin distribution)
+        for j in range(i, len(sites), num_chunks):
+            chunk_sites.append(sites[j])
         
         # Create chunk result
         chunk_result = {
@@ -182,6 +180,16 @@ def create_multi_agent_contexts(results: Dict, query: str = None) -> List[str]:
     # Always use agent_contexts directory
     output_dir = "agent_contexts"
     os.makedirs(output_dir, exist_ok=True)
+    
+    # Clear any existing context files to prevent topic mismatch
+    print("🧹 Clearing old agent context files...")
+    for i in range(1, 6):
+        old_file = os.path.join(output_dir, f"context_agent_{i}.txt")
+        if os.path.exists(old_file):
+            os.remove(old_file)
+            print(f"   🗑️ Removed old context_agent_{i}.txt")
+    
+    print("✅ Old context files cleared, creating fresh contexts...")
     
     # Split results into 5 chunks
     chunks = split_results_into_chunks(results, num_chunks=5)
