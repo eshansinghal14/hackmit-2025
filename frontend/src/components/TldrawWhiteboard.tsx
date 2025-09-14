@@ -69,9 +69,7 @@ const TldrawWhiteboard: React.FC<TldrawWhiteboardProps> = ({ className }) => {
       }}
       className={className}
     >
-      <Tldraw onMount={handleMount}>
-        <AIDrawingOverlay />
-      </Tldraw>
+      <Tldraw onMount={handleMount} />
     </Box>
   )
 }
