@@ -399,27 +399,54 @@ Include ALL node IDs from the available topics, even if the adjustment is 0.0.""
         try:
             # Clean the response - remove markdown code blocks if present
             cleaned_response = response.strip()
-            if cleaned_response.startswith('```json'):
+            
+            # First try to find JSON in markdown code blocks
+            if '```json' in cleaned_response:
                 # Extract JSON from markdown code block
+                start_idx = cleaned_response.find('```json') + 7
+                end_idx = cleaned_response.rfind('```')
+                if start_idx != -1 and end_idx != -1:
+                    cleaned_response = cleaned_response[start_idx:end_idx].strip()
+            elif '```' in cleaned_response:
+                # Handle generic code blocks
+                start_idx = cleaned_response.find('```') + 3
+                end_idx = cleaned_response.rfind('```')
+                if start_idx != -1 and end_idx != -1:
+                    cleaned_response = cleaned_response[start_idx:end_idx].strip()
+            
+            # If we still don't have a clean JSON, try to extract it from the text
+            if not cleaned_response.startswith('{'):
                 start_idx = cleaned_response.find('{')
                 end_idx = cleaned_response.rfind('}') + 1
                 if start_idx != -1 and end_idx != -1:
                     cleaned_response = cleaned_response[start_idx:end_idx]
-            elif cleaned_response.startswith('```'):
-                # Handle generic code blocks
-                lines = cleaned_response.split('\n')
-                # Remove first and last lines (``` markers)
-                if len(lines) > 2:
-                    cleaned_response = '\n'.join(lines[1:-1])
             
+            # Clean up any remaining whitespace or markdown
+            cleaned_response = cleaned_response.strip('`').strip()
+            
+            # Parse the JSON
             weight_adjustments = json.loads(cleaned_response)
             print(f"✅ Parsed weight adjustments: {weight_adjustments}")
             return weight_adjustments
+            
         except json.JSONDecodeError as e:
             print(f"❌ Error parsing Cerebras response: {e}")
             print(f"Raw response: {response}")
             print(f"Cleaned response: {cleaned_response}")
-            # Return default adjustments if parsing fails
+            # Try to manually extract the JSON if parsing failed
+            try:
+                # Look for a JSON-like pattern in the response
+                import re
+                json_match = re.search(r'\{[^{}]*\}', response)
+                if json_match:
+                    cleaned_response = json_match.group(0)
+                    weight_adjustments = json.loads(cleaned_response)
+                    print(f"✅ Extracted JSON from response: {weight_adjustments}")
+                    return weight_adjustments
+            except Exception as e2:
+                print(f"❌ Secondary extraction failed: {e2}")
+            
+            # Return default adjustments if all parsing fails
             return {node_id: 0.0 for node_id in node_names.keys()}
         
     except Exception as e:

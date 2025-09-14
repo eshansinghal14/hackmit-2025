@@ -1,0 +1,557 @@
+You are Agent 4 of 5, a specialized research expert analyzing "Differential Equations". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 4 Research Context
+
+## Assignment
+You are Agent 4 of 5 specialized research agents analyzing: "Differential Equations"
+
+## Your Data Subset
+- Agent ID: 4/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 31 to 40
+
+## Your Research Sources
+
+### Source 31: Differential Equations
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/Bookshelves/Differential_Equations#elm-main-content)
+
+A differential equation is a mathematical equation that relates some function with its derivatives. In applications, the functions usually represent physical quantities, the derivatives represent their rates of change, and the differential equation defines a relationship between the two.
+
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/8853/mindtouch.page%2523thumbnail?revision=4)Elementary Differential Equations with Boundary Value Problems (Trench)](https://math.libretexts.org/Bookshelves/Differential_Equations/Elementary_Differential_Equations_with_Boundary_Value_Problems_(Trench))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/1525/mindtouch.page%2523thumbnail?revision=5)Differential Equations for Engineers (Lebl)](https://math.libretexts.org/Bookshelves/Differential_Equations/Differential_Equations_for_Engineers_(Lebl))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/72238/mindtouch.page%2523thumbnail?revision=2)A First Course in Differential Equations for Scientists and Engineers (Herman)](https://math.libretexts.org/Bookshelves/Differential_Equations/A_First_Course_in_Differential_Equations_for_Scientists_and_Engineers_(Herman))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/81711/mindtouch.page%2523thumbnail?revision=2)A Second Course in Ordinary Differential Equations: Dynamical Systems and Boundary Value Problems (Herman)](https://math.libretexts.org/Bookshelves/Differential_Equations/A_Second_Course_in_Ordinary_Differential_Equations%3A_Dynamical_Systems_and_Boundary_Value_Problems_(Herman))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/28820/mindtouch.page%2523thumbnail?revision=3)Ordinary Differential Equations (Wiggins)](https://math.libretexts.org/Bookshelves/Differential_Equations/Ordinary_Differential_Equations_(Wiggins))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/73256/mindtouch.page%2523thumbnail?revision=2)Differential Equations (Chasnov)](https://math.libretexts.org/Bookshelves/Differential_Equations/Differential_Equations_(Chasnov))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/73776/mindtouch.page%2523thumbnail?revision=2)Applied Linear Algebra and Differential Equations (Chasnov)](https://math.libretexts.org/Bookshelves/Differential_Equations/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/85188/mindtouch.page%2523thumbnail?revision=2)Numerically Solving Ordinary Differential Equations (Brorson)](https://math.libretexts.org/Bookshelves/Differential_Equations/Numerically_Solving_Ordinary_Differential_Equations_(Brorson))
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/73257/mindtouch.page%2523thumbnail?revision=... [Content truncated for context window]
+
+
+---
+
+### Source 32: Differential Equations | Mathematics
+
+**Content:**
+### Browse Course Material
+
+## Course Info
+
+##### Instructors
+
+- [Prof. Haynes Miller](https://ocw.mit.edu/search/?q=Prof.+Haynes+Miller)
+- [Prof. Arthur Mattuck](https://ocw.mit.edu/search/?q=Prof.+Arthur+Mattuck)
+
+##### Departments
+
+- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+
+##### As Taught In
+
+Spring
+2010
+
+##### Level
+
+[Undergraduate](https://ocw.mit.edu/search/?l=Undergraduate)
+
+##### Topics
+
+- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
+
+ - [Differential Equations](https://ocw.mit.edu/search/?t=Differential+Equations)
+
+ - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
+
+##### Learning Resource Types
+
+_theaters_ Lecture Videos
+
+_laptop\_windows_ Simulations
+
+_notes_ Lecture Notes
+
+_assignment\_turned\_in_ Problem Sets with Solutions
+
+[Download Course](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/download)
+
+[_search_](https://ocw.mit.edu/search/) [GIVE NOW](https://giving.mit.edu/give/to/ocw/?utm_source=ocw&utm_medium=homepage_banner&utm_campaign=nextgen_home) [about ocw](https://ocw.mit.edu/about) [help & faqs](https://mitocw.zendesk.com/hc/en-us) [contact us](https://ocw.mit.edu/contact)
+
+18.03 \| Spring 2010 \| Undergraduate
+
+# [Differential Equations](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/)
+
+Menu
+
+#### Course Description
+
+Differential Equations are the language in which the laws of nature are expressed. Understanding properties of solutions of differential equations is fundamental to much of contemporary science and engineering. Ordinary differential equations (ODE’s) deal with functions of one variable, which can often be thought …Show more
+
+Differential Equations are the language in which the laws of nature are expressed. Understanding properties of solutions of differential equations is fundamental to much of contemporary science and engineering. Ordinary differential equations (ODE’s) deal with functions of one variable, which can often be thought of as time.Show less
+
+## Course Info
+
+##### Instructors
+
+- [Prof. Haynes Miller](https://ocw.mit.edu/search/?q=Prof.+Haynes+Miller)
+- [Prof. Arthur Mattuck](https://ocw.mit.edu/search/?q=Prof.+Arthur+Mattuck)
+
+##### Departments
+
+- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+
+##### Topics
+
+- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
+
+ - [Differential Equations](https://ocw.mit.edu/search/?t=Differential+Equations)
+
+ - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
+
+##### Learning Resource Types
+
+_theaters_ Lecture Videos
+
+_laptop\_windows_ Simulations
+
+_notes_ Lecture Notes
+
+_assignment\_turned\_in_ Problem Sets with Solutions
+
+A spring system responds to being shaken by oscillating. When the input frequency is near a natural mode of the system, the amplitude is large. This can be understood in the frequency domain using the Laplace transform and its pole diagram. (Image courtesy Hu Hohn and Prof. Haynes Miller.)
+
+[Download Course](https://ocw.mit.edu/... [Content truncated for context window]
+
+
+---
+
+### Source 33: Differential Equations - HKUST Math Department
+
+**Content:**
+Differential Equations
+Jeffrey R. Chasnov
+Adapted for :
+Differential Equations for Engineers
+Click to view a promotional video
+The Hong Kong University of Science and Technology
+Department of Mathematics
+Clear Water Bay, Kowloon
+Hong Kong
+Copyright c 2009–2019 by Jeffrey Robert Chasnov
+This work is licensed under the Creative Commons Attribution 3.0 Hong Kong License. To
+view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/hk/ or send
+a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105,
+USA.
+Preface
+What follows are my lecture notes for a first course in differential equations, taught
+at the Hong Kong University of Science and Technology. Included in these notes
+are links to short tutorial videos posted on YouTube.
+Much of the material of Chapters 2-6 and 8 has been adapted from the widely
+used textbook “Elementary differential equations and boundary value problems”
+by Boyce & DiPrima (John Wiley & Sons, Inc., Seventh Edition, c 2001). Many of
+the examples presented in these notes may be found in this book. The material of
+Chapter 7 is adapted from the textbook “Nonlinear dynamics and chaos” by Steven
+H. Strogatz (Perseus Publishing, c 1994).
+All web surfers are welcome to download these notes, watch the YouTube videos,
+and to use the notes and videos freely for teaching and learning.
+I also have some online courses on Coursera. A lot of time and effort has gone
+into their production, and the video lectures have better video quality than the ones
+prepared for these notes. You can click on the links below to explore these courses.
+If you want to learn differential equations, have a look at
+Differential Equations for Engineers
+If your interests are matrices and elementary linear algebra, try
+Matrix Algebra for Engineers
+If you want to learn vector calculus (also known as multivariable calculus, or calculus three), you can sign up for
+Vector Calculus for Engineers
+And if your interest is numerical methods, have a go at
+Numerical Methods for Engineers
+Jeffrey R. Chasnov
+Hong Kong
+February 2021
+iii
+
+Contents
+0 A short mathematical review 1
+0.1 The trigonometric functions . . . . . . . . . . . . . . . . . . . . . . . . . 1
+0.2 The exponential function and the natural logarithm . . . . . . . . . . . 1
+0.3 Definition of the derivative . . . . . . . . . . . . . . . . . . . . . . . . . 2
+0.4 Differentiating a combination of functions . . . . . . . . . . . . . . . . 2
+0.4.1 The sum or difference rule . . . . . . . . . . . . . . . . . . . . . 2
+0.4.2 The product rule . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+0.4.3 The quotient rule . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+0.4.4 The chain rule . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+0.5 Differentiating elementary functions . . . . . . . . . . . . . . . . . . . . 3
+0.5.1 The power rule . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+0.5.2 Trigonometric functions . . . . . . . . . . . . ... [Content truncated for context window]
+
+
+---
+
+### Source 34: Differential Equations Formula Sheet: Conquer Your ODEs
+
+**Content:**
+# Differential Equations
+## Definition
+A differential equation is an equation containing derivatives of a
+dependent variable \\(y\\) with respect
+to independent variables \\(x\\). In
+particular,
+- Ordinary Differential Equations (ODE) are differential equations
+having one independent variable.
+- Partial Differential Equations (PDE) are differential equations
+having two or more independent variables.
+## Order
+An ODE is said to be of order \\(n\\)
+if the highest derivative of the unknown function in the equation is the
+\\(n\\)th derivative with respect to the
+independent variable.
+## Linearity
+\\\[a\_n(x)y^{(n)} + a\_{n-1}(x)y^{(n-1)} + \\ldots +
+a\_1(x)y' + a\_0(x)y = b(x),\\\]
+\\(x\\)\\(y\\)\\(n\\)\\(y^{(n)}\\)\\(x\\)\\(b(x)\\)\\(a\_i(x)\\) and all of its derivatives appear by
+themselves. Thus, it is of the form: An ODE is said to be linear only if the function
+# First Order Differential Equations
+1. \\\[\\int
+A(x)dx + \\int B(y)dy = C;\\\]
+, it is separable, and
+the solution follows by integration: If the equation can be put in the form
+2. If \\(M(x,y)\\) and \\(N(x,y)\\) are homogeneous and of the same
+degree in \\(x\\) and \\(y\\), then substitution of \\(vx\\) for \\(y\\) (thus, \\(dy =
+v dx + x dv\\)) will yield a separable equation in the variables
+\\(x\\) and \\(y\\). (A function such as \\(M(x,y)\\) is homogeneous of degree \\(n\\) in \\(x\\) and \\(y\\) if \\(M(cx,cy)
+= c^n M(x,y)\\)).
+3. If \\(M(x,y)dx + N(x,y)dy\\) is
+the differential of some function \\(F(x,y)\\), then the given equation is said
+to be exact. A necessary and sufficient condition for exactness is \\(\\frac{dM}{dy} - \\frac{dN}{dx}\\). When the
+equation is exact, \\(F\\) is found from
+the relations \\(\\frac{\\partial F}{\\partial x}
+= M\\) and \\(\\frac{\\partial F}{\\partial
+y} = N\\), and the solution is \\(F(x,y)
+= C\\) (a constant).
+4. \\\[\\frac{dy}{dx} + P(x)y = Q(x).\\\]
+yields . Multiplication by : Such
+an equation has the form Linear, order one in
+# Second Order Linear Equations (with Constant Coefficients)
+1. **Right-hand side: 0 (homogeneous case)**
+The second-order linear homogeneous equation is given by:
+\\\[(b\_2D^2 + b\_1D + b\_0)y = 0.\\\]
+The auxiliary equation associated with this equation is:
+\\\[b\_2m^2 + b\_1m + b\_0 = 0.\\\]
+If the roots of the auxiliary equation are real and distinct, denoted
+as \\(m\_1\\) and \\(m\_2\\), the solution is:
+\\\[y = C\_1e^{m\_1x} +
+C\_2e^{m\_2x},\\\]
+where \\(C\_1\\) and \\(C\_2\\) are arbitrary constants.
+If the roots of the auxiliary equation are real and repeated, say
+\\(m\_1 = m\_2 = p\\), the solution is:
+\\\[y = C\_1e^{px} + C\_2xe^{px}.\\\]
+If the roots of the auxiliary equation are complex, \\(a + ib\\) and \\(a
+\- ib\\), the solution is:
+\\\[y = C\_1e^{ax}\\cos(bx) +
+C\_2e^{ax}\\sin(bx).\\\]
+2. **Right-hand side: \\(f(x)\\) (nonhomogeneous case)**
+The second-order linear nonhomogeneous equation is given by:
+\\\[(b\_2D^2 + b\_1D + b\_0)y =
+f(x).\\\]
+The general solution is:
+\\\[y = C\_1y\_1(x) + C\_2y\_2(x) +... [Content truncated for context window]
+
+
+---
+
+### Source 35: 9.1: Modeling with Differential Equations
+
+**Content:**
+##### Learning Objectives
+
+- Identify the order of a differential equation.
+- Explain what is meant by a solution to a differential equation.
+- Distinguish between the general solution and a particular solution of a differential equation.
+- Identify an initial-value problem.
+- Identify whether a given function is a solution to a differential equation or an initial-value problem.
+
+Calculus is the mathematics of change, and rates of change are expressed by derivatives. Thus, one of the most common ways to use calculus is to set up an equation containing an unknown function \\(y=f(x)\\) and its derivative, known as a differential equation. Solving such equations often provides information about how quantities change and frequently provides insight into how and why the changes occur.
+
+Techniques for solving differential equations can take many different forms, including direct solution, use of graphs, or computer calculations. We introduce the main ideas in this chapter and describe them in a little more detail later in the course. In this section we study what differential equations are, how to verify their solutions, some methods that are used for solving them, and some examples of common and useful equations.
+
+## General Differential Equations
+
+Consider the equation \\(y′=3x^2,\\) which is an example of a differential equation because it includes a derivative. There is a relationship between the variables \\(x\\) and \\(y:y\\) is an unknown function of \\(x\\). Furthermore, the left-hand side of the equation is the derivative of \\(y\\). Therefore we can interpret this equation as follows: Start with some function \\(y=f(x)\\) and take its derivative. The answer must be equal to \\(3x^2\\). What function has a derivative that is equal to \\(3x^2\\)? One such function is \\(y=x^3\\), so this function is considered a _solution_ to a differential equation.
+
+##### Definition: differential equation
+
+A _differential equation_ is an equation involving an unknown function \\(y=f(x)\\) and one or more of its derivatives. A solution to a differential equation is a function \\(y=f(x)\\) that satisfies the differential equation when \\(f\\) and its derivatives are substituted into the equation.
+
+Go to this website to explore more on this topic.
+
+Some examples of differential equations and their solutions appear in Table \\(\\PageIndex{1}\\).
+
+| **Equation** | **Solution** |
+| --- | --- |
+| \\(y'=2x\\) | \\(y=x^2\\) |
+| \\(y'+3y=6x+11\\) | \\(y=e^{−3x}+2x+3\\) |
+| \\(y''−3y'+2y=24e^{−2x}\\) | \\(y=3e^x−4e^{2x}+2e^{−2x}\\) |
+
+Table \\(\\PageIndex{1}\\): Examples of Differential Equations and Their Solutions
+
+Note that a solution to a differential equation is not necessarily unique, primarily because the derivative of a constant is zero. For example, \\(y=x^2+4\\) is also a solution to the first differential equation in Table \\(\\PageIndex{1}\\). We will return to this idea a little bit later in this section. For now, let’s focus on what it means for a function... [Content truncated for context window]
+
+
+---
+
+### Source 36: Differential Equations - EqWorld
+
+**Content:**
+| | | | | |
+| --- | --- | --- | --- | --- |
+| | | | |
+| --- | --- | --- |
+| [![EqWorld logo](https://eqworld.ipmnet.ru/images/eqworld-logo-small.gif)](https://eqworld.ipmnet.ru/index.htm) | EqWorld The World of Mathematical Equations | ![IPM Logo](https://eqworld.ipmnet.ru/images/ipmlogo24b.gif) |
+
+| | | | | |
+| --- | --- | --- | --- | --- |
+| [Main Page](https://eqworld.ipmnet.ru/index.htm) [![](https://counter.rambler.ru/top100.cnt?708065)](https://top100.rambler.ru/) [Exact Solutions](https://eqworld.ipmnet.ru/en/solutions.htm) [Algebraic Equations](https://eqworld.ipmnet.ru/en/solutions/ae.htm) [Ordinary DEs](https://eqworld.ipmnet.ru/en/solutions/ode.htm) [Systems of ODEs](https://eqworld.ipmnet.ru/en/solutions/sysode.htm) [First-Order PDEs](https://eqworld.ipmnet.ru/en/solutions/firstpde.htm) [Linear PDEs](https://eqworld.ipmnet.ru/en/solutions/lpde.htm) [Nonlinear PDEs](https://eqworld.ipmnet.ru/en/solutions/npde.htm) [Systems of PDEs](https://eqworld.ipmnet.ru/en/solutions/syspde.htm) [Nonlinear Delay PDEs](https://eqworld.ipmnet.ru/en/solutions/delaypde.htm) [Integral Equations](https://eqworld.ipmnet.ru/en/solutions/ie.htm) [Functional Equations](https://eqworld.ipmnet.ru/en/solutions/fe.htm) [Equation Index](https://eqworld.ipmnet.ru/en/solutions/eqindex.htm) [Equation Archive](http://eqworld.ipmnet.ru/eqarchive/?lang=en) [Basic Handbooks](https://eqworld.ipmnet.ru/en/solutions/basbooks.htm) [Interesting Papers](https://eqworld.ipmnet.ru/en/solutions/interesting.htm) [Methods](https://eqworld.ipmnet.ru/en/methods.htm) [Ordinary DEs](https://eqworld.ipmnet.ru/en/methods/meth-ode.htm) [Partial DEs](https://eqworld.ipmnet.ru/en/methods/meth-pde.htm) [Delay PDEs](https://eqworld.ipmnet.ru/en/methods/meth-dpde.htm) [Integral Equations](https://eqworld.ipmnet.ru/en/methods/meth-ie.htm) [Functional Equations](https://eqworld.ipmnet.ru/en/methods/meth-fe.htm) [Auxiliary Sections](https://eqworld.ipmnet.ru/en/auxiliary.htm) [Integrals](https://eqworld.ipmnet.ru/en/auxiliary/aux-integrals.htm) [Special Functions](https://eqworld.ipmnet.ru/en/auxiliary/aux-specfunc.htm) [Integral Transforms](https://eqworld.ipmnet.ru/en/auxiliary/aux-inttrans.htm) [Math Forums](https://eqworld.ipmnet.ru/en/forums.htm) [EqWorld Forum](http://eqworld.ipmnet.ru/forum/) [Other Forums](https://eqworld.ipmnet.ru/en/forums/others.htm) [Software](https://eqworld.ipmnet.ru/en/software.htm) [Maple](https://eqworld.ipmnet.ru/en/software.htm#maple) [Mathematica](https://eqworld.ipmnet.ru/en/software.htm#mathematica) [MATLAB](https://eqworld.ipmnet.ru/en/software.htm#matlab) [Others](https://eqworld.ipmnet.ru/en/software.htm#others) [Education](https://eqworld.ipmnet.ru/en/education.htm) [Ordinary DEs](https://eqworld.ipmnet.ru/en/education/edu-ode.htm) [Partial DEs](https://eqworld.ipmnet.ru/en/education/edu-pde.htm) [Integral Equations](https://eqworld.ipmnet.ru/en/education/edu-ie.htm) [Functional Equations](https://eqworld.ipmnet.ru/en/education/edu-fe.htm) [Common errors... [Content truncated for context window]
+
+
+---
+
+### Source 37: Differential Equations - Systems of Differential Equations
+
+**Content:**
+- Go To
+- Notes
+- Practice and Assignment problems are not yet written. As time permits I am working on them, however I don't have the amount of free time that I used to so it will take a while before anything shows up here.
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [Review : Eigenvalues & Eigenvectors](https://tutorial.math.lamar.edu/Classes/DE/LA_Eigen.aspx)
+- [Solutions to Systems](https://tutorial.math.lamar.edu/Classes/DE/SolutionsToSystems.aspx)
+- Chapters
+- [Laplace Transforms](https://tutorial.math.lamar.edu/Classes/DE/LaplaceIntro.aspx)
+- [Series Solutions to DE's](https://tutorial.math.lamar.edu/Classes/DE/SeriesIntro.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- Differential Equations
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
+
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,1,N)
+- Practice Problems Downloads
+- Problems not yet written.
+- Assignment Problems Downloads
+- Problems not yet written.
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=1)
+
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)/ [Systems of DE's](https://tutorial.math.lamar.edu/Classes/DE/SystemsIntro.aspx)/ Systems of Differential Equations
+
+[Prev. Section](https://tutorial.math.lamar.edu/Classes/DE/LA_Eigen.aspx) Notes [Next Section](https://tutorial.math.lamar.edu/Classes/DE/SolutionsToSystems.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run ... [Content truncated for context window]
+
+
+---
+
+### Source 38: A Single Differential Equation
+
+**Content:**
+Algebraic operations such as addition and multiplication are performed on numbers
+while the calculus operations of differentiation and integration are performed on
+functions. Thus algebraic equations (such as ) are solved for numbers () while
+differential (and integral) equations are solved for functions.
+
+In Chapter ?? we discussed how to solve systems of linear equations, such as
+
+for numbers while in this chapter we discuss how to solve some systems of
+differential equations for functions.
+
+Solving a single linear equation in one unknown is a simple task. For example, solve
+for . Solving a single differential equation in one unknown function is far from
+trivial.
+
+##### Integral Calculus as a Differential Equation
+
+Mathematically, the simplest type of differential equation is:
+
+where is some continuous function. In words, this equation asks us to find all
+functions whose derivative is . The fundamental theorem of calculus tells
+us the answer: is an antiderivative of . Thus to find all solutions, we just
+integrate both sides of (??) with respect to . Formally, using indefinite integrals,
+where is an arbitrary constant. (It is tempting to put a constant of integration on
+both sides of (??), but two constants are not needed, as we can just combine both
+constants on the right hand side of this equation.) Since the indefinite integral of is
+just the function , we have
+In particular, finding closed form solutions to differential equations of the type (??) is
+equivalent to finding all definite integrals of the function . Indeed, to find closed form
+solutions to differential equations like (??) we need to know all of the techniques of
+integration from integral calculus.
+
+##### Initial Conditions and the Role of the Integration Constant
+
+Equation (??) tells us that there are an infinite number of solutions to the differential
+equation (??), each one corresponding to a different choice of the constant . To
+understand how to interpret the constant , consider the example Using (??) we see
+that the answer is Note that Thus, the constant represents an initial condition for
+the differential equation. We will return to the discussion of initial conditions several
+times in this chapter.
+
+See Exercise ?? for a more interesting example of this type of differential
+equation.
+
+##### Solutions to Differential Equations are Functions
+
+Consider the differential equation
+
+Are the functions solutions to the differential equation (??)?
+
+To test whether or not the function is a solution, we compute the left and right hand
+sides of (??):
+
+Since the left and right hand sides are unequal, the function is not a solution to
+(??).
+
+To test whether or not the function is a solution, we again compute the left and right
+hand sides of (??):
+
+Since the left and right hand sides are equal, the function is a solution to
+(??).
+
+Note that we have not discussed how we knew that the function is a solution to (??).
+For the most part, the issue of how one finds solutions to a differential e... [Content truncated for context window]
+
+
+---
+
+### Source 39: Differential Equations (Mathematical Modeling) - Department of Mathematics at UTSA
+
+**Content:**
+## Contents
+
+- [1Introduction to Differential Equations](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Introduction_to_Differential_Equations)
+ - [1.1Key points](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Key_points)
+- [2Modeling](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Modeling)
+- [3Examples](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Examples)
+ - [3.1Pharmaceutical example](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Pharmaceutical_example)
+ - [3.2The Differential Equation of Free Motion or SHM](http://mathresearch.utsa.edu/mathresearch.utsa.edu#The_Differential_Equation_of_Free_Motion_or_SHM)
+ - [3.2.1Initial Conditions](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Initial_Conditions)
+ - [3.2.2Solution](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Solution)
+ - [3.3Exponential Growth and Decay](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Exponential_Growth_and_Decay)
+ - [3.3.1Population Growth](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Population_Growth)
+ - [3.4Radioactive Decay](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Radioactive_Decay)
+- [4Other Applications](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Other_Applications)
+- [5Resources](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Resources)
+- [6Licensing](http://mathresearch.utsa.edu/mathresearch.utsa.edu#Licensing)
+
+## Introduction to Differential Equations
+
+### Key points
+
+- A differential equation is an equation involving a derivative.
+- The order of a differential equation is the order of the highest derivative.
+- Differential equations are used to model situations which involve rates of change.
+- The solution to a differential equation gives a relationship between the variables themselves, not the derivatives.
+- The general solution of a first order differential equation satisfies the differential equations and has a constant of integration in its solution.
+- The particular solution of a differential equation is one in which additional information has been used to calculate the constant of integration.
+- The general solution may be represented by a family of curves and the particular solution is one of that family.
+- To verify that a function is a particular solution, you must check that it satisfies the differential equation and initial conditions.
+
+How does the quantity of drug in the body vary with time? How long does it take a cup of coffee take to cool? After how many days will the moon take the same shape again? These question all have on thing in common. They have a quantity that is continuously changing. We see change in most things in life. Some changes are permanent; like the temperature of coffee. Some have repeating patterns, like the cycle of the moon.
+
+You have already studied a lot of mathematics to describe these changes, but never really put that into real life applications. You will know from previously studies calculus that the rate of change of a quantity is called a derivative... [Content truncated for context window]
+
+
+---
+
+### Source 40: Differential equations introduction (video)
+
+**Content:**
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+[More information](https://cookiepedia.co.uk/giving-consent-to-cookies)
+
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+Certain cookies and other technologies are essential in order to enable our Service to provide the features you have requested, such as making it possible for you to access our product and information related to your account.
+For example, each time you log into our Service, a Strictly Necessary Cookie authenticates that it is you logging in and allows you to use the Service without having to re-enter your password when you visit a new page or new unit during your browsing session.
+
+#### Functional Cookies
+
+These cookies provide you with a more tailored experience and allow you to make certain selections on our Service. For example, these cookies store information such as your preferred language and website preferences.
+
+#### Targeting Cookies
+
+These cookies are used on a limited basis, only on pages directed to adults (teachers, donors, or parents). We use these cookies to inform our own digital marketing and help us connect with people who are interested in our Service and our mission.
+We do not use cookies to serve third party ads on our Service.
+
+#### Performance Cookies
+
+These cookies and other technologies allow us to understand how you interact with our Service (e.g., how often you use our Service, where you are accessing the Service from and the content that you’re interacting with). Analytic cookies enable us to support and improve how our Service operates.
+For example, we use Google Analytics cookies to help us measure traffic and usage trends for the Service, and to understand more about the demographics of our users.
+We also may use web beacons to gauge the effectiveness of certain communications and the effectiveness of our marketing campaigns via HTML emails.
+
+
+---
+
+
+
+## Your Mission as Agent 4:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 4 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 4 Knowledge Nodes for: Differential Equations**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

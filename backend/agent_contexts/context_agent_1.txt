@@ -1,9 +1,9 @@
-You are Agent 1 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 1 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Data Subset
 - Agent ID: 1/5
@@ -13,646 +13,625 @@ You are Agent 1 of 5 specialized research agents analyzing: "linear algebra"
 
 ## Your Research Sources
 
-### Source 1: Linear algebra
+### Source 1: Python Full Course for Beginners [2025]
 
 **Content:**
-[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
-
-From Wikipedia, the free encyclopedia
-
-Branch of mathematics
-
-**Linear algebra** is the branch of [mathematics](https://en.wikipedia.org/wiki/Mathematics) concerning [linear equations](https://en.wikipedia.org/wiki/Linear_equation) such as
-
-a1x1+⋯+anxn=b,{\\displaystyle a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n}=b,}
-
-[linear maps](https://en.wikipedia.org/wiki/Linear_map) such as
-
-(x1,…,xn)↦a1x1+⋯+anxn,{\\displaystyle (x\_{1},\\ldots ,x\_{n})\\mapsto a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n},}
-
-and their representations in [vector spaces](https://en.wikipedia.org/wiki/Vector_space) and through [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)).[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3)
-
-In three-dimensional [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space), these three planes represent solutions to linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations.
-
-Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of [geometry](https://en.wikipedia.org/wiki/Geometry), including for defining basic objects such as [lines](https://en.wikipedia.org/wiki/Line_(geometry)), [planes](https://en.wikipedia.org/wiki/Plane_(geometry)) and [rotations](https://en.wikipedia.org/wiki/Rotation_(mathematics)). Also, [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis), a branch of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), may be viewed as the application of linear algebra to [function spaces](https://en.wikipedia.org/wiki/Space_of_functions).
-
-Linear algebra is also used in most sciences and fields of [engineering](https://en.wikipedia.org/wiki/Engineering) because it allows [modeling](https://en.wikipedia.org/wiki/Mathematical_model) many natural phenomena, and computing efficiently with such models. For [nonlinear systems](https://en.wikipedia.org/wiki/Nonlinear_system), which cannot be modeled with linear algebra, it is often used for dealing with [first-order approximations](https://en.wikipedia.org/wiki/First-order_approximation), using the fact that the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of a [multivariate function](https://en.wikipedia.org/wiki/Multivariate_function) at a point is the linear map that best approximates the function near that point.
-
-## History
-
-\[ [edit](https://en.wikipedia.org/w/index.php?title=Linear_algebra&action=edit&section=1)\]
-
-See also: [Determinant § History](https://en.wikipedia.org/wiki/Determinant#History), and [Gaussian elimination § History](https://en.wikipedia.org/wiki/Gaussian_elimination#History)
-
-The procedure (using c... [Content truncated for context window]
+Master Python from scratch 🚀 No fluff—just clear, practical coding skills to kickstart your journey! \n\n❤️ Join this channel to get access to perks:\n / @programmingwithmosh \n\n🚀 Want to dive deeper?\nCheck out my Python mastery course: https://mosh.link/python-course\nSubscribe for more awesome Python content: https://goo.gl/6PYaGF\n\n🔗 Related videos \n • Python Projects for Beginners – Master Pro... \n\n✋ Stay connected:\nFull Courses: https://codewithmosh.com\nTwitter: / moshhamedani \nFacebook: / programmingwithmosh \nInstagram: / codewithmosh.official \nLinkedIn: / codewithmosh \n\n📖 Table of Content\n0:00:00 Introduction\n0:00:56 What is Python?\n0:04:11 Installing Python\n0:05:36 Python Interpreter\n0:07:30 Code Editors\n0:08:49 Your First Python Program\n0:12:25 Python Extension\n0:14:26 Linting Python Code\n0:18:40 Formatting Python Code\n0:22:51 Running Python Code\n0:24:30 Python Implementations\n0:26:59 How Python Code is Executed\n0:29:45 Quiz\n0:31:17 Python Mastery Course\n0:31:44 Variables\n0:34:48 Variable Names\n0:37:51 Strings\n0:43:20 Escape Sequences\n0:46:01 Formatted Strings\n0:48:09 String Methods\n0:54:03 Numbers\n0:56:50 Working With Numbers\n0:58:59 Type Conversion\n1:04:03 Quiz\n1:06:43 Comparison Operators\n1:08:46 Conditional Statements\n1:12:56 Ternary Operator\n1:15:04 Logical Operators\n1:19:07 Short-circuit Evaluations\n1:21:13 Chaining Comparison Operators\n1:22:35 Quiz\n1:24:18 For Loops\n1:27:56 For..Else\n1:30:42 Nested Loops\n1:33:26 Iterables\n1:36:34 While Loops\n1:41:33 Infinite Loops\n1:43:10 Exercise\n1:45:13 Defining Functions\n1:47:37 Arguments\n1:49:57 Types of Functions\n1:53:59 Keyword Arguments\n1:55:59 Default Arguments\n1:57:34 xargs\n\n#Python #AI #MachineLearning #WebDevelopment
+| view_count: 3,065,486 views | short_view_count: 3M views | num_likes: 77 thousand | num_subscribers: 4.76 million
 
 
 ---
 
-### Source 2: An Intuitive Guide to Linear Algebra – BetterExplained
+### Source 2: Python Tutorials: Learn Python Step-by-Step
 
 **Content:**
-Despite two linear algebra classes, my knowledge consisted of “Matrices, determinants, eigen something something”.
+Follow Us
 
-Why? Well, let’s try this course format:
-
-- Name the course _Linear Algebra_ but focus on things called matrices and vectors
-- Teach concepts like Row/Column order with mnemonics instead of explaining the reasoning
-- Favor abstract examples (2d vectors! 3d vectors!) and avoid real-world topics until the final week
-
-The survivors are physicists, graphics programmers and other masochists. We missed the key insight:
-
-**Linear algebra gives you mini-spreadsheets for your math equations.**
-
-We can take a table of data (a matrix) and create updated tables from the original. It’s the power of a spreadsheet written as an equation.
-
-Here’s the linear algebra introduction I wish I had, with a real-world stock market example.
-
-## What’s in a name?
-
-“Algebra” means, roughly, “relationships”. Grade-school algebra explores the relationship between unknown numbers. Without knowing x and y, we can still work out that $(x + y)^2 = x^2 + 2xy + y^2$.
-
-“Linear Algebra” means, roughly, “line-like relationships”. Let’s clarify a bit.
-
-Straight lines are predictable. Imagine a rooftop: move forward 3 horizontal feet (relative to the ground) and you might rise 1 foot in elevation (The slope! Rise/run = 1/3). Move forward 6 feet, and you’d expect a rise of 2 feet. Contrast this with climbing a dome: each horizontal foot forward raises you a different amount.
-
-Lines are nice and predictable:
-
-- If 3 feet forward has a 1-foot rise, then going 10x as far should give a 10x rise (30 feet forward is a 10-foot rise)
-- If 3 feet forward has a 1-foot rise, and 6 feet has a 2-foot rise, then (3 + 6) feet should have a (1 + 2) foot rise
-
-In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
-
-In our example, $F(x)$ calculates the rise when moving forward x feet, and the properties hold:
-
-## Linear Operations
-
-An operation is a calculation based on some inputs. Which operations are linear and predictable? Multiplication, it seems.
-
-Exponents ($F(x) = x^2$) aren’t predictable: $10^2$ is 100, but $20^2$ is 400. We doubled the input but quadrupled the output.
-
-Surprisingly, regular addition isn’t linear either. Consider the “add three” function $F(x) = x + 3$:
-
-We doubled the input and did not double the output. (Yes, $F(x) = x + 3$ happens to be the equation for an _offset_ line, but it’s still not “linear” because $F(10) \\neq 10 \\cdot F(1)$. Fun.)
-
-So, what types of functions are _actually_ linear? Plain-old scaling by a constant, or functions that look like: $F(x) = ax$. In our roof example, $a = 1/3$.
-
-But life isn’t _too_ boring. We can still combine multiple linear functions ($A(x) = ax, B(x) = bx, C(x)=cx$) into a larger one, $G$:
-
-$G$ is still linear, since doubling the input continues to double the output:
-
-We have “mini arithmetic”: multiply inputs by a constant, and add the results. It’s actually usefu... [Content truncated for context window]
+- [Python - Get Started](https://www.tutorialsteacher.com/python)
+- [What is Python?](https://www.tutorialsteacher.com/python/python-overview)
+- [Where to use Python?](https://www.tutorialsteacher.com/python/where-to-use-python)
+- [Python Version History](https://www.tutorialsteacher.com/python/python-version-history)
+- [Install Python](https://www.tutorialsteacher.com/python/install-python)
+- [Python - Shell/REPL](https://www.tutorialsteacher.com/python/python-interective-shell)
+- [Python IDLE](https://www.tutorialsteacher.com/python/python-idle)
+- [Python Editors](https://www.tutorialsteacher.com/python/python-ides)
+- [Python Syntax](https://www.tutorialsteacher.com/python/python-syntax)
+- [Python Keywords](https://www.tutorialsteacher.com/python/python-keywords)
+- [Python Variables](https://www.tutorialsteacher.com/python/python-variables)
+- [Python Data Types](https://www.tutorialsteacher.com/python/python-data-types)
+- [Number](https://www.tutorialsteacher.com/python/python-number-type)
+- [String](https://www.tutorialsteacher.com/python/python-string)
+- [List](https://www.tutorialsteacher.com/python/python-list)
+- [Tuple](https://www.tutorialsteacher.com/python/python-tuple)
+- [Set](https://www.tutorialsteacher.com/python/python-set)
+- [Dictionary](https://www.tutorialsteacher.com/python/python-dictionary)
+- [Python Operators](https://www.tutorialsteacher.com/python/python-operators)
+- [Python Conditions - if, elif](https://www.tutorialsteacher.com/python/python-if-elif)
+- [Python While Loop](https://www.tutorialsteacher.com/python/python-while-loop)
+- [Python For Loop](https://www.tutorialsteacher.com/python/python-for-loop)
+- [User Defined Functions](https://www.tutorialsteacher.com/python/python-user-defined-function)
+- [Lambda Functions](https://www.tutorialsteacher.com/python/python-lambda-function)
+- [Variable Scope](https://www.tutorialsteacher.com/python/local-and-global-variables-in-python)
+- [Python Modules](https://www.tutorialsteacher.com/python/python-module)
+- [Module Attributes](https://www.tutorialsteacher.com/python/python-module-attributes)
+- [Python Packages](https://www.tutorialsteacher.com/python/python-package)
+- [Python PIP](https://www.tutorialsteacher.com/python/pip-in-python)
+- [\_\_main\_\_, \_\_name\_\_](https://www.tutorialsteacher.com/python/main-in-python)
+- [Python Built-in Modules](https://www.tutorialsteacher.com/python/python-builtin-modules)
+- [OS Module](https://www.tutorialsteacher.com/python/os-module)
+- [Sys Module](https://www.tutorialsteacher.com/python/sys-module)
+- [Math Module](https://www.tutorialsteacher.com/python/math-module)
+- [Statistics Module](https://www.tutorialsteacher.com/python/statistics-module)
+- [Collections Module](https://www.tutorialsteacher.com/python/collections-module)
+- [Random Module](https://www.tutorialsteacher.com/python/random-module)
+- [Python Generator Function](https://www.tutorialsteacher.com/python/python-generator)
+- [Python List Comprehension](https://... [Content truncated for context window]
 
 
 ---
 
-### Source 3: Linear Algebra Roadmap For Data Science - Amit Yadav - Medium
+### Source 3: Programming: The Basics (Python Edition)
 
 **Content:**
-[Sitemap](https://medium.com/sitemap/sitemap.xml)
+# Programming: The BasicsPython Edition
 
-[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F377016db4dbc&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)
+## [George Ferguson](https://www.cs.rochester.edu/u/ferguson/)
 
-Sign up
+## Summer 2020(Minor edits Summer 2022, Summer 2025)
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+> _This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)_
 
-[Medium Logo](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)
+ [Introduction](https://www.cs.rochester.edu/www.cs.rochester.edu#Intro) \|
+[Statements](https://www.cs.rochester.edu/www.cs.rochester.edu#Statements) \|
+[Values](https://www.cs.rochester.edu/www.cs.rochester.edu#Values) \|
+[Expressions](https://www.cs.rochester.edu/www.cs.rochester.edu#Expressions) \|
+[Variables](https://www.cs.rochester.edu/www.cs.rochester.edu#Variables) \|
+[Conditionals](https://www.cs.rochester.edu/www.cs.rochester.edu#Conditionals) \|
+[Comments](https://www.cs.rochester.edu/www.cs.rochester.edu#Comments) \|
+[Iteration](https://www.cs.rochester.edu/www.cs.rochester.edu#Iteration) \|
+[Functions](https://www.cs.rochester.edu/www.cs.rochester.edu#Functions) \|
+[Input](https://www.cs.rochester.edu/www.cs.rochester.edu#Input) \|
+[Lists](https://www.cs.rochester.edu/www.cs.rochester.edu#Lists) \|
+[Summary](https://www.cs.rochester.edu/www.cs.rochester.edu#Summary)
 
-[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)
+### Introduction
 
-Sign up
+_Computation_ is the process of _computing_ new values from old ones. That’s it. The values may be numbers or text or many other things, and a _computer_ is given some values and asked to compute new ones. For example, it could be given your grades in your courses and asked to compute your GPA (grade point average). Or it could be given the prices of the items in your shopping cart and asked to compute the total including tax. Or it could be given the positions of pieces on a chess board and asked to compute the best move for one of the players.
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+You probably knew that. But did you know that until quite recently, a computer was _someone_ that computes. That’s right. Computers were people who worked with (mostly) numerical values: counting votes, managing financial ledgers, solving scientific equations, etc. They often had mechanical devices such as old-fashioned adding machines or slide rules to help them, but the people were the ones who knew how to compute whatever it was they were computing.
 
-# Linear Algebra Roadmap For Data Science
+Now, if you want to tell a human how to do something, first you need to know how to do it yourself. And then you need to be able to describe it to them in a language that they understand, using steps that they know how to do. If I want you to prepare a meal of spaghetti, first I need to know how to make spaghetti myself, and then I also need to be able to explain it to you in way that you understand and can follow. If I want you to compute a student’s GPA given their grades, first I need to know how to do it and then I need to tell you how to do it in a way that you understand and can do for yourself.
 
-[Amit Yadav](https://medium.com/@amit25173?source=post_page---byline--377016db4dbc---------------------------------------)
-
-11 min read
-
-·
-
-Aug 15, 2024
-
---
-
-Listen
-
-Share
-
-Hi there! Have you tried using ChatGPT+ for your projects?
-
-Press enter or click to view image in full size
-
-I’ve been using ChatGPT+ and it’s been amazing for my projects.
-
-If you want to experience ChatGPT’s newest models but aren’t ready to commit financially, you’re welcome to use my accounts.
-
-[**_Click here to get free GPT + accounts._**](https://rebrand.ly/XYS)
-
-Now let’s get back to the blog:
-
-Linear algebra isn’t just another subject you need to check off your list; it’s the backbone of data science. Whether you’re building machine learning models, performing data transformations, or diving into deep learning, linear algebra is the language that makes these processes possible. Think of it as the foundation upon which all advanced data science techniques are built. Mastering linear algebra isn’t optional — it’s essential. This blog will show you exactly why, and guide you through the key concepts you need to grasp.
-
-This blog is for you if you’re an aspiring data scientist, a student eager to break into the field, or a professional making a career transition into data science. You might have encountered linear algebra before, but this time, you’ll see it through the lens of data science. We’ll focus on the practical aspects that directly impact your work, so you can apply these concepts immediately in your projects.
-
-**_Brief Overview_**
-
-By the end of this blog, you’ll have a clear understanding of why linear algebra is so crucial in data science and how it’s applied in real-world scenarios. We’ll break down complex concepts like vectors, matrices, and eigenvalues into digestible pieces, always relating them back to da... [Content truncated for context window]
+Of course, we’re not really interested in telling humans how to compute things. Since the mid-twentieth century, we have been able to build computing devices... [Content truncated for context window]
 
 
 ---
 
-### Source 4: linearly.ai
+### Source 4: Python Overview
 
 **Content:**
-[Math](https://linearly.ai/tags/?tag=math) [Abstraction](https://linearly.ai/tags/?tag=abstraction) [Turing](https://linearly.ai/tags/?tag=turing) [Computation](https://linearly.ai/tags/?tag=computation) [ML](https://linearly.ai/tags/?tag=ml)
+# Python Overview
 
-## [Lecture00: How Do Machines Learn?](https://linearly.ai/lecture/lecture-00)
+## Python Programming Tutorials
 
-19 Aug, 2023 · 2 min read
+Overview of PythonPython FundamentalsControl StatementsArrays and StringsFunctionsLists and TuplesClasses and ObjectsExceptionsFiles HandlingPython Advanced
 
-[Vectors](https://linearly.ai/tags/?tag=vectors) [Dimensions](https://linearly.ai/tags/?tag=dimensions) [Equations](https://linearly.ai/tags/?tag=equations) [Dot Product](https://linearly.ai/tags/?tag=dot+product)
+Python is an advanced, interpreted programming language known for its readability and simplicity. It supports various programming paradigms, such as procedural, object-oriented, and functional. Python's wide range of applications, from web development and app creation to data analytics and artificial intelligence, underscore its usefulness. Its robust assortment of libraries and frameworks contributes to its popularity among novices and professionals.
 
-## [Lecture01: Fundamentals](https://linearly.ai/lecture/lecture-01)
+Python is a programming language that includes features of C and Java. It provides the style of writing elegant code like C, and for object-oriented programming, it offers classes and objects like Java.
 
-18 Aug, 2023 · 1 min read
+In Python, the program to add two numbers will be as follows:
 
-[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Singularity](https://linearly.ai/tags/?tag=singularity) [Numpy](https://linearly.ai/tags/?tag=numpy)
+Example:
 
-## [Lecture02: Matrices & Transformations](https://linearly.ai/lecture/lecture-02)
+```
+#program to add two numbers in python
+a = b = 20 #declare two variables and store 20 in them
+print (a+b) #final output
+```
 
-17 Aug, 2023 · 1 min read
+Output:
 
-[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Numpy](https://linearly.ai/tags/?tag=numpy) [Dimensions](https://linearly.ai/tags/?tag=dimensions)
+```
+40
+```
 
-## [Lecture03: Matrices & Views & Numpy](https://linearly.ai/lecture/lecture-03)
+## Some Facts About Python
 
-16 Aug, 2023 · 1 min read
+- At the National Research Institute for **Mathematics and Computer Science in the Netherlands**, **Guido van Rossum** created Python in the **late 1980s** as an alternative to the ABC language that could handle exceptions and interfaces.
+- Python is derived from programming languages such as ABC, Modula 3, small talk, and Algol-68.
+- Van Rossum picked the name Python for the new language from a TV show, Monty Python's Flying Circus.
+- A Python page is a file with a **.py** extension that can contain a combination of HTML tags and Python scripts.
+- In December 1989, Creator first developed the Python interpreter as a hobby, and then on October 16, 2000, Python 2.0 was released with many new features.
+- Python 3.0 was released on **December 3, 2008**, with more testing and new features.
+- Python is an open-source scripting language.
+- Python is open-source, meaning anyone can download it freely from **www.Python.org** and use it to develop programs. Its source code can be accessed and modified as required in the project.
+- Python is one of the official languages used by the tech giant Google.
 
-[Elimination](https://linearly.ai/tags/?tag=elimination) [Matrix Operations](https://linearly.ai/tags/?tag=matrix+operations) [Inverse](https://linearly.ai/tags/?tag=inverse)
+## Python Why? Characteristics and Features of Python
 
-## [Lecture04: Elimination, Inverse Matrices & Permutations](https://linearly.ai/lecture/lecture-04)
+Python is gaining popularity in the programming community; there are many reasons behind this.
 
-15 Aug, 2023 · 1 min read
-
-[Matrix Multiplication](https://linearly.ai/tags/?tag=matrix+multiplication) [Elimination](https://linearly.ai/tags/?tag=elimination) [Inverse Matrices](https://linearly.ai/tags/?tag=inverse+matrices)
-
-## [Lecture05: Unique Matrix Multiplication Methods](https://linearly.ai/lecture/lecture-05)
-
-14 Aug, 2023 · 1 min read
-
-[CR Decomposition](https://linearly.ai/tags/?tag=cr+decomposition) [LU Decomposition](https://linearly.ai/tags/?tag=lu+decomposition) [Invertibility](https://linearly.ai/tags/?tag=invertibility)
-
-## [Lecture06: CR & LU Decompositions](https://linearly.ai/lecture/lecture-06)
-
-13 Aug, 2023 · 1 min read
-
-[Vector Spaces](https://linearly.ai/tags/?tag=vector+spaces) [Subspaces](https://linearly.ai/tags/?tag=subspaces) [Column-Spaces](https://linearly.ai/tags/?tag=column-spaces)
-
-## [Lecture07: Vector Spaces Intro](https://linearly.ai/lecture/lecture-07)
-
-12 Aug, 2023 · 1 min read
-
-[Columnspace](https://linearly.ai/tags/?tag=columnspace) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rowspace](https://linearly.ai/tags/?tag=rowspace)
-
-## [Lecture7.5: Subspaces, Columnspace, Rowspace, Nullspace](https://linearly.ai/lecture/lecture-07-5)
-
-12 Aug, 2023 · 1 min read
-
-[Subspaces](https://linearly.ai/tags/?tag=subspaces) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rank](https://linearly.ai/tags/?tag=rank) [Basis](https://linearly... [Content truncated for context window]
+- **Interpreted Language:** Python is processed at runtime by Python Interpreter.
+- **Object-Oriented Language:** It supports object-oriented features and techniques of programming.
+- **Interactive Programming Language:** Users can directly interact with the Python interpreter to write programs.
+- **Easy language:** Python is simple to learn, particularly for newcomers.
+- **Straightforward Syntax:** The formation of Python syntax is simple, making it popular.
+- **Easy to read:** Python source code is clearly defined and visible.
+- **Portable:** Python codes can be run on various hardware platforms with the same... [Content truncated for context window]
 
 
 ---
 
-### Source 5: A short tutorial on linear algebra
+### Source 5: Python Full Course Online - Complete Beginner to Advanced
 
 **Content:**
-# A short tutorial on linear algebra
+- Courses
 
-A short introduction to linear algebra is outlined in the following notes.
+- Placement
 
-- [Vector spaces](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_001_VectorSpaces.pdf)
-- [Linear maps and matrices](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_002_LinearMapsAndMatrices.pdf)
-- [Linear independence and bases](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_003_LinearIndependenceAndBases.pdf)
+- Data Science
+
+IBM
+
+
+## Our website uses cookies
+
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our [Cookie Policy](https://www.geeksforgeeks.org/legal/privacy-policy/#:~:text=the%20appropriate%20measures.-,COOKIE%20POLICY,-A%20cookie%20is) & [Privacy Policy](https://www.geeksforgeeks.org/privacy-policy/)
+
+Got it!
+
+1. [All Courses](https://www.geeksforgeeks.org/courses)
+2. [Self-Paced](https://www.geeksforgeeks.org/courses/category/all?courseType=online&courseFeeType=all&itm_source=geeksforgeeks&itm_medium=course_landingpage&itm_campaign=courses)
+
+# Python Full Course Online - Complete Beginner to Advanced
+
+Self-Paced Course
+
+400k+ interested Geeks
+
+Learn Python Programming from scratch with our beginner-friendly **complete Python course**! Learn Python key concepts like Python basics, Variables, Data types, Input/output, Operators, OOP concepts, and more. Gain hands-on experience with practical exercises to build a solid foundation in Python programming. **Enrol now to learn and master Python!**
+
+Beginner and Intermediate6 Weeks
+400k+ interested Geeks
+
+Comprehensive LearningBeginner FriendlyCourse CertificateAssessment Tests
+
+## Course Overview
+
+## Python Course Online - Overview
+
+This **online Python course** is designed to take you from a beginner to an advanced level in Python programming. It covers all the essential Python concepts, including basic syntax, data types, variables, and operators, as well as more advanced Python topics such as functions, modules, and file handling.
+
+You will learn to work with data structures like lists, tuples, sets, and dictionaries, and understand the principles of object-oriented programming (OOPs) with classes and objects.
+
+Along with this, the Python programming full course has hands-on projects and coding challenges, that will help you to gain practical experience and develop problem-solving skills. Whether you're looking to start a career in software development, data science, or automation, this **complete Python course** provides a comprehensive foundation in Python, preparing you for various job opportunities in the tech industry.
+
+## GFG Python Programming Course - Highlights
+
+- Curated by CEO Mr. Sandeep Jain and industry experts.
+- 10+ hours of recorded content
+- 50+ Practice Problems
+- 100+ questions including output-based programs
+- Learn Functions, Loops, Strings, and Lists efficiently.
+- Gain command over Object Oriented Programming
+- Suitable for both new programmers and experienced coders.
+- Practice Python programming examples for skill development.
+- Strengthen Python foundations before advancing to DSA using Python.
+- Explore Complete Machine Learning & Data Science Program
+
+Read more
+
+## Course Content
+
+01Python Basics
+
+- ### Background Part 1 (IO Devices, CPU and Memory)
+
+- ### Background Part 2 (Computer Organization)
+
+- ### Why Do We Need Programming Languages
+... [Content truncated for context window]
 
 
 ---
 
-### Source 6: Introduction to Linear Algebra
+### Source 6: Google's Python Class | Python Education
 
 **Content:**
-# Introduction to Linear Algebra
+[Skip to main content](https://developers.google.com/developers.google.com#main-content)
 
-![list of linear algebra problems](https://i1.wp.com/yutsumura.com/wp-content/uploads/2016/07/list-of-linear-algebra-problems-eye-catch-e1497213291742.jpg?fit=720%2C360&ssl=1)
+- [for Education](https://developers.google.com/edu)
+- [Python](https://developers.google.com/edu/python)
 
-# Introduction to Linear Algebra
+`/`
 
-Some problems and solutions by the topics that are taught in the undergraduate linear algebra course (Math 2568) in the Ohio State University.
+- English
+- Deutsch
+- Español
+- Español – América Latina
+- Français
+- Indonesia
+- Italiano
+- Polski
+- Português – Brasil
+- Tiếng Việt
+- Türkçe
+- Русский
+- עברית
+- العربيّة
+- فارسی
+- हिंदी
+- বাংলা
+- ภาษาไทย
+- 中文 – 简体
+- 中文 – 繁體
+- 日本語
+- 한국어
 
-The number of chapters/sections are based on the textbook [Introduction to Linear Algebra, 5th edition,](http://amzn.to/2aLC5xy)
+Sign in
 
-by L.W. Johnson, R.D. Riess, and J.T. Arnold.
+- [Home](https://developers.google.com/)
+- [Products](https://developers.google.com/products)
+- [Google for Education](https://developers.google.com/edu)
+- [Python](https://developers.google.com/edu/python)
 
-Contents
+# Google's Python Class Stay organized with collections Save and categorize content based on your preferences.
 
-- [Chapter 1. Matrices and Systems of Linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_1_Matrices_and_Systems_of_Linear_Equations)
- - [1.1 Introduction to Matrices and Systems of linear equations](https://yutsumura.com/introduction-to-linear-algebra/#11_Introduction_to_Matrices_and_Systems_of_linear_equations)
- - [1.2 Echelon Form and Gaussian-Jordan Elimination](https://yutsumura.com/introduction-to-linear-algebra/#12_Echelon_Form_and_Gaussian-Jordan_Elimination)
- - [1.3 Consistent Systems of linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#13_Consistent_Systems_of_linear_Equations)
- - [1.5 Matrix Operations](https://yutsumura.com/introduction-to-linear-algebra/#15_Matrix_Operations)
- - [1.6 Algebraic Properties of Matrix operations](https://yutsumura.com/introduction-to-linear-algebra/#16_Algebraic_Properties_of_Matrix_operations)
- - [1.7 Linear Independence and Nonsingular Matrices](https://yutsumura.com/introduction-to-linear-algebra/#17_Linear_Independence_and_Nonsingular_Matrices)
- - [1.9 Matrix Inverses and Their Properties](https://yutsumura.com/introduction-to-linear-algebra/#19_Matrix_Inverses_and_Their_Properties)
-- [Midterm Exam 1 (covers Chapter 1)](https://yutsumura.com/introduction-to-linear-algebra/#Midterm_Exam_1_covers_Chapter_1)
-- [Chapter 2. Vectors in 2-Space and 3-Space](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_2_Vectors_in_2-Space_and_3-Space)
- - [2.1 Vectors in The Plane](https://yutsumura.com/introduction-to-linear-algebra/#21_Vectors_in_The_Plane)
- - [2.2 Vectors in Space](https://yutsumura.com/introduction-to-linear-algebra/#22_Vectors_in_Space)
- - [2.3 The Dot Product and The Cross Product](https://yutsumura.com/introduction-to-linear-algebra/#23_The_Dot_Product_and_The_Cross_Product)
-- [Chapter 3. The Vector Space $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_3_The_Vector_Space_92Rn)
- - [3.2 Vector Space Properties of $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#32_Vector_Space_Properties_of_92Rn)
- - [3.3 Examples of Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#33_Examples_of_Subspaces)
- - [3.4 Bases for Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#34_Bases_for_Subspaces)
- - [3.5 Dimension](https://yutsumura.com/introduction-to-linear-algebra/#35_Dimension)
- - [3.6 Orthogonal Bases for Subspaces](h... [Content truncated for context window]
+Welcome to Google's Python Class -- this is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding. These materials are used within Google to introduce Python to people who have just a little programming experience. The first exercises work on basic Python concepts like strings and lists, building up to the later exercises which are full programs dealing with text files, processes, and http connections. The class is geared for people who have a little bit of programming experience in some language, enough to know what a "variable" or "if statement" is. Beyond that, you do not need to be an expert programmer to use this material.
+
+To get started, the Python sections are linked at the left -- [Python Set Up](https://developers.google.com/edu/python/set-up) to get Python installed on your machine, [Python Introduction](https://developers.google.com/edu/python/introduction) for an introduction to the language, and then [Python Strings](https://developers.google.com/edu/python/strings) starts the coding material, leading to the first exercise. The end of each written section includes a link to the code exercise for that section's material. The lecture videos parallel the written materials, introducing Python, then strings, then first exercises, and so on. At Google, all this material makes up an intensive 2-day class, so the videos are organized as the day-1 and day-2 sections.
+
+This material was created by [Nick Parlante](http://www-cs-faculty.stanford.edu/%7enick/) working in the engEDU group at Google. Special thanks for the help from my Google colleagues John Cox, Steve Glassman, Piotr Kaminski, and Antoine Picard. And finally thanks to Google and my director Maggie Johnson for the enlightened generosity to put these materials out on the internet for free under the [Creative Commons Attribution 2.5](http://creativecommons.org/licenses/by/2.5/) license -- share and enjoy!
+
+**Tip:** Check out the [Python Google Code University Forum](https://groups.google.com/forum/?fromgroups#!forum/python-gcu-forum) to ask and answer questions.
+
+Except as otherwis... [Content truncated for context window]
 
 
 ---
 
-### Source 7: Linear Algebra – Problems in Mathematics
+### Source 7: Art of Problem Solving
 
 **Content:**
-# Linear Algebra
+[Art of Problem Solving](https://artofproblemsolving.com/company)
 
-## Linear Algebra Problems and Solutions
+[AoPS Online](https://artofproblemsolving.com)
 
-The topics in Linear Algebra are listed below.
+Math texts, online classes, and more
+for students in grades 5-12.
 
-Each page contains definitions and summary of the topic followed by exercise problems.
+[Visit AoPS Online ‚](https://artofproblemsolving.com)
 
-This is version 0 (11/15/2017), that is, still work in progress.
+[Books for Grades 5-12](https://artofproblemsolving.com/store) [Online Courses](https://artofproblemsolving.com/school)
 
-- [Introduction to Matrices](https://yutsumura.com/linear-algebra/introduction-to-matrices/)
-- [Elementary Row Operations](https://yutsumura.com/linear-algebra/elementary-row-operations/)
-- [Gaussian-Jordan Elimination](https://yutsumura.com/linear-algebra/gaussian-jordan-elimination/)
-- [Solutions of Systems of Linear Equations](https://yutsumura.com/linear-algebra/solutions-of-systems-of-linear-equations/)
-- [Linear Combination and Linear Independence](https://yutsumura.com/linear-algebra/linear-combination-and-linear-independence/)
-- [Nonsingular Matrices](https://yutsumura.com/linear-algebra/nonsingular-matrices/)
-- [Inverse Matrices](https://yutsumura.com/linear-algebra/inverse-matrices/)
-- [Subspaces in $\\R^n$](https://yutsumura.com/linear-algebra/subspaces-in-rn/)
-- [Bases and Dimension of Subspaces in $\\R^n$](https://yutsumura.com/linear-algebra/bases-and-dimension-of-subspaces-in-rn/)
-- [General Vector Spaces](https://yutsumura.com/linear-algebra/general-vector-spaces/)
-- [Subspaces in General Vector Spaces](https://yutsumura.com/linear-algebra/subspaces-in-general-vector-spaces/)
-- [Linearly Independency of General Vectors](https://yutsumura.com/linear-algebra/linearly-independency-of-general-vectors/)
-- [Bases and Coordinate Vectors](https://yutsumura.com/linear-algebra/bases-and-coordinate-vectors/)
-- [Dimensions of General Vector Spaces](https://yutsumura.com/linear-algebra/dimensions-of-general-vector-spaces/)
-- [Linear Transformation from $\\R^n$ to $\\R^m$](https://yutsumura.com/linear-algebra/linear-transformation-from-rn-to-rm/)
-- [Linear Transformation Between Vector Spaces](https://yutsumura.com/linear-algebra/linear-transformation-between-vector-spaces/)
-- [Orthogonal Bases](https://yutsumura.com/linear-algebra/orthogonal-bases/)
-- [Determinants of Matrices](https://yutsumura.com/linear-algebra/determinants-of-matrices/)
-- [Computations of Determinants](https://yutsumura.com/linear-algebra/computations-of-determinants/)
-- [Introduction to Eigenvalues and Eigenvectors](https://yutsumura.com/linear-algebra/introduction-to-eigenvalues-and-eigenvectors/)
-- [Eigenvectors and Eigenspaces](https://yutsumura.com/linear-algebra/eigenvectors-and-eigenspaces/)
-- [Diagonalization of Matrices](https://yutsumura.com/linear-algebra/diagonalization-of-matrices/)
-- [The Cayley-Hamilton Theorem](https://yutsumura.com/linear-algebra/the-cayley-hamilton-theorem/)
-- [Dot Products and Length of Vectors](https://yutsumura.com/linear-algebra/dot-products-and-length-of-vectors/)
-- [Eigenvalues and Eigenvectors of Linear Transformations](https://yutsumura.com/linear-algebra/eigenvalues-and-eigenvectors-of-linear-transformations/)
-- [Jordan Canonical Form](https://yutsumura.com/linear-algebra/... [Content truncated for context window]
+[Beast Academy](https://beastacademy.com)
+
+Engaging math books and online learning
+for students ages 6-13.
+
+[Visit Beast Academy ‚](https://beastacademy.com)
+
+[Books for Ages 6-13](https://beastacademy.com/books) [Beast Academy Online](https://beastacademy.com/online)
+
+[AoPS Academy](https://aopsacademy.org)
+
+Small live classes for advanced math
+and language arts learners in grades 2-12.
+
+[Visit AoPS Academy ‚](https://aopsacademy.org)
+
+[Find a Physical Campus](https://aopsacademy.org/campuses) [Visit the Virtual Campus](https://virtual.aopsacademy.org)
+
+# Page
+
+[Article](https://artofproblemsolving.com/wiki/index.php/Basic_Programming_With_Python)[Discussion](https://artofproblemsolving.com/wiki/index.php/Talk:Basic_Programming_With_Python)[View source](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=edit)[History](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=history)
+
+# Toolbox
+
+[Recent changes](https://artofproblemsolving.com/wiki/index.php/Special:RecentChanges)[Random page](https://artofproblemsolving.com/wiki/index.php/Special:Random)[Help](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)[What links here](https://artofproblemsolving.com/wiki/index.php/Special:WhatLinksHere/Basic_Programming_With_Python)[Special pages](https://artofproblemsolving.com/wiki/index.php/Special:SpecialPages)
+
+# Search
+
+# Basic Programming With Python
+
+**Important: It is extremely recommended that you read [Getting Started With Python Programming](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming) before reading this unless you already know some programming knowledge.**
+
+(Note: This is a really long article. To learn the most from this article, you need to read everything in order and skip nothing, unless you are **absolutely absolutely sure that that content is way too easy for you.**)
+
+This article will talk about some basic Python programming. If you don't even know how to install Python, look [here](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming).
+
+Note that this article has lots of program examples. It is recommended (but not required) to try these on your own before looking at the solutions.
+
+## Contents
+
+- [1Booleans](https://artofproblemsolving.com/artofproblemsolving.com#Booleans)
+ - [1.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#Program_Example)
+- [2Flow](https://artofproblemsolving.com/artofproblemsolving.com#Flow)
+ - [2.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#P... [Content truncated for context window]
 
 
 ---
 
-### Source 8: Matrix Everywhere: Linear Algebra in Comp Sci
+### Source 8: Learn Python Programming - Python Tutorial
 
 **Content:**
-Disclosure: When you purchase through links on my site, I may earn an affiliate commission. As an Amazon Associate, I earn from qualifying purchases.
+# Learn Python Programming
 
-> In this article, the author explores the relationship between mathematics and computer science, focusing on the core concepts of linear algebra and their various applications in computer science. Topics covered include linear systems, matrices, Gaussian elimination, vectors, vector spaces, vector-matrix multiplication, and transformations. These concepts are essential in fields such as machine learning, computer graphics, cryptography, and information theory.
+This site contains materials and exercises for the Python 3 programming language.In this course you will learn how to write code, the basics and see examples.
 
-* * *
+Python is a programming language supports several programming paradigms including Object-Orientated Programming (OOP) and functional programming.
 
-## Introduction
+**Related course:** [Complete Python Programming Course & Exercises](https://gum.co/dcsp)
 
-**This article is part of a series called "** [**Log Base Two**](https://scrappedscript.com/series/log-base-two) **", a series dedicated to the relationship between math and computer science**.
+## Table of Contents:
 
-Just to give a bit of background on my experience in math, I've **excelled** in a total of 10 college courses in math:
+Overview of articles and exercises:
 
-01. Single-variable differential calculus
+### Introduction
 
-02. Single-variable integral calculus
+- [7 reasons to learn Python](https://pythonbasics.org/7-reasons-to-learn-python/)
+- [Why Python is Awesome](https://pythonbasics.org/why-python-is-awesome/)
 
-03. Multi-variable differential and integral calculus
+### Learn Python
 
-04. Multi-variable differential and integral calculus of vector-valued functions
+- [Getting started](https://pythonbasics.org/getting-started/)
+- [Execute Python scripts](https://pythonbasics.org/execute-python-scripts/)
+- [Variables](https://pythonbasics.org/variables/)
+- [Strings](https://pythonbasics.org/strings/)
+- [Replace](https://pythonbasics.org/replace/)
+- [Join](https://pythonbasics.org/join/)
+- [String find](https://pythonbasics.org/string-find/)
+- [Split](https://pythonbasics.org/split/)
+- [Random numbers](https://pythonbasics.org/random-numbers/)
+- [Keyboard input](https://pythonbasics.org/keyboard-input/)
 
-05. Linear Algebra
+### Control structures
 
-06. Differential equations
+- [If statements](https://pythonbasics.org/if-statements/)
+- [For Loops](https://pythonbasics.org/for-loops/)
+- [While loop](https://pythonbasics.org/while-loop/)
 
-07. Probability and statistics
+### Data and operations
 
-08. Data analysis using R programming language
+- [Functions](https://pythonbasics.org/functions/)
+- [List](https://pythonbasics.org/list/)
+- [List operations](https://pythonbasics.org/list-operations/)
+- [Sort list](https://pythonbasics.org/sort-list/)
+- [Range function](https://pythonbasics.org/range-function/)
+- [Dictionary](https://pythonbasics.org/dictionary/)
+- [Read file](https://pythonbasics.org/read-file/)
+- [Write file](https://pythonbasics.org/write-file/)
+- [Nested loops](https://pythonbasics.org/nested-loops/)
+- [Slices](https://pythonbasics.org/slices/)
+- [Multiple return](https://pythonbasics.org/multiple-return/)
+- [Scope](https://pythonbasics.org/scope/)
+- [time and date](https://pythonbasics.org/time-and-date/)
+- [Try exception](https://pythonbasics.org/try-except/)
+- [How to use pip and pypi](https://pythonbasics.org/how-to-use-pip-and-pypi/)
 
-09. Multivariate statistics
+### OOP
 
-10. Discrete math
+- [Class](https://pythonbasics.org/class/)
+- [Constructor](https://pythonbasics.org/constructor/)
+- [Getter and setter](https://pythonbasics.org/getter-and-setter/)
+- [Modules](https://pythonbasics.org/modules/)
+- [Inheritance](https://pythonbasics.org/inheritance/)
+- [Static method](https://pythonbasics.org/static-method/)
+- [Iterable](https://pythonbasics.org/iterable/)
+- [Class method](https://pythonbasics.org/classmethod/)
+- [Multiple Inheritance](https://pythonbasics.org/multiple-inheritance/)
 
+### Advanced
 
-For a large majority of those 10 classes, I ended up with A's.
-
-Although, before college, I struggled a lot with math in the classroom, even though math had always been my favorite subject since I was in elementary school. I found it hard to truly grasp the concepts taught because my high school teachers were too focused on skill assessment. Instead of focusing on the actual concept being taught, I was too worried about how I was going to pass the test the following week.
-
-Once I got to college, I realized that your math grade (or any grade for that matter) truly doesn't define your potential. Further, I'd argue that your success in math _education_ is heavily influenced by the quality of the teacher/professor's teaching.
-
-My mission with this series is to show other people that math isn't so scary if you break down mathematical concepts into digestible bouts of information and investigate use cases of math in your primary field of interest (in this case, computer science). Along the way, I hope to also supplement your math education with quality content. I believe that **everyone** is capable of learning and truly loving mathematics.
-
-**New articles in this series are posted every Thursday. If you have any suggestions for a specific topic I should write about, please comment it down below!**
-
-* * *
-
-## What Even is Linear Algebra?
-
-Linear algebra is a subfield of mathematics that concentrates on linear systems, matrices, and vectors. Through the employment of these three fundamental elements, a multitude of advancements have been achieved in various domains, both within and beyond the sphere of mathematics.
-
-## Why Hav... [Content truncated for context window]
+- [Virtualenv](https://pythonbasics.org/virtualenv/)
+- [Enumerate](https://pythonbasics.org/enumerate/)
+- [Pickle](https://pythonbasics.org/pickle/)
+- [Regular Expressions](https://pythonbasics.org/regula... [Content truncated for context window]
 
 
 ---
 
-### Source 9: linalg.dvi
+### Source 9: School of Computing - Learning Python
 
 **Content:**
-Linear Algebra Review and Reference
-Zico Kolter
-October 16, 2007
-1 Basic Concepts and Notation
-Linear algebra provides a way of compactly representing and operating on sets of linear
-equations. For example, consider the following system of equations:
-4x1 − 5x2 = −13
-−2x1 + 3x2 = 9 .
-This is two equations and two variables, so as you know from high school algebra, you
-can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
-example if the second equation is simply a multiple of the first, but in the case above there
-is in fact a unique solution). In matrix notation, we can write the system more compactly
-as:
-Ax = b
-with A =
-
-4 −5
-−2 3 
-, b =
-
-13
-−9
-
-.
-As we will see shortly, there are many advantages (including the obvious space savings)
-to analyzing linear equations in this form.
-1.1 Basic Notation
-We use the following notation:
-• By A ∈ R
-m×n we denote a matrix with m rows and n columns, where the entries of A
-are real numbers.
-• By x ∈ R
-n
-, we denote a vector with n entries. Usually a vector x will denote a column
-vector — i.e., a matrix with n rows and 1 column. If we want to explicitly represent
-a row vector — a matrix with 1 row and n columns — we typically write x
-T
-(here
+### Python Programming
+
+- [1\. Computers and Programs](https://comp.mga.edu/learning/python/module/1)
+
+ - [1-1. Computers](https://comp.mga.edu/learning/python/module/1/topic/1)
+ - [1-2. Computer Programs](https://comp.mga.edu/learning/python/module/1/topic/2)
+ - [1-3. What is Computer Science?](https://comp.mga.edu/learning/python/module/1/topic/3)
+ - [1-4. Programming Languages](https://comp.mga.edu/learning/python/module/1/topic/4)
+ - [1-5. Discovering Python](https://comp.mga.edu/learning/python/module/1/topic/5)
+ - [1-6. Setting Up Python Windows and macOS](https://comp.mga.edu/learning/python/module/1/topic/6)
+ - [1.7 Hardware](https://comp.mga.edu/learning/python/module/1/topic/161)
+ - [1.8 Software](https://comp.mga.edu/learning/python/module/1/topic/162)
+ - [1.9 High-Level Language](https://comp.mga.edu/learning/python/module/1/topic/163)
+ - [Summary](https://comp.mga.edu/learning/python/module/1/topic/7)
+- [2\. Input & Output](https://comp.mga.edu/learning/python/module/2)
+
+ - [2-1. The Software Development Process](https://comp.mga.edu/learning/python/module/2/topic/8)
+ - [2.2 The Five Steps of Software Development: Understanding the Problem](https://comp.mga.edu/learning/python/module/2/topic/164)
+ - [2.3 The Five Steps of Software Development: Defining Program Specifications](https://comp.mga.edu/learning/python/module/2/topic/165)
+ - [2.4 The Five Steps of Software Development: Planning the Solution](https://comp.mga.edu/learning/python/module/2/topic/166)
+ - [2.5 The Five Steps of Software Development: Writing the Code](https://comp.mga.edu/learning/python/module/2/topic/167)
+ - [2.6 The Five Steps of Software Development: Testing and Debugging](https://comp.mga.edu/learning/python/module/2/topic/168)
+ - [2.7 Design a Program](https://comp.mga.edu/learning/python/module/2/topic/169)
+ - [2-8. Input, Processing, and Output](https://comp.mga.edu/learning/python/module/2/topic/10)
+ - [2-9. Example Program: Grade Calculator](https://comp.mga.edu/learning/python/module/2/topic/9)
+ - [2-10. Variables](https://comp.mga.edu/learning/python/module/2/topic/11)
+ - [2-11. Expressions](https://comp.mga.edu/learning/python/module/2/topic/12)
+ - [2-12. Output Statements - The print() Function](https://comp.mga.edu/learning/python/module/2/topic/13)
+ - [2-13. Assignment Statements](https://comp.mga.edu/learning/python/module/2/topic/14)
+ - [Summary](https://comp.mga.edu/learning/python/module/2/topic/15)
+ - [Programming Exercises](https://comp.mga.edu/learning/python/module/2/topic/16)
+- [3\. Understanding Data Type](https://comp.mga.edu/learning/python/module/3)
+
+ - [3-1.  Numeric Data Types](https://comp.mga.edu/learning/python/module/3/topic/17)
+ - [3-2. Strings](https://comp.mga.edu/learning/python/module/3/topic/18)
+ - [3-3. Boolean](https://comp.mga.edu/learning/python/module/3/topic/19)
+ - [3-4. Type Conversion](https://comp.mga.edu/learning/python/module/3/topic/20)
+ - [3-5. Operators](https://comp.mga.edu/learning/python/module/3/topic/21)... [Content truncated for context window]
+
+
+---
+
+### Source 10: Online Python Developer from Southwestern College
+
+**Content:**
+**Loading, please wait...**
+
+- [CATALOG](https://careertraining.swccd.edu/training-programs/)
+- [MILITARY](https://careertraining.swccd.edu/military-information/)
+- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
+- [AFFIRM](https://careertraining.swccd.edu/affirm/)
+- [LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+
+
+
+Username or Password is invalid.
+
+Username
+
+Username is required
+
+
+
+Username must be 200 characters or less
+
+Password
+
+Password is required
+
+
+
+Password must be 64 characters or less
+
+[Forget your password?](javascript:void(0))
+
+
+
+Email
+
+Email is required
+
+
+
+Email is invalid
+
+
+
+Email must be 200 characters or less
+
+
+
+
+
+
+
+Thank you. You should be receiving a reset link at the email address you provided shortly.
+
+CLOSE
+
+- Search Career Training ProgramsGo
+[Open Search Dialog](javascript:void(0);)
+
+Username or Password is invalid.
+
+Username
+
+Username is required
+
+Username must be 200 characters or less
+
+Password
+
+Password is required
+
+Password must be 64 characters or less
+
+[Forget your password?](javascript:void(0))
+
+Password
+
+Email is required
+
+Email is invalid
+
+Email must be 200 characters or less
+
+Thank you. You should be receiving a reset link at the email address you provided shortly.
+
+CLOSE
+
+- [☰](javascript:void(0);)
+
+[LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+- [CATALOG](https://careertraining.swccd.edu/training-programs/)
+- [MILITARY](https://careertraining.swccd.edu/military-information/)
+- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
+- [ACCOUNT](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+Go
+
+Search Career Training Programs
+
+[Training Programs](https://careertraining.swccd.edu/training-programs/) [Programming](https://careertraining.swccd.edu/computer-science-programming-programs/) Python Developer
+
+[phone  Call Us: 855.520.6806](tel:+18555206806)
+
 x
-T denotes the transpose of x, which we will define shortly).
-1
-• The ith element of a vector x is denoted xi
-:
-x =
-
-
-
-
-
-x1
-x2
-.
-.
-.
-xn
-
-
-
-
-
-.
-• We use the notation aij (or Aij , Ai,j , etc) to denote the entry of A in the ith row and
-jth column:
-A =
-
-
-
-
-
-a11 a12 · · · a1n
-a21 a22 · · · a2n
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-am1 am2 · · · amn
-
-
-
-
-
-.
-• We denote the jth column of A by aj or A:,j :
-A =
-
-
-| | |
-a1 a2 · · · an
-| | |
-
-.
-• We denote the ith row of A by a
-T
-i
-or Ai,::
-A =
-
-
-
-
-
-— a
-T
-1 —
-— a
-T
-2 —
-.
-.
-.
-— a
-T
-m —
-
-
-
-
-
-.
-• Note that these definitions are ambiguous (for example, the a1 and a
-T
-1
-in the previous
-two definitions are not the same vector). Usually the meaning of the notation should
-be obvious from its use.
-2 Matrix Multiplication
-The product of two matrices A ∈ R
-m×n and B ∈ Rn×p
-is the matrix
-C = AB ∈ R
-m×p
-,
-where
-Cij =
-Xn
-k=1
-AikBkj .
-Note that in order for the matrix product to exist, the number of columns in A must equal
-the number of rows in B. There are many ways of looking at matrix multiplication, and
-we’ll start by examining a few special cases.
-2
-2.1 Vector-Vector Products
-Given two vectors x, y ∈ R
-n
-, the quantity x
-T
-y, sometimes called the inner product or dot
-product of the vectors, is a real number given by
-x
-T
-y ∈ R =
-Xn
-i=1
-xiyi.
-Note that it is always the case that x
-T
-y = y
-T x.
-Given vectors x ∈ R
-m, y ∈ Rn
-(they no longer have to be the same size), xyTis called
-the outer product of the vectors. It is a matrix whose entries are given by (xyT)ij = xiyj,
-i.e.,
-xyT ∈ R
-m×n =
-
-
-
-
-
-x1y1 x1y2 · · · x1yn
-x2y1 x2y2 · · · x2yn
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-xmy1 xmy2 · · · xmyn
-
-
-
-
-
-.
-2.2 Matrix-Vector Products
-Given a matrix A ∈ R
-m×n and a vector x ∈ Rn
-, their product is a... [Content truncated for context window]
 
+## You already have a course in your cart
 
----
+You can only add one course to your cart at a time! By adding this course, you will replace the existing course from your cart. How would you like to proceed?
 
-### Source 10: Linear Algebra
+[Keep existing course](javascript:__doPostBack('ctrlPrograms$ctl00','')) [Replace course](javascript:__doPostBack('ctrlPrograms$ctl01',''))
 
-**Content:**
-Linear Algebra
+×
 
-David Cherney, Tom Denton,
-Rohit Thomas and Andrew Waldron
+# Thanks for reaching out!
 
-2
-Edited by Katrina Glaeser and Travis Scrimshaw
-First Edition. Davis California, 2013.
-This work is licensed under a
-Creative Commons Attribution-NonCommercialShareAlike 3.0 Unported License.
-2
-Contents
-1 What is Linear Algebra? 9
-1.1 Organizing Information . . . . . . . . . . . . . . . . . . . . . . 9
-1.2 What are Vectors? . . . . . . . . . . . . . . . . . . . . . . . . 12
-1.3 What are Linear Functions? . . . . . . . . . . . . . . . . . . . 15
-1.4 So, What is a Matrix? . . . . . . . . . . . . . . . . . . . . . . 20
-1.4.1 Matrix Multiplication is Composition of Functions . . . 25
-1.4.2 The Matrix Detour . . . . . . . . . . . . . . . . . . . . 26
-1.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 30
-2 Systems of Linear Equations 37
-2.1 Gaussian Elimination . . . . . . . . . . . . . . . . . . . . . . . 37
-2.1.1 Augmented Matrix Notation . . . . . . . . . . . . . . . 37
-2.1.2 Equivalence and the Act of Solving . . . . . . . . . . . 40
-2.1.3 Reduced Row Echelon Form . . . . . . . . . . . . . . . 40
-2.1.4 Solution Sets and RREF . . . . . . . . . . . . . . . . . 45
-2.2 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 48
-2.3 Elementary Row Operations . . . . . . . . . . . . . . . . . . . 52
-2.3.1 EROs and Matrices . . . . . . . . . . . . . . . . . . . . 52
-2.3.2 Recording EROs in (M|I ) . . . . . . . . . . . . . . . . 54
-2.3.3 The Three Elementary Matrices . . . . . . . . . . . . . 56
-2.3.4 LU, LDU, and P LDU Factorizations . . . . . . . . . . 58
-2.4 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 61
-3
-4
-2.5 Solution Sets for Systems of Linear Equations . . . . . . . . . 63
-2.5.1 The Geometry of Solution Sets: Hyperplanes . . . . . . 64
-2.5.2 Particular Solution + Homogeneous Solutions . . . . . 65
-2.5.3 Solutions and Linearity . . . . . . . . . . . . . . . . . . 66
-2.6 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 68
-3 The Simplex Method 71
-3.1 Pablo’s Problem . . . . . . . . . . . . . . . . . . . . . . . . . . 71
-3.2 Graphical Solutions . . . . . . . . . . . . . . . . . . . . . . . . 73
-3.3 Dantzig’s Algorithm . . . . . . . . . . . . . . . . . . . . . . . 75
-3.4 Pablo Meets Dantzig . . . . . . . . . . . . . . . . . . . . . . . 78
-3.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 80
-4 Vectors in Space, n-Vectors 83
-4.1 Addition and Scalar Multiplication in R
-n
-. . . . . . . . . . . . 84
-4.2 Hyperplanes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85
-4.3 Directions and Magnitudes . . . . . . . . . . . . . . . . . . . . 88
-4.4 Vectors, Lists and Functions: R
-S
-. . . . . . . . . . . . . . . . 94
-4.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 97
-5 Vector Spaces 101
-5.1 Examples of Vector Spaces . . . . . . . . . . . . . . . . . . . . 102
-5.1.1 Non-Examples . . . . . . . . . . . . . . . . . . . . . . . 106
-5.2 Other Fields . . . . . . . . . . . . . . . . ... [Content truncated for context window]
+# We will call you within the next business day.
+
+# Business hours are Monday to Friday, 9am to 9pm Eastern Time.
+
+# Ready to get started?
+
+LIVE CHAT[855.520.6806](tel:+18555206806)
+
+×
+
+# Oops!
+
+# Form could not be submitted due to an error.
+
+×
+
+You've got questions. We're here to help.
+
+An enrollment specialist will contact you with more information.
+
+First name \*
+
+Enter your first name.
+
+Last name \*
+
+Enter your last name.
+
+Email \*
+
+Enter your email.
+
+Phone number \*
+
+Enter your phone number.
+
+By submitting this form, you acknowledge... [Content truncated for context window]
 
 
 ---
@@ -677,7 +656,7 @@ S
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 1 Knowledge Nodes for: Linear Algebra**
+**Agent 1 Knowledge Nodes for: Python Programming**
 
 1. [Node Name]
 2. [Node Name]

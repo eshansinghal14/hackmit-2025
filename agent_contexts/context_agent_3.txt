@@ -1,0 +1,587 @@
+You are Agent 3 of 5, a specialized research expert analyzing "Differential Equations". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 3 Research Context
+
+## Assignment
+You are Agent 3 of 5 specialized research agents analyzing: "Differential Equations"
+
+## Your Data Subset
+- Agent ID: 3/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 21 to 30
+
+## Your Research Sources
+
+### Source 21: Differential Equations (ODE) and System of ODEs Calculator
+
+**Content:**
+Calculator applies methods to solve: separable, homogeneous, first-order linear, Bernoulli, Riccati, exact, inexact, inhomogeneous, with constant coefficients, Cauchy–Euler and systems — differential equations. With/without initial conditions (Cauchy problem).
+
+Maximum derivative of initial conditions = **4**
+
+(Calculator limitation)
+
+Fill in the blanks (click to edit)
+
+Order of derivatives is indicated by primes — y'''or by a number after a single prime — y'5
+
+The input recognizes various synonyms for functions such asasin, arsin, arcsin, sin^-1
+
+Multiplication signs and parentheses are automatically added — for example2sinxbecomes2\*sin(x)
+
+List of supported functions and constants:
+
+• d(x), dy — differential
+
+• ln(x) — natural logarithm
+
+• sin(x) — sine
+
+• cos(x) — cosine
+
+• tan(x) — tangent
+
+• cot(x) — cotangent
+
+• arcsin(x) — arcsine
+
+• arccos(x) — arccosine
+
+• arctan(x) — arctangent
+
+• arccot(x) — arccotangent
+
+• sinh(x) — hyperbolic sine
+
+• cosh(x) — hyperbolic cosine
+
+• tanh(x) — hyperbolic tangent
+
+• coth(x) — hyperbolic cotangent
+
+• sech(x) — hyperbolic secant
+
+• csch(x) — hyperbolic cosecant
+
+• arsinh(x) — inverse hyperbolic sine
+
+• arcosh(x) — inverse hyperbolic cosine
+
+• artanh(x) — inverse hyperbolic tangent
+
+• arcoth(x) — inverse hyperbolic cotangent
+
+• sec(x) — secant
+
+• csc(x) — cosecant
+
+• arcsec(x) — arcsecant
+
+• arccsc(x) — arccosecant
+
+• arsech(x) — inverse hyperbolic secant
+
+• arcsch(x) — inverse hyperbolic cosecant
+
+• \|x\|, abs(x) — absolute value
+
+• sqrt(x), root(x) — square root
+
+• exp(x) — \\(e^x\\)
+
+• conj(z) — \\(\\overline{z}\\)
+
+• a+b — \\(a+b\\)
+
+• a-b — \\(a-b\\)
+
+• a\*b — \\(a\\cdot b\\)
+
+• a/b — \\(\\dfrac{a}{b}\\)
+
+• a^b, a\*\*b — \\(a^b\\)
+
+• sqrt7(x) — \\(\\sqrt\[7\]{x}\\)
+
+• sqrt(n,x) — \\(\\sqrt\[n\]{x}\\)
+
+• lg(x) — \\(\\log\_{10}\\left(x\\right)\\)
+
+• log3(x) — \\(\\log\_3\\left(x\\right)\\)
+
+• log(a,x) — \\(\\log\_a\\left(x\\right)\\)
+
+• ln^2(x), ln(x)^2 — \\(\\ln^2\\left(x\\right)\\)
+
+• y''', y'3 — \\(y'''\\)
+
+• d^2y/dx^2, d2y/dx2 — \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\)
+
+• lambda — \\(\\lambda\\)
+
+• pi — \\(\\pi\\)
+
+alpha — \\(\\alpha\\)
+
+beta — \\(\\beta\\)
+
+• sigma — \\(\\sigma\\)
+
+gamma — \\(\\gamma\\)
+
+nu — \\(\\nu\\)
+
+• mu — \\(\\mu\\)
+
+phi — \\(\\phi\\)
+
+psi — \\(\\psi\\)
+
+• tau — \\(\\tau\\)
+
+eta — \\(\\eta\\)
+
+rho — \\(\\rho\\)
+
+• a123 — \\(a\_{123}\\)
+
+x\_n — \\(x\_{n}\\)
+
+mu11 — \\(\\mu\_{11}\\)
+
+• <= — \\(\\leq\\)
+
+>= — \\(\\geq\\)
+
+Bookmark this page — CTRL+D
+
+Copy solution link
+
+75%90%100%110%125% 🔍
+
+Solving the problem..Formatting..Translating..Expression too long!Internal errorConnection errorCalculator is being updatedPlease refresh the pageLink copied!Formula copiedSuggested text saved
+
+
+---
+
+### Source 22: Differential equations - Introduction to calculus - UniSkills - Curtin Library
+
+**Content:**
+Search UniSkillsSearch all of Curtin
+
+# Introduction to calculus
+
+**Differential equations** are an important concept in calculus as they can be used to describe how things change over time or space. For example, differential equations can be used to model changes in the speed of an object, the changing size of a population, changes in the number of people infected with a disease, how temperature changes as heat spreads in an object, and more.
+
+However, while they are very good at expressing these changes, differential equations on their own are generally difficult to use. For this reason it is good to have an understanding of how to solve them, and while this can be tricky, this page covers a technique to solve differential equations that are in a certain form. First, though, we look at what exactly differential equations are, and the different types.
+
+## Differential equations
+
+A **differential equation** is an equation that involves one or more [derivatives](https://uniskills.library.curtin.edu.au/numeracy/calculus/derivatives/). For example, the following are all differential equations:
+
+\\\[\\begin{aligned}
+\\frac{dy}{dx} &= 4x + 5 \\\\
+\\frac{dP}{dt} &= rP(1-\\frac{P}{k}) \\\\
+4x^2\\cos\\,y\\,\\frac{dy}{dx} &= 10 \\\\
+7\\,\\frac{d^2x}{dt^2} + 2\\,\\frac{dx}{dt} + 2x &= \\frac{4}{t^2} \\\\
+\\end{aligned}\\\]
+
+In particular, these are all examples of what are called **ordinary differential equations**, as they each only contain derivatives taken with respect to one variable (that is, they only contain derivatives with respect to \\(x\\) or \\(t\\) but not both). If a differential equation contains derivatives with respect to more than one variable these are partial derivatives and the equation is a partial differential equation, but these are not covered here.
+
+Differential equations also differ in terms of their order and degree. The **order** of a differential equation refers to the highest derivative contained in the equation. If it is a [first derivative](https://uniskills.library.curtin.edu.au/numeracy/calculus/derivatives/#understanding-derivatives) then it is referred to as a first order differential equation, if it is a second derivative it is a second order differential equation, and so on. For example, the first three differential equations above are first order differential equations, while the fourth one is a second order differential equation.
+
+The **degree** of a differential equation is the [exponent](https://uniskills.library.curtin.edu.au/numeracy/algebra/exponents-logarithms/#what-are-exponents) of the highest derivative in the equation. For example, the following differential equation is a second degree differential equation (actually it is a first order second degree ordinary differential equation):
+
+\\\[(\\frac{dy}{dx})^2 + 2y = 3x^3\\\]
+
+The differential equation below, on the other hand, is only a first degree differential equation as its highest derivative does not have an exponent (in fact it is a second order first d... [Content truncated for context window]
+
+
+---
+
+### Source 23: CC Differential Equations
+
+**Content:**
+[Skip to main content](https://mathbooks.unl.edu/Calculus/sec-5-3-diff.html#ptx-content)
+
+\\(\\newcommand{\\dollar}{\\$}
+\\DeclareMathOperator{\\erf}{erf}
+\\DeclareMathOperator{\\arctanh}{arctanh}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcommand{\\amp}{&}
+\\definecolor{fillinmathshade}{gray}{0.9}
+\\newcommand{\\fillinmath}\[1\]{\\mathchoice{\\colorbox{fillinmathshade}{$\\displaystyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\textstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptscriptstyle\\phantom{\\,#1\\,}$}}}
+\\)
+
+## Section5.3Differential Equations
+
+### Motivating Questions
+
+- What is a differential equation and what information can it tell us?
+
+- How do differential equations arise in the world around us?
+
+- What do we mean by a solution to a differential equation?
+
+
+### Supplemental Videos.
+
+The main topics of this section are also presented in the following videos:
+
+- [What is a Differential Equation?](https://unl.yuja.com/V/Video?v=7114359&node=34303217&a=42675270&autoplay=1) 10
+
+`unl.yuja.com/V/Video?v=7114359&node=34303217&a=42675270&autoplay=1`
+
+- [Initial Conditions](https://unl.yuja.com/V/Video?v=7114357&node=34303281&a=195154537&autoplay=1) 11
+
+`unl.yuja.com/V/Video?v=7114357&node=34303281&a=195154537&autoplay=1`
+
+- [Initial Value Problem Examples](https://unl.yuja.com/V/Video?v=7114358&node=34303258&a=300025&autoplay=1) 12
+
+`unl.yuja.com/V/Video?v=7114358&node=34303258&a=300025&autoplay=1`
+
+
+In previous chapters, we have seen that a function’s derivative tells us the rate at which the function is changing. The Fundamental Theorem of Calculus helped us determine the total change of a function over an interval from the function’s rate of change. For instance, an object’s velocity tells us the rate of change of that object’s position. By integrating the velocity over a time interval, we can determine how much the position changes over that time interval. If we know where the object is at the beginning of that interval, we have enough information to predict where it will be at the end of the interval.
+
+In this chapter, we introduce the concept of _differential equations_. A differential equation is an equation that provides a description of a function’s derivative, which means that it tells us the function’s rate of change. Using this information, we would like to learn as much as possible about the function itself. Ideally we would like to have an algebraic description of the function. Unfortunately, this is too much to ask in some situations, but you are still be able to make accurate approximations. However, for this chapter we will stick to cases in which we can find an explicit solution to a differential equation.
+
+### Subsection5.3.1What is a differential equation?
+
+A differential equation is an equation that describes the derivative, or derivatives, of a function that is unknown to us. For instance, the equation
+
+\\begin{equatio... [Content truncated for context window]
+
+
+---
+
+### Source 24: Differential Equations: Definition & Examples
+
+**Content:**
+Learning Materials
+
+- [![Explanations Icon](https://website-cdn.studysmarter.de/uk/subject-other.svg)\
+Explanations](https://www.studysmarter.co.uk/explanations/)
+
+
+Explanations
+
+
+
+- [Anthropology](https://www.studysmarter.co.uk/explanations/anthropology/)
+- [Archaeology](https://www.studysmarter.co.uk/explanations/archaeology/)
+- [Architecture](https://www.studysmarter.co.uk/explanations/architecture/)
+- [Art and Design](https://www.studysmarter.co.uk/explanations/art-and-design/)
+- [Bengali](https://www.studysmarter.co.uk/explanations/bengali/)
+- [Biology](https://www.studysmarter.co.uk/explanations/biology/)
+- [Business Studies](https://www.studysmarter.co.uk/explanations/business-studies/)
+- [Chemistry](https://www.studysmarter.co.uk/explanations/chemistry/)
+- [Chinese](https://www.studysmarter.co.uk/explanations/chinese/)
+- [Combined Science](https://www.studysmarter.co.uk/explanations/combined-science/)
+- [Computer Science](https://www.studysmarter.co.uk/explanations/computer-science/)
+- [Economics](https://www.studysmarter.co.uk/explanations/economics/)
+- [Engineering](https://www.studysmarter.co.uk/explanations/engineering/)
+- [English](https://www.studysmarter.co.uk/explanations/english/)
+- [English Literature](https://www.studysmarter.co.uk/explanations/english-literature/)
+- [Environmental Science](https://www.studysmarter.co.uk/explanations/environmental-science/)
+- [French](https://www.studysmarter.co.uk/explanations/french/)
+- [Geography](https://www.studysmarter.co.uk/explanations/geography/)
+- [German](https://www.studysmarter.co.uk/explanations/german/)
+- [Greek](https://www.studysmarter.co.uk/explanations/greek/)
+- [History](https://www.studysmarter.co.uk/explanations/history/)
+- [Hospitality and Tourism](https://www.studysmarter.co.uk/explanations/hospitality-and-tourism/)
+- [Human Geography](https://www.studysmarter.co.uk/explanations/human-geography/)
+- [Japanese](https://www.studysmarter.co.uk/explanations/japanese/)
+- [Italian](https://www.studysmarter.co.uk/explanations/italian/)
+- [Law](https://www.studysmarter.co.uk/explanations/law/)
+- [Macroeconomics](https://www.studysmarter.co.uk/explanations/macroeconomics/)
+- [Marketing](https://www.studysmarter.co.uk/explanations/marketing/)
+- [Math](https://www.studysmarter.co.uk/explanations/math/)
+- [Media Studies](https://www.studysmarter.co.uk/explanations/media-studies/)
+- [Medicine](https://www.studysmarter.co.uk/explanations/medicine/)
+- [Microeconomics](https://www.studysmarter.co.uk/explanations/microeconomics/)
+- [Music](https://www.studysmarter.co.uk/explanations/music/)
+- [Nursing](https://www.studysmarter.co.uk/explanations/nursing/)
+- [Nutrition and Food Science](https://www.studysmarter.co.uk/explanations/nutrition-and-food-science/)
+- [Physics](https://www.studysmarter.co.uk/explanations/physics/)
+- [Politics](https://www.studysmarter.co.uk/explanations/politics/)
+- [Polish](https://www.studysmarter.co.uk/explanations/polish/)
+- [Psychology](https://www.studysmart... [Content truncated for context window]
+
+
+---
+
+### Source 25: 4.2: Basics of Differential Equations
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/Courses/Lake_Tahoe_Community_College/Interactive_Calculus_Q2/04:_Introduction_to_Differential_Equations/4.02:_Basics_of_Differential_Equations#elm-main-content)
+
+Learning Objectives
+
+- Identify the order of a differential equation.
+- Explain what is meant by a solution to a differential equation.
+- Distinguish between the general solution and a particular solution of a differential equation.
+- Identify an initial-value problem.
+- Identify whether a given function is a solution to a differential equation or an initial-value problem.
+
+Calculus is the mathematics of change, and rates of change are expressed by derivatives. Thus, one of the most common ways to use calculus is to set up an equation containing an unknown function \\(y=f(x)\\) and its derivative, known as a differential equation. Solving such equations often provides information about how quantities change and frequently provides insight into how and why the changes occur.
+
+Techniques for solving differential equations can take many different forms, including direct solution, use of graphs, or computer calculations. We introduce the main ideas in this chapter and describe them in a little more detail later in the course. In this section we study what differential equations are, how to verify their solutions, some methods that are used for solving them, and some examples of common and useful equations.
+
+## General Differential Equations
+
+Consider the equation \\(y′=3x^2,\\) which is an example of a differential equation because it includes a derivative. There is a relationship between the variables \\(x\\) and \\(y:y\\) is an unknown function of \\(x\\). Furthermore, the left-hand side of the equation is the derivative of \\(y\\). Therefore we can interpret this equation as follows: Start with some function \\(y=f(x)\\) and take its derivative. The answer must be equal to \\(3x^2\\). What function has a derivative that is equal to \\(3x^2\\)? One such function is \\(y=x^3\\), so this function is considered a _solution_ to a differential equation.
+
+Definition: differential equation
+
+A _differential equation_ is an equation involving an unknown function \\(y=f(x)\\) and one or more of its derivatives. A solution to a differential equation is a function \\(y=f(x)\\) that satisfies the differential equation when \\(f\\) and its derivatives are substituted into the equation.
+
+Go to this website to explore more on this topic.
+
+Some examples of differential equations and their solutions appear in Table \\(\\PageIndex{1}\\).
+
+| **Equation** | **Solution** |
+| --- | --- |
+| \\(y'=2x\\) | \\(y=x^2\\) |
+| \\(y'+3y=6x+11\\) | \\(y=e^{−3x}+2x+3\\) |
+| \\(y''−3y'+2y=24e^{−2x}\\) | \\(y=3e^x−4e^{2x}+2e^{−2x}\\) |
+
+Table \\(\\PageIndex{1}\\): Examples of Differential Equations and Their Solutions
+
+Note that a solution to a differential equation is not necessarily unique, primarily because the derivative of a constant is zero. For example, \\(y=x^2+4\\) ... [Content truncated for context window]
+
+
+---
+
+### Source 26: Differential Equations Topics
+
+**Content:**
+# Differential Equations
+
+## First Order Differential Equations
+
+- [Separable Equations](https://math24.net/separable-equations.html)
+- [Homogeneous Equations](https://math24.net/homogeneous-equations.html)
+- [Linear Differential Equations of First Order](https://math24.net/linear-differential-equations-first-order.html)
+- [Exact Differential Equations](https://math24.net/exact-differential-equations.html)
+- [Using an Integrating Factor](https://math24.net/using-integrating-factor.html)
+- [Bernoulli Equation](https://math24.net/bernoulli-equation.html)
+- [Riccati Equation](https://math24.net/riccati-equation.html)
+- [Implicit Differential Equations](https://math24.net/implicit-differential-equations.html)
+- [Singular Solutions of Differential Equations](https://math24.net/singular-solutions-differential-equations.html)
+- [Lagrange and Clairaut Equations](https://math24.net/lagrange-clairaut-equations.html)
+- [Differential Equations of Plane Curves](https://math24.net/differential-equations-plane-curves.html)
+- [Orthogonal Trajectories](https://math24.net/orthogonal-trajectories.html)
+- [Radioactive Decay](https://math24.net/radioactive-decay.html)
+- [Barometric Formula](https://math24.net/barometric-formula.html)
+- [Rocket Motion](https://math24.net/rocket-motion.html)
+- [Newton’s Law of Cooling](https://math24.net/newtons-law-cooling.html)
+- [Fluid Flow from a Vessel](https://math24.net/fluid-flow-vessel.html)
+- [Population Growth](https://math24.net/population-growth.html)
+- [Learning Curve](https://math24.net/learning-curve.html)
+- [Advertising Awareness](https://math24.net/advertising-awareness.html)
+
+## Second Order Differential Equations
+
+- [Reduction of Order](https://math24.net/reduction-order.html)
+- [Second Order Linear Homogeneous Differential Equations with Constant Coefficients](https://math24.net/second-order-linear-homogeneous-differential-equations-constant-coefficients.html)
+- [Second Order Linear Nonhomogeneous Differential Equations with Constant Coefficients](https://math24.net/second-order-linear-nonhomogeneous-differential-equations-constant-coefficients.html)
+- [Second Order Linear Homogeneous Differential Equations with Variable Coefficients](https://math24.net/second-order-linear-homogeneous-differential-equations-variable-coefficients.html)
+- [Second Order Linear Nonhomogeneous Differential Equations with Variable Coefficients](https://math24.net/second-order-linear-nonhomogeneous-differential-equations-variable-coefficients.html)
+- [Second Order Euler Equation](https://math24.net/second-order-euler-equation.html)
+- [Bessel Differential Equation](https://math24.net/bessel-differential-equation.html)
+- [Chebyshev Differential Equation](https://math24.net/chebyshev-differential-equation.html)
+- [Curvature of Plane Curves](https://math24.net/curvature-plane-curves.html)
+- [Equation of Catenary](https://math24.net/equation-catenary.html)
+- [Newton’s Second Law of Motion](https://math24.net/newtons-second-law-motion.html)
+- [... [Content truncated for context window]
+
+
+---
+
+### Source 27: Differential Equations - Equilibrium Solutions
+
+**Content:**
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see them) and some of the menu items will be cut off due to the narrow screen width.
+
+### Section 2.8 : Equilibrium Solutions
+
+In the previous section we modeled a population based on the assumption that the growth rate would be a constant. However, in reality this doesn’t make much sense. Clearly a population cannot be allowed to grow forever at the same rate. The growth rate of a population needs to depend on the population itself. Once a population reaches a certain point the growth rate will start reduce, often drastically. A much more realistic model of a population growth is given by the **logistic growth equation**. Here is the logistic growth equation.
+
+\\\[P' = r\\left( {1 - \\frac{P}{K}} \\right)P\\\]
+
+In the logistic growth equation \\(r\\) is the **intrinsic growth rate** and is the same \\(r\\) as in the last section. In other words, it is the growth rate that will occur in the absence of any limiting factors. \\(K\\) is called either the **saturation level** or the **carrying capacity**.
+
+Now, we claimed that this was a more realistic model for a population. Let’s see if that in fact is correct. To allow us to sketch a direction field let’s pick a couple of numbers for \\(r\\) and \\(K\\). We’ll use \\(r = \\frac{1}{2}\\) and \\(K = 10\\). For these values the logistics equation is.
+
+\\\[P' = \\frac{1}{2}\\left( {1 - \\frac{P}{{10}}} \\right)P\\\]
+
+If you need a refresher on sketching direction fields go back and take a look at that [section](https://tutorial.math.lamar.edu/classes/de/DirectionFields.aspx). First notice that the derivative will be zero at \\(P = 0\\) and \\(P = 10\\). Also notice that these are in fact solutions to the differential equation. These two values are called **equilibrium solutions** since they are constant solutions to the differential equation. We’ll leave the rest of the details on sketching the direction field to you. Here is the direction field as well as a couple of solutions sketched in as well.
+
+Note, that we included a small portion of negative \\(P\\)’s in here even though they really don’t make any sense for a population problem. The reason for this will be apparent down the road. Also, notice that a population of say 8 doesn’t make all that much sense so let’s assume that population is in thousands or millions so that 8 actually represents 8,000 or 8,000,000 individuals in a population.
+
+Notice that if we start with a population of zero, there is no growth and the population stays at zero. So, the logistic equation will correctly figure out that. Next, notice that if we start with a population in the range \\... [Content truncated for context window]
+
+
+---
+
+### Source 28: BC Introduction to Differential Equations and Antiderivatives
+
+**Content:**
+[Skip to main content](https://www.math.colostate.edu/~shriner/sec-4-1.html#ptx-content)
+
+\\(\\newcommand{\\dollar}{\\$}
+\\DeclareMathOperator{\\erf}{erf}
+\\DeclareMathOperator{\\arctanh}{arctanh}
+\\DeclareMathOperator{\\arcsec}{arcsec}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcommand{\\amp}{&}
+\\definecolor{fillinmathshade}{gray}{0.9}
+\\newcommand{\\fillinmath}\[1\]{\\mathchoice{\\colorbox{fillinmathshade}{$\\displaystyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\textstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptscriptstyle\\phantom{\\,#1\\,}$}}}
+\\)
+
+## Section4.1Introduction to Differential Equations and Antiderivatives
+
+### Motivating Questions
+
+- What is a differential equation and how do these models relate to discrete-time dynamical systems?
+
+- What is a solution to a differential equation and how does this relate to the concept of an antiderivative?
+
+
+In [Section 1.7](https://www.math.colostate.edu/~shriner/sec-1-7.html) we were introduced to _discrete-time dynamical systems_, which describe systems of data taken at equally spaced intervals. These systems have an _updating function_ (which can be written as a _difference equation_) that describes how the system’s average rate of change between discrete points behaves over time. If we have an _initial value_ for the system, we can describe an associated _solution function_, which is an explicit description of how the system behaves over time.
+
+For a discrete-time dynamical system, describing the _average_ rate of change of the system makes sense since we have discrete points. However, if we are modeling _continuous-time dynamical systems_, we have enough data to describe the system’s _instantaneous_ rate of change. Such models are called _differential equations_. Similar to discrete-time dynamical systems, given an initial value an important question is to describe the associated solution function.
+
+### Warm-Up4.1.1.
+
+Let \\(s(t)\\) be a function such that \\(s'(t) = 4t + 1\\text{.}\\)
+
+1. What are the critical number(s) of \\(s(t)\\text{?}\\) How do you know?
+
+2. When is \\(s\\) increasing? decreasing? How do you know?
+
+3. Sketch at least two possible graphs of \\(s(t)\\) using your answers from above. How are they related?
+
+
+### Subsection4.1.1Differential Equations
+
+A differential equation is an equation that describes derivative values of a function that is unknown to us. For example, the equation \\(s'(t) = 4t + 1\\) from Warm-Up 4.1.1 is a differential equation which describes a function \\(s(t)\\text{.}\\) Note that \\(\\dfrac{ds}{dt} = 4t+1\\) is the same differential equation which uses a different notation for the first derivative. Differential equations are a very broad class of equations, and there are courses devoted to just this topic. As such, this text will only explore the basics of analyzing specific types of differential equations.
+
+#### Example4.1.1.Differential Equ... [Content truncated for context window]
+
+
+---
+
+### Source 29: Department of Mathematics at UTSA
+
+**Content:**
+# Differential Equations
+
+From Department of Mathematics at UTSA
+
+[Jump to navigation](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#mw-head) [Jump to search](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#p-search)
+
+**Ordinary differential equations** involve equations containing:
+
+- variables
+- functions
+- their derivatives
+
+and their solutions.
+
+In studying integration, you _already_ have considered solutions to very simple differential equations. For example, when you look to solving
+
+∫f(x)dx=g(x){\\displaystyle \\int f(x)\\,dx=g(x)}![{\displaystyle \int f(x)\,dx=g(x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ac0aacd41b78a7b39e92f6438cf3121660791f68)
+
+for g(x), you are really solving the differential equation
+
+g′(x)=f(x){\\displaystyle g'(x)=f(x)\\,}![{\displaystyle g'(x)=f(x)\,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ceafd865e47f19e8f506f6b11340a1cb042ff033)
+
+## Contents
+
+- [1Notations and terminology](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Notations_and_terminology)
+ - [1.1Terminology](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Terminology)
+- [2Some simple differential equations](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Some_simple_differential_equations)
+ - [2.1Example](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Example)
+- [3Basic first order DEs](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Basic_first_order_DEs)
+ - [3.1Separable equations](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Separable_equations)
+ - [3.1.1Worked example](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Worked_example)
+ - [3.1.2Verification](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Verification)
+ - [3.2Homogeneous equations](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Homogeneous_equations)
+ - [3.2.1Worked example](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Worked_example_2)
+ - [3.3Linear equations](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Linear_equations)
+ - [3.3.1Example](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Example_2)
+ - [3.4Exact equations](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Exact_equations)
+- [4Basic second and higher order ODE's](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Basic_second_and_higher_order_ODE.27s)
+ - [4.1Reducible ODE's](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Reducible_ODE.27s)
+ - [4.1.1Example](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Example_3)
+ - [4.2Linear ODEs](https://mathresearch.utsa.edu/wiki/index.php?title=Differential_Equations#Linear_ODEs)
+... [Content truncated for context window]
+
+
+---
+
+### Source 30: Differential equations
+
+**Content:**
+
+ 
+ 
+ 
+ 
+ · 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+---
+
+
+
+## Your Mission as Agent 3:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 3 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 3 Knowledge Nodes for: Differential Equations**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

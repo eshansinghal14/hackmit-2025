@@ -1,9 +1,9 @@
-You are Agent 5 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 5 of 5, a specialized research expert analyzing "Calculus Fundamentals". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 5 Research Context
 
 ## Assignment
-You are Agent 5 of 5 specialized research agents analyzing: "Linear Algebra"
+You are Agent 5 of 5 specialized research agents analyzing: "Calculus Fundamentals"
 
 ## Your Data Subset
 - Agent ID: 5/5
@@ -13,514 +13,464 @@ You are Agent 5 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Research Sources
 
-### Source 41: Mastering Linear Algebra - Key concepts like matrices, determinants and linear transformations | Elevri
+### Source 41: Calculus I - Review
 
 **Content:**
-[Courses](https://www.elevri.com/courses)
-
-Linear algebra
-
-# Mastering Linear Algebra - Key concepts like matrices, determinants and linear transformations
-
-In this course, we'll provide a comprehensive overview of linear algebra, including key concepts like vector spaces, linear transformations, and matrix operations.
-
-Table of contents
-
-## What is included in a linear algebra course?
-
-The following 28 topics are typically included in a linear algebra course
-
-1\. Vectors
-
-A vector in physics represents a force with a given direction, magnitude and origin. But in linear algebra, a vector has the first two properties but lacks an origin. Therefore, it can be moved if you want.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/vectors)
-
-* * *
-
-2\. Lines and planes in space
-
-The equation for a straight line is only defined for two dimensions. It does not however stop them from existing in higher dimensions, where we define them in parametric or vector form.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/lines-and-planes-in-space)
-
-* * *
-
-3\. Linear systems of equations
-
-Bunching together several equations creates a system of equations, and a solution for the system must solve each of the system's equations. The system is said to be linear if each equation is of the form:
-$$
-a\_1x\_1 + a\_2x\_2 + \\ldots + a\_nx\_n
-$$
-
-[Show more](https://www.elevri.com/courses/linear-algebra/linear-systems-of-equations)
-
-* * *
-
-4\. Gauss-Jordan
-
-Gauss-Jordan is a method for solving a linear system of equations. Each system falls into one of three cases; unique solution, no solutions or infinitely many solutions.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/gauss-jordan)
-
-* * *
-
-5\. Matrix arithmetics
-
-Matrix arithmetics are defined for addition, subtraction and multiplication. For the two former the matrices must have equal dimensions and the operations are commutative. Multiplication is however not commutative, and is only defined for when the number of rows of the left matrix is equal to the number of columns of the right matrix.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/matrix-arithmetics)
-
-* * *
-
-6\. Inverse matrices
-
-The inverse to a matrix is another matrix, and the product of the matrix and its inverse is the identity matrix.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/inverse-matrices)
-
-* * *
-
-7\. Linear dependence
-
-If a vector can be expressed as a linear combination of other vectors, the bunch is then considered as linearly dependent. If not, the vectors are considered to be linearly independent.
-
-[Show more](https://www.elevri.com/courses/linear-algebra/linear-dependence)
-
-* * *
-
-8\. Solution space
-
-A solution space is the vector space containing all solutions to a given system. It does follow the properties of vector spaces, so if $\\vec{x}\_1$ and $\\vec{x}\_1$ are solutions to
-$$A\\vec{x} = \\vec{b}$$
-then we have that
-$$k\_1\\vec{x}\_1 + k\_2\\vec{x}\_2$$
-is a solution for any values o... [Content truncated for context window]
-
-
----
-
-### Source 42: Mathonline
-
-**Content:**
-![linearalgebraheader.png](http://mathonline.wdfiles.com/local--files/admin%3Aimages/linearalgebraheader.png)
-
-![Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png](http://mathonline.wdfiles.com/local--files/linear-algebra/Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png)
-
-# Linear Algebra Topics
-
-* * *
-
-## 1\. Systems of Linear Equations and Matrices
-
-###### 1.1. Systems of Linear Equations
-
-- [Linear Equations](http://mathonline.wikidot.com/linear-equations)
-- [Systems of Linear Equations](http://mathonline.wikidot.com/systems-of-linear-equations)
-- [Solutions to Systems of 2-Variables and 3-Variables](http://mathonline.wikidot.com/solutions-to-systems-of-2-variables-and-3-variables)
-- [Homogenous Linear Systems](http://mathonline.wikidot.com/homogenous-linear-systems)
-
-###### 1.2. Introduction to Matrices and Elementary Row Operations
-
-- [Matrices and Elementary Row Operations](http://mathonline.wikidot.com/matrices-and-elementary-row-operations)
-- [Row Echelon Form of a Matrix (REF)](http://mathonline.wikidot.com/row-echelon-form-of-a-matrix-ref)
-- [Gaussian Elimination and Back Substitution](http://mathonline.wikidot.com/gaussian-elimination-and-back-substitution)
-- [Reduced Row Echelon Form of a Matrix (RREF)](http://mathonline.wikidot.com/reduced-row-echelon-form-of-a-matrix-rref)
-- [Gauss-Jordan Elimination](http://mathonline.wikidot.com/gauss-jordan-elimination)
-
-###### 1.3. Operations on Matrices, and Special Types of Matrices
-
-- [Matrix Addition and Subtraction](http://mathonline.wikidot.com/matrix-addition-and-subtraction)
-- [Scalar Multiples of Matrices](http://mathonline.wikidot.com/scalar-multiples-of-matrices)
-- [The Transpose of a Matrix](http://mathonline.wikidot.com/the-transpose-of-a-matrix)
-- [The Trace of a Square Matrix](http://mathonline.wikidot.com/the-trace-of-a-square-matrix)
-- [Matrix Multiplication](http://mathonline.wikidot.com/matrix-multiplication)
-- [Zero Matrices](http://mathonline.wikidot.com/zero-matrices)
-- [Diagonal Matrices](http://mathonline.wikidot.com/diagonal-matrices)
-- [Triangular Matrices](http://mathonline.wikidot.com/triangular-matrices)
-- [Symmetric Matrices](http://mathonline.wikidot.com/symmetric-matrices)
-- [Identity Matrices](http://mathonline.wikidot.com/identity-matrices)
-- [Inverse of a Matrix](http://mathonline.wikidot.com/inverse-of-a-matrix)
-- [Inverse of Diagonal Matrices](http://mathonline.wikidot.com/inverse-of-diagonal-matrices)
-- [Powers of a Matrix](http://mathonline.wikidot.com/powers-of-a-matrix)
-- [Matrix Polynomials](http://mathonline.wikidot.com/matrix-polynomials)
-- [Elementary Matrices](http://mathonline.wikidot.com/elementary-matrices)
-- [Finding a Matrix's Inverse with Elementary Matrices](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-elementary-matrices)
-- [Finding a Matrix's Inverse with Row Operations](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-row-operations)
-
-* * *
-
-## 2\. Determinants
-
-###### 2.1. The Determinant of Square Matrices... [Content truncated for context window]
-
-
----
-
-### Source 43: How to Self Study Linear Algebra for Students
-
-**Content:**
-**Estimated Read Time:** 5 minute(s)
-
-**Common Topics:** algebra, linear, amazon, book, books
-
-In this insight, I will give a roadmap to learn the basics of linear algebra for students. Aside from calculus, linear algebra is one of the most applicable subjects of all of mathematics. It is used a lot in engineering, sciences, computer sciences, etc. The right way to see linear algebra is with a focus on vector spaces and linear transformations. So I will suggest books with this perspective in mind.
-
-Table of Contents
-
-Toggle
-
-## **Prerequisites**
-
-There are essentially two prerequisites for studying linear algebra, besides the usual high school courses which include algebra, geometry and trigonometry (no, calculus is not a formal prerequisite). Those are that you must be used to proofs, and that you must have seen the basics of matrices and determinants.
-
-For proofs, I recommend the following books in no particular order:
-Velleman “How to prove it: a structured approach” [http://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995?tag=pfamazon01-20)
-Bloch’s “Proofs and fundamentals: a first course in abstract mathematics” http://www.amazon.com/Proofs-Fundamentals-Abstract-Mathematics-Undergraduate/dp/1441971262
-Hammack’s “Book of proof” [http://www.people.vcu.edu/~rhammack/BookOfProof/](http://www.people.vcu.edu/~rhammack/BookOfProof/)
-
-These books will teach you the fundamentals of [proof based mathematics](https://www.physicsforums.com/insights/proofs-in-mathematics/), and they will teach you the basic notations and assumptions of set theory. Both will be very necessary for algebra.
-
-As for matrices and determinants, these should be covered in basic high school books. For example
-Lang’s “Basic Mathematics” [http://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877](https://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877?tag=pfamazon01-20)
-Openstaxcollege’s Algebra [https://openstaxcollege.org/textbooks/college-algebra](https://openstaxcollege.org/textbooks/college-algebra)
-Khan Academy’s Linear algebra [https://www.khanacademy.org/math/linear-algebra/matrix\_transformations](https://www.khanacademy.org/math/linear-algebra/matrix_transformations)
-
-Don’t worry, you don’t need to know matrices and determinants in full detail. Just knowing them for the 2×2 and 3×3 cases is already enough. In the linear algebra books which I’m going to mention, matrices and determinants will be treated in their full gory details. Also, don’t worry if you don’t have a lot of intuition for matrices and determinants, this intuition will come with studying vector spaces. Right now you are merely expected to being able to compute stuff like inverses of matrices and solving systems of equations.
-
-## **Linear algebra: Introduction**
-
-Proper linear algebra deals with vector spaces and linear transformations between them. It will rigorously develop the theory of nxn matrices and... [Content truncated for context window]
-
-
----
-
-### Source 44: Vectors | Chapter 1, Essence of linear algebra
-
-**Content:**
-Beginning the linear algebra series with the basics.\nHelp fund future projects: / 3blue1brown \n\nMusic: https://vincerubinetti.bandcamp.com/t...\n\nThanks to Elo Marie Viennot and Ambros Gleixner from HTW Berlin (www.htw-berlin.de) for contributing German translations and dubbing.\n\nThanks also to these viewers for their contributions to the subtitles\nArabic: @Cewkins, Hazem\nBengali: Md Rasheduzzaman\nCzech: @Chnapak\nGreek: Nikolaos Tsagkas\nHebrew: Omer Tuchfeld\nItalian: mattiacolucci\nSpanish: Juan Carlos Largo\nThai: own doggoV●ᴥ●V\n\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. And you know the drill with YouTube, if you want to stay posted about new videos, subscribe, and click the bell to receive notifications (if you're into that).\n\nIf you are new to this channel and want to see more, a good place to start is this playlist: https://goo.gl/WmnCQZ\n\nVarious social media stuffs:\nWebsite: https://www.3blue1brown.com\nTwitter: / 3blue1brown \nPatreon: / 3blue1brown \nFacebook: / 3blue1brown \nReddit: / 3blue1brown
-| view_count: 10,240,371 views | short_view_count: 10M views | num_likes: 198 thousand | num_subscribers: 7.63 million
-
-
----
-
-### Source 45: Free Linear Algebra textbook, from Jim Hefferon
-
-**Content:**
-_Linear Algebra_
-by Jim Hefferon
-is a text for a first undergraduate course.
-It is Free.
-Use it as the main book, as a supplement, or for independent study.
-
-### Get the book
-
-Clicking on this link offers you a chance to contribute to
-OpenIntro,
-who work to make Open materials more adoptable.
-You can get the electronic version of the
-text for free by just setting the slider to 0:
-[Download _Linear Algebra_](https://www.openintro.org/go?id=linalg4&referrer=hefferon.net).
-(If you do contribute to
-[OpenIntro.org](https://www.openintro.org)
-then note that the page wording is confusing.
-It says that the money
-goes to the author but instead it means OpenIntro.)
-
-### Text highlights
-
-- Standard coverage
-Linear systems and Gauss's method,
-vector spaces, linear maps and matrices, determinants,
-and eigenvectors and eigenvalues.
-- Developmental approach
-The book proves all of the results
-but does not start by assuming that
-students are already able at abstract work.
-Instead, it proceeds with a great deal of
-motivation, many computational examples,
-and many exercises.
-The goal is to raise
-each student's level of
-mathematical maturity.
-- Extensive exercise sets
-Each subsection has a wide range of exercises,
-from
-routine verifications to a few challenges.
-The
-[book of solutions](https://jheffero.w3.uvm.edu/linearalgebra/jhanswer.pdf)
-gives the answer to every one, completely worked.
-And, clicking on a problem
-takes you to its answer
-while clicking on the answer takes you back to the problem.
-- Popular
-Used in hundreds of classes at many schools,
-as well as by thousands of people
-for independent study.
-- Applications
-Each chapter finishes with four or five short
-supplemental topics
-for reading or projects, or for
-small group work.
+- Go To
+- Notes
+- [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx)
+- [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx)
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [Functions](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
+- Chapters
+- [Limits](https://tutorial.math.lamar.edu/Classes/CalcI/limitsIntro.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- Calculus I
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)
 - Extras
-There are
-[beamer slides](https://jheffero.w3.uvm.edu/linearalgebra/slides.zip)
-for classroom presentations,
-a
-[lab manual](https://jheffero.w3.uvm.edu/linearalgebra/lab.pdf)
-using
-[_Sage_](https://www.sagemath.org/),
-and [videos](https://www.youtube.com/playlist?list=PLwF3A0R8OzMoMlE1-SaEh8h9VqUlO-r52).
-For more, see the page for [instructors](https://hefferon.net/teaching.html).
-- Prerequisite
-One semester of calculus.
-- Free
-Everything is
-[Freely available](https://hefferon.net/source.html),
-including the
-[LaTeX source](https://gitlab.com/jim.hefferon/linear-algebra).
-You can also buy a
-[paper copy of the book](https://hefferon.net/hardcopy.html).
-- Reviews
-Some from:
-[the Mathematical Association of America](https://mathdl.maa.org/mathDL/19/?pa=reviews&sa=viewBook&bookId=72055),
-[the American Institute of Mathematics](https://open.umn.edu/opentextbooks/textbooks/24),
-[the Open Textbook Library](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=24),
-[_The Assayer_, a longstanding site about free texts](https://www.theassayer.org/cgi-bin/asbook.cgi?book=29).
-- Award winning
-Recipient of the 2020 Solow Award
-from the Mathematical Association of America, for
-“impact on undergraduate education in mathematics.”
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
 
-### Mor... [Content truncated for context window]
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,N)
+- Practice Problems Downloads
+- [Complete Book - Problems Only](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,P)
+- [Complete Book - Solutions](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,S)
+- Assignment Problems Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,A)
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=20)
 
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
 
----
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)/ Review
 
-### Source 46: Linear Algebra: Table of Contents
+Notes [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx) [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx) [Next Section](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
 
-**Content:**
-# Table of Contents
+Show Mobile NoticeShow All NotesHide All Notes
 
-### Chapter 1: What is Linear Algebra?
+Mobile Notice
 
-### Chapter 2: Systems of Linear Equations
-
-### Chapter 3: The Simplex Method
-
-### Chapter 4: Vectors in Space, n-Vectors
-
-### Chapter 5: Vector Spaces
-
-### Chapter 6: Linear Transformations
-
-### Chapter 7: Matrices
-
-### Chapter 8: Determinants
-
-### Chapter 9: Subspaces and Spanning Sets
-
-### Chapter 10: Linear Independence
-
-### Chapter 11: Basis and Dimension
-
-### Chapter 12: Eigenvalues and Eigenvectors
-
-### Chapter 13: Diagonalization
-
-### Chapter 14: Orthonormal Bases and Complements
-
-### Chapter 15: Diagonalizing Symmetric Matrices
-
-### Chapter 16: Kernel, Range, Nullity, Rank
-
-### Chapter 17: Least Squares and Singular Values
-
-### Appendices: Symbols, Fields, Sample Exams, Online Resources, Movie Scripts
-
-### Index
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see... [Content truncated for context window]
 
 
 ---
 
-### Source 47: Linear Algebra: Preface
+### Source 42: Understand Calculus in 35 Minutes
 
 **Content:**
-# Preface
-
-This linear algebra textbook was originally designed to be presented as twenty five, fifty minute lectures
-suitable for sophomores likely to use the material for applications but still requiring
-a solid foundation in this fundamental branch of mathematics. The main idea of the course is
-to emphasize the concepts of vector spaces and linear transformations as mathematical
-structures that can be used to model the world around us. Once \`\`persuaded'' of this truth, students
-learn explicit skills such as Gaussian elimination and diagonalization in order that vectors and linear transformations
-become calculational tools, rather than abstract mathematics.
-
-In practical terms, the course aims to produce students who can perform computations with large linear systems
-while at the same time understand the concepts behind these techniques. Often-times when a problem can be
-reduced to one of linear algebra it is \`\`solved''. These notes
-do not devote much space to applications (there are already a plethora of textbooks with titles involving some
-permutation of the words \`\`linear'', \`\`algebra'' and \`\`applications''). Instead, they attempt to explain the fundamental
-concepts carefully enough that students will realize for their own selves when the particular application they encounter
-in future studies is ripe for a solution via linear algebra.
-
-The notes are designed to be used in conjunction with a set of online homework exercises which help the students read the
-lecture notes and learn
-basic linear algebra skills. Interspersed among the lecture notes are links to simple online problems that
-test whether students are actively reading the notes. In addition there are two sets of sample midterm problems with solutions as well
-as a sample final exam.
-There are also a set of ten online assignments which are collected weekly.
-The first assignment is designed to ensure familiarity with some basic mathematic notions (sets, functions, logical quantifiers and basic methods of proof). The remaining nine assignments are devoted to the usual matrix and vector gymnastics expected from
-any sophomore linear algebra class. These exercises are all available [here.](https://www.math.ucdavis.edu/homework.html)
-Webwork is an open source, online homework system which originated at the University of Rochester. It can efficiently check whether a student
-has answered an explicit, typically computation-based, problem correctly. The problem sets chosen to accompany these
-notes could contribute roughly 20% of a student's grade, and ensure that basic computational skills are mastered.
-Most students rapidly realize that it is best to print out the Webwork assignments and solve them on paper before
-entering the answers online. Those who do not tend to fare poorly on midterm examinations. We have found that there
-tend to be relatively few questions from students in office hours about the Webwork assignments. Instead, by assigning 20%
-of the grade to written assignments... [Content truncated for context window]
+This video makes an attempt to teach the fundamentals of calculus 1 such as limits, derivatives, and integration. It explains how to evaluate a function using limits, how to find the slope of the tangent line using derivatives and the limit definition of a derivative as well as to perform basic integration techniques to calculate the area under the curve. \n\nJoin My Newsletter: \nhttps://bit.ly/4jUXp6M\n\n_______________________________\nCalculus Video Lessons:\nhttps://www.video-tutor.net/\n\nCalculus - Free Formula Sheets:\nhttps://www.video-tutor.net/formula-s...\n\nFinal Exam and Test Prep Videos: \nhttps://bit.ly/41WNmI9\n\n___________________________________\nLimits: \n • Calculus 1 - Introduction to Limits \n\nDerivatives: \n • Calculus 1 - Derivatives \n\nBasic Integration: \n • Calculus 1 - Integration \u0026 Antiderivatives \n\nAlgebra Review: \n • Algebra 2 Introduction, Basic Review, Fact...
+| view_count: 4,648,503 views | short_view_count: 4.6M views | num_likes: 116 thousand | num_subscribers: 9.7 million
 
 
 ---
 
-### Source 48: Linear Algebra - Klotz Online Math Notes
+### Source 43: What basics should sit perfectly to really learn calculus?
 
 **Content:**
-# Linear Algebra
 
-01. 1\. Vector Spaces [Lecture Notes](https://www.univmathnotes.com/linear-algebra/1-linear-algebra-vector-spaces-4/)[Homework](https://www.univmathnotes.com/linear-algebra/1-1-linear-algebra-vector-spaces-hw-4/)
-02. 2\. Subspaces [Lecture Notes](https://www.univmathnotes.com/linear-algebra/2-linear-algebra-subspaces-2/)[Homework](https://www.univmathnotes.com/linear-algebra/2-1-linear-algebra-subspaces-hw-2/)
-03. 3\. Linear Systems and Linear Combinations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/3-linear-algebra-linear-systems-and-linear-combinations-4/)[Homework](https://www.univmathnotes.com/linear-algebra/3-1-linear-algebra-linear-systems-and-linear-combinations-hw-2/)
-04. 4\. Linear Independence [Lecture Notes](https://www.univmathnotes.com/linear-algebra/4-linear-algebra-linear-independence-4/)[Homework](https://www.univmathnotes.com/linear-algebra/4-1-linear-algebra-linear-independence-hw-4/)
-05. 5\. Basis and Dimension [Lecture Notes](https://www.univmathnotes.com/linear-algebra/5-linear-algebra-basis-and-dimension-3/)[Homework](https://www.univmathnotes.com/linear-algebra/5-1-linear-algebra-basis-and-dimension-hw/)
-06. 6\. Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/6-linear-algebra-linear-transformations-4/)[Homework](https://www.univmathnotes.com/linear-algebra/6-1-linear-algebra-linear-transformations-hw/)
-07. 7\. The Matrix Representation of a Linear Transformation [Lecture Notes](https://www.univmathnotes.com/linear-algebra/7-linear-algebra-the-matrix-representation-of-a-linear-transformation-4/)[Homework](https://www.univmathnotes.com/linear-algebra/7-1-linear-algebra-the-matrix-representation-of-a-linear-transformation-hw/)
-08. 8\. Composition of Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/8-linear-algebra-composition-of-linear-transformations/)[Homework](https://www.univmathnotes.com/linear-algebra/8-1-linear-algebra-composition-of-linear-transformations-hw/)
-09. 9\. Isomorphisms [Lecture Notes](https://www.univmathnotes.com/linear-algebra/9-linear-algebra-isomorphisms/)[Homework](https://www.univmathnotes.com/linear-algebra/9-1-linear-algebra-isomorphisms-hw/)
-10. 10\. Elementary Matrices [Lecture Notes](https://www.univmathnotes.com/linear-algebra/10-linear-algebra-elementary-matrices/)[Homework](https://www.univmathnotes.com/linear-algebra/10-1-linear-algebra-elementary-matrices-hw-3/)
-11. 11\. A Matrix's Rank and Calculating Inverse Matrices [Lecture Notes](https://www.univmathnotes.com/linear-algebra/11-linear-algebra-a-matrixs-rank-and-calculating-inverse-matrices-3/)[Homework](https://www.univmathnotes.com/linear-algebra/11-1-linear-algebra-a-matrixs-rank-and-calculating-inverse-matrices-hw/)
-12. 12\. Solving Systems of Linear Equations Using Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/12-linear-algebra-solving-systems-of-linear-equations-using-linear-transformations/... [Content truncated for context window]
+ What basics should sit perfectly to really learn calculus? 
+ Author: Amolxd 
+ Time Posted (UTC): 2020-05-03 19:15:53+00:00 
+ Score: 137 
+ 
+
+
+ 
+ Link: https://www.reddit.com/r/learnmath/comments/gcwd10/what_basics_should_sit_perfectly_to_really_learn/ 
+ 
+
+
+ 
+ I am studying Chemistry, and in the first semester I noticed that my math skills are somewhat terrible and that I have a clear lack of basics But I'm unsure what lacks - although you can't look into my mind, you could say what you would consider as basics needed for a deep understanding of calculus / linear algebra / analysis 
+ 
+
+
+ 
+ Comments 
+ 
+
+
+ 
+ 
+ Comment by: Math_Junky
+ | Posted (UTC): 2020-05-03
+ | Score: 121
+ 
+ I've got some experience teaching calc I and II so I can offer some advice. Be very good at your algebra. In my opinion, that hardest part of calculus, is the algebra! Its all the stuff you learned before calculus that you probably forgot. Things like adding/subtracting rational expressions, simplifying exponents, factoring, and so on. From your post, I'd recommend going through Alg II again. I'd get out my notebook and hit up Khan Academy! Or get a textbook! Being very good at algebra got me through my undergrad. When you start having to prove things, it becomes a different story. 
+
+
+ 
+ 
+ Comment by: appstategrier
+ | Posted (UTC): 2020-05-03
+ | Score: 22
+ 
+ So much this. My algebra killed my first two calculus exams. I knew the calculus side of the math to the point that I just wrote out what was supposed to be done and admitted I knew I was going to lose significant points for the algebra. 
+
+ 
+
+ 
+ 
+ Comment by: RichOnCongress
+ | Posted (UTC): 2020-05-04
+ | Score: 19
+ 
+ All of this. My tutor way back when said there was a quote that went "you don't really learn algebra until you do calculus". Man she wasn't kidding. If your algebra is dialed in you're well on your way. 
+
+ 
+
+ 
+ 
+ Comment by: movement_33
+ | Posted (UTC): 2020-05-03
+ | Score: 11
+ 
+ Would it be possible to list those parts of algebra? 
+
+
+ 
+ 
+ Comment by: OZONE_TempuS
+ | Posted (UTC): 2020-05-03
+ | Score: 31
+ 
+ Not exhaustive, but these are where I see a lot of mistakes and gaps in knowledge: * Factoring and expanding polynomials * Distributive properties * Properties of exponents and logarithms (x^α * x^β = x^α+β , μlog(x) = log(x^μ )) * Good intuition regarding functions (things like domain/range, knowing what quadratic/cubic functions look like, being able to spot horizontal/vertical shifts, etc.) * Calculating roots (quadratic formula, completion of the square, synthetic division) * Having a good conceptual understanding of basic trigonometry as well being able to carry out calculations relating to trigonometry 
+
+
+ 
+ 
+ Comment by: movement_33
+ | Posted (UTC): 2020-05-04
+ | Score: 5
+ 
+ Thank you so much! Appreciate your comment! Thanks for not being rude about it as well! 
+
+ 
+
+ 
+ 
+ Comment by: coded_bro
+ | Posted (UTC): 2020-05-04
+ | Score: 1
+ 
+ Yes, I am a bit poor on curve sketching and figuring out which ty... [Content truncated for context window]
 
 
 ---
 
-### Source 49: University of California, Santa Barbara, Department of Mathematics
+### Source 44: Learn Calculus after Algebra 1 - Classical Mathematics Education
 
 **Content:**
-- [UCSB Math Home Page](http://math.ucsb.edu/)
+- [Description](https://compassclassroom.com/compassclassroom.com#tab-description)
+- [Specifications](https://compassclassroom.com/compassclassroom.com#tab-additional_information)
+- [How to Use](https://compassclassroom.com/compassclassroom.com#tab-how-to-use)
+- [Sample Lessons](https://compassclassroom.com/compassclassroom.com#tab-sample-lessons)
+- [Sample Textbook](https://compassclassroom.com/compassclassroom.com#tab-sample-textbook)
+- [Errata](https://compassclassroom.com/compassclassroom.com#tab-errata)
+- [Reviews (0)](https://compassclassroom.com/compassclassroom.com#tab-reviews)
 
-- [Graduate Information](http://math.ucsb.edu/grad/index.php)
+## Description
 
-- [Undergraduate Information](http://math.ucsb.edu/ugrad/index.php)
+Based on more than a decade of classroom experience, this book provides mastery of calculus’s core by focusing on the foundational concepts of limits, derivatives, and integrals, explaining how all three are united in the fundamental theorem of calculus. Moreover, Calculus for Everyone explains how the story of calculus is central to Western culture, from Plato in ancient Greece, to today’s modern physics. Indeed, this book explains why calculus is needed at all—and why it is needed so badly. By mastering the core of calculus—as well as seeing its meaning and significance—students will not only better understand math and science in general, but contemporary culture and their place in it.
 
-- [Colloquium and Seminars](javascript:toggle('mainmenu','colloqmenu'))
-[Colloquium](http://math.ucsb.edu/calendar/cal_cat.php?op=cat&id=24&catview=0)
-[Seminars](http://math.ucsb.edu/department/seminars.php)
-[Distinguished Lectures](http://math.ucsb.edu/~drm/distinguished-lecturers)
-[This Week in Math](http://math.ucsb.edu/calendar/cal_week?op=week&catview=0)
- - [History and Search](http://math.ucsb.edu/calendar/cal_cat.php?op=cats&catview=0)
+Calculus for Everyone includes:
 
-- [Current Recruitment](http://math.ucsb.edu/department/recruit.php)
+- Main student textbook (hardback, 490 pages)
+- Exercise Solutions (paperback, 149 pages)
+- Complete video course, taught by Dr. Mitch Stokes (streaming)
 
-- [People](javascript:toggle('mainmenu2','peoplemenu'))
+**[Try sample lessons](https://mycompassclassroom.com/courses/calculus-for-everyone/) in our online learning platform.**
 
+Dr. Mitch Stokes presents the mathematics of change in an extremely effective way for anyone with a first-year course in algebra. Yet it does so without dumbing calculus down. It represents one of the first tangible steps in recent years at reunifying STEM (Science, Technology, Engineering, Math) with the liberal arts. The goal is to produce a generation of classically educated students who understand the history of math, and will be better equipped to solve problems like our current crisis in Physics.
 
-[Faculty](http://math.ucsb.edu/department/faculty.php)
-[Visiting Faculty](http://math.ucsb.edu/department/visiting.php)
-[Affiliated Faculty](http://math.ucsb.edu/department/affiliated.php)
-[Emeriti](http://math.ucsb.edu/department/emeriti.php)
-[Graduate Students](http://math.ucsb.edu/department/gradstudents.php)
-[Staff](http://math.ucsb.edu/department/staff.php)
-[Alumni](http://math.ucsb.edu/department/alumni.php)
-- [Faculty Awards](http://math.ucsb.edu/department/awards.php)
+Beautifully designed with over 600 hand-drawn illustrations in the textbook and a video curriculum with hand-drawn exercises walking students methodically through the course, this curriculum seeks to mend the broken relationship between the liberal arts and STEM, between science and the humanities.
 
-- [Mathematics Centers](javascript:toggle('mainmenu3','mathmenu'))
-[Center for Mathematical\
-\
-   Inquiry](http://web.math.ucsb.edu/department/cmi)
-[Computational Science\
-\
-   and Engineering](http://www.cse.ucsb.edu/)
-[Center for Complex &\
-\
-   Nonlinear Science](http://repositories.cdlib.org/cnls/)
-[Complex Fluids Design\
-\
-   Consortium](http://www.mrl.ucsb.edu/cfdc/)
-[Center for Control, Dynamical\
-\
-   Systems and Computation](http://www.ece.ucsb.edu/ccdc/)
-[California Nanosystems\
-\
-    Institute](http://www.cnsi.ucsb.edu/)
- - [UCSB Math Circle](http://www.math.ucsb.edu/mathcircle/)
+**Prerequisite:**
 
-- [Preprint Series](http://math.ucsb.edu/preprints)
-
-- [Research](http://math.ucsb.edu/department/research.php)
-
-- [Other Information](javascript:toggle('mainmenu5','othermenu'))
-[WebMail](https://mail.math.ucsb.edu/webmail)
-[Math Personnel Info](http://math.ucsb.edu/htgtd/index.php)
-[WebWork](http://webwork.math.ucsb.edu)
-[Our Location](http://math.ucsb.edu/department/map.php)
-[Computing Resources](http://math.ucsb.edu/department/computing.php)
-[Math Sci Net](http://www.ams.org/mathscinet)
- - [WWW Links](http://math.ucsb.edu/department/links.php)
-
-- [Giving to Mathematics](http://math.ucsb.edu/department/donate.php)
-
-[Follow us: ![](http://web.math.ucsb.edu/images/20px-facebook-favicon.jpg)](http://www.facebook.com/pages/Mathematics-Dept-UC-Santa-Barbara/388265455241?ref=mf)
-
-Department of Mathematics
-
-South Hall, Room 6607
-
-University of California
-
-Santa Barbara, CA 93106
-
-[Phone Numbers](http://math.ucsb.edu/department/staff.php)
-
-Fax (805) 893-2385
-
-Email: [www@math.ucsb.edu](mailto:www@math.ucsb.edu)
-
-Office Hours: Mon-Fri 9-12, 1-4
-
-Copyright (c) 2011 the Regents
-
-of the University of California,
-
-All Rights reserved. [Terms of Use](http:... [Content truncated for context window]
+The only prerequisite for this course is a very basic understanding of Algebra 1. The student should, for example, be familiar with polynomials and be able to manipulate such polynomials (e.g., by combining like terms and manipulating exponents). The focus of the textbook is on the concepts of calculus proper and not on calculus’s further application to increasingly complicated functions, such as rational, trigonometric, exponential, or logarithmic functions. By keeping to polynomials throughout the course (or, more accurately, to power functions)... [Content truncated for context window]
 
 
 ---
 
-### Source 50: Introduction to Linear Algebra for Data Science
+### Source 45: 0.1 Things to Know for Calc
 
 **Content:**
-Tell us how we can help you?
+## 0.1 Things to Know for Calculus
 
-Name
+**Congrats on making it to Calculus!!!  Below is a reference packet covering all of the material that you are expected to know (without a calculator).  If you had Mr. Brust for the Algebra, Geometry, Pre-Calc then you should be golden, if you had Mr. Bean then I am sorry.  Browse through the packet, hopefully everything comes back to you.  If not, you can reference videos from this site to review the topics that you need a refresher on.**
 
-Country
+* * *
 
-Select your countryAfghanistanAland IslandsAlbaniaAlgeriaAmerican SamoaAndorraAngolaAnguillaAntarcticaAntigua and BarbudaArgentinaArmeniaArubaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelgiumBelizeBeninBermudaBhutanBoliviaBosnia and HerzegovinaBotswanaBouvet IslandBrazilBritish Indian Ocean TerritoryBrunei DarussalamBulgariaBurkina FasoBurundiCambodiaCameroonCanadaCape VerdeCayman IslandsCentral African RepublicChadChileChinaChristmas IslandCocos (Keeling) IslandsColombiaComorosCongoCongo, The Democratic Republic of TheCook IslandsCosta RicaCote D'ivoireCroatiaCubaCyprusCzech RepublicDenmarkDjiboutiDominicaDominican RepublicEcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEthiopiaFalkland Islands (Malvinas)Faroe IslandsFijiFinlandFranceFrench GuianaFrench PolynesiaFrench Southern TerritoriesGabonGambiaGeorgiaGermanyGhanaGibraltarGreeceGreenlandGrenadaGuadeloupeGuamGuatemalaGuernseyGuineaGuinea-bissauGuyanaHaitiHeard Island and Mcdonald IslandsHoly See (Vatican City State)HondurasHong KongHungaryIcelandIndiaIndonesiaIran, Islamic Republic ofIraqIrelandIsle of ManIsraelItalyJamaicaJapanJerseyJordanKazakhstanKenyaKiribatiKorea, Democratic People's Republic ofKorea, Republic ofKuwaitKyrgyzstanLao People's Democratic RepublicLatviaLebanonLesothoLiberiaLibyan Arab JamahiriyaLiechtensteinLithuaniaLuxembourgMacaoMacedonia, The Former Yugoslav Republic ofMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall IslandsMartiniqueMauritaniaMauritiusMayotteMexicoMicronesia, Federated States ofMoldova, Republic ofMonacoMongoliaMontenegroMontserratMoroccoMozambiqueMyanmarNamibiaNauruNepalNetherlandsNetherlands AntillesNew CaledoniaNew ZealandNicaraguaNigerNigeriaNiueNorfolk IslandNorthern Mariana IslandsNorwayOmanPakistanPalauPalestinian Territory, OccupiedPanamaPapua New GuineaParaguayPeruPhilippinesPitcairnPolandPortugalPuerto RicoQatarReunionRomaniaRussian FederationRwandaSaint HelenaSaint Kitts and NevisSaint LuciaSaint Pierre and MiquelonSaint Vincent and The GrenadinesSamoaSan MarinoSao Tome and PrincipeSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth Georgia and The South Sandwich IslandsSpainSri LankaSudanSurinameSvalbard and Jan MayenSwazilandSwedenSwitzerlandSyrian Arab RepublicTaiwanTajikistanTanzania, United Republic ofThailandTimor-lesteTogoTokelauTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTurks and Caicos IslandsTuvaluUgandaUkraineUnited Arab EmiratesUnited KingdomUnited StatesUnited States Minor Outlying IslandsUruguayUzbekistanVanuatuVenezuelaViet NamVirgin Islands, BritishVirgin Islands, U.S.Wallis and FutunaWestern SaharaYemenZambiaZimbabwe
+**Here is a short video showing trig functions using special right triangles.  We only did the Unit Circle method in Pre-Calc, but many students prefer this method for Calculus.  You can use whatever method works for you.**
 
-Email
+**Here is a breakdown on the AP Calc Exam.  We will practice Multiple Choice and Free Response throughout the entire year.  All packets assume that you will NOT use the calculator unless the questions are specifically marked.  Don't freak out and don't try to sneak that calculator on non calculator portions!!!  We only show step by step solutions to the odd problems for Calculus and just give the answer for even problems.  Keep working even problems until you can get it to match the correct answer.  This is a great way to learn the material.  The more time you put into the packets, the better prepared you will be for the exam!  Stay on pace, ask questions, and earn some college credit!!!**
 
-Phone
+| | |
+| --- | --- |
+| | |
 
-Message
+\\* AP® _is a trademark registered and owned by the College Board, which was not involved in the production of, and does not endorse, this site._
 
-Receive updates on WhatsApp
 
-By tapping submit, you agree to Machine Learning Plus [Privacy Policy](https://www.machinelearningplus.com/privacy-policy/) & [Terms & Conditions](https://www.machinelearningplus.com/web-terms-of-use/)
+---
 
-Submit
+### Source 46: General Calculus
 
-Get a detai... [Content truncated for context window]
+**Content:**
+[Skip to main content](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)#elm-main-content)
+
+_This Textmap is currently under construction... please be patient with us._
+
+Template:HideTOC
+
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40320/mindtouch.page%2523thumbnail?revision=1)1: Functions and Models](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/01%3A_Functions_and_Models)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40321/mindtouch.page%2523thumbnail?revision=1)2: Limits and Derivatives](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/02%3A_Limits_and_Derivatives)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40322/mindtouch.page%2523thumbnail?revision=1)3: Differentiation Rules](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/03%3A_Differentiation_Rules)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40323/mindtouch.page%2523thumbnail?revision=1)4: Applications of Differentiation](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/04%3A_Applications_of_Differentiation)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40324/mindtouch.page%2523thumbnail?revision=1)5: Integrals](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/05%3A_Integrals)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40325/mindtouch.page%2523thumbnail?revision=1)6: Applications of Integration](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/06%3A_Applications_of_Integration)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40326/mindtouch.page%2523thumbnail?revision=1)7: Techniques of Integration](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/07%3A_Techniques_of_Integration)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40327/mindtouch.page%2523thumbnail?revision=1)8: Further Applications of Integration](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/08%3A_Further_Applications_of_Integration)
+- [![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/40328/mindtouch.page%2523thumbnail?revision=1)9: Differential Equations](https://math.libretexts.org/Courses/Misericordia_University/MTH_171-172%3A_Calculus_-_Early_Transcendentals_(Stewart)/09%3A_Differential_Equations)
+- [![mindtouch.page#thumbnail](https://math.libretex... [Content truncated for context window]
+
+
+---
+
+### Source 47: Calculus for Everyone - Kepler Education
+
+**Content:**
+[Search Courses](https://kepler.education) [Calculus for Everyone](https://kepler.education/courses/aa79105a-b38a-4464-baab-14b1f020653e/)
+
+# Calculus for Everyone
+
+$750.00/year
+
+Calculus for Everyone is a classical approach to mathematics that allows any high school student who has completed a first-year algebra course to learn the fundamentals of calculus.
+
+Schedule:
+
+Section A:
+
+This section is full.
+
+Section A
+Add To Cart
+
+Even though this course is currently full, if you would
+like to put your name on a waitlist and notify the
+instructor you're interested in taking the course if
+another section opens, you can
+[do so here.](https://kepler.education/course-special-access/?course=aa79105a-b38a-4464-baab-14b1f020653e)
+
+08/18/2025 - 05/08/2026
+
+Full Year
+
+1.00 credits in Mathematics
+
+Grades 9-12
+
+Taught by:
+
+[Jillene Santoro](https://kepler.education/t/jillene.santoro/)
+
+## About the course
+
+_Calculus for Everyone_ is a classical approach to mathematics that allows any high school student who has completed a first-year algebra course to learn the fundamentals of calculus. This integrated course examines the history of its development, beginning with the problem of change, and focuses on “the concepts of calculus proper” (Stokes, 2020, p. xvii), encompassing physics and philosophy of motion as well as “real calculus: derivatives, integrals, limits, and the Fundamental Theorem of Calculus” (p. xxvi).
+
+This class is divided into four eight-week quarters. Students will be assigned readings, lectures, exercises, and quizzes, emphasizing both the history of the development of calculus and the mathematical knowledge of limits, derivatives, and integrals. In the convention of the flipped-classroom model, students will complete assignments before attending the weekly 1.5-hour live recitation (note: two weeks will be asynchronous discussions.) Each quarter will end with an exam testing the material covered in that quarter, with the exception of the final quarter which will end with a comprehensive final exam.
+
+Course Prerequisite and Sequencing:
+
+**Prerequisite:** The successful completion of Algebra I
+
+This course is ideal for students who:
+
+- Are seeking a classical approach to Calculus.
+- Value an historical approach that integrates mathematics with natural philosophy.
+- Want to understand real-life applications for Calculus.
+- Are STEM minded, Liberal Arts minded, or both.
+- Are unsure if they would like to take a Calculus course.
+- Have decided to take Calculus at some point.
+
+_Calculus for Everyone_ may be taken before, after, or alongside Geometry but should not be taken at its expense. It is not a substitute for Pre-Calculus (Trigonometry) nor is it equivalent to AP/collegiate Calculus I. Rather, by avoiding the mire of transcendental functions, it provides foundational skills and understanding, giving crucial perspective to philosophy, science, and mathematics. Dr. Stokes asserts, “CALCULUS ISN'T A LUXURY ... Until our students learn the fundament... [Content truncated for context window]
+
+
+---
+
+### Source 48: Art of Problem Solving
+
+**Content:**
+[Art of Problem Solving](https://artofproblemsolving.com/company)
+
+[![](https://artofproblemsolving.com/assets/images/logos/icon-online.svg)AoPS Online](https://artofproblemsolving.com)
+
+![](https://artofproblemsolving.com/assets/images/logos/aops-online.svg)
+
+Math texts, online classes, and more
+
+for students in grades 5-12.
+
+[Visit AoPS Online ‚](https://artofproblemsolving.com)
+
+[Books for Grades 5-12](https://artofproblemsolving.com/store) [Online Courses](https://artofproblemsolving.com/school)
+
+[![](https://artofproblemsolving.com/assets/images/logos/icon-ba.svg)Beast Academy](https://beastacademy.com)
+
+![](https://artofproblemsolving.com/assets/images/logos/aops-ba.svg)
+
+Engaging math books and online learning
+
+for students ages 6-13.
+
+[Visit Beast Academy ‚](https://beastacademy.com)
+
+[Books for Ages 6-13](https://beastacademy.com/books) [Beast Academy Online](https://beastacademy.com/online)
+
+[![](https://artofproblemsolving.com/assets/images/logos/icon-academy.svg)AoPS Academy](https://aopsacademy.org)
+
+![](https://artofproblemsolving.com/assets/images/logos/aops-academy.svg)
+
+Small live classes for advanced math
+
+and language arts learners in grades 2-12.
+
+[Visit AoPS Academy ‚](https://aopsacademy.org)
+
+[Find a Physical Campus](https://aopsacademy.org/campuses) [Visit the Virtual Campus](https://virtual.aopsacademy.org)
+
+During AMC testing, the AoPS Wiki is in read-only mode. Your account is not considered logged in on wiki pages and no edits can be made.
+
+# Page
+
+[Article](https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Calculus)[Discussion](https://artofproblemsolving.com/wiki/index.php?title=Talk:Fundamental_Theorem_of_Calculus&action=edit&redlink=1)[View source](https://artofproblemsolving.com/wiki/index.php?title=Fundamental_Theorem_of_Calculus&action=edit)[History](https://artofproblemsolving.com/wiki/index.php?title=Fundamental_Theorem_of_Calculus&action=history)
+
+# Toolbox
+
+[Recent changes](https://artofproblemsolving.com/wiki/index.php/Special:RecentChanges)[Random page](https://artofproblemsolving.com/wiki/index.php/Special:Random)[Help](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)[What links here](https://artofproblemsolving.com/wiki/index.php/Special:WhatLinksHere/Fundamental_Theorem_of_Calculus)[Special pages](https://artofproblemsolving.com/wiki/index.php/Special:SpecialPages)
+
+# Search
+
+# Fundamental Theorem of Calculus
+
+The **Fundamental Theorem of Calculus** establishes a link between the two central operations of [calculus](https://artofproblemsolving.com/wiki/index.php/Calculus): [differentiation](https://artofproblemsolving.com/wiki/index.php/Derivative) and [integration](https://artofproblemsolving.com/wiki/index.php/Integral).
+
+## Contents
+
+- [1Introductory Problems](https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Calculus?srsltid=AfmBOoqWdWh1aVVGfdKYB0FShjhMrnGYW2ePkRyPVQMmYsHHnyMxSj5Q#Introductory_Problems)
+- [2Statement](https://artofproblemsolvin... [Content truncated for context window]
+
+
+---
+
+### Source 49: APEX The Fundamental Theorem of Calculus
+
+**Content:**
+[Skip to main content](https://opentext.uleth.ca/apex-calculus/sec_FTC.html#ptx-content)
+
+\\(\\require{cancel}\\newcommand{\\highlight}\[1\]{{\\color{blue}{#1}}}
+\\newcommand{\\ds}{\\displaystyle}
+\\newcommand{\\fp}{f'}
+\\newcommand{\\fpp}{f''}
+\\newcommand{\\lz}\[2\]{\\frac{d#1}{d#2}}
+\\newcommand{\\lzn}\[3\]{\\frac{d^{#1}#2}{d#3^{#1}}}
+\\newcommand{\\lzo}\[1\]{\\frac{d}{d#1}}
+\\newcommand{\\lzoo}\[2\]{{\\frac{d}{d#1}}{\\left(#2\\right)}}
+\\newcommand{\\lzon}\[2\]{\\frac{d^{#1}}{d#2^{#1}}}
+\\newcommand{\\lzoa}\[3\]{\\left.{\\frac{d#1}{d#2}}\\right\|\_{#3}}
+\\newcommand{\\plz}\[2\]{\\frac{\\partial#1}{\\partial#2}}
+\\newcommand{\\plzoa}\[3\]{\\left.{\\frac{\\partial#1}{\\partial#2}}\\right\|\_{#3}}
+\\newcommand{\\inflim}\[1\]\[n\]{\\lim\\limits\_{#1 \\to \\infty}}
+\\newcommand{\\infser}\[1\]\[1\]{\\sum\_{n=#1}^\\infty}
+\\newcommand{\\Fp}{F\\primeskip'}
+\\newcommand{\\Fpp}{F\\primeskip''}
+\\newcommand{\\yp}{y\\primeskip'}
+\\newcommand{\\gp}{g\\primeskip'}
+\\newcommand{\\dx}{\\Delta x}
+\\newcommand{\\dy}{\\Delta y}
+\\newcommand{\\ddz}{\\Delta z}
+\\newcommand{\\thet}{\\theta}
+\\newcommand{\\norm}\[1\]{\\left\\lVert#1\\right\\rVert}
+\\newcommand{\\vnorm}\[1\]{\\left\\lVert\\vec #1\\right\\rVert}
+\\newcommand{\\snorm}\[1\]{\\left\|\\left\|\\,#1\\,\\right\|\\right\|}
+\\newcommand{\\la}{\\left\\langle}
+\\newcommand{\\ra}{\\right\\rangle}
+\\newcommand{\\dotp}\[2\]{\\vec #1 \\cdot \\vec #2}
+\\newcommand{\\proj}\[2\]{\\text{proj}\_{\\,\\vec #2}{\\,\\vec #1}}
+\\newcommand{\\crossp}\[2\]{\\vec #1 \\times \\vec #2}
+\\newcommand{\\veci}{\\vec i}
+\\newcommand{\\vecj}{\\vec j}
+\\newcommand{\\veck}{\\vec k}
+\\newcommand{\\vecu}{\\vec u}
+\\newcommand{\\vecv}{\\vec v}
+\\newcommand{\\vecw}{\\vec w}
+\\newcommand{\\vecx}{\\vec x}
+\\newcommand{\\vecy}{\\vec y}
+\\newcommand{\\vrp}{\\vec r\\hskip0.75pt '}
+\\newcommand{\\vrpp}{\\vec r\\hskip0.75pt ''}
+\\newcommand{\\vsp}{\\vec s\\hskip0.75pt '}
+\\newcommand{\\vrt}{\\vec r(t)}
+\\newcommand{\\vst}{\\vec s(t)}
+\\newcommand{\\vvt}{\\vec v(t)}
+\\newcommand{\\vat}{\\vec a(t)}
+\\newcommand{\\px}{\\partial x}
+\\newcommand{\\py}{\\partial y}
+\\newcommand{\\pz}{\\partial z}
+\\newcommand{\\pf}{\\partial f}
+\\newcommand{\\unittangent}{\\vec{{}T}}
+\\newcommand{\\unitnormal}{\\vec{N}}
+\\newcommand{\\unittangentprime}{\\vec{{}T}\\hskip0.75pt '}
+\\newcommand{\\R}{mathbb{R}}
+\\newcommand{\\mathN}{\\mathbb{N}}
+\\newcommand{\\surfaceS}{\\mathcal{S}}
+\\newcommand{\\zerooverzero}{\\ds \\raisebox{8pt}{\\text{\`\`\ }}\\frac{0}{0}\\raisebox{8pt}{\\textit{ ''}}}
+\\newcommand{\\deriv}\[2\]{\\myds\\frac{d}{dx}\\left(#1\\right)=#2}
+\\newcommand{\\myint}\[2\]{\\myds\\int #1\\, dx= {\\ds #2}}
+\\newcommand{\\primeskip}{\\hskip.75pt}
+\\newcommand{\\abs}\[1\]{\\left\\lvert #1\\right\\rvert}
+\\newcommand{\\sech}{\\operatorname{sech}}
+\\newcommand{\\csch}{\\operatorname{csch}}
+\\newcommand{\\curl}{\\operatorname{curl}}
+\\newcommand{\\divv}{\\operatorname{div}}
+\\newcommand{\\Hess}{\\operatorname{Hess}}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcomma... [Content truncated for context window]
+
+
+---
+
+### Source 50: 12: Introduction to Calculus
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
+
+Calculus is the broad area of mathematics dealing with such topics as instantaneous rates of change, areas under curves, and sequences and series. Underlying all of these topics is the concept of a limit, which consists of analyzing the behavior of a function at points ever closer to a particular point, but without ever actually reaching that point. Calculus has two basic applications: differential calculus and integral calculus.
+
+- [12.0: Prelude to Calculus](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.00%3A_Prelude_to_Calculus)Like the fastest land animal, a cheetah, a person does not run at his top speed at every instant. How then, do we approximate his speed at any given instant? We will find the answer to this and many related questions in this chapter.
+- [12.1: Finding Limits - Numerical and Graphical Approaches](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.01%3A_Finding_Limits_-_Numerical_and_Graphical_Approaches)In this section, we will examine numerical and graphical approaches to identifying limits.
+- [12.2: Finding Limits - Properties of Limits](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.02%3A_Finding_Limits_-_Properties_of_Limits)Graphing a function or exploring a table of values to determine a limit can be cumbersome and time-consuming. When possible, it is more efficient to use the properties of limits, which is a collection of theorems for finding limits. Knowing the properties of limits allows us to compute limits directly.
+- [12.3: Continuity](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.03%3A_Continuity)A function that remains level for an interval and then jumps instantaneously to a higher value is called a stepwise function. This function is an example. A function that has any hole or break in its graph is known as a discontinuous function. A stepwise function, such as parking-garage charges as a function of hours parked, is an example of a discontinuous function. We can check three different conditions to decide if a function is continuous at a particular number.
+- [12.4: Derivatives](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.04%3A_Derivatives)Change divided by time is one example of a rate. The rates of change in the previous examples are each different. In other words, some changed faster than others. If we were to graph the functions, we could compare the rates by determining the slopes of the graphs.
+- [12.E: Introduction to Calculus (Exercises)](https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/12%3A_Introduction_to_Calculus/12.E%3A_Introduction_to_Calculus_(Exercises))
+... [Content truncated for context window]
 
 
 ---
@@ -545,7 +495,7 @@ Get a detai... [Content truncated for context window]
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 5 Knowledge Nodes for: Linear Algebra**
+**Agent 5 Knowledge Nodes for: Calculus Fundamentals**
 
 1. [Node Name]
 2. [Node Name]

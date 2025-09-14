@@ -1,0 +1,700 @@
+You are Agent 5 of 5, a specialized research expert analyzing "Differential Equations". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 5 Research Context
+
+## Assignment
+You are Agent 5 of 5 specialized research agents analyzing: "Differential Equations"
+
+## Your Data Subset
+- Agent ID: 5/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 41 to 50
+
+## Your Research Sources
+
+### Source 41: Differential Equations Solution Guide
+
+**Content:**
+# Differential Equations Solution Guide
+
+A [Differential Equation](https://www.mathsisfun.com/differential-equations.html) is an equation with a [function](https://www.mathsisfun.com/sets/function.html) and one or more of its [derivatives](https://www.mathsisfun.com/derivatives-introduction.html):
+
+Example: an equation with the function **y** and its derivative **_dy_ **dx****
+
+In our world things change, and **describing how they change** often ends up as a Differential Equation.
+
+Real world examples where Differential Equations are used include population growth, electrodynamics, heat flow, planetary movement, economic systems and much more!
+
+## Solving
+
+A Differential Equation can be a very natural way of describing something.
+
+### Example: Population Growth
+
+This short equation says that a population "N" increases (at any instant) as the growth rate times the population at that instant:
+
+_dN_ **dt** = rN
+
+But it is not very useful as it is.
+
+We need to **solve** it!
+
+We **solve** it when we discover **the function** **y** (or set of functions y) that satisfies the equation, and then it can be used successfully.
+
+### Example: continued
+
+Our example is **solved** with this equation:
+
+N(t) = N0ert
+
+What does it say? Let's use it to see:
+
+With **t** in months, a population that starts at 1000 ( **N0**) and a growth rate of 10% per month ( **r**) we get:
+
+- N(1 month) = 1000e0.1x1 = **1105**
+- N(6 months) = 1000e0.1x6 = **1822**
+- etc
+
+There is **no magic way to solve** all Differential Equations.
+
+But over the millennia great minds have been building on each others work and have discovered different methods (possibly long and complicated methods!) of solving **some** types of Differential Equations.
+
+So let’s take a look at some different **types of Differential Equations** and how to solve them:
+
+## Separation of Variables
+
+[Separation of Variables](https://www.mathsisfun.com/separation-variables.html) can be used when:
+
+- All the y terms (including dy) can be moved to one side of the equation, and
+- All the x terms (including dx) to the other side.
+
+If that is the case, we can then integrate and simplify to get the the solution.
+
+## First Order Linear
+
+[First Order Linear Differential Equations](https://www.mathsisfun.com/differential-equations-first-order-linear.html) are of this type:
+
+_dy_ **dx** \+ P(x)y = Q(x)
+
+Where **P(x)** and **Q(x)** are functions of x.
+
+They are "First Order" when there is only **_dy_ **dx**** (not **_d2y_ **dx2**** or **_d3y_ **dx3**** , etc.)
+
+Note: a **non-linear** differential equation is often hard to solve, but we can sometimes approximate it with a linear differential equation to find an easier solution.
+
+## Homogeneous Equations
+
+[Homogeneous Differential Equations](https://www.mathsisfun.com/differential-equations-homogeneous.html) look like this:
+
+_dy_ **dx** = F ( _y_ **x** )
+
+We can solve them by using a change of variables:
+
+v = _y_ **x**
+
+which can then be solved using [Separation of Variables](https://... [Content truncated for context window]
+
+
+---
+
+### Source 42: Differential Equations - Introduction
+
+**Content:**
+# Differential Equations
+
+A Differential Equation is an equation with a [function](https://www.mathsisfun.com/sets/function.html) and one or more of its [derivatives](https://www.mathsisfun.com/derivatives-introduction.html):
+
+Example: an equation with the function **y** and its derivative **_dy_ **dx****
+
+## Solving
+
+We **solve** it when we discover **the function** **y** (or set of functions y).
+
+There are many "tricks" to solving Differential Equations ( _if_ they can be solved!).
+
+But first: why?
+
+## Why Are Differential Equations Useful?
+
+In our world things change, and **describing how they change** often ends up as a Differential Equation:
+
+### Example: Rabbits!
+
+The more rabbits we have the more baby rabbits we get.
+
+Then those rabbits grow up and have babies too! The population will grow faster and faster.
+
+The important parts of this are:
+
+- the population **N** at any time **t**
+- the growth rate **r**
+- the population's rate of change **_dN_ **dt****
+
+Think of **_dN_ **dt**** as "how much the population changes as time changes, for any moment in time".
+
+Let us imagine the growth rate **r** is **0.01** new rabbits per week **for every current rabbit.**
+
+When the population is **1000**, the rate of change **_dN_ **dt**** is then 1000×0.01 _=_ **10 new rabbits** per week.
+
+But that is only true at a **specific time**, and doesn't include that the population is constantly increasing. The bigger the population, the more new rabbits we get!
+
+When the population is **2000** we get 2000×0.01 _=_ **20 new rabbits** per week, and so on.
+
+So it is better to say the rate of change (at any instant) is the growth rate times the population at that instant:
+
+_dN_ **dt** _=_ rN
+
+And that is a **Differential Equation**, because it has a function **N(t)** and its derivative.
+
+And how powerful mathematics is! That short equation says "the rate of change of the population over time equals the growth rate times the population".
+
+Differential Equations can describe how populations change, how heat moves, how springs vibrate, how radioactive material decays and much more. They are a very natural way to describe many things in the universe.
+
+## What To Do With Them?
+
+On its own, a Differential Equation is a wonderful way to express something, but is hard to use.
+
+So we try to **solve** them by turning the Differential Equation into a simpler equation without the differential bits, so we can do calculations, make graphs, predict the future, and so on.
+
+### Example: Compound Interest
+
+Money earns interest. The interest can be calculated at fixed times, such as yearly, monthly, and so on. and added to the original amount.
+
+This is called [compound interest](https://www.mathsisfun.com/money/compound-interest.html).
+
+But when it is compounded **continuously** then at any time the interest gets added in proportion to the current value of the loan (or investment).
+
+And as the loan grows it earns more interest.
+
+Using **t** for time, **r** for the interest rate and *... [Content truncated for context window]
+
+
+---
+
+### Source 43: Wolfram|Alpha Examples: Differential Equations
+
+**Content:**
+Examples for
+
+A differential equation is an equation involving a function and its derivatives. It can be referred to as an ordinary differential equation (ODE) or a partial differential equation (PDE) depending on whether or not partial derivatives are involved. Wolfram\|Alpha can solve many problems under this important branch of mathematics, including solving ODEs, finding an ODE a function satisfies and solving an ODE using a slew of numerical methods.
+
+### Ordinary Differential Equations
+
+Solve an ODE or find an ODE a function satisfies.
+
+#### Solve a linear ordinary differential equation:
+
+[y'' + y = 0](https://www.wolframalpha.com/input?i=y%27%27+%2B+y+%3D+0)
+
+[w"(x)+w'(x)+w(x)=0](https://www.wolframalpha.com/input?i=w%22%28x%29%2Bw%27%28x%29%2Bw%28x%29%3D0)
+
+#### Specify initial values:
+
+[y'' + y = 0, y(0)=2, y'(0)=1](https://www.wolframalpha.com/input?i=y%27%27+%2B+y+%3D+0%2C+y%280%29%3D2%2C+y%27%280%29%3D1)
+
+#### Solve an inhomogeneous equation:
+
+[y''(t) + y(t) = sin t](https://www.wolframalpha.com/input?i=y%27%27%28t%29+%2B+y%28t%29+%3D+sin+t)
+
+[x^2 y''' - 2 y' = x](https://www.wolframalpha.com/input?i=x%5E2+y%27%27%27+-+2+y%27+%3D+x)
+
+#### Solve an equation involving a parameter:
+
+[y'(t) = a t y(t)](https://www.wolframalpha.com/input?i=y%27%28t%29+%3D+a+t+y%28t%29)
+
+#### Solve a nonlinear equation:
+
+[f'(t) = f(t)^2 + 1](https://www.wolframalpha.com/input?i=f%27%28t%29+%3D+f%28t%29%5E2+%2B+1)
+
+[y"(z) + sin(y(z)) = 0](https://www.wolframalpha.com/input?i=y%22%28z%29+%2B+sin%28y%28z%29%29+%3D+0)
+
+#### Find differential equations satisfied by a given function:
+
+[differential equations sin 2x](https://www.wolframalpha.com/input?i=differential+equations+sin+2x)
+
+[differential equations J\_2(x)](https://www.wolframalpha.com/input?i=differential+equations+J_2%28x%29)
+
+[Numerical Differential Equation Solving ›](https://www.wolframalpha.com/examples/mathematics/differential-equations/numerical-differential-equation-solving)
+
+Numerically solve a differential equation using a variety of classical methods.
+
+#### Solve an ODE using a specified numerical method:
+
+[Runge-Kutta method, dy/dx = -2xy, y(0) = 2, from 1 to 3, h = .25](https://www.wolframalpha.com/input?i=Runge-Kutta+method%2C+dy%2Fdx+%3D+-2xy%2C+y%280%29+%3D+2%2C+from+1+to+3%2C+h+%3D+.25)
+
+[{y'(x) = -2 y, y(0)=1} from 0 to 2 by implicit midpoint](https://www.wolframalpha.com/input?i=%7By%27%28x%29+%3D+-2+y%2C+y%280%29%3D1%7D+from+0+to+2+by+implicit+midpoint)
+
+#### Specify an adaptive method:
+
+[solve {y'(x) = -2 y, y(0)=1} from 0 to 10 using r k f algorithm](https://www.wolframalpha.com/input?i=solve+%7By%27%28x%29+%3D+-2+y%2C+y%280%29%3D1%7D+from+0+to+10+using+r+k+f+algorithm)
+
+[More examples](https://www.wolframalpha.com/examples/mathematics/differential-equations/numerical-differential-equation-solving)
+
+### GO FURTHER
+
+[Step-by-Step Solutions for Differential Equations](https://www.wolframalpha.com/examples/pro-features/step-by-step-solutions/step-by-step-differential-equations)
+
+### R... [Content truncated for context window]
+
+
+---
+
+### Source 44: myPhysicsLab What Is A Differential Equation?
+
+**Content:**
+# What Is A Differential Equation?
+
+EnglishGerman [previous](https://www.myphysicslab.com/explain/links-en.html) [next](https://www.myphysicslab.com/explain/classify-diff-eq-en.html)
+
+A differential equation can look pretty intimidating, with lots of fancy math symbols. But the idea behind it is actually fairly simple:
+
+> _A differential equation states how a rate of change (a "differential") in one variable is related to other variables._
+
+For example, the [Single Spring simulation](https://www.myphysicslab.com/springs/single-spring-en.html) has two variables: the position of the block, _x_, and its velocity, _v_. Each of those variables has a differential equation saying how that variable evolves over time. The differential equation for position _x_ is
+
+_x_' = _v_
+
+where _x_'
+indicates the derivative of _x_ with respect to time (the rate of change of _x_). This equation says
+
+> _the rate of change of position is equal to the velocity_
+
+That's sort of an obvious statement. Hang on, the next equation is more interesting:
+
+The amount of stretch in the spring is directly related to the position of the block, _x_. You can see the details on the Single Spring simulation page, but using Newton's Law _F_ = _m_ _a_ we are able to write the differential equation for the velocity _v_ as
+
+_v_' = − _k_ _x_
+
+where _k_ is the spring constant (how stiff the spring is). This equation says
+
+> _the rate of change of velocity is inversely proportional to the position_
+
+For instance, when the position is zero (ie. the spring is neither stretched nor compressed) then the velocity is not changing. This makes sense, because the spring is not exerting a force at that moment.
+
+On the other hand, when the position is large (ie. the string is very much stretched or compressed) then the rate of change of the velocity is large, because the spring is exerting a lot of force.
+
+## What is a Solution to a Differential Equation?
+
+When you begin learning mathematics, you work on getting solutions to equations like
+
+_x_ 2 \+ 2 _x_ \+ 1 = 0
+
+which has a solution _x_ = −1
+For a differential equation, the solution is not a single value, but a **_function_**. The task is to find a function whose various derivatives fit the differential equation over a long span of time. For example,
+
+| | |
+| --- | --- |
+| _x_'' \+ 2 _x_' \+ _x_ = 0 | (1) |
+
+is a differential equation where the goal is to find a function _x_( _t_)
+which, when you plug the function and its derivatives into the differential equation, the equation holds _for any time _t__.
+
+The _general solution_ for the previous equation happens to be
+
+| | |
+| --- | --- |
+| _x_( _t_) = _a_ _e_ − _t_ \+ _b_ _t_ _e_ − _t_ | (2) |
+
+where _e_ =2.71828...
+and _a_, _b_ are undetermined constants. It is easy to confirm that you have a solution: just plug the solution in to the differential equation! For our example, we find the first and second derivatives (see the [math refresher](https://www.myphysicslab.com/explain/math-refresh-en.html#deriv... [Content truncated for context window]
+
+
+---
+
+### Source 45: 7.1: Basics of Differential Equations
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/Courses/City_College_of_San_Francisco/CCSF_Calculus_II__Integral_Calculus_._Lockman_Spring_2024/07:_Introduction_to_Differential_Equations/7.01:_Basics_of_Differential_Equations#elm-main-content)
+
+##### Learning Objectives
+
+- Identify the order of a differential equation.
+- Explain what is meant by a solution to a differential equation.
+- Distinguish between the general solution and a particular solution of a differential equation.
+- Identify an initial-value problem.
+- Identify whether a given function is a solution to a differential equation or an initial-value problem.
+
+Calculus is the mathematics of change, and rates of change are expressed by derivatives. Thus, one of the most common ways to use calculus is to set up an equation containing an unknown function \\(y=f(x)\\) and its derivative, known as a differential equation. Solving such equations often provides information about how quantities change and frequently provides insight into how and why the changes occur.
+
+Techniques for solving differential equations can take many different forms, including direct solution, use of graphs, or computer calculations. We introduce the main ideas in this chapter and describe them in a little more detail later in the course. In this section we study what differential equations are, how to verify their solutions, some methods that are used for solving them, and some examples of common and useful equations.
+
+## General Differential Equations
+
+Consider the equation \\(y′=3x^2,\\) which is an example of a differential equation because it includes a derivative. There is a relationship between the variables \\(x\\) and \\(y:y\\) is an unknown function of \\(x\\). Furthermore, the left-hand side of the equation is the derivative of \\(y\\). Therefore we can interpret this equation as follows: Start with some function \\(y=f(x)\\) and take its derivative. The answer must be equal to \\(3x^2\\). What function has a derivative that is equal to \\(3x^2\\)? One such function is \\(y=x^3\\), so this function is considered a _solution_ to a differential equation.
+
+##### Definition: differential equation
+
+A _differential equation_ is an equation involving an unknown function \\(y=f(x)\\) and one or more of its derivatives. A solution to a differential equation is a function \\(y=f(x)\\) that satisfies the differential equation when \\(f\\) and its derivatives are substituted into the equation.
+
+Go to this website to explore more on this topic.
+
+Some examples of differential equations and their solutions appear in Table \\(\\PageIndex{1}\\).
+
+| **Equation** | **Solution** |
+| --- | --- |
+| \\(y'=2x\\) | \\(y=x^2\\) |
+| \\(y'+3y=6x+11\\) | \\(y=e^{−3x}+2x+3\\) |
+| \\(y''−3y'+2y=24e^{−2x}\\) | \\(y=3e^x−4e^{2x}+2e^{−2x}\\) |
+
+Table \\(\\PageIndex{1}\\): Examples of Differential Equations and Their Solutions
+
+Note that a solution to a differential equation is not necessarily unique, primarily because the derivative of ... [Content truncated for context window]
+
+
+---
+
+### Source 46: APEX Modeling with Differential Equations
+
+**Content:**
+[Skip to main content](https://opentext.uleth.ca/apex-video/sec_Modeling.html#ptx-content)
+
+\\(\\require{cancel}\\newcommand{\\highlight}\[1\]{{\\color{blue}{#1}}}
+\\newcommand{\\ds}{\\displaystyle}
+\\newcommand{\\fp}{f'}
+\\newcommand{\\fpp}{f''}
+\\newcommand{\\lz}\[2\]{\\frac{d#1}{d#2}}
+\\newcommand{\\lzn}\[3\]{\\frac{d^{#1}#2}{d#3^{#1}}}
+\\newcommand{\\lzo}\[1\]{\\frac{d}{d#1}}
+\\newcommand{\\lzoo}\[2\]{{\\frac{d}{d#1}}{\\left(#2\\right)}}
+\\newcommand{\\lzon}\[2\]{\\frac{d^{#1}}{d#2^{#1}}}
+\\newcommand{\\lzoa}\[3\]{\\left.{\\frac{d#1}{d#2}}\\right\|\_{#3}}
+\\newcommand{\\plz}\[2\]{\\frac{\\partial#1}{\\partial#2}}
+\\newcommand{\\plzoa}\[3\]{\\left.{\\frac{\\partial#1}{\\partial#2}}\\right\|\_{#3}}
+\\newcommand{\\inflim}\[1\]\[n\]{\\lim\\limits\_{#1 \\to \\infty}}
+\\newcommand{\\infser}\[1\]\[1\]{\\sum\_{n=#1}^\\infty}
+\\newcommand{\\Fp}{F\\primeskip'}
+\\newcommand{\\Fpp}{F\\primeskip''}
+\\newcommand{\\yp}{y\\primeskip'}
+\\newcommand{\\gp}{g\\primeskip'}
+\\newcommand{\\dx}{\\Delta x}
+\\newcommand{\\dy}{\\Delta y}
+\\newcommand{\\ddz}{\\Delta z}
+\\newcommand{\\thet}{\\theta}
+\\newcommand{\\norm}\[1\]{\\left\\lVert#1\\right\\rVert}
+\\newcommand{\\vnorm}\[1\]{\\left\\lVert\\vec #1\\right\\rVert}
+\\newcommand{\\snorm}\[1\]{\\left\|\\left\|\\,#1\\,\\right\|\\right\|}
+\\newcommand{\\la}{\\left\\langle}
+\\newcommand{\\ra}{\\right\\rangle}
+\\newcommand{\\dotp}\[2\]{\\vec #1 \\cdot \\vec #2}
+\\newcommand{\\proj}\[2\]{\\text{proj}\_{\\,\\vec #2}{\\,\\vec #1}}
+\\newcommand{\\crossp}\[2\]{\\vec #1 \\times \\vec #2}
+\\newcommand{\\veci}{\\vec i}
+\\newcommand{\\vecj}{\\vec j}
+\\newcommand{\\veck}{\\vec k}
+\\newcommand{\\vecu}{\\vec u}
+\\newcommand{\\vecv}{\\vec v}
+\\newcommand{\\vecw}{\\vec w}
+\\newcommand{\\vecx}{\\vec x}
+\\newcommand{\\vecy}{\\vec y}
+\\newcommand{\\vrp}{\\vec r\\hskip0.75pt '}
+\\newcommand{\\vrpp}{\\vec r\\hskip0.75pt ''}
+\\newcommand{\\vsp}{\\vec s\\hskip0.75pt '}
+\\newcommand{\\vrt}{\\vec r(t)}
+\\newcommand{\\vst}{\\vec s(t)}
+\\newcommand{\\vvt}{\\vec v(t)}
+\\newcommand{\\vat}{\\vec a(t)}
+\\newcommand{\\px}{\\partial x}
+\\newcommand{\\py}{\\partial y}
+\\newcommand{\\pz}{\\partial z}
+\\newcommand{\\pf}{\\partial f}
+\\newcommand{\\unittangent}{\\vec{{}T}}
+\\newcommand{\\unitnormal}{\\vec{N}}
+\\newcommand{\\unittangentprime}{\\vec{{}T}\\hskip0.75pt '}
+\\newcommand{\\R}{mathbb{R}}
+\\newcommand{\\mathN}{\\mathbb{N}}
+\\newcommand{\\surfaceS}{\\mathcal{S}}
+\\newcommand{\\zerooverzero}{\\ds \\raisebox{8pt}{\\text{\`\`\ }}\\frac{0}{0}\\raisebox{8pt}{\\textit{ ''}}}
+\\newcommand{\\deriv}\[2\]{\\myds\\frac{d}{dx}\\left(#1\\right)=#2}
+\\newcommand{\\myint}\[2\]{\\myds\\int #1\\, dx= {\\ds #2}}
+\\newcommand{\\primeskip}{\\hskip.75pt}
+\\newcommand{\\abs}\[1\]{\\left\\lvert #1\\right\\rvert}
+\\newcommand{\\sech}{\\operatorname{sech}}
+\\newcommand{\\csch}{\\operatorname{csch}}
+\\newcommand{\\curl}{\\operatorname{curl}}
+\\newcommand{\\divv}{\\operatorname{div}}
+\\newcommand{\\Hess}{\\operatorname{Hess}}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcom... [Content truncated for context window]
+
+
+---
+
+### Source 47: Differential Equations - Definitions
+
+**Content:**
+- Go To
+- Notes
+- Practice and Assignment problems are not yet written. As time permits I am working on them, however I don't have the amount of free time that I used to so it will take a while before anything shows up here.
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [Basic Concepts Introduction](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)
+- [Direction Fields](https://tutorial.math.lamar.edu/Classes/DE/DirectionFields.aspx)
+- Chapters
+- [First Order DE's](https://tutorial.math.lamar.edu/Classes/DE/IntroFirstOrder.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- Differential Equations
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
+
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,1,N)
+- Practice Problems Downloads
+- Problems not yet written.
+- Assignment Problems Downloads
+- Problems not yet written.
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=1)
+
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)/ [Basic Concepts](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)/ Definitions
+
+[Prev. Section](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx) Notes [Next Section](https://tutorial.math.lamar.edu/Classes/DE/DirectionFields.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see them) and some of the menu items will be cut off due to t... [Content truncated for context window]
+
+
+---
+
+### Source 48: Inhomogeneous Linear Differential Equations
+
+**Content:**
+[Skip to content](https://kzhu.ai/kzhu.ai#content)
+
+Table of Contents
+
+[Toggle](https://kzhu.ai/kzhu.ai)
+
+The general form of inhomogenous linear differential equations is:
+
+```
+x'' + p(t) x' + q(t) x = g(t)
+```
+
+We need 2 initial conditions `x(0) = x0, x'(0) = u0` to have a unique solution, there is a 3-step method to solve it:
+
+1. Solve the homogeneous equation, where g(t) = 0, to find the general solution to the homogeneous equation: `xh(t) = C1 x1(t) + C2 x2(t)` .
+2. Find the particular solution to the inhomegenous differential equation `xp(t)` .
+3. Write general solution as x(t) = xh(t) + xp(t) . Determine C1 and C2 from initial conditions.
+
+## Inhomogeneous Term
+
+| | |
+| --- | --- |
+| Exponential Functions | Ansatz x = A et |
+| Sine or Cosine Functions | Ansatz x = A cos(t) + B sin(t)or Leverage ` eit = cos(t) + i sin(t)` ,convert function to complex,then use ansatz `z = C eit` |
+| Polynomials | Ansatz x = A t2 \+ B t + C |
+
+## Resonance
+
+Resonance is a phenomenon which can be observed when somebody sings against a wine glass at the glass’s frequency, causing that glass vibrates violently until it breaks. One dimensional model of resonance is below, this is a second order linear constant coefficient equation that has an inhomogeneous term:
+
+```
+x'' + ω02 x = f cosωt
+```
+
+The homogeneous part of this equation, i.e. `x'' + ω02 x = 0` , is the wine glass itself. `ω0` is the natural frequency. The right hand side `f cosωt` is modeling the voice of singer, at the frequency `ω` . Resonance is going to happen when `ω` is getting close to `ω0` .
+
+We will solve this equation when `ω0` and `ω` are different frequencies, then we will limit the solution as `ω` goes to `ω0`.
+
+## Applications
+
+There are some nice applications of these second order differential equations
+
+### RLC (resistor, capacitor, inductor) circuit, connected to an AC current
+
+The constitutive relations for these circuit elements are:
+
+1. The voltage drop across a resistor is equal to the current in the circuit times the resistance. `VR = i R`
+2. The voltage drop across a capacitor is equal to the charge on the capacitor divided by the capacitance. `VC = q / C`
+3. The voltage drop across the inductor is equal to the derivative of the current with respect to time, times L. `VC = di / dt L`
+4. The current is equal to the time derivative of the charge. `i = dq / dt`
+5. The AC current can be modeled as `ε(t) = ε0 cos ωt`
+
+Differential equation comes from Kirchhoff’s law, which says the voltage supplied by the AC, is equal to the voltage drop across each elements in the circuit when they are in series `ε(t) = VL +VR + VC` .
+
+### Mass on a spring
+
+You will get an non-dimensionalization equation which is exactly the equation we got for the LRC circuit, except the definitions are different.
+
+### Pendulum
+
+Different from previous 2 applications, differential equation in this case is nonlinear. If the oscillation is of a small amplitude, then θ is approximately equal to sinθ. Then you will get ... [Content truncated for context window]
+
+
+---
+
+### Source 49: 9231. FP2. Differential Equations
+
+**Content:**
+# 9231\. FP2. Differential Equations
+
+What is a differential equation?
+
+What does it mean to solve them? (What is the difference between the **general solution** and a **particular solution**)
+
+We can already solve DEs of the for y’=f(y)g(x)
+
+What if we get something like xy’+y=x?
+
+We can’t expect to always find DEs looking like the product rule. What about y’+3y=e-3x?
+
+Any first order DE that is linear in y can be rewritten as y’+f(x)y=g(x).
+
+We want the LHS to be in the form: u’v+uv’. To get it in this form we simply need to multiply through **the whole equation** by the **integrating factor** I(x)=e∫f(x)dx
+
+Why does it work?
+
+- y’+f(x)y=g(x)
+- =\> I.y’ +f(x).I.y = I.g(x)
+- By picking I = e∫f(x)dx, we have I’=f(x).I,
+- =\> (1/I).I’=f(x)
+- =\> ∫1/I dI = ∫f(x) dx
+- =\> ln(I)= ∫f(x) dx
+- =\> I=e∫f(x) dx
+
+This method was developed by Leonard Euler around 1730 (the separating variables method had previously been developed by his teacher, Johann Bernoulli).
+
+**Worked Examples**
+
+- Find the general solution of the differential equation: ![cos(x) \frac{dy}{dx} - sin(x)y = x^2 ](https://s0.wp.com/latex.php?latex=cos%28x%29+%5Cfrac%7Bdy%7D%7Bdx%7D+-+sin%28x%29y+%3D+x%5E2+&bg=ffffff&fg=000&s=0&c=20201002&zoom=4.5)
+- Find the general solution of the differential equation: ![\frac{dy}{dx} + \frac{2}{x} y = \frac{4}{x^2}](https://s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D+%2B+%5Cfrac%7B2%7D%7Bx%7D+y+%3D+%5Cfrac%7B4%7D%7Bx%5E2%7D&bg=ffffff&fg=000&s=0&c=20201002&zoom=4.5) for x≠0
+- Solve the differential equation ![x \frac{dy}{dx} + 2y = \frac{4}{x}](https://s0.wp.com/latex.php?latex=x+%5Cfrac%7Bdy%7D%7Bdx%7D+%2B+2y+%3D+%5Cfrac%7B4%7D%7Bx%7D&bg=ffffff&fg=000&s=0&c=20201002&zoom=4.5) for x≠0
+- Find the particular solution of ![x^2 \frac{dy}{dx} + xy = \frac {2}{x}](https://s0.wp.com/latex.php?latex=x%5E2+%5Cfrac%7Bdy%7D%7Bdx%7D+%2B+xy+%3D+%5Cfrac+%7B2%7D%7Bx%7D&bg=ffffff&fg=000&s=0&c=20201002&zoom=4.5) that satisfies the condition y=1 when x=2.
+
+**Exercise**
+
+![](https://mathswithdavid.com/wp-content/uploads/2021/10/image-159.png)
+
+**Answers**
+
+![](https://mathswithdavid.com/wp-content/uploads/2021/10/image-160.png)
+
+**Second Order ODEs**
+
+Consider ay’’+by’+cy=0
+
+It is a linear combination of multiples of a function, its first derivative and its second derivative.
+
+For these terms to all cancel out, we need a function whose first derivative and second derivative has the same form as the function itself.  Which functions are suitable?
+
+Putting in suitable constants, we take the function: y=Aetx
+
+So y’=Atetx and y’’=At2etx
+
+So ay’’+by’+cy = aAt2etx+bAtetx+cAetx = 0
+
+Notice that Aetx factors out, so we have at2+bt+c=0.  We call this the **auxiliary equation** for the ODE and its solutions give us the ODE’s solutions
+
+How many solutions can there be to the auxiliary equation at2+bt+c=0?
+
+- Suppose there are two solutions, t1 and t2. Then both the solutions y=Aet1x and y=Bet1x (for arbitrary constants A and B) are solutions to the ODE.  We can say in general ... [Content truncated for context window]
+
+
+---
+
+### Source 50: 1.1 Introduction – Differential Equations
+
+**Content:**
+"
+
+[Skip to content](https://ecampusontario.pressbooks.pub/ecampusontario.pressbooks.pub#content)
+
+Introduction
+
+## A. Definitions
+
+Differential equations (DEs) are mathematical equations that describe the relationship between a function and its derivatives, either ordinary derivatives or partial derivatives. In its simplest form, it describes the rate at which a quantity changes in terms of the quantity itself and its derivatives. Differential equations are powerful tools in mathematics and science as they enable the modeling of a wide range of real-world phenomena across various disciplines, including physics, engineering, biology, economics, and many others. Here are a few examples of differential equations.
+
+- Basic population growth: \[asciimath\](dP)/(dt)=aP\[/asciimath\]
+- Basic radioactive decay: \[asciimath\](dQ)/dt=-kQ\[/asciimath\]
+- Newton’s laws of cooling: \[asciimath\](dT)/(dt)=-k(T-T\_m)\[/asciimath\]
+- Second Newton’s law of motion (for an object in free fall): \[asciimath\](d^2 y)/(dt^2 )=-g\[/asciimath\]
+- RL circuits: \[asciimath\]L (dI)/(dt)+RI=E(t)\[/asciimath\]
+- RLC circuits: \[asciimath\]L (d^2 I)/(dt^2 )+RI+1/C I=(dE)/dt\[/asciimath\]
+- Heat equation: \[asciimath\](del u)/(del t) =beta (del^2 u)/(del x^2)\[/asciimath\]
+
+## B. Order of Differential Equations
+
+The **order of a differential equation** is the order of the highest derivative that appears in the equation. For example, if the highest derivative is a second derivative, the equation is of second order. Here are a few examples:
+
+\[asciimath\]dy/dx+3x^2=0\[/asciimath\] _(First Order)_
+
+\[asciimath\](d^2y)/dt^2 -2dy/dt + y= -5x\[/asciimath\] _(Second Order)_
+
+_\[asciimath\]x^2y'''+xy=cosx\[/asciimath\]   (Third Order)_
+
+_\[asciimath\](del u)/(del t)=5(del^2 u)/(del t^2)\[/asciimath\]   (Second Order)_
+
+The order of a differential equation often determines the methods used to solve it. The order of a differential equation is independent of the type of derivatives involved, whether they are ordinary or partial derivatives.
+
+Throughout this book, our focus will primarily be on first- and second-order differential equations. As you’ll discover, the methods used to solve second-order differential equations can often be easily extended to tackle higher-order equations.
+
+Try an Example
+
+## C. Ordinary and Partial Differential Equations
+
+If an equation includes the derivative of one variable with respect to another, such as \[asciimath\]dy/dt\[/asciimath\], then the variable whose derivative is taken (in this case, \[asciimath\]y\[/asciimath\]) is known as the dependent variable. The variable with respect to which the derivative is taken (here, \[asciimath\]t\[/asciimath\]) is called the independent variable.
+
+An **Ordinary Differential Equation (ODE)** is a differential equation involving a function of one independent variable and its derivatives. All the above examples except the heat equation are ordinary differential equations.
+
+A **Partial Differential Equation (PDE)**... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 5:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 5 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 5 Knowledge Nodes for: Differential Equations**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

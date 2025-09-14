@@ -1,9 +1,9 @@
-You are Agent 3 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 3 of 5, a specialized research expert analyzing "Calculus Fundamentals". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 3 Research Context
 
 ## Assignment
-You are Agent 3 of 5 specialized research agents analyzing: "Linear Algebra"
+You are Agent 3 of 5 specialized research agents analyzing: "Calculus Fundamentals"
 
 ## Your Data Subset
 - Agent ID: 3/5
@@ -13,483 +13,630 @@ You are Agent 3 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Research Sources
 
-### Source 21: Linear Algebra Roadmap For Data Science - Amit Yadav - Medium
+### Source 21: Calculus Learning Guide – BetterExplained
 
 **Content:**
-[Sitemap](https://medium.com/sitemap/sitemap.xml)
+This is a [realistic learning plan](https://betterexplained.com/articles/honest-learning) for Calculus based on the [ADEPT method](https://betterexplained.com/articles/adept-method).
 
-[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F377016db4dbc&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)
+# I have a few minutes for Calculus, what can I learn?
 
-Sign up
+## 1 minute: The Big Aha!
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+> Level 1: Appreciation
 
-[Medium Logo](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)
+Calculus is the art of splitting patterns apart (X-rays, derivatives) and gluing patterns together (Time-lapses, integrals). Sometimes we can cleverly re-arrange the pattern to find a new insight.
 
-[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)
+A circle can be split into rings:
 
-Sign up
+And the rings turned into a triangle:
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+Wow! We found the circle's area in a simpler way. Welcome to Calculus.
 
-# Linear Algebra Roadmap For Data Science
+Checkpoint:
 
-[Amit Yadav](https://medium.com/@amit25173?source=post_page---byline--377016db4dbc---------------------------------------)
+- Do you want to learn more more?
 
-11 min read
+## +20 minutes: Intuitive Appreciation
 
-·
+> Level 2: Natural Description
 
-Aug 15, 2024
+Read:
 
---
+- [Lesson 1 - Use X-Ray and Time-Lapse Vision](https://betterexplained.com/calculus/lesson-1)
+- [Lesson 2 - Practice Your X-Ray and Time-Lapse Vision](https://betterexplained.com/calculus/lesson-2)
+- [Lesson 3 - Expanding Our Intuition](https://betterexplained.com/calculus/lesson-3)
 
-Listen
+Checkpoint: Describe, in your own words:
 
-Share
+- What Calculus does
+- X-Ray Vision
+- Time-lapse Vision
+- The tradeoffs when splitting a circle into rings, wedges, or boards
+- How to build a 3d shape from 2d parts
 
-Hi there! Have you tried using ChatGPT+ for your projects?
+## +20 minutes: Technical Description
 
-Press enter or click to view image in full size
+> Level 3: Symbolic Description
 
-I’ve been using ChatGPT+ and it’s been amazing for my projects.
+Read:
 
-If you want to experience ChatGPT’s newest models but aren’t ready to commit financially, you’re welcome to use my accounts.
+- [Lesson 4 - Learning The Official Terms](https://betterexplained.com/calculus/lesson-4)
+- [Lesson 5 - Music From The Machine](https://betterexplained.com/calculus/lesson-5)
 
-[**_Click here to get free GPT + accounts._**](https://rebrand.ly/XYS)
+Checkpoint: Describe, in your own words:
 
-Now let’s get back to the blog:
+- Integral
+- Derivative
+- Integrand (a single step)
+- Bounds of integration
 
-Linear algebra isn’t just another subject you need to check off your list; it’s the backbone of data science. Whether you’re building machine learning models, performing data transformations, or diving into deep learning, linear algebra is the language that makes these processes possible. Think of it as the foundation upon which all advanced data science techniques are built. Mastering linear algebra isn’t optional — it’s essential. This blog will show you exactly why, and guide you through the key concepts you need to grasp.
+Skills:
 
-This blog is for you if you’re an aspiring data scientist, a student eager to break into the field, or a professional making a career transition into data science. You might have encountered linear algebra before, but this time, you’ll see it through the lens of data science. We’ll focus on the practical aspects that directly impact your work, so you can apply these concepts immediately in your projects.
+- Describe a Calculus action (splitting a circle into rings) using the official language
+- Enter the official language into Wolfram Alpha to solve the problem
 
-**_Brief Overview_**
+## +30 minutes: Theory I
 
-By the end of this blog, you’ll have a clear understanding of why linear algebra is so crucial in data science and how it’s applied in real-world scenarios. We’ll break down complex concepts like vectors, matrices, and eigenvalues into digestible pieces, always relating them back to da... [Content truncated for context window]
+> Level 4: Basic Theory
+
+Read:
+
+- [Lesson 6 - Improving Arithmetic And Algebra](https://betterexplained.com/calculus/lesson-6)
+- [Lesson 7 - Seeing How Lines Work](https://betterexplained.com/calculus/lesson-7)
+- [Lesson 8 - Playing With Squares](https://betterexplained.com/calculus/lesson-8)
+
+Checkpoint: Describe, in your own words:
+
+- How integrals/derivatives relate to multiplication/division
+
+Skills:
+
+- Find the derivative/integral of a line
+- Find the derivative/integral of a constant
+- Find the derivative/integral of a square
+- Recognize the common notations for the derivative
+- Estimate the change in f(x) = x2 using a step of size dx
+
+## +1 hour: Theory II
+
+Read:
+
+- [Lesson 9 - Working With Infinity](https://betterexplained.com/calculus/lesson-9)
+- [Lesson 10 - The Theory Of Derivatives](https://betterexplained.com/calculus/lesson-10)
+- [Lesson 11 - The Fundamental Theorem Of Calculus (FTOC)](https://betterexplained.com/calculus/lesson-11)
+- [Lesson 12 - The Basic Arithmetic Of Calculus](https://betterexplained.com/calculus/lesson-12)
+- [Lesson 13 - Finding Patterns In The Rules](https://betterexplained.com/calculus/lesson-13)
+- [Lesson 14 - The Fan... [Content truncated for context window]
 
 
 ---
 
-### Source 22: Linear Algebra Concepts Every Data Scientist Should Know
+### Source 22: Calculus for Beginners and Artists
 
 **Content:**
-[Sitemap](https://medium.com/sitemap/sitemap.xml)
+# Calculus for Beginners and Artists
 
-[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F18b00bd453dd&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderCollection&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)
+## [Chapter 0: Why Study Calculus?](https://math.mit.edu/chapter00/contents.html)
 
-Sign up
+## [Chapter 1: Numbers](https://math.mit.edu/chapter01/contents.html)
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fbitgrit-data-science-publication%2Flinear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+## [Chapter 2: Using a Spreadsheet](https://math.mit.edu/chapter02/contents.html)
 
-[Medium Logo](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)
+## [Chapter 3: Linear Functions](https://math.mit.edu/chapter03/contents.html)
 
-[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)
+## [Chapter 4: Quadratics and Derivatives of Functions](https://math.mit.edu/chapter04/contents.html)
 
-Sign up
+## [Chapter 5: Rational Functions and the Calculation of\ Derivatives](https://math.mit.edu/chapter05/contents.html)
 
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fbitgrit-data-science-publication%2Flinear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+## [Chapter 6: Exponential Functions, Substitution and the\ Chain Rule](https://math.mit.edu/chapter06/contents.html)
 
-[Mastodon](https://me.dm/@benedictxneo)
+## [Chapter 7: Trigonometric Functions and their\ Derivatives](https://math.mit.edu/chapter07/contents.html)
 
-[**bitgrit Data Science Publication**](https://medium.com/bitgrit-data-science-publication?source=post_page---publication_nav-dc5e7c512acf-18b00bd453dd---------------------------------------)
+## [Chapter 8: Inverse Functions and their Derivatives](https://math.mit.edu/chapter08/contents.html)
 
-·
+## [Chapter 9: Numerical Differentiation, and Non-Differentiable Functions](https://math.mit.edu/chapter09/contents.html)
 
-We’re democratizing AI with our online competition platform — [bitgrit.net](http://bitgrit.net). On our publication, we publish only high-quality data science-related topics. Become a writer by emailing us at: [info@bitgrit.net](mailto:info@bitgrit.net)
+## [Chapter 10: Review of Differentiation](https://math.mit.edu/chapter10/contents.html)
 
-## Data Science
+## [Chapter 11: Application of Differentiation to Solving Equations](https://math.mit.edu/chapter11/contents.html)
 
-# Linear Algebra Concepts Every Data Scientist Should Know
+## [Chapter 12: The Anti-Derivative](https://math.mit.edu/chapter12/contents.html)
 
-## Do you know Linear Algebra well enough?
+## [Chapter 13: Area under a Curve; Definite Integrals](https://math.mit.edu/chapter13/contents.html)
 
-[Benedict Neo](https://medium.com/@benedictxneo?source=post_page---byline--18b00bd453dd---------------------------------------)
+## [Chapter 14: Numerical Integration](https://math.mit.edu/chapter14/contents.html)
 
-10 min read
+## [Chapter 15: Areas and Volumes of Parallel Sided Figures; Determinants](https://math.mit.edu/chapter15/contents.html)
 
-·
+## [Chapter 16: Some Pure Mathematics](https://math.mit.edu/chapter16/contents.html)
 
-Jun 18, 2024
+## [Chapter 17: Modeling Applications to Physics](https://math.mit.edu/chapter17/contents.html)
 
---
+## [Chapter 18: Predator Prey Models](https://math.mit.edu/chapter18/contents.html)
 
-21
+## [Chapter 19: Solving Differential Equations](https://math.mit.edu/chapter19/contents.html)
 
-Listen
+## [Tools](https://math.mit.edu/tools/contents.html)
 
-Share
+## [Glossary of Notations](https://math.mit.edu/glossary-notations/contents.html)
 
-Press enter or click to view image in full size
-
-Linear algebra is a bedrock for all data science and machine learning tasks.
-
-It is the language that transforms theoretical models into practical solutions.
-
-It embodies principles that allow algorithms to learn from data.
-
-Press enter or click to view image in full size
-
-[xkcd](https://xkcd.com/1838/)
-
-They’re used for
-
-1. **Representation of data**: a structured way to organize and manipulate data, allowing complex datasets to be represented as matrices
-2. **dimensionality reduction**: techniques like PCA rely on linear algebra to reduce the number of variables to enhance model efficiency without losing important information
-3. **optimization**: gradient descent, the core engine for ML, uses linear algebra to find the minimum of a function.
-4. **Feature engineering**: linear transformation and matrix operations create new features from existing data
-5. **similarity measures**: embeddings are stored as vectors and are used in recom... [Content truncated for context window]
+## [Index](https://math.mit.edu/word-index/contents.html)
 
 
 ---
 
-### Source 23: 1: What is linear algebra
+### Source 23: Calculus Online Textbook | Mathematics
 
 **Content:**
-[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
+First published in 1991 by [Wellesley-Cambridge Press](http://www.wellesleycambridge.com/), this updated 3rd edition of the book is a useful resource for educators and self-learners alike. It is well organized, covers single variable and multivariable calculus in depth, and is rich with applications. There is also an online [Instructor’s Manual](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/pages/instructors-manual/) and a student [Study Guide](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/pages/study-guide/).
 
-## 1.1 Introduction to MAT 67
+The [complete textbook (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_full_book_pdf/) is also available as a single file.
 
-This class may well be one of your first mathematics classes that bridges the gap between the mainly computation-oriented lower division classes and the abstract mathematics encountered in more advanced mathematics courses. The goal of this class is threefold:
+| | |
+| --- | --- |
+| | **Highlights of Calculus** MIT Professor Gilbert Strang has created [a series of videos](https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010) to show ways in which calculus is important in our lives. The videos, which include real-life examples to illustrate the concepts, are ideal for high school students, college students, and anyone interested in learning the basics of calculus.                    › [Watch the videos](https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010) |
 
-1. You will learn **Linear Algebra**, which is one of the most widely used mathematical theories around. Linear Algebra finds applications in virtually every area of mathematics, including Multivariate Calculus, Differential Equations, and Probability Theory. It is also widely applied in fields like physics, chemistry, economics, psychology, and engineering. You are even relying on methods from Linear Algebra every time you use an Internet search like Google, the Global Positioning System (GPS), or a cellphone.
-2. You will acquire **computational skills** to solve linear systems of equations, perform operations on matrices, calculate eigenvalues, and find determinants of matrices.
-3. In the setting of Linear Algebra, you will be introduced to **abstraction**. We will develop the theory of Linear Algebra together, and you will learn to write proofs.
+### Textbook Components
 
-The lectures will mainly develop the theory of Linear Algebra, and the discussion sessions will focus on the computational aspects. The lectures and the discussion sections go hand in hand, and it is important that you attend both. The exercises for each Chapter are divided into more computation-oriented exercises and exercises that focus on proof-writing. There are also some very short webwork homework sets to make sure you have some basic skills. You can already try the first one that introduces some logical concepts by clicking below: Webwork link.
+[Table of Contents (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_toc_pdf/)
 
-## 1.2 What is Linear Algebra?
+[Chapter 0: Highlights of Calculus (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_ch00_pdf/)
 
-Linear Algebra is the branch of mathematics aimed at solving systems of linear equations with a ﬁnite number of unknowns. In particular, one would like to obtain answers to the following questions:
+0.1 Distance and Speed // Height and Slope
 
-- **Characterization of solutions**: Are there solutions to a given system of linear equations? How many solutions are there?
-- **Finding solutions:** How does the solution set look? What are the solutions?
+0.2 The Changing Slope of \\(y=x^2\\) and \\(y=x^n\\)
 
-Linear Algebra is a systematic theory regarding the solutions of systems of linear equations.
+0.3 The Exponential \\(y=e^x\\)
 
-**Example 1.2.1.** Let us take the following system of two linear equations in the two unknowns \\(x\_1\\) and \\(x\_2\\) :
+0.4 Video Summaries and Practice Problems
 
-\\begin{equation\*} \\left. \\begin{array}{rl} 2x\_1 + x\_2 &= 0 \\\ x\_1 - x\_2 &= 1 \\end{array} \\right\\}. \\end{equation\*}
+0.5 Graphs and Graphing Calculators
 
-This system has a **unique solution** for \\(x\_1,x\_2 \\in \\mathbb{R}\\), namely \\(x\_1=\\frac{1}{3}\\) and \\(x\_2=-\\frac{2}{3}\\). This solution can be found in several different ways. One approach is to ﬁrst solve for one of the unknowns in one of the equations and then to substitute the result into the other equation. Here, for example, we might solve to obtain
+[Chapter 1: Introduction to Calculus (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_ch01_pdf/)
 
-\\\[ x\_1 = 1 + x\_2 \\\]
+1.1 Velocity and Distance
 
-from th... [Content truncated for context window]
+1.2 Calculus Without Limits
+
+1.3 The Velocity at an Instant
+
+1.4 Circular Motion
+
+1.5 A Review of Trigonometry
+
+1.6 A Thousand Points of Light
+
+[Chapter 2: Derivatives (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_ch02_pdf/)
+
+2.1 The Derivative of a Function
+
+2.2 Powers and Polynomials
+
+2.3 The Slope and the Tangent Line
+
+2.4 Derivative of the Sine and Cosine
+
+2.5 The Product and Quotient and Power Rules
+
+2.6 Limits
+
+2.7 Continuous Functions
+
+[Chapter 3: Applications of the Derivative (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_ch03_pdf/)
+
+3.1 Linear Approximation
+
+3.2 Maximum and Minimum Problems
+
+3.3 Second Derivatives: Bending and Acceleration
+
+3.4 Graphs
+
+3.5 Parabolas, Ellipses, and Hyperbolas
+
+3.6 Iterations \\(x\_{n+1}=F(x\_n)\\)
+
+3.7 Newton’s Method (and Chaos)
+
+3.8 The Mean Value Theorem and 1’Hôpital’s Rule
+
+[Chapter 4: Derivatives by the Chain Rule (PDF)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/resources/mitres_18_001_f17_ch04_pdf/)
+... [Content truncated for context window]
 
 
 ---
 
-### Source 24: Linear Algebra
+### Source 24: Coming Soon
 
 **Content:**
-If you're seeing this message, it means we're having trouble loading external resources on our website.
+Search this site
 
-If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+Embedded Files
 
-## Oops. Something went wrong. Please try again.
+Skip to main content
 
-Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+Skip to navigation
+
+# Basic Calculus
+
+### An introduction to differential and integral calculus.  Applications of differentiation, including optimization, are explored.
+
+[Fall 20 (online) lectures](https://www.calc1.org/fall-20)
+
+[Fall 19 (in-person) lectures](https://www.calc1.org/fall-19)
+
+[Fall 24 (in-person) lectures](https://www.calc1.org/fall-24)
+
+[Reviews](https://www.calc1.org/reviews)
+
+[Exams](https://www.calc1.org/exams)
+
+[Background material](https://www.calc1.org/background-material)
+
+The material on these sites was produced for the math program at [Iowa State University](http://iastate.edu). We have made this content available to help give all students additional resources for their maths study.
+
+Students currently enrolled in the course at Iowa State can find more information about course management details (syllabus, schedule, etc.) in [Canvas](http://canvas.iastate.edu).
+
+This site is administered by [Steve Butler](http://stevebutler.org) ( [butler@iastate.edu](mailto:butler@iastate.edu)) and any questions about this site or its content should be directed to him.
+
+### Additional courses
+
+[Advanced calculus](https://www.google.com/url?q=https%3A%2F%2Fwww.calc2.org%2F&sa=D&sntz=1&usg=AOvVaw2vImVeQhi7ADMR9TwexZ9Z)
+
+[Multivariable calculus](https://www.google.com/url?q=https%3A%2F%2Fwww.calc3.org%2F&sa=D&sntz=1&usg=AOvVaw0IAwMDSnjPLzg2yPRZL4Cs)
+
+[Differential equations](https://www.google.com/url?q=https%3A%2F%2Fwww.calc4.org%2F&sa=D&sntz=1&usg=AOvVaw076OFoRYprpxfGNmBvMOmr)
+
+[Business math](https://www.google.com/url?q=https%3A%2F%2Fwww.businessmath.org%2F&sa=D&sntz=1&usg=AOvVaw0q2g6GLcY0JKwOMmULEl1S)
+
+Google Sites
+
+Report abuse
+
+Google Sites
+
+Report abuse
 
 
 ---
 
-### Source 25: Essence of linear algebra
+### Source 25: Introduction To Calculus - FasterCapital
 
 **Content:**
+[Home](https://fastercapital.com) [Topics](https://fastercapital.com/startup-topic) [Introduction To Calculus](https://fastercapital.com/topics/introduction-to-calculus.html/1)
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- · 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+# Introduction To Calculus
 
+This page is a digest about this topic. It is a compilation from various blogs that discuss it. Each title is linked to the original blog.
+
+[+](https://fastercapital.com/fastercapital.com#_) Free Help and discounts from **FasterCapital**!
+
+[Become a partner](https://fastercapital.com/franchise-partner/)
+
+**I need help in:**Select an optionRaising Capital ($200k - $1B)Fund large Project ($1B - $10B)Tech Cofounder/CTOGrow your SalesMarketing ServicesReviewing/creating MaterialsBusiness Analysis
+
+Get matched with over 155K angels and 50K VCs worldwide. We use our AI system and introduce you to investors through warm introductions! Submit here and get %10 discount
+
+**You have raised:**Select$0$10K-$50K$50K-$150K$150K-$500K$500K-$1M$1M-$3M$3M-$5MMore than $5M
+
+**Looking to raise:**Select$150K-$500K$500K-$1M$1M-$3M$3M-$5MMore than $5M
+
+**Annual Income:**$0$1-$10k$10-$25k$25k-$50k$50-$100k$100k-$200kMore than $200k
+
+How much have you invested in your company so far?\*
+
+How much is your monthly burn rate approximately?\*
+
+Do you have plans to raise multiple rounds? If so, how much are you looking to raise in the next 3 years?\*
+
+What methods have you tried to approach investors? Cold or warm outreach? What are the results you have got so far?\*
+
+Are you finding investors on your own or there is an external party who is helping you do that?\*
+
+Do you prefer to approach angel investors directly or do you prefer to outsource this to another company?\*
+
+FasterCapital will become the technical cofounder to help you build your MVP/prototype and provide full tech development services. We cover %50 of the costs per equity. Submission here allows you to get a FREE $35k business package.
+
+**Estimated cost of development:**Select$15K-$25K$25K-$50K$50K-$150K$150K-$500K$500K-$1M
+
+**Available budget for tech development:**Select$15K-$50K$50K-$150K$150K-$500K$500K-$1M
+
+**Do you need to raise money?**SelectYesNo
+
+We build, review, redesign your pitch deck, business plan, financial model, whitepapers, and/or others!
+
+**What materials do you need help in:**SelectPitch DeckFinancial ModelBusiness PlanAll of the AboveOther
+
+**What type of services are you looking for:**SelectCreationRe-designReview
+
+We help large projects worldwide in getting funded. We work with projects in real estate, construction, film production, and other industries that require large amounts of capital and help them find the right lenders, VCs, and suitable funding sources to close their funding rounds quickly!
+
+**You have invested:**Select$50K-$500K$500K-$2M$2M-$5M$5M-$10M$10M-$100M$100M-$500M
+
+**Looking to raise:**Select$3M-$10M$10M-$50M$50M-$100M$100M-$500M$500M-$1B$1B-$10B
+
+**Annual Income:**$0$50K-$100K$100K-$200K$200K-$500KAbove $500K
+
+How much have you invested in your company so far?\*
+
+How... [Content truncated for context window]
 
 
 ---
 
-### Source 26: linearly.ai
+### Source 26: Fundamentals of Calculus
 
 **Content:**
-[Math](https://linearly.ai/tags/?tag=math) [Abstraction](https://linearly.ai/tags/?tag=abstraction) [Turing](https://linearly.ai/tags/?tag=turing) [Computation](https://linearly.ai/tags/?tag=computation) [ML](https://linearly.ai/tags/?tag=ml)
+Loading...
 
-## [Lecture00: How Do Machines Learn?](https://linearly.ai/lecture/lecture-00)
+- [![W](https://www.wiley.com/storefront-pdp-assets/_next/image?url=%2Fimages%2Fwiley_breadcrumb_home.png&w=256&q=75)](https://www.wiley.com)
+- [Subjects](https://www.wiley.com/en-gb/subjects)
+- [General & Introductory Mathematics](https://www.wiley.com/en-gb/General+&+Introductory+Mathematics-c-MA00)
+- [Calculus](https://www.wiley.com/en-gb/Calculus-c-MA30)
 
-19 Aug, 2023 · 2 min read
+![](https://www.wiley.com/storefront-pdp-assets/_next/image?url=https%3A%2F%2Fmedia.wiley.com%2Fproduct_data%2FcoverImage300%2F6X%2F11190152%2F111901526X.jpg&w=640&q=75)
 
-[Vectors](https://linearly.ai/tags/?tag=vectors) [Dimensions](https://linearly.ai/tags/?tag=dimensions) [Equations](https://linearly.ai/tags/?tag=equations) [Dot Product](https://linearly.ai/tags/?tag=dot+product)
+## Fundamentals of Calculus
 
-## [Lecture01: Fundamentals](https://linearly.ai/lecture/lecture-01)
+[Carla C. Morris,](https://www.wiley.com/en-gb/search?filters[author]=Carla C. Morris&pq=++) [Robert M. Stark](https://www.wiley.com/en-gb/search?filters[author]=Robert M. Stark&pq=++)
 
-18 Aug, 2023 · 1 min read
+ISBN: 978-1-119-01526-0
 
-[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Singularity](https://linearly.ai/tags/?tag=singularity) [Numpy](https://linearly.ai/tags/?tag=numpy)
+October 2015
 
-## [Lecture02: Matrices & Transformations](https://linearly.ai/lecture/lecture-02)
+368 pages
 
-17 Aug, 2023 · 1 min read
+![Wiley](https://www.wiley.com/content/dam/wiley-dotcom/en/b2c/images/company-logo/wiley-logo-black.svg)
 
-[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Numpy](https://linearly.ai/tags/?tag=numpy) [Dimensions](https://linearly.ai/tags/?tag=dimensions)
+To Purchase this product, please visit
 
-## [Lecture03: Matrices & Views & Numpy](https://linearly.ai/lecture/lecture-03)
+[https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-16 Aug, 2023 · 1 min read
+[![Fundamentals of Calculus](https://www.wiley.com/storefront-pdp-assets/_next/image?url=https%3A%2F%2Fmedia.wiley.com%2Fproduct_data%2FcoverImage300%2F6X%2F11190152%2F111901526X.jpg&w=640&q=75)](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-[Elimination](https://linearly.ai/tags/?tag=elimination) [Matrix Operations](https://linearly.ai/tags/?tag=matrix+operations) [Inverse](https://linearly.ai/tags/?tag=inverse)
+[**Fundamentals of Calculus**](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-## [Lecture04: Elimination, Inverse Matrices & Permutations](https://linearly.ai/lecture/lecture-04)
+Carla C. Morris,Robert M. Stark
 
-15 Aug, 2023 · 1 min read
+[E-Book](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015314)
 
-[Matrix Multiplication](https://linearly.ai/tags/?tag=matrix+multiplication) [Elimination](https://linearly.ai/tags/?tag=elimination) [Inverse Matrices](https://linearly.ai/tags/?tag=inverse+matrices)
+[978-1-119-01531-4](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015314)
 
-## [Lecture05: Unique Matrix Multiplication Methods](https://linearly.ai/lecture/lecture-05)
+[July 2015](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015314)
 
-14 Aug, 2023 · 1 min read
+[£88.99](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015314)
 
-[CR Decomposition](https://linearly.ai/tags/?tag=cr+decomposition) [LU Decomposition](https://linearly.ai/tags/?tag=lu+decomposition) [Invertibility](https://linearly.ai/tags/?tag=invertibility)
+[Hardcover](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-## [Lecture06: CR & LU Decompositions](https://linearly.ai/lecture/lecture-06)
+[978-1-119-01526-0](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-13 Aug, 2023 · 1 min read
+[October 2015](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-[Vector Spaces](https://linearly.ai/tags/?tag=vector+spaces) [Subspaces](https://linearly.ai/tags/?tag=subspaces) [Column-Spaces](https://linearly.ai/tags/?tag=column-spaces)
+[£110.95](https://www.wiley.com/en-gb/Fundamentals+of+Calculus-p-9781119015260)
 
-## [Lecture07: Vector Spaces Intro](https://linearly.ai/lecture/lecture-07)
+Description
 
-12 Aug, 2023 · 1 min read
+**Features the techniques, methods, and applications of calculus using real-world examples from business and economics as well as the life and social sciences**
 
-[Columnspace](https://linearly.ai/tags/?tag=columnspace) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rowspace](https://linearly.ai/tags/?tag=rowspace)
+An introduction to differential and integral calculus, _Fundamentals of Calculus_ presents key topics suited for a variety of readers in fields ranging from entrepreneurship and economics to environmental and social sciences.
 
-## [Lecture7.5: Subspaces, Columnspace, Rowspace, Nullspace](https://linearly.ai/lecture/lecture-07-5)
+Practical examples from a variety of subject areas are featured throughout each chapter and step-by-step explanations for the solutions are presented. Specific techniques are also applied to highlight important information in each section, including symbols interspersed throughout to further reader comprehension.
 
-12 Aug, 2023 · 1 min read
-
-[Subspaces](https://linearly.ai/tags/?tag=subspaces) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rank](https://linearly.ai/tags/?tag=rank) [Basis](https://linearly... [Content truncated for context window]
+In addition, the book illustrates the elements of finite calculus with the varied formulas for power, quoti... [Content truncated for context window]
 
 
 ---
 
-### Source 27: Practical Guide to Linear Algebra in Data Science and AI
+### Source 27: Fundamental Theorems of Calculus to Know for AP Calculus AB/BC
 
 **Content:**
-[Tatev Aslanyan](https://www.freecodecamp.org/news/author/tatevaslanyan/)
+NEW
+ap style practice
+NEW
+homework tools
 
-> "In God we trust; all others bring data." – W. Edwards Deming
+# Fundamental Theorems of Calculus to Know for AP Calculus AB/BC
 
-This famous quote from Edwards Deming perfectly captures the essence of modern Data Science and AI.
+#### Related Subjects
 
-Data is the lifeblood of Data Science and AI fields – Machine Learning, Deep Learning, Generative AI and much more. And understanding how to analyze and manipulate data it is key to unlocking its full potential.
+[♾️ AP Calculus AB/BC](https://library.fiveable.me/ap-calc)
 
-The key to understanding all these concepts is linear algebra – the unsung hero behind many powerful algorithms and techniques.
+The Fundamental Theorems of Calculus connect differentiation and integration, showing how they work together. These concepts are vital for evaluating definite integrals, understanding areas under curves, and applying calculus in economics and management for real-world decision-making.
 
-If you've ever felt a disconnect between the linear algebra you learned in school and its practical use in your career, you're not alone. If you believe you should study and work your way through an entire book of Introduction to Linear Algebra, then you are again not alone.
+01. **First Fundamental Theorem of Calculus**
 
-Many aspiring data science and AI professionals struggle to bridge this gap and think they need to spend countless hours to master mathematics for Data Science and AI. But don't worry, this guide is here to help.
+ - Establishes the relationship between differentiation and integration.
+ - States that if ( f ) is continuous on (\[a, b\]) and ( F ) is an antiderivative of ( f ), then (\\int\_a^b f(x) , dx = F(b) - F(a)).
+ - Provides a method to evaluate definite integrals using antiderivatives.
+02. **Second Fundamental Theorem of Calculus**
 
-I'll show you how linear algebra isn't just a theoretical concept or old fashioned forgotten area of expertise. You'll learn how it's a practical tool that you can use to solve real-world problems in your field.
+ - States that if ( f ) is continuous on an interval, then the function ( F(x) = \\int\_a^x f(t) , dt ) is differentiable.
+ - The derivative of ( F ) is equal to the original function: ( F'(x) = f(x) ).
+ - Reinforces the concept that integration and differentiation are inverse processes.
+03. **Relationship between differentiation and integration**
 
-Linear Algebra combined with Mathematical Analysis (called Calculus I and II in many undergrad studies) form the backbone of Machine Learning, Deep Learning, Computer Vision, and Generative AI. From building recommendation systems and training Neural Networks to analyzing medical images, understanding linear algebra opens up a world of possibilities.
+ - Differentiation measures the rate of change, while integration measures accumulation.
+ - The two processes are interconnected; one can be used to undo the other.
+ - Understanding this relationship is crucial for solving calculus problems effectively.
+04. **Definite integrals as area under a curve**
 
-In this guide, you'll discover:
+ - A definite integral represents the net area between the curve of a function and the x-axis over a specified interval.
+ - Positive areas above the x-axis and negative areas below it are accounted for in the integral.
+ - This concept is fundamental in applications such as physics and economics.
+05. **Evaluating definite integrals using antiderivatives**
 
-- **Real-World Applications:** We'll explore how linear algebra is applied across various industries, from healthcare to finance, and everything in between (with a special and detailed focus on Data Science and AI).
+ - To evaluate a definite integral, find an antiderivative of the function.
+ - Apply the First Fundamental Theorem of Calculus: compute ( F(b) - F(a) ).
+ - This method simplifies the process of finding areas and total accumulation.
+06. **The Mean Value Theorem for Integrals**
 
-- **Practical Tips:** You'll learn how to translate theoretical concepts into actionable steps for your data science projects.
+ - States that if ( f ) is continuous on (\[a, b\]), there exists at least one ( c ) in ((a, b)) such that ( f(c) = \\frac{1}{b-a} \\int\_a^b f(x) , dx ).
+ - Provides a way to find an average value of a function over an interval.
+ - Useful in understanding the behavior of functions and their averages.
+07. **Applications of the Fundamental Theorems in economics and management**
 
-- **Linear Algebra RoadMap 2024:** You will get a roadmap for Linear Algebra in 2024 – on paper and in a video tutorial.
+ - Used to calculate consumer and producer surplus through definite integrals.
+ - Helps in modeling growth and decay in economic contexts.
+ - Provides tools for analyzing cost, revenue, and profit functions.
+08. **Using the Fundamental Theorems to solve optimization problems**
 
-- **Career Development Resources:** I will provide you resources to help you learn linear algebra and accelerate your career in data science and AI.
-
-
-Whether you're a student, a recent graduate, or an experienced professional aspiring to become technical professional, this guide will equip you with the knowledge and skills to learn and leverage linear algebra effectively in your work. And you won't have to spend all your time on endless browsing and searching.
-
-> "Mathematics is like the producer of the movies: you don't see them but they are actually running the show." – Tatev Aslanyan
-
-## Table of Contents
-
-1. [Core Linear Algebra Concepts](https://www.freecodecamp.org/www.freecodecamp.org#heading-core-concepts-in-linear-algebra-that-you-will-actually-use)
-
-2. [Linear Algebra Roadmap](https://www.freecodecamp.org/www.freecodecamp.org#heading-li... [Content truncated for context window]
+ - Theorems can be applied to find maximum and minimum values of functions.
+ - Involves setting the derivative equal to zero and using the second derivative test.
+ - Essential for making info... [Content truncated for context window]
 
 
 ---
 
-### Source 28: Matrix Theory and Linear Algebra
+### Source 28: Fundamental of Differential Calculus
 
 **Content:**
-## Contents
+- [Number System and Arithmetic](https://www.geeksforgeeks.org/engineering-mathematics/number-theory/)
+- [Algebra](https://www.geeksforgeeks.org/maths/algebra/)
+- [Set Theory](https://www.geeksforgeeks.org/maths/set-theory/)
+- [Probability](https://www.geeksforgeeks.org/maths/probability-in-maths/)
+- [Statistics](https://www.geeksforgeeks.org/maths/statistics/)
+- [Geometry](https://www.geeksforgeeks.org/maths/geometry/)
+- [Calculus](https://www.geeksforgeeks.org/maths/math-calculus/)
+- [Logarithms](https://www.geeksforgeeks.org/maths/logarithms/)
+- [Mensuration](https://www.geeksforgeeks.org/maths/mensuration/)
+- [Matrices](https://www.geeksforgeeks.org/engineering-mathematics/matrices/)
+- [Trigonometry](https://www.geeksforgeeks.org/maths/math-trigonometry/)
+- [Mathematics](https://www.geeksforgeeks.org/maths/maths/)
 
-1Systems of linear equations
+Sign In
 
-2Vectors in ℝⁿ
+▲
 
-3Lines and planes in ℝⁿ
+[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/fundamental-of-differential-calculus/?type%3Darticle%26id%3D1248297&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
 
-4Matrices
+# Fundamental of Differential Calculus
 
-5Spans, linear independence, and bases in
-ℝⁿ
+Last Updated : 23 Jul, 2025
 
-6Linear transformations in ℝⁿ
+Comments
 
-7Determinants
+Improve
 
-8Eigenvalues, eigenvectors, and
-diagonalization
+Suggest changes
 
-9Vector spaces
+Like Article
 
-10Linear transformation of vector
-spaces
+Like
 
-11Inner product spaces
+Report
 
-Appendix AComplex numbers
+Differential calculus is a branch of calculus that studies the concept of a derivative and its applications. Derivative tells us about the rate at which a function changes at any given point. Differential Calculus is crucial to many scientific and engineering areas since it allows for the estimation of instantaneous rates of change and curve slopes. In this article, we will be discussing about Differential Calculus and its fundamentals, which every students should know.
 
-## List of applications
+This article helps learners in understanding of differential calculus, its concepts, and its applications. By the end of this article, readers should be able to understand the fundamentals of derivatives and use them to solve real-world issues.
 
-- Balancing chemical reactions
-- Dimensionless variables
-- Resistor networks
-- Cryptography: The Hill cipher
-- Perspective rendering
-- Solving recurrences
-- Solving systems of linear differential equations
-- Error correcting codes
-- Fourier series
-- Simplification of quadratic forms
-- Principal component analysis
+Fundamentals of Differential Calculus
 
-## Downloading
+Table of Content
 
-Download the textbook [here](https://www.mathstat.dal.ca/downloads/LinearAlgebra.pdf).
-
-## Obtaining a printed copy
-
-Printed copies of this textbook can be purchased inexpensively
-from Lulu.com:
-
-- [Matrix\
-Theory and Linear Algebra (black and white)](http://www.lulu.com/shop/peter-selinger/matrix-theory-and-linear-algebra-black-and-white/paperback/product-23838005.html), CAD $30.00.
-- [Matrix\
-Theory and Linear Algebra (color)](http://www.lulu.com/shop/peter-selinger/matrix-theory-and-linear-algebra-color/paperback/product-23838046.html), CAD $46.00.
-
-You can get an additional discount by searching the internet
-for [Lulu\
-coupons](https://www.google.ca/search?q=lulu.com+coupons). You can often find coupons for a 10-15% discount
-or for free shipping. Hint: the free shipping is often the
-better deal.
-
-## License
-
-_Matrix Theory and Linear Algebra_ is an open text,
-licensed under
-the [Creative\
-Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). This means that it can be
-freely downloaded, printed, and shared (subject to some
-conditions that are spelled out in the license). The license
-also permits making changes. This is ideal for instructors
-who would like to add their own material, change notations, or
-add more examples or exercises. Please see
-the [License](https://creativecommons.org/licenses/by/4.0/)
-for details. If you make revisions, please send them to me so
-that I can consider incorporating them in future versions of
-this book.
-
-## Reporting typos
-
-Since this is an open text, typos can be easily fixed and an
-updated version posted online. It is my intention to fix all
-typos. If you find a typo (no matter how small), please
-report it to
-[selinger@mathstat.dal.ca](mailto:selinger@mathstat.dal.ca).
-
-## Supplementary materials
-
-- Chapter 11.4 (Fourier series): Watch
-[this\
-video](https://www.youtube.com/watch?v=3IAMpH4xF9Q) for a demonstration of what the functions
-from Examples 11.44–46 sound like as audio
-signals.
-- Chapter 11.12 (Principal component analysis):
-Here is the [senate voting\
-data](https://www.mathstat.dal.ca/downloads/senate.zip) used in the textbook.
-
-## Instructor resources
-
-We have developed online homework assignments for this
-textbook using the
-MAA's [WeBWorK](http://webwork.maa.org/) system.
-We have also develo... [Content truncated for context window]
+- [Key Concepts in Differential Calculus](https://www.geeksforgeeks.org/www.geeksforgeeks.org#key-concepts-in-differential-calculus)
+ - [Limits](https://www.geeksforgeeks.org/www.geeksforgeeks.org#limits)
+ - [Continuity](https://www.geeksforgeeks.org/www.geeksforgeeks.org#continuity)
+ - [Derivatives:](https://www.geeksforgeeks.org/www.geeksforgeeks.org#derivatives)
+- [Basic Rules of Differentiation](https://www.geeksforgeeks.org/www.geeksforgeeks.org#basic-rules-of-differentiation)
+ - [Product Rule of Derivative](https://www.geeksforgeeks.org/www.geeksforgeeks.org#product-rule-of-derivative)
+ - [Quotient Rule of Derivatives](https://www.geeksforgeeks.org/www.geeksforgeeks.org#quotient-rule-of-derivatives)
+ - [Sum Rule of Derivative](https://www.geeksforgeeks.org/www.geeksforgeeks.org#sum-rule-of-derivative)
+ - [Power Rule of Derivative](https://www.geeksforgeeks.org/www.geeksforgeeks.org#power-rule-of-derivative)
+ - [Constant Multiple Rule of Derivative](https://www.geeksforgeeks.or... [Content truncated for context window]
 
 
 ---
 
-### Source 29: A short tutorial on linear algebra
+### Source 29: 6.4 Fundamental Theorem of Calculus – Techniques of Calculus 1
 
 **Content:**
-# A short tutorial on linear algebra
+"
 
-A short introduction to linear algebra is outlined in the following notes.
+[Skip to content](https://psu.pb.unizin.org/psu.pb.unizin.org#content)
 
-- [Vector spaces](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_001_VectorSpaces.pdf)
-- [Linear maps and matrices](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_002_LinearMapsAndMatrices.pdf)
-- [Linear independence and bases](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_003_LinearIndependenceAndBases.pdf)
+## Learning Objectives
+
+- Describe the meaning of the Mean Value Theorem for Integrals.
+- State the meaning of the Fundamental Theorem of Calculus, Part 1.
+- Use the Fundamental Theorem of Calculus, Part 1, to evaluate derivatives of integrals.
+- State the meaning of the Fundamental Theorem of Calculus, Part 2.
+- Use the Fundamental Theorem of Calculus, Part 2, to evaluate definite integrals.
+- Explain the relationship between differentiation and integration.
+
+In the previous two sections, we looked at the definite integral and its relationship to the area under the curve of a function. Unfortunately, so far, the only tools we have available to calculate the value of a definite integral are geometric area formulas and limits of Riemann sums, and both approaches are extremely cumbersome. In this section we look at some more powerful and useful techniques for evaluating definite integrals.
+
+These new techniques rely on the relationship between differentiation and integration. This relationship was discovered and explored by both Sir Isaac Newton and Gottfried Wilhelm Leibniz (among others) during the late 1600s and early 1700s, and it is codified in what we now call the **Fundamental Theorem of Calculus**, which has two parts that we examine in this section. Its very name indicates how central this theorem is to the entire development of calculus.
+
+Isaac Newton’s contributions to mathematics and physics changed the way we look at the world. The relationships he discovered, codified as Newton’s laws and the law of universal gravitation, are still taught as foundational material in physics today, and his calculus has spawned entire fields of mathematics. To learn more, [Britannica’s page](https://www.britannica.com/biography/Isaac-Newton) on Newton with multimedia clips.
+
+Before we get to this crucial theorem, however, let’s examine another important theorem, the Mean Value Theorem for Integrals, which is needed to prove the Fundamental Theorem of Calculus.
+
+## The Mean Value Theorem for Integrals
+
+The **Mean Value Theorem for Integrals** states that a continuous function on a closed interval takes on its average value at the same point in that interval. The theorem guarantees that if \[latex\]f(x)\[/latex\] is continuous, a point \[latex\]c\[/latex\] exists in an interval \[latex\]\\left\[a,b\\right\]\[/latex\] such that the value of the function at \[latex\]c\[/latex\] is equal to the average value of \[latex\]f(x)\[/latex\] over \[latex\]\\left\[a,b\\right\].\[/latex\] We state this theorem mathematically with the help of the formula for the average value of a function that we presented at the end of the preceding section.
+
+### The Mean Value Theorem for Integrals
+
+If \[latex\]f(x)\[/latex\] is continuous over an interval \[latex\]\\left\[a,b\\right\],\[/latex\] then there is at least one point \[latex\]c\\in \\left\[a,b\\right\]\[/latex\] such that
+
+$$f(c)=\\frac{1}{b-a}{\... [Content truncated for context window]
 
 
 ---
 
-### Source 30: Linear Algebra - Intuitive Math
+### Source 30: A Guide to Self Study Calculus
 
 **Content:**
-[Intuitive Math](https://intuitive-math.club/)
+**Estimated Read Time:** 4 minute(s)
 
-Main
+**Common Topics:** book, calculus, topics, study, multivariable
 
-[Home](https://intuitive-math.club/)
+Click For Complete Series
 
-Linear Algebra
+[How to Study Mathematics](https://www.physicsforums.com/insights/how-to-study-mathematics/) [How to Self-Study Basic High School Mathematics](https://www.physicsforums.com/insights/self-study-basic-high-school-mathematics/) [How to Self-Study Calculus](https://www.physicsforums.com/insights/self-study-calculus/)
 
-[1) Co-ordinate Systems](https://intuitive-math.club/linear-algebra/spaces)[2) Vectors](https://intuitive-math.club/linear-algebra/vectors)[3) Matrices](https://intuitive-math.club/linear-algebra/matrices)[4) Linear Independence](https://intuitive-math.club/linear-algebra/linear-independence)[5) Subspaces](https://intuitive-math.club/linear-algebra/subspaces)[6) Spans](https://intuitive-math.club/linear-algebra/spans)[7) Basis](https://intuitive-math.club/linear-algebra/basis)[8) Elementary Row Ops](https://intuitive-math.club/linear-algebra/elementary-row-operations)[9) Row Space](https://intuitive-math.club/linear-algebra/row-space)[10) Column Space / Range](https://intuitive-math.club/linear-algebra/column-space)[11) Null Space / Kernels](https://intuitive-math.club/linear-algebra/null-space)[12) Determinant](https://intuitive-math.club/linear-algebra/determinant)[13) Inverses](https://intuitive-math.club/linear-algebra/inverses)[14) Transpose](https://intuitive-math.club/linear-algebra/transpose)[15) Eigenvalues](https://intuitive-math.club/linear-algebra/eigenvalues)[16) Eigenvectors](https://intuitive-math.club/linear-algebra/eigenvectors)[17) Eigenbasis / Diagonalization](https://intuitive-math.club/linear-algebra/eigenbasis)[18) Homogeneous Co-ordinates](https://intuitive-math.club/linear-algebra/homogeneous)
+We often get questions here from people self-studying mathematics. One of those questions is what mathematics should I study and in what order. So to answer those questions, I have decided to make a list of topics a mathematician should ideally know and what prerequisites the topics have.
 
-Geometry
+Table of Contents
 
-[1) Planes](https://intuitive-math.club/geometry/planes)[2) Integrals](https://intuitive-math.club/geometry/integrals)[3) Parametric Surfaces](https://intuitive-math.club/geometry/parametric)[4) Paths](https://intuitive-math.club/geometry/paths)[5) Surface Area](https://intuitive-math.club/geometry/surface-area)[6) Cylinders](https://intuitive-math.club/geometry/cylinders)[7) Spheres](https://intuitive-math.club/geometry/spheres)
+Toggle
 
-[Intuitive Math](https://intuitive-math.club/)
+## **Calculus**
 
-Main
+After high school stuff comes calculus. This includes:
 
-[Home](https://intuitive-math.club/)
-
-Linear Algebra
-
-[1) Co-ordinate Systems](https://intuitive-math.club/linear-algebra/spaces)[2) Vectors](https://intuitive-math.club/linear-algebra/vectors)[3) Matrices](https://intuitive-math.club/linear-algebra/matrices)[4) Linear Independence](https://intuitive-math.club/linear-algebra/linear-independence)[5) Subspaces](https://intuitive-math.club/linear-algebra/subspaces)[6) Spans](https://intuitive-math.club/linear-algebra/spans)[7) Basis](https://intuitive-math.club/linear-algebra/basis)[8) Elementary Row Ops](https://intuitive-math.club/linear-algebra/elementary-row-operations)[9) Row Space](https://intuitive-math.club/linear-algebra/row-space)[10) Column Space / Range](https://intuitive-math.club/linear-algebra/column-space)[11) Null Space / Kernels](https://intuitive-math.club/linear-algebra/null-space)[12) Determinant](https://intuitive-math.club/linear-algebra/determinant)[13) Inverses](https://intuitive-math.club/linear-algebra/inverses)[14) Transpose](https://intuitive-math.club/linear-al... [Content truncated for context window]
+1. Differentiation
+[Differentiation is finding the tangent line to a specific function](https://www.physicsforums.com/insights/continuous-nowhere-differentiable-function-part-2/). You can deduce surprisingly many facts from this procedure.
+_Prerequisites:_ Basic stuff
+_Important topics:_ **a)** Continuity
+**b)** Limits
+**c)** Derivatives
+**d)** Rules for differentiation
+**e)** Mean value theorem and consequences
+**f)** Geometrical meaning of derivatives
+**g)** Curve sketching
+**h)** Rate of change
+2. Integration
+Integration is the opposite process of differentiation. Integration is used to find areas, lengths, and so much more.
+_Prerequisites:_ Differentiation
+_Important topics:_ **a)** [Indefinite integrals](https://www.physicsforums.com/insights/misconceptions-indefinite-integrals/) **b)** Rules of indefinite integration
+**c)** Definite integration
+**d)** Rules for definite integration
+**e)** [Fundamental theorem of calculus](https://www.physicsforums.com/insights/a-numerical-insight-for-the-fundamental-theorem-of-calculus/) **f)** Application of integration to find areas, volumes, and lengths
+**g)** Applications to Physics
+3. Sequences and series
+Sequences and series are important for approximating certain functions. For example, the sine and the logarithm functions can be approximated very nicely with series.
+_Prerequisites:_ Differentiation and integration
+_Important topics:_ **a)** Convergence of sequences
+**b)** Converges of series **c)** Special sequences and series
+**d)** Convergence tests for series
+**e)** Taylor series
+**f)** [Integration and differentiation](https://www.physicsforums.com/insights/an-overview-of-complex-differentiation-and-integration/) with series
+4. Multivariable calculus
+Everything in single variable calculus of course also works in multiple dimensions. _Prerequisites:_ single-variable calculus
+_Important topics:_ **a)** Basic spatial geometry, like parametrization of lines and curves **b)** [Limits and continuity](https://www.physicsforums.com/insights/epsilontic-limits-and-continuity/) in multivariable functions
+**c)** Differentiation of multivariable functions
+**d)** Integration of multivaria... [Content truncated for context window]
 
 
 ---
@@ -514,7 +661,7 @@ Linear Algebra
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 3 Knowledge Nodes for: Linear Algebra**
+**Agent 3 Knowledge Nodes for: Calculus Fundamentals**
 
 1. [Node Name]
 2. [Node Name]

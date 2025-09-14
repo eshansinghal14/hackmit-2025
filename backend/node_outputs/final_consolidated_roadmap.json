@@ -1,69 +1,80 @@
 [
   {
     "1": {
-      "name": "Introduction to Vectors",
-      "weight": 0.0,
+      "name": "Introduction to Calculus",
+      "weight": -0.1,
       "prerequisites": []
     },
     "2": {
-      "name": "Vector Operations",
-      "weight": 0.0,
+      "name": "Limits and Continuity",
+      "weight": -0.2,
       "prerequisites": [
         "1"
       ]
     },
     "3": {
-      "name": "Matrix Algebra",
-      "weight": 0.0,
+      "name": "Derivatives",
+      "weight": -0.3,
       "prerequisites": [
-        "1"
+        "2"
       ]
     },
     "4": {
-      "name": "Linear Transformations",
-      "weight": -0.2,
+      "name": "Differentiation Rules",
+      "weight": -0.3,
       "prerequisites": [
-        "2",
         "3"
       ]
     },
     "5": {
-      "name": "Determinants and Inverses",
-      "weight": 0.0,
+      "name": "Applications of Derivatives",
+      "weight": -0.1,
       "prerequisites": [
-        "3"
+        "4"
       ]
     },
     "6": {
-      "name": "Eigenvalues and Eigenvectors",
-      "weight": 0.0,
+      "name": "Integrals",
+      "weight": -0.3,
       "prerequisites": [
-        "4",
-        "5"
+        "2"
       ]
     },
     "7": {
-      "name": "Orthogonality and Orthonormality",
-      "weight": 0.0,
+      "name": "Integration Rules",
+      "weight": -0.3,
       "prerequisites": [
-        "2",
         "6"
       ]
     },
     "8": {
-      "name": "Linear Systems and Applications",
-      "weight": -0.1,
+      "name": "Applications of Integrals",
+      "weight": 0.0,
       "prerequisites": [
-        "4",
         "7"
+      ]
+    },
+    "9": {
+      "name": "Multivariable Calculus",
+      "weight": 0.0,
+      "prerequisites": [
+        "5",
+        "8"
+      ]
+    },
+    "10": {
+      "name": "Calculus in Real-World Applications",
+      "weight": 0.0,
+      "prerequisites": [
+        "9"
       ]
     }
   },
   [
-    "Do you understand vector addition and scalar multiplication? (Yes/No)",
-    "Can you explain the concept of matrix multiplication? (Yes/No)",
-    "Do you know how to find the inverse of a matrix? (Yes/No)",
-    "Can you apply linear transformations to solve systems of equations? (Yes/No)",
-    "Do you understand the relationship between eigenvalues and eigenvectors? (Yes/No)"
+    "Do you understand the concept of limits in calculus? (Yes/No)",
+    "Can you explain the fundamental theorem of calculus? (Yes/No)",
+    "Do you know how to apply differentiation rules to solve problems? (Yes/No)",
+    "Can you explain the concept of integration by substitution? (Yes/No)",
+    "Do you understand how to use calculus in real-world applications? (Yes/No)"
   ]
 ]

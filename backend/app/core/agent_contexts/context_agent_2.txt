@@ -1,9 +1,9 @@
-You are Agent 2 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 2 of 5, a specialized research expert analyzing "Calculus Fundamentals". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 2 Research Context
 
 ## Assignment
-You are Agent 2 of 5 specialized research agents analyzing: "Linear Algebra"
+You are Agent 2 of 5 specialized research agents analyzing: "Calculus Fundamentals"
 
 ## Your Data Subset
 - Agent ID: 2/5
@@ -13,669 +13,437 @@ You are Agent 2 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Research Sources
 
-### Source 11: Linear Algebra Without the Agonizing Pain
+### Source 11: Mastering the basics of single variable calculus - A beginner's guide | Elevri
 
 **Content:**
-Table of Contents:
+[Courses](https://www.elevri.com/courses)
 
-- [Null Space](https://johnwlambert.github.io/johnwlambert.github.io#null-space)
-- [Column Space](https://johnwlambert.github.io/johnwlambert.github.io#column-space)
-- [Projection of a Vector onto a Vector](https://johnwlambert.github.io/johnwlambert.github.io#projection)
-- [Gram-Schmidt](https://johnwlambert.github.io/johnwlambert.github.io#gram-schmidt)
-- [Solving Systems of Equations](https://johnwlambert.github.io/johnwlambert.github.io#solving-systems-of-equations)
-- [Singular Value Theorem (SVD)](https://johnwlambert.github.io/johnwlambert.github.io#svd)
-- [Computation of the SVD](https://johnwlambert.github.io/johnwlambert.github.io#computation-svd)
-- [Sherman-Morrison](https://johnwlambert.github.io/johnwlambert.github.io#sherman-morrison)
-- [Sherman-Woodbury-Woodbury Formula](https://johnwlambert.github.io/johnwlambert.github.io#sww)
+Calculus
 
-## Linear Algebra Definitions
+# Mastering the basics of single variable calculus - A beginner's guide
 
-Before we do anything interesting with machine learning or optimization, we’ll need to review some essential linear algebra concepts.
+In this course, we'll provide a comprehensive overview of single variable calculus, including key concepts like limits, derivatives, and integrals.
 
-Suppose we have two vectors \\(u,v \\in \\mathbf{R}^{n \\times 1}\\). Their _outer product_ is defined as \\(u \\cdot v^T\\), which is an \\(n \\times n\\) matrix. The inner product of \\(u\\) and \\(v\\) is defined \\(u^Tv \\in \\mathbf{R}^{1 \\times 1}\\), a scalar.
+Table of contents
 
-Orthogonal vectors satisfy \\(v^Tu = 0\\). For all \\(x \\neq 0\\), if the quadratic form is positive \\(x^TAx > 0\\), then the matrix is symmetric positive matrix; if instead \\(x^TAx \\geq 0\\), the matrix is symmetric positive semi-definite.
+## What is included in a calculus course?
 
-A vector norm assigns a scalar value to vector or matrix. It turns out that all norms are _equivalent_, meaning we can bound a certain norm above and below
+The following 23 topics are typically included in a calculus course
 
-\\\[\\delta \\\|x\\\|\_0 \\leq \\\|x\\\|\_{\\square} \\leq \\gamma \\\|x\\\|\_0\\\]
+1\. Limits
 
-e.g. \\(\\\|x\\\|\_{\\alpha} \\leq C\_{\\alpha \\beta} \\\| x \\\|\_{\\beta}\\), or \\(\\\|x\\\|\_2 \\leq \\\|x\\\|\_1 \\leq \\sqrt{n} \\\|x\\\|\_2\\).
+Functions are not always defined for all inputs. For instance, division by zero is not allowed. To see how the function look close to such an input, we study the limit as the input goes toward this point.
 
-Many matrix norms are _induced_ from vector norms.
+[Show more](https://www.elevri.com/courses/calculus/limits)
 
-### Matrix Rank
+* * *
 
-### Vector Space
+2\. Continuity
 
-### Null Space of a Matrix
+Integers are considered discrete numbers; they are distributed with gaps in-between them. The set of real numbers, however, is continuous, since between any two reals you will always find more of them. The same concept extend to functions, where a continuous function is one with no gaps.
 
-Given \\(A \\in \\mathbb{R}^{m \\times n}\\), the **null space** of \\(A\\) is the set of vectors which are sent to the zero vector:
+[Show more](https://www.elevri.com/courses/calculus/continuity)
 
-\\\[\\mathcal{N}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\\\]
+* * *
 
-Multiplication by \\(A\\) can be seen as a function which sends a vector \\(x \\in \\mathbb{R}^n\\) to a vector \\(Ax \\in \\mathbb{R}^m\\).
+3\. Derivatives
 
-Of course, \\(\\mathcal{N}(A)\\) always contains the zero vector, i.e. \\({0} \\in \\mathcal{N}(A)\\). But the question is, does it contain any other vectors? If the columns of \\(A\\) are linearly independent, then we can always say \\(\\mathcal{N}(A) = {0} \\).
+The derivative of a function gives its instantaneous rate of change at any point. This is analogous to the slope of a line parallel to the function there, which, together with the concept of limits, formulate the definition of the derivative:
+$$f'(x) = \\lim\_{h \\to 0}\\frac{f(x+h) - f(x)}{h}$$
 
-### Column Space (Range) of a Matrix
+[Show more](https://www.elevri.com/courses/calculus/derivatives)
 
-Given an \\(m \\times n\\) matrix \\(A\\), we would like to know for which vectors \\(b \\in \\mathbb{R}^m\\) the system \\(Ax = b\\) has a solution. Let’s define the columns of \\(A\\) as:
+* * *
 
-\\\[A = \\begin{bmatrix} \| & \| & & \| \\\ v\_1 & v\_2 & \\cdots & v\_n \\\ \| & \| & & \| \... [Content truncated for context window]
+4\. Differentiation rules
+
+Finding derivatives is not always straight-forward using the definition. Luckily, the subject is well-researched, and multiple handy rules have been discovered, simplifying the task depending on the form of the function.
+
+[Show more](https://www.elevri.com/courses/calculus/differentiation-rules)
+
+* * *
+
+5\. Mean value theorem
+
+The mean value theorem is simple, yet powerful: Between any two points on a continuous function, the derivative will somewhere equal the slope of the line connecting the points.
+
+[Show more](https://www.elevri.com/courses/calculus/mean-value-theorem)
+
+* * *
+
+6\. Implicit derivatives
+
+If y is not a function of x, but we still have a relation between the two through some equation, we can not formulate the derivative as a function of x. This is the case for a circle with radius $a$:
+$$x^2 + y^2 = a^2$$
+A line tangent to this circle will have the slope $ -\\frac{y}{x}$. This derivative is implicit, as opposed to explicit as a function of $x$ alone.
+
+[Show more](https://www.elevri.com/courses/calculus/implicit-derivatives)
+
+* * *
+
+7\. Inverse functions
+
+A function is a way of processing numbers. You plug in some number and get out a new one. The inverse of a function is then a redo-process, which takes in the old output, and spits out the initial input.
+
+[Show more](https://www.elevri.com/courses/calculus/inverse-functions)
+
+* * *
+
+8\. Antiderivatives
+
+As hinted by the name, antiderivatives are the reverses of derivatives. If a function $f(x)$ has the derivative $f'(x)$, $... [Content truncated for context window]
 
 
 ---
 
-### Source 12: Linear Algebra for Everyone, Gilbert Strang
+### Source 12: A Gentle Introduction To Learning Calculus
 
 **Content:**
-# Linear Algebra for Everyone      [Gilbert Strang](http://www-math.mit.edu/~gs/)
+I have a love/hate relationship with calculus: it demonstrates the beauty of math and the agony of math education.
 
-ISBN 978-1-7331466-3-0               September 2020 [Wellesley-Cambridge Press](http://www.wellesleycambridge.com/) [gilstrang@gmail.com](mailto:gilstrang@gmail.com)
+Calculus relates topics in an elegant, brain-bending manner. My closest analogy is Darwin’s Theory of Evolution: once understood, you start seeing Nature in terms of survival. You understand why drugs lead to resistant germs (survival of the fittest). You know why sugar and fat taste sweet (encourage consumption of high-calorie foods in times of scarcity). It all fits together.
 
-[Other books by Gilbert Strang](https://math.mit.edu/math.mit.edu#othergs) Dummy
+Calculus is similarly enlightening. Don’t these formulas seem related in some way?
 
-- ## [Table of Contents and Preface](https://math.mit.edu/everyone_prefaceTOC01.pdf)
+They are. But most of us learn these formulas independently. Calculus lets us start with $\\text{circumference} = 2 \\pi r$ and figure out the others — the Greeks would have appreciated this.
 
-- ## [Solution Manual : Linear Algebra for Everyone (November 2023)](https://math.mit.edu/lafesols.pdf)
+**Unfortunately, calculus can epitomize what’s wrong with math education**. Most lessons feature contrived examples, arcane proofs, and memorization that body slam our intuition & enthusiasm.
 
-- ## [New ideas in Linear Algebra for Everyone](https://math.mit.edu/compare%20LAFE-ILA5I.pdf)
+It really shouldn’t be this way.
 
-- ## [Section 1.3](https://math.mit.edu/everyone_13.pdf) [Section 1.4](https://math.mit.edu/everyone_14.pdf)       of  this  book
+## Math, art, and ideas
 
-- ## [Image compression by the SVD, Tim Baumann's website](https://math.mit.edu/everyone_svd01.pdf)
+I’ve learned something from school: **Math isn’t the hard part of math; motivation is.** Specifically, staying encouraged despite
 
-- ## [A 2020 Vision of Linear Algebra (videos)](https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/videos/)
+- Teachers focused more on publishing/perishing than teaching
+- Self-fulfilling prophecies that math is difficult, boring, unpopular or “not your subject”
+- Textbooks and curriculums more concerned with [profits](https://web.archive.org/web/20081216021713/http://www.redshift.com/~jmichael/html/feynman.html) and test results than insight
 
-- ## [_LU_ and _CR_ Elimination (to appear in SIAM Review)](https://math.mit.edu/lucrweb.pdf)
+[‘A Mathematician’s Lament’ \[pdf\]](http://www.maa.org/external_archive/devlin/LockhartsLament.pdf) is an excellent essay on this issue that [resonated](http://reddit.com/info/6baz9/comments/) [with](http://www.metafilter.com/70699/A-Mathematicians-Lament) [many people](http://www.math.princeton.edu/~bbukh/natural.html):
 
-- ## [Errata in the First Printing](https://math.mit.edu/lafe_errata09.pdf)
+> “…if I had to design a mechanism for the express purpose of destroying a child’s natural curiosity and love of pattern-making, I couldn’t possibly do as good a job as is currently being done — I simply wouldn’t have the imagination to come up with the kind of senseless, soul-crushing ideas that constitute contemporary mathematics education.”
 
+Imagine teaching art like this: **Kids, no fingerpainting in kindergarten.** Instead, let’s study paint chemistry, the physics of light, and the anatomy of the eye. After 12 years of this, if the kids (now teenagers) don’t hate art already, they may begin to start coloring on their own. After all, they have the “rigorous, testable” fundamentals to start appreciating art. Right?
 
-## We have improved the explanation of how to find the nullspace of any matrix _A_ :
+Poetry is similar. Imagine studying this quote (formula):
 
-## We want all solutions to _Ax = 0_ : All combinations of columns leading to zero vector
+```
+This above all: to thine own self be true,
+And it must follow, as the night the day,
+Thou canst not then be false to any man.
 
-## There are _n - r_ special solutions after elimination simplifies the equations
+— William Shakespeare, Hamlet
 
-## New version of Section 3.2, in the next printing of Linear Algebra for Everyone
+```
 
-## [New 3.2 : _A = CR_ and Computing the Nullspace by Elimination](https://math.mit.edu/lafe019)
-
-## [Original 3.2 : The Nullspace of _A_: Solving _Ax = 0_](https://math.mit.edu/lafe020)
-
-[Book Order Form](https://math.mit.edu/~gs/weborder.php)
-
-[Wellesley-Cambridge Press](http://www.wellesleycambridge.com/)           : All Gilbert Strang's textbooks
-
-[Cambridge University Press](https://www.cambridge.org/academic/subjects/mathematics/algebra/linear-algebra-everyone)          : Outside North America
-
-[Kyobo Books](https://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=BNT&mallGb=ENG&barcode=9781733146630) and Ting Lung          : Books in Korea and Taiwan
-
-[Wellesley Publishers (India)](http://www.wellesleypublishers.com/)         : Indian editions of select books
-
-## Lecture Notes for Linear Algebra (ebook, 2021)
-
-- ### [Buy the ebook from Google Playstore](https://play.google.com/store/books/details/Gilbert%20Strang%20Lecture%20Notes%20for%20Linear%20Algebra?id=uJhEEAAAQBAJ&hl)
-
-- ### [The Art of Linear Algebra,\ by Kenji Hiranabe](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/The-Art-of-Linear-Algebra.pdf)
-
-
-## Interesting Links
-
-- ### [Matrix World : The Picture of All Matrices, by Kenji Hiranabe (appears in this book)](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/MatrixWorld.pdf)
-
-
-## Other books by Gilbert Strang
-
-- ### [Introduction to Linear Algebra](http://math.mit.edu/linearalgebra)
-
-- ### [Linear Algebr... [Content truncated for context window]
+It’s an elegant way of saying “be yourself” (and if that means writing irreverently about math, so be it). But if this were math class, we’d be counting the syllables, analyzing the iambic pentameter, and mapping out the s... [Content truncated for context window]
 
 
 ---
 
-### Source 13: 1: What is Linear Algebra?
+### Source 13: What to know before taking calculus (article)
 
 **Content:**
-[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
+If you're seeing this message, it means we're having trouble loading external resources on our website.
 
-Many difficult science problems can handled using the powerful, yet easy to use, mathematics of linear algebra. Unfortunately, because the subject (at least for those learning it) requires seemingly arcane and tedious computations involving large arrays of number known as matrices, the key concepts and the wide applicability of linear algebra are easily missed. Therefore, before we equip you with matrix skills, let us give some hints about what linear algebra is. The takeaway message is
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
 
-> ﻿Linear algebra is the study of vectors and linear transformations.
+## Oops. Something went wrong. Please try again.
 
-﻿In broad terms, vectors are things you can add and linear transformations are very special functions of vectors that respect vector addition. To understand this a little better, lets try some examples. Please be prepared to change the way you think about some familiar mathematical objects and keep a pencil and piece of paper handy!
-
-- [1.1: What Are Vectors?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.01%3A_What_Are_Vectors)Vectors are things you can add and scalar multiply.
-- [1.2: What Are Linear Functions?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.02%3A_What_Are_Linear_Functions)In calculus classes, the main subject of investigation was functions and their rates of change. In linear algebra, functions will again be focus of your attention, but now functions of a very special type.
-- [1.3: What is a Matrix?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.03%3A_What_is_a_Matrix)Matrices are linear functions of a certain kind. One way to learn about them is by studying systems of linear equations.
-- [1.4: Review Problems](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.04%3A_Review_Problems)
-
-## Contributor
-
-- [David Cherney](http://www.math.ucdavis.edu/research/profiles/?fac_id=cherney), [Tom Denton,](http://www.researchgate.net/profile/Tom_Denton) and [Andrew Waldron](http://www.math.ucdavis.edu/~wally/) (UC Davis)
-
-- Thumbnail: In three-dimensional Euclidean space, these three planes represent solutions of linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations. (CC BY-SA 3.0; Alksentrs via Wikipedia)
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
 
 
 ---
 
-### Source 14: Linear algebra
+### Source 14: MTH 15: Applied Calculus I
 
 **Content:**
-[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+[Skip to main content](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I#elm-main-content)
 
-From Wikipedia, the free encyclopedia
+This calculus course is intended for majors in business and in certain areas of life sciences. The course covers differential calculus of algebraic, exponential, and logarithmic functions, introduction to integral calculus, and applications in business, economics, and the life and social sciences.
 
-Branch of mathematics
+- [Front Matter](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter)[![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/114718/mindtouch.page%2523thumbnail?revision=1)](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter)
 
-**Linear algebra** is the branch of [mathematics](https://en.wikipedia.org/wiki/Mathematics) concerning [linear equations](https://en.wikipedia.org/wiki/Linear_equation) such as
+- [Introduction](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/01%3A_Introduction)
+- [TitlePage](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/01%3A_TitlePage)
+- [InfoPage](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/02%3A_InfoPage)
+- [Licensing](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/02%3A_Licensing)
+- [Table of Contents](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/03%3A_Table_of_Contents)
+- [Licensing](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/00%3A_Front_Matter/04%3A_Licensing)
 
-a1x1+⋯+anxn=b,{\\displaystyle a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n}=b,}
+- [1: Prerequisite Review](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review)[![mindtouch.page#thumbnail](https://math.libretexts.org/@api/deki/files/114719/mindtouch.page%2523thumbnail?revision=2)](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review)
 
-[linear maps](https://en.wikipedia.org/wiki/Linear_map) such as
-
-(x1,…,xn)↦a1x1+⋯+anxn,{\\displaystyle (x\_{1},\\ldots ,x\_{n})\\mapsto a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n},}
-
-and their representations in [vector spaces](https://en.wikipedia.org/wiki/Vector_space) and through [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)).[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3)
-
-In three-dimensional [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space), these three planes represent solutions to linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations.
-
-Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of [geometry](https://en.wikipedia.org/wiki/Geometry), including for defining basic objects such as [lines](https://en.wikipedia.org/wiki/Line_(geometry)), [planes](https://en.wikipedia.org/wiki/Plane_(geometry)) and [rotations](https://en.wikipedia.org/wiki/Rotation_(mathematics)). Also, [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis), a branch of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), may be viewed as the application of linear algebra to [function spaces](https://en.wikipedia.org/wiki/Space_of_functions).
-
-Linear algebra is also used in most sciences and fields of [engineering](https://en.wikipedia.org/wiki/Engineering) because it allows [modeling](https://en.wikipedia.org/wiki/Mathematical_model) many natural phenomena, and computing efficiently with such models. For [nonlinear systems](https://en.wikipedia.org/wiki/Nonlinear_system), which cannot be modeled with linear algebra, it is often used for dealing with [first-order approximations](https://en.wikipedia.org/wiki/First-order_approximation), using the fact that the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of a [multivariate function](https://en.wikipedia.org/wiki/Multivariate_function) at a point is the linear map that best approximates the function near that point.
-
-## History
-
-\[ [edit](https://en.wikipedia.org/w/index.php?title=Linear_algebra&action=edit&section=1)\]
-
-See also: [Determinant § History](https://en.wikipedia.org/wiki/Determinant#History), and [Gaussian elimination § History](https://en.wikipedia.org/wiki/Gaussian_elimination#History)
-
-The procedure (using c... [Content truncated for context window]
+- [1.1: Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.01%3A_Functions)
+- [1.2: Operations on Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.02%3A_Operations_on_Functions)
+- [1.3: Linear Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.03%3A_Linear_Functions)
+- [1.4: Exponents](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.04%3A_Exponents)
+- [1.5: Quadratic Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.05%3A_Quadratic_Functions)
+- [1.6: Polynomials and Rational Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied_Calculus_I/01%3A_Prerequisite_Review/1.06%3A_Polynomials_and_Rational_Functions)
+- [1.7: Exponential Functions](https://math.libretexts.org/Courses/Chabot_College/MTH_15%3A_Applied... [Content truncated for context window]
 
 
 ---
 
-### Source 15: Linear Algebra | Mathematics | MIT OpenCourseWare
+### Source 15: What Is Calculus? A Beginner's Guide to Limits and Differentiation
 
 **Content:**
-### Browse Course Material
+[Skip to main content](https://discover.hubpages.com/#main-content)
 
-## Course Info
+August 24, 2025
 
-##### Instructor
+- [Arts](https://discover.hubpages.com/art/)
+- [Business](https://discover.hubpages.com/business/)
+- [Entertainment](https://discover.hubpages.com/entertainment/)
+- [Politics](https://discover.hubpages.com/politics/)
+- [Sports](https://discover.hubpages.com/sports/)
+- [Tech](https://discover.hubpages.com/technology/)
+- [Login](https://hubpages.com/signin/)
 
-- [Prof. Gilbert Strang](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
+[Newsletter](https://discover.hubpages.com/newsletters)
 
-##### Departments
+This tutorial will introduce you to limits and differentiation in calculus.
 
-- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+[bluestocking \| Canva](https://www.canva.com/design/DAF3BtuYxDA/N9rn9UzwKi-uZrVMCZymGw/view?utm_content=DAF3BtuYxDA&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
-##### As Taught In
+## How to Understand Calculus
 
-Spring
-2010
+Calculus is a study of rates of change of functions and accumulation of infinitesimally small quantities. It can be broadly divided into two branches:
 
-##### Level
+- **Differential Calculus.** This concerns rates of changes of quantities and slopes of curves or surfaces in 2D or multidimensional space.
+- **Integral Calculus.** This involves summing infinitesimally small quantities.
 
-[Undergraduate](https://ocw.mit.edu/search/?l=Undergraduate)
+© Eugene Brennan
 
-##### Topics
+## What's Covered in This Tutorial
 
-- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
+In this tutorial, you will learn about:
 
- - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
+- Limits of a function
+- How the derivative of a function is derived
+- Rules of differentiation
+- Derivatives of common functions
+- What the derivative of a function means
+- Working out derivatives from first principles
+- 2nd and higher order derivatives
+- Applications of differential calculus
+- Worked examples
 
-##### Learning Resource Types
+## Who Invented Calculus?
 
-_theaters_ Lecture Videos
+Calculus was invented by the English mathematician, physicist and astronomer [Isaac Newton](https://discover.hubpages.com/education/Sir-Isaac-Newton-A-Great-Mind-that-Changed-the-World) and German mathematician Gottfried Wilhelm Leibniz independently of each other in the 17th century.
 
-_assignment\_turned\_in_ Problem Sets with Solutions
+Isaac Newton (1642 - 1726) and Gottfried Wilhelm Leibniz (below) invented calculus independent of each other in the 17th century.
 
-_grading_ Exams with Solutions
+[https://pixabay.com/vectors/isaac-newton-portrait-vintage-3936704/](https://pixabay.com/vectors/isaac-newton-portrait-vintage-3936704/)
 
-_co\_present_ Instructor Insights
+Gottfried Wilhelm von Leibniz (1646 - 1716), a German philosopher and mathematician
 
-[Download Course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/download)
+[Public domain image via Wikipedia.](https://en.wikipedia.org/wiki/Leibniz%27s_notation#/media/File:Gottfried_Wilhelm_Leibniz_c1700.jpg)
 
-[_search_](https://ocw.mit.edu/search/) [GIVE NOW](https://giving.mit.edu/give/to/ocw/?utm_source=ocw&utm_medium=homepage_banner&utm_campaign=nextgen_home) [about ocw](https://ocw.mit.edu/about) [help & faqs](https://mitocw.zendesk.com/hc/en-us) [contact us](https://ocw.mit.edu/contact)
+## What Is Calculus Used For?
 
-18.06 \| Spring 2010 \| Undergraduate
+Calculus is used widely in mathematics, science, in the various fields of engineering and economics.
 
-# [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
+## Introduction to Limits of Functions
 
-Menu
+To understand calculus, we first need to grasp the concept of _limits_ of a function.
 
-#### Course Description
+Imagine we have a continuous line function with the equation f(x) = x + 1 as in the graph below.
 
-This is a basic subject on matrix theory and linear algebra. Emphasis is given to topics that will be useful in other disciplines, including systems of equations, vector spaces, determinants, eigenvalues, similarity, and positive definite matrices.
+The value of f(x) is simply the value of the x coordinate plus 1.
 
-## Course Info
+f(x) = x + 1
 
-##### Instructor
+© Eugene Brennan
 
-- [Prof. Gilbert Strang](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
-
-##### Departments
-
-- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
-
-##### Topics
-
-- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
-
- - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
-
-##### Learning Resource Types
-
-_theaters_ Lecture Videos
-
-_assignment\_turned\_in_ Problem Sets with Solutions
-
-_grading_ Exams with Solutions
-
-_co\_present_ Instructor Insights
-
-These windows in Philadelphia represent a beautiful block matrix. (Courtesy Gail Corbett. Used with permission.)
-
-[Download Course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/download)
+The function is continuous which means that f(x) has a value that corresponds to all values of x, not just the integers ....-2, -1, 0, 1, 2, 3...... [Content truncated for context window]
 
 
 ---
 
-### Source 16: Linear Algebra for Computer Science
+### Source 16: Learn Calculus In A Month
 
 **Content:**
-[Skip to content](https://la4cs.com/la4cs.com#content)
-
-###### LA4CS
-
-# _Essential_  Math for CS
-
-An enjoyable and readable textbook on mathematics, LA4CS introduces the essential concepts and practice of Linear Algebra to the undergraduate student of computer science.
-
-The focus of this book is on the elegance and beauty of the numerical techniques and algorithms originating from Linear Algebra. As a practical handbook for computer and data scientists, LA4CS restricts itself mostly to real fields and tractable discourses, rather than deep and theoretical mathematics.
-
-The full book is available for [**download** as a PDF file](https://la4cs.com/files/LA4CS-Free.pdf). **For free**. No strings attached.
-Or you can **read** the whole book as a flip book.
-
-[Get PDF Now](https://la4cs.com/files/LA4CS-Free.pdf)
-
-[Video: Why Learn LA for CS?](https://youtu.be/g6LdgzHtGjo)
-
-[Video: Full Playlist](https://youtube.com/playlist?list=PL1VvHem4QmRITdWw_Uu2QV-a5S3n8uFhL)
-
-#### **Various Editions of LA4CS available:**
-
-- Free Edition: About 280 pages. Contains all the text and examples, but not exercises and their solutions. Freely [downloadable](https://la4cs.com/files/LA4CS-Free.pdf).
-- Full Edition: About 340 pages. Contains everything in the free version plus chapter summaries, exercises and solutions. [Buy it for $7.95](https://buy.thulasidas.com/LA4CS)
-- Solution Manual: About 100 pages. Only the chapter summaries, exercises and solutions. (Full Version minus the Free one) [Get it for $4.95](https://buy.thulasidas.com/LA4CS-Soln)
-
-## Welcome to the Wonderful World of Linear Algebra!
-
-In today’s age of machine learning and artificial intelligence, Linear Algebra is the branch of mathematics that holds the most relevance to computing.
-
-Why learn Linear Algebra in computer science and data analytics? Its role is similar to that of the alphabet or vocabulary or grammar in learning a language. If we want to be a writer, for instance, we have to be good at all these aspects of the language of our choice. Having these background skills alone is not enough; it will not make us a writer. But what is absolutely certain is that _without_ these skills, we will _never_ be a writer, not a good one at any rate.Linear Algebra, in much the same way, is really the basic backdrop of several of the pivotal numerical algorithms in computer science and machine learning.
-
-### Lecture Videos (from the course for which this book was written)
-
-**- [Chapter 1: Functions, Equations and Linearity](https://youtube.com/playlist?list=PL1VvHem4QmRLhEdOsR3fqG7tLWJr_rDeU) (August 20, 2021)**
-**- [Chapter 2: Vectors, Matrices and Their Operations](https://youtube.com/playlist?list=PL1VvHem4QmRL2WJ4t8AnbouInhVJDRobJ) (August 27, 2021)**
-**- [Chapter 3: Transposes and Determinants](https://youtube.com/playlist?list=PL1VvHem4QmRJtygKsTsFJzd7aLThS6nn4) (Sept 03, 2021)**
-**- [Chapter 4: Gaussian Elimination](https://youtube.com/playlist?list=PL1VvHem4QmRJvWkelvEh4whZzmBAKM0vA) (Sept 10, 2021)**... [Content truncated for context window]
+Loading Learn Calculus In A Month
 
 
 ---
 
-### Source 17: Introduction to Linear Algebra Using Python
+### Source 17: The Six Pillars of Calculus
 
 **Content:**
-## Guides
+[Next >>](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-0-2.php)
 
-- [Introduction](https://linearalgebra.xyz/guides/introduction)
-- [Linear Systems](https://linearalgebra.xyz/guides/linear-systems)
-- [Matrices](https://linearalgebra.xyz/guides/matrices)
-- [Solving Systems of Linear Equations](https://linearalgebra.xyz/guides/solving-systems-of-linear-equations)
-- [Vectors](https://linearalgebra.xyz/guides/vectors)
-
-subscribe [via RSS](https://linearalgebra.xyz/feed/guides.xml)
-
-
----
-
-### Source 18: Pauls Online Notes
-
-**Content:**
-[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd.jpg)](https://www.angelfire.lycos.com/)
-
-[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd2.jpg)](https://www.angelfire.lycos.com/)
-
-| | | | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Paul's Online Math Notes |
-| | | | |
-| --- |
-| [Algebra](http://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) |
-| |
-| [Calculus I](http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx) |
-| |
-| [Calculus II](http://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx) |
-| |
-| [Calculus III](http://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx) |
-| |
-| [Linear Algebra](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
-| |
-| [Differential Equations](http://tutorial.math.lamar.edu/Classes/DE/DE.aspx) |
-
-| | | | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Home](http://tutorial.math.lamar.edu/) | | |
-| --- |
-| | | | | |
-| --- | --- |
-| [Class Notes](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
-| --- |
-| | | | | |
-| --- | --- |
-| [Extras/Reviews](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
-| --- |
-| | | [Cheat Sheets & Tables](http://tutorial.math.lamar.edu/cheat_table.aspx) | | |
-| --- |
-| | | [Downloads](http://tutorial.math.lamar.edu/download.aspx) | | |
-| |
 | | | |
-| --- | --- |
-| Chapters |
-| |
-| [Linear Algebra Home](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
-| |
-| | | |
-| --- | --- |
-| [Systems of Equations and Matrices](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
-| |
-| | | |
-| --- | --- |
-| [Determinants](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
-| |
-| | | |
-| --- | --- |
-| [Euclidean n-Space](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
-| |
-| | | |
-| --- | --- |
-| [Vector Spaces](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
-| |
-| | | |
-| --- | --- |
-| [Eigenvalues and Eigenvectors](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
-| |
-| Misc |
-| |
-| [Contact Me](http://tutorial.math.lamar.edu/contact.aspx) |
-| |
-| [Downloads](http://tutorial.math.lamar.edu/download.aspx) |
-| |
-| [FAQ](http://tutorial.math.lamar.edu/faq.aspx) |
-| |
-| [Links](http://tutorial.math.lamar.edu/links.aspx) |
-| |
-| [My Students](http://tutorial.math.lamar.edu/mystudents.aspx) |
-| |
-| [Site Map](http://tutorial.math.lamar.edu/sitemap.aspx) |
-| |
-| [Terms of Use](http://tutorial.math.lamar.edu/terms.aspx) | | | | | | |
-| --- | --- | -... [Content truncated for context window]
+| --- | --- | --- |
+| ![](https://web.ma.utexas.edu/users/m408n/CurrentWeb/logo.jpg) [Home](https://web.ma.utexas.edu/users/m408n/CurrentWeb/index.html) #### The Six Pillars of Calculus [The Pillars: A Road Map](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-0-1.php) [A picture is worth 1000 words](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-0-2.php) #### Trigonometry Review [The basic trig functions](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-2.php) [Basic trig identities](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-3.php) [The unit circle](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-4.php) [Addition of angles, double and half angle formulas](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-5.php) [The law of sines and the law of cosines](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-6.php) [Graphs of Trig Functions](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM0-5-7.php) #### Exponential Functions [Exponentials with positive integer exponents](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-5-2.php) [Fractional and negative powers](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-5-3.php) [The function $f(x)=a^x$ and its graph](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-5-4.php) [Exponential growth and decay](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-5-5.php) #### Logarithms and Inverse functions [Inverse Functions](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-6-2.php) [How to find a formula for an inverse function](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-6-4.php) [Logarithms as Inverse Exponentials](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-6-7.php) [Inverse Trig Functions](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM1-6-10.php) #### Intro to Limits [Overview](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-2.php) [Definition](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-3.php) [One-sided Limits](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-5.php) [When limits don't exist](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-7.php) [Infinite Limits](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-9.php) [Summary](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-2-13.php) #### Limit Laws and Computations [Limit Laws](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-2.php) [Intuitive idea of why these laws work](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-3.php) [Two limit theorems](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-4.php) [How to algebraically manipulate a 0/0?](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-6.php) [Indeterminate forms involving fractions](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-8.php) [Limits with Absolute Values](https://web.ma.utexas.edu/users/m408n/CurrentWeb/LM2-3-10.php) [Limits involving indeterminate form... [Content truncated for context window]
 
 
 ---
 
-### Source 19: Introduction to Linear Algebra
+### Source 18: The Ultimate Guide to the Fundamental Theorem of Calculus in AP® Calculus | Albert.io
 
 **Content:**
-# Introduction to Linear Algebra
+[Skip to content](https://www.albert.io/blog/ultimate-guide-to-the-fundamental-theorem-of-calculus-in-ap-calculus/#content)
 
-![list of linear algebra problems](https://i1.wp.com/yutsumura.com/wp-content/uploads/2016/07/list-of-linear-algebra-problems-eye-catch-e1497213291742.jpg?fit=720%2C360&ssl=1)
+[![logo-type-white](https://www.albert.io/blog/wp-content/uploads/elementor/thumbs/logo-type-white-ojgxgkbcmfce62xfaqbrnrdaj3g030q1rosan6102y.png)](https://www.albert.io/?utm_source=blog&utm_campaign=header)
 
-# Introduction to Linear Algebra
+[➜](https://www.albert.io/blog/the-best-ap-calculus-ab-bc-review-guides/)
 
-Some problems and solutions by the topics that are taught in the undergraduate linear algebra course (Math 2568) in the Ohio State University.
+![Icon for AP® Calculus AB-BC](https://assets.albert.io/canary-assets/subject-icons/5bedb647-f913-429b-86c7-16d6ba0c2a2c.svg)
 
-The number of chapters/sections are based on the textbook [Introduction to Linear Algebra, 5th edition,](http://amzn.to/2aLC5xy)
+# AP® Calculus AB-BC
 
-by L.W. Johnson, R.D. Riess, and J.T. Arnold.
+# The Ultimate Guide to the Fundamental Theorem of Calculus in AP® Calculus
 
-Contents
+- The Albert Team
+- Last Updated On: March 1, 2022
 
-- [Chapter 1. Matrices and Systems of Linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_1_Matrices_and_Systems_of_Linear_Equations)
- - [1.1 Introduction to Matrices and Systems of linear equations](https://yutsumura.com/introduction-to-linear-algebra/#11_Introduction_to_Matrices_and_Systems_of_linear_equations)
- - [1.2 Echelon Form and Gaussian-Jordan Elimination](https://yutsumura.com/introduction-to-linear-algebra/#12_Echelon_Form_and_Gaussian-Jordan_Elimination)
- - [1.3 Consistent Systems of linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#13_Consistent_Systems_of_linear_Equations)
- - [1.5 Matrix Operations](https://yutsumura.com/introduction-to-linear-algebra/#15_Matrix_Operations)
- - [1.6 Algebraic Properties of Matrix operations](https://yutsumura.com/introduction-to-linear-algebra/#16_Algebraic_Properties_of_Matrix_operations)
- - [1.7 Linear Independence and Nonsingular Matrices](https://yutsumura.com/introduction-to-linear-algebra/#17_Linear_Independence_and_Nonsingular_Matrices)
- - [1.9 Matrix Inverses and Their Properties](https://yutsumura.com/introduction-to-linear-algebra/#19_Matrix_Inverses_and_Their_Properties)
-- [Midterm Exam 1 (covers Chapter 1)](https://yutsumura.com/introduction-to-linear-algebra/#Midterm_Exam_1_covers_Chapter_1)
-- [Chapter 2. Vectors in 2-Space and 3-Space](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_2_Vectors_in_2-Space_and_3-Space)
- - [2.1 Vectors in The Plane](https://yutsumura.com/introduction-to-linear-algebra/#21_Vectors_in_The_Plane)
- - [2.2 Vectors in Space](https://yutsumura.com/introduction-to-linear-algebra/#22_Vectors_in_Space)
- - [2.3 The Dot Product and The Cross Product](https://yutsumura.com/introduction-to-linear-algebra/#23_The_Dot_Product_and_The_Cross_Product)
-- [Chapter 3. The Vector Space $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_3_The_Vector_Space_92Rn)
- - [3.2 Vector Space Properties of $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#32_Vector_Space_Properties_of_92Rn)
- - [3.3 Examples of Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#33_Examples_of_Subspaces)
- - [3.4 Bases for Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#34_Bases_for_Subspaces)
- - [3.5 Dimension](https://yutsumura.com/introduction-to-linear-algebra/#35_Dimension)
- - [3.6 Orthogonal Bases for Subspaces](h... [Content truncated for context window]
+![The Ultimate Guide to the Fundamental Theorem of Calculus in AP® Calculus](https://www.albert.io/blog/wp-content/uploads/2017/02/the_ultimate_guide_to_the_fundamental_theorem_of_calculus_in_ap_calculus.png)
+
+## **Introduction**
+
+The Fundamental Theorem of Calculus brings together two essential concepts in calculus: differentiation and integration. There are two parts to the Fundamental Theorem: the first justifies the procedure for evaluating definite integrals, and the second establishes the relationship between differentiation and integration. Here, we will focus on the first statement, which is referred to as the First Fundamental Theorem of Calculus.
+
+This theorem establishes the procedure for computing a definite integral. Recall that a definite integral is an integral where you are given the limits of integration. That is, you are integrating over an interval whose endpoints you use to evaluate the integral.
+
+## **Indefinite vs. Definite Integrals**
+
+An indefinite integral is an integral without limits of integration; for example,
+
+\\int { { x }^{ 2 } } dx
+
+When integrating this function, we are looking for a curve whose derivative is {x}^{2}. There are infinitely many curves with that derivative, including
+
+\\dfrac { 1 }{ 3 } { x }^{ 3 }
+
+\\dfrac { 1 }{ 3 } { x }^{ 3 }+1
+
+\\dfrac { 1 }{ 3 } { x }^{ 3 }+8
+
+\\dfrac { 1 }{ 3 } { x }^{ 3 }-3
+
+\\dfrac { 1 }{ 3 } { x }^{ 3 }-\\sqrt { 5 }
+
+While there are infinitely many options, we note that they differ only by a constant. As a result, when we integrate a function of this type, we add an arbitrary constant, C, to our solution, as follows:
+
+\\int { { x }^{ 2 } } =\\dfrac { 1 }{ 3 } { x }^{ 3 }+C
+
+In contrast, a definite integral is one in which there are limits of integration. As an example, consider \\int \_{ 1 }^{ 4 }{ { x }^{ 2 } dx } . Here, we are being asked to integrate the same function as before, but we are doing so over the interval 1\\le x\\le 4. To compute this integral, we rely on the First Fundamental Theorem of Calculus.
+
+## **The First Fundamental Theorem of Calculus**
+
+The theorem states that if a function f(x) has an indefinite integral of F(x)+C and is continuous over an interval \[a,b\], then \\int \_{ a }^{ b }{ f(x)dx=F(b)-F(a) }.
+
+Let’s go back to our prior example:
+
+\\int \_{ 1 }^{ 4 }{ { x }^{ 2 ... [Content truncated for context window]
 
 
 ---
 
-### Source 20: linalg.dvi
+### Source 19: Basics of Calculus for GATE Exam 2024
 
 **Content:**
-Linear Algebra Review and Reference
-Zico Kolter
-October 16, 2007
-1 Basic Concepts and Notation
-Linear algebra provides a way of compactly representing and operating on sets of linear
-equations. For example, consider the following system of equations:
-4x1 − 5x2 = −13
-−2x1 + 3x2 = 9 .
-This is two equations and two variables, so as you know from high school algebra, you
-can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
-example if the second equation is simply a multiple of the first, but in the case above there
-is in fact a unique solution). In matrix notation, we can write the system more compactly
-as:
-Ax = b
-with A =
-
-4 −5
-−2 3 
-, b =
-
-13
-−9
-
-.
-As we will see shortly, there are many advantages (including the obvious space savings)
-to analyzing linear equations in this form.
-1.1 Basic Notation
-We use the following notation:
-• By A ∈ R
-m×n we denote a matrix with m rows and n columns, where the entries of A
-are real numbers.
-• By x ∈ R
-n
-, we denote a vector with n entries. Usually a vector x will denote a column
-vector — i.e., a matrix with n rows and 1 column. If we want to explicitly represent
-a row vector — a matrix with 1 row and n columns — we typically write x
-T
-(here
-x
-T denotes the transpose of x, which we will define shortly).
-1
-• The ith element of a vector x is denoted xi
-:
-x =
-
-
-
-
-
-x1
-x2
-.
-.
-.
-xn
-
-
-
-
-
-.
-• We use the notation aij (or Aij , Ai,j , etc) to denote the entry of A in the ith row and
-jth column:
-A =
-
-
-
-
-
-a11 a12 · · · a1n
-a21 a22 · · · a2n
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-am1 am2 · · · amn
-
-
-
-
-
-.
-• We denote the jth column of A by aj or A:,j :
-A =
-
-
-| | |
-a1 a2 · · · an
-| | |
-
-.
-• We denote the ith row of A by a
-T
-i
-or Ai,::
-A =
-
-
-
-
-
-— a
-T
-1 —
-— a
-T
-2 —
-.
-.
-.
-— a
-T
-m —
-
-
-
-
-
-.
-• Note that these definitions are ambiguous (for example, the a1 and a
-T
-1
-in the previous
-two definitions are not the same vector). Usually the meaning of the notation should
-be obvious from its use.
-2 Matrix Multiplication
-The product of two matrices A ∈ R
-m×n and B ∈ Rn×p
-is the matrix
-C = AB ∈ R
-m×p
-,
-where
-Cij =
-Xn
-k=1
-AikBkj .
-Note that in order for the matrix product to exist, the number of columns in A must equal
-the number of rows in B. There are many ways of looking at matrix multiplication, and
-we’ll start by examining a few special cases.
-2
-2.1 Vector-Vector Products
-Given two vectors x, y ∈ R
-n
-, the quantity x
-T
-y, sometimes called the inner product or dot
-product of the vectors, is a real number given by
-x
-T
-y ∈ R =
-Xn
-i=1
-xiyi.
-Note that it is always the case that x
-T
-y = y
-T x.
-Given vectors x ∈ R
-m, y ∈ Rn
-(they no longer have to be the same size), xyTis called
-the outer product of the vectors. It is a matrix whose entries are given by (xyT)ij = xiyj,
-i.e.,
-xyT ∈ R
-m×n =
-
-
-
-
-
-x1y1 x1y2 · · · x1yn
-x2y1 x2y2 · · · x2yn
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-xmy1 xmy2 · · · xmyn
-
-
-
-
-
-.
-2.2 Matrix-Vector Products
-Given a matrix A ∈ R
-m×n and a vector x ∈ Rn
-, their product is a... [Content truncated for context window]
+[Courses](https://www.almabetter.com/courses)
+
+[Home](https://www.almabetter.com/)
+
+[Placements](https://www.almabetter.com/success-stories)
+
+[Masterclass](https://www.almabetter.com/events)
+
+[Free\
+Practice](https://www.almabetter.com/bytes)
+
+[Hire from us](https://www.almabetter.com/hire-from-us)
+
+About Us
+
+[Sign In](https://grow.almabetter.com/auth/signup/?)
+
+Courses
+
+Course Outline
+
+Module 1Probability and Statistics
+
+Module 2Linear Algebra, Calculus and Optimization
+
+Introduction to Vectors and Matrices for GATE Exam
+
+System of Linear Equations for GATE Exam
+
+Eigenvalues and Eigenvectors for GATE Exam
+
+Determinants, Rank and Nullity for GATE Exam
+
+Basics of Calculus for GATE Exam
+
+Maxima and Minima for GATE Exam
+
+GATE Mock Test 2 - Linear Algebra, Calculus and Optimization
+
+Module 3Programming, Data Structures, and Algorithms
+
+Module 4Database Management and Warehousing
+
+Module 5Machine Learning
+
+Module 6Artificial Intelligence
+
+# Basics of Calculus for GATE Exam
+
+Last Updated: 25th October, 2023
+
+Calculus is a profound branch of mathematics that serves as a powerful tool for understanding and quantifying change and motion. Its development can be attributed to the brilliant minds of Isaac Newton and Gottfried Wilhelm Leibniz in the late 17th century. This mathematical framework has since played a pivotal role in both mathematics and science, underpinning a wide range of disciplines such as physics, engineering, economics, and even biology. Let's delve into what calculus is and why it holds such paramount importance.
+
+## **Calculus and the Essence of Change**
+
+Calculus is essentially the study of how things change. It provides us with a systematic and rigorous approach to analyze and describe the processes of transformation and variation in the world around us. Whether it's tracking the position of a moving car, understanding how a population grows over time, or determining the rate at which a chemical reaction occurs, calculus equips us with the necessary mathematical machinery to make sense of these dynamic phenomena.
+
+At its core, calculus deals with two fundamental concepts: differentiation and integration.
+
+1. **Differentiation:** This facet of calculus is concerned with understanding the rate at which something changes. It involves finding derivatives, which are mathematical expressions representing the instantaneous rate of change of a function at a specific point. In simpler terms, differentiation helps us understand how quantities such as velocity, acceleration, or growth rate change over time or with respect to other variables.
+2. **Integration:** Integration, on the other hand, is the counterpart of differentiation. It helps us accumulate or find the total of quantities that change continuously. By calculating integrals, we can determine quantities like the total distance traveled, the accumulated area under a curve, or the net change in a quantity over a given interval.
+
+### **The Importance of Calculus in Mathematics and Science:... [Content truncated for context window]
+
+
+---
+
+### Source 20: The Ultimate AP Calculus AB Course
+
+**Content:**
+Ace Calculus Effortlessly! Dive into intricate ideas made simple through lucid explanations, captivating illustrations, and hands-on challenges. Forge a robust mathematical groundwork for forthcoming triumphs in this realm!
+
+Calculus, the mathematical study of continuous change, splits into two main branches: differential calculus, concerning rates of change and slopes of curves; and integral calculus, which deals with accumulation of quantities and areas under or between curves.
+
+AP Calculus AB, one of the Advanced Placement courses for high school students, covers fundamental concepts of calculus. It includes limits, derivatives, integrals, and the Fundamental Theorem of Calculus. Approximately equivalent to a first-semester college calculus course, it focuses mainly on differential and integral calculus with applications, providing a solid foundation in these core areas.
+
+The AP Calculus AB test also emphasizes understanding conceptual frameworks, solving real-world problems, and using graphical, numerical, and analytical representations to solve challenges. It thoroughly prepares students for further studies in mathematics, science, and engineering.
+
+**The Absolute Best Book to Ace Calculus**
+
+**AP Calculus AB Complete Course**
+
+**Limit and Continuity**
+
+- [Limit Introduction](https://www.effortlessmath.com/math-topics/everything-you-need-to-know-about-limits/)
+- [Neighborhood](https://www.effortlessmath.com/math-topics/limits-what-is-the-neighborhood-of-a-point/)
+- [Estimating Limits from Tables](https://www.effortlessmath.com/math-topics/how-to-estimate-limits-from-tables/)
+- [Functions with Undefined Limits](https://www.effortlessmath.com/math-topics/what-are-the-undefined-limits-defining-from-tables-and-graphs/)
+- [One Sided Limits](https://www.effortlessmath.com/math-topics/one-sided-limits-everything-you-need-to-know/)
+- [Limit at Infinity](https://www.effortlessmath.com/math-topics/limits-what-happens-when-a-function-approaches-infinity/)
+- [Continuity at a Point](https://www.effortlessmath.com/math-topics/continuity-at-a-point-how-to-identify-discontinuities/)
+- [Continuity over an Interval](https://www.effortlessmath.com/uncategorized/a-complete-explanation-of-the-continuity-over-an-interval/)
+- [Removing Discontinuity](https://www.effortlessmath.com/math-topics/how-to-remove-discontinuity-from-a-function/)
+- [Direct Substitution](https://www.effortlessmath.com/math-topics/direct-substitution-in-limits-everything-you-need-to-know/)
+- [Limit Laws](https://www.effortlessmath.com/math-topics/a-deep-dive-into-the-world-of-limits-limit-laws/)
+- [Limit Laws Combinations](https://www.effortlessmath.com/math-topics/how-to-combine-the-limit-laws/)
+- [The Squeeze Theorem](https://www.effortlessmath.com/math-topics/the-application-of-the-squeeze-theorem-limit-problems/)
+- [Indeterminate and Undefined](https://www.effortlessmath.com/math-topics/indeterminate-and-undefined-limits/)
+- [Infinity Cases](https://www.effortlessmath.com/math-topics/the... [Content truncated for context window]
 
 
 ---
@@ -700,7 +468,7 @@ m×n and a vector x ∈ Rn
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 2 Knowledge Nodes for: Linear Algebra**
+**Agent 2 Knowledge Nodes for: Calculus Fundamentals**
 
 1. [Node Name]
 2. [Node Name]

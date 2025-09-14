@@ -1,9 +1,9 @@
-You are Agent 1 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "Calculus Fundamentals". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "Linear Algebra"
+You are Agent 1 of 5 specialized research agents analyzing: "Calculus Fundamentals"
 
 ## Your Data Subset
 - Agent ID: 1/5
@@ -13,838 +13,564 @@ You are Agent 1 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Research Sources
 
-### Source 1: What Is Linear Algebra?
+### Source 1: Calculus basics - Free Course | Cursa
 
 **Content:**
-# What Is Linear Algebra?
+[![Cursa - Free Online Courses + Free Certificate](https://cursa.app/img/logo.webp)](https://cursa.app/en/)
 
-Written by Coursera Staff • Updated on May 6, 2025
+[Certificate](https://cursa.app/en/certificate) [Blog](https://cursa.app/en/articles) [About](https://cursa.app/en/about) [Contact](https://cursa.app/en/chat)
 
-Learn what linear algebra is, its common concepts, and its use in machine learning, as well as careers you can pursue that use linear algebra.
+![United States flag](https://cursa.app/img/idioms/eua.webp)
 
-Linear algebra combines multivariate calculus, differential equations, and probability into a widely applicable mathematical theory and system that undergirds many technologies in our lives. At its core, linear algebra studies vectors and linear functions to solve systems of linear equations that contain multiple variables. It focuses on calculating vectors, which are points in space with magnitude and direction, and matrices, which are tables of numbers.
+[![](https://cursa.app/img/idioms/espanha.webp)\
+Courses inSpanish](https://cursa.app/es) [![](https://cursa.app/img/idioms/franca.webp)\
+Courses inFrench](https://cursa.app/fr) [![](https://cursa.app/img/idioms/brasil.webp)\
+Courses inPortuguese](https://cursa.app/pt) [![](https://cursa.app/img/idioms/india.webp)\
+Courses inHindi](https://cursa.app/hi)
 
-While linear algebra is not a prerequisite for starting in machine learning, its concepts become foundational for a deeper understanding of the algorithms used in machine learning. It can help when you encounter deep learning concepts so that you can make informed decisions when developing a new machine learning system.
+[Course Search](https://cursa.app/en/courses)
 
-This article takes a deeper look at concepts in linear algebra, its uses, its users, how it's employed in machine learning, and how you can study it.
+[All courses >](https://cursa.app/en/) [Basic studies >](https://cursa.app/free-online-basic-studies-courses) [Calculus >](https://cursa.app/free-courses-calculus-online)
 
-## Concepts in linear algebra
+# Free online courseCalculus basics
 
-Linear algebra contains many applicable concepts. Here are some of the concepts in linear algebra that are also useful in machine learning:
+### Duration of the online course: 2 hours and 42 minutes
 
-- Vectors and vector spaces
+New course
 
-- Systems of linear equations
+Learn the basics of calculus with Infinity Learn’s free online course. Covering fundamental topics like limits, differentiation, and integration in an easy-to-understand format.
 
-- Matrices
+## Course Description
 
-- Eigenvalues and [Eigenvectors](https://www.coursera.org/articles/eigenvector-centrality)
+Calculus Basics is an exhaustive course designed for individuals embarking on their journey into the world of calculus. Spanning a comprehensive duration of 2 hours and 42 minutes, this course dives deep into the foundational concepts essential for mastering calculus.
 
+The course begins with an introductory section, setting the stage for what’s to come and ensuring that students understand the importance and relevance of calculus in various fields. Following this, Lesson 1 elaborates on the question "Why Calculus?" providing a contextual framework for learners to appreciate the subject's significance and applications.
 
-Let’s take a closer look at each concept.
+As students progress, Lesson 2 tackles one of the central concepts in calculus: limits. This lesson is crucial as it lays the groundwork for understanding continuous functions and the behavior of functions as they approach specific points. Next, the course delves into differentiation in Lesson 3, expounding on how to calculate the derivative of a function and elucidating its myriad applications.
 
-### What is linear algebra in simple terms?
+Integration, another cornerstone of calculus, is thoroughly explored in Lesson 4. Here, students learn about integrating functions and the fundamental techniques to compute these integrals. Lessons 5 and 6 focus on functions themselves, providing a robust understanding of what functions are, how they are expressed, and their importance in calculus.
 
-Linear algebra is a branch of mathematics that analyzes vectors, matrices, and linear transformations. One of its main concerns is finding solutions using vectors to represent something in physical space. Solutions are called vector spaces, and you can add and multiply vectors to find these solutions.
+Building on this foundational knowledge, the course moves to advanced differentiation topics in Lesson 7 and Lesson 8, detailing how to find the derivatives of more complex functions. The nuances of derivatives, including situations where derivatives do not exist, are explored comprehensively in Lessons 9 and 10.
 
-### Vectors and vector spaces
-
-A vector is a quantity that has magnitude and direction. In linear algebra, you can add and multiply vectors by following the vector addition and multiplication rules. Linear algebra deals with many kinds of vectors:
-
-- Power series
-
-- Polynomials
-
-- Numbers
-
-- n-vectors
-
-- Functions with a specific domain
-
-- 2nd order polynomials
-
-
-A vector space is a set that adds and multiplies the properties of a vector. Vector spaces have 10 axioms that vectors follow when adding and multiplying.
-
-### Systems of linear equations
-
-Linear algebra examines linear functions, which have vectors as both the input and the output. A matrix is an example of a linear function when it is multiplied by transforming a vector into another vector. A system of linear equations changes to a matrix equation through an augmented matrix in a process called Gaussian elimination. To solve a system of linear equations, you use reduced row echelon form, which simplifies the system of equations into a matrix, getting the linear equation into a solvable form.
-
-### Matrices
-
-A matrix is the result of a s... [Content truncated for context window]
+Moving forward, Lesson 11 discusses the derivative as a function in itself, reinforcing ... [Content truncated for context window]
 
 
 ---
 
-### Source 2: What is Linear Algebra?
+### Source 2: Introduction to Calculus
 
 **Content:**
-Resources
+# Introduction to Calculus
 
-# What is Linear Algebra?
+Calculus is all about _**changes**_.
 
-By [Wiingy](https://wiingy.com/review-board/) on Jun 26, 2024
+| |
+| --- |
+| Sam and Alex are traveling in the car ... but the speedometer is broken. |
 
-Updated Jul 21, 2025
+Alex:
 
-In this article
+"Hey Sam! How fast are we going now?"
 
-- [Linear Algebra topics](https://wiingy.com/wiingy.com#heading-15)
-- [What are the 3 types of Linear Algebra?](https://wiingy.com/wiingy.com#heading-39)
-- [Difference between Linear Algebra and Algebra](https://wiingy.com/wiingy.com#heading-73)
-- [Resources to learn Linear Algebra](https://wiingy.com/wiingy.com#heading-79)
-- [Importance of Linear Algebra in education and career](https://wiingy.com/wiingy.com#heading-139)
-- [Key takeaways on “What is Linear Algebra?”](https://wiingy.com/wiingy.com#heading-161)
-- [Frequently Asked Questions (FAQs)](https://wiingy.com/wiingy.com#heading-175)
+Sam:
 
-[Limited Offer\
-\
-Free trial with any tutor, sign up now!\
-\
-Explore 1100+ Math tutors to find your perfect match!\
-\
-Cyntia Szomyu\
-\
-Hello! I'm Cyntia Szomyu, a mathematics tutor with\
-\
-4.6(65)\
-\
-Karinna Cvijanovich\
-\
-Hi! I'm Karinna, a recent graduate of Amherst Coll\
-\
-4.7(45)\
-\
-Find your private math tutor](https://wiingy.com/search/?subject_id=563&utm_source=side_banner&utm_medium=Limited_Offer)
+"Wait a minute ...
 
-Imagine you’re a builder, tasked with constructing a sturdy bridge across a river. You need to plot straight lines and calculate angles to ensure the bridge stands tall and strong.
+Well in the last minute we went 1.2 km, so we are going:
 
-This is where linear algebra steps in! It offers you a toolbox filled with matrices and vectors to map out your design in a mathematical space.
+1.2 km per minute x 60 minutes in an hour _=_ **72 km/h**"
 
-**Linear algebra is a type of math that solves straight-line problems. It uses grids of numbers called matrices to show these problems in vector space. Basically, it’s about how straight lines and vectors work in math.**
+Alex:
 
-Linear algebra is really important in fields like engineering and physics. It helps us figure out various natural phenomena.
+"No, Sam! Not our **average** for the last minute, or even the last second, I want to know our speed RIGHT NOW."
 
-The main things we look at in linear algebra are straight-line problems, matrices, and spaces. Understanding these ideas is key to getting the basics of this subject.In this article, we will cover:
+Sam:
 
-- Linear-Algebra topics
-- Resources to learn Linear Algebra
-- 3 types of Linear Algebra
-- Difference between Linear-Algebra and Algebra
-- Importance of learning Linear Algebra
-- Importance of learning Linear Algebra
+"OK, let us measure it up here ... at this road sign... NOW!"
 
-**Looking to Learn Linear Algebra? Book a Free Trial Lesson and match with top** [**Linear Algebra Tutors**](https://wiingy.com/linear-algebra-tutor/) **for Concepts, Homework Help, and Test Prep.**
+"OK, we were **at** the sign for **zero seconds**, and the distance was ... **zero meters**!"
 
-## **Linear Algebra topics**
+The speed is 0m / 0s _=_ 0/0 _=_ **I Don't Know**!
 
-Linear algebra covers three main areas: linear equations, matrices, and vectors. The areas are interconnected and understanding them is crucial for mastering linear algebra. Let’s break down the topics within each category:
+"I can't calculate it, Alex! I need to know **some** distance over **some** time, and you are saying the time should be zero? Can't be done."
 
-### **Linear Equations**
+That is pretty amazing ... you'd think it is easy to work out the speed of a car at any point in time, but it isn't.
 
-A linear equation is a foundational concept of linear algebra. It’s a mathematical expression written in a standard form, like a1x1 + a2x2 + … + anxn. In Linear equations, you work with variables.
+Even the speedometer of a car just shows an **average** of how fast we were going for the last (very short) amount of time.
 
-Here are the key topics covered under linear equations:
+## How About Getting Real Close
 
-- Linear Equations in One... [Content truncated for context window]
+But our story is not finished yet!
+
+Sam and Alex get out of the car, because they have arrived on location. Sam is about to do a stunt:
+
+| |
+| --- |
+| ### Sam will do a jump off a 20 m building. ### Alex, as photographer, asks: ### "How fast will you be falling after 1 second?" |
+
+Sam uses this simplified formula to find **the distance fallen**:
+
+d _=_ 5t2
+
+- d _=_ distance fallen, in meters
+- t _=_ time from jump, in seconds
+
+_(Note: the formula is a simpler version of falling due to [gravity](https://www.mathsisfun.com/physics/gravity.html): d = ½gt2)_
+
+Example: at 1 second Sam has fallen
+
+**d _=_ 5t2 _=_ 5 × 12 _=_ 5 m**
+
+But how **fast** is that? Speed is distance over time:
+
+Speed _=_ _distance_ **time**
+
+So at 1 second:
+
+Speed _=_ _5 m_ **1 second** _=_ 5 m/s
+
+"BUT", says Alex, "again that is an **average speed**, since you started the jump, ... I want to know the speed at **exactly** 1 second, so I can set up the camera properly."
+
+Well ... at **exactly 1 second** the speed is:
+
+Speed _=_ _5 − 5 m_ **1 − 1 s** _=_ _0 m_ **0 s** _=_ ???
+
+So again Sam has a problem.
+
+Think about it ... how do we figure out a speed at an exact instant in time?
+
+What is the distance? What is the time difference?
+
+They are both **zero**, giving us nothing to calculate with!
+
+But Sam has an idea ... invent a time **so short it won't matter**.
+
+Sam won't even give it a value, and will just call it "Δt" (called "delta t").
+
+So Sam works out the difference in distance between **t** and **t+Δt**
+
+At **1 second** Sam has fallen
+
+5t2 _=_ 5 × (1)2 _=_ 5 m
+
+At **(1+Δt) seconds** Sam has fallen
+
+5t2 _=_ 5 × (1+Δt)2 m
+
+We can [expand](https://www.mathsisfun.com/algebra/expanding.html) **(1+Δt)2**:
+
+(1+Δt)2= (1+Δt)(1+Δt)= 1 + 2Δt + (Δt)2
+
+So at **(1+Δt) seconds** Sam has so far fallen:
+
+d= 5 × (1+2Δt+(Δt)2) m= **5 + 10Δt + 5(Δt)2 m**
+
+In Summary:
+
+At 1 second:d _=_ 5 mAt (1+Δt) seconds:d _=_ ... [Content truncated for context window]
 
 
 ---
 
-### Source 3: Overview
+### Source 3: Understanding Basic Calculus
 
 **Content:**
-[Skip to main content](https://services.math.duke.edu/~jdr/ila/overview.html#content)
+Understanding
+Basic Calculus
 
-##### The Subject of This Textbook
+S.K. Chung
 
-Before starting with the content of the text, we first ask the basic question: what _is_ linear algebra?
 
-- _Linear:_ having to do with lines, planes, etc.
-- _Algebra:_ solving equations involving unknowns.
+Dedicated to all the people who have helped me in my life.
 
-The name of the textbook highlights an important theme: the synthesis between algebra and geometry. It will be very important to us to understand systems of linear equations both _algebraically_ (writing equations for their solutions) and _geometrically_ (drawing pictures and visualizing).
 
-**Remark**
-
-The term “algebra” was coined by the 9th century mathematician Abu Ja’far Muhammad ibn Musa al-Khwarizmi. It comes from the Arabic word _al-jebr_, meaning reunion of broken parts.
-
-At the simplest level, solving a system of linear equations is not very hard. You probably learned in high school how to solve a system like
-
-Ax+3y−z=42x−y+3z=17y−4z=−3.
-
-However, in real life one usually has to be more clever.
-
-- Engineers need to solve many, many equations in many, many variables. Here is a tiny example:
-BEDEC3x1+4x2+10x3+19x4−2x5−3x6=1417x1+2x2−13x3−7x4+21x5+8x6=2567−x1+9x2+32x3+x4+14x5+27x6=2612x1+4x2+10x3+11x4+2x5+x6=−15.
-
-- Often it is enough to know some information about the set of solutions, without having to solve the equations in the first place. For instance, does there exist a solution? What does the solution set look like geometrically? Is there still a solution if we change the 26 to a 27?
-- Sometimes the coefficients also contain parameters, like the _eigenvalue equation_
-A(7−λ)x+y+3z=0−3x+(2−λ)y−3z=0−3x−2y+(−1−λ)z=0.
-
-- In data modeling, a system of equations generally does not actually have a solution. In that case, what is the best approximate solution?
-
-Accordingly, this text is organized into three main sections.
-
-1. Solve the matrix equation Ax=b (chapters 2–4).
-
- - Solve systems of linear equations using matrices, row reduction, and inverses.
- - Analyze systems of linear equations geometrically using the geometry of solution sets and linear transformations.
-2. Solve the matrix equation Ax=λx (chapters 5–6).
-
- - Solve eigenvalue problems using the characteristic polynomial.
- - Understand the geometry of matrices using similarity, eigenvalues, diagonalization, and complex numbers.
-3. Approximately solve the matrix equation Ax=b (chapter 7).
-
- - Find best-fit solutions to systems of linear equations that have no actual solution using least-squares approximations.
- - Study the geometry of closest vectors and orthogonal projections.
-
-This text is roughly half computational and half conceptual in nature. The main goal is to present a library of linear algebra tools, and more importantly, to teach a conceptual framework for understanding which tools should be applied in a given context.
-
-If Matlab can find the answer faster than you can, then your question is just an algorithm: this is not real problem solving.
-
-T... [Content truncated for context window]
+i
+Preface
+This book is a revised and expanded version of the lecture notes for Basic Calculus and other similar courses
+offered by the Department of Mathematics, University of Hong Kong, from the first semester of the academic
+year 1998-1999 through the second semester of 2006-2007. It can be used as a textbook or a reference book
+for an introductory course on one variable calculus.
+In this book, much emphasis is put on explanations of concepts and solutions to examples. By reading
+the book carefully, students should be able to understand the concepts introduced and know how to answer
+questions with justification. At the end of each section (except the last few), there is an exercise. Students
+are advised to do as many questions as possible. Most of the exercises are simple drills. Such exercises may
+not help students understand the concepts; however, without practices, students may find it difficult to continue
+reading the subsequent sections.
+Chapter 0 is written for students who have forgotten the materials that they have learnt for HKCEE Mathematics. Students who are familiar with the materials may skip this chapter.
+Chapter 1 is on sets, real numbers and inequalities. Since the concept of sets is new to most students, detail
+explanations and elaborations are given. For the real number system, notations and terminologies that will
+be used in the rest of the book are introduced. For solving polynomial inequalities, the method will be used
+later when we consider where a function is increasing or decreasing as well as where a function is convex or
+concave. Students should note that there is a shortcut for solving inequalities, using the Intermediate Value
+Theorem discussed in Chapter 3.
+Chapter 2 is on functions and graphs. Some materials are covered by HKCEE Mathematics. New concepts
+introduced include domain and range (which are fundamental concepts related to functions); composition of
+functions (which will be needed when we consider the Chain Rule for differentiation) and inverse functions
+(which will be needed when we consider exponential functions and logarithmic functions).
+In Chapter 3, intuitive idea of limit is introduced. Limit is a fundamental concept in calculus. It is used
+when we consider differentiation (to define derivatives) and integration (to define definite integrals). There are
+many types of limits. Students should notice that their definitions are similar. To help students understand
+such similarities, a summary is given at the end of the section on two-sided limits. The section of continuous
+functions is rather conceptual. Students should understand the statements of the Intermediate Value Theorem
+(several versions) and the Extreme Value Theorem.
+In Chapters 4 and 5, basic concepts and applications of differentiation are discussed. Students who know
+how to work on limits of functions at a point should be able to apply ... [Content truncated for context window]
 
 
 ---
 
-### Source 4: Matrix Everywhere: Linear Algebra in Comp Sci
+### Source 4: Practice Calculus
 
 **Content:**
-Disclosure: When you purchase through links on my site, I may earn an affiliate commission. As an Amazon Associate, I earn from qualifying purchases.
+Investigate the central ideas of calculus and learn how to put them to use.
 
-> In this article, the author explores the relationship between mathematics and computer science, focusing on the core concepts of linear algebra and their various applications in computer science. Topics covered include linear systems, matrices, Gaussian elimination, vectors, vector spaces, vector-matrix multiplication, and transformations. These concepts are essential in fields such as machine learning, computer graphics, cryptography, and information theory.
+42 Lessons313 Exercises
+
+Apply: From Distance To Jerk
+
+Surface Area via Integrals
+
+Apply: The Spring Equation
+
+Intermediate Value Theorem
+
+Geometric Series Revisited
+
+### Vectors
+
+Use vectors — a way of describing a move in space — to program a game and design a logo.
+
+[Jump ahead](https://brilliant.org/courses/vectors/?from_llp=advanced-math)
 
 * * *
 
-## Introduction
+### Course description
 
-**This article is part of a series called "** [**Log Base Two**](https://scrappedscript.com/series/log-base-two) **", a series dedicated to the relationship between math and computer science**.
-
-Just to give a bit of background on my experience in math, I've **excelled** in a total of 10 college courses in math:
-
-01. Single-variable differential calculus
-
-02. Single-variable integral calculus
-
-03. Multi-variable differential and integral calculus
-
-04. Multi-variable differential and integral calculus of vector-valued functions
-
-05. Linear Algebra
-
-06. Differential equations
-
-07. Probability and statistics
-
-08. Data analysis using R programming language
-
-09. Multivariate statistics
-
-10. Discrete math
-
-
-For a large majority of those 10 classes, I ended up with A's.
-
-Although, before college, I struggled a lot with math in the classroom, even though math had always been my favorite subject since I was in elementary school. I found it hard to truly grasp the concepts taught because my high school teachers were too focused on skill assessment. Instead of focusing on the actual concept being taught, I was too worried about how I was going to pass the test the following week.
-
-Once I got to college, I realized that your math grade (or any grade for that matter) truly doesn't define your potential. Further, I'd argue that your success in math _education_ is heavily influenced by the quality of the teacher/professor's teaching.
-
-My mission with this series is to show other people that math isn't so scary if you break down mathematical concepts into digestible bouts of information and investigate use cases of math in your primary field of interest (in this case, computer science). Along the way, I hope to also supplement your math education with quality content. I believe that **everyone** is capable of learning and truly loving mathematics.
-
-**New articles in this series are posted every Thursday. If you have any suggestions for a specific topic I should write about, please comment it down below!**
+Calculus has such a wide scope and depth of application that it's easy to lose sight of the forest for the trees.
+This course takes a bird's-eye view, using visual and physical intuition to present the major pillars of calculus: limits, derivatives, integrals, and infinite sums. You'll walk away with a clear sense of what calculus is and what it can do.
+Calculus in a Nutshell is a short course with only 19 quizzes. If you want to quickly learn an overview of calculus or review the foundational principles after a long hiatus from the subject, this course ought to be perfect.
+Calculus Fundamentals and Integral Calculus are the two courses that can follow next in the Calculus sequence. If/when you want to go into more depth and learn a wide spread of specific techniques in differential calculus and integral calculus respectively, that's where you should look. For example, integration techniques like "integration by parts" are only in the Integral Calculus course.
 
 * * *
 
-## What Even is Linear Algebra?
+### Topics covered
 
-Linear algebra is a subfield of mathematics that concentrates on linear systems, matrices, and vectors. Through the employment of these three fundamental elements, a multitude of advancements have been achieved in various domains, both within and beyond the sphere of mathematics.
+- Antiderivatives
+- Derivatives
+- Derivative rules
+- The Fundamental Theorem
+- Geometric applications
+- Geometric series
+- Infinite sums
+- Integrals
+- Limits
+- Riemann sums
+- Science applications
+- Tangent lines
+- Taylor series
 
-## Why Hav... [Content truncated for context window]
+* * *
 
+### Prerequisites and next steps
 
----
-
-### Source 5: Linear Algebra Review and Reference
-
-**Content:**
-Linear Algebra Review and Reference
-Zico Kolter (updated by Chuong Do)
-September 30, 2015
-Contents
-1 Basic Concepts and Notation 2
-1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-2 Matrix Multiplication 3
-2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-3 Operations and Properties 7
-3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
-3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
-3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
-3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
-4 Matrix Calculus 20
-4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
-4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
-4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-1
-1 Basic Concepts and Notation
-Linear algebra provides a way of compactly representing and operating on sets of linear
-equations. For example, consider the following system of equations:
-4x1 − 5x2 = −13
-−2x1 + 3x2 = 9.
-This is two equations and two variables, so as you know from high school algebra, you
-can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
-example if the second equation is simply a multiple of the first, but in the case above there
-is in fact a unique solution). In matrix notation, we can write the system more compactly
-as
-Ax = b
-with
-A =
-
-4 −5
-−2 3 
-, b =
-
-−13
-9
-
-.
-As we will see shortly, there are many advantages (including the obvious space savings)
-to analyzing linear equations in this for... [Content truncated for context window]
+You’ll need an understanding of algebra and the basics of functions, such as domain and range, graphs, and intercepts.
 
 
 ---
 
-### Source 6: 2 Linear Algebra
+### Source 5: Fundamental Theorem of Calculus: A Complete Guide for Beginners
 
 **Content:**
-Chapter2
+[Skip to content](https://blog.fastlearner.ai/blog.fastlearner.ai#content)
 
-LinearAlgebra
+- [Skill Development Courses](https://blog.fastlearner.ai/category/skill-development-courses/)
+- [April 7, 2025](https://blog.fastlearner.ai/2025/04/07/)
 
-Linearalgebraisabranchofmathematicsthatiswidelyusedthroughoutscience
+# Fundamental Theorem of Calculus: A Complete Guide for Beginners
 
-andengineering.Yetbecauselinearalgebraisaformofcontinuousratherthan
+Table of Contents
 
-discretemathematics,manycomputerscientistshavelittleexperiencewithit.A
+How can a single theorem connect two of the most fundamental concepts in calculus—differentiation and integration? The **Fundamental Theorem of Calculus** does exactly that, serving as the bridge between these two pillars of mathematics. Without it, solving real-world problems involving motion, area, or rates of change would be far more complex.
 
-goodunderstandingoflinearalgebraisessentialforunderstandingandworking
+Whether you’re a student struggling to grasp the basics or someone curious about how calculus shapes the world around us, this guide will break down the **Fundamental Theorem of Calculus** in a way that’s easy to understand. For example, imagine trying to calculate the displacement of a car over time using its velocity function. Once you [learn calculus](https://fastlearner.ai/student/course-details/mastering-calculus-a-comprehensive-guide-to-mathematical-analysis) and understand this theorem, solving such real-world problems becomes not only possible but intuitive. By the end of this guide, you’ll know what the theorem is and how it applies to everything from physics to economics.
 
-withmanymachinelearningalgorithms,especiallydeeplearningalgorithms.We
+Let’s dive in!
 
-thereforeprecedeourintroductiontodeeplearningwithafocusedpresentationof
+## Key Takeaways - Fundamental Theorem of Calculus
 
-thekeylinearalgebraprerequisites.
+- The **Fundamental Theorem of Calculus** connects differentiation and integration, making it a cornerstone of calculus.
+- The **first fundamental theorem of calculus** calculates definite integrals using antiderivatives.
+- The **second fundamental theorem of calculus** shows that differentiation and integration are inverse processes.
+- Real-world applications include physics, engineering, and economics.
+- Tools like a **fundamental theorem of calculus calculator** can help verify your solutions.
 
-Ifyouarealreadyfamiliarwithlinearalgebra,feelfreetoskipthischapter.If
+[Mastering Calculus- Enroll Now](https://fastlearner.ai/student/course-details/mastering-calculus-a-comprehensive-guide-to-mathematical-analysis)
 
-youhavepreviousexperiencewiththeseconceptsbutneedadetailedreference
+## What Is the Fundamental Theorem of Calculus?
 
-sheettoreviewkeyformulas,werecommendTheMatrixCookbook(Petersenand
+The **Fundamental Theorem of Calculus** establishes the relationship between differentiation and integration, two core concepts in calculus. It consists of two parts:
 
-Pedersen,2006).Ifyouhavehadnoexposureatalltolinearalgebra,thischapter
+### The First Fundamental Theorem of Calculus
 
-willteachyouenoughtoreadthisbook,butwehighlyrecommendthatyoualso
+The **first fundamental theorem of calculus** states that if a function is continuous on a closed interval \[a,b\]\[a, b\]\[a,b\], and F(x)F(x)F(x) is its antiderivative, then the definite integral of the function can be calculated as:
 
-consultanotherresourcefocusedexclusivelyonteachinglinearalgebra,suchas
+∫abf(x) dx=F(b)−F(a)\\int\_a^b f(x) \\, dx = F(b) – F(a) ∫ab​f(x)dx=F(b)−F(a)
 
-Shilov(1977).Thischaptercompletelyomitsmanyimportantlinearalgebratopics
+This means that instead of calculating the area under a curve manually, you can use the antiderivative to find the result quickly.
 
-thatarenotessentialforunderstandingdeeplearning.
+### The Second Fundamental Theorem of Calculus
 
-2.1Scalars,Vectors,MatricesandTensors
-
-Thestudyoflinearalgebrainvolvesseveraltypesofmathematicalobjects:
-
-•Scalars
-
-:Ascalarisjustasinglenumber,incontrasttomostoftheother
-
-objectsstudiedinlinearalgebra,whichareusuallyarraysofmultiplenumbers.
-
-Wewritescalarsinitalics.Weusuallygivescalarslowercasevariablenames.
-
-Whenweintroducethem,wespecifywhatkindofnumbertheyare.For
-
-29
-
-CHAPTER2.LINEARALGEBRA
-
-example,wemightsay“Let
-
-s∈R
-
-betheslopeoftheline,”whiledeﬁninga
-
-real-valuedscalar,or“Let
-
-n∈N
-
-bethenumberofunits,”whiledeﬁninga
-
-naturalnumberscalar.
-
-•Vectors
-
-: Avectorisanarrayofnumbers.Thenumbersarearrangedin
-
-order.Wecanidentifyeachindividualnumberbyitsindexinthatordering.
-
-Typicallywegivevectorslowercasenamesinboldtypeface,suchas
-
-x
-
-.The
-
-elementsofthevectorareidentiﬁedbywritingitsnameinitalictypeface,
-
-withasubscript.Theﬁrstelementof
-
-x
-
-is
-
-x
-
-1
-
-,thesecondelementis
-
-x
-
-2
-
-,and
-
-soon.Wealsoneedtosaywhatkindofnumbersarestoredinthevector.If
-
-eachelementisin
-
-R
-
-,andthevectorhas
-
-n
-
-elements,thenthevectorliesin
-
-thesetformedbytakingtheCartesianproductof
-
-Rn
-
-times,denotedas
-
-R
-
-n
-
-.
-
-Whenweneedtoexplicitlyidentifytheelementsofavector,wewritethem
-
-asacolumnenclosedinsquarebrackets:
-
-x=
-
-
-
-
-
-
-
-
-
-
-
-x
-
-1
-
-x
-
-2
-
-.
-
-.
-
-.
-
-x
-
-n
-
-
-
-
-
-
-
-
-
-
-
-.(2.1)
-
-Wecanthinkofvectorsasidentifyingpointsinspace,witheachelement
-
-givingthecoordinatealongadiﬀerentaxis.
-
-Sometimesweneedtoindexasetofelementsofavector.Inthiscase,we
-
-deﬁneasetcontainingtheindicesandwritethesetasasubscript.For
-
-example,toaccess
-
-x
-
-1
-
-,
-
-x
-
-3
-
-and
-
-x
-
-6
-
-,wedeﬁnetheset
-
-S
-
-=
-
-{
-
-1
-
-,
-
-3
-
-,
-
-6
-
-}
-
-andwrite
-
-x
-
-S
-
-.Weusethe
-
-−
-
-signtoindexthecomplementofaset.Forexample
-
-x
-
-−1
-
-is
-
-thevectorcontainingallelementsof
-
-x
-
-exceptfor
-
-x
-
-1
-
-,and
-
-x
-
-−S
-
-isthevector
-
-containingallelementsofxexceptforx
-
-1
-
-,x
-
-3
-
-andx
-
-6
-
-.
-
-•Matrices
-
-:Amatrixisa2-Darrayofnumbers,soeachelementisidentiﬁed
-
-bytwoindicesinsteadofjustone.Weusuallygivematricesuppercase
-
-variablenameswithboldtypeface,suchas
-
-A
-
-.Ifar... [Content truncated for context window]
+The **second fundamental theorem of calculus** states that if f(x)f(x)f(x) is a continuous function on an interval, then the derivative of its integral function is ... [Content truncated for context window]
 
 
 ---
 
-### Source 7: FCLA What is Linear Algebra?
+### Source 6: Calculus 1 Fundamentals
 
 **Content:**
-[Skip to main content](https://runestone.academy/ns/books/published/fcla/section-WILA.html#content)
+[Ready to get with the times?\| Get the skills with Udemy Business.](https://business.udemy.com/?ref=ub-smartbar?locale=en_US&utm_type=mx)
 
-\\(\\newcommand{\\orderof}\[1\]{\\sim #1}
-\\newcommand{\\Z}{\\mathbb{Z}}
-\\newcommand{\\reals}{\\mathbb{R}}
-\\newcommand{\\real}\[1\]{\\mathbb{R}^{#1}}
-\\newcommand{\\complexes}{\\mathbb{C}}
-\\newcommand{\\complex}\[1\]{\\mathbb{C}^{#1}}
-\\newcommand{\\conjugate}\[1\]{\\overline{#1}}
-\\newcommand{\\modulus}\[1\]{\\left\\lvert#1\\right\\rvert}
-\\newcommand{\\zerovector}{\\vect{0}}
-\\newcommand{\\zeromatrix}{\\mathcal{O}}
-\\newcommand{\\innerproduct}\[2\]{\\left\\langle#1,\\,#2\\right\\rangle}
-\\newcommand{\\norm}\[1\]{\\left\\lVert#1\\right\\rVert}
-\\newcommand{\\dimension}\[1\]{\\dim\\left(#1\\right)}
-\\newcommand{\\nullity}\[1\]{n\\left(#1\\right)}
-\\newcommand{\\rank}\[1\]{r\\left(#1\\right)}
-\\newcommand{\\ds}{\\oplus}
-\\newcommand{\\detname}\[1\]{\\det\\left(#1\\right)}
-\\newcommand{\\detbars}\[1\]{\\left\\lvert#1\\right\\rvert}
-\\newcommand{\\trace}\[1\]{t\\left(#1\\right)}
-\\newcommand{\\sr}\[1\]{#1^{1/2}}
-\\newcommand{\\spn}\[1\]{\\left\\langle#1\\right\\rangle}
-\\newcommand{\\nsp}\[1\]{\\mathcal{N}\\!\\left(#1\\right)}
-\\newcommand{\\csp}\[1\]{\\mathcal{C}\\!\\left(#1\\right)}
-\\newcommand{\\rsp}\[1\]{\\mathcal{R}\\!\\left(#1\\right)}
-\\newcommand{\\lns}\[1\]{\\mathcal{L}\\!\\left(#1\\right)}
-\\newcommand{\\per}\[1\]{#1^\\perp}
-\\newcommand{\\augmented}\[2\]{\\left\\lbrack\\left.#1\\,\\right\\rvert\\,#2\\right\\rbrack}
-\\newcommand{\\linearsystem}\[2\]{\\mathcal{LS}\\!\\left(#1,\\,#2\\right)}
-\\newcommand{\\homosystem}\[1\]{\\linearsystem{#1}{\\zerovector}}
-\\newcommand{\\rowopswap}\[2\]{R\_{#1}\\leftrightarrow R\_{#2}}
-\\newcommand{\\rowopmult}\[2\]{#1R\_{#2}}
-\\newcommand{\\rowopadd}\[3\]{#1R\_{#2}+R\_{#3}}
-\\newcommand{\\leading}\[1\]{\\boxed{#1}}
-\\newcommand{\\rref}{\\xrightarrow{\\text{RREF}}}
-\\newcommand{\\elemswap}\[2\]{E\_{#1,#2}}
-\\newcommand{\\elemmult}\[2\]{E\_{#2}\\left(#1\\right)}
-\\newcommand{\\elemadd}\[3\]{E\_{#2,#3}\\left(#1\\right)}
-\\newcommand{\\scalarlist}\[2\]{{#1}\_{1},\\,{#1}\_{2},\\,{#1}\_{3},\\,\\ldots,\\,{#1}\_{#2}}
-\\newcommand{\\vect}\[1\]{\\mathbf{#1}}
-\\newcommand{\\colvector}\[1\]{\\begin{bmatrix}#1\\end{bmatrix}}
-\\newcommand{\\vectorcomponents}\[2\]{\\colvector{#1\_{1}\\\#1\_{2}\\\#1\_{3}\\\\\vdots\\\#1\_{#2}}}
-\\newcommand{\\vectorlist}\[2\]{\\vect{#1}\_{1},\\,\\vect{#1}\_{2},\\,\\vect{#1}\_{3},\\,\\ldots,\\,\\vect{#1}\_{#2}}
-\\newcommand{\\vectorentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
-\\newcommand{\\matrixentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
-\\newcommand{\\lincombo}\[3\]{#1\_{1}\\vect{#2}\_{1}+#1\_{2}\\vect{#2}\_{2}+#1\_{3}\\vect{#2}\_{3}+\\cdots +#1\_{#3}\\vect{#2}\_{#3}}
-\\newcommand{\\matrixcolumns}\[2\]{\\left\\lbrack\\vect{#1}\_{1}\|\\vect{#1}\_{2}\|\\vect{#1}\_{3}\|\\ldots\|\\vect{#1}\_{#2}\\right\\rbrack}
-\\newcommand{\\transpose}\[1\]{#1^{t}}
-\\newcommand{\\inverse}\[1\]{#1^{-1}}
-\\newcommand{\\submatrix}\[3\]{#1\\left(#2\|#3\\right)}
-\\newcommand{\\adj}\[1\]{\\transpos... [Content truncated for context window]
+[Skip to content](https://www.udemy.com/course/calculus-fundamentals/?couponCode=CALCFREE#main-content-anchor)
+
+[![Udemy](https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg)](https://www.udemy.com/)
+
+Search for anything
+
+[Plans & Pricing](https://www.udemy.com/pricing)
+
+[Udemy Business](https://www.udemy.com/udemy-business/?locale=en_US&mx_pg=httpcachecontextsme-list&path=request-demo-mx%2F&ref=ufb_header)
+
+Get your team access to over 26,000 top Udemy courses, anytime, anywhere.
+
+[Try Udemy Business](https://www.udemy.com/udemy-business/?locale=en_US&mx_pg=httpcachecontextsme-list&path=request-demo-mx%2F&ref=ufb_header)
+
+[Teach on Udemy](https://www.udemy.com/teaching/?ref=teach_header)
+
+Turn what you know into an opportunity and reach millions around the world.
+
+[Learn more](https://www.udemy.com/teaching/?ref=teach_header)
+
+[Log in](https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fcalculus-fundamentals%2F%3FcouponCode%3DLETSLEARNNOWPP)
+
+[Sign up](https://www.udemy.com/join/signup-popup/?locale=en_US&response_type=html&next=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fcalculus-fundamentals%2F%3FcouponCode%3DLETSLEARNNOWPP)
+
+[Teaching & Academics](https://www.udemy.com/courses/teaching-and-academics/) [Math](https://www.udemy.com/courses/teaching-and-academics/math/) [Calculus](https://www.udemy.com/topic/calculus/)
+
+![](https://img-b.udemycdn.com/course/750x422/1464714_b0f6_6.jpg)Preview this course
+
+# Calculus 1 Fundamentals
+
+Master the building blocks of Calculus : Limits & Derivatives
+
+[Rating: 4.2 out of 54.2(92 ratings)](https://www.udemy.com/course/calculus-fundamentals/#reviews)
+
+1,924 students
+
+Created by [Tanmay Varshney](https://www.udemy.com/course/calculus-fundamentals/#instructor-1)
+
+Last updated 4/2018
+
+English
+
+Current price$49.99
+
+Add to cart
+
+Buy now
+
+30-Day Money-Back Guarantee
+
+## This course includes:
+
+- 3 hours on-demand video
+
+- 4 articles
+
+- 4 downloadable resources
+
+- Access on mobile and TV
+
+- Full lifetime access
+
+- Certificate of completion
+
+
+Share [Gift this course](https://www.udemy.com/join/signup-popup/?locale=en_US&response_type=html&return_link=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fcalculus-fundamentals%2F%3FcouponCode%3DCALCFREE&source=course_landing_page&ref=&next=%2Fgift%2Fcalculus-fundamentals%2F%3FcouponCode%3DLETSLEARNNOWPP) Apply Coupon
+
+- **LETSLEARNNOWPP** is applied
+- Udemy coupon
+
+Apply couponApply
+
+![](https://img-b.udemycdn.com/course/750x422/1464714_b0f6_6.jpg)Preview this course
+
+Current price$49.99
+
+Add to cart
+
+Buy now
+
+30-Day Money-Back Guarantee
+
+## This course includes:
+
+- 3 hours on-demand video
+
+- 4 articles
+
+- 4 downloadable resources
+
+- Access on mobile and TV
+
+- Full lifetime access
+
+- Certificate of completion
+
+
+Share [Gift this course](https://www.udemy.com/join/signup-popup/?l... [Content truncated for context window]
 
 
 ---
 
-### Source 8: Linear Algebra
+### Source 7: What is basic calculus?
 
 **Content:**
-- [Mathematics](https://www.geeksforgeeks.org/maths/maths/)
-- [Number System and Arithmetic](https://www.geeksforgeeks.org/engineering-mathematics/number-theory/)
-- [Algebra](https://www.geeksforgeeks.org/maths/algebra/)
-- [Trigonometry](https://www.geeksforgeeks.org/maths/math-trigonometry/)
-- [Statistics](https://www.geeksforgeeks.org/maths/statistics/)
-- [Probability](https://www.geeksforgeeks.org/maths/probability-in-maths/)
-- [Geometry](https://www.geeksforgeeks.org/maths/geometry/)
-- [Mensuration](https://www.geeksforgeeks.org/maths/mensuration/)
-- [Calculus](https://www.geeksforgeeks.org/maths/math-calculus/)
-- [Logarithms](https://www.geeksforgeeks.org/maths/logarithms/)
+[Skip to content](https://guruathome.org/guruathome.org#content)
 
-Sign In
+[Facebook](https://www.facebook.com/Guruathomeforyou/)[Instagram](https://instagram.com/guru.at.home?igshid=MzRlODBiNWFlZA==)[Linkedin](https://www.linkedin.com/company/guruathome)
 
-▲
+[Book a free demo](https://guruathome.org/book-a-free-trial-class/)
 
-[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/linear-algebra/?type%3Darticle%26id%3D1018801&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+[Connect With Us](https://wa.me/918619629658)
 
-# Linear Algebra
+Menu
 
-Last Updated : 29 Aug, 2025
+[Book a free trial](https://guruathome.org/book-a-free-trial-class/)
 
-Comments
+## **What is basic calculus?**
 
-Improve
+Calculus, a foundational branch of mathematics, serves as the bedrock for understanding change and motion in the world around us. Developed independently by luminaries like Sir Isaac Newton and Gottfried Wilhelm Leibniz, calculus encompasses two main branches: [differential calculus](https://en.wikipedia.org/wiki/Differential_calculus) and [integral calculus](https://guruathome.org/blog/what-is-integral-calculus-its-types-and-methods-to-evaluate-it/). The use of calculus have their origin from mathematics and stem to almost all the major fields of study.
 
-Suggest changes
+[Book A Free Demo](https://guruathome.org/book-a-free-trial-class/)
 
-Like Article
+#### Table of Contents
 
-Like
+#### **Definition of Calculus:**
 
-Report
+Calculus is a mathematical discipline dedicated to understanding change and motion. Its two core branches, differential calculus examining rates of change and integral calculus exploring accumulation, together provide a comprehensive framework. This intricate and robust framework is invaluable for tackling dynamic challenges across various disciplines.
 
-Linear Algebra is the branch of mathematics that focuses on the study of vectors, vector spaces, matrices, and linear transformations. It deals with linear equations, linear functions, and their representations through matrices and determinants. It has a wide range of applications in Physics and Mathematics. It is the basic concept for machine learning and data science.
+#### **What is the basics of Calculus:**
 
-Some applications of Linear Algebra are:
+Imagine calculus as the storyteller of continuous change in the world of mathematics. It’s like the GPS that guides us through the twists and turns of how quantities morph with respect to one another. Think of it as a duo, with two main characters: differential calculus, the maestro of instantaneous rate of change, and integral calculus, the detective investigating the accumulation of quantities.
 
-**Linear Algebra Equations**
+Basic calculus isn’t just a set of rules to memorize; it’s the foundation that supports the understanding of more complex mathematical concepts. It’s the toolbox that contains both differential and integral calculus, honing in on those fundamental principles that open the door to advanced applications. At its heart, basic calculus equips learners with the tools to decipher change, a concept that ripples through fields as diverse as physics, engineering, economics, and biology.
 
-> The general linear equation is represented as **u** ****1**** **x** ****1**** **\+ u** ****2**** **x** ****2**** **\+ ..... u** ****n**** **x** ****n**** **= v**
+You must know why your [kid should learn calculus](https://guruathome.org/blog/why-students-learn-calculus/).
 
-Where,
+#### **Chapters in basic Calculus:**
 
-- u’s – represents the coefficients
-- x’s – represents the unknowns
-- v – represents the constant
+Now, as we dive into basic calculus, picture it as an adventure with a structured roadmap. The chapters unfold like stepping stones, guiding students from the basics to the practical applications. We’re talking about:
 
-There is a collection of equations called a System of linear algebraic equations. It obeys the linear function such as -
+1. Differential Calculus:
 
-> (x1,……..xn) → u1x1 \+ ………. \+ unxn
+- Introduction to Derivatives
+- Rules of Differentiation
+- Applications of Derivatives
 
-## Types of Linear Algebra Study
+1. Integral Calculus:
 
-Linear Algebra is divided into different branches based on the difficulty level of topics, which are,
-
-- Elementary Linear Algebra
-- Advanced Linear Algebra
-- Applied Linear Algebra
-
-## Foundations of Linear Algebra
-
-Elementary linear algebra introduces the foundational concepts that form the building blocks of the subject. It covers basic operations on matrices, solving systems of equations, and understanding vectors.
-
-- [**Scalars**](https://www.geeksforgeeks.org/maths/difference-between-scalar-and-vector-quantities/#:~:text=vs%20Vector%20Quantities-,Scalar%20Quantities,-Scalar%20quantities%20are) – Quantities with magnitude only (e.g., real numbers).
-- [**Vectors**](https://www.geeksforgeeks.org/maths/vectors-in-maths/) – Quantities with both direction and magnitude, elements of a vector space.
-- [**Vector Space**](https://www.geeksforgeeks.org/maths/vector-space/) – A collection of vectors that can be added and scaled by scalars.
-- [**Matrix**](https://www.geeksforgeeks.org/maths/introduction-to-matrices/) – A rectangular array of... [Content truncated for context window]
+- Introduction to Integrals
+- Techniques of Integra... [Content truncated for context window]
 
 
 ---
 
-### Source 9: Lecture Notes for Linear Algebra
+### Source 8: Mr Calculus
 
 **Content:**
-# Lecture Notes for Linear Algebra (2021)
-
-## [**Table of Contents**](https://math.mit.edu/toc.pdf)
-
-## [**Preface to the Notes**](https://math.mit.edu/preface.pdf)
-
-## [**Textbooks, Websites, and Video Lectures**](https://math.mit.edu/resources.pdf)
-
-## [**Sample Sections : 1.3  and  3.3  and  3.5  and  7.1**](https://math.mit.edu/samples.pdf)
-
-[**Linear Algebra @ OCW (video lectures from MIT  :  Math 18.06)**](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) [**Linear Algebra and Learning from Data @ OCW (video lectures  :  Math 18.065)**](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm) [**Gilbert Strang @ OpenCourseWare**](https://ocw.mit.edu/faculty/gilbert-strang/) [**Gilbert Strang's MIT Home Page**](http://math.mit.edu/~gs)
-
-## Other books by Gilbert Strang
-
-- ### [**Linear Algebra for Everyone (new textbook, September 2020)**](http://math.mit.edu/everyone)
-
-- ### [Linear Algebra and Learning from Data (2019)](http://math.mit.edu/learningfromdata)
-
-- ### [**Introduction to Linear Algebra, 5th Edition (2016)**](http://math.mit.edu/linearalgebra)
-
-- ### [Differential Equations and Linear Algebra](http://math.mit.edu/dela)
-
-- ### [Computational Science and Engineering](http://math.mit.edu/cse)
-
-- ### [Calculus](http://math.mit.edu/calculus)
-
-
-[\[top\]](https://math.mit.edu/math.mit.edu#top)
-
-## Ordering Gilbert Strang's books
-
-[**Direct Order in North America**](https://math.mit.edu/~gs/weborder.php) [**Book Order for SIAM members**](https://my.siam.org/Store/Product/viewproduct/?ProductId=27788546) [**Book Order from American Mathematical Society**](https://bookstore.ams.org/strang-2) [**Book Order from Cambridge University Press (outside North America)**](https://www.cambridge.org/academic/subjects/mathematics/algebra/introduction-linear-algebra-5th-edition) [**Wellesley-Cambridge Press (USA)**](http://www.wellesleycambridge.com/) [**Wellesley Publishers (India), select books**](http://www.wellesleypublishers.com/)
-( Contact: [gilstrang@gmail.com](mailto:gilstrang@gmail.com) )
-
-[\[top\]](https://math.mit.edu/math.mit.edu#top)
-
-# Detailed Table of Contents
-
-## Textbooks, Websites, and Video Lectures
-
-## Part 1 : Basic Ideas of Linear Algebra
-
-#### 1.1 Linear Combinations of Vectors
-
-#### 1.2 Dot Products _v · w_ and Lengths \|\| _v_ \|\| and Angles _θ_
-
-#### 1.3 Matrices Multiplying Vectors : _A_ times _x_
-
-#### 1.4 Column Space and Row Space of _A_
-
-#### 1.5 Dependent and Independent Columns
-
-#### 1.6 Matrix-Matrix Multiplication _AB_
-
-#### 1.7 Factoring _A_ into _CR_ : Column rank = _r_ = Row rank
-
-#### 1.8 Rank one matrices    _A_ =(1 column) times (1 row)
-
-## Part 2 : Solving Linear Equations _Ax = b : A_ is _n_ by _n_
-
-#### 2.1 Inverse Matrices _A_-1 and Solutions _x = A_-1 _b_
-
-#### 2.2 Triangular Matrix and Back Substitution for _Ux = c_
-
-#### 2.3 Elimination : Square _A_ to Triangular _U_ : _Ax = b_ to _Ux = c_
-
-#### ... [Content truncated for context window]
+Loading Mr Calculus
 
 
 ---
 
-### Source 10: Tea Time Linear Algebra
+### Source 9: Single Variable Calculus - Avidemia
 
 **Content:**
-[Table of Contents](https://lqbrin.github.io/contents.html) [Ancillaries](https://lqbrin.github.io/ancillaries.html) [Printed Copy](https://lqbrin.github.io/printCopy.html) [Changelog / revised PDF](https://lqbrin.github.io/changelog.html) [More Info](https://lqbrin.github.io/more.html)
+[Skip to content](https://avidemia.com/single-variable-calculus/#main)
 
-Also by L.Q. Brin: [Tea Time Numerical Analysis](https://lqbrin.github.io/tea-time-numerical/)
+![](https://avidemia.com/wp-content/uploads/Calculus1-Featured.png)
 
-#### Greetings! And thanks for visiting.
+[Gottfried Wilhelm Leibniz](https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz) (1646–1716), left, and [Sir Isaac Newton](https://www.britannica.com/biography/Isaac-Newton) (1643–1727), right, are considered founders of calculus.
 
-This creation is an all-purpose open source textbook for linear algebra classes of all ilks. Inside you will find a complete and engaging introduction to linear algebra, making it a perfect primary resource for classroom study.
+After a [quick review](https://avidemia.com/review-of-precalculus/) of the skills we need to study calculus (Chapters 1–3), we will begin with the concept of a limit and continuity in Chapter 4. We will then continue to learn about the derivative of a function and how to find it in Chapter 5. Derivatives have many important applications that will be discussed in chapter 6. In chapter 7, we will learn how to find a function if its derivative is given. Chapter 8 will discuss how to find the area under a curve. This process is called integration. Finally, in the last chapter, we will talk about the applications of integration.
 
-_\[The\] writing is excellent ... sharp, to the point, and witty._\- Dick Pelosi
+There are more than 370 fully solved examples that can help you gain a thorough understanding and master the skills you need to ace your exams in elementary calculus.
 
-Take a ride through the landscape of linear algebra from basic mechanics through inner product spaces.
+## Table of Contents
 
-- 386 pages
-- Over 1000 exercises with over 200 detailed solutions and hundreds more answers
-- Over 250 illustrations
-- Nearly 150 live SageMathCell links
-- Open source
-- Now with online homework and course management at [MyOpenMath!](https://www.myopenmath.com/)
+![](https://avidemia.com/wp-content/uploads/Ch4-Limit-2.svg)
 
-Presented in a conversational style with plenty of motivation, illustrations, applications, and theory, this text should be a comfortable read for most beginning mathematicians. Readers and instructors alike will appreciate the numerous detailed exercise solutions accompanying each section.
+### Chapter 4: [Limits and Continuity](https://avidemia.com/single-variable-calculus/limits-and-continuity/)
 
-Examine the distribution of bicycles in the Capital Bikeshare system, model an un-preheated oven baking brownies, reproduce sounds via Fourier series, explore rep-tiles like the one decorating this cover, and more. Read proofs of the rank and nullity theorem, the determinant expansion formula, existence and uniqueness of solutions of linear systems and others.
+01. [The Concept of a Limit](https://avidemia.com/single-variable-calculus/limits-and-continuity/concept-of-a-limit/)
+02. [The Precise Definition of a Limit](https://avidemia.com/single-variable-calculus/limits-and-continuity/precise-definition-of-limit/)
+03. [One-Sided Limits](https://avidemia.com/single-variable-calculus/limits-and-continuity/one-sided-limits/)
+04. [Theorems for Calculating Limits](https://avidemia.com/single-variable-calculus/limits-and-continuity/theorems-for-calculating-limits/)
+05. [The Indeterminate Form 0/0](https://avidemia.com/single-variable-calculus/limits-and-continuity/indeterminate-form-0-over-0/)
+06. [Infinite Limits](https://avidemia.com/single-variable-calculus/limits-and-continuity/infinite-limits/)
+07. [Limits at Infinity](https://avidemia.com/single-variable-calculus/limits-and-continuity/limits-at-infinity/)
+08. [Continuity](https://avidemia.com/single-variable-calculus/limits-and-continuity/continuity/)
+09. [Properties of Continuous Functions](https://avidemia.com/single-variable-calculus/limits-and-continuity/properties-of-continuous-functions/)
+10. [The Other Indeterminate Forms: Infinity Divided by Infinity, Zero Times Infinity, and Infinity Minus Infinity](https://avidemia.com/single-variable-calculus/limits-and-continuity/other-indeterminate-forms/)
+11. [Asymptotes](https://avidemia.com/single-variable-calculus/limits-and-continuity/asymptotes/)
+12. [The number _e_](https://avidemia.com/single-variable-calculus/limits-and-continuity/the-number-e/)
 
-It's all here in Tea Time Linear Algebra.
+![](https://avidemia.com/wp-content/uploads/Ch5-Derivative-Fig2.svg)
+
+### Chapter 5: [Differentiation](... [Content truncated for context window]
+
+
+---
+
+### Source 10: Free & Complete Courses with Guided Notes - Calculus 1: Free & Complete Course with Guided Notes (Math 1210)
+
+**Content:**
+Search this site
+
+Embedded Files
+
+Skip to main content
+
+Skip to navigation
+
+# Calculus 1: Free & Complete Course with Guided Notes (Math 1210)
+
+**You will find****TEXTBOOK****, CALENDAR****and PRACTICE ASSIGNMENT INFORMATION**[**HERE**](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/1210-textbook-calendar-practice-assignment-information)**.**
+
+**Notes and lesson videos can be found using the links below:**
+
+- [Chapter 2- Limits & Derivatives](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/chapter-2-limits-derivatives)
+
+- [Chapter 3- Differentiation Rules](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/chapter-3-differentiation-rules)
+
+- [Chapter 4- Applications of Derivatives](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/chapter-4-applications-of-derivatives)
+
+- [Chapter 5- Integrals](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/chapter-5-integrals)
+
+- [Practice Final Exams](https://www.mathlawes.org/calculus-1-free-complete-course-with-guided-notes-math-1210/practice-final-exams)
+
+
+Google Sites
+
+Report abuse
+
+Page details
+
+Page updated
+
+Google Sites
+
+Report abuse
 
 
 ---
@@ -869,7 +595,7 @@ It's all here in Tea Time Linear Algebra.
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 1 Knowledge Nodes for: Linear Algebra**
+**Agent 1 Knowledge Nodes for: Calculus Fundamentals**
 
 1. [Node Name]
 2. [Node Name]

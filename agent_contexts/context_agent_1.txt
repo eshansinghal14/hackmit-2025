@@ -1,0 +1,583 @@
+You are Agent 1 of 5, a specialized research expert analyzing "Differential Equations". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 1 Research Context
+
+## Assignment
+You are Agent 1 of 5 specialized research agents analyzing: "Differential Equations"
+
+## Your Data Subset
+- Agent ID: 1/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 1 to 10
+
+## Your Research Sources
+
+### Source 1: Differential equations
+
+**Content:**
+# Differential equations
+
+A differential equation is an equation involving a function and its derivative (or derivatives). Our goal is to find the function, if one exists, that satisfies the given differential equation. For example, y = sin(x) is a solution to the ordinary differential equation,
+
+![](https://www.math.net/mj/eScodGFuKHgpKS15ID0gMA==_100.svg)
+
+To show this, we can find the derivative of the solution, y'(x), and substitute it, as well as y(x), into the differential equation. Differentiating y = sin(x) yields y' = cos(x). Substituting these into the differential equation,
+
+| | |
+| --- | --- |
+| ![](https://www.math.net/mj/eSd0YW4oeCkgLSB5_100.svg) | ![](https://www.math.net/mj/PSAw_100.svg) |
+| |
+| ![](https://www.math.net/mj/Y29zKHgpdGFuKHgpIC0gc2luKHgp_100.svg) | ![](https://www.math.net/mj/PSAw_100.svg) |
+| |
+| ![](https://www.math.net/mj/c2luKHgpIC0gc2luKHgp_100.svg) | ![](https://www.math.net/mj/PSAw_100.svg) |
+| |
+| ![](https://www.math.net/mj/MA==_100.svg) | ![](https://www.math.net/mj/PSAw_100.svg) |
+
+which satisfies the differential equation. Further, it can be shown that y = Csin(x) is a family of solutions called the general solution of the differential equation, where C is some arbitrary constant. The solution y = sin(x) is referred to as a particular solution to the differential equation.
+
+There are various types of differential equations and a number of different methods that can be used to solve them. It is therefore important to be able to classify different differential equations.
+
+## Classifying differential equations
+
+On this page, we will define two types of differential equations: ordinary differential equations and partial differential equations.
+
+An ordinary differential equation (ODE) contains a function with one independent variable along with its derivative(s). A partial differential equation (PDE) contains a function of several variables and their partial derivatives. Below are a few examples of each.
+
+- Ordinary differential equations
+
+
+
+ - ![](https://www.math.net/mj/eScgLSAyeHkgPSBlXnszeH0=_100.svg)
+
+ - ![](https://www.math.net/mj/eScnICsgM3kgPSAy_100.svg)
+
+ - ![](https://www.math.net/mj/eF4zIC0gMmVeeHknID0geHNpbigyeCk=_100.svg)
+
+- Partial differential equations
+
+
+ - ![](https://www.math.net/mj/XGZyYWN7XGRlbHRhIHV9e1xkZWx0YSB4fSArIFxmcmFje1xkZWx0YSB1fXtcZGVsdGEgeX0gPSB4eQ==_100.svg)
+
+ - ![](https://www.math.net/mj/XGZyYWN7e1xkZWx0YX1eMnV9e1xkZWx0YSB4XjJ9ICsgXGZyYWN7e1xkZWx0YX1eMnV9e1xkZWx0YSB5XjJ9ID0gM3heM3leMg==_100.svg)
+
+ - ![](https://www.math.net/mj/XGZyYWN7e1xkZWx0YX1eM3d9e1xkZWx0YSB5XjIgXGRlbHRhIHR9ID0gMiAtIFxmcmFje1xkZWx0YSB3fXtcZGVsdGEgdH0=_100.svg)
+
+Differential equations can be further classified based on characteristics such as their order, degree, linearity, and whether or not they are homogeneous.
+
+## Order and degree
+
+The order of a differential equation is the order of the highest derivative in the equation. Below are some examples of differential equations based on their order.
+
+- 1st ord... [Content truncated for context window]
+
+
+---
+
+### Source 2: Notes on Diffy Qs: Differential Equations for Engineers
+
+**Content:**
+# Notes on Diffy Qs: Differential Equations for Engineers
+
+**By: Jiří Lebl**( [website #1 https://www.jirka.org/ (personal)](https://www.jirka.org/),
+[website #2 https://math.okstate.edu/people/lebl/ (work: OSU)](https://math.okstate.edu/people/lebl/),
+email:
+)
+
+⇒
+[Download PDF](https://jirka.org/diffyqs.pdf)
+/
+[Buy paperback](https://smile.amazon.com/dp/1706230230)
+/
+[Web version](https://jirka.org/html/diffyqs.html)
+/
+[Sage demos](https://jirka.org/jirka.org#sage)
+/
+[YouTube course](https://jirka.org/jirka.org#youtubecourse)
+
+A first course on differential equations, aimed at engineering
+students. The prerequisite for the course is the basic calculus sequence.
+This free online book (OER more formally)
+should be usable as a stand-alone
+textbook or as a companion to a course using another book such as
+Edwards and Penney,
+_Dif­fe­ren­tial Equa­tions and Boun­da­ry Va­lue Pro­blems:_
+_Computing and Modeling_
+or Boyce and DiPrima,
+_El­e­men­tary Dif­fer­en­tial Equa­tions and Boun­da­ry Va­lue Pro­blems_
+(section correspondence to these two is given).
+I developed and used this book to teach Math
+286/285 at the Uni­ver­si­ty of Illi­nois at Ur­ba­na-Cham­paign
+(one is a
+4-day-a-week, the other a 3-day-a-week semester-long course).
+I also used it for
+Math 20D at the Uni­ver­si­ty of Ca­li­for­nia, San Diego
+(a 3-day-a-week quarter-long course)
+and Math 2233 (semester-long introduction) and Math 4233 (an upper division
+continuation of 2233) at
+Okla­homa State Uni­ver­si­ty.
+There is enough material to run
+a two-semester sequence depending on lecturer speed.
+
+The aim is to provide a low cost, redistributable, not overly long,
+high-quality textbook that students will keep rather than selling back
+after the semester is over.
+Even if the students throw it out or sell it, they can always
+look it up on the net again.
+Or perhaps today's students mostly use online sources to begin with.
+(Chan­ces are your students might be using this book even if you are
+requiring another one.)
+You are free to have a local bookstore or copy
+store make and sell copies for your students.
+See below about the license.
+
+Another aim of the book is to allow modification and customization
+for a specific purpose if necessary. If you do modify the book,
+mark it prominently as such to avoid confusion. This aspect is important for
+the longevity of the book as well.
+The book can be updated, fixed, and modified even if I happen
+to drop off the face of the earth.
+You do not have to depend on any publisher
+being interested as with traditional textbooks.
+
+Finally, errata are fixed promptly.
+No need to wait several years for a new edition.
+Every once in a while I may make some major addition and a new major version
+(edition), and then in between as errata are fixed I make minor version
+updates (like a corrected printing) usually once or twice a year,
+depending on the errata discovered. Exercise, chapter, and section numbers
+are preserved as much as humanly possible.
+What's added is added at the... [Content truncated for context window]
+
+
+---
+
+### Source 3: CC An Introduction to Differential Equations
+
+**Content:**
+[Skip to main content](https://mathbooks.unl.edu/mathbooks.unl.edu#ptx-content)
+
+\\(\\newcommand{\\dollar}{\\$}
+\\DeclareMathOperator{\\erf}{erf}
+\\DeclareMathOperator{\\arctanh}{arctanh}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcommand{\\amp}{&}
+\\definecolor{fillinmathshade}{gray}{0.9}
+\\newcommand{\\fillinmath}\[1\]{\\mathchoice{\\colorbox{fillinmathshade}{$\\displaystyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\textstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptscriptstyle\\phantom{\\,#1\\,}$}}}
+\\)
+
+## Section8.1An Introduction to Differential Equations
+
+### Motivating Questions
+
+- What are differential equations? How are they useful?
+
+- What is the order of a differential equation? What is an autonomous differential equation?
+
+
+In [Section 5.3](https://mathbooks.unl.edu/sec-5-3-diff.html), we learned that a _differential equation_ is an equation that provides a description of a function’s derivative, which means that it tells us the function’s rate of change. In this chapter we will learn several methods for solving differential equations. We start by revisiting what a differential equation is.
+
+Differential equations arise frequently in our every day world. For instance, you may hear a bank advertising:
+
+> _Your money will grow at a 3% annual interest rate with us._
+
+This innocuous statement is really a differential equation. Let’s translate: \\(A(t)\\) will be amount of money you have in your account at time \\(t\\text{.}\\) The rate at which your money grows is the derivative \\(dA/dt\\text{,}\\) and we are told that this rate is \\(0.03 A\\text{.}\\) This leads to the differential equation
+
+\\begin{equation\*}
+\\frac{dA}{dt} = 0.03 A\\text{.}
+\\end{equation\*}
+
+This differential equation has a slightly different feel than the previous equation \\(\\frac{ds}{dt} = 4t+1\\text{.}\\) In the earlier example, the rate of change depends only on the independent variable \\(t\\text{,}\\) and we may find \\(s(t)\\) by integrating the velocity \\(4t+1\\text{.}\\) In the banking example, however, the rate of change depends on the dependent variable \\(A\\text{,}\\) so we’ll need some new techniques in order to find \\(A(t)\\text{.}\\)
+
+### Example8.1.
+
+Express the following statements as differential equations. In each case, you will need to introduce notation to describe the important quantities in the statement so be sure to clearly state what your notation means.
+
+1. The population of a town grows continuously at an annual rate of 1.25%.
+
+2. A radioactive sample loses 5.6% of its mass every day.
+
+3. You have a bank account that continuously earns 4% interest every year. At the same time, you withdraw money continually from the account at the rate of $1000 per year.
+
+4. A cup of hot chocolate is sitting in a 70\\(^\\circ\\) room. The temperature of the hot chocolate cools continuously by 10% of the difference between the hot chocolate’s tempe... [Content truncated for context window]
+
+
+---
+
+### Source 4: Differential Equations - Pauls Online Math Notes
+
+**Content:**
+- Go To
+- Notes
+- Practice and Assignment problems are not yet written. As time permits I am working on them, however I don't have the amount of free time that I used to so it will take a while before anything shows up here.
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [Basic Concepts Introduction](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)
+- Chapters
+- [Basic Concepts](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- Differential Equations
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
+
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,1,N)
+- Practice Problems Downloads
+- Problems not yet written.
+- Assignment Problems Downloads
+- Problems not yet written.
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=1)
+
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ Differential Equations
+
+Notes [Next Section](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see them) and some of the menu items will be cut off due to the narrow screen width.
+
+# Differential Equations
+
+Here are my notes for my differential equations course that I teach here at Lamar University. Despite the fact that these are my “class notes”, they should be accessible to anyone wanting to learn how to solve differential equations or needing a refresher on different... [Content truncated for context window]
+
+
+---
+
+### Source 5: myPhysicsLab Classifying Differential Equations
+
+**Content:**
+When you study differential equations, it is kind of like botany. You learn to look at
+an equation and classify it into a certain group. The reason is that the techniques for
+solving differential equations are common to these various classification groups. And
+sometimes you can transform an equation of one type into an equivalent equation of
+another type, so that you can use easier solution techniques. Here then are some of the
+major classifications of differential equations:
+
+On this page we assume that _x_and _y_are functions of time, _t_:
+
+_x_ = _x_(t)
+
+_y_ = _y_(t)
+
+And the derivatives are with respect to _t_
+
+## Partial vs. Ordinary
+
+An ordinary differential equation (or ODE) has a discrete (finite) set of variables.
+For example in the [simple pendulum](https://www.myphysicslab.com/pendulum/pendulum-en.html), there are two
+variables: angle and angular velocity.
+
+A partial differential equation (or PDE) has an infinite set of variables which
+correspond to all the positions on a line or a surface or a region of space. For
+example in the string simulation we have a continuous set of variables along the string
+corresponding to the displacement of the string at each position. In practice we
+approximate the infinite set of variables with a finite set of variables spread across
+the string (or surface or volume) at each position.
+
+For an ODE, each variable has a distinct differential equation using "ordinary"
+derivatives. For a PDE, there is only one "partial" differential equation for each
+dimension.
+
+## First Order, Second Order
+
+The _order_ of a differential equation is equal to the highest derivative in
+the equation. The single-quote indicates differention. So _x_'
+is a first
+derivative, while _x_''
+is a second derivative.
+
+_x_' = 1/ _x_  is first-order
+
+_x_'' = − _x_  is second-order
+
+_x_'' \+ 2 _x_' \+ _x_ = 0   is second-order
+
+## Linear vs. Non-linear
+
+Linear just means that the variable in an equation appears only with a power of one.
+So _x_is linear but _x_ 2is non-linear. Also any function like
+cos( _x_)
+is non-linear.
+
+In math and physics, _linear_ generally means "simple" and
+_non-linear_ means "complicated". The theory for solving linear equations is
+very well developed because linear equations are simple enough to be solveable.
+Non-linear equations can usually not be solved exactly and are the subject of much
+on-going research. Here is a brief description of how to recognize a linear
+equation.
+
+Recall that the equation for a line is
+
+_y_ = _m_ _x_ \+ _b_
+
+where _m_, _b_are constants ( _m_is the slope, and _b_is the
+_y_-intercept). In a differential equation, when the variables and their
+derivatives are only multiplied by constants, then the equation is linear. The
+variables and their derivatives must always appear as a simple first power. Here are
+some examples.
+
+_x_'' \+ _x_ = 0   is linear
+
+_x_'' \+ 2x' + _x_ = 0   is linear
+
+_x_' \+ 1/ _x_ = 0   is non-linear because 1/ _x_ is not a first power
+
+_x_' \+ _x_ 2 = 0   is non-linear be... [Content truncated for context window]
+
+
+---
+
+### Source 6: Differential Equations - Math Center
+
+**Content:**
+[Skip to Content](https://dornsife.usc.edu/mathcenter/differential-equations/#main-content)
+[Math Center](https://dornsife.usc.edu/mathcenter)
+MENU
+# Differential Equations
+[Interactive Differential Equations](http://www.aw-bc.com/ide/) is a collection of interactive differential equations tools designed to help students visualize the mathematics
+[Paul’s Online Math Notes](http://tutorial.math.lamar.edu/Classes/DE/DE.aspx) is an e-book on differential equations put together by Paul Dawkins of Lamar University.
+[Math Forum](http://mathforum.org/differential/differential.html) has a list of internet resources on differential equations.
+
+
+---
+
+### Source 7: Differential Equations for Exponential Growth and Decay - Expii
+
+**Content:**
+# Differential Equations for Exponential Growth and Decay - Expii
+We revisit exponential growth and decay from the perspective of differential equations: namely, the exponential differential equation, \\(y' = ky\\), where \\(k\\) is a constant (sometimes called the relative growth constant). The general solution is \\(y(t) = ce^{kt}\\), which exhibits exponential growth when \\(k\\) is positive, exponential decay when \\(k\\) is negative, and neither whether \\(k=0\\). Here \\(c = y(0)\\) is determined by the initial conditions (or sometimes other data).
+
+
+---
+
+### Source 8: Differential Equations - Basic Concepts
+
+**Content:**
+- Go To
+- Notes
+- Practice and Assignment problems are not yet written. As time permits I am working on them, however I don't have the amount of free time that I used to so it will take a while before anything shows up here.
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [Second Order DE's Introduction](https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx)
+- [Real & Distinct Roots](https://tutorial.math.lamar.edu/Classes/DE/RealRoots.aspx)
+- Chapters
+- [First Order DE's](https://tutorial.math.lamar.edu/Classes/DE/IntroFirstOrder.aspx)
+- [Laplace Transforms](https://tutorial.math.lamar.edu/Classes/DE/LaplaceIntro.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- Differential Equations
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
+
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,1,N)
+- Practice Problems Downloads
+- Problems not yet written.
+- Assignment Problems Downloads
+- Problems not yet written.
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=1)
+
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes
+
+[Home](https://tutorial.math.lamar.edu/)/ [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)/ [Second Order DE's](https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx)/ Basic Concepts
+
+[Prev. Section](https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx) Notes [Next Section](https://tutorial.math.lamar.edu/Classes/DE/RealRoots.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your ... [Content truncated for context window]
+
+
+---
+
+### Source 9: Second Order Differential Equations
+
+**Content:**
+Here we learn how to solve equations of this type:
+
+_d2y_ **dx2** \+ p_dy_ **dx** \+ qy = 0
+
+## Differential Equation
+
+A Differential Equation is an equation with a [function](https://www.mathsisfun.com/sets/function.html) and one or more of its [derivatives](https://www.mathsisfun.com/calculus/derivatives-introduction.html):
+
+Example: an equation with the function **y** and its derivative **_dy_ **dx****
+
+## Order
+
+The Order is the **highest derivative** (is it a first derivative? a [second derivative](https://www.mathsisfun.com/calculus/second-derivative.html)? etc):
+
+### Example:
+
+_dy_ **dx** \+ y2 = 5x
+
+It has only the first derivative _dy_ **dx**, so is "First Order"
+
+### Example:
+
+_d2y_ **dx2** \+ xy = sin(x)
+
+This has a second derivative _d2y_ **dx2**, so is "Second Order" or "Order 2"
+
+### Example:
+
+_d3y_ **dx3** \+ x_dy_ **dx** \+ y = ex
+
+This has a third derivative _d3y_ **dx3**which outranks the _dy_ **dx**, so is "Third Order" or "Order 3"
+
+Before tackling second order differential equations, make sure you are familiar with the various methods for [solving first order differential equations](https://www.mathsisfun.com/calculus/differential-equations-solution-guide.html).
+
+## Second Order Differential Equations
+
+We can solve a second order differential equation of the type:
+
+_d2y_ **dx2** \+ P(x)_dy_ **dx** \+ Q(x)y = f(x)
+
+where P(x), Q(x) and f(x) are functions of x, by using:
+
+[Undetermined Coefficients](https://www.mathsisfun.com/calculus/differential-equations-undetermined-coefficients.html) which only works when f(x) is a polynomial, exponential, sine, cosine or a linear combination of those, or
+
+[Variation of Parameters](https://www.mathsisfun.com/calculus/differential-equations-variation-parameters.html) which is a little messier but works on a wider range of functions.
+
+But here we begin by learning the case where **f(x) = 0** (this makes it "homogeneous"):
+
+_d2y_ **dx2** \+ P(x)_dy_ **dx** \+ Q(x)y = 0
+
+and also where the functions P(X) and Q(x) are constants **p** and **q**:
+
+_d2y_ **dx2** \+ p_dy_ **dx** \+ qy = 0
+
+Let's learn to solve them!
+
+### **_e_** to the rescue
+
+We are going to use a special property of the [derivative](https://www.mathsisfun.com/calculus/derivatives-rules.html) of the [exponential function](https://www.mathsisfun.com/sets/function-exponential.html):
+
+At any point the slope (derivative) of _**e**_ x equals the value of _**e**_ x :
+
+And when we introduce a value "r" like this:
+
+f(x) = erx
+
+We find:
+
+- the first derivative is f'(x) = rerx
+- the second derivative is f''(x) = r2erx
+
+In other words, the first and second derivatives of f(x) are both **multiples** of f(x)
+
+This is going to help us a lot!
+
+### Example 1: Solve
+
+_d2y_ **dx2** \+ _dy_ **dx** − 6y = 0
+
+Let y = erx so we get:
+
+- _dy_ **dx** = rerx
+- _d2y_ **dx2** = r2erx
+
+Substitute these into the equation above:
+
+r2erx \+ rerx − 6erx = 0
+
+Simplify:
+
+erx(r2 \+ r − 6) = 0
+
+r2 \+ r − 6 = 0
+
+We have reduced the differential equation to an ordinary ... [Content truncated for context window]
+
+
+---
+
+### Source 10: Differential Equations
+
+**Content:**
+If you're seeing this message, it means we're having trouble loading external resources on our website.
+
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+
+## Oops. Something went wrong. Please try again.
+
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+
+
+---
+
+
+
+## Your Mission as Agent 1:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 1 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 1 Knowledge Nodes for: Differential Equations**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

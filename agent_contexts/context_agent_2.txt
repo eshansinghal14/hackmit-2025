@@ -1,0 +1,640 @@
+You are Agent 2 of 5, a specialized research expert analyzing "Differential Equations". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 2 Research Context
+
+## Assignment
+You are Agent 2 of 5 specialized research agents analyzing: "Differential Equations"
+
+## Your Data Subset
+- Agent ID: 2/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 11 to 20
+
+## Your Research Sources
+
+### Source 11: Solving Differential Equations: A Comprehensive Guide
+
+**Content:**
+Solving [differential equations](https://www.tutorsformath.co.uk/differential-equations-euler-s-method) is a fundamental aspect of calculus and is essential for understanding many real-world phenomena. Whether you are a student studying mathematics or a scientist working in a field that requires mathematical modeling, having a strong grasp on solving differential equations is crucial. In this comprehensive guide, we will dive into the world of differential equations and explore various methods and techniques for solving them. We will cover everything from basic concepts and definitions to more complex applications and examples. By the end of this article, you will have a solid understanding of differential equations and be equipped with the tools to solve them with confidence. But before we delve into the specifics of solving differential equations, let's first understand what they are and why they are important. Differential equations are mathematical equations that involve an unknown function and its derivatives.
+
+They are used to describe how a system changes over time, making them an essential tool in modeling various physical, biological, and social phenomena. From predicting the spread of diseases to analyzing the stock market, differential equations play a crucial role in understanding and predicting the behavior of complex systems. This makes them an invaluable tool for scientists and researchers in various fields. Now that we understand the significance of differential equations, let's explore the various techniques for solving them. From separation of variables to Laplace transforms, we will cover it all in this comprehensive guide. So get ready to expand your knowledge and master the art of solving differential equations. Let's dive in!Differential equations are an essential part of mathematics, used to model various real-world phenomena and analyze their behavior.
+
+They differ from regular equations in that they involve derivatives and can express the rate of change of a function over time. This makes them incredibly useful in fields like physics, economics, and engineering where understanding how things change over time is crucial. There are two main types of differential equations: ordinary and partial. Ordinary differential equations involve a single independent variable, while partial differential equations involve multiple variables. They can also be classified based on their order, which refers to the highest derivative present in the equation. Now, let's dive into the different methods used for solving differential equations.
+
+One approach is separation of variables, which involves isolating the dependent and independent variables on opposite sides of the equation and integrating both sides. Another method is using integrating factors, which is useful for solving linear differential equations. Additionally, Laplace transforms can be used to transform a differential equation into an algebraic equation, making it easier to solve.... [Content truncated for context window]
+
+
+---
+
+### Source 12: Differential Equations - Linear Equations
+
+**Content:**
+- Go To
+- Notes
+- Practice and Assignment problems are not yet written. As time permits I am working on them, however I don't have the amount of free time that I used to so it will take a while before anything shows up here.
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
+
+- Sections
+- [First Order DE's Introduction](https://tutorial.math.lamar.edu/Classes/DE/IntroFirstOrder.aspx)
+- [Separable Equations](https://tutorial.math.lamar.edu/Classes/DE/Separable.aspx)
+- Chapters
+- [Basic Concepts](https://tutorial.math.lamar.edu/Classes/DE/IntroBasic.aspx)
+- [Second Order DE's](https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- Differential Equations
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
+
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,1,N)
+- Practice Problems Downloads
+- Problems not yet written.
+- Assignment Problems Downloads
+- Problems not yet written.
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=1)
+
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)/ [First Order DE's](https://tutorial.math.lamar.edu/Classes/DE/IntroFirstOrder.aspx)/ Linear Equations
+
+[Prev. Section](https://tutorial.math.lamar.edu/Classes/DE/IntroFirstOrder.aspx) Notes [Next Section](https://tutorial.math.lamar.edu/Classes/DE/Separable.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you... [Content truncated for context window]
+
+
+---
+
+### Source 13: ODE-Project Modeling with Differential Equations
+
+**Content:**
+[Skip to main content](https://mathbooks.unl.edu/DifferentialEquations/firstlook01.html#ptx-content)
+
+\\(\\newcommand{\\trace}{\\operatorname{tr}}
+\\newcommand{\\real}{\\operatorname{Re}}
+\\newcommand{\\imaginary}{\\operatorname{Im}}
+\\newcommand{\\lt}{<}
+\\newcommand{\\gt}{>}
+\\newcommand{\\amp}{&}
+\\definecolor{fillinmathshade}{gray}{0.9}
+\\newcommand{\\fillinmath}\[1\]{\\mathchoice{\\colorbox{fillinmathshade}{$\\displaystyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\textstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptstyle \\phantom{\\,#1\\,}$}}{\\colorbox{fillinmathshade}{$\\scriptscriptstyle\\phantom{\\,#1\\,}$}}}
+\\)
+
+## Section1.1Modeling with Differential Equations
+
+### Objectives
+
+- To understand that a differential equation is an equation relating a function to one or more of its derivatives and that an initial value problem is a differential equation
+
+
+
+\\begin{equation\*}
+\\frac{dx}{dt} = f(t,x),
+\\end{equation\*}
+
+
+
+where the initial condition, \\(x(t\_0) = x\_0\\text{,}\\) is specified.
+
+- To understand and be able to apply the three principle steps in modeling any phenomenon with differential equations.
+
+
+
+- Discovering the differential equation or equations that best describe a specified physical situation.
+
+- Finding—either exactly or approximately—the appropriate solution of the equation or equations.
+
+- Interpreting the solution in terms of the phenomenon.
+
+
+- To understand and be able to apply the differential equations that model exponential growth and logistic growth.
+
+- To understand that some phenomenon are best modeled by higher order differential equations or systems of differential equations.
+
+
+Calculus tells us that the derivative of a function measures how the function changes. An equation relating a function to one or more of its derivatives is called a differential equation. The subject of differential equations is one of the most interesting and useful areas of mathematics. We can describe many interesting natural phenomena that involve change using differential equations. In addition, the theory of the subject has broad and important implications.
+
+### Subsection1.1.1Exponential Growth
+
+We begin our study of ordinary differential equations by modeling some real world phenomena. For a particular situation that we might wish to investigate, our first task is to write an equation (or equations) that best describes the phenomenon. Suppose that we wish to study how a population \\(P(t)\\) grows with time \\(t\\text{.}\\) We might make the assumption that a constant fraction of population is having offspring at any particular time. If we also assume that the population has a constant death rate, the change in the population \\(\\Delta P\\) during a small time interval \\(\\Delta t\\) will be
+
+\\begin{equation\*}
+\\Delta P \\approx k\_{\\text{birth}} P(t) \\Delta t - k\_{\\text{death}} P(t) \\Delta t,
+\\end{equation\*}
+
+where \\(k\_{\\text{birth}}\\) is the fraction of the population having ... [Content truncated for context window]
+
+
+---
+
+### Source 14: Differential Equations for A Level
+
+**Content:**
+### Differential Equations
+An equation in the form of dy/dx = f(x) g(y) is called a differential equation of the _first order,_ where f(x) and g(y) are functions of x and y respectively
+**E.g.**
+dy/dx = xy is a differential equation where x and y are functions of x and y respectively.
+In order to integrate a differential equation, the variables must be separated as follows:
+dy/dx = f(x) g(y)
+dy/g(y) = f(x) dx
+**E.g.1**
+dy/dx = xy
+∫ dy/y = ∫ x dx
+ln y = x2/2 + c
+y = ex2 \+ c
+**E.g.2**
+dy/dx = cos2y ex
+dy/cos2y = ex dx
+∫ dy/cos2y = ∫ ex dx
+∫ dy sec2y = ∫ ex dx
+tan y = ex \+ c
+#### Exponential Growth / Decay
+If a rate of change is proportional to its quantity, such a rate is called **Exponential Growth / Decay.**
+**E.g.1**
+The rate of increase in population of a colony of bacteria is proportional to the number of bacteria in the colony at a given time. Therefore, such a rate of increase is an exponential growth.
+So, dN/dt ∝ N
+dN/dt = k N
+dN/N = k dt
+∫ dN/N = ∫ k dt
+ln N = kt + c
+N = ekt \+ c
+N = ekt X ec \-\-\-\- **1**
+Let N = N0 when t = 0
+N0 = ec
+Sub this in **1**
+N = N0ekt
+This is exponential growth. The following image indicates the graphical nature of the growth.
+![Exponential growth](https://www.vivaxsolutions.com/images/expo_growth.gif)
+**E.g.2**
+The rate of decay of radioactive nuclei in a radioactive substance is directly proportional to the number of remaining nuclei at a given time. Therefore, this is an exponential decay.
+So, dN/dt ∝ -N ---- the negative sign indicates a decay or a loss
+dN/dt = -k N
+dN/N = -k dt
+∫ dN/N = ∫ k dt
+ln N = -kt + c
+N = e-kt \+ c
+N = e-kt X ec \-\-\-\- **1**
+Let N = N0 when t = 0
+N0 = ec
+Sub this in **1**
+N = N0e-kt
+This is exponential decay. The following image indicates the graphical nature of the decay against time.
+![Exponential Decay](https://www.vivaxsolutions.com/images/expo_decay.gif)
+
+
+---
+
+### Source 15: 3.9: Differential Equations
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/Bookshelves/Calculus/Applied_Calculus_(Calaway_Hoffman_and_Lippman)/03%3A_The_Integral/3.09%3A_Differential_Equations#elm-main-content)
+
+A **differential equation** is an equation involving the derivative of a function. They allow us to express with a simple equation the relationship between a quantity and it's rate of change.
+
+##### Example \\(\\PageIndex{1}\\)
+
+A bank pays 2% interest on its certificate of deposit accounts, but charges a $20 annual fee. Write an equation for the rate of change of the balance, \\( B'(t) \\).
+
+**Solution**
+
+If the balance \\( B(t) \\) has units of dollars, then \\( B'(t) \\) has units of dollars per year. When we think of what is changing the balance of the account, there are two factors:
+
+1. The interest, which increases the balance, and
+2. The fee, which decreases the balance.
+
+Considering the interest, we know each year the balance will increase by 2%, but 2% of what? Each year that will change, since we earn interest on whatever the current balance is. We can represent the amount of increase as 2% of the balance: \\( 0.02B(t) \\) dollars/year.
+
+The fee already has the units of dollars/year. Since everything now has the same units, we can put the two together, and create the equation: \\\[ B'(t)=0.02B(t)-20. \\nonumber \\\]
+
+The result is an example of a differential equation. Notice this particular equation involves both the derivative _and_ the original function, and so we can't simply find \\( B(t) \\) using basic integration.
+
+Algebraic equations contain constants and variables, and the solutions of an algebraic equation are typically numbers. For example, \\(x = 3\\) and \\(x = -2\\) are solutions of the algebraic equation \\(x^2 = x + 6\\). Differential equations contain derivatives or differentials of functions. Solutions of differential equations are functions. The differential equation \\(y' = 3x^2\\) has infinitely many solutions, and two of those solutions are the functions \\(y = x^3 + 2\\) and \\(y = x^3 - 4\\).
+
+![graphs](https://math.libretexts.org/@api/deki/files/66136/clipboard_e64a0ae1da7d30b0e187c992a1030019c.png?revision=1)
+
+You have already solved lots of differential equations: every time you found an antiderivative of a function \\(f(x)\\), you solved the differential equation \\(y' = f(x)\\) to get a solution \\(y\\). The differential equation \\(y' = f(x)\\), however, is just the beginning. Other applications generate different differential equations, like in the bank balance example above.
+
+## Checking Solutions of Differential Equations
+
+Whether a differential equation is easy or difficult to solve, it is important to be able to check that a possible solution really satisfies the differential equation.
+
+A possible solution of an algebraic equation can be checked by putting the solution into the equation to see if the result is true: \\(x = 3\\) is a solution of \\(5x + 1 = 16\\) since \\(5(3) + 1 = 16\\) is true. Similarly, a solutio... [Content truncated for context window]
+
+
+---
+
+### Source 16: Ordinary Differential Equations (ODEs) | Applied Mathematics | University of Waterloo
+
+**Content:**
+[Skip to main content](https://uwaterloo.ca/uwaterloo.ca#main)
+
+# Ordinary Differential Equations (ODEs)
+
+Differential
+equations
+are
+important
+because
+for
+many
+physical
+systems,
+one
+can,
+subject
+to
+suitable
+idealizations,
+formulate
+a
+differential
+equation
+that
+describes
+how
+the
+system
+changes
+in
+time.
+Understanding
+the
+solutions
+of
+the
+differential
+equation
+is
+then
+of
+paramount
+interest.
+
+The
+simplest
+ODE
+is:
+
+You
+can
+verify
+that
+any
+function
+
+y(t)
+=
+Cekt
+
+where
+C
+is
+a
+constant,
+is
+a
+solution
+to
+this
+ODE.
+If
+k
+>
+0,
+this
+ODE
+thus
+describes **exponential**
+**growth** (for
+example,
+unrestricted
+population
+growth).
+If
+k
+<
+0,
+the
+interpretation
+is **exponential**
+**decay** (for
+example,
+the
+decay
+of
+radioactive
+atoms).
+
+In
+many
+applications
+you
+will
+encounter
+the
+ODE:
+
+where
+ω
+is
+a
+constant.
+
+You
+can
+verify
+that
+any
+function
+
+y(t)
+=
+A
+sin(ωt
++
+ø)
+,
+
+where
+A
+and
+ø
+are
+constants,
+is
+a
+solution.
+This
+ODE
+thus
+describes
+a
+physical
+system
+whose
+behaviour
+is **periodic**
+**in**
+**time**.
+We
+say
+that
+the
+system
+undergoes **simple**
+**harmonic**
+**motion** with
+amplitude
+A,
+frequency
+ω,
+and
+phase
+ø.
+
+In
+the
+foundational
+courses
+on
+ODEs
+you
+will
+learn
+to
+identify
+whether
+an
+ODE
+can
+be
+solved
+explicitly
+(most
+cannot!),
+or
+whether
+it
+is
+necessary
+to
+solve
+it
+numerically
+using
+a
+computer.
+
+
+---
+
+### Source 17: Free solutions & answers for Fundamentals of Differential Equations - [step by step]
+
+**Content:**
+Learning Materials
+
+- [![Explanations Icon](https://website-cdn.studysmarter.de/sites/21/2024/07/subject-other.svg)\
+Explanations](https://www.vaia.com/en-us/explanations/)
+
+
+Explanations
+
+
+
+- [Anthropology](https://www.vaia.com/en-us/explanations/anthropology/)
+- [Archaeology](https://www.vaia.com/en-us/explanations/archaeology/)
+- [Architecture](https://www.vaia.com/en-us/explanations/architecture/)
+- [Art and Design](https://www.vaia.com/en-us/explanations/art-and-design/)
+- [Bengali](https://www.vaia.com/en-us/explanations/bengali/)
+- [Biology](https://www.vaia.com/en-us/explanations/biology/)
+- [Business Studies](https://www.vaia.com/en-us/explanations/business-studies/)
+- [Greek](https://www.vaia.com/en-us/explanations/greek/)
+- [Chemistry](https://www.vaia.com/en-us/explanations/chemistry/)
+- [Chinese](https://www.vaia.com/en-us/explanations/chinese/)
+- [Combined Science](https://www.vaia.com/en-us/explanations/combined-science/)
+- [Computer Science](https://www.vaia.com/en-us/explanations/computer-science/)
+- [Economics](https://www.vaia.com/en-us/explanations/economics/)
+- [Engineering](https://www.vaia.com/en-us/explanations/engineering/)
+- [English](https://www.vaia.com/en-us/explanations/english/)
+- [English Literature](https://www.vaia.com/en-us/explanations/english-literature/)
+- [Environmental Science](https://www.vaia.com/en-us/explanations/environmental-science/)
+- [French](https://www.vaia.com/en-us/explanations/french/)
+- [Geography](https://www.vaia.com/en-us/explanations/geography/)
+- [German](https://www.vaia.com/en-us/explanations/german/)
+- [History](https://www.vaia.com/en-us/explanations/history/)
+- [Hospitality and Tourism](https://www.vaia.com/en-us/explanations/hospitality-and-tourism/)
+- [Human Geography](https://www.vaia.com/en-us/explanations/human-geography/)
+- [Italian](https://www.vaia.com/en-us/explanations/italian/)
+- [Japanese](https://www.vaia.com/en-us/explanations/japanese/)
+- [Law](https://www.vaia.com/en-us/explanations/law/)
+- [Macroeconomics](https://www.vaia.com/en-us/explanations/macroeconomics/)
+- [Marketing](https://www.vaia.com/en-us/explanations/marketing/)
+- [Math](https://www.vaia.com/en-us/explanations/math/)
+- [Media Studies](https://www.vaia.com/en-us/explanations/media-studies/)
+- [Medicine](https://www.vaia.com/en-us/explanations/medicine/)
+- [Microeconomics](https://www.vaia.com/en-us/explanations/microeconomics/)
+- [Music](https://www.vaia.com/en-us/explanations/music/)
+- [Nursing](https://www.vaia.com/en-us/explanations/nursing/)
+- [Nutrition and Food Science](https://www.vaia.com/en-us/explanations/nutrition-and-food-science/)
+- [Physics](https://www.vaia.com/en-us/explanations/physics/)
+- [Polish](https://www.vaia.com/en-us/explanations/polish/)
+- [Politics](https://www.vaia.com/en-us/explanations/politics/)
+- [Psychology](https://www.vaia.com/en-us/explanations/psychology/)
+- [Religious Studies](https://www.vaia.com/en-us/explanations/religious-studies/)
+- [Sociology](https://www.vai... [Content truncated for context window]
+
+
+---
+
+### Source 18: Differential Equation Types to Know for Linear Algebra and Differential Equations
+
+**Content:**
+practicecheatsheets [scores](https://library.fiveable.me/ap-score-calculator) [videos](https://library.fiveable.me/cram-replays)
+# Differential Equation Types to Know for Linear Algebra and Differential Equations
+#### Related Subjects
+[➗ Linear Algebra and Differential Equations](https://library.fiveable.me/linear-algebra-and-differential-equations)
+[📊 Mathematical Modeling](https://library.fiveable.me/mathematical-modeling)
+[🧮 Physical Sciences Math Tools](https://library.fiveable.me/mathematical-tools-for-the-physical-sciences)
+Differential equations are essential tools for modeling real-world phenomena in physics, engineering, and biology. They come in various types, including ordinary and partial equations, each with unique characteristics and solution methods that connect deeply with linear algebra and mathematical modeling.
+01. **Ordinary Differential Equations (ODEs)**
+- Involves functions of a single variable and their derivatives.
+- Used to model a wide range of phenomena in physics, engineering, and biology.
+- Solutions can be explicit or implicit functions.
+02. **Partial Differential Equations (PDEs)**
+- Involves functions of multiple variables and their partial derivatives.
+- Commonly used in fields such as fluid dynamics, heat transfer, and quantum mechanics.
+- Solutions often require advanced techniques and numerical methods.
+03. **First-order Differential Equations**
+- Involves only the first derivative of the function.
+- Can often be solved using separation of variables or integrating factors.
+- Applications include population growth and decay models.
+04. **Second-order Differential Equations**
+- Involves the second derivative of the function.
+- Commonly appears in mechanical systems and electrical circuits.
+- Solutions can be found using characteristic equations or reduction of order.
+05. **Linear Differential Equations**
+- The dependent variable and its derivatives appear linearly.
+- Superposition principle applies, allowing for the combination of solutions.
+- Can be solved using methods like undetermined coefficients or variation of parameters.
+06. **Nonlinear Differential Equations**
+- The dependent variable or its derivatives appear nonlinearly.
+- More complex and often do not have closed-form solutions.
+- Common in chaotic systems and certain biological models.
+07. **Homogeneous Differential Equations**
+- All terms are a function of the dependent variable and its derivatives.
+- Solutions can often be expressed in terms of a fundamental set of solutions.
+- Characterized by the absence of a forcing function.
+08. **Inhomogeneous Differential Equations**
+- Contains terms that are not solely functions of the dependent variable and its derivatives.
+- Solutions consist of the homogeneous solution plus a particular solution.
+- Often solved using the method of undetermined coefficients or variation of parameters.
+09. **Separable Differential Equations**
+- Can be expressed as a product of functions, one of the dependent variable and o... [Content truncated for context window]
+
+
+---
+
+### Source 19: Study Guide - Differential Equations
+
+**Content:**
+## Solving Differential Equations
+
+Differential equations are solved by finding the function for which the equation holds true.
+
+### Learning Objectives
+
+Calculate the order and degree of a differential equation.
+
+### Key Takeaways
+
+#### Key Points
+
+- The order of a differential equation is determined by the highest-order derivative; the degree is determined by the highest power on a variable.
+- The higher the order of the differential equation, the more arbitrary constants need to be added to the general solution. A first-order equation will have one, a second-order two, and so on.
+- A particular solution can be found by assigning values to the arbitrary constants to match any given constraints.
+
+#### Key Terms
+
+- **function**: a relation in which each element of the domain is associated with exactly one element of the co-domain
+- **derivative**: a measure of how a function changes as its input changes
+
+A differential equation is a mathematical equation for an unknown function of one or several variables that relates the values of the function itself to its derivatives of various orders. Differential equations play a prominent role in engineering, physics, economics, and other disciplines.
+Differential equations take a form similar to:
+\[latex-display\]f(x) + f'(x) =0\[/latex-display\]
+where \[latex\]f'\[/latex\] is "f-prime," the derivative of \[latex\]f\[/latex\]. As you can see, such an equation relates a function \[latex\]f(x)\[/latex\] to its derivative. Solving the differential equation means solving for the function \[latex\]f(x)\[/latex\].
+The "order" of a differential equation depends on the derivative of the highest order in the equation. The "degree" of a differential equation, similarly, is determined by the highest exponent on any variables involved. For example, the differential equation shown in is of second-order, third-degree, and the one above is of first-order, first-degree.
+
+### Solving a Differential Equation: A Simple Example
+
+Take the following differential equation:
+\[latex-display\]\\displaystyle{f(x) + f'(x) =0}\[/latex-display\]
+This equation states that \[latex\]f(x)\[/latex\] is equal to the negative of its derivative. You may recall that one function that satisfies this property is \[latex\]f(x)\[/latex\] = \[latex\]e^{-x}\[/latex\]. The derivative of
+\[latex-display\]f(x)\[/latex-display\]
+equals -\[latex\]e^{-x}\[/latex\] i.e.  -\[latex\]f(x)\[/latex\]   so this function solves the differential equation.
+A complete solution contains the same number of arbitrary constants as the order of the original equation. (This is because, in order to solve a differential equation of the \[latex\]n\[/latex\]th order, you will integrate \[latex\]n\[/latex\] times, each time adding a new arbitrary constant.) Since our example above is a first-order equation, it will have just one arbitrary constant in the complete solution. Therefore, the general solution is \[latex\]f(x) = Ce^{-x}\[/latex\], where \[latex\]C\[/latex\] stands fo... [Content truncated for context window]
+
+
+---
+
+### Source 20: Differential equations, a tourist's guide | DE1
+
+**Content:**
+An overview of what ODEs are all about\nHelp fund future projects: / 3blue1brown \nAn equally valuable form of support is to share the videos.\nSpecial thanks to these supporters: http://3b1b.co/de1thanks\nNeed to brush up on calculus? • The essence of calculus \n\nError correction: At 6:27, the upper equation should have g/L instead of L/g.\n\nSteven Strogatz's NYT article on the math of love:\nhttps://opinionator.blogs.nytimes.com...\n\nInteractive visualization of the example from this video, by Ilya Perederiy:\nhttps://www.expunctis.com/2019/04/04/...\n\nIf you're looking for books on this topic, I'd recommend the one by Vladimir Arnold, \"Ordinary Differential Equations\"\n\nAlso, more Strogatz fun, you may enjoy his text \"Nonlinear Dynamics And Chaos\"\n\nCurious about why it's called a \"phase space\"? You might enjoy this article:\nhttps://www.physics.umd.edu/courses/P...\n\nFrom a response on /r/3blue1brown, here are some interactives based on examples shown in the video:\nhttps://observablehq.com/@tophtucker/...\nhttps://observablehq.com/@mbostock/pr...\n\nThanks to these viewers for their contributions to translations\nHebrew: Omer Tuchfeld\nVietnamese: @ngvutuan2811\n\n------------------\nAnimations made using manim, a scrappy open source python library. https://github.com/3b1b/manim\n\nIf you want to check it out, I feel compelled to warn you that it's not the most well-documented tool, and has many other quirks you might expect in a library someone wrote with only their own use in mind.\n\nMusic by Vincent Rubinetti.\nDownload the music on Bandcamp:\nhttps://vincerubinetti.bandcamp.com/a...\n\nStream the music on Spotify:\nhttps://open.spotify.com/album/1dVyjw...\n\nIf you want to contribute translated subtitles or to help review those that have already been made by others and need approval, you can click the gear icon in the video and go to subtitles/cc, then \"add subtitles/cc\". I really appreciate those who do this, as it helps make the lessons accessible to more people.\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. And you know the drill with YouTube, if you want to stay posted on new videos, subscribe: http://3b1b.co/subscribe\n\nVarious social media stuffs:\nWebsite: https://www.3blue1brown.com\nTwitter: / 3blue1brown \nReddit: / 3blue1brown \nInstagram: / 3blue1brown_animations \nPatreon: / 3blue1brown \nFacebook: / 3blue1brown
+| view_count: 4,854,109 views | short_view_count: 4.8M views | num_likes: None | num_subscribers: 7.63 million
+
+
+---
+
+
+
+## Your Mission as Agent 2:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 2 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 2 Knowledge Nodes for: Differential Equations**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.
