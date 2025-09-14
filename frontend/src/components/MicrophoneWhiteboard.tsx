@@ -40,14 +40,21 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
       if (response.ok) {
         const data = await response.json()
         console.log('📚 Lecture generated:', data)
+        console.log('🔍 Lecture segments:', data.lecture?.lecture_segments)
+        console.log('📊 Segments length:', data.lecture?.lecture_segments?.length)
         
         if (data.lecture && data.lecture.lecture_segments) {
-          setLectureSegments(data.lecture.lecture_segments)
+          const segments = data.lecture.lecture_segments
+          console.log('✅ Setting lecture segments:', segments)
+          setLectureSegments(segments)
           setIsLectureMode(true)
           setCurrentSegmentIndex(0)
           
-          // Start presenting the first segment
-          presentSegment(data.lecture.lecture_segments[0], 0)
+          // Start presenting the first segment with segments array passed directly
+          presentLectureSegments(segments)
+        } else {
+          console.error('❌ No lecture segments found in response:', data)
+          setCurrentQuestion('No lecture content generated. Please try again.')
         }
       } else {
         console.error('Failed to generate lecture')
@@ -60,80 +67,60 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
   }
   
   
-  const presentSegment = async (segment: any, index: number) => {
-    console.log(`📖 Presenting segment ${index + 1}:`, segment)
+  const presentLectureSegments = async (segments: any[]) => {
+    console.log(`🎓 Starting lecture with ${segments.length} segments`)
     
-    if (segment.type === 'context') {
-      // Display context as text and speak it
-      setCurrentQuestion(segment.content)
+    for (let i = 0; i < segments.length; i++) {
+      const segment = segments[i]
+      console.log(`📖 Presenting segment ${i + 1}/${segments.length}:`, segment)
       
-      // Draw context as text on whiteboard
-      await drawTextToWhiteboard(segment.content, { x: 100, y: 100 + (index * 80) })
+      setCurrentSegmentIndex(i)
       
-      // Speak the context using text-to-speech
-      if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(segment.content)
-        utterance.rate = 0.9
-        utterance.pitch = 1.0
-        
-        utterance.onend = () => {
-          // Move to next segment after speech finishes
-          const nextIndex = index + 1
-          if (nextIndex < lectureSegments.length) {
-            setCurrentSegmentIndex(nextIndex)
-            presentSegment(lectureSegments[nextIndex], nextIndex)
-          } else {
-            // Lecture finished
-            setIsLectureMode(false)
-            setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
+      try {
+        if (segment.type === 'context') {
+          // Context: Show text only, no TTS
+          setCurrentQuestion(segment.content)
+          console.log(`📝 Displaying context text: "${segment.content}"`)
+          
+          // Calculate delay based on text length (50ms per character, minimum 2 seconds, maximum 8 seconds)
+          const textLength = segment.content.length
+          const delay = textLength * 50
+      console.log(`⏱️ Text length: ${textLength} chars, delay: ${delay}ms`)
+      await new Promise(resolve => setTimeout(resolve, delay))
+        } else if (segment.type === 'action') {
+          // Action: Write LaTeX to whiteboard and show description
+          console.log(`🖊️ Writing LaTeX to whiteboard: "${segment.content}"`)
+          
+          try {
+            await drawLatexToWhiteboard(segment.content, { x: 50, y: 50 + (i * 50) })
+            console.log(`✅ Successfully drew LaTeX: "${segment.content}"`)
+          } catch (error) {
+            console.error(`❌ Error drawing LaTeX "${segment.content}":`, error)
           }
-        }
-        
-        utterance.onerror = () => {
-          // Fallback if speech fails - continue after delay
-          setTimeout(() => {
-            const nextIndex = index + 1
-            if (nextIndex < lectureSegments.length) {
-              setCurrentSegmentIndex(nextIndex)
-              presentSegment(lectureSegments[nextIndex], nextIndex)
-            } else {
-              setIsLectureMode(false)
-              setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
-            }
-          }, 2000)
-        }
-        
-        speechSynthesis.speak(utterance)
-      } else {
-        // No speech synthesis available - use delay
-        setTimeout(() => {
-          const nextIndex = index + 1
-          if (nextIndex < lectureSegments.length) {
-            setCurrentSegmentIndex(nextIndex)
-            presentSegment(lectureSegments[nextIndex], nextIndex)
-          } else {
-            setIsLectureMode(false)
-            setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
-          }
-        }, 3000)
-      }
-    } else if (segment.type === 'action') {
-      // Display action as LaTeX using existing drawing function
-      await drawLatexToWhiteboard(segment.content, { x: 400, y: 150 + (index * 80) })
-      
-      // Move to next segment after a delay (no speech for LaTeX)
-      setTimeout(() => {
-        const nextIndex = index + 1
-        if (nextIndex < lectureSegments.length) {
-          setCurrentSegmentIndex(nextIndex)
-          presentSegment(lectureSegments[nextIndex], nextIndex)
+          
+          // Show description as current question
+          setCurrentQuestion(segment.description || segment.content)
+          console.log(`📝 Displaying action description: "${segment.description || segment.content}"`)
+          const textLength = segment.description.length
+          const delay = textLength * 20
+          console.log(`⏱️ Text length: ${textLength} chars, delay: ${delay}ms`)
+          await new Promise(resolve => setTimeout(resolve, delay))
         } else {
-          // Lecture finished
-          setIsLectureMode(false)
-          setCurrentQuestion('Lecture completed! You can now explore the whiteboard.')
+          console.log(`⚠️ Unknown segment type: ${segment.type}`)
+          // Still wait a bit to prevent rushing
+          await new Promise(resolve => setTimeout(resolve, 1000))
         }
-      }, 2000)
+      } catch (error) {
+        console.error(`❌ Error in segment ${i + 1}:`, error)
+        // Continue to next segment after a short delay
+        await new Promise(resolve => setTimeout(resolve, 1000))
+      }
     }
+    
+    // Lecture finished
+    console.log(`✅ Lecture completed`)
+    setIsLectureMode(false)
+    setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
   }
   
   const drawTextToWhiteboard = async (text: string, position: {x: number, y: number}) => {
