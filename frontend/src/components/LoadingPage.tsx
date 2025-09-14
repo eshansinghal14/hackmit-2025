@@ -11,52 +11,21 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
   const [currentStep, setCurrentStep] = useState(0)
   const [progress, setProgress] = useState(0)
 
-  // Generate diagnostic questions based on topic
-  const generateQuestionsForTopic = (topic: string): string[] => {
-    const topicLower = topic.toLowerCase()
+  // Use predefined diagnostic questions from the calculus roadmap
+  const getDiagnosticQuestions = (): string[] => {
+    const rawQuestions = [
+      "Do you understand the concept of a limit in calculus? (Yes/No)",
+      "Can you apply basic derivative rules to find the derivative of a function? (Yes/No)",
+      "Do you know how to use the chain rule for differentiation? (Yes/No)",
+      "Can you evaluate a definite integral using the fundamental theorem of calculus? (Yes/No)",
+      "Do you know how to apply calculus to solve optimization problems? (Yes/No)"
+    ]
     
-    if (topicLower.includes('algebra') || topicLower.includes('equation')) {
-      return [
-        "Do you understand how to solve linear equations?",
-        "Can you work with variables and coefficients?",
-        "Are you comfortable with the distributive property?",
-        "Do you know how to isolate variables?",
-        "Can you solve systems of equations?"
-      ]
-    } else if (topicLower.includes('calculus') || topicLower.includes('derivative')) {
-      return [
-        "Do you understand the concept of limits?",
-        "Are you familiar with the derivative definition?",
-        "Can you apply the power rule?",
-        "Do you know the chain rule?",
-        "Are you comfortable with integration?"
-      ]
-    } else if (topicLower.includes('geometry') || topicLower.includes('triangle')) {
-      return [
-        "Do you know the Pythagorean theorem?",
-        "Can you calculate areas of basic shapes?",
-        "Are you familiar with angle relationships?",
-        "Do you understand congruence and similarity?",
-        "Can you work with coordinate geometry?"
-      ]
-    } else if (topicLower.includes('trigonometry') || topicLower.includes('trig')) {
-      return [
-        "Do you know the basic trig functions (sin, cos, tan)?",
-        "Are you familiar with the unit circle?",
-        "Can you solve right triangles?",
-        "Do you understand trig identities?",
-        "Are you comfortable with inverse trig functions?"
-      ]
-    } else {
-      // Generic questions for any topic
-      return [
-        `Do you have basic knowledge of ${topic}?`,
-        `Are you comfortable with fundamental ${topic} concepts?`,
-        `Have you solved ${topic} problems before?`,
-        `Do you understand the key principles of ${topic}?`,
-        `Would you like to review ${topic} basics first?`
-      ]
-    }
+    // Crop questions to remove (Yes/No) suffix, keep only text until question mark
+    return rawQuestions.map(question => {
+      const questionMarkIndex = question.indexOf('?')
+      return questionMarkIndex !== -1 ? question.substring(0, questionMarkIndex + 1) : question
+    })
   }
 
   const analysisSteps = [
@@ -86,8 +55,8 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
 
     const startStep = (stepIndex: number) => {
       if (stepIndex >= analysisSteps.length) {
-        // All steps complete - generate questions and pass them
-        const questions = generateQuestionsForTopic(topic)
+        // All steps complete - get diagnostic questions and pass them
+        const questions = getDiagnosticQuestions()
         setTimeout(() => {
           onComplete(questions)
         }, 500)

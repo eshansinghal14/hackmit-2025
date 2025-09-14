@@ -4,14 +4,16 @@ import 'tldraw/tldraw.css'
 import TopicSearch from './components/TopicSearch'
 import LoadingPage from './components/LoadingPage'
 import DiagnosticTest from './components/DiagnosticTest'
+import KnowledgeGraph from './components/KnowledgeGraph'
 
-type AppState = 'search' | 'loading' | 'diagnostic' | 'whiteboard'
+type AppState = 'search' | 'loading' | 'diagnostic' | 'graph' | 'whiteboard'
 
 const App: React.FC = () => {
   const editorRef = useRef<any>(null)
   const [appState, setAppState] = useState<AppState>('search')
   const [selectedTopic, setSelectedTopic] = useState('')
   const [diagnosticQuestions, setDiagnosticQuestions] = useState<string[]>([])
+  const [graphKey, setGraphKey] = useState(0)
 
   const handleTopicSearch = (topic: string) => {
     setSelectedTopic(topic)
@@ -27,7 +29,12 @@ const App: React.FC = () => {
     console.log('Diagnostic results for', selectedTopic, ':', answers)
     const yesCount = answers.filter(Boolean).length
     console.log(`Student answered "Yes" to ${yesCount}/${answers.length} questions`)
-    setAppState('whiteboard')
+    setAppState('graph')
+  }
+
+  const handleWeightUpdate = () => {
+    // Force KnowledgeGraph to reload with updated weights after each diagnostic answer
+    setGraphKey(prev => prev + 1)
   }
 
   const handleDiagnosticClose = () => {
@@ -116,21 +123,55 @@ const App: React.FC = () => {
           questions={diagnosticQuestions}
           onComplete={handleDiagnosticComplete}
           onClose={handleDiagnosticClose}
+          onWeightUpdate={handleWeightUpdate}
         />
+      )}
+      
+      {appState === 'graph' && (
+        <div style={{ height: '100vh', position: 'relative' }}>
+          <KnowledgeGraph 
+            key={graphKey} 
+            onLearnTopic={(topic) => {
+              console.log('Learning:', topic)
+              setAppState('whiteboard')
+            }} 
+          />
+          <button
+            onClick={() => setAppState('search')}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              left: '10px',
+              background: 'rgba(0, 0, 0, 0.8)',
+              color: 'white',
+              border: 'none',
+              padding: '8px 12px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px',
+              zIndex: 1000
+            }}
+          >
+            ← Back to Search
+          </button>
+        </div>
       )}
       
       {appState === 'whiteboard' && (
         <>
-          <Tldraw 
-            onMount={(editor) => {
-              editorRef.current = editor
-              console.log('🎨 tldraw editor ready for Python commands')
-            }}
-          />
+          <div style={{ height: '100vh' }}>
+            <Tldraw 
+              onMount={(editor) => {
+                editorRef.current = editor
+                console.log('🎨 tldraw editor ready for Python commands')
+              }}
+            />
+          </div>
+          
           <div style={{
             position: 'absolute',
             bottom: '10px',
-            left: '10px',
+            right: '10px',
             background: 'rgba(0, 0, 0, 0.8)',
             color: 'white',
             padding: '8px 12px',
@@ -152,7 +193,8 @@ const App: React.FC = () => {
               padding: '8px 12px',
               borderRadius: '4px',
               cursor: 'pointer',
-              fontSize: '12px'
+              fontSize: '12px',
+              zIndex: 1000
             }}
           >
             ← Back to Search

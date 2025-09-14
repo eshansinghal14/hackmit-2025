@@ -19,6 +19,10 @@ from .services.audio import handle_voice_input
 from .core.conversation import ConversationManager
 from .core.annotations import animate_annotation, realize_tutor_plan
 from .core.knowledge_graph import KnowledgeGraph
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from cerebras_roadmap_generator import analyze_diagnostic_answer, update_node_weights
 
 # FastAPI App
 app = FastAPI(
@@ -460,6 +464,47 @@ async def reset_session(session_id: str):
         del knowledge_graphs[session_id]
     
     return {"message": f"Session {session_id} reset successfully"}
+
+@app.post("/api/diagnostic/analyze")
+async def analyze_diagnostic_response(request: dict):
+    """Analyze diagnostic test response and update node weights"""
+    try:
+        question = request.get("question", "")
+        answer = request.get("answer", False)
+        json_file_path = request.get("json_file_path", "node_outputs/final_consolidated_nodes_basic_calculus.json")
+        
+        # Load current node data to get names
+        with open(json_file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        node_names = {node_id: node_info["name"] for node_id, node_info in data[0].items()}
+        
+        # Analyze the diagnostic answer
+        weight_adjustments = await run_in_threadpool(
+            analyze_diagnostic_answer, question, answer, node_names
+        )
+        
+        # Update the JSON file with new weights
+        success = await run_in_threadpool(
+            update_node_weights, json_file_path, weight_adjustments
+        )
+        
+        if success:
+            # Return updated node data
+            with open(json_file_path, 'r', encoding='utf-8') as f:
+                updated_data = json.load(f)
+            
+            return {
+                "success": True,
+                "weight_adjustments": weight_adjustments,
+                "updated_nodes": updated_data[0]
+            }
+        else:
+            return {"success": False, "error": "Failed to update weights"}
+            
+    except Exception as e:
+        print(f"❌ Error in diagnostic analysis: {e}")
+        return {"success": False, "error": str(e)}
 
 async def update_knowledge_graph_background(context: Dict[str, Any], kg: KnowledgeGraph, ws: WebSocket):
     """Update knowledge graph using Claude analysis in background"""
