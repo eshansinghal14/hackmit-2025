@@ -32,6 +32,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
   const [nodeWeights, setNodeWeights] = useState<{[key: string]: number}>({})
   const [nodeData, setNodeData] = useState<{[key: string]: {name: string, weight: number, prerequisites: string[]}}>({})
   const [weightsLoaded, setWeightsLoaded] = useState(false)
+  const [lastTouchDistance, setLastTouchDistance] = useState<number | null>(null)
 
   // Load node data and weights from JSON file
   const loadNodeWeights = async () => {
@@ -214,29 +215,43 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
       const toNode = nodes.find(n => n.id === edge.to)
       
       if (fromNode && toNode) {
+        // Draw line from edge of fromNode to edge of toNode
+        const fromRadius = 30
+        const toRadius = 30
+        const angle = Math.atan2(toNode.y - fromNode.y, toNode.x - fromNode.x)
+        
+        const startX = fromNode.x + fromRadius * Math.cos(angle)
+        const startY = fromNode.y + fromRadius * Math.sin(angle)
+        const endX = toNode.x - toRadius * Math.cos(angle)
+        const endY = toNode.y - toRadius * Math.sin(angle)
+        
         ctx.beginPath()
-        ctx.moveTo(fromNode.x, fromNode.y)
-        ctx.lineTo(toNode.x, toNode.y)
-        ctx.strokeStyle = '#666'
+        ctx.moveTo(startX, startY)
+        ctx.lineTo(endX, endY)
+        ctx.strokeStyle = '#1e293b'
         ctx.lineWidth = 2
         ctx.stroke()
 
-        // Draw arrow
-        const angle = Math.atan2(toNode.y - fromNode.y, toNode.x - fromNode.x)
-        const arrowLength = 15
+        // Draw arrow head at the 'to' node (pointing into the node)
+        const arrowLength = 12
         const arrowAngle = Math.PI / 6
+        const nodeRadius = 30
+        
+        // Position arrow head at the edge of the target node
+        const arrowTipX = toNode.x - nodeRadius * Math.cos(angle)
+        const arrowTipY = toNode.y - nodeRadius * Math.sin(angle)
 
         ctx.beginPath()
         ctx.moveTo(
-          toNode.x - arrowLength * Math.cos(angle - arrowAngle),
-          toNode.y - arrowLength * Math.sin(angle - arrowAngle)
+          arrowTipX - arrowLength * Math.cos(angle - arrowAngle),
+          arrowTipY - arrowLength * Math.sin(angle - arrowAngle)
         )
-        ctx.lineTo(toNode.x, toNode.y)
+        ctx.lineTo(arrowTipX, arrowTipY)
         ctx.lineTo(
-          toNode.x - arrowLength * Math.cos(angle + arrowAngle),
-          toNode.y - arrowLength * Math.sin(angle + arrowAngle)
+          arrowTipX - arrowLength * Math.cos(angle + arrowAngle),
+          arrowTipY - arrowLength * Math.sin(angle + arrowAngle)
         )
-        ctx.strokeStyle = '#666'
+        ctx.strokeStyle = '#1e293b'
         ctx.lineWidth = 2
         ctx.stroke()
       }
@@ -246,7 +261,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
     nodes.forEach(node => {
       const isSelected = selectedNode?.id === node.id
       const isAnimating = animatingToNode === node.id
-      const radius = isSelected || isAnimating ? 35 : 25
+      const radius = isSelected || isAnimating ? 40 : 30
 
       // Node circle
       ctx.beginPath()
@@ -255,14 +270,13 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
       ctx.fillStyle = nodeColor
       ctx.fill()
       
-      // Node border - use a darker version of the node color or white if selected
+      // Node border - subtle outline for all nodes, white for selected
       if (isSelected) {
         ctx.strokeStyle = '#fff'
         ctx.lineWidth = 4
       } else {
-        // Create a darker border that complements the fill color
-        ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)'
-        ctx.lineWidth = 2
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.15)'
+        ctx.lineWidth = 1
       }
       ctx.stroke()
 
@@ -301,7 +315,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
 
     const targetPan = {
       x: canvas.width / 2 - node.x * 1.5,
-      y: canvas.height / 2 - node.y * 1.5
+      y: canvas.height / 3 - node.y * 1.5
     }
 
     // Animate zoom and pan
@@ -361,6 +375,49 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
 
   const handleMouseUp = () => {
     setIsDragging(false)
+  }
+
+  const getTouchDistance = (touches: React.TouchList): number => {
+    if (touches.length < 2) return 0
+    const touch1 = touches[0]
+    const touch2 = touches[1]
+    return Math.sqrt(
+      Math.pow(touch2.clientX - touch1.clientX, 2) + 
+      Math.pow(touch2.clientY - touch1.clientY, 2)
+    )
+  }
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 2) {
+      e.preventDefault()
+      setLastTouchDistance(getTouchDistance(e.touches))
+    }
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (e.touches.length === 2 && lastTouchDistance) {
+      e.preventDefault()
+      const currentDistance = getTouchDistance(e.touches)
+      const scale = currentDistance / lastTouchDistance
+      
+      // Apply zoom with limits
+      const newZoom = Math.min(Math.max(zoom * scale, 0.1), 3)
+      setZoom(newZoom)
+      setLastTouchDistance(currentDistance)
+    }
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (e.touches.length < 2) {
+      setLastTouchDistance(null)
+    }
+  }
+
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault()
+    const zoomFactor = e.deltaY > 0 ? 0.95 : 1.05
+    const newZoom = Math.min(Math.max(zoom * zoomFactor, 0.1), 3)
+    setZoom(newZoom)
   }
 
   const resetView = () => {
@@ -516,7 +573,11 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
-          style={{ display: 'block' }}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          onWheel={handleWheel}
+          style={{ display: 'block', touchAction: 'none' }}
         />
       </Box>
 
@@ -526,10 +587,12 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
           <Card sx={{
             position: 'absolute',
             bottom: 20,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            minWidth: 300,
+            left: 0,
+            right: 0,
+            margin: '0 auto',
+            width: 'fit-content',
             maxWidth: 500,
+            minWidth: 300,
             zIndex: 10
           }}>
             <CardContent sx={{ textAlign: 'center', p: 3 }}>
@@ -538,7 +601,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
                 color: '#2d333a',
                 fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
               }}>
-                Node {selectedNode.id}
+                Lesson {selectedNode.id}
               </Typography>
               <Typography variant="h6" gutterBottom sx={{
                 color: '#6e6e80',
@@ -567,7 +630,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
                   }
                 }}
               >
-                Learn This Topic
+                Learn This Lesson
               </Button>
             </CardContent>
           </Card>
