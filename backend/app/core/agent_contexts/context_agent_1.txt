@@ -1,0 +1,98 @@
+You are Agent 1 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 1 Research Context
+
+## Assignment
+You are Agent 1 of 5 specialized research agents analyzing: "linear algebra"
+
+## Your Data Subset
+- Agent ID: 1/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 1 to 2
+
+## Your Research Sources
+
+### Source 1: Linear algebra - Wikipedia
+
+**Content:**
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+
+From Wikipedia, the free encyclopedia
+
+Branch of mathematics
+
+**Linear algebra** is the branch of [mathematics](https://en.wikipedia.org/wiki/Mathematics) concerning [linear equations](https://en.wikipedia.org/wiki/Linear_equation) such as
+
+a1x1+⋯+anxn=b,{\\displaystyle a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n}=b,}
+
+[linear maps](https://en.wikipedia.org/wiki/Linear_map) such as
+
+(x1,…,xn)↦a1x1+⋯+anxn,{\\displaystyle (x\_{1},\\ldots ,x\_{n})\\mapsto a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n},}
+
+and their representations in [vector spaces](https://en.wikipedia.org/wiki/Vector_space) and through [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)).[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3)
+
+In three-dimensional [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space), these three planes represent solutions to linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations.
+
+Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of [geometry](https://en.wikipedia.org/wiki/Geometry), including for defining basic objects such as [lines](https://en.wikipedia.org/wiki/Line_(geometry)), [planes](https://en.wikipedia.org/wiki/Plane_(geometry)) and [rotations](https://en.wikipedia.org/wiki/Rotation_(mathematics)). Also, [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis), a branch of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), may be viewed as the application of linear algebra to [function spaces](https://en.wikipedia.org/wiki/Space_of_functions).
+
+Linear algebra is also used in most sciences and fields of [engineering](https://en.wikipedia.org/wiki/Engineering) because it allows [modeling](https://en.wikipedia.org/wiki/Mathematical_model) many natural phenomena, and computing efficiently with such models. For [nonlinear systems](https://en.wikipedia.org/wiki/Nonlinear_system), which cannot be modeled with linear algebra, it is often used for dealing with [first-order approximations](https://en.wikipedia.org/wiki/First-order_approximation), using the fact that the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of a [multivariate function](https://en.wikipedia.org/wiki/Multivariate_function) at a point is the linear map that best approximates the function near that point.
+
+## History
+
+\[ [edit](https://en.wikipedia.org/w/index.php?title=Linear_algebra&action=edit&section=1)\]
+
+See also: [Determinant § History](https://en.wikipedia.org/wiki/Determinant#History), and [Gaussian elimination § History](https://en.wikipedia.org/wiki/Gaussian_elimination#History)
+
+The procedure (using c... [Content truncated for context window]
+
+
+---
+
+### Source 2: Linear Algebra - Khan Academy
+
+**Content:**
+If you're seeing this message, it means we're having trouble loading external resources on our website.
+
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+
+## Oops. Something went wrong. Please try again.
+
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+
+
+---
+
+
+
+## Your Mission as Agent 1:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 1 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 1 Knowledge Nodes for: Linear Algebra**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -1,0 +1,168 @@
+You are Agent 3 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 3 Research Context
+
+## Assignment
+You are Agent 3 of 5 specialized research agents analyzing: "linear algebra"
+
+## Your Data Subset
+- Agent ID: 3/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 5 to 6
+
+## Your Research Sources
+
+### Source 5: [PDF] Linear Algebra Review and Reference
+
+**Content:**
+Linear Algebra Review and Reference
+Zico Kolter (updated by Chuong Do)
+September 30, 2015
+Contents
+1 Basic Concepts and Notation 2
+1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2 Matrix Multiplication 3
+2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3 Operations and Properties 7
+3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
+3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
+3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
+4 Matrix Calculus 20
+4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
+4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+1
+1 Basic Concepts and Notation
+Linear algebra provides a way of compactly representing and operating on sets of linear
+equations. For example, consider the following system of equations:
+4x1 − 5x2 = −13
+−2x1 + 3x2 = 9.
+This is two equations and two variables, so as you know from high school algebra, you
+can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
+example if the second equation is simply a multiple of the first, but in the case above there
+is in fact a unique solution). In matrix notation, we can write the system more compactly
+as
+Ax = b
+with
+A =
+
+4 −5
+−2 3 
+, b =
+
+−13
+9
+
+.
+As we will see shortly, there are many advantages (including the obvious space savings)
+to analyzing linear equations in this for... [Content truncated for context window]
+
+
+---
+
+### Source 6: An Intuitive Guide to Linear Algebra – BetterExplained
+
+**Content:**
+Despite two linear algebra classes, my knowledge consisted of “Matrices, determinants, eigen something something”.
+
+Why? Well, let’s try this course format:
+
+- Name the course _Linear Algebra_ but focus on things called matrices and vectors
+- Teach concepts like Row/Column order with mnemonics instead of explaining the reasoning
+- Favor abstract examples (2d vectors! 3d vectors!) and avoid real-world topics until the final week
+
+The survivors are physicists, graphics programmers and other masochists. We missed the key insight:
+
+**Linear algebra gives you mini-spreadsheets for your math equations.**
+
+We can take a table of data (a matrix) and create updated tables from the original. It’s the power of a spreadsheet written as an equation.
+
+Here’s the linear algebra introduction I wish I had, with a real-world stock market example.
+
+## What’s in a name?
+
+“Algebra” means, roughly, “relationships”. Grade-school algebra explores the relationship between unknown numbers. Without knowing x and y, we can still work out that $(x + y)^2 = x^2 + 2xy + y^2$.
+
+“Linear Algebra” means, roughly, “line-like relationships”. Let’s clarify a bit.
+
+Straight lines are predictable. Imagine a rooftop: move forward 3 horizontal feet (relative to the ground) and you might rise 1 foot in elevation (The slope! Rise/run = 1/3). Move forward 6 feet, and you’d expect a rise of 2 feet. Contrast this with climbing a dome: each horizontal foot forward raises you a different amount.
+
+Lines are nice and predictable:
+
+- If 3 feet forward has a 1-foot rise, then going 10x as far should give a 10x rise (30 feet forward is a 10-foot rise)
+- If 3 feet forward has a 1-foot rise, and 6 feet has a 2-foot rise, then (3 + 6) feet should have a (1 + 2) foot rise
+
+In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
+
+In our example, $F(x)$ calculates the rise when moving forward x feet, and the properties hold:
+
+## Linear Operations
+
+An operation is a calculation based on some inputs. Which operations are linear and predictable? Multiplication, it seems.
+
+Exponents ($F(x) = x^2$) aren’t predictable: $10^2$ is 100, but $20^2$ is 400. We doubled the input but quadrupled the output.
+
+Surprisingly, regular addition isn’t linear either. Consider the “add three” function $F(x) = x + 3$:
+
+We doubled the input and did not double the output. (Yes, $F(x) = x + 3$ happens to be the equation for an _offset_ line, but it’s still not “linear” because $F(10) \\neq 10 \\cdot F(1)$. Fun.)
+
+So, what types of functions are _actually_ linear? Plain-old scaling by a constant, or functions that look like: $F(x) = ax$. In our roof example, $a = 1/3$.
+
+But life isn’t _too_ boring. We can still combine multiple linear functions ($A(x) = ax, B(x) = bx, C(x)=cx$) into a larger one, $G$:
+
+$G$ is still linear, since doubling the input continues to double the output:
+
+We have “mini arithmetic”: multiply inputs by a constant, and add the results. It’s actually usefu... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 3:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 3 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 3 Knowledge Nodes for: Linear Algebra**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.
