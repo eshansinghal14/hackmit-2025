@@ -209,8 +209,8 @@ def run_multi_agent_cerebras(search_results_file: str = None):
     print("\n🔄 Combining results from all 5 agents...")
     combined_roadmap = combine_agent_results(agent_outputs, results['query'])
     
-    # Save the final combined roadmap
-    output_file = f"cerebras_multi_agent_roadmap_{results['query'].replace(' ', '_')}.md"
+    # Save the final combined roadmap with fixed filename
+    output_file = "cerebras_multi_agent_roadmap.md"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(combined_roadmap)
     
@@ -305,8 +305,8 @@ CRITICAL REQUIREMENTS:
         print("🤖 Running final consolidation with Cerebras...")
         final_output = call_cerebras_api(consolidation_prompt)
         
-        # Save final consolidated output as JSON
-        final_file = f"node_outputs/final_consolidated_nodes_{query.replace(' ', '_')}.json"
+        # Save final consolidated output as JSON with fixed filename
+        final_file = "node_outputs/final_consolidated_roadmap.json"
         with open(final_file, 'w', encoding='utf-8') as f:
             f.write(final_output)
         
