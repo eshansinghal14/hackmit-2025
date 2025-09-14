@@ -182,16 +182,33 @@ def test_final_consolidation(agent_outputs: List[str], topic: str):
                 if clean_output.startswith('```json'):
                     clean_output = clean_output.replace('```json', '').replace('```', '').strip()
                 json_data = json.loads(clean_output)
-                lessons = json_data.get('lessons', [])
-                print_step(f"Generated {len(lessons)} curated lessons", "success")
-                print_step(f"Topic: {json_data.get('topic', 'Unknown')}", "success")
                 
-                # Show first few lessons
-                print("\n📚 Sample Lessons:")
-                for i, lesson in enumerate(lessons[:3], 1):
-                    print(f"   {i}. {lesson}")
-                if len(lessons) > 3:
-                    print(f"   ... and {len(lessons) - 3} more")
+                # Handle new array format: [lessons_dict, adjacency_dict, questions_array]
+                if isinstance(json_data, list) and len(json_data) == 3:
+                    lessons_dict, adjacency_dict, questions = json_data
+                    lessons = list(lessons_dict.values())
+                    print_step(f"Generated {len(lessons)} curated lessons", "success")
+                    print_step(f"Created adjacency graph with {len(adjacency_dict)} nodes", "success")
+                    print_step(f"Generated {len(questions)} diagnostic questions", "success")
+                    
+                    # Show first few lessons
+                    print("\n📚 Sample Lessons:")
+                    for i, lesson in enumerate(lessons[:3], 1):
+                        print(f"   {i}. {lesson}")
+                    if len(lessons) > 3:
+                        print(f"   ... and {len(lessons) - 3} more")
+                    
+                    # Show sample questions
+                    print("\n❓ Sample Questions:")
+                    for i, question in enumerate(questions[:2], 1):
+                        print(f"   {i}. {question}")
+                    if len(questions) > 2:
+                        print(f"   ... and {len(questions) - 2} more")
+                else:
+                    # Fallback for old format
+                    lessons = json_data.get('lessons', [])
+                    print_step(f"Generated {len(lessons)} curated lessons", "success")
+                    print_step(f"Topic: {json_data.get('topic', 'Unknown')}", "success")
                 
                 return True
             except json.JSONDecodeError:

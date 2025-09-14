@@ -1,11 +1,11 @@
 **Agent 3 Knowledge Nodes for: Basic_Calculus**
 
-1. **Calculus as a Unifying Framework for Mathematical Relationships**  
-2. **Intuition-First Approach to Learning Calculus Concepts**  
-3. **Critique of Traditional Math Education in Teaching Calculus**  
-4. **Analogy-Based Understanding in Calculus (e.g., Evolution, Art, Poetry)**  
-5. **Motivation and Mindset as Foundational to Learning Calculus**
+1. Calculus Fundamentals Built on Basic Mathematics  
+2. Function Review and Algebraic Foundations for Calculus  
+3. Conceptual Introduction to Limits  
+4. Practice-Driven Learning with Problem Sets and Step-by-Step Solutions  
+5. Self-Study Resources and Study Strategies for Math Success  
 
 **Source Summary:**  
 - Sources Analyzed: 2  
-- Agent Coverage: Sites 5 to 6 of 8 total sites
+- Agent Coverage: 2 of 8 total sources

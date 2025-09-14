@@ -1,11 +1,15 @@
 **Agent 2 Knowledge Nodes for: Basic_Calculus**
 
-1. **Handout‑Based Learning Model for Essential Calculus** – a compact curriculum delivered through 21 free PDF handouts (≈100 pages total) that distill only the calculus topics needed for Physics Olympiad success.  
-2. **Embedded Practice‑First Approach** – each handout pairs concise theory with multiple calculation exercises and complex word problems, ensuring immediate application of every new concept.  
-3. **Foundational Set Theory & Real‑Number Inequalities** – rigorous treatment of sets, the real number system, and polynomial inequality techniques that underpin later topics such as monotonicity and convexity.  
-4. **Function Fundamentals: Domain, Range, Composition & Inverses** – clear definitions and examples of how to determine domains/ranges, compose functions (preparing for the Chain Rule), and construct inverse functions (essential for exponentials and logarithms).  
-5. **Limit Theory & Core Theorems (IVT & EVT)** – intuitive introduction to limits, two‑sided limits, continuity, and the Intermediate Value & Extreme Value Theorems, providing the logical foundation for differentiation and integration.  
+1. **Core Visual Foundations of Calculus** – Illustrated concepts such as limits, slopes of tangents (derivatives), and areas under curves (integrals) that provide an intuitive, picture‑based entry point to calculus fundamentals.  
+
+2. **Progressive Math Pathway Toward Calculus** – A structured learning sequence (Pre‑Algebra → Algebra → Geometry → Algebra 2 → Pre‑Calculus → Calculus) that builds the prerequisite skills necessary for successful calculus study.  
+
+3. **Why Calculus Is Powerful: Real‑World Modeling** – Emphasizes calculus as the mathematical engine behind change‑based modeling (e.g., motion, growth, optimization) and highlights its central role in science, engineering, economics, and data analysis.  
+
+4. **Online Learning Ecosystem for Calculus** – Consolidated resources from TC Math Academy (course catalogs, video lessons, and downloadable notes) that deliver self‑paced, multimedia instruction for both beginners and advanced learners.  
+
+5. **Targeted Skill‑Rebuilder Modules** – Short, focused courses designed to fill gaps in foundational topics (e.g., limits, functions, trigonometry) before tackling full‑scale calculus, ensuring learners have the necessary conceptual scaffolding.  
 
 **Source Summary:**
-- Sources Analyzed: 2 (Calculus Primer website & “Understanding Basic Calculus” PDF)  
-- Agent Coverage: 2 of 8 total sources  
+- Sources Analyzed: 2 (Basic Calculus portal images; TC Math Academy promotional overview)
+- Agent Coverage: 2 of 8 total sources

@@ -13,95 +13,28 @@ You are Agent 2 of 5 specialized research agents analyzing: "basic_calculus"
 
 ## Your Research Sources
 
-### Source 3: Calculus Primer
+### Source 3: LEARNING RESOURCES PORTAL - Basic Calculus
 
 **Content:**
 Search this site
-
 Embedded Files
-
 Skip to main content
-
 Skip to navigation
-
-# Calculus Primer
-
-## Master the fundamental knowledge for the Physics Olympiad and beyond.
-
-# Learn all the calculus prerequisites for the Physics Olympiad — for free.
-
-Calculus is the language of physics and higher math. To do well in the Physics Olympiad, regardless of which stage you compete in, calculus knowledge is essential. You can spend a few months going through a content-packed AP Calculus course online, or you can spend just a few days on this guide, which provides only the essential calculus knowledge you need for the Physics Olympiad with no irrelevant information. Save time for your actual physics preparation, for free.
-
-# 100+ pages of written handouts & practice problems at your disposal.
-
-We have condensed all the basic calculus knowledge you need for the Physics Olympiad into 21 unique handouts, spanning a total of just 100+ pages. We implement a highly efficient learning model, where every handout contains multiple calculationexercises as well as complex word problems to immediately polish one's understanding of challenging concepts taught just before. Each of our 21 handouts is free to access and can be easily explored on our handout page.
-
-# Highly qualified instructors from around the world.
-
-To ensure a quality educational experience, our team is comprised of highly qualified high schoolers and college students from three continents, whose extensive math and physicsbackground have been recognized nationally and internationally, from International Physics Olympiad (IPhO) medalists to USA Junior Math Olympiad (USAJMO) qualifiers. Our team of experts here at Calculus Primer will guide you to your success — at USAPhO & IPhO, and beyond.
-
-# Ready to learn?
-
-Embark on an exciting journey to explore the world of physics today.
-
-[Get Started](https://www.calc.guide/handouts)
-
-Disclaimer: calc.guide is not affiliated with or endorsed by the official AAPT organization. For official information, visit the AAPT website at aapt.org.
-
-Google Sites
-
+# Basic Calculus
+![](https://lh6.googleusercontent.com/pJsru9jxnsf2dnpw7JvX9DAl72sh7BCH-QtytDw-FxYY-xf7OSYaD_7MyIcTUsbNWAdjp2j4Ypr_q7BcnuiuIqA=w1280)
+![](https://lh6.googleusercontent.com/PBJ0nTgdwdi4rrTJ1YTFSNNmMZT3j_dbaxLu5Wv_4PD9LTRZ_YKRlelzMIL2T_qa3mr3cgJfT3ryKJjIzvEFFw=w1280)
+![](https://lh6.googleusercontent.com/sgqfQO-AC8_C8Qgm7PwegEMlXWZEor6ZTV426EPDiTYznZkwe62SYWmyh7kqPaSxPCZ0-Dcp99TMoDUM2e5tK8c=w1280)
 Report abuse
-
-Google Sites
-
 Report abuse
 
 
 ---
 
-### Source 4: [PDF] Understanding Basic Calculus
+### Source 4: BASIC Calculus – Understand Why Calculus is so POWERFUL!
 
 **Content:**
-Understanding
-Basic Calculus
-
-S.K. Chung
-
-
-Dedicated to all the people who have helped me in my life.
-
-
-i
-Preface
-This book is a revised and expanded version of the lecture notes for Basic Calculus and other similar courses
-offered by the Department of Mathematics, University of Hong Kong, from the first semester of the academic
-year 1998-1999 through the second semester of 2006-2007. It can be used as a textbook or a reference book
-for an introductory course on one variable calculus.
-In this book, much emphasis is put on explanations of concepts and solutions to examples. By reading
-the book carefully, students should be able to understand the concepts introduced and know how to answer
-questions with justification. At the end of each section (except the last few), there is an exercise. Students
-are advised to do as many questions as possible. Most of the exercises are simple drills. Such exercises may
-not help students understand the concepts; however, without practices, students may find it difficult to continue
-reading the subsequent sections.
-Chapter 0 is written for students who have forgotten the materials that they have learnt for HKCEE Mathematics. Students who are familiar with the materials may skip this chapter.
-Chapter 1 is on sets, real numbers and inequalities. Since the concept of sets is new to most students, detail
-explanations and elaborations are given. For the real number system, notations and terminologies that will
-be used in the rest of the book are introduced. For solving polynomial inequalities, the method will be used
-later when we consider where a function is increasing or decreasing as well as where a function is convex or
-concave. Students should note that there is a shortcut for solving inequalities, using the Intermediate Value
-Theorem discussed in Chapter 3.
-Chapter 2 is on functions and graphs. Some materials are covered by HKCEE Mathematics. New concepts
-introduced include domain and range (which are fundamental concepts related to functions); composition of
-functions (which will be needed when we consider the Chain Rule for differentiation) and inverse functions
-(which will be needed when we consider exponential functions and logarithmic functions).
-In Chapter 3, intuitive idea of limit is introduced. Limit is a fundamental concept in calculus. It is used
-when we consider differentiation (to define derivatives) and integration (to define definite integrals). There are
-many types of limits. Students should notice that their definitions are similar. To help students understand
-such similarities, a summary is given at the end of the section on two-sided limits. The section of continuous
-functions is rather conceptual. Students should understand the statements of the Intermediate Value Theorem
-(several versions) and the Extreme Value Theorem.
-In Chapters 4 and 5, basic concepts and applications of differentiation are discussed. Students who know
-how to work on limits of functions at a point should be able to apply ... [Content truncated for context window]
+An introduction to Calculus. Learn more math at https://TCMathAcademy.com/. \n\nTabletClass Math Academy - https://TCMathAcademy.com/\nHelp with Middle and High School Math\nTest Prep for High School Math, College Math, Teacher Certification Math and More! \n\nPopular Math Courses:\n\nMath Foundations \nhttps://tabletclass-academy.teachable...\n\nMath Skills Rebuilder Course:\nhttps://tabletclass-academy.teachable...\n\nPre-Algebra\nhttps://tabletclass-academy.teachable...\n\nAlgebra\nhttps://tabletclass-academy.teachable...\n\nGeometry \nhttps://tabletclass-academy.teachable...\n\nAlgebra 2\nhttps://tabletclass-academy.teachable...\n\nPre-Calculus \nhttps://tabletclass-academy.teachable...\n\nMath Notes: https://tcmathshop.com/\n\nIf you’re looking for a math course for any of the following, check out my full Course Catalog at: https://TCMathAcademy.com/courses/\n\n• MIDDLE \u0026 HIGH SCHOOL MATH\n• HOMESCHOOL MATH\n• COLLEGE MATH\n• TEST PREP MATH\n• TEACHER CERTIFICATION TEST MATH
+| view_count: 1,443,784 views | short_view_count: 1.4M views | num_likes: 34 thousand | num_subscribers: 866 thousand
 
 
 ---

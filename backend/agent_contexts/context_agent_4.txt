@@ -13,34 +13,80 @@ You are Agent 4 of 5 specialized research agents analyzing: "basic_calculus"
 
 ## Your Research Sources
 
-### Source 7: Basic Calculus Types, Formulas & Rules - Lesson - Study.com
+### Source 7: A Gentle Introduction To Learning Calculus - BetterExplained
 
 **Content:**
-In order to continue enjoying our site, we ask that you confirm your identity as a human. Thank you very much for your cooperation.
+I have a love/hate relationship with calculus: it demonstrates the beauty of math and the agony of math education.
+
+Calculus relates topics in an elegant, brain-bending manner. My closest analogy is Darwin’s Theory of Evolution: once understood, you start seeing Nature in terms of survival. You understand why drugs lead to resistant germs (survival of the fittest). You know why sugar and fat taste sweet (encourage consumption of high-calorie foods in times of scarcity). It all fits together.
+
+Calculus is similarly enlightening. Don’t these formulas seem related in some way?
+
+They are. But most of us learn these formulas independently. Calculus lets us start with $\\text{circumference} = 2 \\pi r$ and figure out the others — the Greeks would have appreciated this.
+
+**Unfortunately, calculus can epitomize what’s wrong with math education**. Most lessons feature contrived examples, arcane proofs, and memorization that body slam our intuition & enthusiasm.
+
+It really shouldn’t be this way.
+
+## Math, art, and ideas
+
+I’ve learned something from school: **Math isn’t the hard part of math; motivation is.** Specifically, staying encouraged despite
+
+- Teachers focused more on publishing/perishing than teaching
+- Self-fulfilling prophecies that math is difficult, boring, unpopular or “not your subject”
+- Textbooks and curriculums more concerned with [profits](https://web.archive.org/web/20081216021713/http://www.redshift.com/~jmichael/html/feynman.html) and test results than insight
+
+[‘A Mathematician’s Lament’ \[pdf\]](http://www.maa.org/external_archive/devlin/LockhartsLament.pdf) is an excellent essay on this issue that [resonated](http://reddit.com/info/6baz9/comments/) [with](http://www.metafilter.com/70699/A-Mathematicians-Lament) [many people](http://www.math.princeton.edu/~bbukh/natural.html):
+
+> “…if I had to design a mechanism for the express purpose of destroying a child’s natural curiosity and love of pattern-making, I couldn’t possibly do as good a job as is currently being done — I simply wouldn’t have the imagination to come up with the kind of senseless, soul-crushing ideas that constitute contemporary mathematics education.”
+
+Imagine teaching art like this: **Kids, no fingerpainting in kindergarten.** Instead, let’s study paint chemistry, the physics of light, and the anatomy of the eye. After 12 years of this, if the kids (now teenagers) don’t hate art already, they may begin to start coloring on their own. After all, they have the “rigorous, testable” fundamentals to start appreciating art. Right?
+
+Poetry is similar. Imagine studying this quote (formula):
+
+```
+This above all: to thine own self be true,
+And it must follow, as the night the day,
+Thou canst not then be false to any man.
+
+— William Shakespeare, Hamlet
+
+```
+
+It’s an elegant way of saying “be yourself” (and if that means writing irreverently about math, so be it). But if this were math class, we’d be counting the syllables, analyzing the iambic pentameter, and mapping out the s... [Content truncated for context window]
 
 
 ---
 
-### Source 8: Calculus I - Review
+### Source 8: Calculus - Wikipedia
 
 **Content:**
-Show Mobile NoticeShow All NotesHide All Notes
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
 
-Mobile Notice
+From Wikipedia, the free encyclopedia
 
-You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see them) and some of the menu items will be cut off due to the narrow screen width.
+Branch of mathematics
 
-## Chapter 1 : Review
+This article is about the branch of mathematics. For other uses, see [Calculus (disambiguation)](https://en.wikipedia.org/wiki/Calculus_(disambiguation)).
 
-Technically a student coming into a Calculus class is supposed to know both Algebra and Trigonometry. Unfortunately, the reality is often much different. Most students enter a Calculus class woefully unprepared for both the algebra and the trig that is in a Calculus class. This is very unfortunate since good algebra skills are absolutely vital to successfully completing any Calculus course and if your Calculus course includes trig (as this one does) good trig skills are also important in many sections.
+| Part of a series of articles about |
+| Calculus |
+| ∫abf′(t)dt=f(b)−f(a){\\displaystyle \\int \_{a}^{b}f'(t)\\,dt=f(b)-f(a)} |
+| - [Fundamental theorem](https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus) - [Limits](https://en.wikipedia.org/wiki/Limit_of_a_function) - [Continuity](https://en.wikipedia.org/wiki/Continuous_function) - [Rolle's theorem](https://en.wikipedia.org/wiki/Rolle%27s_theorem) - [Mean value theorem](https://en.wikipedia.org/wiki/Mean_value_theorem) - [Inverse function theorem](https://en.wikipedia.org/wiki/Inverse_function_theorem) |
+| [Differential](https://en.wikipedia.org/wiki/Differential_calculus)
 
-The above statement is not meant to denigrate your favorite Algebra or Trig instructor. It is simply an acknowledgment of the fact that many of these courses, especially Algebra courses, are aimed at a more general audience and so do not always put the time into topics that are vital to a Calculus course and/or the level of difficulty is kept lower than might be best for students heading on towards Calculus.
+| Definitions |
+| --- |
+| - [Derivative](https://en.wikipedia.org/wiki/Derivative) ( [generalizations](https://en.wikipedia.org/wiki/Generalizations_of_the_derivative)) - [Differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) - [infinitesimal](https://en.wikipedia.org/wiki/Differential_(infinitesimal)) - [of a function](https://en.wikipedia.org/wiki/Differential_of_a_function) - [total](https://en.wikipedia.org/wiki/Differential_of_a_function#Differentials_in_several_variables) |
+| Concepts |
+| - [Differentiation notation](https://en.wikipedia.org/wiki/Notation_for_differentiation) - [Second derivative](https://en.wikipedia.org/wiki/Second_derivative) - [Implicit differentiation](https://en.wikipedia.org/wiki/Implicit_function) - [Logarithmic differentiation](https://en.wikipedia.org/wiki/Logarithmic_differentiation) - [Related rates](https://en.wikipedia.org/wiki/Related_rates) - [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem) |
+| [Rules and identities](https://en.wikipedia.org/wiki/Differentiation_rules) |
+| - [Sum](https://en.wikipedia.org/wiki/Sum_rule_in_differentiation) - [Product](https://en.wikipedia.org/wiki/Product_rule) - [Chain](https://en.wikipedia.org/wiki/Chain_rule) - [Power](https://en.wikipedia.org/wiki/Power_rule) - [Quotient](https://en.wikipedia.org/wiki/Quotient_rule) - [L'Hôpital's rule](https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule) - [Inverse](https://en.wikipedia.org/wiki/Inverse_function_rule) - [General Leibniz](https://en.wikipedia.org/wiki/General_Leibniz_rule) - [Faà di Bruno's formula](https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula) - [Reynolds](https://en.wikipedia.org/wiki/Reynolds_transport_theorem) | |
+| [Integral](https://en.wikipedia.org/wiki/Integral)
 
-Far too often the biggest impediment to students being successful in a Calculus course is they do not have sufficient skills in the underlying algebra and trig that will be in many of the calculus problems we'll be looking at. These students end up struggling with the algebra and trig in the problems rather than working to understand the calculus topics which in turn negatively impacts their grade in a Calculus course. The intent of this chapter, therefore, is to do a very cursory review of some algebra and trig skills that are vital to a calculus course that many students just didn't learn as well as they should have from their Algebra and Trig courses.
-
-This chapter does not include all the algebra and trig skills that are needed to be successful in a Calculus course. It only includes those topics that most students are particularly deficient in. For instance, factoring is also vital to completing a standard calculus class but is not included here as it is assumed that if you are taking a Calculus course then you do know how to factor. Likewise, it is assumed that if you are taking a Calculus course then you know how to solve linear and quadratic equations so those topics are not covered here either. For a more in depth review of Algebra topics you should check out the full set of Algebra notes at [http://tutorial.math.lamar.edu](http://tutorial.math.lamar.edu).
-
-Note that even though these topics are very important to a Calculus class we rarely cover all of them in the actual class itself. We simply don't have the time to do that. We will cover cer... [Content truncated for context window]
+| - [Lists of integrals](https://en.wikipedia.org/wiki/Lists_of_integrals) - [Integral transform](https://en.wikipedia.org/wiki/Integral_transform) - [Leibniz integral rule](https://en.wikipedia.org/wiki/Leibniz_integral_rule) |
+| Definitions |
+| - [Antiderivative](https://en.wik... [Content truncated for context window]
 
 
 ---

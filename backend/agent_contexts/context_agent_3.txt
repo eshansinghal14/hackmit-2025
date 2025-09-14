@@ -13,61 +13,69 @@ You are Agent 3 of 5 specialized research agents analyzing: "basic_calculus"
 
 ## Your Research Sources
 
-### Source 5: A Gentle Introduction To Learning Calculus - BetterExplained
+### Source 5: You can Understand Simple Calculus with just Basic Math! - YouTube
 
 **Content:**
-I have a love/hate relationship with calculus: it demonstrates the beauty of math and the agony of math education.
-
-Calculus relates topics in an elegant, brain-bending manner. My closest analogy is Darwin’s Theory of Evolution: once understood, you start seeing Nature in terms of survival. You understand why drugs lead to resistant germs (survival of the fittest). You know why sugar and fat taste sweet (encourage consumption of high-calorie foods in times of scarcity). It all fits together.
-
-Calculus is similarly enlightening. Don’t these formulas seem related in some way?
-
-They are. But most of us learn these formulas independently. Calculus lets us start with $\\text{circumference} = 2 \\pi r$ and figure out the others — the Greeks would have appreciated this.
-
-**Unfortunately, calculus can epitomize what’s wrong with math education**. Most lessons feature contrived examples, arcane proofs, and memorization that body slam our intuition & enthusiasm.
-
-It really shouldn’t be this way.
-
-## Math, art, and ideas
-
-I’ve learned something from school: **Math isn’t the hard part of math; motivation is.** Specifically, staying encouraged despite
-
-- Teachers focused more on publishing/perishing than teaching
-- Self-fulfilling prophecies that math is difficult, boring, unpopular or “not your subject”
-- Textbooks and curriculums more concerned with [profits](https://web.archive.org/web/20081216021713/http://www.redshift.com/~jmichael/html/feynman.html) and test results than insight
-
-[‘A Mathematician’s Lament’ \[pdf\]](http://www.maa.org/external_archive/devlin/LockhartsLament.pdf) is an excellent essay on this issue that [resonated](http://reddit.com/info/6baz9/comments/) [with](http://www.metafilter.com/70699/A-Mathematicians-Lament) [many people](http://www.math.princeton.edu/~bbukh/natural.html):
-
-> “…if I had to design a mechanism for the express purpose of destroying a child’s natural curiosity and love of pattern-making, I couldn’t possibly do as good a job as is currently being done — I simply wouldn’t have the imagination to come up with the kind of senseless, soul-crushing ideas that constitute contemporary mathematics education.”
-
-Imagine teaching art like this: **Kids, no fingerpainting in kindergarten.** Instead, let’s study paint chemistry, the physics of light, and the anatomy of the eye. After 12 years of this, if the kids (now teenagers) don’t hate art already, they may begin to start coloring on their own. After all, they have the “rigorous, testable” fundamentals to start appreciating art. Right?
-
-Poetry is similar. Imagine studying this quote (formula):
-
-```
-This above all: to thine own self be true,
-And it must follow, as the night the day,
-Thou canst not then be false to any man.
-
-— William Shakespeare, Hamlet
-
-```
-
-It’s an elegant way of saying “be yourself” (and if that means writing irreverently about math, so be it). But if this were math class, we’d be counting the syllables, analyzing the iambic pentameter, and mapping out the s... [Content truncated for context window]
+A basic introduction to Calculus with basic math. Learn more math at https://TCMathAcademy.com/. \n\nTabletClass Math Academy - https://TCMathAcademy.com/\nHelp with Middle and High School Math\nTest Prep for High School Math, College Math, Teacher Certification Math and More! \n\nPopular Math Courses:\n\nMath Foundations \nhttps://tabletclass-academy.teachable...\n\nMath Skills Rebuilder Course:\nhttps://tabletclass-academy.teachable...\n\nPre-Algebra\nhttps://tabletclass-academy.teachable...\n\nAlgebra\nhttps://tabletclass-academy.teachable...\n\nGeometry \nhttps://tabletclass-academy.teachable...\n\nAlgebra 2\nhttps://tabletclass-academy.teachable...\n\nPre-Calculus \nhttps://tabletclass-academy.teachable...\n\nIf you’re looking for a math course for any of the following, check out my full Course Catalog at: https://TCMathAcademy.com/courses/\n\n• MIDDLE \u0026 HIGH SCHOOL MATH\n• HOMESCHOOL MATH\n• COLLEGE MATH\n• TEST PREP MATH\n• TEACHER CERTIFICATION TEST MATH
+| view_count: 661,335 views | short_view_count: 661K views | num_likes: 8.3 thousand | num_subscribers: 865 thousand
 
 
 ---
 
-### Source 6: Calculus 1 | Math - Khan Academy
+### Source 6: Calculus I - Review
 
 **Content:**
-If you're seeing this message, it means we're having trouble loading external resources on our website.
+- Go To
+- Notes
+- [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx)
+- [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx)
+- Show/Hide
+- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
+- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
 
-If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+- Sections
+- [Functions](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
+- Chapters
+- [Limits](https://tutorial.math.lamar.edu/Classes/CalcI/limitsIntro.aspx)
+- Classes
+- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
+- Calculus I
+- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
+- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+- [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)
+- Extras
+- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
+- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
+- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
+- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
+- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
+- Misc
+- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
+- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
 
-## Oops. Something went wrong. Please try again.
+- Notes Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,N)
+- Practice Problems Downloads
+- [Complete Book - Problems Only](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,P)
+- [Complete Book - Solutions](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,S)
+- Assignment Problems Downloads
+- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,A)
+- Other Items
+- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=20)
 
-Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+- [Print Page in Current Form (Default)](javascript:SHPrintPage())
+- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
+- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
+
+Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)/ Review
+
+Notes [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx) [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx) [Next Section](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
+
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see... [Content truncated for context window]
 
 
 ---

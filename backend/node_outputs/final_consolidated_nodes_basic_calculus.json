@@ -1,19 +1,31 @@
-```json
-{
-  "topic": "Basic_Calculus",
-  "lessons": [
-    "Introduction to Calculus and Change",
-    "Limits",
-    "Continuity",
-    "Derivatives and Differentiation Rules",
-    "Implicit Derivatives",
-    "Function Fundamentals: Domain, Range, Composition & Inverses",
-    "Limit Theory & Core Theorems",
-    "Algebra Prerequisite Mastery",
-    "Trigonometry Prerequisite Integration",
-    "Fundamental Theorem of Calculus",
-    "Integration Techniques",
-    "Applications of Derivatives"
+[
+  {
+    "1": "Introduction to Limits",
+    "2": "Derivatives of Basic Functions",
+    "3": "Rules of Differentiation",
+    "4": "Applications of Derivatives",
+    "5": "Introduction to Integrals",
+    "6": "Integration Rules",
+    "7": "Applications of Integrals",
+    "8": "Optimization Techniques",
+    "9": "Fundamental Theorem of Calculus"
+  },
+  {
+    "1": [2, 3],
+    "2": [4],
+    "3": [4, 5],
+    "4": [8],
+    "5": [6, 7],
+    "6": [7],
+    "7": [8, 9],
+    "8": [9],
+    "9": []
+  },
+  [
+    "Do you know what a limit is in calculus? (Yes/No)",
+    "Do you know how to find the derivative of a function? (Yes/No)", 
+    "Do you know how to apply the chain rule? (Yes/No)",
+    "Do you know how to solve optimization problems? (Yes/No)",
+    "Do you know the fundamental theorem of calculus? (Yes/No)"
   ]
-}
-```
+]

@@ -13,136 +13,94 @@ You are Agent 1 of 5 specialized research agents analyzing: "basic_calculus"
 
 ## Your Research Sources
 
-### Source 1: Mastering the basics of single variable calculus - A beginner's guide | Elevri
+### Source 1: Basic Calculus - Fall 24
 
 **Content:**
-[Courses](https://www.elevri.com/courses)
+Search this site
 
-Calculus
+Embedded Files
 
-# Mastering the basics of single variable calculus - A beginner's guide
+Skip to main content
 
-In this course, we'll provide a comprehensive overview of single variable calculus, including key concepts like limits, derivatives, and integrals.
+Skip to navigation
 
-Table of contents
+## Materials (Fall 2024)
 
-## What is included in a calculus course?
+The following are the materials that were generated for the Fall 2024 class given by [Steve Butler](https://www.stevebutler.org/).
 
-The following 23 topics are typically included in a calculus course
+Note: Vimeo is a video hosting service which streams a better quality video and never has any ads.
 
-1\. Limits
+### Week one
 
-Functions are not always defined for all inputs. For instance, division by zero is not allowed. To see how the function look close to such an input, we study the limit as the input goes toward this point.
+- Rates of change ( [handout](https://drive.google.com/file/d/1lFlf77VbyOyIQG061yfwuNVCP2tKcSxj/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/14WpmXNWLdQtd0RXgDNHl0PIcwWzs_j-p/view?usp=drive_link); [Vimeo](https://vimeo.com/1003268791); [YouTube](https://youtu.be/yz8R84FCzjU))
 
-[Show more](https://www.elevri.com/courses/calculus/limits)
+- Basics of limits ( [handout](https://drive.google.com/file/d/1D4Dv5pUYdJ8qMhaKT6xkQqvVAeBRXCS2/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/14bdTXcyhjG1iGOhlLLWgA0O3-dLU_z-7/view?usp=drive_link); [Vimeo](https://vimeo.com/1003830657); [YouTube](https://youtu.be/JhBuJaORAkE))
 
-* * *
+- One-sided limits ( [handout](https://drive.google.com/file/d/1Xil7Bdl0ZCZ9AlyrzlybuW7AbExBnHHG/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/14hY93isS5K4iD_ZFgA7YkmSXWwg4TDRg/view?usp=drive_link); [Vimeo](https://vimeo.com/1004668224); [YouTube](https://youtu.be/swDBMvlBkck))
 
-2\. Continuity
+- Practice problems ( [problems](https://drive.google.com/file/d/1-xZBaWSp_NMvPaJua1-L0Ig2MUzoZR9M/view?usp=drive_link); [Vimeo](https://vimeo.com/1004967163); [YouTube](https://youtu.be/VbaPOFZ-2hY))
 
-Integers are considered discrete numbers; they are distributed with gaps in-between them. The set of real numbers, however, is continuous, since between any two reals you will always find more of them. The same concept extend to functions, where a continuous function is one with no gaps.
 
-[Show more](https://www.elevri.com/courses/calculus/continuity)
+### Week two
 
-* * *
+- Continuity ( [handout](https://drive.google.com/file/d/1mX4Nxxa7PiZNMjjII4_ah1ukBqxWJVw7/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/14jRoUuuMGd_tpYwvZXWl-IpnEnsmtxSD/view?usp=drive_link); [Vimeo](https://vimeo.com/1006388512); [YouTube](https://youtu.be/-B5LCun1iZM))
 
-3\. Derivatives
+- Limits w/ infinity ( [handout](https://drive.google.com/file/d/1D0l-hH-2a38yXdB7bBOVr8vXh1fQsmIy/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/14qKoZOsLsyOeLBkE0pz8VsajSrMzZ7t9/view?usp=drive_link); [Vimeo](https://vimeo.com/1007111404); [YouTube](https://youtu.be/ezrulc_tBgQ))
 
-The derivative of a function gives its instantaneous rate of change at any point. This is analogous to the slope of a line parallel to the function there, which, together with the concept of limits, formulate the definition of the derivative:
-$$f'(x) = \\lim\_{h \\to 0}\\frac{f(x+h) - f(x)}{h}$$
+- Practice problems ( [problems](https://drive.google.com/file/d/10-QMRW6lQ9eVGot9O243qjBmJo4joQpB/view?usp=drive_link); [Vimeo](https://vimeo.com/1006992964); [YouTube](https://youtu.be/FoGqcHUCn9Q))
 
-[Show more](https://www.elevri.com/courses/calculus/derivatives)
 
-* * *
+### Week three
 
-4\. Differentiation rules
+- Derivative at a point ( [handout](https://drive.google.com/file/d/1o5EOjdCM65LIVjDFiS0wu6Zm_ovPP3uM/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/154K6LV-SWGVvCMs5PhNjELsyaWwj0tC4/view?usp=drive_link); [Vimeo](https://vimeo.com/1007838117); [YouTube](https://youtu.be/FujPaQDvOTw))
 
-Finding derivatives is not always straight-forward using the definition. Luckily, the subject is well-researched, and multiple handy rules have been discovered, simplifying the task depending on the form of the function.
+- Derivative as a function ( [handout](https://drive.google.com/file/d/1IF4F5hzM9VQQeBtdZN-Png6ZgD-R3ZCO/view?usp=drive_link); [scanned notes](https://drive.google.com/file/d/155TOL6Ph8M-oSVUYMecGkMGpGvMf6nt3/view?usp=drive_link); [Vimeo](https://vimeo.com/1008608782); [YouTube](https://youtu.be/nD3YA_LBLgA))
 
-[Show more](https://www.elevri.com/courses/calculus/differentiation-rules)
-
-* * *
-
-5\. Mean value theorem
-
-The mean value theorem is simple, yet powerful: Between any two points on a continuous function, the derivative will somewhere equal the slope of the line connecting the points.
-
-[Show more](https://www.elevri.com/courses/calculus/mean-value-theorem)
-
-* * *
-
-6\. Implicit derivatives
-
-If y is not a function of x, but we still have a relation between the two through some equation, we can not formulate the derivative as a function of x. This is the case for a circle with radius $a$:
-$$x^2 + y^2 = a^2$$
-A line tangent to this circle will have the slope $ -\\frac{y}{x}$. This derivative is implicit, as opposed to explicit as a function of $x$ alone.
-
-[Show more](https://www.elevri.com/courses/calculus/implicit-derivatives)
-
-* * *
-
-7\. Inverse functions
-
-A function is a way of processing numbers. You plug in some number and get out a new one. The inverse of a function is then a redo-process, which takes in the old output, and spits out the initial input.
-
-[Show more](https://www.elevri.com/courses/calculus/inverse-functions)
-
-* * *
-
-8\. Antiderivatives
-
-As hinted by the name, antiderivatives are the reverses of derivatives. If a function $f(x)$ has the derivative $f'(x)$, $... [Content truncated for context window]
+- Derivative rules ( [handout](https://drive.google.com/file/d/1Bo-_JqEFLrOVbB9i... [Content truncated for context window]
 
 
 ---
 
-### Source 2: Home Page: Helping With Calculus
+### Source 2: Basic Calculus Concepts to Know for Math for Non-Math Majors
 
 **Content:**
-# Helping With Calculus
-
-Calculus is the mathematics of change. In algebra we covered linear functions, the word linear refers to straight lines, straight lines represent change, but change that is at a constant rate (i.e. like a car driving at a constant speed).
-In calculus we will start to look at functions and lines where the change… changes! For example, if a car driving at a constant speed is represented by a straight linear line, then we will use calculus to look at a car driving where its speed is changing (like if it was going down hills or being stuck behind cyclists etc.)
-
-Select from the categories and lessons below to start viewing and learning from the many worked examples and explanations.
-
-## Overview
-
-Get started with two short lessons on differentiation and integration. Click below to start with finding the slope of a tangent.
-
-[More](https://helpingwithcalculus.com/Overview/Differentiation.htm)
-
-## Prerequisites
-
-Ensure you are ready for Calculus by checking up on some basic algebra Select below to review the distance between two points.
-
-[More](https://helpingwithcalculus.com/Prerequisites/Distance.htm)
-
-## Introduction
-
-Explore the differentiation of functions. Click below to get started with using rules including the Sum, Product, and Difference Rules.
-
-[More](https://helpingwithcalculus.com/Introduction/Slope-Tangent.htm)
-
-## Differentiation
-
-Dig deeper into differentiation including using it for Linear Approximation. Select below to start this sub-section with the Chain Rule.
-
-[More](https://helpingwithcalculus.com/Derivatives/Chain-Rule01.htm)
-
-## Graphs & Curves
-
-Graph functions to help see how theoretical concepts to real-life situations. Click below to start with maximum and minimum rainfall!
-
-[More](https://helpingwithcalculus.com/Graphs-Curves/Maximums-Minimums.htm)
-
-## Examples
-
-View some additional worked examples. Select below for the first introductory one on sketching a tangent and estimating its slope.
-
-[More](https://helpingwithcalculus.com/Examples/Sketch-tangent.htm)
-
-HelpingWithCalculus.com is still very much a work-in-progress with an eye on future development. We can't forget our first ever page though - [a basic example of the application of the Power Rule.](https://helpingwithcalculus.com/Differentiating/index.html)
+practicecheatsheets [scores](https://library.fiveable.me/ap-score-calculator) [videos](https://library.fiveable.me/cram-replays)
+# Basic Calculus Concepts to Know for Math for Non-Math Majors
+#### Related Subjects
+[💯 Math for Non-Math Majors](https://library.fiveable.me/contemporary-math)
+Calculus helps us understand how things change and accumulate. By exploring functions, limits, derivatives, and integrals, we can analyze real-world situations, optimize outcomes, and model growth or decay, making it relevant for everyday life and various fields.
+01. **Functions and their graphs**
+- A function is a relationship that assigns exactly one output for each input.
+- Graphs visually represent functions, showing how outputs change with inputs.
+- Key features of graphs include intercepts, slopes, and asymptotes.
+02. **Limits and continuity**
+- A limit describes the value a function approaches as the input approaches a certain point.
+- Continuity means a function has no breaks, jumps, or holes in its graph.
+- Understanding limits is essential for defining derivatives and integrals.
+03. **Derivatives and differentiation rules**
+- A derivative represents the rate of change of a function with respect to its variable.
+- Common differentiation rules include the power rule, product rule, and quotient rule.
+- Derivatives can be used to find slopes of tangent lines to curves at specific points.
+04. **Applications of derivatives (e.g., optimization, rates of change)**
+- Derivatives help identify maximum and minimum values of functions (optimization).
+- They are used to calculate instantaneous rates of change in various contexts.
+- Understanding critical points (where the derivative is zero or undefined) is crucial for optimization.
+05. **Integrals and basic integration techniques**
+- An integral represents the accumulation of quantities, such as area under a curve.
+- Basic techniques include the power rule for integration and substitution.
+- Definite integrals provide numerical values, while indefinite integrals yield general functions.
+06. **Fundamental Theorem of Calculus**
+- This theorem connects differentiation and integration, showing they are inverse processes.
+- It states that the integral of a function can be evaluated using its antiderivative.
+- It provides a method for calculating definite integrals efficiently.
+07. **Applications of integrals (e.g., area under curves, volume)**
+- Integrals can be used to calculate the area between curves and the x-axis.
+- They are also used to find volumes of solids of revolution through methods like disk and washer.
+- Applications extend to physics, economics, and biology for modeling real-world scenarios.
+08. **Exponential and logarithmic functions**
+- Exponential functions grow rapidly and are characterized by a constant base raised to a variable exponent.
+- Logarithmic functions are the inverses of exponential functions and help solve equations involving exponentials.
+- Both types of functions are essential in model... [Content truncated for context window]
 
 
 ---
