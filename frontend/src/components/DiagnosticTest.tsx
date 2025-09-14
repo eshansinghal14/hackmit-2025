@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
-import { Box, Typography, Button, Card, CardContent, LinearProgress } from '@mui/material'
+import React, { useState, useEffect } from 'react'
+import { Box, Typography, Button, Card, CardContent, LinearProgress, CircularProgress } from '@mui/material'
 import { CheckCircle, Cancel } from '@mui/icons-material'
 import KnowledgeGraph from './KnowledgeGraph'
 
 interface DiagnosticTestProps {
-  questions: string[]
   onComplete?: (answers: boolean[]) => void
   onClose?: () => void
   onWeightUpdate?: () => void
 }
 
 const DiagnosticTest: React.FC<DiagnosticTestProps> = ({ 
-  questions, 
   onComplete,
   onClose,
   onWeightUpdate
@@ -20,6 +18,42 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
   const [answers, setAnswers] = useState<boolean[]>([])
   const [isComplete, setIsComplete] = useState(false)
   const [graphKey, setGraphKey] = useState(0)
+  const [questions, setQuestions] = useState<string[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  // Load questions from roadmap data
+  const loadQuestions = async () => {
+    try {
+      setLoading(true)
+      const response = await fetch('http://localhost:5001/api/nodes')
+      const data = await response.json()
+      
+      // Use only the predefined questions from the second array
+      if (Array.isArray(data) && data.length > 1 && Array.isArray(data[1])) {
+        const questionsToUse = data[1].map((q: string) => {
+          // Clean up questions by removing (Yes/No) suffix
+          const questionMarkIndex = q.indexOf('?')
+          return questionMarkIndex !== -1 ? q.substring(0, questionMarkIndex + 1) : q
+        })
+        
+        setQuestions(questionsToUse)
+        setError(null)
+        console.log(`✅ Loaded ${questionsToUse.length} diagnostic questions`)
+      } else {
+        throw new Error('No predefined questions found in roadmap data')
+      }
+    } catch (err) {
+      console.error('❌ Failed to load questions:', err)
+      setError('Failed to load diagnostic questions')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    loadQuestions()
+  }, [])
 
   const handleAnswer = async (answer: boolean) => {
     const newAnswers = [...answers, answer]
@@ -27,7 +61,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
 
     // Send diagnostic answer to backend for analysis
     try {
-      const response = await fetch('http://localhost:5000/api/diagnostic/analyze', {
+      const response = await fetch('http://localhost:5001/api/diagnostic/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +69,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
         body: JSON.stringify({
           question: questions[currentQuestionIndex],
           answer: answer,
-          json_file_path: 'node_outputs/final_consolidated_nodes_basic_calculus.json'
+          json_file_path: 'node_outputs/final_consolidated_roadmap.json'
         })
       })
 
@@ -53,6 +87,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
       console.error('❌ Error calling diagnostic API:', error)
     }
 
+    // Add bounds checking to prevent crashes
     if (currentQuestionIndex < questions.length - 1) {
       // Move to next question
       setCurrentQuestionIndex(currentQuestionIndex + 1)
@@ -67,22 +102,51 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
     setCurrentQuestionIndex(0)
     setAnswers([])
     setIsComplete(false)
+    setGraphKey(prev => prev + 1)
   }
 
   const progress = ((currentQuestionIndex + (isComplete ? 1 : 0)) / questions.length) * 100
 
-  if (questions.length === 0) {
+  if (loading) {
     return (
-      <Card sx={{ maxWidth: 600, mx: 'auto', mt: 4 }}>
-        <CardContent>
-          <Typography variant="h6" gutterBottom>
-            No questions provided
-          </Typography>
-          <Button variant="outlined" onClick={onClose}>
-            Close
-          </Button>
-        </CardContent>
-      </Card>
+      <Box sx={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Card sx={{ maxWidth: 400, mx: 'auto', textAlign: 'center' }}>
+          <CardContent>
+            <CircularProgress sx={{ mb: 2 }} />
+            <Typography variant="h6" gutterBottom>
+              Loading Diagnostic Questions...
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Fetching questions from your learning roadmap
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
+    )
+  }
+
+  if (error || questions.length === 0) {
+    return (
+      <Box sx={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Card sx={{ maxWidth: 600, mx: 'auto' }}>
+          <CardContent>
+            <Typography variant="h6" gutterBottom color="error">
+              {error || 'No questions available'}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+              {error ? 'Please check your connection and try again.' : 'No diagnostic questions could be generated from the roadmap data.'}
+            </Typography>
+            <Button variant="outlined" onClick={onClose}>
+              Close
+            </Button>
+            {error && (
+              <Button variant="contained" onClick={loadQuestions} sx={{ ml: 2 }}>
+                Retry
+              </Button>
+            )}
+          </CardContent>
+        </Card>
+      </Box>
     )
   }
 
@@ -110,7 +174,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                 Diagnostic Assessment
               </Typography>
               <Typography variant="body2" color="text.secondary" gutterBottom>
-                Question {isComplete ? questions.length : currentQuestionIndex + 1} of {questions.length}
+                Question {isComplete ? questions.length : Math.min(currentQuestionIndex + 1, questions.length)} of {questions.length}
               </Typography>
               <LinearProgress 
                 variant="determinate" 
@@ -132,7 +196,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                       lineHeight: 1.4
                     }}
                   >
-                    {questions[currentQuestionIndex]}
+                    {questions[currentQuestionIndex] || 'Question not available'}
                   </Typography>
                 </Box>
 
@@ -204,7 +268,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                     <Typography variant="h6" gutterBottom>
                       Your Responses:
                     </Typography>
-                    {questions.map((question, index) => (
+                    {questions.slice(0, answers.length).map((question, index) => (
                       <Box key={index} sx={{ 
                         display: 'flex', 
                         alignItems: 'center', 

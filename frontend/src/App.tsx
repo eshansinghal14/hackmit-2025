@@ -12,7 +12,6 @@ const App: React.FC = () => {
   const editorRef = useRef<any>(null)
   const [appState, setAppState] = useState<AppState>('search')
   const [selectedTopic, setSelectedTopic] = useState('')
-  const [diagnosticQuestions, setDiagnosticQuestions] = useState<string[]>([])
   const [graphKey, setGraphKey] = useState(0)
 
   const handleTopicSearch = (topic: string) => {
@@ -20,8 +19,8 @@ const App: React.FC = () => {
     setAppState('loading')
   }
 
-  const handleLoadingComplete = (questions: string[]) => {
-    setDiagnosticQuestions(questions)
+  const handleLoadingComplete = () => {
+    // Questions are now loaded dynamically by DiagnosticTest
     setAppState('diagnostic')
   }
 
@@ -120,7 +119,6 @@ const App: React.FC = () => {
       
       {appState === 'diagnostic' && (
         <DiagnosticTest 
-          questions={diagnosticQuestions}
           onComplete={handleDiagnosticComplete}
           onClose={handleDiagnosticClose}
           onWeightUpdate={handleWeightUpdate}

@@ -1,11 +1,15 @@
-**Agent 2 Knowledge Nodes for: Linear Algebra**
+**Agent 2 Knowledge Nodes for: Machine Learning Basics**
 
-1. **Gaussian Elimination & System Solving** – Master the step‑by‑step Gauss (row‑reduction) method to solve linear equation systems, compute rank, and determine consistency; reinforced by MIT lecture videos and Hefferon’s extensive problem sets.
+1. **Machine Learning Life Cycle** – End‑to‑end workflow covering problem definition, data collection, data preparation, model selection, training, evaluation, deployment, and monitoring.  
 
-2. **Vector Spaces & Linear Transformations** – Understand the definition of vector spaces, subspaces, bases, dimension, and the representation of linear maps as matrices; supported by conceptual explanations in the MIT course and Hefferon’s motivated development.
+2. **Supervised vs. Unsupervised Learning Paradigms** – Core categories of algorithms (e.g., classification & regression vs. clustering & dimensionality reduction) with typical use‑cases and evaluation approaches.  
 
-3. **Determinants & Matrix Invertibility** – Learn determinant computation (cofactor expansion, row‑operations), its geometric interpretation (volume scaling), and its role in testing matrix invertibility and solving systems; both sources provide theory and worked examples.
+3. **Data Preparation & Feature Engineering** – Techniques for loading data, handling missing values, encoding categorical variables, scaling/normalizing features, and splitting datasets into training/validation/test sets.  
 
-4. **Eigenvalues, Eigenvectors & Diagonalization** – Study how to find eigenvalues/eigenvectors, the concept of similarity, diagonalization of matrices, and special cases such as positive‑definite matrices; covered in MIT lectures and Hefferon’s chapters with proofs and applications.
+4. **Python Machine‑Learning Toolchain** – Essential libraries and their roles: **NumPy** for numerical operations, **Pandas** for data manipulation, **Matplotlib/Seaborn** for visualization, **Scikit‑learn** for classic algorithms, and **TensorFlow/Keras** for deep‑learning models.  
 
-5. **Integrated Learning Resources & Computational Practice** – Leverage the full suite of MIT OCW materials (lecture videos, problem sets, exams) together with Hefferon’s free textbook, solution manual, Sage lab manual, and supplemental videos to reinforce theory through hands‑on computation and extensive exercises.
+5. **Model Implementation & Evaluation with Scikit‑learn** – Practical steps to instantiate models, fit on training data, make predictions, and assess performance using metrics such as accuracy, precision, recall, F1‑score, ROC‑AUC, and confusion matrices.  
+
+**Source Summary:**
+- Sources Analyzed: 2  
+- Agent Coverage: 2 of 8 total sources  

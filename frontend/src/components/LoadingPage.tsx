@@ -4,29 +4,14 @@ import { Psychology, AutoAwesome, QuestionAnswer } from '@mui/icons-material'
 
 interface LoadingPageProps {
   topic: string
-  onComplete: (questions: string[]) => void
+  onComplete: () => void
 }
 
 const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
   const [currentStep, setCurrentStep] = useState(0)
   const [progress, setProgress] = useState(0)
 
-  // Use predefined diagnostic questions from the calculus roadmap
-  const getDiagnosticQuestions = (): string[] => {
-    const rawQuestions = [
-      "Do you understand the concept of a limit in calculus? (Yes/No)",
-      "Can you apply basic derivative rules to find the derivative of a function? (Yes/No)",
-      "Do you know how to use the chain rule for differentiation? (Yes/No)",
-      "Can you evaluate a definite integral using the fundamental theorem of calculus? (Yes/No)",
-      "Do you know how to apply calculus to solve optimization problems? (Yes/No)"
-    ]
-    
-    // Crop questions to remove (Yes/No) suffix, keep only text until question mark
-    return rawQuestions.map(question => {
-      const questionMarkIndex = question.indexOf('?')
-      return questionMarkIndex !== -1 ? question.substring(0, questionMarkIndex + 1) : question
-    })
-  }
+  // Questions are now loaded dynamically by DiagnosticTest component
 
   const analysisSteps = [
     {
@@ -55,10 +40,9 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
 
     const startStep = (stepIndex: number) => {
       if (stepIndex >= analysisSteps.length) {
-        // All steps complete - get diagnostic questions and pass them
-        const questions = getDiagnosticQuestions()
+        // All steps complete - proceed to diagnostic test
         setTimeout(() => {
-          onComplete(questions)
+          onComplete()
         }, 500)
         return
       }

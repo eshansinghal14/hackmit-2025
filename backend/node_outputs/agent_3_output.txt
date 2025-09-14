@@ -1,10 +1,10 @@
-**Agent 3 Knowledge Nodes for: Linear Algebra**
+**Agent 3 Knowledge Nodes for: Machine Learning Basics**
 
-1. Matrix Multiplication via Vector and Matrix Products  
-2. Fundamental Matrix Properties (Transpose, Symmetry, Trace, Norms)  
-3. Rank, Linear Independence, and Matrix Inverse  
-4. Eigenvalues, Eigenvectors, and Spectral Properties of Symmetric Matrices  
-5. Matrix Calculus: Gradients, Hessians, and Optimization Applications  
+1. Linear Regression and Gradient Descent Optimization  
+2. Logistic Regression for Probability Prediction  
+3. Binary Classification Metrics (Accuracy, Precision, Recall, AUC)  
+4. Data Preprocessing: Numerical and Categorical Feature Engineering  
+5. Model Generalization, Overfitting, and Dataset Splitting
 
 **Source Summary:**  
 - Sources Analyzed: 2  

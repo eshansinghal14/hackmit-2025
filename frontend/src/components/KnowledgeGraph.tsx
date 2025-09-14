@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Box, Typography, Button, Card, CardContent, Zoom } from '@mui/material'
-import { School, ZoomIn, ZoomOut, CenterFocusStrong } from '@mui/icons-material'
+import { Add, Remove, MyLocation, PlayArrow, Refresh } from '@mui/icons-material'
 
 interface Node {
   id: string
@@ -402,24 +402,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
   }, [weightsLoaded])
 
   return (
-    <Box sx={{ height: '100vh', width: '100%', position: 'relative', overflow: 'hidden' }}>
-      {/* Header */}
-      <Box sx={{ 
-        position: 'absolute', 
-        top: 20, 
-        left: 20, 
-        zIndex: 10,
-        display: 'flex',
-        gap: 2
-      }}>
-        <Typography variant="h4" sx={{ 
-          color: 'white',
-          textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
-          fontWeight: 'bold'
-        }}>
-          Knowledge Graph
-        </Typography>
-      </Box>
+    <Box sx={{ height: '100%', width: '100%', position: 'relative', overflow: 'hidden' }}>
 
       {/* Controls */}
       <Box sx={{ 
@@ -431,37 +414,88 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
         gap: 1
       }}>
         <Button
-          variant="contained"
+          variant="outlined"
           size="small"
           onClick={() => setZoom(zoom * 1.2)}
-          sx={{ minWidth: 40 }}
+          sx={{ 
+            minWidth: 40,
+            borderRadius: 2,
+            borderColor: '#d1d5db',
+            color: '#6e6e80',
+            backgroundColor: '#ffffff',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+            fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+            '&:hover': {
+              borderColor: '#9ca3af',
+              backgroundColor: '#f8fafc',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+            }
+          }}
         >
-          <ZoomIn />
+          <Add sx={{ fontSize: 18 }} />
         </Button>
         <Button
-          variant="contained"
+          variant="outlined"
           size="small"
           onClick={() => setZoom(zoom * 0.8)}
-          sx={{ minWidth: 40 }}
+          sx={{ 
+            minWidth: 40,
+            borderRadius: 2,
+            borderColor: '#d1d5db',
+            color: '#6e6e80',
+            backgroundColor: '#ffffff',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+            fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+            '&:hover': {
+              borderColor: '#9ca3af',
+              backgroundColor: '#f8fafc',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+            }
+          }}
         >
-          <ZoomOut />
+          <Remove sx={{ fontSize: 18 }} />
         </Button>
         <Button
-          variant="contained"
+          variant="outlined"
           size="small"
           onClick={resetView}
-          sx={{ minWidth: 40 }}
+          sx={{ 
+            minWidth: 40,
+            borderRadius: 2,
+            borderColor: '#d1d5db',
+            color: '#6e6e80',
+            backgroundColor: '#ffffff',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+            fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+            '&:hover': {
+              borderColor: '#9ca3af',
+              backgroundColor: '#f8fafc',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+            }
+          }}
         >
-          <CenterFocusStrong />
+          <MyLocation sx={{ fontSize: 18 }} />
         </Button>
         <Button
           variant="contained"
           size="small"
           onClick={loadNodeWeights}
-          sx={{ minWidth: 40, ml: 1 }}
+          sx={{ 
+            minWidth: 40, 
+            ml: 1,
+            borderRadius: 2,
+            backgroundColor: '#2d333a',
+            color: '#ffffff',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+            fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+            '&:hover': {
+              backgroundColor: '#1f2329',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)'
+            }
+          }}
           title="Refresh Data"
         >
-          🔄
+          <Refresh sx={{ fontSize: 18 }} />
         </Button>
       </Box>
 
@@ -471,7 +505,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
         sx={{
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          backgroundColor: '#ffffff',
           cursor: isDragging ? 'grabbing' : 'grab'
         }}
       >
@@ -498,23 +532,38 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
             maxWidth: 500,
             zIndex: 10
           }}>
-            <CardContent sx={{ textAlign: 'center' }}>
-              <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+            <CardContent sx={{ textAlign: 'center', p: 3 }}>
+              <Typography variant="h5" gutterBottom sx={{ 
+                fontWeight: 600,
+                color: '#2d333a',
+                fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+              }}>
                 Node {selectedNode.id}
               </Typography>
-              <Typography variant="h6" color="primary" gutterBottom>
+              <Typography variant="h6" gutterBottom sx={{
+                color: '#6e6e80',
+                fontWeight: 400,
+                fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+              }}>
                 {selectedNode.label}
               </Typography>
               <Button
                 variant="contained"
                 size="large"
-                startIcon={<School />}
+                startIcon={<PlayArrow />}
                 onClick={() => onLearnTopic?.(selectedNode.label)}
                 sx={{ 
                   mt: 2,
-                  background: 'linear-gradient(45deg, #667eea, #764ba2)',
+                  borderRadius: 2,
+                  px: 3,
+                  py: 1.5,
+                  backgroundColor: '#2d333a',
+                  color: '#ffffff',
+                  boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+                  fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
                   '&:hover': {
-                    background: 'linear-gradient(45deg, #764ba2, #667eea)',
+                    backgroundColor: '#1f2329',
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)'
                   }
                 }}
               >
@@ -531,10 +580,17 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
         bottom: 20,
         right: 20,
         zIndex: 10,
-        maxWidth: 200
+        maxWidth: 200,
+        borderRadius: 2,
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+        border: '1px solid #d1d5db'
       }}>
         <CardContent sx={{ p: 2 }}>
-          <Typography variant="subtitle2" gutterBottom sx={{ fontWeight: 'bold' }}>
+          <Typography variant="subtitle2" gutterBottom sx={{ 
+            fontWeight: 600,
+            color: '#2d333a',
+            fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+          }}>
             Difficulty Level
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
@@ -544,7 +600,10 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
               borderRadius: '50%', 
               backgroundColor: 'hsl(120, 70%, 50%)' 
             }} />
-            <Typography variant="caption">Easy</Typography>
+            <Typography variant="caption" sx={{ 
+              color: '#6e6e80',
+              fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+            }}>Easy</Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box sx={{ 
@@ -553,7 +612,10 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKe
               borderRadius: '50%', 
               backgroundColor: 'hsl(0, 70%, 50%)' 
             }} />
-            <Typography variant="caption">Advanced</Typography>
+            <Typography variant="caption" sx={{ 
+              color: '#6e6e80',
+              fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
+            }}>Advanced</Typography>
           </Box>
         </CardContent>
       </Card>

@@ -286,17 +286,20 @@ Output ONLY a valid JSON array with exactly 2 elements in this format:
     "5": {{"name": "Lesson Name 5", "weight": 0, "prerequisites": []}}
   }},
   [
-    "Do you know what a limit is in calculus? (Yes/No)",
-    "Do you know how to find the derivative of a function? (Yes/No)", 
-    "Do you know how to apply the chain rule? (Yes/No)",
-    "Do you know how to solve optimization problems? (Yes/No)",
-    "Do you know the fundamental theorem of calculus? (Yes/No)"
+    "Do you understand [concept 1]? (Yes/No)",
+    "Can you explain [concept 2]? (Yes/No)", 
+    "Do you know how to [skill 3]? (Yes/No)",
+    "Can you apply [concept 4]? (Yes/No)",
+    "Do you understand [concept 5]? (Yes/No)"
   ]
 ]
 
 CRITICAL REQUIREMENTS:
 - First dict: Node numbers (as strings) mapped to objects with "name", "weight", and "prerequisites" array (weight always 0)
 - Second element: Array of exactly 5 diagnostic questions
+- ALL QUESTIONS MUST BE YES/NO FORMAT: Start with "Do you understand...", "Can you explain...", "Do you know how to...", etc.
+- NEVER use open-ended questions or questions marked as "(Open-ended)"
+- ALL questions must end with "(Yes/No)"
 - Graph must be connected (every node reachable from node 1)
 - Focus on TEACHABLE CONCEPTS only
 - Return valid JSON array only, no markdown formatting"""

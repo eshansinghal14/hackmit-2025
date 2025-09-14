@@ -1,9 +1,9 @@
-You are Agent 3 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 3 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 3 Research Context
 
 ## Assignment
-You are Agent 3 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 3 of 5 specialized research agents analyzing: "Machine Learning Basics"
 
 ## Your Data Subset
 - Agent ID: 3/5
@@ -13,122 +13,132 @@ You are Agent 3 of 5 specialized research agents analyzing: "linear algebra"
 
 ## Your Research Sources
 
-### Source 5: [PDF] Linear Algebra Review and Reference
+### Source 5: Machine Learning Crash Course - Google for Developers
 
 **Content:**
-Linear Algebra Review and Reference
-Zico Kolter (updated by Chuong Do)
-September 30, 2015
-Contents
-1 Basic Concepts and Notation 2
-1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-2 Matrix Multiplication 3
-2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-3 Operations and Properties 7
-3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
-3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
-3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
-3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
-4 Matrix Calculus 20
-4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
-4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
-4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-1
-1 Basic Concepts and Notation
-Linear algebra provides a way of compactly representing and operating on sets of linear
-equations. For example, consider the following system of equations:
-4x1 − 5x2 = −13
-−2x1 + 3x2 = 9.
-This is two equations and two variables, so as you know from high school algebra, you
-can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
-example if the second equation is simply a multiple of the first, but in the case above there
-is in fact a unique solution). In matrix notation, we can write the system more compactly
-as
-Ax = b
-with
-A =
-
-4 −5
-−2 3 
-, b =
-
-−13
-9
-
-.
-As we will see shortly, there are many advantages (including the obvious space savings)
-to analyzing linear equations in this for... [Content truncated for context window]
+[Skip to main content](https://developers.google.com/developers.google.com#main-content)
+
+- [**Machine Learning**](https://developers.google.com/machine-learning)
+
+`/`
+
+- English
+- Deutsch
+- Español
+- Español – América Latina
+- Français
+- Indonesia
+- Italiano
+- Polski
+- Português – Brasil
+- Tiếng Việt
+- Türkçe
+- Русский
+- Українська
+- עברית
+- العربيّة
+- فارسی
+- हिंदी
+- বাংলা
+- ภาษาไทย
+- 中文 – 简体
+- 中文 – 繁體
+- 日本語
+- 한국어
+
+Sign in
+
+- [Home](https://developers.google.com/)
+- [Products](https://developers.google.com/products)
+- [Machine Learning](https://developers.google.com/machine-learning)
+- [ML Concepts](https://developers.google.com/machine-learning/crash-course)
+
+Send feedback
+
+Stay organized with collections
+Save and categorize content based on your preferences.
+
+### What's new in Machine Learning Crash Course?
+
+Since 2018, millions of people worldwide have relied on Machine Learning Crash Course to learn how machine learning works, and how machine learning can work for them. We're delighted to announce the launch of a refreshed version of MLCC that covers recent advances in AI, with an increased focus on interactive learning. Watch this video to learn more about the new-and-improved MLCC.
+
+### [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression)
+
+An introduction to linear regression, covering linear models, loss, gradient descent, and hyperparameter tuning.
+
+### [Logistic Regression](https://developers.google.com/machine-learning/crash-course/logistic-regression)
+
+An introduction to logistic regression, where ML models are designed to predict the probability of a given outcome.
+
+### [Classification](https://developers.google.com/machine-learning/crash-course/classification)
+
+An introduction to binary classification models, covering thresholding, confusion matrices, and metrics like accuracy, precision, recall, and AUC.
+
+### [Working with Numerical Data](https://developers.google.com/machine-learning/crash-course/numerical-data)
+
+Learn how to analyze and transform numerical data to help train ML models more effectively.
+
+### [Working with Categorical Data](https://developers.google.com/machine-learning/crash-course/categorical-data)
+
+Learn the fundamentals of working with categorical data: how to distinguish categorical data from numerical data; how to represent categorical data numerically using one-hot encoding, feature hashing, and mean encoding; and how to perform feature crosses.
+
+### [Datasets, Generalization, and Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting)
+
+An introduction to the characteristics of machine learning datasets, and how to prepare your data to ensure high-quality results when training and evaluating your model.
+
+### [Neural Networks](https://developers.google.com/machine-learning/crash-course/neural-networks)
+
+An introduction to the fundamental principles of neural network architectures, including perceptrons, hidden layers, and activatio... [Content truncated for context window]
 
 
 ---
 
-### Source 6: An Intuitive Guide to Linear Algebra – BetterExplained
+### Source 6: What is Machine Learning? ML Tutorial for Beginners
 
 **Content:**
-Despite two linear algebra classes, my knowledge consisted of “Matrices, determinants, eigen something something”.
+[‘Funmi](https://www.freecodecamp.org/news/author/Heyfunmi/)
 
-Why? Well, let’s try this course format:
+The term “Machine Learning” was coined by a computer gamer named Arthur Samuel in 1959. He defined it like this:
 
-- Name the course _Linear Algebra_ but focus on things called matrices and vectors
-- Teach concepts like Row/Column order with mnemonics instead of explaining the reasoning
-- Favor abstract examples (2d vectors! 3d vectors!) and avoid real-world topics until the final week
+> "\[Machine learning is a\] Field of study that gives computers the ability to learn and make predictions without being explicitly programmed."
 
-The survivors are physicists, graphics programmers and other masochists. We missed the key insight:
+ML is a sub-field of Artificial Intelligence. It's based on the idea that computers can learn from historical experiences, make vital decisions, and predict future happenings without human intervention.
 
-**Linear algebra gives you mini-spreadsheets for your math equations.**
+Machine Learning is behind product suggestions on e-commerce sites, your movie suggestions on Netflix, and so many more things. The computer is able to make these suggestions and predictions by learning from your previous data input and past experiences.
 
-We can take a table of data (a matrix) and create updated tables from the original. It’s the power of a spreadsheet written as an equation.
+In recent years, Machine Learning has garnered a lot of attention around the world, it has become one of the most important ways that people use Artificial Intelligence.
 
-Here’s the linear algebra introduction I wish I had, with a real-world stock market example.
+## How Does Machine Learning Work?
 
-## What’s in a name?
+Machine Learning involves building algorithms. Data Scientists build these algorithms, and the type of algorithm they build depends on the type of data they're working on.
 
-“Algebra” means, roughly, “relationships”. Grade-school algebra explores the relationship between unknown numbers. Without knowing x and y, we can still work out that $(x + y)^2 = x^2 + 2xy + y^2$.
+The Machine Learning process begins with gathering data (numbers, text, photos, comments, letters, and so on). These data, often called “training data,” are used in training the Machine Learning algorithm. Training essentially "teaches" the algorithm how to learn by using tons of data.
 
-“Linear Algebra” means, roughly, “line-like relationships”. Let’s clarify a bit.
+Following the end of the “training”, new input data is then fed into the algorithm and the algorithm uses the previously developed model to make predictions.
 
-Straight lines are predictable. Imagine a rooftop: move forward 3 horizontal feet (relative to the ground) and you might rise 1 foot in elevation (The slope! Rise/run = 1/3). Move forward 6 feet, and you’d expect a rise of 2 feet. Contrast this with climbing a dome: each horizontal foot forward raises you a different amount.
+The algorithm is trained several times until it reaches a desired outcome. This enables the Machine Learning algorithms to continually learn on their own. This produces optimal answers and increasing accuracy and predictions over time.
 
-Lines are nice and predictable:
+Here's a helpful [overview of Machine Learning basics for developers](https://www.freecodecamp.org/news/machine-learning-basics-for-developers/) to get you started.
 
-- If 3 feet forward has a 1-foot rise, then going 10x as far should give a 10x rise (30 feet forward is a 10-foot rise)
-- If 3 feet forward has a 1-foot rise, and 6 feet has a 2-foot rise, then (3 + 6) feet should have a (1 + 2) foot rise
+## Types Of Machine Learning
 
-In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
+There are three types of Machine Learning, which include:
 
-In our example, $F(x)$ calculates the rise when moving forward x feet, and the properties hold:
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
 
-## Linear Operations
+Let's look at each one briefly.
 
-An operation is a calculation based on some inputs. Which operations are linear and predictable? Multiplication, it seems.
+### What is Supervised Learning?
 
-Exponents ($F(x) = x^2$) aren’t predictable: $10^2$ is 100, but $20^2$ is 400. We doubled the input but quadrupled the output.
+Supervised Learning is the most common type of Machine Learning. It involves training the algorithm with a “labelled” dataset. The labelled training data helps the Machine Learning algorithm make accurate predictions in the future.
 
-Surprisingly, regular addition isn’t linear either. Consider the “add three” function $F(x) = x + 3$:
+A practical example of supervised learning is training a Machine Learning algorithm with pictures of an apple. After that training, the algorithm is able to identify and retain this information and is able to give accurate predictions of an apple in the future. That is, it will typically be able to correctly identify if an image is of an apple.
 
-We doubled the input and did not double the output. (Yes, $F(x) = x + 3$ happens to be the equation for an _offset_ line, but it’s still not “linear” because $F(10) \\neq 10 \\cdot F(1)$. Fun.)
+### What is Unsupervised Learning?
 
-So, what types of functions are _actually_ linear? Plain-old scaling by a constant, or functions that look like: $F(x) = ax$. In our roof example, $a = 1/3$.
-
-But life isn’t _too_ boring. We can still combine multiple linear functions ($A(x) = ax, B(x) = bx, C(x)=cx$) into a larger one, $G$:
-
-$G$ is still linear, since doubling the input continues to double the output:
-
-We have “mini arithmetic”: multiply inputs by a constant, and add the results. It’s actually usefu... [Content truncated for context window]
+In Unsupervised Learning, the training data is **NOT** labelled or named. The unlabeled data are used in training the Machine Learning algorith... [Content truncated for context window]
 
 
 ---
@@ -153,7 +163,7 @@ We have “mini arithmetic”: multiply inputs by a constant, and add the result
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 3 Knowledge Nodes for: Linear Algebra**
+**Agent 3 Knowledge Nodes for: Machine Learning Basics**
 
 1. [Node Name]
 2. [Node Name]

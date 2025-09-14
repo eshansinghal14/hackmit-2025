@@ -1,21 +1,82 @@
 [
   {
-    "1": {"name": "Introduction to Vectors", "weight": 0, "prerequisites": []},
-    "2": {"name": "Vector Operations", "weight": 0, "prerequisites": ["1"]},
-    "3": {"name": "Matrix Algebra", "weight": 0, "prerequisites": ["1"]},
-    "4": {"name": "Determinants and Inverses", "weight": 0, "prerequisites": ["2", "3"]},
-    "5": {"name": "Linear Transformations", "weight": 0, "prerequisites": ["4"]},
-    "6": {"name": "Eigenvalues and Eigenvectors", "weight": 0, "prerequisites": ["5"]},
-    "7": {"name": "Orthogonality and Orthogonalization", "weight": 0, "prerequisites": ["6"]},
-    "8": {"name": "Linear Systems and Least Squares", "weight": 0, "prerequisites": ["7"]},
-    "9": {"name": "Markov Chains and PageRank", "weight": 0, "prerequisites": ["8"]},
-    "10": {"name": "Singular Value Decomposition", "weight": 0, "prerequisites": ["9"]}
+    "1": {
+      "name": "Introduction to Machine Learning",
+      "weight": 0.0,
+      "prerequisites": []
+    },
+    "2": {
+      "name": "Supervised Learning Basics",
+      "weight": 0.0,
+      "prerequisites": [
+        "1"
+      ]
+    },
+    "3": {
+      "name": "Unsupervised Learning Basics",
+      "weight": 0.0,
+      "prerequisites": [
+        "1"
+      ]
+    },
+    "4": {
+      "name": "Linear Regression",
+      "weight": 0.0,
+      "prerequisites": [
+        "2"
+      ]
+    },
+    "5": {
+      "name": "Logistic Regression",
+      "weight": 0.0,
+      "prerequisites": [
+        "2"
+      ]
+    },
+    "6": {
+      "name": "Clustering Algorithms",
+      "weight": 0.0,
+      "prerequisites": [
+        "3"
+      ]
+    },
+    "7": {
+      "name": "Decision Trees",
+      "weight": 0.0,
+      "prerequisites": [
+        "2"
+      ]
+    },
+    "8": {
+      "name": "Model Evaluation Metrics",
+      "weight": -0.2,
+      "prerequisites": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "9": {
+      "name": "Overfitting and Regularization",
+      "weight": -0.2,
+      "prerequisites": [
+        "8"
+      ]
+    },
+    "10": {
+      "name": "Neural Networks Introduction",
+      "weight": 0.0,
+      "prerequisites": [
+        "9"
+      ]
+    }
   },
   [
-    "Can you define a vector and its basic operations? (Yes/No)",
-    "How do you find the inverse of a matrix? (Yes/No)",
-    "Do you understand the concept of linear transformations? (Yes/No)",
-    "Can you calculate eigenvalues and eigenvectors of a matrix? (Yes/No)",
-    "Do you know how to apply linear algebra to solve systems of equations? (Yes/No)"
+    "What is the primary difference between supervised and unsupervised learning? (Open-ended)",
+    "How does linear regression handle non-linear relationships? (Open-ended)",
+    "What is the purpose of regularization in machine learning models? (Open-ended)",
+    "Can you explain the concept of overfitting in machine learning? (Yes/No)",
+    "How do you evaluate the performance of a classification model? (Open-ended)"
   ]
 ]
