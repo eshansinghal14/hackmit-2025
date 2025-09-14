@@ -1,9 +1,9 @@
-You are Agent 3 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 3 of 5, a specialized research expert analyzing "Data Structures". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 3 Research Context
 
 ## Assignment
-You are Agent 3 of 5 specialized research agents analyzing: "Python Programming"
+You are Agent 3 of 5 specialized research agents analyzing: "Data Structures"
 
 ## Your Data Subset
 - Agent ID: 3/5
@@ -13,715 +13,399 @@ You are Agent 3 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Research Sources
 
-### Source 21: Learn Python Programming Language
+### Source 21: Data Structures Basics
 
 **Content:**
-- [Python Programming](https://www.codesansar.com/python-programming)
-- [C Programming](https://www.codesansar.com/c-programming)
-- [Numerical Methods](https://www.codesansar.com/numerical-methods)
-- [Dart Language](https://www.codesansar.com/dart)
-- [Computer Basics](https://www.codesansar.com/computer-basics)
-- [Flutter](https://www.codesansar.com/flutter)
-- [Linux](https://www.codesansar.com/linux)
-- [Deep Learning](https://www.codesansar.com/deep-learning)
+![Data Structures & Algorithms Tutorial](https://www.tutorialspoint.com/data_structures_algorithms/images/data-structure-mini-logo.jpg)
 
-- [Python Programming](https://www.codesansar.com/python-programming)
-- [C Programming](https://www.codesansar.com/c-programming)
-- [Numerical Methods](https://www.codesansar.com/numerical-methods)
-- [Dart Language](https://www.codesansar.com/dart)
-- [Computer Basics](https://www.codesansar.com/computer-basics)
-- [Flutter](https://www.codesansar.com/flutter)
-- [Linux](https://www.codesansar.com/linux)
-- [Deep Learning](https://www.codesansar.com/deep-learning)
-
-- [C Programming Examples](https://www.codesansar.com/c-programming-examples)
-- [Python Programming Examples](https://www.codesansar.com/python-programming-examples)
-
-- [C Programming Examples](https://www.codesansar.com/c-programming-examples)
-- [Python Programming Examples](https://www.codesansar.com/python-programming-examples)
-
-# Learn Python Programming Language
-
-TOC ☵
-
-- [Python Basic](https://www.codesansar.com/python-programming#basic)
-- [Python Opeartors](https://www.codesansar.com/python-programming#operators)
-- [Python Loops](https://www.codesansar.com/python-programming#loop)
-- [Python Function](https://www.codesansar.com/python-programming#function)
-- [Python String](https://www.codesansar.com/python-programming#string)
-- [Python Files](https://www.codesansar.com/python-programming#files)
-- [Python Closures](https://www.codesansar.com/python-programming#closures)
-- [Interview Question](https://www.codesansar.com/python-programming#interview)
-
-Coding has become the **new literacy for 21st century**. Everyone in the 21st century will have to **learn to code**.
-
-**So, what is coding?** Coding is basically writing instructions which can be understood by computers to accomplish certain task. Task can be anything like generating prime numbers, sending email to all employee in the organization whose email addresses are stored in excel sheet, detecting human face in given image to auto tagging person in Facebook post by recognizing face from uploaded photo.
-
-Learning to code **increases your productivity and it is still a fun creative skill**. To code, we need to know programming languages. Programming languages are basic building block for creating software.
-
-Programming languages allow us to write code (instructions) which can be processed or understood by computer.
-
-This course uses the python programming language. Python programming language is the best **first language** to learn because it has **simple elegant syntax and gentle learning curve** (you can write and understand python code quickly and easily).
-
-Many universit... [Content truncated for context window]
+- Data Structures & Algorithms
+- [DSA - Home](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
+- [DSA - Overview](https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm)
+- [DSA - Environment Setup](https://www.tutorialspoint.com/data_structures_algorithms/data_structure_environment.htm)
+- [DSA - Algorithms Basics](https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm)
+- [DSA - Asymptotic Analysis](https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.htm)
+- Data Structures
+- [DSA - Data Structure Basics](https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm)
+- [DSA - Data Structures and Types](https://www.tutorialspoint.com/data_structures_algorithms/data_structures_and_types.htm)
+- [DSA - Array Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm)
+- Linked Lists
+- [DSA - Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+- [DSA - Doubly Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_algorithm.htm)
+- [DSA - Circular Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/circular_linked_list_algorithm.htm)
+- Stack & Queue
+- [DSA - Stack Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+- [DSA - Expression Parsing](https://www.tutorialspoint.com/data_structures_algorithms/expression_parsing.htm)
+- [DSA - Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
+- Searching Algorithms
+- [DSA - Searching Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/searching_algorithms.htm)
+- [DSA - Linear Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm)
+- [DSA - Binary Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm)
+- [DSA - Interpolation Search](https://www.tutorialspoint.com/data_structures_algorithms/interpolation_search_algorithm.htm)
+- [DSA - Jump Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/jump_search_algorithm.htm)
+- [DSA - Exponential Search](https://www.tutorialspoint.com/data_structures_algorithms/exponential_search.htm)
+- [DSA - Fibonacci Search](https://www.tutorialspoint.com/data_structures_algorithms/fibonacci_search.htm)
+- [DSA - Sublist Search](https://www.tutorialspoint.com/data_structures_algorithms/sublist_search.htm)
+- [DSA - Hash Table](https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm)
+- Sorting Algorithms
+- [DSA - Sorting Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorith... [Content truncated for context window]
 
 
 ---
 
-### Source 22: Python Tutorials for Beginners (Ultimate Guide)
+### Source 22: Data Structure Tutorial a complete guide
 
 **Content:**
-# Python Tutorial For Beginners
+![Data Structure](https://www.techgeekbuzz.com/media/tutorial_image/ds.png)
 
-[❮ Home](https://www.tutorialstonight.com/) [Next ❯](https://www.tutorialstonight.com/python/python-versions)
+# Learn Data Structure
+
+A data structure is a format to store and organize data in computer systems for efficient and quick access to data. Besides storing and organizing, a data structure helps to manipulate and process data.
+
+Every programmer should have a solid understanding of data structures. While developing any application, choosing a proper data structure is essential. This tutorial walks you through types of data structures. You will get familiar with different algorithms and their implementation in C, C++, Java, and Python.
+
+Tutorial
+
+## Data Structure Basic
+
+[Data Structure Basic -> What is Data Structure?](https://www.techgeekbuzz.com/tutorial/data-structure/what-is-data-structure/) [Data Structure Basic -> Types of Data Structure](https://www.techgeekbuzz.com/tutorial/data-structure/types-of-data-structure/)
+
+## Data Structure Algorithm
+
+[Data Structure Algorithm -> Algorithms Basics](https://www.techgeekbuzz.com/tutorial/data-structure/algorithms-basics/) [Data Structure Algorithm -> Asymptotic Analysis](https://www.techgeekbuzz.com/tutorial/data-structure/asymptotic-analysis/) [Data Structure Algorithm -> DSA - Greedy Algorithms](https://www.techgeekbuzz.com/tutorial/data-structure/dsa-greedy-algorithms/) [Data Structure Algorithm -> DSA - Divide and Conquer](https://www.techgeekbuzz.com/tutorial/data-structure/dsa-divide-and-conquer/) [Data Structure Algorithm -> DSA - Dynamic Programming](https://www.techgeekbuzz.com/tutorial/data-structure/dsa-dynamic-programming/)
+
+## Data Structure Array and Linked Lists
+
+[Data Structure Array and Linked Lists -> What are Arrays?](https://www.techgeekbuzz.com/tutorial/data-structure/what-are-arrays/) [Data Structure Array and Linked Lists -> Linked List](https://www.techgeekbuzz.com/tutorial/data-structure/linked-list/) [Data Structure Array and Linked Lists -> Doubly Linked List](https://www.techgeekbuzz.com/tutorial/data-structure/doubly-linked-list/) [Data Structure Array and Linked Lists -> Circular Linked List](https://www.techgeekbuzz.com/tutorial/data-structure/circular-linked-list/)
+
+## Data Structure Stack & Queue
+
+[Data Structure Stack & Queue -> What is Stack in Data Structures?](https://www.techgeekbuzz.com/tutorial/data-structure/what-is-stack/) [Data Structure Stack & Queue -> Queue Data Structure](https://www.techgeekbuzz.com/tutorial/data-structure/queue-data-structure/)
+
+## Data Structure Searching Techniques
+
+[Data Structure Searching Techniques -> Linear Search in Python and C++](https://www.techgeekbuzz.com/tutorial/data-structure/linear-search-in-python-and-cpp/) [Data Structure Searching Techniques -> Binary Search in C](https://www.techgeekbuzz.com/tutorial/data-structure/binary-search-in-c/) [Data Structure Searching Techniques -> Data Structure & Algorithm: Interpolation Search](https://www.techgeekbuzz.com/tutorial/data-structure/data-structure-algorithm-interpolation-search/) [Data Structure... [Content truncated for context window]
+
+
+---
+
+### Source 23: Data Structure Types, Classifications and Applications
+
+**Content:**
+- [DSA Tutorial](https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/)
+- [Data Structures](https://www.geeksforgeeks.org/data-structures/)
+- [Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+- [Array](https://www.geeksforgeeks.org/complete-guide-to-arrays-data-structure/)
+- [Strings](https://www.geeksforgeeks.org/complete-guide-to-string-data-structure/)
+- [Linked List](https://www.geeksforgeeks.org/linked-list-data-structure/)
+- [Stack](https://www.geeksforgeeks.org/stack-data-structure/)
+- [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+- [Tree](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
+- [Graph](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+- [Searching](https://www.geeksforgeeks.org/searching-algorithms/)
+- [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/)
+- [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-2/)
+- [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
+- [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+- [Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+- [Heap](https://www.geeksforgeeks.org/heap-data-structure/)
+- [Hashing](https://www.geeksforgeeks.org/hashing-data-structure/)
+- [Divide & Conquer](https://www.geeksforgeeks.org/divide-and-conquer/)
+- [Mathematical](https://www.geeksforgeeks.org/mathematical-algorithms/)
+- [Geometric](https://www.geeksforgeeks.org/geometric-algorithms/)
+- [Bitwise](https://www.geeksforgeeks.org/bitwise-algorithms/)
+- [Greedy](https://www.geeksforgeeks.org/greedy-algorithms/)
+- [Backtracking](https://www.geeksforgeeks.org/backtracking-algorithms/)
+- [Branch and Bound](https://www.geeksforgeeks.org/branch-and-bound-algorithm/)
+- [Matrix](https://www.geeksforgeeks.org/matrix/)
+- [Pattern Searching](https://www.geeksforgeeks.org/pattern-searching/)
+- [Randomized](https://www.geeksforgeeks.org/randomized-algorithms/)
+
+Sign In
+
+▲
+
+[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/?type%3Darticle%26id%3D809602&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+
+# Data Structure Types, Classifications and Applications
+
+Last Updated : 23 Jul, 2025
+
+Comments
+
+Improve
+
+Suggest changes
+
+Like Article
+
+Like
+
+Report
+
+A **data structure** is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+
+A data structure organizes, processes, retrieves, and stores data, making it essential for nearly every program or software system. To help you master them, we've compiled a comprehensive guide covering types, classifications, and applications of data structures. This article simplifies everything, helping you choose the right one in minutes.
+
+Table o... [Content truncated for context window]
+
+
+---
+
+### Source 24: Open Data Structures (in pseudocode)
+
+**Content:**
+![\includegraphics[scale=0.90909]{images/tree3-thick}](https://opendatastructures.org/ods-python/img42.png)
+
+# Open Data Structures (in pseudocode)
+
+**Pat Morin**
+
+**Date:** Edition 0.1G![$ \beta$](https://opendatastructures.org/ods-python/img40.png)
 
 * * *
 
-## Python Tutorial
+* * *
 
-Welcome! to the Python tutorial.
-
-If you are new to programming or an intermediate programmer and want to learn the new generation language **Python** then start now right here.
-
-We will cover topics of python in every detail and yet very easy to understand. We believe in learning with examples so you will see lots of examples with pictures which clears your concept very easily.
-
-We also have an FAQ at the end of each topic for you in any doubt.
+- [Contents](https://opendatastructures.org/ods-python/Contents.html)
+- [Acknowledgments](https://opendatastructures.org/ods-python/Acknowledgments.html)
+- [Why This Book?](https://opendatastructures.org/ods-python/Why_This_Book.html)
+- [1. Introduction](https://opendatastructures.org/ods-python/1_Introduction.html)
+- [2. Array-Based Lists](https://opendatastructures.org/ods-python/2_Array_Based_Lists.html)
+- [3. Linked Lists](https://opendatastructures.org/ods-python/3_Linked_Lists.html)
+- [4. Skiplists](https://opendatastructures.org/ods-python/4_Skiplists.html)
+- [5. Hash Tables](https://opendatastructures.org/ods-python/5_Hash_Tables.html)
+- [6. Binary Trees](https://opendatastructures.org/ods-python/6_Binary_Trees.html)
+- [7. Random Binary Search Trees](https://opendatastructures.org/ods-python/7_Random_Binary_Search_Tree.html)
+- [8. Scapegoat Trees](https://opendatastructures.org/ods-python/8_Scapegoat_Trees.html)
+- [9. Red-Black Trees](https://opendatastructures.org/ods-python/9_Red_Black_Trees.html)
+- [10. Heaps](https://opendatastructures.org/ods-python/10_Heaps.html)
+- [11. Sorting Algorithms](https://opendatastructures.org/ods-python/11_Sorting_Algorithms.html)
+- [12. Graphs](https://opendatastructures.org/ods-python/12_Graphs.html)
+- [13. Data Structures for Integers](https://opendatastructures.org/ods-python/13_Data_Structures_Integers.html)
+- [14. External Memory Searching](https://opendatastructures.org/ods-python/14_External_Memory_Searchin.html)
+- [Bibliography](https://opendatastructures.org/ods-python/Bibliography.html)
+- [Index](https://opendatastructures.org/ods-python/Index.html)
+- [About this document ...](https://opendatastructures.org/ods-python/About_this_document.html)
 
 * * *
 
-## What is Python?
-
-**Python is a widely used high-level programming language**. It is often compared to Tcl, Perl, Scheme, or Java. However, Python is much more flexible, powerful, and readable than these other systems.
-
-Python is so versatile that it can be used to write a simple computer program to create a complex AI algorithm.
-
-Python is a programming language that lets you work more quickly and **integrate your systems** more effectively. You can use Python as your base language for your own applications, either interactively in a text editor or non-interactively as a scripting language.
-
-![python tutorial](https://www.tutorialstonight.com/assets/python/python-tutorial.webp)
-
-Python is an **interpreted language**. This means that Python is read as a sequence of characters, and the interpreter does the work of translating the characters into the appropriate actions. This allows Python to be a very powerful language, but also means that Python is not a compiled language. Compiled languages are typically compiled to machine code, which is faster and more efficient than source code.
-
-Python is a **free and open-source language**.
-
-Python is **multi-platform**.
-
-Python is **cross-platform**.
-
-Python support multiple [programming paradigms](https://www.tutorialstonight.com/programming-paradigm) like Object Oriented, Procedure Functional, etc.
-
-Python is the most useful programming language of the current era. It was created by **Guido Van Rossum** and was released in the year 1991.
-
-Python is a **dynamic programming language** and has an **automatic memory management system**, which means it requires less rigid coding and hence is a beginner-friendly language.
-
-The motive of python language is to let programmers and developers focus on creating logic rather than worrying about syntax memory management.
-
-Python is very **rich in its standard libraries** it is also called to be "batteries included" because of this.
-
-### Python Example Codes
-
-The python code syntax is very easy to read, write and understand.
-
-python codes are so easy that you can understand code very much just by reading it.
-
-To print something on the screen you just have to use the `print` method in python.
-
-```
-print("Hello World!")
-```
-
-Output:
-
-```
-Hello World!
-```
-
-Similarly repeating a task by creating a loop in python is also easy and readable.
-
-```
-for i in ... [Content truncated for context window]
+[opendatastructures.org](http://opendatastructures.org/)
 
 
 ---
 
-### Source 23: Python - Introduction | Introduction to Software Systems
+### Source 25: Introduction to Basic and Advanced Data Structures and Algorithms
 
 **Content:**
-Python is a high-level, general-purpose programming language that has gained immense popularity since its creation by Guido van Rossum in the late 1980s and its official release in 1991. Known for its simplicity and readability, Python is designed to emphasize code clarity, making it an excellent choice for both beginners and experienced programmers alike.
+- [Home](https://cs-fundamentals.com)
+- [C Programming](https://cs-fundamentals.com/c-programming/c-programming-tutorials)
+- [Java Programming](https://cs-fundamentals.com/java-programming/java-programming-tutorials)
+- [Data Structures](https://cs-fundamentals.com/data-structures/data-structures-tutorials)
+- [Web Development](https://cs-fundamentals.com/web-development/web-development-tutorials)
+- [Tech Interview](https://cs-fundamentals.com/tech-interview/tech-interview-questions)
 
-### **Key Features of Python**
+# **Introduction to Basic Data Structures and Algorithms**
 
-- **Readability**: Python's syntax closely resembles English, which makes it easier to understand and write code. This focus on readability allows developers to express concepts in fewer lines of code compared to other programming languages.
+- [Introduction to Basic Data Structures and Algorithms](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#introduction-to-dsa)
+- [Classification of Data Structures](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#dsa-classification)
+ - [Arrays](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#arrays-dsa)
+ - [Linked List](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#linked-list-dsa)
+ - [Stack](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#stack-dsa)
+ - [Queue](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#queue-dsa)
+ - [Tree](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#trees-dsa)
+ - [Heap](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#heap-dsa)
+ - [Dictionary](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#dictionary-dsa)
+ - [Hash Table](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#hash-table-dsa)
+ - [Graph](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#graph-dsa)
+- [References](https://cs-fundamentals.com/data-structures/introduction-to-data-structures#references)
 
-- **Versatility**: Python is a multi-paradigm language that supports procedural, object-oriented, and functional programming styles. This flexibility enables developers to choose the approach that best suits their project needs.
+## **Introduction to Basic Data Structures and Algorithms**
 
-- **Interpreted Language**: As an interpreted language, Python executes code line by line, which simplifies debugging and allows for rapid prototyping. This feature is particularly beneficial for beginners who are learning programming concepts.
+Before introducing data structures we should understand that computers do store, retrieve, and process a large amount of data. If the data is stored in well organized way on storage media and in computer's memory then it can be accessed quickly for processing that further reduces the latency and the user is provided fast response.
 
-- **Extensive Libraries**: Python comes with a comprehensive standard library that supports various tasks, from web development to data analysis and machine learning. There are also numerous third-party libraries available that extend its functionality even further.
-
-- **Cross-Platform Compatibility**: Python can run on various operating systems, including Windows, macOS, and Linux, making it highly portable.
-
-
-### **Applications of Python**
-
-Python's versatility allows it to be used in a wide range of applications:
-
-- **Web Development**: Frameworks like Django and Flask enable developers to build robust web applications efficiently.
-
-- **Data Science and Machine Learning**: Libraries such as Pandas, NumPy, and TensorFlow make Python a popular choice for data analysis and machine learning projects.
-
-- **Automation and Scripting**: Python is often used for automating repetitive tasks and system scripting due to its ease of use.
-
-- **Game Development**: Tools like Pygame allow developers to create games using Python.
-
-- **Scientific Computing**: Python is widely used in scientific research for simulations and complex calculations due to libraries like SciPy.
-
-
-### **Getting Started with Python**
-
-To begin programming in Python, you can download the latest version from the official Python website. You can write Python code using a simple text editor or an Integrated Development Environment (IDE) like PyCharm or Visual Studio Code. Here’s a basic example of a Python program:
-
-Copy
-
-```
-print("Hello, World!")
-```
-
-This simple program outputs "Hello, World!" to the console, demonstrating how easy it is to get started with Python.
-
-### Installation
-
-- Download Python from here - [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-- Beginners Guide for Python - [https://wiki.python.org/moin/BeginnersGuide/Download](https://wiki.python.org/moin/... [Content truncated for context window]
+Data structure introduction refers to a scheme for organizing data, or in other words a data structure is an arrangement of data in computer's memory in such a way that it could make the data quickly available to the processor for required calculations. A data structure should be seen as a logical concept that must address two fundamental concerns. First, how the data will be stored, and second, what operations will be performed on it? As data structure is a scheme for data organization so the functional definition of a data structure should be independent of its implementation. The functional definition of a data structure is known as ADT (Abstract Data Type) which is independent of implementation. The implementation part is left on develope... [Content truncated for context window]
 
 
 ---
 
-### Source 24: Python Overview
+### Source 26: Data structure
 
 **Content:**
-# Python Overview
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
 
-## Python Programming Tutorials
+From Wikipedia, the free encyclopedia
 
-Overview of PythonPython FundamentalsControl StatementsArrays and StringsFunctionsLists and TuplesClasses and ObjectsExceptionsFiles HandlingPython Advanced
+Particular way of storing and organizing data in a computer
 
-Python is an advanced, interpreted programming language known for its readability and simplicity. It supports various programming paradigms, such as procedural, object-oriented, and functional. Python's wide range of applications, from web development and app creation to data analytics and artificial intelligence, underscore its usefulness. Its robust assortment of libraries and frameworks contributes to its popularity among novices and professionals.
+Not to be confused with [Data type](https://en.wikipedia.org/wiki/Data_type) or [Data model](https://en.wikipedia.org/wiki/Data_model).
 
-Python is a programming language that includes features of C and Java. It provides the style of writing elegant code like C, and for object-oriented programming, it offers classes and objects like Java.
+A data structure known as a [hash table](https://en.wikipedia.org/wiki/Hash_table).
 
-In Python, the program to add two numbers will be as follows:
+In [computer science](https://en.wikipedia.org/wiki/Computer_science), a **data structure** is a [data](https://en.wikipedia.org/wiki/Data) organization and storage format that is usually chosen for [efficient](https://en.wikipedia.org/wiki/Efficiency) [access](https://en.wikipedia.org/wiki/Data_access) to data.[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3) More precisely, a data structure is a collection of data values, the relationships among them, and the [functions](https://en.wikipedia.org/wiki/Function_(computer_programming)) or [operations](https://en.wikipedia.org/wiki/Operator_(computer_programming)) that can be applied to the data,[\[4\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-4) i.e., it is an [algebraic structure](https://en.wikipedia.org/wiki/Algebraic_structure) about [data](https://en.wikipedia.org/wiki/Data).
 
-Example:
+## Usage
 
-```
-#program to add two numbers in python
-a = b = 20 #declare two variables and store 20 in them
-print (a+b) #final output
-```
+\[ [edit](https://en.wikipedia.org/w/index.php?title=Data_structure&action=edit&section=1)\]
 
-Output:
+Data structures serve as the basis for [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) (ADT). The ADT defines the logical form of the data type. The data structure implements the physical form of the [data type](https://en.wikipedia.org/wiki/Data_type).[\[5\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-5)
 
-```
-40
-```
+Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example, [relational databases](https://en.wikipedia.org/wiki/Relational_database) commonly use [B-tree](https://en.wikipedia.org/wiki/B-tree) indexes for data retrieval,[\[6\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-6) while [compiler](https://en.wikipedia.org/wiki/Compiler) [implementations](https://en.wikipedia.org/wiki/Implementation) usually use [hash tables](https://en.wikipedia.org/wiki/Hash_table) to look up [identifiers](https://en.wikipedia.org/wiki/Identifier_(computer_languages)).[\[7\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-7)
 
-## Some Facts About Python
-
-- At the National Research Institute for **Mathematics and Computer Science in the Netherlands**, **Guido van Rossum** created Python in the **late 1980s** as an alternative to the ABC language that could handle exceptions and interfaces.
-- Python is derived from programming languages such as ABC, Modula 3, small talk, and Algol-68.
-- Van Rossum picked the name Python for the new language from a TV show, Monty Python's Flying Circus.
-- A Python page is a file with a **.py** extension that can contain a combination of HTML tags and Python scripts.
-- In December 1989, Creator first developed the Python interpreter as a hobby, and then on October 16, 2000, Python 2.0 was released with many new features.
-- Python 3.0 was released on **December 3, 2008**, with more testing and new features.
-- Python is an open-source scripting language.
-- Python is open-source, meaning anyone can download it freely from **www.Python.org** and use it to develop programs. Its source code can be accessed and modified as required in the project.
-- Python is one of the official languages used by the tech giant Google.
-
-## Python Why? Characteristics and Features of Python
-
-Python is gaining popularity in the programming community; there are many reasons behind this.
-
-- **Interpreted Language:** Python is processed at runtime by Python Interpreter.
-- **Object-Oriented Language:** It supports object-oriented features and techniques of programming.
-- **Interactive Programming Language:** Users can directly interact with the Python interpreter to write programs.
-- **Easy language:** Python is simple to learn, particularly for newcomers.
-- **Straightforward Syntax:** The formation of Python syntax is simple, making it popular.
-- **Easy to read:** Python source code is clearly defined and visible.
-- **Portable:** Python codes can be run on various hardware platforms with the same... [Content truncated for context window]
+Data structures provide a means to manage large amounts of data efficiently for uses such as large [databases](https://en.wikipedia.org/wiki/Database) and internet indexing services. Usually, efficient data structures are key to designing efficient [algorithms](https://en.wikipedia.org/wiki/Algorithm). Some formal design methods and [programming languages](https://en.wikipedia.org/wiki/Programming_language) emphasize data structures, rather than algorit... [Content truncated for context window]
 
 
 ---
 
-### Source 25: Python Full Course Online - Complete Beginner to Advanced
+### Source 27: What is a Data Structure? | IBM
 
 **Content:**
-- Courses
+# What is a data structure?
 
-- Placement
+[Analytics](https://www.ibm.com/think/analytics) [DevOps](https://www.ibm.com/think/devops) [Storage](https://www.ibm.com/think/storage)
 
-- Data Science
+04 November 2024
 
-IBM
+Link copied
 
+## Authors
 
-## Our website uses cookies
+Gregg Lindemulder
 
-We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our [Cookie Policy](https://www.geeksforgeeks.org/legal/privacy-policy/#:~:text=the%20appropriate%20measures.-,COOKIE%20POLICY,-A%20cookie%20is) & [Privacy Policy](https://www.geeksforgeeks.org/privacy-policy/)
+[Matthew Kosinski](https://www.ibm.com/think/author/matthew-kosinski)
 
-Got it!
+Enterprise Technology Writer
 
-1. [All Courses](https://www.geeksforgeeks.org/courses)
-2. [Self-Paced](https://www.geeksforgeeks.org/courses/category/all?courseType=online&courseFeeType=all&itm_source=geeksforgeeks&itm_medium=course_landingpage&itm_campaign=courses)
+## What is a data structure?
 
-# Python Full Course Online - Complete Beginner to Advanced
+A data structure is a way of formatting data so that it can be used by a computer program or other system. Data structures are a fundamental component of computer science because they give form to abstract [data](https://www.ibm.com/think/topics/data) points. In this way, they allow users and systems to efficiently organize, work with and store data.
 
-Self-Paced Course
+Data structures combine primitive data types such as numbers, characters, booleans and integers into a cohesive format. Alone, each of these primitive data types possesses only a single value. When they are combined in a data structure, they enable higher-level data operations such as sorting, searching, insertion and deletion.
 
-400k+ interested Geeks
+For example, consider a sales team that wants to track daily sales figures. Instead of logging each data point separately, the team could store this data in a type of data structure called an "array." (For more information, see "Types of data structures").
 
-Learn Python Programming from scratch with our beginner-friendly **complete Python course**! Learn Python key concepts like Python basics, Variables, Data types, Input/output, Operators, OOP concepts, and more. Gain hands-on experience with practical exercises to build a solid foundation in Python programming. **Enrol now to learn and master Python!**
+In Python, the array might look like this:
 
-Beginner and Intermediate6 Weeks
-400k+ interested Geeks
+**daily\_sales** = \[500, 800, 600, 1200, 950\]
 
-Comprehensive LearningBeginner FriendlyCourse CertificateAssessment Tests
+Using an array enables the team to keep all this data together, easily retrieve data points when needed and perform functions on both individual elements and the whole array.
 
-## Course Overview
+Computer programmers rely on data structures to build effective applications. In the fields of computer science and [data science](https://www.ibm.com/think/topics/data-science?), data structures are essential to operating systems, [databases](https://www.ibm.com/think/topics/database), websites, graphics, [analytics](https://www.ibm.com/think/topics/big-data-analytics?), [blockchain](https://www.ibm.com/think/topics/blockchain?), [machine learning (ML)](https://www.ibm.com/think/topics/machine-learning?) applications and more.
 
-## Python Course Online - Overview
+Because data structures are fundamental to writing effective code, they are often among the first lessons taught to beginners of programming. They are also a common topic of interview questions for computer programming job candidates.
 
-This **online Python course** is designed to take you from a beginner to an advanced level in Python programming. It covers all the essential Python concepts, including basic syntax, data types, variables, and operators, as well as more advanced Python topics such as functions, modules, and file handling.
+### The latest AI News + Insights
 
-You will learn to work with data structures like lists, tuples, sets, and dictionaries, and understand the principles of object-oriented programming (OOPs) with classes and objects.
+Discover expertly curated insights and news on AI, cloud and more in the weekly Think Newsletter.
 
-Along with this, the Python programming full course has hands-on projects and coding challenges, that will help you to gain practical experience and develop problem-solving skills. Whether you're looking to start a career in software development, data science, or automation, this **complete Python course** provides a comprehensive foundation in Python, preparing you for various job opportunities in the tech industry.
+[Subscribe today](https://www.ibm.com/account/reg/signup?formid=news-urx-52954)
 
-## GFG Python Programming Course - Highlights
+## Why are data structures important?
 
-- Curated by CEO Mr. Sandeep Jain and industry experts.
-- 10+ hours of recorded content
-- 50+ Practice Problems
-- 100+ questions including output-based programs
-- Learn Functions, Loops, Strings, and Lists efficiently.
-- Gain command over Object Oriented Programming
-- Suitable for both new programmers and experienced coders.
-- Practice Python programming examples for skill development.
-- Strengthen Python foundations before advancing to DSA using Python.
-- Explore Complete Machine Learning & Data Science Program
+Data structures are important because they make it easier for computers to process large, complex sets of information. By logically organizing data elements, data structures increase the efficiency of computer code and make the code simpler to understand.
 
-Read more
+### Data structures and algorithms (DSA)
 
-## Course Content
-
-01Python Basics
-
-- ### Background Part 1 (IO Devices, CPU and Memory)
-
-- ### Background Part 2 (Computer Organization)
-
-- ### Why Do We Need Programming Languages
-... [Content truncated for context window]
+Programmers use data structures to improve the speed and strength of algorithms, which are sets of instr... [Content truncated for context window]
 
 
 ---
 
-### Source 26: Google's Python Class | Python Education
+### Source 28: Introduction to Data Structures - Data Structures Handbook
 
 **Content:**
-[Skip to main content](https://developers.google.com/developers.google.com#main-content)
+﻿
 
-- [for Education](https://developers.google.com/edu)
-- [Python](https://developers.google.com/edu/python)
+[Skip to content](https://www.thedshandbook.com/www.thedshandbook.com#content)
 
-`/`
+A data structure is a model where data is organized, managed and stored in a format that enables efficient access and modification of data. There are various types of data structures commonly available. It is up to the programmer to choose which data structure to use depending on the data.
 
-- English
-- Deutsch
-- Español
-- Español – América Latina
-- Français
-- Indonesia
-- Italiano
-- Polski
-- Português – Brasil
-- Tiếng Việt
-- Türkçe
-- Русский
-- עברית
-- العربيّة
-- فارسی
-- हिंदी
-- বাংলা
-- ภาษาไทย
-- 中文 – 简体
-- 中文 – 繁體
-- 日本語
-- 한국어
+The choice of a particular one can be considered based on the following points:
 
-Sign in
+1. It must be able to process the data efficiently when necessary.
+2. It must be able to represent the inherent relationship of the data in the real world.
 
-- [Home](https://developers.google.com/)
-- [Products](https://developers.google.com/products)
-- [Google for Education](https://developers.google.com/edu)
-- [Python](https://developers.google.com/edu/python)
+## Why study Data Structures?
 
-# Google's Python Class Stay organized with collections Save and categorize content based on your preferences.
+> “Bad programmers worry about the code. Good programmers worry about data structures and their relationships.”
+>
+> Linus Torvalds
 
-Welcome to Google's Python Class -- this is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding. These materials are used within Google to introduce Python to people who have just a little programming experience. The first exercises work on basic Python concepts like strings and lists, building up to the later exercises which are full programs dealing with text files, processes, and http connections. The class is geared for people who have a little bit of programming experience in some language, enough to know what a "variable" or "if statement" is. Beyond that, you do not need to be an expert programmer to use this material.
+Time and energy are both required to process any instruction. Every CPU cycle that is saved will have an effect on both the time and energy consumed and can be put to better use in processing other instructions.
 
-To get started, the Python sections are linked at the left -- [Python Set Up](https://developers.google.com/edu/python/set-up) to get Python installed on your machine, [Python Introduction](https://developers.google.com/edu/python/introduction) for an introduction to the language, and then [Python Strings](https://developers.google.com/edu/python/strings) starts the coding material, leading to the first exercise. The end of each written section includes a link to the code exercise for that section's material. The lecture videos parallel the written materials, introducing Python, then strings, then first exercises, and so on. At Google, all this material makes up an intensive 2-day class, so the videos are organized as the day-1 and day-2 sections.
+A program built using improper data structures will be therefore inefficient or unnecessarily complex. It is necessary to have a good knowledge of data structures and understand where to use the best one. The study includes the description, implementation and quantitative performance analysis of the data structure.
 
-This material was created by [Nick Parlante](http://www-cs-faculty.stanford.edu/%7enick/) working in the engEDU group at Google. Special thanks for the help from my Google colleagues John Cox, Steve Glassman, Piotr Kaminski, and Antoine Picard. And finally thanks to Google and my director Maggie Johnson for the enlightened generosity to put these materials out on the internet for free under the [Creative Commons Attribution 2.5](http://creativecommons.org/licenses/by/2.5/) license -- share and enjoy!
+## Concept of a Data Type
 
-**Tip:** Check out the [Python Google Code University Forum](https://groups.google.com/forum/?fromgroups#!forum/python-gcu-forum) to ask and answer questions.
+### Primitive Data Types
 
-Except as otherwis... [Content truncated for context window]
+A primitive data type is one that is inbuilt into the programming language for defining the most basic types of data. These may be different for the various programming languages available. For example, the C programming language has inbuilt support for characters (char), integers (int, long) and real numbers (float, double).
+
+### User-Defined Data Type
+
+User-defined data type, as the name suggests is the one that the user defines as per the requirements of the data to be stored. Most programming languages provide support for creating user-defined data types. For example, C provides support through structures (struct), unions (union) and enumerations (enum).
+
+### Abstract Data Type (ADT)
+
+Abstract Data Types are defined by its behaviour from the point of view of the user of the data. It defines it in terms of possible values, operations on data, and the behaviour of these operations.
+
+The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented. That is, it does not specify how the data is being handled under the hood. This concept is known as abstraction.
+
+For eg. The user of the stack data structure only knows about the push and pop operations in a stack. They do not care how the push operation interacts with the memory to store the data. They only expect it to store it in the way specified.
+
+## Common Operations in a Data Structure
+
+A data structure is only useful when you can perform operations on it, right? These are the basic operations that should be able to be performed on every data structure.
+
+#### Access
+
+This operation handles how the element... [Content truncated for context window]
 
 
 ---
 
-### Source 27: Art of Problem Solving
+### Source 29: The Ultimate Data Structures Cheat Sheet
 
 **Content:**
-[Art of Problem Solving](https://artofproblemsolving.com/company)
+![](https://embed.filekitcdn.com/e/nCs3VehugxfS1SnxnyuYXv/dnyZ8sdNJowbUdM6p93pTU)
 
-[AoPS Online](https://artofproblemsolving.com)
+## Here is what you will get:
 
-Math texts, online classes, and more
-for students in grades 5-12.
+1. Beautifully designed diagrams of the 10 most important data structures
+2. Concise explanations for every data structure
+3. Big-O time complexity chart
+4. Time & space complexity tables for every data structure
 
-[Visit AoPS Online ‚](https://artofproblemsolving.com)
+​
 
-[Books for Grades 5-12](https://artofproblemsolving.com/store) [Online Courses](https://artofproblemsolving.com/school)
+​
 
-[Beast Academy](https://beastacademy.com)
+​
 
-Engaging math books and online learning
-for students ages 6-13.
+## ​
 
-[Visit Beast Academy ‚](https://beastacademy.com)
+# The Ultimate Data Structures Cheat Sheet
 
-[Books for Ages 6-13](https://beastacademy.com/books) [Beast Academy Online](https://beastacademy.com/online)
+Don't waste any more time searching for bits of data structure related information. The only resource you need to make learning and working with data structures a piece of cake.
 
-[AoPS Academy](https://aopsacademy.org)
+hurry, Send me the cHEATsHEET!
 
-Small live classes for advanced math
-and language arts learners in grades 2-12.
+We respect your privacy. Unsubscribe at any time.
 
-[Visit AoPS Academy ‚](https://aopsacademy.org)
-
-[Find a Physical Campus](https://aopsacademy.org/campuses) [Visit the Virtual Campus](https://virtual.aopsacademy.org)
-
-# Page
-
-[Article](https://artofproblemsolving.com/wiki/index.php/Basic_Programming_With_Python)[Discussion](https://artofproblemsolving.com/wiki/index.php/Talk:Basic_Programming_With_Python)[View source](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=edit)[History](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=history)
-
-# Toolbox
-
-[Recent changes](https://artofproblemsolving.com/wiki/index.php/Special:RecentChanges)[Random page](https://artofproblemsolving.com/wiki/index.php/Special:Random)[Help](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)[What links here](https://artofproblemsolving.com/wiki/index.php/Special:WhatLinksHere/Basic_Programming_With_Python)[Special pages](https://artofproblemsolving.com/wiki/index.php/Special:SpecialPages)
-
-# Search
-
-# Basic Programming With Python
-
-**Important: It is extremely recommended that you read [Getting Started With Python Programming](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming) before reading this unless you already know some programming knowledge.**
-
-(Note: This is a really long article. To learn the most from this article, you need to read everything in order and skip nothing, unless you are **absolutely absolutely sure that that content is way too easy for you.**)
-
-This article will talk about some basic Python programming. If you don't even know how to install Python, look [here](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming).
-
-Note that this article has lots of program examples. It is recommended (but not required) to try these on your own before looking at the solutions.
-
-## Contents
-
-- [1Booleans](https://artofproblemsolving.com/artofproblemsolving.com#Booleans)
- - [1.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#Program_Example)
-- [2Flow](https://artofproblemsolving.com/artofproblemsolving.com#Flow)
- - [2.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#P... [Content truncated for context window]
+[Powered By ConvertKit](https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic)
 
 
 ---
 
-### Source 28: Learn Python Programming - Python Tutorial
+### Source 30: Data structure definition by The Linux Information Project
 
 **Content:**
-# Learn Python Programming
+[LINFO](https://linfo.org/index.html)
 
-This site contains materials and exercises for the Python 3 programming language.In this course you will learn how to write code, the basics and see examples.
+# Data Structure Definition
 
-Python is a programming language supports several programming paradigms including Object-Orientated Programming (OOP) and functional programming.
-
-**Related course:** [Complete Python Programming Course & Exercises](https://gum.co/dcsp)
-
-## Table of Contents:
-
-Overview of articles and exercises:
-
-### Introduction
-
-- [7 reasons to learn Python](https://pythonbasics.org/7-reasons-to-learn-python/)
-- [Why Python is Awesome](https://pythonbasics.org/why-python-is-awesome/)
-
-### Learn Python
-
-- [Getting started](https://pythonbasics.org/getting-started/)
-- [Execute Python scripts](https://pythonbasics.org/execute-python-scripts/)
-- [Variables](https://pythonbasics.org/variables/)
-- [Strings](https://pythonbasics.org/strings/)
-- [Replace](https://pythonbasics.org/replace/)
-- [Join](https://pythonbasics.org/join/)
-- [String find](https://pythonbasics.org/string-find/)
-- [Split](https://pythonbasics.org/split/)
-- [Random numbers](https://pythonbasics.org/random-numbers/)
-- [Keyboard input](https://pythonbasics.org/keyboard-input/)
-
-### Control structures
-
-- [If statements](https://pythonbasics.org/if-statements/)
-- [For Loops](https://pythonbasics.org/for-loops/)
-- [While loop](https://pythonbasics.org/while-loop/)
-
-### Data and operations
-
-- [Functions](https://pythonbasics.org/functions/)
-- [List](https://pythonbasics.org/list/)
-- [List operations](https://pythonbasics.org/list-operations/)
-- [Sort list](https://pythonbasics.org/sort-list/)
-- [Range function](https://pythonbasics.org/range-function/)
-- [Dictionary](https://pythonbasics.org/dictionary/)
-- [Read file](https://pythonbasics.org/read-file/)
-- [Write file](https://pythonbasics.org/write-file/)
-- [Nested loops](https://pythonbasics.org/nested-loops/)
-- [Slices](https://pythonbasics.org/slices/)
-- [Multiple return](https://pythonbasics.org/multiple-return/)
-- [Scope](https://pythonbasics.org/scope/)
-- [time and date](https://pythonbasics.org/time-and-date/)
-- [Try exception](https://pythonbasics.org/try-except/)
-- [How to use pip and pypi](https://pythonbasics.org/how-to-use-pip-and-pypi/)
-
-### OOP
-
-- [Class](https://pythonbasics.org/class/)
-- [Constructor](https://pythonbasics.org/constructor/)
-- [Getter and setter](https://pythonbasics.org/getter-and-setter/)
-- [Modules](https://pythonbasics.org/modules/)
-- [Inheritance](https://pythonbasics.org/inheritance/)
-- [Static method](https://pythonbasics.org/static-method/)
-- [Iterable](https://pythonbasics.org/iterable/)
-- [Class method](https://pythonbasics.org/classmethod/)
-- [Multiple Inheritance](https://pythonbasics.org/multiple-inheritance/)
-
-### Advanced
-
-- [Virtualenv](https://pythonbasics.org/virtualenv/)
-- [Enumerate](https://pythonbasics.org/enumerate/)
-- [Pickle](https://pythonbasics.org/pickle/)
-- [Regular Expressions](https://pythonbasics.org/regula... [Content truncated for context window]
-
-
----
-
-### Source 29: School of Computing - Learning Python
-
-**Content:**
-### Python Programming
-
-- [1\. Computers and Programs](https://comp.mga.edu/learning/python/module/1)
-
- - [1-1. Computers](https://comp.mga.edu/learning/python/module/1/topic/1)
- - [1-2. Computer Programs](https://comp.mga.edu/learning/python/module/1/topic/2)
- - [1-3. What is Computer Science?](https://comp.mga.edu/learning/python/module/1/topic/3)
- - [1-4. Programming Languages](https://comp.mga.edu/learning/python/module/1/topic/4)
- - [1-5. Discovering Python](https://comp.mga.edu/learning/python/module/1/topic/5)
- - [1-6. Setting Up Python Windows and macOS](https://comp.mga.edu/learning/python/module/1/topic/6)
- - [1.7 Hardware](https://comp.mga.edu/learning/python/module/1/topic/161)
- - [1.8 Software](https://comp.mga.edu/learning/python/module/1/topic/162)
- - [1.9 High-Level Language](https://comp.mga.edu/learning/python/module/1/topic/163)
- - [Summary](https://comp.mga.edu/learning/python/module/1/topic/7)
-- [2\. Input & Output](https://comp.mga.edu/learning/python/module/2)
-
- - [2-1. The Software Development Process](https://comp.mga.edu/learning/python/module/2/topic/8)
- - [2.2 The Five Steps of Software Development: Understanding the Problem](https://comp.mga.edu/learning/python/module/2/topic/164)
- - [2.3 The Five Steps of Software Development: Defining Program Specifications](https://comp.mga.edu/learning/python/module/2/topic/165)
- - [2.4 The Five Steps of Software Development: Planning the Solution](https://comp.mga.edu/learning/python/module/2/topic/166)
- - [2.5 The Five Steps of Software Development: Writing the Code](https://comp.mga.edu/learning/python/module/2/topic/167)
- - [2.6 The Five Steps of Software Development: Testing and Debugging](https://comp.mga.edu/learning/python/module/2/topic/168)
- - [2.7 Design a Program](https://comp.mga.edu/learning/python/module/2/topic/169)
- - [2-8. Input, Processing, and Output](https://comp.mga.edu/learning/python/module/2/topic/10)
- - [2-9. Example Program: Grade Calculator](https://comp.mga.edu/learning/python/module/2/topic/9)
- - [2-10. Variables](https://comp.mga.edu/learning/python/module/2/topic/11)
- - [2-11. Expressions](https://comp.mga.edu/learning/python/module/2/topic/12)
- - [2-12. Output Statements - The print() Function](https://comp.mga.edu/learning/python/module/2/topic/13)
- - [2-13. Assignment Statements](https://comp.mga.edu/learning/python/module/2/topic/14)
- - [Summary](https://comp.mga.edu/learning/python/module/2/topic/15)
- - [Programming Exercises](https://comp.mga.edu/learning/python/module/2/topic/16)
-- [3\. Understanding Data Type](https://comp.mga.edu/learning/python/module/3)
-
- - [3-1.  Numeric Data Types](https://comp.mga.edu/learning/python/module/3/topic/17)
- - [3-2. Strings](https://comp.mga.edu/learning/python/module/3/topic/18)
- - [3-3. Boolean](https://comp.mga.edu/learning/python/module/3/topic/19)
- - [3-4. Type Conversion](https://comp.mga.edu/learning/python/module/3/topic/20)
- - [3-5. Operators](https://comp.mga.edu/learning/python/module/3/topic/21)... [Content truncated for context window]
-
-
----
-
-### Source 30: Online Python Developer from Southwestern College
-
-**Content:**
-**Loading, please wait...**
-
-- [CATALOG](https://careertraining.swccd.edu/training-programs/)
-- [MILITARY](https://careertraining.swccd.edu/military-information/)
-- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
-- [AFFIRM](https://careertraining.swccd.edu/affirm/)
-- [LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
-
-
-
-
-Username or Password is invalid.
-
-Username
-
-Username is required
-
-
-
-Username must be 200 characters or less
-
-Password
-
-Password is required
-
-
-
-Password must be 64 characters or less
-
-[Forget your password?](javascript:void(0))
-
-
-
-Email
-
-Email is required
-
-
-
-Email is invalid
-
-
-
-Email must be 200 characters or less
-
-
-
-
-
-
-
-Thank you. You should be receiving a reset link at the email address you provided shortly.
-
-CLOSE
-
-- Search Career Training ProgramsGo
-[Open Search Dialog](javascript:void(0);)
-
-Username or Password is invalid.
-
-Username
-
-Username is required
-
-Username must be 200 characters or less
-
-Password
-
-Password is required
-
-Password must be 64 characters or less
-
-[Forget your password?](javascript:void(0))
-
-Password
-
-Email is required
-
-Email is invalid
-
-Email must be 200 characters or less
-
-Thank you. You should be receiving a reset link at the email address you provided shortly.
-
-CLOSE
-
-- [☰](javascript:void(0);)
-
-[LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
-
-- [CATALOG](https://careertraining.swccd.edu/training-programs/)
-- [MILITARY](https://careertraining.swccd.edu/military-information/)
-- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
-- [ACCOUNT](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
-
-Go
-
-Search Career Training Programs
-
-[Training Programs](https://careertraining.swccd.edu/training-programs/) [Programming](https://careertraining.swccd.edu/computer-science-programming-programs/) Python Developer
-
-[phone  Call Us: 855.520.6806](tel:+18555206806)
-
-x
-
-## You already have a course in your cart
-
-You can only add one course to your cart at a time! By adding this course, you will replace the existing course from your cart. How would you like to proceed?
-
-[Keep existing course](javascript:__doPostBack('ctrlPrograms$ctl00','')) [Replace course](javascript:__doPostBack('ctrlPrograms$ctl01',''))
-
-×
-
-# Thanks for reaching out!
-
-# We will call you within the next business day.
-
-# Business hours are Monday to Friday, 9am to 9pm Eastern Time.
-
-# Ready to get started?
-
-LIVE CHAT[855.520.6806](tel:+18555206806)
-
-×
-
-# Oops!
-
-# Form could not be submitted due to an error.
-
-×
-
-You've got questions. We're here to help.
-
-An enrollment specialist will contact you with more information.
-
-First name \*
-
-Enter your first name.
-
-Last name \*
-
-Enter your last name.
-
-Email \*
-
-Enter your email.
-
-Phone number \*
-
-Enter your phone number.
-
-By submitting this form, you acknowledge... [Content truncated for context window]
+| | | |
+| --- | --- | --- |
+| | A _data structure_ is a way of storing [information](https://linfo.org/information.html) in a computer so that it can be used _efficiently_. Efficiency in this context refers to the ability to find and manipulate data quickly and with the minimum consumption of computer and [network](https://linfo.org/network.html) resources, mainly CPU (central processing unit) time, [memory](https://linfo.org/memory.html) space and [bandwidth](https://linfo.org/bandwidth.html). Numerous types of data structures have been developed; some are very general and widely used, while others are highly specialized for certain types of tasks. Careful selection of data structures can allow the use of the most efficient [_algorithms_](https://linfo.org/algorithm.html) for particular tasks and thereby optimize the performance of [programs](https://linfo.org/program.html). An algorithm is a precise, unambiguous sets of rules that specify how to solve some problem or perform some task. Data structures can be classified in several ways, including whether they are linear or graphic and whether they are static or _dynamic_ (i.e., whether the shape or size of the structure changes over time). Linear data structures include _lists_ and _associative arrays_. List data structures can be divided into _arrays_, _linked lists_ and _V lists_. Graph data structures include _trees_, _adjacency lists_, _disjoint-sets_, _graph-structured stacks_ and _scene graphs_. Other data structures include _frames_, _unions_, _tagged unions_ and _tables_. Most data structures are formed from two or more of just four basic types of components: _arrays_, _discriminated unions_, _records_ and _references_. For example, linked lists are constructed from records and _nullable references_. A nullable reference is a reference that can be _null_ (i.e., the actual value of an item is missing, unknown, or not applicable), and it is a combination of references and discriminated unions. Linked lists are the simplest data structures. Each consists of a sequence of _nodes_, each of which contains arbitrary data fields and one or two references (i.e., _links_) pointing to the next and/or previous nodes. Linked lists permit insertion and removal of the nodes at any point in the list, but they do not allow random access. _Trees_ are a widely-used data structure that resembles an inverted biological tree structure. Each node can have any number of _child nodes_, which are below it in the tree diagram. Most tree structures are _ordered trees_, which make a distinction between the various _children_ of a node, whereas ordered trees make such a distinction. One of the most commonly used data structures is the _B-tree_, which is a type of tree structure that is very efficient for insertions and deletions and for keeping data sorted. Thus it is employed as the basis for [filesystems](https://linfo.org/filesystem.html), databas... [Content truncated for context window]
 
 
 ---
@@ -746,7 +430,7 @@ By submitting this form, you acknowledge... [Content truncated for context windo
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 3 Knowledge Nodes for: Python Programming**
+**Agent 3 Knowledge Nodes for: Data Structures**
 
 1. [Node Name]
 2. [Node Name]

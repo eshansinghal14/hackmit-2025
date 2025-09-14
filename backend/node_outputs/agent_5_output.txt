@@ -1,19 +1,19 @@
-**Agent 5 Knowledge Nodes for: Python Programming**
+**Agent 5 Knowledge Nodes for: Data Structures**
 
-1. **Python Setup and Execution Methods**  
-   Python can be executed interactively via the interpreter prompt (`>>>`), by running `.py` files using `python filename.py`, or as standalone executable scripts on Unix/Linux systems using the shebang `#!/usr/bin/python` and `chmod +x`. The language is interpreted, allowing immediate code execution, which supports rapid prototyping and debugging.
+1. **Abstract Data Types (ADTs) and Their Implementations**  
+   An abstract data type (ADT) defines a conceptual model for data storage and operations without specifying implementation details. For example, a "bottle" ADT describes behaviors like storing liquid and allowing consumption, while concrete implementations (plastic bottle, thermos) represent different underlying structures. In data structures, this concept applies to types like stacks, queues, and lists—where the interface (e.g., push/pop for stacks) is standardized, but the implementation (array-based vs. linked list-based) can vary. Choosing the right implementation affects performance, memory use, and suitability for specific tasks.
 
-2. **Basic Syntax and Structure Fundamentals**  
-   Python emphasizes clean, readable syntax with rules including case sensitivity, use of indentation for code blocks, and specific identifier naming conventions (must start with a letter or underscore, contain only letters, digits, or underscores, and cannot be a reserved keyword). The core language structure includes variables, types, operators, conditionals, loops, and functions.
+2. **Stacks as FILO Structures with Real-World Applications**  
+   A stack is an ADT that follows the First-In-Last-Out (FILO) principle, where the last element added is the first to be removed. Operations include *push* (insert) and *pop* (remove), both typically executed in O(1) time. Stacks are used to manage function calls in program memory (call stack), enabling recursion and backtracking. Visual metaphors like a stack of plates help illustrate insertion and removal from the top only, reinforcing constrained access patterns critical for control flow in algorithms.
 
-3. **String Handling and Quotation Rules**  
-   Strings in Python are defined using either single or double quotation marks and are handled as sequences of characters. Quotes can be nested as long as they don’t conflict (e.g., double quotes inside single-quoted strings and vice versa). Multiline strings are supported using triple quotes (`"""` or `'''`), enabling clean formatting of long text blocks.
+3. **Linked Lists for Dynamic Data Management**  
+   Linked lists consist of nodes, each containing data and a pointer to the next node. Unlike arrays, they do not require contiguous memory, allowing efficient insertions and deletions in O(1) when the position is known. Singly linked lists support forward traversal, while advanced forms (e.g., doubly or circular) enhance flexibility. They are ideal for dynamic datasets of unknown size, such as real-time financial records or task scheduling, where frequent modifications make array resizing inefficient.
 
-4. **Arithmetic Operations and Expression Evaluation**  
-   Python supports standard arithmetic operations (addition, multiplication, etc.) that can be directly used within `print()` statements. Expressions are evaluated when not enclosed in quotes; when enclosed in quotes, they are treated as strings and printed verbatim, demonstrating the distinction between code execution and string literals.
+4. **Hash Tables for Fast Data Retrieval via Key-Value Mapping**  
+   Hash tables (or hash maps) store data as key-value pairs, using a hash function to compute an index into an array of buckets. This enables average-case O(1) time complexity for search, insert, and delete operations. They are widely used in databases, caches, and programming language libraries (e.g., Python dictionaries). Collisions (different keys mapping to the same index) must be resolved via chaining or open addressing, making design choices crucial for performance.
 
-5. **Python Development Tools and Learning Resources**  
-   A wide range of structured learning pathways and tools are available, including free online tutorials (e.g., Python-course.eu, MOOC.fi), official documentation (docs.python.org), virtual environments, and specialized training in data science libraries (NumPy, Pandas, Matplotlib) and web frameworks (Django). These resources support beginners through advanced developers in mastering Python programming.
+5. **Time Complexity Analysis Using Big O Notation in Data Structure Selection**  
+   Understanding time complexity through Big O notation is essential for evaluating data structure efficiency. Key complexities include O(1) for constant-time operations (e.g., array indexing), O(n) for linear scans (e.g., linked list traversal), O(log n) for binary search trees, and O(n²) for inefficient nested loops. Selecting the appropriate structure depends on operation frequency—e.g., use arrays for fast indexing, stacks/queues for ordered processing, and heaps for priority-based access.
 
 **Source Summary:**  
 - Sources Analyzed: 10  

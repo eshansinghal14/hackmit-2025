@@ -114,6 +114,9 @@ def analyze_diagnostic_response():
             backend_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
             json_file_path = os.path.join(backend_dir, json_file_path)
         
+        print(f"📁 Using JSON file path: {json_file_path}")
+        print(f"📁 File exists: {os.path.exists(json_file_path)}")
+        
         # Load current node data to get names
         with open(json_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)

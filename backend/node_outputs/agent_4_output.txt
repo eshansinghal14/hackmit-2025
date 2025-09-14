@@ -1,20 +1,23 @@
-**Agent 4 Knowledge Nodes for: Python Programming**
+**Agent 4 Knowledge Nodes for: Data Structures**
 
-1. **Structured Learning Path – From Basics to Portfolio**  
-   *Start with mastering Python syntax, then apply skills through hands‑on projects, and finally curate a professional portfolio.* (Source 31)
+1. **Interface ↔ Implementation Separation** – Every data structure should expose a clear *interface* (the set of supported operations, their signatures, and expected behavior) while hiding its *implementation* details (internal representation and algorithms). This abstraction enables interchangeable implementations, easier testing, and better modularity.  
 
-2. **Core Language Foundations – Syntax, Data Types & Control Flow**  
-   *Key building blocks include variables, operators, statements/indentation, lists, tuples, dictionaries, sets, functions (including lambdas), OOP concepts, and exception handling.* (Sources 32, 34, 38)
+2. **Efficient HashMap Traversal** – When iterating over a Java `HashMap`, using `entrySet()` with a `for‑each` loop (or an iterator) is markedly faster than iterating over `keySet()` and calling `get(key)` for each key. The `entrySet` provides direct access to key‑value pairs, avoiding extra hash look‑ups.  
 
-3. **Development Environment & Tooling Setup**  
-   *Install Python, configure PATH/virtual environments, choose an IDE or text editor, and become proficient with package management (pip, PyPI) and version control.* (Sources 35, 34)
+3. **Union‑Find (Disjoint Set) Template** – A Union‑Find structure supports near‑constant‑time **find** (determine the representative of a set) and **union** (merge two sets). A typical implementation uses a `HashMap<Integer,Integer>` for parent links and optionally path‑compression/rank heuristics. This structure is essential for connectivity, Kruskal’s MST, and equivalence‑class problems.  
 
-4. **Domain‑Focused Project Skills**  
-   *Apply Python to real‑world areas such as web development (Django/Flask), data science & machine learning (NumPy, pandas, scikit‑learn, TensorFlow), automation, statistical analysis, and file processing (CSV, PDF, images).* (Sources 33, 37, 40)
+4. **Choosing the Right Structural Category** – Data structures fall into three practical categories:  
+   *Linear* (arrays, linked lists, stacks, queues) – optimal for ordered, sequential access and simple insert/delete patterns.  
+   *Hierarchical* (binary trees, BSTs, B‑trees, Red‑Black trees) – enable logarithmic search, ordered traversal, and balanced height guarantees.  
+   *Complex* (hash tables, priority queues, graphs) – provide constant‑time look‑ups, ordered priority handling, or relationship modeling. Selecting a category aligns the data‑access pattern with performance goals.  
 
-5. **Career Enablement – Portfolio, Certifications & Hiring Insights**  
-   *Build a showcase of 12+ projects, obtain relevant certifications, understand hiring manager expectations, and leverage bootcamps or specialized courses to accelerate job readiness.* (Sources 31, 33, 37) 
+5. **Java Collections Framework Core Structures & When to Use Them** –  
+   - **ArrayList** – fast random access (`O(1)`), slower insert/delete in middle (`O(n)`). Ideal for read‑heavy lists.  
+   - **LinkedList** – constant‑time insert/delete at ends (`O(1)`), sequential access (`O(n)`). Best for frequent modifications.  
+   - **HashMap / HashSet** – average‑case `O(1)` look‑ups, insert, delete. Use for key‑value mappings or deduplication.  
+   - **Stack (Deque)** – LIFO operations (`push`, `pop`) in `O(1)`. Suitable for recursion, backtracking.  
+   - **Queue (ArrayDeque, LinkedList)** – FIFO operations (`offer`, `poll`) in `O(1)`. Good for breadth‑first traversals, task scheduling.  
 
-**Source Summary:**  
-- Sources Analyzed: 10 (31‑40)  
-- Agent Coverage: 10 of 50 total sources  
+**Source Summary:**
+- Sources Analyzed: 10 (31 – 40)
+- Agent Coverage: 10 of 50 total sources

@@ -1,9 +1,9 @@
-You are Agent 1 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "Data Structures". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "Python Programming"
+You are Agent 1 of 5 specialized research agents analyzing: "Data Structures"
 
 ## Your Data Subset
 - Agent ID: 1/5
@@ -13,390 +13,35 @@ You are Agent 1 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Research Sources
 
-### Source 1: Python Full Course for Beginners [2025]
+### Source 1: DSA Tutorial - Learn Data Structures and Algorithms
 
 **Content:**
-Master Python from scratch 🚀 No fluff—just clear, practical coding skills to kickstart your journey! \n\n❤️ Join this channel to get access to perks:\n / @programmingwithmosh \n\n🚀 Want to dive deeper?\nCheck out my Python mastery course: https://mosh.link/python-course\nSubscribe for more awesome Python content: https://goo.gl/6PYaGF\n\n🔗 Related videos \n • Python Projects for Beginners – Master Pro... \n\n✋ Stay connected:\nFull Courses: https://codewithmosh.com\nTwitter: / moshhamedani \nFacebook: / programmingwithmosh \nInstagram: / codewithmosh.official \nLinkedIn: / codewithmosh \n\n📖 Table of Content\n0:00:00 Introduction\n0:00:56 What is Python?\n0:04:11 Installing Python\n0:05:36 Python Interpreter\n0:07:30 Code Editors\n0:08:49 Your First Python Program\n0:12:25 Python Extension\n0:14:26 Linting Python Code\n0:18:40 Formatting Python Code\n0:22:51 Running Python Code\n0:24:30 Python Implementations\n0:26:59 How Python Code is Executed\n0:29:45 Quiz\n0:31:17 Python Mastery Course\n0:31:44 Variables\n0:34:48 Variable Names\n0:37:51 Strings\n0:43:20 Escape Sequences\n0:46:01 Formatted Strings\n0:48:09 String Methods\n0:54:03 Numbers\n0:56:50 Working With Numbers\n0:58:59 Type Conversion\n1:04:03 Quiz\n1:06:43 Comparison Operators\n1:08:46 Conditional Statements\n1:12:56 Ternary Operator\n1:15:04 Logical Operators\n1:19:07 Short-circuit Evaluations\n1:21:13 Chaining Comparison Operators\n1:22:35 Quiz\n1:24:18 For Loops\n1:27:56 For..Else\n1:30:42 Nested Loops\n1:33:26 Iterables\n1:36:34 While Loops\n1:41:33 Infinite Loops\n1:43:10 Exercise\n1:45:13 Defining Functions\n1:47:37 Arguments\n1:49:57 Types of Functions\n1:53:59 Keyword Arguments\n1:55:59 Default Arguments\n1:57:34 xargs\n\n#Python #AI #MachineLearning #WebDevelopment
-| view_count: 3,065,486 views | short_view_count: 3M views | num_likes: 77 thousand | num_subscribers: 4.76 million
-
-
----
-
-### Source 2: Python Tutorials: Learn Python Step-by-Step
-
-**Content:**
-Follow Us
-
-- [Python - Get Started](https://www.tutorialsteacher.com/python)
-- [What is Python?](https://www.tutorialsteacher.com/python/python-overview)
-- [Where to use Python?](https://www.tutorialsteacher.com/python/where-to-use-python)
-- [Python Version History](https://www.tutorialsteacher.com/python/python-version-history)
-- [Install Python](https://www.tutorialsteacher.com/python/install-python)
-- [Python - Shell/REPL](https://www.tutorialsteacher.com/python/python-interective-shell)
-- [Python IDLE](https://www.tutorialsteacher.com/python/python-idle)
-- [Python Editors](https://www.tutorialsteacher.com/python/python-ides)
-- [Python Syntax](https://www.tutorialsteacher.com/python/python-syntax)
-- [Python Keywords](https://www.tutorialsteacher.com/python/python-keywords)
-- [Python Variables](https://www.tutorialsteacher.com/python/python-variables)
-- [Python Data Types](https://www.tutorialsteacher.com/python/python-data-types)
-- [Number](https://www.tutorialsteacher.com/python/python-number-type)
-- [String](https://www.tutorialsteacher.com/python/python-string)
-- [List](https://www.tutorialsteacher.com/python/python-list)
-- [Tuple](https://www.tutorialsteacher.com/python/python-tuple)
-- [Set](https://www.tutorialsteacher.com/python/python-set)
-- [Dictionary](https://www.tutorialsteacher.com/python/python-dictionary)
-- [Python Operators](https://www.tutorialsteacher.com/python/python-operators)
-- [Python Conditions - if, elif](https://www.tutorialsteacher.com/python/python-if-elif)
-- [Python While Loop](https://www.tutorialsteacher.com/python/python-while-loop)
-- [Python For Loop](https://www.tutorialsteacher.com/python/python-for-loop)
-- [User Defined Functions](https://www.tutorialsteacher.com/python/python-user-defined-function)
-- [Lambda Functions](https://www.tutorialsteacher.com/python/python-lambda-function)
-- [Variable Scope](https://www.tutorialsteacher.com/python/local-and-global-variables-in-python)
-- [Python Modules](https://www.tutorialsteacher.com/python/python-module)
-- [Module Attributes](https://www.tutorialsteacher.com/python/python-module-attributes)
-- [Python Packages](https://www.tutorialsteacher.com/python/python-package)
-- [Python PIP](https://www.tutorialsteacher.com/python/pip-in-python)
-- [\_\_main\_\_, \_\_name\_\_](https://www.tutorialsteacher.com/python/main-in-python)
-- [Python Built-in Modules](https://www.tutorialsteacher.com/python/python-builtin-modules)
-- [OS Module](https://www.tutorialsteacher.com/python/os-module)
-- [Sys Module](https://www.tutorialsteacher.com/python/sys-module)
-- [Math Module](https://www.tutorialsteacher.com/python/math-module)
-- [Statistics Module](https://www.tutorialsteacher.com/python/statistics-module)
-- [Collections Module](https://www.tutorialsteacher.com/python/collections-module)
-- [Random Module](https://www.tutorialsteacher.com/python/random-module)
-- [Python Generator Function](https://www.tutorialsteacher.com/python/python-generator)
-- [Python List Comprehension](https://... [Content truncated for context window]
-
-
----
-
-### Source 3: Programming: The Basics (Python Edition)
-
-**Content:**
-# Programming: The BasicsPython Edition
-
-## [George Ferguson](https://www.cs.rochester.edu/u/ferguson/)
-
-## Summer 2020(Minor edits Summer 2022, Summer 2025)
-
-> _This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)_
-
- [Introduction](https://www.cs.rochester.edu/www.cs.rochester.edu#Intro) \|
-[Statements](https://www.cs.rochester.edu/www.cs.rochester.edu#Statements) \|
-[Values](https://www.cs.rochester.edu/www.cs.rochester.edu#Values) \|
-[Expressions](https://www.cs.rochester.edu/www.cs.rochester.edu#Expressions) \|
-[Variables](https://www.cs.rochester.edu/www.cs.rochester.edu#Variables) \|
-[Conditionals](https://www.cs.rochester.edu/www.cs.rochester.edu#Conditionals) \|
-[Comments](https://www.cs.rochester.edu/www.cs.rochester.edu#Comments) \|
-[Iteration](https://www.cs.rochester.edu/www.cs.rochester.edu#Iteration) \|
-[Functions](https://www.cs.rochester.edu/www.cs.rochester.edu#Functions) \|
-[Input](https://www.cs.rochester.edu/www.cs.rochester.edu#Input) \|
-[Lists](https://www.cs.rochester.edu/www.cs.rochester.edu#Lists) \|
-[Summary](https://www.cs.rochester.edu/www.cs.rochester.edu#Summary)
-
-### Introduction
-
-_Computation_ is the process of _computing_ new values from old ones. That’s it. The values may be numbers or text or many other things, and a _computer_ is given some values and asked to compute new ones. For example, it could be given your grades in your courses and asked to compute your GPA (grade point average). Or it could be given the prices of the items in your shopping cart and asked to compute the total including tax. Or it could be given the positions of pieces on a chess board and asked to compute the best move for one of the players.
-
-You probably knew that. But did you know that until quite recently, a computer was _someone_ that computes. That’s right. Computers were people who worked with (mostly) numerical values: counting votes, managing financial ledgers, solving scientific equations, etc. They often had mechanical devices such as old-fashioned adding machines or slide rules to help them, but the people were the ones who knew how to compute whatever it was they were computing.
-
-Now, if you want to tell a human how to do something, first you need to know how to do it yourself. And then you need to be able to describe it to them in a language that they understand, using steps that they know how to do. If I want you to prepare a meal of spaghetti, first I need to know how to make spaghetti myself, and then I also need to be able to explain it to you in way that you understand and can follow. If I want you to compute a student’s GPA given their grades, first I need to know how to do it and then I need to tell you how to do it in a way that you understand and can do for yourself.
-
-Of course, we’re not really interested in telling humans how to compute things. Since the mid-twentieth century, we have been able to build computing devices... [Content truncated for context window]
-
-
----
-
-### Source 4: Python Programming Tutorial for Beginners (PDF)
-
-**Content:**
-[Skip to content](https://www.guru99.com/www.guru99.com#main)
-
-## Python Tutorial Summary
-
-In this Python tutorial for beginners, you will learn Python programming basics and advanced concepts. This Python course contains all the Python basics from installation to advanced stuff like Python data science. This Python programming tutorial helps you to learn Python free with Python notes and Python tutorial PDF. These Python tutorials will help you learn the basics of Python.
-
-## What is Python Programming Language?
-
-**Python** is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries and is extensible to C or C++. Many large companies use the Python programming language, including NASA, Google, YouTube, BitTorrent, etc.
-
-Python Programming
-
-## Python Syllabus
-
-### Python Programming Basics for Beginners
-
-| | |
-| --- | --- |
-| 👉 **Lesson 1** | **[Install Python IDE](https://www.guru99.com/how-to-install-python.html)** — How to Install Python on Windows \[Pycharm IDE\] |
-| 👉 **Lesson 2** | **[Python Hello World](https://www.guru99.com/creating-your-first-python-program.html)** — Create Your First Python Program |
-| 👉 **Lesson 3** | **[Python print() Function](https://www.guru99.com/print-python-examples.html)** — How to Print in Python with Examples |
-| 👉 **Lesson 4** | **[Python Variables](https://www.guru99.com/variables-in-python.html)** — How to Define/Declare String Variable Types |
-| 👉 **Lesson 5** | **[Escape Character Sequences](https://www.guru99.com/python-escape-characters.html)** — Python Escape Character Sequences (Examples) |
-| 👉 **Lesson 6** | **[How to check the Python Version](https://www.guru99.com/check-python-version.html)** — Windows, Mac, Linux, Script, Command Line |
-| 👉 **Lesson 7** | **[How to Run Python Scripts](https://www.guru99.com/run-python-scripts.html)** — Step by Step Guide |
-
-### Python Data Structure
-
-| | |
-| --- | --- |
-| 👉 **Lesson 1** | **[Python TUPLE](https://www.guru99.com/python-tuples-tutorial-comparing-deleting-slicing-keys-unpacking.html)** — Pack, Unpack, Compare, Slicing, Delete, Key |
-| 👉 **Lesson 2** | **[Python Dictionary(Dict)](https://www.guru99.com/python-dictionary-beginners-tutorial.html)** — Update, Cmp, Len, Sort, Copy, Items, str Example |
-| 👉 **Lesson 3** | **[Python Dictionary Append](https://www.guru99.com/python-dictionary-append.html)** — How to Add Key/Value Pair |
-| 👉 **Lesson 4** | **[Python Operators](https://www.guru99.com/python-operators-complete-tutorial.html)** — Arithmetic, Logical, Comparison, Assignment, Bitwise & Precedence |
-| 👉 **Lesson 5** | **[Python Not Equal (!=)](https://www.guru99.com/python-not-equal-operator.html)** — Python Not Equal (!=) Operator with Examples |
-| 👉 **Lesson 6** | **[Python Arrays](https://www.guru99.com/python-arrays.html)** — Create, Reverse, Pop with Python Array Examples |
-| 👉 **Lesson 7** | **[Python... [Content truncated for context window]
-
-
----
-
-### Source 5: How to Become a Python Developer Without a Degree in 2025
-
-**Content:**
-Succeeding as a Python Developer doesn't require a degree. With the right training and a strong portfolio, you can forge your career in Python development, working in roles such as Web Developer, Back-End Developer, or Database Engineer.
-
-## Key Insights
-
-- Python Developers can work on a range of projects such as websites, software, games, or digital applications, and can hold titles like Web Developer, Back-End Developer, and Database Engineer.
-- While a degree can be beneficial, many employers consider a bootcamp or certificate program as valuable for entry-level Python positions.
-- Python Development skills can vary by industry and role, with common requirements including HTML and CSS, Django/Django REST, and Git/GitHub.
-- Building a professional portfolio is a crucial step in demonstrating your Python Development skills, and is a major component in certificate programs like the Python Developer Certificate from Noble Desktop.
-- Making industry connections can be critical in advancing your career and can be achieved through resources like Python's international support community and networking groups.
-- Noble Desktop offers a range of online and in-person Python classes and bootcamps for Development, data science and analytics, FinTech, and cybersecurity, led by instructors with practical expertise.
-
-You might want to become a Python Developer but have not attended a college or university. You might also have a degree in an unrelated field. That doesn't mean you can't still find a great job in Python Development.
-
-Some Development Pros freelance, some start through internships, and others get entry-level work after attending a Python bootcamp or certificate program. Read on to learn more.
-
-## What is a Python Developer?
-
-Python Developers are tech professionals who can work on websites, software, games, or digital applications. Unlike some career tracks, those who fit the requirements of Python Developer often hold alternate titles; these can include Web Developer, Back-End Developer, and Database Engineer, to name a few. Therefore, while most of these tech pros know tools like Django, SQL, and Git, not all Python Development Positions require the same skill set.
-
-Responsibilities for Python Developers vary by industry as well as position. Some have to implement and maintain cybersecurity or integrate data storage solutions, while others mainly design and integrate Front-End elements with Back-End applications. Additional responsibilities can include web scraping, automation testing, and data visualization. Check online job postings for detailed lists of industry-specific Python Development skills and responsibilities.
-
-Read more about [what a Python Developer does](https://www.nobledesktop.com/careers/python-developer/job-description).
-
-## Can You Really Become a Python Developer Without a Degree?
-
-The short answer is: yes.
-
-While jobs for beginner Development Pros with no college may not be abundant, they do exist. You might get hired on th... [Content truncated for context window]
-
-
----
-
-### Source 6: Python (programming language)
-
-**Content:**
-[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
-
-From Wikipedia, the free encyclopedia
-
-General-purpose programming language
-
-| Python |
-| --- |
-| [Paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) | [Multi-paradigm](https://en.wikipedia.org/wiki/Multi-paradigm): [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming),[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1) [procedural](https://en.wikipedia.org/wiki/Procedural_programming) ( [imperative](https://en.wikipedia.org/wiki/Imperative_programming)), [functional](https://en.wikipedia.org/wiki/Functional_programming), [structured](https://en.wikipedia.org/wiki/Structured_programming), [reflective](https://en.wikipedia.org/wiki/Reflective_programming) |
-| [Designed by](https://en.wikipedia.org/wiki/Software_design) | [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum) |
-| [Developer](https://en.wikipedia.org/wiki/Software_developer) | [Python Software Foundation](https://en.wikipedia.org/wiki/Python_Software_Foundation) |
-| First appeared | 20 February 1991; 34 years ago (1991-02-20)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-alt-sources-history-2) |
-| [Stable release](https://en.wikipedia.org/wiki/Software_release_life_cycle) | 3.13.7[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-wikidata-94d5b2798914e50f7103b872a798e54cb7cdf1fe-v20-3)  / 14 August 2025; 30 days ago (14 August 2025) |
-| [Preview release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) | 3.14.0rc2 / 14 August 2025; 30 days ago (2025-08-14) |
-| [Typing discipline](https://en.wikipedia.org/wiki/Type_system) | [duck](https://en.wikipedia.org/wiki/Duck_typing), [dynamic](https://en.wikipedia.org/wiki/Dynamic_typing), [strong](https://en.wikipedia.org/wiki/Strong_and_weak_typing);[\[4\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-4) [optional type annotations](https://en.wikipedia.org/wiki/Optional_typing)[\[a\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-6) |
-| [OS](https://en.wikipedia.org/wiki/Operating_system) | [Cross-platform](https://en.wikipedia.org/wiki/Cross-platform)[\[b\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-12) |
-| [License](https://en.wikipedia.org/wiki/Software_license) | [Python Software Foundation License](https://en.wikipedia.org/wiki/Python_Software_Foundation_License) |
-| [Filename extensions](https://en.wikipedia.org/wiki/Filename_extension) | .py, .pyw, .pyz,[\[11\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-13).pyi, .pyc, .pyd |
-| Website | [python.org](https://www.python.org/) |
-| Major [implementations](https://en.wikipedia.org/wiki/Programming_language_implementation) |
-| [CPython](https://en.wikipedia.org/wiki/CPython), [PyPy](https://en.wikipedia.org/wiki/PyPy), [MicroPython](https://en.wikipedia.org/wiki/MicroPython), [CircuitPython](https://en.wikipedia.org/wiki/CircuitPython), [IronPython](https://en.wikipedia.org/wiki/IronPython), ... [Content truncated for context window]
-
-
----
-
-### Source 7: Best Python Courses + Tutorials
-
-**Content:**
-[Skip to Content](https://www.codecademy.com/www.codecademy.com#catalog-heading)
-
-# Python courses
-
-## About Python
-
-Python is a general-purpose, versatile, and powerful programming language. It's a great first language because Python code is concise and easy to read. Whatever you want to do, python can do it. From web development to machine learning to data science, Python is the language for you.
-
-Tell me more
-
-## Related topics
-
-- [Data science](https://www.codecademy.com/catalog/subject/data-science)
-- [AI](https://www.codecademy.com/catalog/subject/artificial-intelligence)
-- [Computer science](https://www.codecademy.com/catalog/subject/computer-science)
-- [Machine learning](https://www.codecademy.com/catalog/subject/machine-learning)
-- [Data visualization](https://www.codecademy.com/catalog/subject/data-visualization)
-- [Cybersecurity](https://www.codecademy.com/catalog/subject/cybersecurity)
-- [Django](https://www.codecademy.com/search?query=django)
-
-## Python courses
-
-**Filters**123 results
-
-### Level
-
-Beginner
-
-Intermediate
-
-Advanced
-
-### Price
-
-[View plans](https://www.codecademy.com/pricing)
-
-Free
-
-Paid
-
-### Type
-
-Career path
-
-Learn all the skills you need to land a new career in tech.
-
-Skill path
-
-Learn all the concepts you need to gain a new technical skill.
-
-Certification path
-
-Prepare and practice for top industry certifications.
-
-Course
-
-Learn concepts used for specific languages or technologies.
-
-### Average time to complete
-
-Average based on combined completion rates — individual pacing in lessons, projects, and quizzes may vary.
-
-Less than 5 hours
-
-5-10 hours
-
-10-20 hours
-
-20-60 hours
-
-60+ hours
-
-Clear filters
-
-Most relevant
-
-**Filters**123 results
-
-Clear filters
-
-Most relevant
-
-- [Free course\
-\
-**Getting Started with Python for Data Science**](https://www.codecademy.com/learn/getting-started-with-python-for-data-science)
-
-
-
-Work hands-on with real datasets while learning Python for data science.
-
-- Beginner Friendly.**Beginner** Friendly
-
-7 hours**7** hours
-
-
-- [Course\
-\
-**Learn Python 3**](https://www.codecademy.com/learn/learn-python-3)
-
-
-
-Learn the basics of Python 3.12, one of the most powerful, versatile, and in-demand programming languages today.
-
-- With CertificateWith **Certificate**
-
-- Beginner Friendly.**Beginner** Friendly
-
-24 hours**24** hours
-
-
-- [Skill path\
-\
-**Learn Python for Data Science**](https://www.codecademy.com/learn/paths/learn-python-for-data-science)
-
-
-
-Get started with Python for Data Science in this beginner-friendly skill path.
-
-- Includes 5 CoursesIncludes **5 Courses**
-- With CertificateWith **Certificate**
-
-- Beginner Friendly.**Beginner** Friendly
-
-16 hours**16** hours
-
-
-- [Free course\
-\
-**Machine Learning: Introduction with Regression**](https://www.codecademy.com/learn/machine-learning-introduction-with-regression)
-
-
-
-Get started with machine learning and learn how to build, implement, and evaluate linear regression models.
-
-- Beginner Friendly.**Beginner** Friendly
-
-3 hours**3** hours
-
-
--... [Content truncated for context window]
-
-
----
-
-### Source 8: Python Tutorial | Learn Python Programming Language
-
-**Content:**
-- [Free Python 3 Tutorial](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
-- [Data Types](https://www.geeksforgeeks.org/python/python-data-types/)
-- [Control Flow](https://www.geeksforgeeks.org/python/python-if-else/)
-- [Functions](https://www.geeksforgeeks.org/python/python-functions/)
-- [List](https://www.geeksforgeeks.org/python/python-lists/)
-- [String](https://www.geeksforgeeks.org/python/python-string/)
-- [Set](https://www.geeksforgeeks.org/python/python-sets/)
-- [Tuple](https://www.geeksforgeeks.org/python/python-tuples/)
-- [Dictionary](https://www.geeksforgeeks.org/python/python-dictionary/)
-- [Oops](https://www.geeksforgeeks.org/python/python-oops-concepts/)
-- [Exception Handling](https://www.geeksforgeeks.org/python/python-exception-handling/)
-- [Python Programs](https://www.geeksforgeeks.org/python/python-programming-examples/)
-- [Python Projects](https://www.geeksforgeeks.org/python/python-projects-beginner-to-advanced/)
-- [Python Interview Questions](https://www.geeksforgeeks.org/python/python-interview-questions/)
-- [Python MCQ](https://www.geeksforgeeks.org/python/python-multiple-choice-questions/)
-- [NumPy](https://www.geeksforgeeks.org/python/numpy-tutorial/)
-- [Pandas](https://www.geeksforgeeks.org/pandas/pandas-tutorial/)
-- [Python Database](https://www.geeksforgeeks.org/python/python-database-tutorial/)
-- [Data Science With Python](https://www.geeksforgeeks.org/data-science/data-science-with-python-tutorial/)
-- [Machine Learning with Python](https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/)
-- [Django](https://www.geeksforgeeks.org/python/django-tutorial/)
-- [Flask](https://www.geeksforgeeks.org/python/flask-tutorial/)
-- [R](https://www.geeksforgeeks.org/r-language/r-tutorial/)
+- [Algorithms](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Array](https://www.geeksforgeeks.org/dsa/introduction-to-arrays-data-structure-and-algorithm-tutorials/)
+- [Strings](https://www.geeksforgeeks.org/dsa/string-data-structure/)
+- [Linked List](https://www.geeksforgeeks.org/dsa/linked-list-data-structure/)
+- [Stack](https://www.geeksforgeeks.org/dsa/stack-data-structure/)
+- [Queue](https://www.geeksforgeeks.org/dsa/queue-data-structure/)
+- [Tree](https://www.geeksforgeeks.org/dsa/introduction-to-tree-data-structure/)
+- [Graph](https://www.geeksforgeeks.org/dsa/graph-data-structure-and-algorithms/)
+- [Searching](https://www.geeksforgeeks.org/dsa/searching-algorithms/)
+- [Sorting](https://www.geeksforgeeks.org/dsa/sorting-algorithms/)
+- [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-2/)
+- [Dynamic Programming](https://www.geeksforgeeks.org/competitive-programming/dynamic-programming/)
+- [Binary Tree](https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/)
+- [Binary Search Tree](https://www.geeksforgeeks.org/dsa/binary-search-tree-data-structure/)
+- [Heap](https://www.geeksforgeeks.org/dsa/heap-data-structure/)
+- [Hashing](https://www.geeksforgeeks.org/dsa/hashing-data-structure/)
 
 Sign In
 
 ▲
 
-[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/python-programming-language-tutorial/?type%3Darticle%26id%3D1179442&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/?type%3Darticle%26id%3D1103752&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
 
-# Python Tutorial - Learn Python Programming Language
+# DSA Tutorial - Learn Data Structures and Algorithms
 
-Last Updated : 10 Sep, 2025
+Last Updated : 06 Sep, 2025
 
 Comments
 
@@ -410,178 +55,618 @@ Like
 
 Report
 
-Python is one of the most popular programming languages. It’s simple to use, packed with features and supported by a wide range of libraries and frameworks. Its clean syntax makes it beginner-friendly.
+**Data structures** manage how data is stored and accessed, while **Algorithms** focus on processing this data. Examples of data structures are Array, Linked List, Tree and Heap, and examples of algorithms are Binary Search, Quick Sort and Merge Sort.
 
-- A high-level language, used in web development, data science, automation, AI and more.
-- Known for its readability, which means code is easier to write, understand and maintain.
-- Backed by library support, so we don’t have to build everything from scratch, there’s probably a library that already does what we need.
+## Why to Learn DSA?
 
-## Why to Learn Python?
+- Foundation for almost every software like GPS, Search Engines, AI ChatBots, Gaming Apps, Databases, Web Applications, etc
+- Top Companies like **Google, Microsoft, Amazon, Apple, Meta** and many other heavily focus on DSA **i** n interviews.
+- Learning DSA boosts your problem-solving abilities and make you a stronger programmer.
 
-- Requires fewer lines of code compared to other programming languages like Java.
-- Provides Libraries / Frameworks like Django, Flask and many more for Web Development, and Pandas, Tensorflow, Scikit-learn and many more for, AI/ML, Data Science and Data Analys... [Content truncated for context window]
+> Try our free courses [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series) and [DSA Skillup](https://www.geeksforgeeks.org/courses/dsa-skill-up) with daily topic coverage, notes, quizzes and most asked coding problems.
 
+## How to learn DSA?
 
----
-
-### Source 9: Ram Krishn Mishra - Python for Analytics
-
-**Content:**
-Search this site
-
-Embedded Files
-
-Skip to main content
-
-Skip to navigation
-
-[UNIT I: Introduction to Python:](https://www.mishrark.com/www.mishrark.com#h.yvade9o96nh3)
-
-[Python versus Java](https://www.mishrark.com/www.mishrark.com#h.nvrc8mvj02nb)
-
-[Python Interpreter and it’s Environment](https://www.mishrark.com/www.mishrark.com#h.mdwt7aex5jdz)
-
-[Python basics:](https://www.mishrark.com/www.mishrark.com#h.6nrmpukfvupt)
-
-[Data structures: lists and dictionaries;](https://www.mishrark.com/www.mishrark.com#h.f8imlaes08k4)
-
-[functions: global functions,](https://www.mishrark.com/www.mishrark.com#h.nfkql3gmvot4)
-
-[local functions,](https://www.mishrark.com/www.mishrark.com#h.d9emrcg0yweq)
-
-[lambda functions and methods.](https://www.mishrark.com/www.mishrark.com#h.abm7hailp5tt)
-
-[UNIT II: Object Oriented Programming Concepts:](https://www.mishrark.com/www.mishrark.com#h.6mbw7cmtemzd)
-
-[UNIT III: Numpy:](https://www.mishrark.com/www.mishrark.com#h.fq56tentz0v4)
-
-[UNIT IV: Pandas:](https://www.mishrark.com/www.mishrark.com#h.s9nm09d4jf0i)
-
-**Python for Analytical Skills**
-
-## UNIT I: Introduction to Python:
-
-- ### Python versus Java
-
-
-Java is a statically typed and compiled language, and Python is a dynamically typed and interpreted language. This single difference makes Java faster at runtime and easier to debug, but Python is easier to use and easier to read. (Ref: [https://www.bmc.com/blogs/python-vs-java/](https://www.google.com/url?q=https%3A%2F%2Fwww.bmc.com%2Fblogs%2Fpython-vs-java%2F&sa=D&sntz=1&usg=AOvVaw0RvZMjC-FNSLYfp0SBfc2P))
-
-- ### Python Interpreter and it’s Environment
-
-
-Translator (Converting High level language such as english to computer readable form because computer can understand binary(0 or1) language only)
-
-a) Compiler : IT reads all program then convert whole code into machine level language. ( Example : C programming, C++, Core Java)
-
-b) **Interpreter :**
-
-Its reads line by line and convert line by line into machine level language. (Example : Python3) : it helps to run the program.
-
-c) **Assembler**: (covert Assembly level language to machine level language )
-
-- Python installation
-
-
-[https://www.python.org/downloads/release/python-3101/](https://www.google.com/url?q=https%3A%2F%2Fwww.python.org%2Fdownloads%2Frelease%2Fpython-3101%2F&sa=D&sntz=1&usg=AOvVaw2ifG49OLk1JQ8Bv0H8X7or)
-
-Step to run python program in command prompt:
-
-1. Open Notebook
-
-2. Write python code in notebook file
-
-3. Save File with .py extension in any folder ( Example : program1.py)
-
-4. Open Command Propmpt
-
-5. Locate folder where python file is saved( for example : **cd C:\\Users\\rkmis\\OneDrive\\Desktop\\Python-File**
-
-6. **run the code using below command**
-
-**python program1.py**
-
-- ### Python basics:
-
-
-1. variables
-
-2. operators
-
-3. Strings,
-
-4. Conditional and
-
-5. Control Statements,
-
-6. loops;
-- ### Data structures: lists and dictionaries;
-
-- ### functions: global functions,
-
-- ### local functions,
-
-- ### lambda functions and methods.
-
-
-## **UNIT II:... [Content truncated for context window]
+1. Learn at-least one programming language ( [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/), [Java](https://www.geeksforgeeks.org/java/java/), [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) or [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)) and build your basic logic.
+2. Learn about Time and Space complexities
+3. Learn Data Structures (Arrays, Linked List, etc) an... [Content truncated for context window]
 
 
 ---
 
-### Source 10: Python – W3schools Learn Code
+### Source 2: Java Data Structures
 
 **Content:**
-# Python
+![Java Tutorial](https://www.tutorialspoint.com/java/images/java-mini-logo.jpg)
 
-## Learn Python Language Coding
+## Java Tutorial
 
-See how to learn Python language coding tutorial code on the Python editor website online computer programming complete basics for beginners and advanced.
+- [Java - Home](https://www.tutorialspoint.com/java/index.htm)
+- [Java - Overview](https://www.tutorialspoint.com/java/java_overview.htm)
+- [Java - History](https://www.tutorialspoint.com/java/java-history.htm)
+- [Java - Features](https://www.tutorialspoint.com/java/java-features.htm)
+- [Java vs C++](https://www.tutorialspoint.com/java/java-vs-cpp.htm)
+- [Java Virtual Machine (JVM)](https://www.tutorialspoint.com/java/java_jvm.htm)
+- [Java - JDK vs JRE vs JVM](https://www.tutorialspoint.com/java/java-jdk-jre-jvm.htm)
+- [Java - Hello World Program](https://www.tutorialspoint.com/java/java_hello_world.htm)
+- [Java - Environment Setup](https://www.tutorialspoint.com/java/java_environment_setup.htm)
+- [Java - Basic Syntax](https://www.tutorialspoint.com/java/java_basic_syntax.htm)
+- [Java - Variable Types](https://www.tutorialspoint.com/java/java_variable_types.htm)
+- [Java - Data Types](https://www.tutorialspoint.com/java/java_basic_datatypes.htm)
+- [Java - Type Casting](https://www.tutorialspoint.com/java/java_type_casting.htm)
+- [Java - Unicode System](https://www.tutorialspoint.com/java/java_unicode_system.htm)
+- [Java - Basic Operators](https://www.tutorialspoint.com/java/java_basic_operators.htm)
+- [Java - Comments](https://www.tutorialspoint.com/java/java_comments.htm)
+- [Java - User Input](https://www.tutorialspoint.com/java/util/java_util_scanner.htm)
 
-[← Previous](https://w3schools.work/php) [Next →](https://w3schools.work/w3schools.work)
+## Java Control Statements
 
-Python is most of the time known as a helping language for programming designers, for developing control and the board, testing, and in numerous alternate ways.
+- [Java - Loop Control](https://www.tutorialspoint.com/java/java_loop_control.htm)
+- [Java - Decision Making](https://www.tutorialspoint.com/java/java_decision_making.htm)
+- [Java - If-else](https://www.tutorialspoint.com/java/if_else_statement_in_java.htm)
+- [Java - Switch](https://www.tutorialspoint.com/java/switch_statement_in_java.htm)
+- [Java - For Loops](https://www.tutorialspoint.com/java/java_for_loop.htm)
+- [Java - For-Each Loops](https://www.tutorialspoint.com/java/java_foreach_loop.htm)
+- [Java - While Loops](https://www.tutorialspoint.com/java/java_while_loop.htm)
+- [Java - do-while Loops](https://www.tutorialspoint.com/java/java_do_while_loop.htm)
+- [Java - Break](https://www.tutorialspoint.com/java/java_break_statement.htm)
+- [Java - Continue](https://www.tutorialspoint.com/java/java_continue_statement.htm)
 
-Python coding for construct control of our functions and different programming purposes to get results.
+## Object Oriented Programming
 
-### Python Language Base
+- [Java - OOPs Concepts](https://www.tutorialspoint.com/java/java_oops_concepts.htm)
+- [Java - Object & Classes](https://www.tutorialspoint.com/java/java_object_classes.htm)
+- [Java - Class Attributes](https://www.tutorialspoint.com/java/java_class_attributes.htm)
+- [Java - Class Methods](https://www.tutorialspoint.com/java/java_class_methods.htm)
+- [Java - Methods](https://www.tutorialspoint.com/java/java_methods.htm)
+- [Java - Variables Scope](https://www.tutorialspoint.com/java/java_variable_scope.htm)
+- [Java - Constructors](https://www.tutorialspoint.com/java/java_constructors.htm)
+- [Java - Access Modifiers](https... [Content truncated for context window]
 
-Basic framework and Apache access for mechanized nonstop creation and testing. Startup or advanced for bug following and undertaking the executive’s problems and the solutions.
 
-Python is a multi-purpose and deep-level programming language for advanced programming solutions.
+---
 
-Object-oriented programming in python and organized coding on computer programs are completely done in this, and large numbers of its functionalities are there.
+### Source 3: Advanced Data Structures Explained
 
-It Supports practical programming and perspective arranged programming counting multiple functions and objects with the magic methods accessibility.
+**Content:**
+Understanding data structures
 
-### How Python Works
+# Advanced Data Structures Explained
 
-There are different standards are frameworks of python language which deal with deep-level system access by means of expansions, including configuration by agreement and deep programming.
+Learn how advanced data structures allow businesses to create more efficient algorithms and effective programs to gain a competitive edge and enhance their growth.
 
-Python utilizes dynamic programming and a mix of reference coding projects.
+Table of Contents
 
-And a cycle-recognizing bugs for the memory of the executive’s system.
+- What are data structures?
+- Why are data structures important?
+- Types of data structures explained
+- Wrapping up
 
-It utilizes a dynamic function name goal error restricting. Which program ties strategy and variable names during code execution time.
+## What are data structures?
 
-Its plan offers some help for using programming in the program’s custom features. It has a filter, roadmap capabilities, and a list of appreciations, code references, function sets, and generator expressions.
+Data structures are a way of organizing, processing, retrieving, and storing data on a computer.
 
-The standard library of python has two modules iterations tools and functions that carry out using the instruments acquired from basic and standard programming.
+Users can quickly access and update arranged information, enabling them to manipulate and use the data easily.
 
-### Python Language History
+There are several types of basic and advanced data structures — which one an organization chooses depends on specific system requirements.
 
-Python language’s central way of thinking is to grow up in the record and data manipulation with deep-level computer system access.
+## Why are data structures important?
 
-At the start, python was very limited in using language but now according to incorporating python language usage into every center of the programming project.
+Businesses have an increasing amount of data and need structured ways of managing it. By organizing information in an easy-to-understand way, data structures allow users to access and utilize data as needed.
 
-Python was intended to be more extensible by means of its features.
+Data structures help create robust, efficient, and maintainable software systems — integral to an organization’s performance. They are the foundation for various algorithms and processing techniques, allowing for effective problem-solving in computer and software development domains.
 
-This minimal python set has made it especially famous for adding programmable connection that points to existing or new applications.
+They are useful to businesses for several reasons, providing a wealth of benefits for their growth, integrity, and efficiency.
 
-Python’s latest version of the release centers language with a huge standard library.
+### Data storage and retrieval
 
-This effectively extensible coding originated from its framework with all features, which helps the language methodology and accessibility.
+Efficient data storage is the top-level benefit of data structures. They provide optimized algorithms and data organization techniques for faster access and information processing. This improves system performance and responsiveness, which is crucial for businesses with substantial data volumes.
 
-[← Previous](https://w3schools.work/php) [Next →](https://w3schools.work/w3schools.work)
+### Data abstraction
+
+With data structures, businesses work with data more intuitively and logically. This means developers can focus on their programs' overall design and functionality without getting bogged down with data storage details.
+
+### Data analysis
+
+Advanced data structures let businesses perform complex data analysis and gain valuable insights. They represent and analyze relationships between data points, enabling businesses to uncover patterns, trends, and correlations.
+
+### Algorithms
+
+Different data structures help optimize algorithms businesses use to solve complex problems efficiently. For example, specific advanced data structures can process tasks based on priority, ensuring critical operations are handled quickly.
+
+### Real-time processing
+
+Businesses often deal with real-time data streams that need quick processing and analysis. Advanced data structures help by efficiently inserting, retrieving, and manipulating data. This is particularly useful in finance, e-commerce, and logistics industries.
+
+### Data integrity and security
+
+Advanced data structures offer techniques to ensure data integrity and security. Different structures can secure data storage and retrieval or enforce access control and permissions. By leverag... [Content truncated for context window]
+
+
+---
+
+### Source 4: Must-Know Data Structures for Coding Interviews - Level Up Coding
+
+**Content:**
+## Must-Know Data Structures for Coding Interviews
+
+If you prefer to follow along via my YouTube video, you can watch it here:
+
+Data structures are used to store information in our code. We use different data structures to allow us to add, access, and delete data in the most efficient and applicable ways to solve our problems. In interviews, choosing the right data structure could allow you to reduce the time complexity of your solution, something that is greatly valued by companies. I know I have been stuck unable to optimize some of my interview questions just because I used the wrong data structure. Therefore, today we will be going over the must-know data structures for coding interviews.
+
+If this post is helpful, please consider [subscribing to my YouTube channel](http://bit.ly/sub2rahul) or following me on medium for more content like this! If you’re looking for a good resource to learn these data structures, I recommend picking up a copy of [Cracking the Coding Interview](https://amzn.to/2YBZWJ3) which goes over all of these and more in detail! Also if you haven’t already, check out my last article on the [Must Know Algorithms for Coding Interviews](http://bit.ly/interviewalgorithms)!
+
+> Disclaimer: This post is created based off my experience looking for internships and entry level (new grad) roles. At any point if I state you need to know a data structure, this means you should understand reasons to use it, time complexity to insert, lookup, and delete elements, tradeoffs between it and others, and know how to implement it in the language of your choice. If I mention Big-O at any point in the article, I am referring to the industry usage of the term (it is equivalent to Big-Theta in academia). Also, the link to Cracking the Coding Interview on Amazon is an affiliate link and I will receive a commission if you purchase anything on Amazon using my link. Now that we have that out of the way, let’s get to the list!
+
+## 1\. Array
+
+Arrays are a basic data structure that is usually built into most languages. They are important for two main reasons. First, arrays are often the parameters to your coding questions in interviews. Therefore, having a strong understanding of them will ensure you can be successful in interviews. Second, you can implement most other data structures with an array, so you cannot understand how many other data structures are implemented without having a fundamental understanding of arrays.
+
+## 2\. Linked List
+
+Linked Lists are similar to arrays in that they are common in interviews and can be used to implement some other data structures. For this one, I highly recommend understanding how to implement this as well as adding methods to add, lookup, and delete values from the list. I have had interviews in which I have been asked to implement a Linked List from scratch, so I know it has a chance of coming up in your interviews!
+
+## 3\. Stack & Queue
+
+Stack and queues are opposite data structures. Each can be implemented with... [Content truncated for context window]
+
+
+---
+
+### Source 5: Chandan Singh | Data Structures
+
+**Content:**
+* * *
+
+Data Structures [view\
+markdown](https://github.com/csinva/csinva.github.io/blob/master/_notes/cs/data_structures.md)
+
+Some notes on advanced data structures, based on UVA's "Program and Data Representation" course.
+
+* * *
+
+## lists
+
+## arrays and strings
+
+- start by checking for null, length 0
+- _ascii_ is 128, extended is 256
+
+## queue - linkedlist
+
+- has insert at back (enqueue) and remove from front (dequeue)
+
+
+```
+class Node {
+Node next;
+int val;
+public Node(int d) { val = d; }
+}
+
+```
+
+- finding a loop is tricky, use visited
+- reverse a linked list
+ - requires 3 ptrs (one temporary to store next)
+ - return pointer to new end
+
+## stack
+
+```
+class Stack {
+ Node top;
+ Node pop() {
+ if (top != null) {
+ Object item = top.data;
+ top = top.next;
+ return item;
+ }
+ return null;
+ }
+ void push(Object item) {
+ Node t = new Node(item);
+ t.next = top;
+ top = t;
+ }
+}
+
+```
+
+- sort a stack with 2 stacks
+ - make a new stack called ans
+ - pop from old
+ - while old element is > ans.peek(), old.push(ans.pop())
+ - then new.push(old element)
+- stack with min - each el stores min of things below it
+- queue with 2 stacks - keep popping everything off of one and putting them on the other
+- sort with 2 stacks
+
+## trees
+
+- Balanced binary trees are generally logarithmic
+ - Root: a node with no parent; there can only be one root
+ - Leaf: a node with no children
+ - Siblings: two nodes with the same parent
+ - Height of a node: length of the longest path from that node to a leaf
+ - Thus, all leaves have height of zero
+ - Height of a tree: maximum depth of a node in that tree = height of the root
+ - Depth of a node: length of the path from the root to that node
+ - Path: sequence of nodes n1, n2, …, nk such that ni is parent of ni+1 for 1 ≤ i ≤ k
+ - Length: number of edges in the path
+ - Internal path length: sum of the depths of all the nodes
+- Binary Tree - every node has at most 2 children
+- Binary Search Tree - Each node has a key value that can be compared
+ - Every node in left subtree has a key whose value is less than the root’s key value
+ - Every node in right subtree has a key whose value is greater than the root’s key value
+
+```
+void BST::insert(int x, BinaryNode * & curNode){ //we pass in by reference because we want a change in the method to actually modify the parameter (the parameter is the curNode *)
+ //left associative so this is a reference to a pointer
+ if (curNode==NULL)
+ curNode = new BinaryNode(x,NULL,NULL);
+ else if(x element)
+ insert(x,curNode->left);
+ else if(x>curNode->element)
+ insert(x,curNode->right);
+}
+
+```
+
+- BST Remove
+ - if no children: remove node (reclaiming memory), set parent pointer to null
+ \- one child: Adjust pointer of parent to point at child, and reclaim memory
+ \- two children: successor is min of right subtree
+ \- replace node with successor, then remove successor from tree
+ - worst-case depth = n-1 (this happens when the data is already sorted)
+ - maximum number of nodes in tree of height h is 2^(h+1) - 1
+ - minimum height... [Content truncated for context window]
+
+
+---
+
+### Source 6: Data Structures · soft-eng-interview-prep
+
+**Content:**
+[Powered by **GitBook**](https://www.gitbook.com?utm_source=public_site_legacy&utm_medium=referral&utm_campaign=trademark&utm_term=orrsella&utm_content=powered_by)
+
+# [Data Structures](https://orrsella.gitbooks.io/soft-eng-interview-prep/content/)
+
+# Data Structures
+
+- Contiguously-allocated structures are composed of single slabs of memory, and include arrays, matrices, heaps, and hash tables.
+- Linked data structures are composed of distinct chunks of memory bound together by _pointers_, and include lists, trees, and graph adjacency lists.
+
+## Arrays
+
+- Built from fixed-size records.
+- Constant access time given the index.
+- Space efficient – arrays consist only of the data, so no space is wasted with links or formatting info.
+- Easy to iterate over quickly, because of memory locality.
+- Cannot adjust their size in the middle of a program's execution.
+- _Dynamic arrays_ double in size whenever insert index is out of bound (Java's `ArrayList` is dynamic, while `int[]` isn't).
+- Java array max length is `Integer.MAX_VALUE = 2^31-1` (but could actually be a bit shorter because of reserved memory).
+
+## Linked Lists
+
+- Singly-linked – each elements links to the next one.
+- Doubly-linked – each elements links to the next and previous elements (Java's `LinkedList` is doubly-linked).
+- Operations supported: search, insert, delete.
+- Cannot overflow (as opposed to static arrays which have a finite length).
+- Simpler insertion/deletion than arrays.
+- Requires extra memory for pointers than arrays.
+- Not efficient for random access to items.
+- Worse memory locality than arrays.
+
+## Stacks and Queues
+
+- Stacks – LIFO (push, pop)
+ - Very efficient, good to use when retrieval order doesn't matter at all (like for batch jobs).
+ - LIFO usually happens in recursive algorithms.
+- Queues – FIFO (enqueue, dequeue)
+ - Average "waiting time" for jobs is identical for FIFO and LIFO. Maximum time varies (FIFO minimizes max waiting time).
+ - Harder to implement, appropriate when order is important.
+ - Used for searches in graphs.
+- Stacks and Queues can be effectively implemented by dynamic arrays or linked lists. If upper bound of size is known, static arrays can also be used.
+
+## Dictionary Structures
+
+- Enable access to data items by content (key).
+- Operations: search, insert, delete, max, min, predecessor/successor (next or previous element in sorted order).
+- Implementations include: **hash tables**, **(binary) search trees**.
+
+## Binary Search Trees
+
+- Each node has a key, and _all_ keys in the left subtree are smaller than the node's key, _all_ those in the right are bigger.
+- Operations: search, traversal, insert, delete.
+- Searching is `O(log(n)) = O(h)`, where `h = height` of the tree ( `log(n)` for 2 child nodes in each tree root, if tree is perfectly balanced).
+- The min element is the leftmost descendant of the root, the max is the rightmost.
+- Traversal in `O(n)`, by traversing the left node, processing the item and traversing the right node, recursively... [Content truncated for context window]
+
+
+---
+
+### Source 7: 5. Data Structures — Python 3.13.7 documentation
+
+**Content:**
+### Navigation
+
+- [index](https://docs.python.org/genindex.html)
+- [modules](https://docs.python.org/py-modindex.html) \|
+- [next](https://docs.python.org/modules.html) \|
+- [previous](https://docs.python.org/controlflow.html) \|
+- [Python](https://www.python.org/) »
+- [3.13.7 Documentation](https://docs.python.org/index.html) »
+- [The Python Tutorial](https://docs.python.org/index.html) »
+- 5\. Data Structures
+- \|
+- Theme
+AutoLightDark \|
+
+# 5\. Data Structures [¶](https://docs.python.org/docs.python.org\#data-structures)
+
+This chapter describes some things you’ve learned about already in more detail,
+and adds some new things as well.
+
+## 5.1. More on Lists [¶](https://docs.python.org/docs.python.org\#more-on-lists)
+
+The list data type has some more methods. Here are all of the methods of list
+objects:
+
+list.append( _x_)
+
+Add an item to the end of the list. Similar to `a[len(a):] = [x]`.
+
+list.extend( _iterable_)
+
+Extend the list by appending all the items from the iterable. Similar to
+`a[len(a):] = iterable`.
+
+list.insert( _i_, _x_)
+
+Insert an item at a given position. The first argument is the index of the
+element before which to insert, so `a.insert(0, x)` inserts at the front of
+the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.
+
+list.remove( _x_)
+
+Remove the first item from the list whose value is equal to _x_. It raises a
+[`ValueError`](https://docs.python.org/library/exceptions.html#ValueError) if there is no such item.
+
+list.pop(\[ _i_\])
+
+Remove the item at the given position in the list, and return it. If no index
+is specified, `a.pop()` removes and returns the last item in the list.
+It raises an [`IndexError`](https://docs.python.org/library/exceptions.html#IndexError) if the list is empty or the index is
+outside the list range.
+
+list.clear()
+
+Remove all items from the list. Similar to `del a[:]`.
+
+list.index( _x_\[, _start_\[, _end_\]\])
+
+Return zero-based index of the first occurrence of _x_ in the list.
+Raises a [`ValueError`](https://docs.python.org/library/exceptions.html#ValueError) if there is no such item.
+
+The optional arguments _start_ and _end_ are interpreted as in the slice
+notation and are used to limit the search to a particular subsequence of
+the list. The returned index is computed relative to the beginning of the full
+sequence rather than the _start_ argument.
+
+list.count( _x_)
+
+Return the number of times _x_ appears in the list.
+
+list.sort( _\*_, _key=None_, _reverse=False_)
+
+Sort the items of the list in place (the arguments can be used for sort
+customization, see [`sorted()`](https://docs.python.org/library/functions.html#sorted) for their explanation).
+
+list.reverse()
+
+Reverse the elements of the list in place.
+
+list.copy()
+
+Return a shallow copy of the list. Similar to `a[:]`.
+
+An example that uses most of the list methods:
+
+```
+>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+>>> fruits.count('apple')
+2
+>>> fruits.count('tangerine')
+0
+>>> fruits.index('banana')
+3
+>... [Content truncated for context window]
+
+
+---
+
+### Source 8: Data Structures
+
+**Content:**
+[Clojure](https://clojure.org/index)
+
+clojure.orgask.clojure.org
+
+Data Structures
+
+
+
+
+
+# Data Structures
+
+Table of Contents
+
+- [nil](https://clojure.org/clojure.org#nil)
+- [Numbers](https://clojure.org/clojure.org#Numbers)
+- [Strings](https://clojure.org/clojure.org#Strings)
+- [Characters](https://clojure.org/clojure.org#Characters)
+- [Keywords](https://clojure.org/clojure.org#Keywords)
+- [Symbols](https://clojure.org/clojure.org#Symbols)
+- [Collections](https://clojure.org/clojure.org#Collections)
+- [Lists (IPersistentList)](https://clojure.org/clojure.org#Lists)
+- [Vectors (IPersistentVector)](https://clojure.org/clojure.org#Vectors)
+- [Maps (IPersistentMap)](https://clojure.org/clojure.org#Maps)
+- [StructMaps](https://clojure.org/clojure.org#StructMaps)
+- [ArrayMaps](https://clojure.org/clojure.org#ArrayMaps)
+- [Sets](https://clojure.org/clojure.org#Sets)
+
+Clojure has a rich set of data structures. They share a set of properties:
+
+- They are immutable
+
+- They are read-able
+
+- They support proper value equality semantics in their implementation of equals
+
+- They provide good hash values
+
+- In addition, the collections:
+
+
+
+- Are manipulated via interfaces.
+
+- Support sequencing
+
+- Support persistent manipulation.
+
+- Support metadata
+
+- Implement java.lang.Iterable
+
+- Implement the non-optional (read-only) portion of java.util.Collection or java.util.Map
+
+
+## nil
+
+nil is a possible value of any data type in Clojure. nil has the same value as Java null. The Clojure conditional system is based around nil and false, with nil and false representing the values of logical falsity in conditional tests - anything else is logical truth. In addition, nil is used as the end-of-sequence sentinel value in the sequence protocol.
+
+## Numbers
+
+Clojure provides full support for JVM primitive values by default, allowing high performance, idiomatic Clojure code for numeric applications.
+
+Clojure also supports the Java boxed number types derived from java.lang.Number, including BigInteger and BigDecimal, plus its own Ratio type. There is some special handling:
+
+### Longs
+
+By default Clojure operates with natural numbers as instances of Java’s long primitive type. When a primitive integer operation results in a value that is too large to be contained in a primitive value, a java.lang.ArithmeticException is thrown. Clojure provides a set of alternative math operators suffixed with an apostrophe: +', -', \*', inc', and dec'. These operators auto-promote to BigInt upon overflow, but are less efficient than the regular math operators.
+
+### Ratio
+
+Represents a ratio between integers. Division of integers that can’t be reduced to an integer yields a ratio, i.e. 22/7 = 22/7, rather than a floating point or truncated value.
+
+### Contagion
+
+BigInts and floating point types are "contagious" across operations. That is, any integer operation involving a BigInt will result in a BigInt, and any operation involving a double or float will result in a double.
+
+### BigInt and BigDec... [Content truncated for context window]
+
+
+---
+
+### Source 9: Data structures
+
+**Content:**
+[CS Notes](https://notes.eddyerburgh.me) Menu
+
+Search
+
+- [view on GitHub](https://github.com/eddyerburgh/notes)
+
+# Data structures
+
+Data structures affect how long it takes to access and update data. Selecting appropriate data structures for a problem is in an important skill for software engineers to develop.
+
+## Table of contents
+
+1. [Introduction](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#introduction)
+1. [Abstract data types](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#abstract-data-types)
+2. [Contiguous vs Linked data structures](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#contiguous-vs-linked-data-structures)
+1. [Arrays](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#arrays)
+2. [Pointers and linked structures](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#pointers-and-linked-structures)
+3. [Comparison](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#comparison)
+3. [Stacks and queues](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#stacks-and-queues)
+4. [Dictionaries](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#dictionaries)
+1. [Hash tables](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#hash-tables)
+5. [Binary Search Trees](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#binary-search-trees)
+6. [References](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#references)
+
+## Introduction
+
+A data structure is a representation of data and a collection of associated operations [\[1, P. 5\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+
+Data structures are implementations of abstract data types [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+
+### Abstract data types
+
+ADTs (Abstract Data Types) define the set of operations supported by a data structure [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+
+An ADT is the interface of a data structure, it doesn’t define how a data structure implements the operations [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+
+There can be many implementations of an ADT [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+
+## Contiguous vs Linked data structures
+
+Data structures can be either **contiguous** in memory, or **linked** with pointers.
+
+Contiguously allocated structures are built from a single slab of memory. They include arrays, matrices, and heaps [\[2, P. 66\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#algorithm-design-manual).
+
+Linked data struct... [Content truncated for context window]
+
+
+---
+
+### Source 10: Data Structure Tutorial
+
+**Content:**
+- [![](https://www.tutorialride.com/images/facebookIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
+- [![](https://www.tutorialride.com/images/twitterIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
+- [![](https://www.tutorialride.com/images/linkedinIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
+- [![](https://www.tutorialride.com/images/googlePlusIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
+
+# Data Structure Tutorial
+
+- [Home](https://www.tutorialride.com/) \> [Programming languages](https://www.tutorialride.com/programming-languages.htm) \> Data Structures
+
+
+- [« Previous](https://www.tutorialride.com/data-structures/file-organization-in-data-structure.htm)
+- [Next »](https://www.tutorialride.com/data-structures/linked-list-in-data-structure.htm)
+
+###### Tutorial
+
+- [Data Structure Introduction](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
+- [Linked List](https://www.tutorialride.com/data-structures/linked-list-in-data-structure.htm)
+- [Types of Linked List](https://www.tutorialride.com/data-structures/linked-list-types-in-data-structure.htm)
+- [Stack](https://www.tutorialride.com/data-structures/stack-in-data-structure.htm)
+- [Queue](https://www.tutorialride.com/data-structures/queue-in-data-structure.htm)
+- [Types of Queue](https://www.tutorialride.com/data-structures/types-of-queue-in-data-structure.htm)
+- [Searching](https://www.tutorialride.com/data-structures/searching-in-data-structure.htm)
+- [Sorting](https://www.tutorialride.com/data-structures/sorting-in-data-structure.htm)
+- [Trees](https://www.tutorialride.com/data-structures/trees-in-data-structure.htm)
+- [Graphs](https://www.tutorialride.com/data-structures/graphs-in-data-structure.htm)
+- [Hashing](https://www.tutorialride.com/data-structures/hashing-in-data-structure.htm)
+- [File Organization](https://www.tutorialride.com/data-structures/file-organization-in-data-structure.htm)
+
+Data is organized in a particular fashion for the computer to be able to use it efficiently & this structure is called as Data Structure. We are going to see the importance, utility and various concepts of Data Structure in this tutorial.
+
+## Data Structure Tutorial
+
+Learn Data Structure with our complete and easy to understand Data Structure Tutorial. Beginning with the basics of Data Structure, this tutorial goes on to explain you advance concepts like Graphs, Hashing and File Organization with the help of practical examples and programs.
+
+## Who is this Data Structure Tutorial designed for?
+
+This tutorial will be very useful for both beginners and professionals. All the freshers, BCA, BE, BTech, MCA and college students, will find this tutorial extremely useful for their notes, exam preparation, lab exercises, assignments and viva questions.
+
+## What do I need to know to begin with?
+
+A basic knowledge of C will be very helpful... [Content truncated for context window]
 
 
 ---
@@ -606,7 +691,7 @@ This effectively extensible coding originated from its framework with all featur
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 1 Knowledge Nodes for: Python Programming**
+**Agent 1 Knowledge Nodes for: Data Structures**
 
 1. [Node Name]
 2. [Node Name]

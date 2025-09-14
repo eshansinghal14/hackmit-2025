@@ -445,16 +445,32 @@ def update_node_weights(json_file_path: str, weight_adjustments: dict) -> bool:
         
         # Update weights in the first element (nodes dictionary)
         nodes = data[0]
+        updated_count = 0
         for node_id, weight_offset in weight_adjustments.items():
             if node_id in nodes:
                 current_weight = nodes[node_id].get('weight', 0.0)
                 new_weight = max(-1.0, min(1.0, current_weight + weight_offset))  # Clamp between -1.0 and 1.0
                 nodes[node_id]['weight'] = round(new_weight, 2)
+                updated_count += 1
                 print(f"📊 Node {node_id}: {current_weight} -> {new_weight} (Δ{weight_offset:+.1f})")
+            else:
+                print(f"⚠️ Node {node_id} not found in data")
         
-        # Save updated JSON data
+        print(f"📊 Updated {updated_count} nodes out of {len(weight_adjustments)} adjustments")
+        
+        # Save updated JSON data with explicit write
+        print(f"💾 Writing updated data to: {json_file_path}")
+        print(f"💾 Data to write: {json.dumps(data, indent=2)[:200]}...")
+        
         with open(json_file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2)
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.flush()  # Force write to disk
+            
+        # Verify the write was successful
+        with open(json_file_path, 'r', encoding='utf-8') as f:
+            verify_data = json.load(f)
+            verify_weights = {k: v.get('weight', 0) for k, v in verify_data[0].items()}
+            print(f"✅ Verification - weights after save: {verify_weights}")
         
         print(f"✅ Updated weights saved to {json_file_path}")
         return True
