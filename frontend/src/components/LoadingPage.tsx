@@ -100,122 +100,105 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
   const overallProgress = ((currentStep + (progress / 100)) / analysisSteps.length) * 100
 
   return (
-    <Container maxWidth="md" sx={{ 
+    <Box sx={{ 
       minHeight: '100vh', 
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      py: 4
+      bgcolor: '#FFFFFF',
+      px: 3
     }}>
-      <Card sx={{ 
-        width: '100%', 
-        maxWidth: 600, 
-        boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-        borderRadius: 3
+      <Box sx={{ 
+        width: '100%',
+        maxWidth: '560px',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 6
       }}>
-        <CardContent sx={{ p: 6, textAlign: 'center' }}>
-          {/* Header */}
-          <Typography variant="h4" gutterBottom sx={{ 
-            fontWeight: 'bold',
-            background: 'linear-gradient(45deg, #667eea, #764ba2)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            mb: 1
+        {/* Header */}
+        <Box>
+          <Typography variant="h3" sx={{ 
+            fontSize: { xs: '1.75rem', sm: '2rem' },
+            color: '#111827',
+            fontWeight: 500,
+            mb: 2,
+            letterSpacing: '-0.01em'
           }}>
             Preparing Your Lesson
           </Typography>
           
-          <Typography variant="h6" color="text.secondary" sx={{ mb: 4 }}>
+          <Typography sx={{
+            fontSize: '1.125rem',
+            color: '#6B7280',
+            fontWeight: 400
+          }}>
             Topic: {topic}
           </Typography>
+        </Box>
 
-          {/* Overall Progress */}
-          <Box sx={{ mb: 4 }}>
-            <LinearProgress 
-              variant="determinate" 
-              value={overallProgress} 
-              sx={{ 
-                height: 8, 
-                borderRadius: 4,
-                backgroundColor: 'grey.200',
-                '& .MuiLinearProgress-bar': {
-                  background: 'linear-gradient(45deg, #667eea, #764ba2)',
-                  borderRadius: 4
-                }
+        {/* Progress Bar */}
+        <Box>
+          <Box sx={{ 
+            width: '100%',
+            height: 4,
+            bgcolor: '#F3F4F6',
+            borderRadius: 2,
+            overflow: 'hidden',
+            mb: 3
+          }}>
+            <Box 
+              sx={{
+                height: '100%',
+                width: `${overallProgress}%`,
+                bgcolor: '#2563EB',
+                transition: 'width 0.3s ease-out'
               }}
             />
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              {Math.round(overallProgress)}% Complete
-            </Typography>
           </Box>
+
+          <Typography sx={{ 
+            fontSize: '0.875rem',
+            color: '#6B7280',
+            fontWeight: 500,
+            mb: 4
+          }}>
+            {Math.round(overallProgress)}% Complete
+          </Typography>
 
           {/* Current Step */}
-          <Box sx={{ mb: 4 }}>
-            <Box sx={{ mb: 3 }}>
-              {analysisSteps[currentStep]?.icon}
-            </Box>
-            
-            <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
-              {analysisSteps[currentStep]?.title}
-            </Typography>
-            
-            <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-              {analysisSteps[currentStep]?.description}
-            </Typography>
+          <Typography sx={{
+            fontSize: '1rem',
+            color: '#111827',
+            fontWeight: 500
+          }}>
+            {currentStep === 0 && "Analyzing content"}
+            {currentStep === 1 && "Generating questions"}
+            {currentStep === 2 && "Finalizing"}
+          </Typography>
+        </Box>
 
-            {/* Step Progress */}
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-              <CircularProgress 
-                variant="determinate" 
-                value={progress}
-                size={24}
-                sx={{
-                  color: 'primary.main'
-                }}
-              />
-              <Typography variant="body2" color="text.secondary">
-                {Math.round(progress)}%
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* Step Indicators */}
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
-            {analysisSteps.map((_, index) => (
-              <Box
-                key={index}
-                sx={{
-                  width: 12,
-                  height: 12,
-                  borderRadius: '50%',
-                  backgroundColor: index <= currentStep ? 'primary.main' : 'grey.300',
-                  transition: 'all 0.3s ease',
-                  ...(index === currentStep && {
-                    animation: 'pulse 1.5s infinite',
-                    '@keyframes pulse': {
-                      '0%': {
-                        transform: 'scale(1)',
-                        opacity: 1,
-                      },
-                      '50%': {
-                        transform: 'scale(1.2)',
-                        opacity: 0.7,
-                      },
-                      '100%': {
-                        transform: 'scale(1)',
-                        opacity: 1,
-                      },
-                    }
-                  })
-                }}
-              />
-            ))}
-          </Box>
-        </CardContent>
-      </Card>
-    </Container>
+        {/* Step Indicators */}
+        <Box sx={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: 1.5 
+        }}>
+          {analysisSteps.map((_, index) => (
+            <Box
+              key={index}
+              sx={{
+                width: 6,
+                height: 6,
+                borderRadius: '50%',
+                bgcolor: index <= currentStep ? '#2563EB' : '#E5E7EB',
+                transition: 'all 0.2s ease'
+              }}
+            />
+          ))}
+        </Box>
+      </Box>
+    </Box>
   )
 }
 
