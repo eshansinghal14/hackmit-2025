@@ -152,19 +152,26 @@ def analyze_diagnostic_response():
 
 @app.route('/api/process-annotations', methods=['POST'])
 def process_annotations():
-    """Process Claude annotations and execute them"""
+    """Process Claude annotations and execute them with topic context"""
     try:
         data = request.json
+        topic = data.get('topic', 'Basic Calculus')
+        
+        print(f"🎯 Processing annotations for topic: {topic}")
         
         # Import the function here to avoid circular imports
         sys.path.append(os.path.dirname(__file__))
         from annotations import process_claude_annotations
         
+        # Add topic context to the data
+        data['topic_context'] = topic
+        
         success = process_claude_annotations(data)
         
         return jsonify({
             'status': 'success' if success else 'partial_failure',
-            'success': success
+            'success': success,
+            'topic': topic
         })
         
     except Exception as e:

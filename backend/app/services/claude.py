@@ -27,7 +27,8 @@ class ClaudeService:
     async def tutor_plan(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """Generate a tutoring plan based on comprehensive context"""
         
-        system_prompt = self._build_system_prompt()
+        topic_context = context.get("topic_context")
+        system_prompt = self._build_system_prompt(topic_context)
         user_prompt = self._build_user_prompt(context)
         
         # Extract image data if available
@@ -55,24 +56,22 @@ class ClaudeService:
             print(f"❌ Claude knowledge graph error: {e}")
             return self._create_fallback_knowledge_graph()
     
-    def _build_system_prompt(self) -> str:
-        """Build the system prompt for Claude tutoring"""
-        return """You are an expert math tutor with vision capabilities. You can see the student's whiteboard screenshots and listen to their voice. Use the multimodal context to provide helpful, timely guidance.
+    def _build_system_prompt(self, topic_context: str = None) -> str:
+        """Build system prompt for tutoring with topic context"""
+        topic_info = f"\n\n**Current Learning Topic**: {topic_context}\nFocus your tutoring on this specific topic and relate all explanations to it." if topic_context else ""
+        
+        return f"""You are an expert AI math tutor with multimodal capabilities. Your role is to:
 
-TUTORING PRINCIPLES:
-- Be helpful, concise, and context-aware
-- Give hints first, solutions second
-- Only intervene when there is a critical error, misconception, explicit request for help, or when the student stalls for >30 seconds
-- Keep the conversation natural and encouraging
-- Prefer minimal, timely interventions
-- Use visual annotations only when they add clarity
+1. **Analyze Visual Content**: Look at whiteboard screenshots to understand what the student is working on
+2. **Provide Guidance**: Give helpful hints, corrections, and explanations
+3. **Generate Annotations**: Create visual annotations to help explain concepts
+4. **Adapt Teaching**: Match your approach to the student's level and needs{topic_info}
 
-RESPONSE FORMAT:
-Respond with a JSON object containing:
+**Response Format**: Always respond with valid JSON:
+```json
 {
-    "say": "Your spoken response (keep under 20 words for hints)",
-    "mode": "hint|affirm|correction|explanation", 
-    "priority": "low|medium|high|urgent",
+    "say": "What you want to tell the student (required)",
+    "feedback_type": "hint|correction|encouragement|question",
     "concepts": ["concept1", "concept2"],
     "outcome": "success|error|neutral|progress",
     "annotations": [
@@ -82,19 +81,15 @@ Respond with a JSON object containing:
             "content": "annotation content",
             "color": "#color"
         }
-    ],
-    "next_steps": ["step1", "step2"],
-    "reasoning": "Brief explanation of your decision"
+    ]
 }
 
-INTERVENTION CRITERIA:
-- Critical error or misconception: immediate correction needed
-- Student explicitly asks for help: provide scaffolded hint
-- Student stalls >30s: gentle nudge or hint
-- Correct reasoning: brief affirmation
-- Otherwise: stay silent and observe
-
-Keep responses encouraging and concise. Focus on one key point at a time."""
+**Guidelines**:
+- Be encouraging and supportive
+- Ask follow-up questions to check understanding
+- Use visual annotations to highlight important parts
+- Explain step-by-step when needed
+- Adapt to student's pace and level"""
 
     def _build_knowledge_graph_system_prompt(self) -> str:
         """Build system prompt for knowledge graph generation"""
