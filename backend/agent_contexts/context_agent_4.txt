@@ -1,0 +1,80 @@
+You are Agent 4 of 5, a specialized research expert analyzing "basic_calculus". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 4 Research Context
+
+## Assignment
+You are Agent 4 of 5 specialized research agents analyzing: "basic_calculus"
+
+## Your Data Subset
+- Agent ID: 4/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 7 to 8
+
+## Your Research Sources
+
+### Source 7: Basic Calculus Types, Formulas & Rules - Lesson - Study.com
+
+**Content:**
+In order to continue enjoying our site, we ask that you confirm your identity as a human. Thank you very much for your cooperation.
+
+
+---
+
+### Source 8: Calculus I - Review
+
+**Content:**
+Show Mobile NoticeShow All NotesHide All Notes
+
+Mobile Notice
+
+You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see them) and some of the menu items will be cut off due to the narrow screen width.
+
+## Chapter 1 : Review
+
+Technically a student coming into a Calculus class is supposed to know both Algebra and Trigonometry. Unfortunately, the reality is often much different. Most students enter a Calculus class woefully unprepared for both the algebra and the trig that is in a Calculus class. This is very unfortunate since good algebra skills are absolutely vital to successfully completing any Calculus course and if your Calculus course includes trig (as this one does) good trig skills are also important in many sections.
+
+The above statement is not meant to denigrate your favorite Algebra or Trig instructor. It is simply an acknowledgment of the fact that many of these courses, especially Algebra courses, are aimed at a more general audience and so do not always put the time into topics that are vital to a Calculus course and/or the level of difficulty is kept lower than might be best for students heading on towards Calculus.
+
+Far too often the biggest impediment to students being successful in a Calculus course is they do not have sufficient skills in the underlying algebra and trig that will be in many of the calculus problems we'll be looking at. These students end up struggling with the algebra and trig in the problems rather than working to understand the calculus topics which in turn negatively impacts their grade in a Calculus course. The intent of this chapter, therefore, is to do a very cursory review of some algebra and trig skills that are vital to a calculus course that many students just didn't learn as well as they should have from their Algebra and Trig courses.
+
+This chapter does not include all the algebra and trig skills that are needed to be successful in a Calculus course. It only includes those topics that most students are particularly deficient in. For instance, factoring is also vital to completing a standard calculus class but is not included here as it is assumed that if you are taking a Calculus course then you do know how to factor. Likewise, it is assumed that if you are taking a Calculus course then you know how to solve linear and quadratic equations so those topics are not covered here either. For a more in depth review of Algebra topics you should check out the full set of Algebra notes at [http://tutorial.math.lamar.edu](http://tutorial.math.lamar.edu).
+
+Note that even though these topics are very important to a Calculus class we rarely cover all of them in the actual class itself. We simply don't have the time to do that. We will cover cer... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 4:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 4 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 4 Knowledge Nodes for: Basic_Calculus**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

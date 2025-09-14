@@ -117,10 +117,6 @@ def run_multi_agent_cerebras(search_results_file: str = None):
     print(f"🧠 Running 5 Cerebras agents for distributed knowledge extraction...")
     print("=" * 60)
     
-    # Skip search results loading since we're using existing agent contexts
-    # Create dummy results for query extraction
-    results = {"query": "lhospital"}
-    
     # Use existing agent context files
     agent_files = [f"agent_contexts/context_agent_{i}.txt" for i in range(1, 6)]
     if not all(os.path.exists(f) for f in agent_files):
@@ -128,6 +124,25 @@ def run_multi_agent_cerebras(search_results_file: str = None):
         return None
     else:
         print("📄 Using existing agent context files")
+    
+    # Extract topic from the first agent context file
+    topic = "unknown_topic"
+    try:
+        with open(agent_files[0], 'r', encoding='utf-8') as f:
+            content = f.read()
+            # Look for the topic in the context file
+            if "Knowledge Nodes for:" in content:
+                topic_line = [line for line in content.split('\n') if "Knowledge Nodes for:" in line][0]
+                topic = topic_line.split("Knowledge Nodes for:")[-1].strip().replace(" ", "_").lower()
+            elif "research topic:" in content.lower():
+                topic_line = [line for line in content.split('\n') if "research topic:" in line.lower()][0]
+                topic = topic_line.split(":")[-1].strip().replace(" ", "_").lower()
+        print(f"📋 Detected topic: {topic}")
+    except Exception as e:
+        print(f"⚠️ Could not extract topic from context files, using 'unknown_topic': {e}")
+    
+    # Create results with extracted topic
+    results = {"query": topic}
     
     # Define 5 different high-capacity models (60k+ token limits)
     models = [
@@ -313,7 +328,7 @@ if __name__ == "__main__":
         print(f"🤖 Agents completed: {len([o for o in agent_outputs if not o.startswith('Agent') or 'failed' not in o])}/5")
         
         # Run final consolidation agent
-        final_result = run_final_consolidation_agent(agent_outputs, "lhospital")
+        final_result = run_final_consolidation_agent(agent_outputs, roadmap.split('\n')[0].replace('# Comprehensive Knowledge Roadmap: ', '').strip().lower().replace(' ', '_'))
         
         if final_result:
             final_output, final_file = final_result

@@ -1,0 +1,11 @@
+**Agent 2 Knowledge Nodes for: Basic_Calculus**
+
+1. **Handout‑Based Learning Model for Essential Calculus** – a compact curriculum delivered through 21 free PDF handouts (≈100 pages total) that distill only the calculus topics needed for Physics Olympiad success.  
+2. **Embedded Practice‑First Approach** – each handout pairs concise theory with multiple calculation exercises and complex word problems, ensuring immediate application of every new concept.  
+3. **Foundational Set Theory & Real‑Number Inequalities** – rigorous treatment of sets, the real number system, and polynomial inequality techniques that underpin later topics such as monotonicity and convexity.  
+4. **Function Fundamentals: Domain, Range, Composition & Inverses** – clear definitions and examples of how to determine domains/ranges, compose functions (preparing for the Chain Rule), and construct inverse functions (essential for exponentials and logarithms).  
+5. **Limit Theory & Core Theorems (IVT & EVT)** – intuitive introduction to limits, two‑sided limits, continuity, and the Intermediate Value & Extreme Value Theorems, providing the logical foundation for differentiation and integration.  
+
+**Source Summary:**
+- Sources Analyzed: 2 (Calculus Primer website & “Understanding Basic Calculus” PDF)  
+- Agent Coverage: 2 of 8 total sources  

@@ -1,0 +1,19 @@
+```json
+{
+  "topic": "Basic_Calculus",
+  "lessons": [
+    "Introduction to Calculus and Change",
+    "Limits",
+    "Continuity",
+    "Derivatives and Differentiation Rules",
+    "Implicit Derivatives",
+    "Function Fundamentals: Domain, Range, Composition & Inverses",
+    "Limit Theory & Core Theorems",
+    "Algebra Prerequisite Mastery",
+    "Trigonometry Prerequisite Integration",
+    "Fundamental Theorem of Calculus",
+    "Integration Techniques",
+    "Applications of Derivatives"
+  ]
+}
+```

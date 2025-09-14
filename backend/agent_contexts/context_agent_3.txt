@@ -1,0 +1,107 @@
+You are Agent 3 of 5, a specialized research expert analyzing "basic_calculus". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 3 Research Context
+
+## Assignment
+You are Agent 3 of 5 specialized research agents analyzing: "basic_calculus"
+
+## Your Data Subset
+- Agent ID: 3/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 5 to 6
+
+## Your Research Sources
+
+### Source 5: A Gentle Introduction To Learning Calculus - BetterExplained
+
+**Content:**
+I have a love/hate relationship with calculus: it demonstrates the beauty of math and the agony of math education.
+
+Calculus relates topics in an elegant, brain-bending manner. My closest analogy is Darwin’s Theory of Evolution: once understood, you start seeing Nature in terms of survival. You understand why drugs lead to resistant germs (survival of the fittest). You know why sugar and fat taste sweet (encourage consumption of high-calorie foods in times of scarcity). It all fits together.
+
+Calculus is similarly enlightening. Don’t these formulas seem related in some way?
+
+They are. But most of us learn these formulas independently. Calculus lets us start with $\\text{circumference} = 2 \\pi r$ and figure out the others — the Greeks would have appreciated this.
+
+**Unfortunately, calculus can epitomize what’s wrong with math education**. Most lessons feature contrived examples, arcane proofs, and memorization that body slam our intuition & enthusiasm.
+
+It really shouldn’t be this way.
+
+## Math, art, and ideas
+
+I’ve learned something from school: **Math isn’t the hard part of math; motivation is.** Specifically, staying encouraged despite
+
+- Teachers focused more on publishing/perishing than teaching
+- Self-fulfilling prophecies that math is difficult, boring, unpopular or “not your subject”
+- Textbooks and curriculums more concerned with [profits](https://web.archive.org/web/20081216021713/http://www.redshift.com/~jmichael/html/feynman.html) and test results than insight
+
+[‘A Mathematician’s Lament’ \[pdf\]](http://www.maa.org/external_archive/devlin/LockhartsLament.pdf) is an excellent essay on this issue that [resonated](http://reddit.com/info/6baz9/comments/) [with](http://www.metafilter.com/70699/A-Mathematicians-Lament) [many people](http://www.math.princeton.edu/~bbukh/natural.html):
+
+> “…if I had to design a mechanism for the express purpose of destroying a child’s natural curiosity and love of pattern-making, I couldn’t possibly do as good a job as is currently being done — I simply wouldn’t have the imagination to come up with the kind of senseless, soul-crushing ideas that constitute contemporary mathematics education.”
+
+Imagine teaching art like this: **Kids, no fingerpainting in kindergarten.** Instead, let’s study paint chemistry, the physics of light, and the anatomy of the eye. After 12 years of this, if the kids (now teenagers) don’t hate art already, they may begin to start coloring on their own. After all, they have the “rigorous, testable” fundamentals to start appreciating art. Right?
+
+Poetry is similar. Imagine studying this quote (formula):
+
+```
+This above all: to thine own self be true,
+And it must follow, as the night the day,
+Thou canst not then be false to any man.
+
+— William Shakespeare, Hamlet
+
+```
+
+It’s an elegant way of saying “be yourself” (and if that means writing irreverently about math, so be it). But if this were math class, we’d be counting the syllables, analyzing the iambic pentameter, and mapping out the s... [Content truncated for context window]
+
+
+---
+
+### Source 6: Calculus 1 | Math - Khan Academy
+
+**Content:**
+If you're seeing this message, it means we're having trouble loading external resources on our website.
+
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+
+## Oops. Something went wrong. Please try again.
+
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+
+
+---
+
+
+
+## Your Mission as Agent 3:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 3 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 3 Knowledge Nodes for: Basic_Calculus**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.
