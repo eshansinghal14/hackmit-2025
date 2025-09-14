@@ -85,8 +85,11 @@ def process_claude_annotations(claude_output: Dict[str, Any]) -> bool:
         
         for annotation in annotations:
             annotation_type = annotation.get("type")
-            x = annotation.get("x", 100)
-            y = annotation.get("y", 100)
+            # Get position from annotation, check both formats
+            position = annotation.get("position", {})
+            x = position.get("x", annotation.get("x", 100))
+            y = position.get("y", annotation.get("y", 100))
+            print(f"📍 Processing LaTeX annotation at position: x={x}, y={y}")
             
             if annotation_type == "latex" or annotation_type == "text":
                 content = annotation.get("content", "")

@@ -1,113 +1,538 @@
-You are Agent 4 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 4 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 4 Research Context
 
 ## Assignment
-You are Agent 4 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 4 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Data Subset
 - Agent ID: 4/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 7 to 8
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 31 to 40
 
 ## Your Research Sources
 
-### Source 7: Practical Guide to Linear Algebra in Data Science and AI
+### Source 31: Linear Algebra and Its Applications, Global Edition, 6ed
 
 **Content:**
-[Tatev Aslanyan](https://www.freecodecamp.org/news/author/tatevaslanyan/)
-
-> "In God we trust; all others bring data." – W. Edwards Deming
-
-This famous quote from Edwards Deming perfectly captures the essence of modern Data Science and AI.
-
-Data is the lifeblood of Data Science and AI fields – Machine Learning, Deep Learning, Generative AI and much more. And understanding how to analyze and manipulate data it is key to unlocking its full potential.
-
-The key to understanding all these concepts is linear algebra – the unsung hero behind many powerful algorithms and techniques.
-
-If you've ever felt a disconnect between the linear algebra you learned in school and its practical use in your career, you're not alone. If you believe you should study and work your way through an entire book of Introduction to Linear Algebra, then you are again not alone.
-
-Many aspiring data science and AI professionals struggle to bridge this gap and think they need to spend countless hours to master mathematics for Data Science and AI. But don't worry, this guide is here to help.
-
-I'll show you how linear algebra isn't just a theoretical concept or old fashioned forgotten area of expertise. You'll learn how it's a practical tool that you can use to solve real-world problems in your field.
-
-Linear Algebra combined with Mathematical Analysis (called Calculus I and II in many undergrad studies) form the backbone of Machine Learning, Deep Learning, Computer Vision, and Generative AI. From building recommendation systems and training Neural Networks to analyzing medical images, understanding linear algebra opens up a world of possibilities.
-
-In this guide, you'll discover:
-
-- **Real-World Applications:** We'll explore how linear algebra is applied across various industries, from healthcare to finance, and everything in between (with a special and detailed focus on Data Science and AI).
-
-- **Practical Tips:** You'll learn how to translate theoretical concepts into actionable steps for your data science projects.
-
-- **Linear Algebra RoadMap 2024:** You will get a roadmap for Linear Algebra in 2024 – on paper and in a video tutorial.
-
-- **Career Development Resources:** I will provide you resources to help you learn linear algebra and accelerate your career in data science and AI.
-
-
-Whether you're a student, a recent graduate, or an experienced professional aspiring to become technical professional, this guide will equip you with the knowledge and skills to learn and leverage linear algebra effectively in your work. And you won't have to spend all your time on endless browsing and searching.
-
-> "Mathematics is like the producer of the movies: you don't see them but they are actually running the show." – Tatev Aslanyan
-
-## Table of Contents
-
-1. [Core Linear Algebra Concepts](https://www.freecodecamp.org/www.freecodecamp.org#heading-core-concepts-in-linear-algebra-that-you-will-actually-use)
-
-2. [Linear Algebra Roadmap](https://www.freecodecamp.org/www.freecodecamp.org#heading-li... [Content truncated for context window]
+GLOBAL
+EDITION
+Linear Algebra and Its Applications
+SIXTH EDITION
+David C. Lay • Steven R. Lay • Judi J. McDonald
+S I X T H E D I T I O N
+Linear Algebra
+and Its Applications
+G L O B A L E D I T I O N
+David C. Lay
+University of Maryland–College Park
+Steven R. Lay
+Lee University
+Judi J. McDonald
+Washington State University
+Pearson Education Limited 
+KAO Two 
+KAO Park 
+Hockham Way 
+Harlow 
+Essex 
+CM17 9SR 
+United Kingdom 
+and Associated Companies throughout the world 
+Visit us on the World Wide Web at: www.pearsonglobaleditions.com 
+© Pearson Education Limited, 2022 
+The rights of David C. Lay, Steven R. Lay, and Judi J. McDonald to be identified as the authors of this work have been 
+asserted by them in accordance with the Copyright, Designs and Patents Act 1988. 
+Authorized adaptation from the United States edition, entitled Linear Algebra and Its Applications, 6th Edition, ISBN 
+978-0-13-585125-8 by David C. Lay, Steven R. Lay, and Judi J. McDonald, published by Pearson Education © 2021. 
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any 
+form or by any means, electronic, mechanical, photocopying, recording or otherwise, without either the prior written 
+permission of the publisher or a license permitting restricted copying in the United Kingdom issued by the Copyright 
+Licensing Agency Ltd, Saffron House, 6–10 Kirby Street, London EC1N 8TS. 
+All trademarks used herein are the property of their respective owners. The use of any trademark in this text does not 
+vest in the author or publisher any trademark ownership rights in such trademarks, nor does the use of such trademarks 
+imply any affiliation with or endorsement of this book by such owners. For information regarding permissions, request 
+forms, and the appropriate contacts within the Pearson Education Global Rights and Permissions department, please 
+visit www.pearsoned.com/permissions. 
+This eBook is a standalone product and may or may not include all assets that were part of the print version. It also 
+does not provide access to other Pearson digital products like MyLab and Mastering. The publisher reserves the right to 
+remove any material in this eBook at any time. 
+British Library Cataloguing-in-Publication Data 
+A catalogue record for this book is available from the British Library 
+ISBN 10: 1-292-35121-7 
+ISBN 13: 978-1-292-35121-6 
+eBook ISBN 13: 978-1-292-35122-3 
+To my wife, Lillian, and our children,
+Christina, Deborah, and Melissa, whose
+support, encouragement, and faithful
+prayers made this book possible.
+David C. Lay
+About the Authors
+David C. Lay
+As a founding member of the NSF-sponsored Linear Algebra Curriculum Study Group
+(LACSG), David Lay was a leader in the movement to modernize the linear algebra
+curriculum and shared those ideas with students and faculty through his authorship
+of the first four editions of this textbook. David C. Lay earned a B.A. from Aurora
+University (Illinois), and an M.A. and P... [Content truncated for context window]
 
 
 ---
 
-### Source 8: Linear Algebra Without the Agonizing Pain
+### Source 32: Linear Algebra – Problems in Mathematics
 
 **Content:**
-Table of Contents:
+# Linear Algebra
 
-- [Null Space](https://johnwlambert.github.io/johnwlambert.github.io#null-space)
-- [Column Space](https://johnwlambert.github.io/johnwlambert.github.io#column-space)
-- [Projection of a Vector onto a Vector](https://johnwlambert.github.io/johnwlambert.github.io#projection)
-- [Gram-Schmidt](https://johnwlambert.github.io/johnwlambert.github.io#gram-schmidt)
-- [Solving Systems of Equations](https://johnwlambert.github.io/johnwlambert.github.io#solving-systems-of-equations)
-- [Singular Value Theorem (SVD)](https://johnwlambert.github.io/johnwlambert.github.io#svd)
-- [Computation of the SVD](https://johnwlambert.github.io/johnwlambert.github.io#computation-svd)
-- [Sherman-Morrison](https://johnwlambert.github.io/johnwlambert.github.io#sherman-morrison)
-- [Sherman-Woodbury-Woodbury Formula](https://johnwlambert.github.io/johnwlambert.github.io#sww)
+## Linear Algebra Problems and Solutions
 
-## Linear Algebra Definitions
+The topics in Linear Algebra are listed below.
 
-Before we do anything interesting with machine learning or optimization, we’ll need to review some essential linear algebra concepts.
+Each page contains definitions and summary of the topic followed by exercise problems.
 
-Suppose we have two vectors \\(u,v \\in \\mathbf{R}^{n \\times 1}\\). Their _outer product_ is defined as \\(u \\cdot v^T\\), which is an \\(n \\times n\\) matrix. The inner product of \\(u\\) and \\(v\\) is defined \\(u^Tv \\in \\mathbf{R}^{1 \\times 1}\\), a scalar.
+This is version 0 (11/15/2017), that is, still work in progress.
 
-Orthogonal vectors satisfy \\(v^Tu = 0\\). For all \\(x \\neq 0\\), if the quadratic form is positive \\(x^TAx > 0\\), then the matrix is symmetric positive matrix; if instead \\(x^TAx \\geq 0\\), the matrix is symmetric positive semi-definite.
+- [Introduction to Matrices](https://yutsumura.com/linear-algebra/introduction-to-matrices/)
+- [Elementary Row Operations](https://yutsumura.com/linear-algebra/elementary-row-operations/)
+- [Gaussian-Jordan Elimination](https://yutsumura.com/linear-algebra/gaussian-jordan-elimination/)
+- [Solutions of Systems of Linear Equations](https://yutsumura.com/linear-algebra/solutions-of-systems-of-linear-equations/)
+- [Linear Combination and Linear Independence](https://yutsumura.com/linear-algebra/linear-combination-and-linear-independence/)
+- [Nonsingular Matrices](https://yutsumura.com/linear-algebra/nonsingular-matrices/)
+- [Inverse Matrices](https://yutsumura.com/linear-algebra/inverse-matrices/)
+- [Subspaces in $\\R^n$](https://yutsumura.com/linear-algebra/subspaces-in-rn/)
+- [Bases and Dimension of Subspaces in $\\R^n$](https://yutsumura.com/linear-algebra/bases-and-dimension-of-subspaces-in-rn/)
+- [General Vector Spaces](https://yutsumura.com/linear-algebra/general-vector-spaces/)
+- [Subspaces in General Vector Spaces](https://yutsumura.com/linear-algebra/subspaces-in-general-vector-spaces/)
+- [Linearly Independency of General Vectors](https://yutsumura.com/linear-algebra/linearly-independency-of-general-vectors/)
+- [Bases and Coordinate Vectors](https://yutsumura.com/linear-algebra/bases-and-coordinate-vectors/)
+- [Dimensions of General Vector Spaces](https://yutsumura.com/linear-algebra/dimensions-of-general-vector-spaces/)
+- [Linear Transformation from $\\R^n$ to $\\R^m$](https://yutsumura.com/linear-algebra/linear-transformation-from-rn-to-rm/)
+- [Linear Transformation Between Vector Spaces](https://yutsumura.com/linear-algebra/linear-transformation-between-vector-spaces/)
+- [Orthogonal Bases](https://yutsumura.com/linear-algebra/orthogonal-bases/)
+- [Determinants of Matrices](https://yutsumura.com/linear-algebra/determinants-of-matrices/)
+- [Computations of Determinants](https://yutsumura.com/linear-algebra/computations-of-determinants/)
+- [Introduction to Eigenvalues and Eigenvectors](https://yutsumura.com/linear-algebra/introduction-to-eigenvalues-and-eigenvectors/)
+- [Eigenvectors and Eigenspaces](https://yutsumura.com/linear-algebra/eigenvectors-and-eigenspaces/)
+- [Diagonalization of Matrices](https://yutsumura.com/linear-algebra/diagonalization-of-matrices/)
+- [The Cayley-Hamilton Theorem](https://yutsumura.com/linear-algebra/the-cayley-hamilton-theorem/)
+- [Dot Products and Length of Vectors](https://yutsumura.com/linear-algebra/dot-products-and-length-of-vectors/)
+- [Eigenvalues and Eigenvectors of Linear Transformations](https://yutsumura.com/linear-algebra/eigenvalues-and-eigenvectors-of-linear-transformations/)
+- [Jordan Canonical Form](https://yutsumura.com/linear-algebra/... [Content truncated for context window]
 
-A vector norm assigns a scalar value to vector or matrix. It turns out that all norms are _equivalent_, meaning we can bound a certain norm above and below
 
-\\\[\\delta \\\|x\\\|\_0 \\leq \\\|x\\\|\_{\\square} \\leq \\gamma \\\|x\\\|\_0\\\]
+---
 
-e.g. \\(\\\|x\\\|\_{\\alpha} \\leq C\_{\\alpha \\beta} \\\| x \\\|\_{\\beta}\\), or \\(\\\|x\\\|\_2 \\leq \\\|x\\\|\_1 \\leq \\sqrt{n} \\\|x\\\|\_2\\).
+### Source 33: Linear Algebra (Waldron, Cherney, and Denton)
 
-Many matrix norms are _induced_ from vector norms.
+**Content:**
+[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
 
-### Matrix Rank
+Linear algebra is the study of vectors and linear transformations. This text is suitable for a sophomore level linear algebra course taught in about twenty-five lectures. It is designed both for engineering and science majors, but has enough abstraction to be useful for potential math majors. Our goal in writing it was to produce students who can perform computations with linear systems and also understand the concepts behind these computations.
 
-### Vector Space
+- [Front Matter](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/00%3A_Front_Matter)
+- [1: What is Linear Algebra?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra)
+- [2: Systems of Linear Equations](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/02%3A_Systems_of_Linear_Equations)
+- [3: The Simplex Method](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/03%3A_The_Simplex_Method)
+- [4: Vectors in Space, n-Vectors](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/04%3A_Vectors_in_Space_n-Vectors)
+- [5: Vector Spaces](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/05%3A_Vector_Spaces)
+- [6: Linear Transformations](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/06%3A_Linear_Transformations)
+- [7: Matrices](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/07%3A_Matrices)
+- [8: Determinants](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/08%3A_Determinants)
+- [9: Subspaces and Spanning Sets](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/09%3A_Subspaces_and_Spanning_Sets)
+- [10: Linear Independence](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/10%3A_Linear_Independence)
+- [11: Basis and Dimension](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/11%3A_Basis_and_Dimension)
+- [12: Eigenvalues and Eigenvectors](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/12%3A_Eigenvalues_and_Eigenvectors)
+- [13: Diagonalization](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/13%3A_Diagonalization)
+- [14: Orthonormal Bases and Complements](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/14%3A_Orthonormal_Bases_and_Complements)
+- [15: Diagonalizing Sy... [Content truncated for context window]
 
-### Null Space of a Matrix
 
-Given \\(A \\in \\mathbb{R}^{m \\times n}\\), the **null space** of \\(A\\) is the set of vectors which are sent to the zero vector:
+---
 
-\\\[\\mathcal{N}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\\\]
+### Source 34: Linear Algebra
 
-Multiplication by \\(A\\) can be seen as a function which sends a vector \\(x \\in \\mathbb{R}^n\\) to a vector \\(Ax \\in \\mathbb{R}^m\\).
+**Content:**
+Linear Algebra
 
-Of course, \\(\\mathcal{N}(A)\\) always contains the zero vector, i.e. \\({0} \\in \\mathcal{N}(A)\\). But the question is, does it contain any other vectors? If the columns of \\(A\\) are linearly independent, then we can always say \\(\\mathcal{N}(A) = {0} \\).
+David Cherney, Tom Denton,
+Rohit Thomas and Andrew Waldron
 
-### Column Space (Range) of a Matrix
+2
+Edited by Katrina Glaeser and Travis Scrimshaw
+First Edition. Davis California, 2013.
+This work is licensed under a
+Creative Commons Attribution-NonCommercialShareAlike 3.0 Unported License.
+2
+Contents
+1 What is Linear Algebra? 9
+1.1 Organizing Information . . . . . . . . . . . . . . . . . . . . . . 9
+1.2 What are Vectors? . . . . . . . . . . . . . . . . . . . . . . . . 12
+1.3 What are Linear Functions? . . . . . . . . . . . . . . . . . . . 15
+1.4 So, What is a Matrix? . . . . . . . . . . . . . . . . . . . . . . 20
+1.4.1 Matrix Multiplication is Composition of Functions . . . 25
+1.4.2 The Matrix Detour . . . . . . . . . . . . . . . . . . . . 26
+1.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 30
+2 Systems of Linear Equations 37
+2.1 Gaussian Elimination . . . . . . . . . . . . . . . . . . . . . . . 37
+2.1.1 Augmented Matrix Notation . . . . . . . . . . . . . . . 37
+2.1.2 Equivalence and the Act of Solving . . . . . . . . . . . 40
+2.1.3 Reduced Row Echelon Form . . . . . . . . . . . . . . . 40
+2.1.4 Solution Sets and RREF . . . . . . . . . . . . . . . . . 45
+2.2 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 48
+2.3 Elementary Row Operations . . . . . . . . . . . . . . . . . . . 52
+2.3.1 EROs and Matrices . . . . . . . . . . . . . . . . . . . . 52
+2.3.2 Recording EROs in (M|I ) . . . . . . . . . . . . . . . . 54
+2.3.3 The Three Elementary Matrices . . . . . . . . . . . . . 56
+2.3.4 LU, LDU, and P LDU Factorizations . . . . . . . . . . 58
+2.4 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 61
+3
+4
+2.5 Solution Sets for Systems of Linear Equations . . . . . . . . . 63
+2.5.1 The Geometry of Solution Sets: Hyperplanes . . . . . . 64
+2.5.2 Particular Solution + Homogeneous Solutions . . . . . 65
+2.5.3 Solutions and Linearity . . . . . . . . . . . . . . . . . . 66
+2.6 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 68
+3 The Simplex Method 71
+3.1 Pablo’s Problem . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+3.2 Graphical Solutions . . . . . . . . . . . . . . . . . . . . . . . . 73
+3.3 Dantzig’s Algorithm . . . . . . . . . . . . . . . . . . . . . . . 75
+3.4 Pablo Meets Dantzig . . . . . . . . . . . . . . . . . . . . . . . 78
+3.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 80
+4 Vectors in Space, n-Vectors 83
+4.1 Addition and Scalar Multiplication in R
+n
+. . . . . . . . . . . . 84
+4.2 Hyperplanes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85
+4.3 Directions and Magnitudes . . . . . . . . . . . . . . . . . . . . 88
+4.4 Vectors, Lists and Functions: R
+S
+. . . . . . . . . . . . . . . . 94
+4.5 Review Problems . . . . . . . . . . . . . . . . . . . . . . . . . 97
+5 Vector Spaces 101
+5.1 Examples of Vector Spaces . . . . . . . . . . . . . . . . . . . . 102
+5.1.1 Non-Examples . . . . . . . . . . . . . . . . . . . . . . . 106
+5.2 Other Fields . . . . . . . . . . . . . . . . ... [Content truncated for context window]
 
-Given an \\(m \\times n\\) matrix \\(A\\), we would like to know for which vectors \\(b \\in \\mathbb{R}^m\\) the system \\(Ax = b\\) has a solution. Let’s define the columns of \\(A\\) as:
 
-\\\[A = \\begin{bmatrix} \| & \| & & \| \\\ v\_1 & v\_2 & \\cdots & v\_n \\\ \| & \| & & \| \... [Content truncated for context window]
+---
+
+### Source 35: What is Linear Algebra actually used for? How did it start ...
+
+**Content:**
+
+ What is Linear Algebra actually used for? How did it start out? 
+ Author: DeepRNA 
+ Time Posted (UTC): 2021-02-11 00:47:22+00:00 
+ Score: 278 
+ 
+
+
+ 
+ Link: https://www.reddit.com/r/math/comments/lh8pm7/what_is_linear_algebra_actually_used_for_how_did/ 
+ 
+
+
+ 
+ I dont think linear algebra started out as pure mathematics then found use cases. Imagine you are an early mathematician, what problems were you trying to solve? How did linear algebra help? How does it help in todays world? (If you can, please use engineering examples). Im trying to write down reasons for students to even want to learn linear algebra. But not knowing enough about it I am struggling compiling information on it. 
+ 
+
+
+ 
+ Comments 
+ 
+
+
+ 
+ 
+ Comment by: KingOfTheEigenvalues
+ | Posted (UTC): 2021-02-11
+ | Score: 343
+ 
+ A much harder question is "what is linear algebra NOT used for?" It comes up in pretty much every branch of modern mathematics and extends to applications in pretty much every STEM field. 
+
+
+ 
+ 
+ Comment by: hubryan
+ | Posted (UTC): 2021-02-11
+ | Score: 122
+ 
+ every area of math is within 3 concepts away from linear algebra 
+
+
+ 
+ 
+ Comment by: punaisetpimpulat
+ | Posted (UTC): 2021-02-11
+ | Score: 3
+ 
+ I’ve heard that every mathematical operation can be reduced to addition. That’s certainly true for multiplying and exponents, but perhaps it can also work with more complicated concepts too. If that’s the case, we could also say that everything is just few steps away from addition. 
+
+
+ 
+ 
+ Comment by: [deleted]
+ | Posted (UTC): 2021-02-11
+ | Score: 23
+ 
+ I believe addition and multiplication can be fundamentally different, depending on the context. 
+
+
+ 
+ 
+ Comment by: DrSeafood
+ | Posted (UTC): 2021-02-11
+ | Score: 13
+ 
+ Yeah. Like ... How about function composition? That doesn't resemble "addition" in any reasonable way, as far as I can tell. Or commutator \[a,b\] = ab - ba? That's not even associative. Edit: ooh. They probably meant that subtraction is adding negatives, multiplication is repeated addition, division is inverse multiplication, exponents are repeated multiplication... All basic arithmetic is connected to addition in some way. That makes sense. 
+
+ 
+
+ 
+ 
+ Comment by: ElectricalIons
+ | Posted (UTC): 2021-02-12
+ | Score: 2
+ 
+ Yeah, the simplest evidence being that the additive identity and multiplicative identity are in general not the same. Addition and multiplication don't seem to interact much in rings. 
+
+ 
+ 
+
+ 
+ 
+ Comment by: alimaze-9825
+ | Posted (UTC): 2021-02-11
+ | Score: 2
+ 
+ a vector like [a, b] can be written as a + b so I'm inclined to believe it can be extended to matrices of any size. 
+
+ 
+
+ 
+ 
+ Comment by: [deleted]
+ | Posted (UTC): 2021-02-11
+ | Score: 1
+ 
+ [deleted] 
+
+
+ 
+ 
+ Comment by: SV-97
+ | Posted (UTC): 2021-02-11
+ | Score: 4
+ 
+ e = lim\_{n to infty} (1+1/n)\^n - you can write the power as repeated multiplication as addition and use a power series for 1/n to reduce all you have to do to addition :) Not saying it's true that you can ... [Content truncated for context window]
+
+
+---
+
+### Source 36: An Intuitive Guide to Linear Algebra – BetterExplained
+
+**Content:**
+Despite two linear algebra classes, my knowledge consisted of “Matrices, determinants, eigen something something”.
+
+Why? Well, let’s try this course format:
+
+- Name the course _Linear Algebra_ but focus on things called matrices and vectors
+- Teach concepts like Row/Column order with mnemonics instead of explaining the reasoning
+- Favor abstract examples (2d vectors! 3d vectors!) and avoid real-world topics until the final week
+
+The survivors are physicists, graphics programmers and other masochists. We missed the key insight:
+
+**Linear algebra gives you mini-spreadsheets for your math equations.**
+
+We can take a table of data (a matrix) and create updated tables from the original. It’s the power of a spreadsheet written as an equation.
+
+Here’s the linear algebra introduction I wish I had, with a real-world stock market example.
+
+## What’s in a name?
+
+“Algebra” means, roughly, “relationships”. Grade-school algebra explores the relationship between unknown numbers. Without knowing x and y, we can still work out that $(x + y)^2 = x^2 + 2xy + y^2$.
+
+“Linear Algebra” means, roughly, “line-like relationships”. Let’s clarify a bit.
+
+Straight lines are predictable. Imagine a rooftop: move forward 3 horizontal feet (relative to the ground) and you might rise 1 foot in elevation (The slope! Rise/run = 1/3). Move forward 6 feet, and you’d expect a rise of 2 feet. Contrast this with climbing a dome: each horizontal foot forward raises you a different amount.
+
+Lines are nice and predictable:
+
+- If 3 feet forward has a 1-foot rise, then going 10x as far should give a 10x rise (30 feet forward is a 10-foot rise)
+- If 3 feet forward has a 1-foot rise, and 6 feet has a 2-foot rise, then (3 + 6) feet should have a (1 + 2) foot rise
+
+In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
+
+In our example, $F(x)$ calculates the rise when moving forward x feet, and the properties hold:
+
+## Linear Operations
+
+An operation is a calculation based on some inputs. Which operations are linear and predictable? Multiplication, it seems.
+
+Exponents ($F(x) = x^2$) aren’t predictable: $10^2$ is 100, but $20^2$ is 400. We doubled the input but quadrupled the output.
+
+Surprisingly, regular addition isn’t linear either. Consider the “add three” function $F(x) = x + 3$:
+
+We doubled the input and did not double the output. (Yes, $F(x) = x + 3$ happens to be the equation for an _offset_ line, but it’s still not “linear” because $F(10) \\neq 10 \\cdot F(1)$. Fun.)
+
+So, what types of functions are _actually_ linear? Plain-old scaling by a constant, or functions that look like: $F(x) = ax$. In our roof example, $a = 1/3$.
+
+But life isn’t _too_ boring. We can still combine multiple linear functions ($A(x) = ax, B(x) = bx, C(x)=cx$) into a larger one, $G$:
+
+$G$ is still linear, since doubling the input continues to double the output:
+
+We have “mini arithmetic”: multiply inputs by a constant, and add the results. It’s actually usefu... [Content truncated for context window]
+
+
+---
+
+### Source 37: Linear Algebra for Programmers
+
+**Content:**
+[E-book](https://www.linearalgebraforprogrammers.com/la) [Blog](https://www.linearalgebraforprogrammers.com/blog) [Series](https://www.linearalgebraforprogrammers.com/series)
+
+[Relationship between AAᵀ and AᵀA\
+\
+This article explores the relationship between the eigenvalues and eigenvectors of AAᵀ and AᵀA for a real matrix A of any shape.](https://www.linearalgebraforprogrammers.com/blog/matrix_transpose_product) [Permutations → Birkhoff polytope → Sinkhorn distance\
+\
+Explore the journey from the spectral properties of permutations to the geometry of doubly stochastic matrices, Birkhoff polytope, and how it all leads to Sinkhorn distances in optimization and machine learning.](https://www.linearalgebraforprogrammers.com/series/permutation_sinkhorn/0_permutation_cycles)
+
+[Bezier Curves\
+\
+This is a step-by-step implementation of quadratic and cubic Bezier curves from the ground up. Building upon the insight that polynomials are vectors too, it offers a linear algebriac view of this family of curves.](https://www.linearalgebraforprogrammers.com/la/9_bezier_curves) [Dimension Reduction\
+\
+A common application of SVD is dimension reduction. It is used in an algorithm which allows to approximate n-dimensional points in a dataset to m-dimensional points where m < n.](https://www.linearalgebraforprogrammers.com/la/24_dimension_reduction)
+
+[Three views on matrix products\
+\
+This article visualizes three different interpretations of matrix products with the help of animations - i) weighted sums, ii) dot products and iii) outer products.](https://www.linearalgebraforprogrammers.com/blog/matmul_animations) [The Kronecker Product\
+\
+Kronecker product is a way to multiply two matrices of any shape. This apparently simple product has a lot of desirable properties and finds applications in different areas.](https://www.linearalgebraforprogrammers.com/blog/kronecker_product)
+
+[Matrix calculus and autodiff\
+\
+Starting from the idea of a small change in output given a small change in input, this series builds the concepts of linear operators, gradients and Jacobians, and covers the foundational ideas behind autodiff alongwith links to implementations in PyTorch and JAX.](https://www.linearalgebraforprogrammers.com/series/matrix_calculus/0_linear_operator)
+
+[Barycentric coordinates\
+\
+Given a triangle on a 2d-plane with vertices \[x1,y1\], \[x2,y2\] and \[x3,y3\], and given a point \[x,y\], how can you find out whether the point is inside or outside the triangle?](https://www.linearalgebraforprogrammers.com/la/5_barycentric_coordinates) [Isometric projection matrix\
+\
+Isometric projection is one of the ways to map a 3D point on a 2D plane. The matrix is derived using two different ways using first principles.](https://www.linearalgebraforprogrammers.com/blog/isometric_projection)
+
+Made with ❤️ by [Vinay Sisodia](https://vinsis.github.io/). Logos designed by [Jo Hsu](https://bento.me/johsu).
+
+( [Join our Discord server](https://discord.gg/77aZfFBgJz))
+
+
+---
+
+### Source 38: As an Introduction to Abstract Mathematics (A Free Textbook)
+
+**Content:**
+# **Linear Algebra - As an Introduction to Abstract Mathematics**
+
+## **Free online text by Isaiah Lankham, Bruno Nachtergaele and Anne Schilling**
+
+**Linear Algebra - As an Introduction to Abstract Mathematics**
+is an introductory textbook designed for undergraduate mathematics majors
+with an emphasis on abstraction and in particular the concept of
+proofs in the setting of linear algebra. Typically such a student
+will have taken calculus, though the only prerequisite is suitable
+mathematical maturity. The purpose of this book is to bridge the gap
+between the more conceptual and computational oriented lower division
+undergraduate classes to the more abstract oriented upper division
+classes. The book begins with systems of linear equations and complex
+numbers, then relates these to the abstract notion of linear maps on
+finite-dimensional vector spaces, and covers diagonalization,
+eigenspaces, determinants, and the Spectral Theorem. Each chapter
+concludes with both proof-writing and computational exercises.
+
+**Content:**
+1\. What is linear algebra
+2\. Introduction to complex numbers
+3\. The fundamental theorem of algebra and factoring polynomials
+4\. Vector spaces
+5\. Span and bases
+6\. Linear maps
+7\. Eigenvalues and eigenvectors
+8\. Permutations and the determinant
+9\. Inner product spaces
+10\. Change of bases
+11\. The spectral theorem for normal linear maps
+12\. Supplementary notes on matrices and linear systems
+Appendix: The language of sets and functions; algebraic structures encountered; common math symbols; notation used
+
+[PDF version of book](http://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf)
+
+This book is also available as:
+
+- [UC Davis MathWiki](http://mathwiki.ucdavis.edu/Wikitexts/UC_Davis/UCD_Mat_67%3a_Linear_Algebra)
+- in printed form published by [World Scientific](http://www.worldscientific.com/worldscibooks/10.1142/9808) in January 2016
+
+This book has already been successfully used for the courses
+
+- [MAT67 Modern Linear Algebra](http://www.math.ucdavis.edu/courses/syllabi) at UC Davis
+- MATH2730 Linear Algebra at Simpson University
+- [Math 413/513 Linear Algebra](http://math.arizona.edu/~rsims/ma413/ma413.html) at Arizona University
+- [Lineare Algebra](http://www.mathematik.uni-leipzig.de/~netzer/) at Universitaet Leipzig
+- Module 32225: Linear Algebra and Groups at the University of Hull
+- MAT-1001/ CS-2210/ PHY-1001-2 Linear Algebra at [Ashoka University](http://www.math.ucdavis.edu/~anne/linear_algebra/www.ashoka.edu.in)
+
+
+---
+
+### Source 39: Linear Algebra - Questions with Solutions
+
+**Content:**
+# Linear Algebra - Questions with Solutions
+
+Linear algebra questions with solutions and detailed explanations on [matrices](https://www.analyzemath.com/linear-algebra.html#matrices), [spaces, subspaces and vectors](https://www.analyzemath.com/linear-algebra.html#spaces-and-vectors), [determinants](https://www.analyzemath.com/linear-algebra.html#determinants), [systems of linear equations](https://www.analyzemath.com/linear-algebra.html#systems-of-linear-equations) and online [linear algebra calculators](https://www.analyzemath.com/linear-algebra.html#linear-algebra-calculators) are included.
+
+## Matrices
+
+- [Matrices with Examples and Questions with Solutions](https://www.analyzemath.com/linear-algebra/matrices/matrices-examples-and-questions-with-solutions.html).
+- [Transpose of a Matrix](https://www.analyzemath.com/linear-algebra/matrices/transpose.html).
+- [Symmetric Matrix](https://www.analyzemath.com/linear-algebra/matrices/symmetric.html).
+- [Identity Matrix](https://www.analyzemath.com/linear-algebra/matrices/identity-matrix.html).
+- [Diagonal Matrices](https://www.analyzemath.com/linear-algebra/matrices/diagonal.html).
+- [Triangular Matrix](https://www.analyzemath.com/linear-algebra/matrices/triangular.html).
+- [Diagonalization of Matrices](https://www.analyzemath.com/linear-algebra/matrices/diagonalization.html).
+- [Inverse Matrix Questions with Solutions](https://www.analyzemath.com/linear-algebra/matrices/inverse-matrix-questions-with-solutions.html).
+- [>Inverse of Matrix Products](https://www.analyzemath.com/linear-algebra/matrices/inverse-of-matrix-product.html)
+- [Find Matrix Inverse Using Row Operations](https://www.analyzemath.com/linear-algebra/matrices/find-matrix-inverse-using-row-operations.html)
+- [Add, Subtract and Scalar Multiply Matrices](https://www.analyzemath.com/linear-algebra/matrices/add-subtract-scalar-multiply-matrices.html).
+- [Multiplication and Power of Matrices](https://www.analyzemath.com/linear-algebra/matrices/multiplication-and-power-of-matrices.html)
+- [Eigenvalues and Eigenvectors Questions with Solutions](https://www.analyzemath.com/linear-algebra/matrices/eigenvalues-and-eigenvectors-questions-with-solutions.html)
+- [Find Eigenvectors and Eigenvalues of a 3 by 3 Matrix on Video](https://www.analyzemath.com/linear-algebra/videos/eigenvalues-and-eigenvectors-of-3-by-3-matrix.html)(Video)
+- [Find Eigenvectors and Eigenvalues of a 2 by 2 Matrix on Video](https://www.analyzemath.com/linear-algebra/videos/eigenvectors-and-eigenvalues-of-2-by-2matrix.html)(Video)
+- [Row Operations and Elementary Matrices](https://www.analyzemath.com/linear-algebra/matrices/row-operations-and-elementary-matrices.html).
+- [The Three Row Operations on Augmented Matrices](https://www.analyzemath.com/linear-algebra/matrices/row-operations-on-augmented-matrices.html).
+- [Write a Matrix in Reduced Row Echelon Form](https://www.analyzemath.com/linear-algebra/matrices/reduced-row-echelon-form.html).
+- [Pivots of a Matrix in Row Echel... [Content truncated for context window]
+
+
+---
+
+### Source 40: Linear Algebra—A Primer
+
+**Content:**
+# Linear Algebra—A Primer
+
+[#eigenvalues](https://www.jeremykun.com/tags/eigenvalues/) [#eigenvectors](https://www.jeremykun.com/tags/eigenvectors/) [#history](https://www.jeremykun.com/tags/history/) [#linear independence](https://www.jeremykun.com/tags/linear-independence/) [#linear maps](https://www.jeremykun.com/tags/linear-maps/) [#mathematics](https://www.jeremykun.com/tags/mathematics/) [#matrices](https://www.jeremykun.com/tags/matrices/) [#primer](https://www.jeremykun.com/tags/primer/) [#vector spaces](https://www.jeremykun.com/tags/vector-spaces/)
+
+2011-06-19
+
+This article was ported from my old Wordpress blog [here,](https://jeremykun.wordpress.com/2011/06/19/linear-algebra-a-primer/) If you see any issues with the rendering or layout, please [send me an email](mailto:mathintersectprogramming@gmail.com).
+
+## Story Time
+
+Linear algebra was founded around the same time as Calculus (think Leibniz, circa 1700) solely for the purpose of solving general systems of linear equations. The coefficients of a system were written in a grid form, with rows corresponding to equations and columns to the unknown variables. Using a computational tool called the _determinant_ (an awkward, but computable formula involving only the coefficients of the equations in a system), researchers were able to solve these systems, opening a world of information about the positions of celestial bodies and large-scale measurements (of geodesic arcs) on the surface of the earth.
+
+By the 1850’s, Arthur Cayley was representing matrices as abstract objects. He defined matrix multiplication and nurtured matrix theory as its own field, recognizing a vast wealth of theoretical knowledge underlying the theory of determinants. Around turn of the century, a formal system of vector algebra was invented which relied heavily on interpreting matrices as so-called _linear transformations._ Linear transformations are intuitively those maps of everyday space ($ \\mathbb{R}^n$) which preserve “linear” things. Specifically, they send lines to lines, planes to planes, etc., and they preserve the origin (one which does not preserve the origin is very similar but has a different name; see [Affine Transformation](http://en.wikipedia.org/wiki/Affine_transformation)). Soon enough the mathematical focus shifted to the foundations of such an algebra, and later with the advent of computers to rapid calculations in one.
+
+## Motivations
+
+Linear algebra sits at the crossroads of many areas of mathematics. Keeping close to its roots, linear algebra is primarily a tool for computation. Unsurprisingly, a huge chunk of mathematical research has been solely to phrase things in terms of matrices and their associated linear transformations. For instance, an undirected graph on $ n$ vertices can be modeled as a matrix of integer entries, with the $ i,j$ entry containing the number of edges from vertex $ i$ to vertex $ j$. This is called the _adjacency matrix_ of a graph. Suddenly, a wealth of information a... [Content truncated for context window]
 
 
 ---
@@ -141,7 +566,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

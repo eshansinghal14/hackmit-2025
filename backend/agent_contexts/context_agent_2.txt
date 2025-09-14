@@ -1,9 +1,9 @@
-You are Agent 2 of 5, a specialized research expert analyzing "Data Structures". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 2 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 2 Research Context
 
 ## Assignment
-You are Agent 2 of 5 specialized research agents analyzing: "Data Structures"
+You are Agent 2 of 5 specialized research agents analyzing: "linear algebra"
 
 ## Your Data Subset
 - Agent ID: 2/5
@@ -13,556 +13,629 @@ You are Agent 2 of 5 specialized research agents analyzing: "Data Structures"
 
 ## Your Research Sources
 
-### Source 11: Data Structures Tutorial
+### Source 11: Linear Algebra
 
 **Content:**
-- [Algorithms](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
-- [Array](https://www.geeksforgeeks.org/dsa/introduction-to-arrays-data-structure-and-algorithm-tutorials/)
-- [Strings](https://www.geeksforgeeks.org/dsa/string-data-structure/)
-- [Linked List](https://www.geeksforgeeks.org/dsa/linked-list-data-structure/)
-- [Stack](https://www.geeksforgeeks.org/dsa/stack-data-structure/)
-- [Queue](https://www.geeksforgeeks.org/dsa/queue-data-structure/)
-- [Tree](https://www.geeksforgeeks.org/dsa/introduction-to-tree-data-structure/)
-- [Graph](https://www.geeksforgeeks.org/dsa/graph-data-structure-and-algorithms/)
-- [Searching](https://www.geeksforgeeks.org/dsa/searching-algorithms/)
-- [Sorting](https://www.geeksforgeeks.org/dsa/sorting-algorithms/)
-- [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-2/)
-- [Dynamic Programming](https://www.geeksforgeeks.org/competitive-programming/dynamic-programming/)
-- [Binary Tree](https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/)
-- [Binary Search Tree](https://www.geeksforgeeks.org/dsa/binary-search-tree-data-structure/)
-- [Heap](https://www.geeksforgeeks.org/dsa/heap-data-structure/)
-- [Hashing](https://www.geeksforgeeks.org/dsa/hashing-data-structure/)
+If you're seeing this message, it means we're having trouble loading external resources on our website.
 
-Sign In
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
 
-▲
+## Oops. Something went wrong. Please try again.
 
-[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/?type%3Darticle%26id%3D1103752&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
-
-# DSA Tutorial - Learn Data Structures and Algorithms
-
-Last Updated : 06 Sep, 2025
-
-Comments
-
-Improve
-
-Suggest changes
-
-Like Article
-
-Like
-
-Report
-
-**Data structures** manage how data is stored and accessed, while **Algorithms** focus on processing this data. Examples of data structures are Array, Linked List, Tree and Heap, and examples of algorithms are Binary Search, Quick Sort and Merge Sort.
-
-## Why to Learn DSA?
-
-- Foundation for almost every software like GPS, Search Engines, AI ChatBots, Gaming Apps, Databases, Web Applications, etc
-- Top Companies like **Google, Microsoft, Amazon, Apple, Meta** and many other heavily focus on DSA **i** n interviews.
-- Learning DSA boosts your problem-solving abilities and make you a stronger programmer.
-
-> Try our free courses [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series) and [DSA Skillup](https://www.geeksforgeeks.org/courses/dsa-skill-up) with daily topic coverage, notes, quizzes and most asked coding problems.
-
-## How to learn DSA?
-
-1. Learn at-least one programming language ( [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/), [Java](https://www.geeksforgeeks.org/java/java/), [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) or [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)) and build your basic logic.
-2. Learn about Time and Space complexities
-3. Learn Data Structures (Arrays, Linked List, etc) an... [Content truncated for context window]
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
 
 
 ---
 
-### Source 12: Data Structures and Algorithms Tutorial
+### Source 12: What Is Linear Algebra?
 
 **Content:**
-- [DSA - Home](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
-- [DSA - Overview](https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm)
-- [DSA - Environment Setup](https://www.tutorialspoint.com/data_structures_algorithms/data_structure_environment.htm)
-- [DSA - Algorithms Basics](https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm)
-- [DSA - Asymptotic Analysis](https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.htm)
-- Data Structures
-- [DSA - Data Structure Basics](https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm)
-- [DSA - Data Structures and Types](https://www.tutorialspoint.com/data_structures_algorithms/data_structures_and_types.htm)
-- [DSA - Array Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm)
-- [DSA - Skip List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/skip_list_data_structure.htm)
-- Linked Lists
-- [DSA - Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
-- [DSA - Doubly Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_algorithm.htm)
-- [DSA - Circular Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/circular_linked_list_algorithm.htm)
-- Stack & Queue
-- [DSA - Stack Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
-- [DSA - Expression Parsing](https://www.tutorialspoint.com/data_structures_algorithms/expression_parsing.htm)
-- [DSA - Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
-- [DSA - Circular Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/circular_queue_data_structure.htm)
-- [DSA - Priority Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/priority_queue.htm)
-- [DSA - Deque Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/deque_data_structure.htm)
-- Searching Algorithms
-- [DSA - Searching Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/searching_algorithms.htm)
-- [DSA - Linear Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm)
-- [DSA - Binary Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm)
-- [DSA - Interpolation Search](https://www.tutorialspoint.com/data_structures_algorithms/interpolation_search_algorithm.htm)
-- [DSA - Jump Search Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/jump_search_algorithm.htm)
-- [DSA - Exponential Search](https://www.tutorialspoint.com/data_structures_algorithms/exponential_search.htm)
-- [DSA - Fibonacci Search](https://www.tutorialspoint.com/data_structures_algorithms/fibonacci_search.htm)
-- [DSA - S... [Content truncated for context window]
+# What Is Linear Algebra?
+
+Written by Coursera Staff • Updated on May 6, 2025
+
+Learn what linear algebra is, its common concepts, and its use in machine learning, as well as careers you can pursue that use linear algebra.
+
+Linear algebra combines multivariate calculus, differential equations, and probability into a widely applicable mathematical theory and system that undergirds many technologies in our lives. At its core, linear algebra studies vectors and linear functions to solve systems of linear equations that contain multiple variables. It focuses on calculating vectors, which are points in space with magnitude and direction, and matrices, which are tables of numbers.
+
+While linear algebra is not a prerequisite for starting in machine learning, its concepts become foundational for a deeper understanding of the algorithms used in machine learning. It can help when you encounter deep learning concepts so that you can make informed decisions when developing a new machine learning system.
+
+This article takes a deeper look at concepts in linear algebra, its uses, its users, how it's employed in machine learning, and how you can study it.
+
+## Concepts in linear algebra
+
+Linear algebra contains many applicable concepts. Here are some of the concepts in linear algebra that are also useful in machine learning:
+
+- Vectors and vector spaces
+
+- Systems of linear equations
+
+- Matrices
+
+- Eigenvalues and [Eigenvectors](https://www.coursera.org/articles/eigenvector-centrality)
+
+
+Let’s take a closer look at each concept.
+
+### What is linear algebra in simple terms?
+
+Linear algebra is a branch of mathematics that analyzes vectors, matrices, and linear transformations. One of its main concerns is finding solutions using vectors to represent something in physical space. Solutions are called vector spaces, and you can add and multiply vectors to find these solutions.
+
+### Vectors and vector spaces
+
+A vector is a quantity that has magnitude and direction. In linear algebra, you can add and multiply vectors by following the vector addition and multiplication rules. Linear algebra deals with many kinds of vectors:
+
+- Power series
+
+- Polynomials
+
+- Numbers
+
+- n-vectors
+
+- Functions with a specific domain
+
+- 2nd order polynomials
+
+
+A vector space is a set that adds and multiplies the properties of a vector. Vector spaces have 10 axioms that vectors follow when adding and multiplying.
+
+### Systems of linear equations
+
+Linear algebra examines linear functions, which have vectors as both the input and the output. A matrix is an example of a linear function when it is multiplied by transforming a vector into another vector. A system of linear equations changes to a matrix equation through an augmented matrix in a process called Gaussian elimination. To solve a system of linear equations, you use reduced row echelon form, which simplifies the system of equations into a matrix, getting the linear equation into a solvable form.
+
+### Matrices
+
+A matrix is the result of a s... [Content truncated for context window]
 
 
 ---
 
-### Source 13: The Periodic Table of Data Structures | Stratos Idreos
+### Source 13: Linear Algebra Done Wrong
 
 **Content:**
-We describe the vision of being able to reason about the design space of data structures.
-
-We break this down into two questions: 1) Can we know all data structures that is possible to design?  2) Can we compute the performance of arbitrary designs on a given hardware and workload without having to implement the design or even access the target hardware?
-
-If those challenges are possible, then an array of exciting opportunities would become feasible such as interactive what-if design to improve the productivity of data systems researchers and engineers, and informed decision making in industrial settings with regards to critical ardware/workload/data structure design issues. Then, even fully automated discovery of new data structure designs becomes possible. Furthermore, the structure of the design space itself provides numerous insights and opportunities such as the existence of design continuums that can lead to data systems with deep adaptivity, and a new understanding of the possible performance trade-offs. Given the universal presence of data structures at the very core of any data-driven field across all sciences and industries, reasoning about their design can have significant benefits, making it more feasible (easier, faster and cheaper) to adopt tailored state-of-the-art storage solutions. And this effect is going to become increasingly more critical as data keeps growing, hardware keeps changing and more applications/fields realize the transformative power and potential of data analytics.
-
-This paper presents this vision and surveys first steps that demonstrate its feasibility.
-
-We describe the vision of being able to reason about the design space of data structures.
-
-We break this down into two questions: 1) Can we know all data structures that is possible to design?  2) Can we compute the performance of arbitrary designs on a given hardware and workload without having to implement the design or even access the target hardware?
-
-If those challenges are possible, then an array of exciting opportunities would become feasible such as interactive what-if design to improve the productivity of data systems researchers and engineers, and informed decision making in industrial settings with regards to critical ardware/workload/data structure design issues. Then, even fully automated discovery of new data structure designs becomes possible. Furthermore, the structure of the design space itself provides numerous insights and opportunities such as the existence of design continuums that can lead to data systems with deep adaptivity, and a new understanding of the possible performance trade-offs. Given the universal presence of data structures at the very core of any data-driven field across all sciences and industries, reasoning about their design can have significant benefits, making it more feasible (easier, faster and cheaper) to adopt tailored state-of-the-art storage solutions. And this effect is going to become increasingly more critical as... [Content truncated for context window]
-
-
----
-
-### Source 14: Data Structures and Algorithms (DSA) - Tpoint Tech
-
-**Content:**
-- [![python](https://images.tpointtech.com/images/icon/python.png) Python](https://www.tpointtech.com/python-tutorial)
-- [![java](https://images.tpointtech.com/images/icon/java.png) Java](https://www.tpointtech.com/java-tutorial)
-- [![javascript](https://images.tpointtech.com/images/icon/js.png) JavaScript](https://www.tpointtech.com/javascript-tutorial)
-- [![sql](https://images.tpointtech.com/images/icon/sql.png) SQL](https://www.tpointtech.com/sql-tutorial)
-- [![c++](https://images.tpointtech.com/images/icon/cpp.png) C++](https://www.tpointtech.com/cpp-tutorial)
-- [![html](https://images.tpointtech.com/images/icon/html.png) HTML](https://www.tpointtech.com/html-tutorial)
-- [![css](https://images.tpointtech.com/images/icon/css.png) CSS](https://www.tpointtech.com/css-tutorial)
-- [![react](https://images.tpointtech.com/images/icon/react1.png) React](https://www.tpointtech.com/reactjs-tutorial)
-- [![c](https://images.tpointtech.com/images/icon/c.png) C](https://www.tpointtech.com/c-programming-language-tutorial)
-- [![c#](https://images.tpointtech.com/images/icon/csharp.png) C#](https://www.tpointtech.com/c-sharp-tutorial)
-- [![php](https://images.tpointtech.com/images/icon/php.png) PHP](https://www.tpointtech.com/php-tutorial)
-- [![MySQL](https://images.tpointtech.com/images/icon/mysql.png) MySQL](https://www.tpointtech.com/mysql-tutorial)
-- [![Artificial Intelligence](https://images.tpointtech.com/images/icon/artificial-intelligence.png) AI](https://www.tpointtech.com/artificial-intelligence-ai)
-- [![Machine Learning](https://images.tpointtech.com/images/icon/ml.png) ML](https://www.tpointtech.com/machine-learning)
-- [![data structures](https://images.tpointtech.com/images/icon/ds.png) DS](https://www.tpointtech.com/data-structure-tutorial)
-- [![dbms](https://images.tpointtech.com/images/icon/dbms.png) DBMS](https://www.tpointtech.com/dbms-tutorial)
-- [![aptitude](https://images.tpointtech.com/images/icon/aptitude.png) Aptitude](https://www.tpointtech.com/aptitude/quantitative)
-- [![reasoning](https://images.tpointtech.com/images/icon/reasoning.png) Reasoning](https://www.tpointtech.com/reasoning)
-
-## DS Tutorial
-
-- [Data Structures Tutorial](https://www.tpointtech.com/data-structure-tutorial)
-- [Data Structures Introduction](https://www.tpointtech.com/data-structure-introduction)
-- [DS Algorithm](https://www.tpointtech.com/data-structure-algorithm)
-- [Asymptotic Analysis](https://www.tpointtech.com/data-structure-asymptotic-analysis)
-- [DS Pointer](https://www.tpointtech.com/data-structure-pointer)
-- [DS Structure](https://www.tpointtech.com/data-structure-structure)
-
-## DS Array
-
-- [DS Array](https://www.tpointtech.com/data-structure-array)
-- [2D Array](https://www.tpointtech.com/data-structure-2d-array)
-
-## DS Linked List
-
-- [Linked List](https://www.tpointtech.com/ds-linked-list)
-- [Types of Linked List](https://www.tpointtech.com/ds-types-of-linked-list)
-- [Singly Linked List](https://www.tpointtech.com/singly-linked-list)
-- [Doubly Linked L... [Content truncated for context window]
-
-
----
-
-### Source 15: Data Structures - Yahjaira Vasquez - Medium
-
-**Content:**
-[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F62592951fe54&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&source=---two_column_layout_nav----------------------------------)
-
-Sign up
-
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fyahjairav.medium.com%2Fdata-structures-62592951fe54&source=post_page---two_column_layout_nav-----------------------global_nav-----------)
-
-[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---two_column_layout_nav-----------------------new_post_topnav-----------)
-
-Sign up
-
-[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fyahjairav.medium.com%2Fdata-structures-62592951fe54&source=post_page---two_column_layout_nav-----------------------global_nav-----------)
-
-![](https://miro.medium.com/v2/resize:fill:64:64/1*dmbNkD5D-u45r44go_cf0g.png)
-
-# Data Structures
-
-[![Yahjaira Vasquez](https://miro.medium.com/v2/resize:fill:88:88/2*G8YJQn6NSsp8M5nRnN9MIQ.jpeg)](https://yahjairav.medium.com/?source=post_page-----62592951fe54--------------------------------)
-
-[Yahjaira Vasquez](https://yahjairav.medium.com/?source=post_page-----62592951fe54--------------------------------)
-
-·
-
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F1c5ec491b1c8&operation=register&redirect=https%3A%2F%2Fyahjairav.medium.com%2Fdata-structures-62592951fe54&user=Yahjaira+Vasquez&userId=1c5ec491b1c8&source=post_page-1c5ec491b1c8----62592951fe54---------------------post_header-----------)
-
-4 min read
-
-·
-
-Sep 1, 2020
-
---
-
-Listen
-
-Share
-
-Let us learn about data structures and the best use cases. First off, what is a data structure? Data structures are how we organize, store, and retrieve data. Knowing when and how to appropriately use each data structure is important for ensuring your code efficiently uses time and space. Other things to consider: some data structures may run quicker, but take up more space, while others may take up less space, but run a little slower. You must always consider the trade offs of each use case and decide which is more beneficial for the company/code base.
-
-That being said, let’s jump into the different kind of data structures and what they are most commonly used for.
-
-# Linear Data Structures
-
-Linear data structures are single leveled data structures, for which each element is connected to the previous and next element. Linear data structures include: arrays, stacks, queues, and linked lists.
-
-## Array
-
-Arrays have a grid like structure. The elements of an array are stored next to each other in memory. When using an array, all of the elements must be of the same data type (i.e. integers, strings, or booleans etc.). When creating an array, you want to define the size of the array, so that this space in memory may be reserved. This can be a negative aspect of arrays because, you can be left reserving unused space in memory, a... [Content truncated for context window]
-
-
----
-
-### Source 16: What Are Data Structures?
-
-**Content:**
-Image: Shutterstock / Built In
-
-UPDATED BY
-
-[Brennan Whitfield](https://builtin.com/authors/brennan-whitfield) \| Sep 30, 2024
-
-REVIEWED BY
-
-[Sara A. Metwalli](https://builtin.com/authors/sara-metwalli)
-
-There are several basic and [advanced data structures](https://builtin.com/software-engineering-perspectives/javascript-algorithms-and-data-structures); they’re created to arrange [data](https://builtin.com/data-science) to make it useful for a specific purpose. At their core, data structures are intended to frame information in a way that makes that information clear and easily accessible to [both humans and machines](https://builtin.com/learn/tech-dictionary/relational-database).
-
-## What Is a Data Structure?
-
-A data structure is a format for organizing, storing, processing and retrieving data in a computer system. Data structures define how data is handled and accessed, making them fundamental to efficient programming and software applications.
-
-Data Structures Crash Course. \| Video: CrashCourse
-
-## Structured vs. Unstructured Data: What’s the Difference?
-
-[Structured and unstructured data](https://builtin.com/big-data) differ in many ways, however, the primary difference is that [structured data](https://builtin.com/articles/structured-data-testing-tool) is defined and searchable while unstructured data is contained in its native form. There is vastly more unstructured data in existence, which [makes up 80 percent of all enterprise data](https://www.xplenty.com/blog/structured-vs-unstructured-data-key-differences/). This percentage continues to grow, which presents opportunities for forward-thinking businesses to [mine data](https://builtin.com/learn/tech-dictionary/data-mining) insights.
-
-Other differences include:
-
-- Structured data is quantitative, while [unstructured data is qualitative](https://builtin.com/design-ux/prioritize-quantitative-qualitative-data).
-- Structured data is stored in [data warehouses](https://builtin.com/data-science/data-warehousing), while unstructured data is contained in [data lakes](https://builtin.com/data-science/data-lake-vs-data-warehouse).
-- Structured data can be immediately [analyzed](https://builtin.com/data-science/types-of-data-analysis), while unstructured data requires processing and transformation.
-- Structured data follows predefined formats, while unstructured data comes in many different formats.
-
-Related Reading From Built In Experts [8 Common JavaScript Data Structures](https://builtin.com/software-engineering-perspectives/javascript-data-structures)
-
-## Types of Data Structures
-
-The four basic data structure types are linear data structures, tree data structures, hash data structures and graph data structures.
-
-### 1\. Linear Data Structures
-
-Linear data structures include arrays, or finite groups of data, with memory locations that allow elements to be accessed through an index key and linked lists. Linked lists order elements within a list so they can be sporadically placed within memory.
+| | | |
+| --- | --- | --- |
+| | | | |
+| --- | --- |
+| [Math. Department home page](http://www.math.brown.edu) | [back\ to my home page](https://www.math.brown.edu/streil/index.html) |
+
+### A textbook for an honors linear algebra course (updated Sept. 4, 2017):
+
+## Linear Algebra Done Wrong.
+
+### by Sergei Treil
+
+### From the Introduction:
+
+The
+title of the book sounds a bit mysterious. Why should anyone read this
+book if it presents the subject in a wrong way? What is particularly
+done "wrong" in the book?
+
+Before
+answering these questions, let me first describe the target audience of
+this text. This book appeared as lecture notes for the course "Honors
+Linear Algebra". It supposed to be a _first_ linear
+algebra course for mathematically
+advanced students. It is intended for a student who, while not yet very
+familiar with abstract reasoning, is willing to study more rigorous
+mathematics that is presented in a "cookbook style" calculus type
+course. Besides being a first course in linear algebra it is also
+supposed to be a first course introducing a student to _rigorous_
+proof, formal definitions---in short, to the style of modern
+theoretical (abstract) mathematics.
+
+The target audience explains the very specific blend of elementary
+ideas and concrete examples, which are usually presented in
+introductory linear algebra texts with more abstract definitions and
+constructions typical for advanced books.
+
+Another specific of the book is that it is not written by or for an
+algebraist. So, I tried to emphasize the topics that are important for
+analysis, geometry, probability, etc., and did not include some
+traditional topics. For example, I am only considering vector spaces
+over the fields of real or complex numbers. Linear spaces over other
+fields are not considered at all, since I feel time required to
+introduce and explain abstract fields would be better spent on some
+more classical topics, which will be required in other disciplines. And
+later, when the students study general fields in an abstract algebra
+course they will understand that many of the constructions studied in
+this book will also work for general fields.
+
+Also, I treat only finite-dimensional spaces in this book and a basis
+always means a finite basis. The reason is that it is impossible to say
+something non-trivial about infinite-dimensional spaces without
+introducing convergence, norms, completeness etc., i.e. the basics of
+functional analysis. And this is definitely a subject for a separate
+course (text). So, I do not consider infinite Hamel bases here: they
+are not needed in most applications to analysis and geometry, and I
+feel they belong in an abstract algebra course.
+
+### Terms of use:
+
+ [![Creative Commons License](http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/)
+
+This book  is licensed under a [Creative\
+Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](http://creativecommons.org/licenses/by-nc-nd/3.0/).
 ... [Content truncated for context window]
 
 
 ---
 
-### Source 17: List of data structures
+### Source 14: FCLA What is Linear Algebra?
 
 **Content:**
-[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+[Skip to main content](https://runestone.academy/ns/books/published/fcla/section-WILA.html#content)
 
-From Wikipedia, the free encyclopedia
-
-This is a list of well-known [data structures](https://en.wikipedia.org/wiki/Data_structure). For a wider list of terms, see [list of terms relating to algorithms and data structures](https://en.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures). For a comparison of [running times](https://en.wikipedia.org/wiki/Running_time) for a subset of this list see [comparison of data structures](https://en.wikipedia.org/wiki/Comparison_of_data_structures).
-
-## Data types
-
-\[ [edit](https://en.wikipedia.org/w/index.php?title=List_of_data_structures&action=edit&section=1)\]
-
-### Primitive types
-
-\[ [edit](https://en.wikipedia.org/w/index.php?title=List_of_data_structures&action=edit&section=2)\]
-
-Main article: [Primitive type](https://en.wikipedia.org/wiki/Primitive_type)
-
-- [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type), [true](https://en.wikipedia.org/wiki/Truth_value) or [false](https://en.wikipedia.org/wiki/False_(logic)).
-- [Character](https://en.wikipedia.org/wiki/Character_(computing))
-- [Floating-point](https://en.wikipedia.org/wiki/Floating-point_arithmetic) representation of a finite subset of the [rationals](https://en.wikipedia.org/wiki/Rationals).
- - Including [single-precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) and [double-precision](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) floats, among [others](https://en.wikipedia.org/wiki/Category:Floating_point_types)
-- [Fixed-point](https://en.wikipedia.org/wiki/Fixed-point_arithmetic) representation of the rationals
-- [Integer](https://en.wikipedia.org/wiki/Integer_(computer_science)), a direct representation of either the [integers](https://en.wikipedia.org/wiki/Integer) or the [non-negative integers](https://en.wikipedia.org/wiki/Non-negative_integers)
-- [Reference](https://en.wikipedia.org/wiki/Reference_(computer_science)), sometimes erroneously referred to as a [pointer](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) or handle, is a value that refers to another value, possibly including itself
-- [Symbol](https://en.wikipedia.org/wiki/Symbol_(programming)), a unique identifier
-- [Enumerated type](https://en.wikipedia.org/wiki/Enumerated_type), a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) of symbols
-- [Complex](https://en.wikipedia.org/wiki/Complex_data_type), representation of [complex numbers](https://en.wikipedia.org/wiki/Complex_numbers)
-
-### Composite types or non-primitive type
-
-\[ [edit](https://en.wikipedia.org/w/index.php?title=List_of_data_structures&action=edit&section=3)\]
-
-Main article: [Composite type](https://en.wikipedia.org/wiki/Composite_type)
-
-- [Array](https://en.wikipedia.org/wiki/Array_(data_type)), a sequence of elements of the same type stored contiguously in memory
-- [Record](https://en.w... [Content truncated for context window]
+\\(\\newcommand{\\orderof}\[1\]{\\sim #1}
+\\newcommand{\\Z}{\\mathbb{Z}}
+\\newcommand{\\reals}{\\mathbb{R}}
+\\newcommand{\\real}\[1\]{\\mathbb{R}^{#1}}
+\\newcommand{\\complexes}{\\mathbb{C}}
+\\newcommand{\\complex}\[1\]{\\mathbb{C}^{#1}}
+\\newcommand{\\conjugate}\[1\]{\\overline{#1}}
+\\newcommand{\\modulus}\[1\]{\\left\\lvert#1\\right\\rvert}
+\\newcommand{\\zerovector}{\\vect{0}}
+\\newcommand{\\zeromatrix}{\\mathcal{O}}
+\\newcommand{\\innerproduct}\[2\]{\\left\\langle#1,\\,#2\\right\\rangle}
+\\newcommand{\\norm}\[1\]{\\left\\lVert#1\\right\\rVert}
+\\newcommand{\\dimension}\[1\]{\\dim\\left(#1\\right)}
+\\newcommand{\\nullity}\[1\]{n\\left(#1\\right)}
+\\newcommand{\\rank}\[1\]{r\\left(#1\\right)}
+\\newcommand{\\ds}{\\oplus}
+\\newcommand{\\detname}\[1\]{\\det\\left(#1\\right)}
+\\newcommand{\\detbars}\[1\]{\\left\\lvert#1\\right\\rvert}
+\\newcommand{\\trace}\[1\]{t\\left(#1\\right)}
+\\newcommand{\\sr}\[1\]{#1^{1/2}}
+\\newcommand{\\spn}\[1\]{\\left\\langle#1\\right\\rangle}
+\\newcommand{\\nsp}\[1\]{\\mathcal{N}\\!\\left(#1\\right)}
+\\newcommand{\\csp}\[1\]{\\mathcal{C}\\!\\left(#1\\right)}
+\\newcommand{\\rsp}\[1\]{\\mathcal{R}\\!\\left(#1\\right)}
+\\newcommand{\\lns}\[1\]{\\mathcal{L}\\!\\left(#1\\right)}
+\\newcommand{\\per}\[1\]{#1^\\perp}
+\\newcommand{\\augmented}\[2\]{\\left\\lbrack\\left.#1\\,\\right\\rvert\\,#2\\right\\rbrack}
+\\newcommand{\\linearsystem}\[2\]{\\mathcal{LS}\\!\\left(#1,\\,#2\\right)}
+\\newcommand{\\homosystem}\[1\]{\\linearsystem{#1}{\\zerovector}}
+\\newcommand{\\rowopswap}\[2\]{R\_{#1}\\leftrightarrow R\_{#2}}
+\\newcommand{\\rowopmult}\[2\]{#1R\_{#2}}
+\\newcommand{\\rowopadd}\[3\]{#1R\_{#2}+R\_{#3}}
+\\newcommand{\\leading}\[1\]{\\boxed{#1}}
+\\newcommand{\\rref}{\\xrightarrow{\\text{RREF}}}
+\\newcommand{\\elemswap}\[2\]{E\_{#1,#2}}
+\\newcommand{\\elemmult}\[2\]{E\_{#2}\\left(#1\\right)}
+\\newcommand{\\elemadd}\[3\]{E\_{#2,#3}\\left(#1\\right)}
+\\newcommand{\\scalarlist}\[2\]{{#1}\_{1},\\,{#1}\_{2},\\,{#1}\_{3},\\,\\ldots,\\,{#1}\_{#2}}
+\\newcommand{\\vect}\[1\]{\\mathbf{#1}}
+\\newcommand{\\colvector}\[1\]{\\begin{bmatrix}#1\\end{bmatrix}}
+\\newcommand{\\vectorcomponents}\[2\]{\\colvector{#1\_{1}\\\#1\_{2}\\\#1\_{3}\\\\\vdots\\\#1\_{#2}}}
+\\newcommand{\\vectorlist}\[2\]{\\vect{#1}\_{1},\\,\\vect{#1}\_{2},\\,\\vect{#1}\_{3},\\,\\ldots,\\,\\vect{#1}\_{#2}}
+\\newcommand{\\vectorentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
+\\newcommand{\\matrixentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
+\\newcommand{\\lincombo}\[3\]{#1\_{1}\\vect{#2}\_{1}+#1\_{2}\\vect{#2}\_{2}+#1\_{3}\\vect{#2}\_{3}+\\cdots +#1\_{#3}\\vect{#2}\_{#3}}
+\\newcommand{\\matrixcolumns}\[2\]{\\left\\lbrack\\vect{#1}\_{1}\|\\vect{#1}\_{2}\|\\vect{#1}\_{3}\|\\ldots\|\\vect{#1}\_{#2}\\right\\rbrack}
+\\newcommand{\\transpose}\[1\]{#1^{t}}
+\\newcommand{\\inverse}\[1\]{#1^{-1}}
+\\newcommand{\\submatrix}\[3\]{#1\\left(#2\|#3\\right)}
+\\newcommand{\\adj}\[1\]{\\transpos... [Content truncated for context window]
 
 
 ---
 
-### Source 18: Introduction to Data Structure
+### Source 15: University of California, Santa Barbara, Department of Mathematics
 
 **Content:**
-# Data Structure Introduction
+- [UCSB Math Home Page](http://math.ucsb.edu/)
 
-## Data Structure Tutorials
+- [Graduate Information](http://math.ucsb.edu/grad/index.php)
 
-Fundamental ConceptsData StructuresSorting AlgorithmsSearching TechniquesAlgorithms
+- [Undergraduate Information](http://math.ucsb.edu/ugrad/index.php)
 
-Data structures are fundamental to computer science that help efficiently organize, manage, and store data. They enable developers to perform operations on data in a way that maximizes performance and minimizes resource usage. Understanding data structures is critical for solving complex problems and designing efficient algorithms.
+- [Colloquium and Seminars](javascript:toggle('mainmenu','colloqmenu'))
+[Colloquium](http://math.ucsb.edu/calendar/cal_cat.php?op=cat&id=24&catview=0)
+[Seminars](http://math.ucsb.edu/department/seminars.php)
+[Distinguished Lectures](http://math.ucsb.edu/~drm/distinguished-lecturers)
+[This Week in Math](http://math.ucsb.edu/calendar/cal_week?op=week&catview=0)
+ - [History and Search](http://math.ucsb.edu/calendar/cal_cat.php?op=cats&catview=0)
 
-## Understanding Data Fundamentals
+- [Current Recruitment](http://math.ucsb.edu/department/recruit.php)
 
-In today's world, data plays a vital role in various aspects of life. It is basically a collection of facts and figures representing certain values organized in a specific format. These values can be further categorized into sub-items for more detailed information or grouped for a better understanding.
+- [People](javascript:toggle('mainmenu2','peoplemenu'))
 
-Let's consider a simple example to understand complex data structures. A student's information can be divided into sub-items such as first, middle, and last names. On the other hand, the ID assigned to a student represents a single data item. This difference between primary data items like ID, age, and gender and grouped data items like name and address is the first step toward understanding complex data structures. Understanding this difference helps you to discover how data structures organize, manage, and utilize data effectively.
 
-## What are Data Structures?
+[Faculty](http://math.ucsb.edu/department/faculty.php)
+[Visiting Faculty](http://math.ucsb.edu/department/visiting.php)
+[Affiliated Faculty](http://math.ucsb.edu/department/affiliated.php)
+[Emeriti](http://math.ucsb.edu/department/emeriti.php)
+[Graduate Students](http://math.ucsb.edu/department/gradstudents.php)
+[Staff](http://math.ucsb.edu/department/staff.php)
+[Alumni](http://math.ucsb.edu/department/alumni.php)
+- [Faculty Awards](http://math.ucsb.edu/department/awards.php)
 
-Data structures are ways of arranging data on a computer to be accessed and modified efficiently. Depending on the requirement, data can be organized in various structures, each with its unique way of storing and accessing information. The choice of data structure affects the efficiency of an algorithm or a program, making understanding different types of data structures crucial for optimal programming practices.
+- [Mathematics Centers](javascript:toggle('mainmenu3','mathmenu'))
+[Center for Mathematical\
+\
+   Inquiry](http://web.math.ucsb.edu/department/cmi)
+[Computational Science\
+\
+   and Engineering](http://www.cse.ucsb.edu/)
+[Center for Complex &\
+\
+   Nonlinear Science](http://repositories.cdlib.org/cnls/)
+[Complex Fluids Design\
+\
+   Consortium](http://www.mrl.ucsb.edu/cfdc/)
+[Center for Control, Dynamical\
+\
+   Systems and Computation](http://www.ece.ucsb.edu/ccdc/)
+[California Nanosystems\
+\
+    Institute](http://www.cnsi.ucsb.edu/)
+ - [UCSB Math Circle](http://www.math.ucsb.edu/mathcircle/)
 
-## Purpose and Functionality
+- [Preprint Series](http://math.ucsb.edu/preprints)
 
-The primary purpose of data structures is to organize data in a manner that suits the application's needs and enables efficient processing. For example, some data structures are designed for fast data retrieval, while others are optimized for quick modification. This differentiation highlights the importance of choosing the proper data structure for specific programming tasks.
+- [Research](http://math.ucsb.edu/department/research.php)
 
-## Classification of Data Structures
+- [Other Information](javascript:toggle('mainmenu5','othermenu'))
+[WebMail](https://mail.math.ucsb.edu/webmail)
+[Math Personnel Info](http://math.ucsb.edu/htgtd/index.php)
+[WebWork](http://webwork.math.ucsb.edu)
+[Our Location](http://math.ucsb.edu/department/map.php)
+[Computing Resources](http://math.ucsb.edu/department/computing.php)
+[Math Sci Net](http://www.ams.org/mathscinet)
+ - [WWW Links](http://math.ucsb.edu/department/links.php)
 
-Data structures are broadly classified into two types:
+- [Giving to Mathematics](http://math.ucsb.edu/department/donate.php)
 
-- **Linear Data Structures**: Arrays, stacks, queues, and linked lists to organize data sequentially.
-- **Non-linear Data Structures**: Trees and graphs organize data hierarchically or interconnectedly, allowing for complex relationships between data elements.
+[Follow us: ![](http://web.math.ucsb.edu/images/20px-facebook-favicon.jpg)](http://www.facebook.com/pages/Mathematics-Dept-UC-Santa-Barbara/388265455241?ref=mf)
 
-In subsequent tutorials, you will learn more about Linear and Non-linear Data Structures, emphasizing their applications and efficiency in solving real-world problems.
+Department of Mathematics
 
-## Conclusion
+South Hall, Room 6607
 
-Understanding and implementing data structures effectively is vital for developing efficient software. The choice of data structure can significantly impact the performance and scalability of applications. By mastering the basics of data s... [Content truncated for context window]
+University of California
+
+Santa Barbara, CA 93106
+
+[Phone Numbers](http://math.ucsb.edu/department/staff.php)
+
+Fax (805) 893-2385
+
+Email: [www@math.ucsb.edu](mailto:www@math.ucsb.edu)
+
+Office Hours: Mon-Fri 9-12, 1-4
+
+Copyright (c) 2011 the Regents
+
+of the University of California,
+
+All Rights reserved. [Terms of Use](http:... [Content truncated for context window]
 
 
 ---
 
-### Source 19: Data Structure: Tips & Techniques
+### Source 16: Overview
 
 **Content:**
-# What is a data structure?
+[Skip to main content](https://services.math.duke.edu/~jdr/ila/overview.html#content)
 
-TEMPORARILY UNAVAILABLE
+##### The Subject of This Textbook
 
-DISCONTINUED
+Before starting with the content of the text, we first ask the basic question: what _is_ linear algebra?
 
-Temporary Unavailable
+- _Linear:_ having to do with lines, planes, etc.
+- _Algebra:_ solving equations involving unknowns.
 
-Cooming Soon!
+The name of the textbook highlights an important theme: the synthesis between algebra and geometry. It will be very important to us to understand systems of linear equations both _algebraically_ (writing equations for their solutions) and _geometrically_ (drawing pictures and visualizing).
 
-. Additional units will be charged at the non-eCoupon price. Purchase additional now
+**Remark**
 
-We're sorry, the maximum quantity you are able to buy at this amazing eCoupon price is
+The term “algebra” was coined by the 9th century mathematician Abu Ja’far Muhammad ibn Musa al-Khwarizmi. It comes from the Arabic word _al-jebr_, meaning reunion of broken parts.
 
-Sign in or Create an Account to Save Your Cart!
+At the simplest level, solving a system of linear equations is not very hard. You probably learned in high school how to solve a system like
 
-Sign in or Create an Account to Join Rewards
+Ax+3y−z=42x−y+3z=17y−4z=−3.
 
-Temporarilyunavailable
+However, in real life one usually has to be more clever.
 
-Discontinued
+- Engineers need to solve many, many equations in many, many variables. Here is a tiny example:
+BEDEC3x1+4x2+10x3+19x4−2x5−3x6=1417x1+2x2−13x3−7x4+21x5+8x6=2567−x1+9x2+32x3+x4+14x5+27x6=2612x1+4x2+10x3+11x4+2x5+x6=−15.
 
-comingsoon
+- Often it is enough to know some information about the set of solutions, without having to solve the equations in the first place. For instance, does there exist a solution? What does the solution set look like geometrically? Is there still a solution if we change the 26 to a 27?
+- Sometimes the coefficients also contain parameters, like the _eigenvalue equation_
+A(7−λ)x+y+3z=0−3x+(2−λ)y−3z=0−3x−2y+(−1−λ)z=0.
 
-View Cart
+- In data modeling, a system of equations generally does not actually have a solution. In that case, what is the best approximate solution?
 
-Remove
+Accordingly, this text is organized into three main sections.
 
-minicart\_error\_please\_view
+1. Solve the matrix equation Ax=b (chapters 2–4).
 
-Your cart is empty!
-Don’t miss out on the latest products and savings — find your next favorite laptop, PC, or accessory today.
+ - Solve systems of linear equations using matrices, row reduction, and inverses.
+ - Analyze systems of linear equations geometrically using the geometry of solution sets and linear transformations.
+2. Solve the matrix equation Ax=λx (chapters 5–6).
 
-item(s) in cart
+ - Solve eigenvalue problems using the characteristic polynomial.
+ - Understand the geometry of matrices using similarity, eigenvalues, diagonalization, and complex numbers.
+3. Approximately solve the matrix equation Ax=b (chapter 7).
 
-Some items in your cart are no longer available. Please visit [cart](https://www.lenovo.com/us/en/cart) for more details.
+ - Find best-fit solutions to systems of linear equations that have no actual solution using least-squares approximations.
+ - Study the geometry of closest vectors and orthogonal projections.
 
-has been deleted
+This text is roughly half computational and half conceptual in nature. The main goal is to present a library of linear algebra tools, and more importantly, to teach a conceptual framework for understanding which tools should be applied in a given context.
 
-Please review your cart as items have changed.
+If Matlab can find the answer faster than you can, then your question is just an algorithm: this is not real problem solving.
 
+T... [Content truncated for context window]
+
+
+---
+
+### Source 17: Mathonline
+
+**Content:**
+![linearalgebraheader.png](http://mathonline.wdfiles.com/local--files/admin%3Aimages/linearalgebraheader.png)
+
+![Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png](http://mathonline.wdfiles.com/local--files/linear-algebra/Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png)
+
+# Linear Algebra Topics
+
+* * *
+
+## 1\. Systems of Linear Equations and Matrices
+
+###### 1.1. Systems of Linear Equations
+
+- [Linear Equations](http://mathonline.wikidot.com/linear-equations)
+- [Systems of Linear Equations](http://mathonline.wikidot.com/systems-of-linear-equations)
+- [Solutions to Systems of 2-Variables and 3-Variables](http://mathonline.wikidot.com/solutions-to-systems-of-2-variables-and-3-variables)
+- [Homogenous Linear Systems](http://mathonline.wikidot.com/homogenous-linear-systems)
+
+###### 1.2. Introduction to Matrices and Elementary Row Operations
+
+- [Matrices and Elementary Row Operations](http://mathonline.wikidot.com/matrices-and-elementary-row-operations)
+- [Row Echelon Form of a Matrix (REF)](http://mathonline.wikidot.com/row-echelon-form-of-a-matrix-ref)
+- [Gaussian Elimination and Back Substitution](http://mathonline.wikidot.com/gaussian-elimination-and-back-substitution)
+- [Reduced Row Echelon Form of a Matrix (RREF)](http://mathonline.wikidot.com/reduced-row-echelon-form-of-a-matrix-rref)
+- [Gauss-Jordan Elimination](http://mathonline.wikidot.com/gauss-jordan-elimination)
+
+###### 1.3. Operations on Matrices, and Special Types of Matrices
+
+- [Matrix Addition and Subtraction](http://mathonline.wikidot.com/matrix-addition-and-subtraction)
+- [Scalar Multiples of Matrices](http://mathonline.wikidot.com/scalar-multiples-of-matrices)
+- [The Transpose of a Matrix](http://mathonline.wikidot.com/the-transpose-of-a-matrix)
+- [The Trace of a Square Matrix](http://mathonline.wikidot.com/the-trace-of-a-square-matrix)
+- [Matrix Multiplication](http://mathonline.wikidot.com/matrix-multiplication)
+- [Zero Matrices](http://mathonline.wikidot.com/zero-matrices)
+- [Diagonal Matrices](http://mathonline.wikidot.com/diagonal-matrices)
+- [Triangular Matrices](http://mathonline.wikidot.com/triangular-matrices)
+- [Symmetric Matrices](http://mathonline.wikidot.com/symmetric-matrices)
+- [Identity Matrices](http://mathonline.wikidot.com/identity-matrices)
+- [Inverse of a Matrix](http://mathonline.wikidot.com/inverse-of-a-matrix)
+- [Inverse of Diagonal Matrices](http://mathonline.wikidot.com/inverse-of-diagonal-matrices)
+- [Powers of a Matrix](http://mathonline.wikidot.com/powers-of-a-matrix)
+- [Matrix Polynomials](http://mathonline.wikidot.com/matrix-polynomials)
+- [Elementary Matrices](http://mathonline.wikidot.com/elementary-matrices)
+- [Finding a Matrix's Inverse with Elementary Matrices](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-elementary-matrices)
+- [Finding a Matrix's Inverse with Row Operations](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-row-operations)
+
+* * *
+
+## 2\. Determinants
+
+###### 2.1. The Determinant of Square Matrices... [Content truncated for context window]
+
+
+---
+
+### Source 18: Linear algebra review
+
+**Content:**
+**Next:** [Matrix decompositions](https://nlp.stanford.edu/matrix-decompositions-1.html) **Up:** [Matrix decompositions and latent](https://nlp.stanford.edu/matrix-decompositions-and-latent-semantic-indexing-1.html) **Previous:** [Matrix decompositions and latent](https://nlp.stanford.edu/matrix-decompositions-and-latent-semantic-indexing-1.html) **[Contents](https://nlp.stanford.edu/contents-1.html)** **[Index](https://nlp.stanford.edu/index-1.html)**
+
+# Linear algebra review
+
+We briefly review some necessary background in linear algebra. Let be an
+matrix with real-valued entries; for a term-document matrix, all entries are in fact non-negative.
+
+The _rank_ of a matrix is the number of linearly independent rows (or columns) in it; thus,
+. A square matrix all of whose off-diagonal entries are zero is called a _diagonal matrix_; its rank is equal to the number of non-zero diagonal entries. If all diagonal entries of such a diagonal matrix are , it is called the identity matrix of dimension and represented by .
+
+For a square
+matrix and a vector that is not all zeros, the values of satisfying
+
+| |
+| --- |
+| (213) |
+
+are called the
+_eigenvalues_
 of
+. The -vector satisfying Equation [213](https://nlp.stanford.edu/nlp.stanford.edu#eqn:right-eigen) for an eigenvalue is the corresponding _right eigenvector_. The eigenvector corresponding to the eigenvalue of largest magnitude is called the _principal eigenvector._ In a similar fashion, the _left eigenvectors_ of are the -vectors such that
 
-Contains Add-ons
+| |
+| --- |
+| (214) |
 
-Subtotal
+The number of non-zero eigenvalues of is at most
+.
 
-Proceed to Checkout
+The eigenvalues of a matrix are found by solving the
+_characteristic equation_, which is obtained by
+rewriting Equation [213](https://nlp.stanford.edu/nlp.stanford.edu#eqn:right-eigen) in the form
+. The eigenvalues of are then the solutions of
+, where denotes the determinant of a square matrix .
+The equation
+is an th order polynomial equation in and can have at most roots, which are the
+eigenvalues of . These eigenvalues can in general be complex, even if all entries of are real.
 
-Yes
+We now examine some further properties of eigenvalues and eigenvectors, to set up the central idea of singular value decompositions in Section [18.2](https://nlp.stanford.edu/term-document-matrices-and-singular-value-decompositions-1.html#sec:svd) below. First, we look at the relationship between matrix-vector multiplication and eigenvalues.
 
-No
+**Worked example.**
+Consider the matrix
 
-Popular Searches
+| |
+| --- |
+| (215) |
 
-What are you looking for today ?
+Clearly the matrix has rank 3, and has 3 non-zero eigenvalues and , with the three corresponding eigenvectors
 
-Trending
+| |
+| --- |
+| (216) |
 
-Recent Searches
+For each of the eigenvectors, multiplication by acts as if we were multiplying the eigenvector by a multiple of the identity matrix; the multiple is different for each eigenvector. Now, consider an arbitrary vector, such as
+We can always express as a linear combination of the three eigenvectors of ; in the current example we have
 
-Items
+| |
+| --- |
+| (217) |
 
-All
+Suppose we multiply by :
 
-Cancel
-
-Top Suggestions
-
-View All >
-
-Starting at
-
-[Learn More](https://www.lenovo.com/us/en/lenovoauraedition/)
-
-Annual Sale
-
-Laptop Deals
-
-Desktop Deals
-
-Workstation Deals
-
-Pick Up Today at Best Buy
-
-Gaming PC & Accessory Deals
-
-PC Accessories & Electronics Deals
-
-Monitor Deals
-
-Tablets & Phones Deals
-
-Server & Storage Deals
-
-Clearance Sale
-
-## What is a data structure?
-
-Data structure refers to the way data is organized, stored, and manipulated in a computer system. It provides a means to efficiently manage and access data, enabling faster and more effective computations. By using different data structures, programmers can optimize their code and improve the performance of their applications.
-
-## Why are data structures important in programming?
-
-Data structures are crucial in programming as they allow for efficient storage and retrieval of data. They provide a framework for organizing and managing information, making it easier to perform operations on the data. By selecting the appropriate data structure for a specific task, you can optimize your code and improve overall performance.
-
-## What are the different types of data structures?
-
-There are various types of data structures, each designed for specific purposes. Some commonly used data structures include:
-
-- **Arrays:** A collection of elements stored in contiguous memory locations.
-- **Linked Lists:** A linear collection of elements where each element points to the next one.
-- **Stacks:** A last-in, first-out (LIFO) data structure where elements are added and removed from the top.
-- **Queues:** A first-in, first-out (FIFO) data structure where elements are added at the rear and removed from the front.
-- **Trees:** A hierarchical data structure with a root node and child nodes.
-- **Graphs:** A collection of nodes interconnected by edges.
-- **Hash Tables:** A data structure that maps keys to values for efficient lookup.
-
-## How do data structures impact program efficiency?
-
-The choice of data structure can significantly affect the efficiency of a... [Content truncated for context window]
+| |
+| -... [Content truncated for context window]
 
 
 ---
 
-### Source 20: Every Data Structure on 1 Page - DeriveIt
+### Source 19: Elementary linear algebra
 
 **Content:**
-# Cheat Sheets
+# Elementary linear algebra
 
-# Every Data Structure on 1 Page
+Sep 17, 20153 likes1,931 viewsAI-enhanced description
 
-Lesson
+[![Ayupratiwi Geophysics](https://cdn.slidesharecdn.com/profile-photo-ayupratiwigeophysics-48x48.jpg?cb=1523537863)\
+Ayupratiwi Geophysics](https://www.slideshare.net/ayupratiwigeophysics)
 
-### [Array](https://deriveit.org/deriveit.org\#array)
+This document is a textbook on elementary linear algebra. Chapter 1 introduces linear equations in n unknowns and systems of m linear equations in n unknowns. It discusses solving linear equations and systems for solutions. Geometrically, solving systems of linear equations in two or three unknowns corresponds to finding the common point of intersection of lines or planes. Examples are provided to illustrate solving single equations, systems of equations, and finding polynomials that satisfy given points.
 
-An Array is an ordered list of elements, where each lives at an index 0, 1, 2, and so on. Arrays are also called "lists" in Python.
+Read more
 
-Read/Write Time **O(1)**.
+1 of 201
 
-Insert/Delete Time **O(n)**.
+Download nowDownloaded 25 times
 
-### [Stack](https://deriveit.org/deriveit.org\#stack)
+![ELEMENTARY LINEAR ALGEBRA K. R. MATTHEWS DEPARTMENT OF MATHEMATICS UNIVERSITY OF QUEENSLAND Corrected Version, 27th April 2013 Comments to the author at keithmatt@gmail.com ](https://image.slidesharecdn.com/elementarylinearalgebra-150917035140-lva1-app6891/75/Elementary-linear-algebra-1-2048.jpg)
 
-A Stack is an Array, but where you only Insert/Delete the last element. This makes inserting and deleting fast.
+![Contents 1 LINEAR EQUATIONS 1 1.1 Introduction to linear equations . . . . . . . . . . . . . . . . . 1 1.2 Solving linear equations . . . . . . . . . . . . . . . . . . . . . 5 1.3 The Gauss–Jordan algorithm . . . . . . . . . . . . . . . . . . 8 1.4 Systematic solution of linear systems. . . . . . . . . . . . . . 9 1.5 Homogeneous systems . . . . . . . . . . . . . . . . . . . . . . 16 1.6 PROBLEMS . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 2 MATRICES 23 2.1 Matrix arithmetic . . . . . . . . . . . . . . . . . . . . . . . . . 23 2.2 Linear transformations . . . . . . . . . . . . . . . . . . . . . . 27 2.3 Recurrence relations . . . . . . . . . . . . . . . . . . . . . . . 31 2.4 PROBLEMS . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 2.5 Non–singular matrices . . . . . . . . . . . . . . . . . . . . . . 36 2.6 Least squares solution of equations . . . . . . . . . . . . . . . 47 2.7 PROBLEMS . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 3 SUBSPACES 55 3.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55 3.2 Subspaces of Fn . . . . . . . . . . . . . . . . . . . . . . . . . 55 3.3 Linear dependence . . . . . . . . . . . . . . . . . . . . . . . . 58 3.4 Basis of a subspace . . . . . . . . . . . . . . . . . . . . . . . . 61 3.5 Rank and nullity of a matrix . . . . . . . . . . . . . . . . . . 63 3.6 PROBLEMS . . . . . . . . . . . . . . . . . . . . . . . . . . . 67 4 DETERMINANTS 71 4.1 PROBLEMS . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 i ](https://image.slidesharecdn.com/elementarylinearalgebra-150917035140-lva1-app6891/75/Elementary-linear-algebra-2-2048.jpg)
 
-Read/Write Time **O(1)**.
+![5 COMPLEX NUMBERS 89 5.1 Constructing the complex numbers . . . . . . . . . . . . . . . 89 5.2 Calculating with complex numbers . . . . . . . . . . . . . . . 91 5.3 Geometric representation of C . . . . . ... [Content truncated for context window]
 
-Append/Pop Time **O(1)**.
 
-### [HashMap](https://deriveit.org/deriveit.org\#hashmap)
+---
 
-A HashMap is a generalized type of Array, where you can look up data using "keys". Keys can be anything as long as they're immutable: strings, tuples, numbers, letters, etc.
+### Source 20: What is Linear Algebra actually used for? How did it start out?
 
-HashMaps are called "dictionaries" or "dicts" in Python.
-We talk about how to implement a HashMap from scratch [here](https://deriveit.org/coding/making-the-hashmap-204).
+**Content:**
 
-Read/Write Time **O(1)**.
+ What is Linear Algebra actually used for? How did it start out? 
+ Author: DeepRNA 
+ Time Posted (UTC): 2021-02-11 00:47:22+00:00 
+ Score: 278 
+ 
 
-Insert/Delete Time **O(1)**.
 
-### [Set](https://deriveit.org/deriveit.org\#set)
+ 
+ Link: https://www.reddit.com/r/math/comments/lh8pm7/what_is_linear_algebra_actually_used_for_how_did/ 
+ 
 
-A Set is a HashMap, but where all the values are True. You can quickly check if an element is/isn't in a Set. In Python, sets are implemented as their own data structure, and not as HashMaps.
 
-Read/Write Time **O(1)**.
+ 
+ I dont think linear algebra started out as pure mathematics then found use cases. Imagine you are an early mathematician, what problems were you trying to solve? How did linear algebra help? How does it help in todays world? (If you can, please use engineering examples). Im trying to write down reasons for students to even want to learn linear algebra. But not knowing enough about it I am struggling compiling information on it. 
+ 
 
-Insert/Delete Time **O(1)**.
 
-### [Linked List](https://deriveit.org/deriveit.org\#linked-list)
+ 
+ Comments 
+ 
 
-A Linked List is a custom data structure that you implement yourself. The first node in the Linked List is called the "head". Each node has a value `val`, and points to the next node `next`.
 
-We used HashMaps here instead of ListNodes, because HashMaps are perfectly equivalent to objects and don't require boilerplate code to use. If this is confusing to you, see the [Classes and Objects](https://deriveit.org/coding/classes-and-objects-173) cheat sheet.
+ 
+ 
+ Comment by: KingOfTheEigenvalues
+ | Posted (UTC): 2021-02-11
+ | Score: 343
+ 
+ A much harder question is "what is linear algebra NOT used for?" It comes up in pretty much every branch of modern mathematics and extends to applications in pretty much every STEM field. 
 
-Read/Write Time **O(n)**.
 
-Insert/Delete Time **O(n)**.
+ 
+ 
+ Comment by: hubryan
+ | Posted (UTC): 2021-02-11
+ | Score: 122
+ 
+ every area of math is within 3 concepts away from linear algebra 
 
-### [Tree](https://deriveit.org/deriveit.org\#tree)
 
-A Tree is a custom data structure you implement yourself.
-Typically when you say "Tree", you're really referring to the root node of a Binary Tree. In a Binary Tree, each node has a value `val`, a left child `left`, and a right child `right`.
+ 
+ 
+ Comment by: punaisetpimpulat
+ | Posted (UTC): 2021-02-11
+ | Score: 3
+ 
+ I’ve heard that every mathematical operation can be reduced to addition. That’s certainly true for multiplying and exponents, but perhaps it can also work with more complicated concepts too. If that’s the case, we could also say that everything is just few steps away from addition. 
 
-Here's how you create the above binary tree:
 
-We used HashMaps here instead of TreeNodes, because HashMaps are perfectly equivalent to objects and don't require boilerplate code to use. If this is confusing to you, see the [Classes and Objects](https://deriveit.org/coding/classes-and-objects-173) cheat sheet.
+ 
+ 
+ Comment by: [deleted]
+ | Posted (UTC): 2021-02-11
+ | Score: 23
+ 
+ I believe addition and multiplication can be fundamentally different, depending on the context. 
 
-Trees generally have a height of O(n), but balanced trees are spread wider and have a height of O(log n), which makes reading/writing faster.
 
-Read/Write Time Varies.
+ 
+ 
+ Comment by: DrSeafood
+ | Posted (UTC): 2021-02-11
+ | Score: 13
+ 
+ Yeah. Like ... How about function composition? That doesn't resemble "addition" in any reasonable way, as far as I can tell. Or commutator \[a,b\] = ab - ba? That's not even associative. Edit: ooh. They probably meant that subtraction is adding negatives, multiplication is repeated addition, division is inverse multiplication, exponents are repeated multiplication... All basic arithmetic is connected to addition in some way. That makes sense. 
 
-Insert/Delete Time Varies; **O(log n)** for balanced trees like Binary Search Trees and Heaps.
+ 
 
-### [Graph](https://deriveit.org/deriveit.org\#graph)
+ 
+ 
+ Comment by: ElectricalIons
+ | Posted (UTC): 2021-02-12
+ | Score: 2
+ 
+ Yeah, the simplest evidence being that the additive identity and multiplicative identity are in general not the same. Addition and multiplication don't seem to interact much in rings. 
 
-A graph is made of nodes that point to each other.
+ 
+ 
 
-There are two general ways you can store a graph, and both are common in coding interviews:
+ 
+ 
+ Comment by: alimaze-9825
+ | Posted (UTC): 2021-02-11
+ | Score: 2
+ 
+ a vector like [a, b] can be written as a + b so I'm inclined to believe it can be extended to matrices of any size. 
 
-You might also see a graph just stored as a single array... [Content truncated for context window]
+ 
+
+ 
+ 
+ Comment by: [deleted]
+ | Posted (UTC): 2021-02-11
+ | Score: 1
+ 
+ [deleted] 
+
+
+ 
+ 
+ Comment by: SV-97
+ | Posted (UTC): 2021-02-11
+ | Score: 4
+ 
+ e = lim\_{n to infty} (1+1/n)\^n - you can write the power as repeated multiplication as addition and use a power series for 1/n to reduce all you have to do to addition :) Not saying it's true that you can ... [Content truncated for context window]
 
 
 ---
@@ -587,7 +660,7 @@ You might also see a graph just stored as a single array... [Content truncated f
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 2 Knowledge Nodes for: Data Structures**
+**Agent 2 Knowledge Nodes for: Linear Algebra**
 
 1. [Node Name]
 2. [Node Name]

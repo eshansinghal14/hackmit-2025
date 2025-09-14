@@ -1,64 +1,850 @@
-You are Agent 1 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 1 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Data Subset
 - Agent ID: 1/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 1 to 2
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 1 to 10
 
 ## Your Research Sources
 
-### Source 1: Linear algebra - Wikipedia
+### Source 1: What Is Linear Algebra?
 
 **Content:**
-[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+# What Is Linear Algebra?
 
-From Wikipedia, the free encyclopedia
+Written by Coursera Staff • Updated on May 6, 2025
 
-Branch of mathematics
+Learn what linear algebra is, its common concepts, and its use in machine learning, as well as careers you can pursue that use linear algebra.
 
-**Linear algebra** is the branch of [mathematics](https://en.wikipedia.org/wiki/Mathematics) concerning [linear equations](https://en.wikipedia.org/wiki/Linear_equation) such as
+Linear algebra combines multivariate calculus, differential equations, and probability into a widely applicable mathematical theory and system that undergirds many technologies in our lives. At its core, linear algebra studies vectors and linear functions to solve systems of linear equations that contain multiple variables. It focuses on calculating vectors, which are points in space with magnitude and direction, and matrices, which are tables of numbers.
 
-a1x1+⋯+anxn=b,{\\displaystyle a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n}=b,}
+While linear algebra is not a prerequisite for starting in machine learning, its concepts become foundational for a deeper understanding of the algorithms used in machine learning. It can help when you encounter deep learning concepts so that you can make informed decisions when developing a new machine learning system.
 
-[linear maps](https://en.wikipedia.org/wiki/Linear_map) such as
+This article takes a deeper look at concepts in linear algebra, its uses, its users, how it's employed in machine learning, and how you can study it.
 
-(x1,…,xn)↦a1x1+⋯+anxn,{\\displaystyle (x\_{1},\\ldots ,x\_{n})\\mapsto a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n},}
+## Concepts in linear algebra
 
-and their representations in [vector spaces](https://en.wikipedia.org/wiki/Vector_space) and through [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)).[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3)
+Linear algebra contains many applicable concepts. Here are some of the concepts in linear algebra that are also useful in machine learning:
 
-In three-dimensional [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space), these three planes represent solutions to linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations.
+- Vectors and vector spaces
 
-Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of [geometry](https://en.wikipedia.org/wiki/Geometry), including for defining basic objects such as [lines](https://en.wikipedia.org/wiki/Line_(geometry)), [planes](https://en.wikipedia.org/wiki/Plane_(geometry)) and [rotations](https://en.wikipedia.org/wiki/Rotation_(mathematics)). Also, [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis), a branch of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), may be viewed as the application of linear algebra to [function spaces](https://en.wikipedia.org/wiki/Space_of_functions).
+- Systems of linear equations
 
-Linear algebra is also used in most sciences and fields of [engineering](https://en.wikipedia.org/wiki/Engineering) because it allows [modeling](https://en.wikipedia.org/wiki/Mathematical_model) many natural phenomena, and computing efficiently with such models. For [nonlinear systems](https://en.wikipedia.org/wiki/Nonlinear_system), which cannot be modeled with linear algebra, it is often used for dealing with [first-order approximations](https://en.wikipedia.org/wiki/First-order_approximation), using the fact that the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of a [multivariate function](https://en.wikipedia.org/wiki/Multivariate_function) at a point is the linear map that best approximates the function near that point.
+- Matrices
 
-## History
+- Eigenvalues and [Eigenvectors](https://www.coursera.org/articles/eigenvector-centrality)
 
-\[ [edit](https://en.wikipedia.org/w/index.php?title=Linear_algebra&action=edit&section=1)\]
 
-See also: [Determinant § History](https://en.wikipedia.org/wiki/Determinant#History), and [Gaussian elimination § History](https://en.wikipedia.org/wiki/Gaussian_elimination#History)
+Let’s take a closer look at each concept.
 
-The procedure (using c... [Content truncated for context window]
+### What is linear algebra in simple terms?
+
+Linear algebra is a branch of mathematics that analyzes vectors, matrices, and linear transformations. One of its main concerns is finding solutions using vectors to represent something in physical space. Solutions are called vector spaces, and you can add and multiply vectors to find these solutions.
+
+### Vectors and vector spaces
+
+A vector is a quantity that has magnitude and direction. In linear algebra, you can add and multiply vectors by following the vector addition and multiplication rules. Linear algebra deals with many kinds of vectors:
+
+- Power series
+
+- Polynomials
+
+- Numbers
+
+- n-vectors
+
+- Functions with a specific domain
+
+- 2nd order polynomials
+
+
+A vector space is a set that adds and multiplies the properties of a vector. Vector spaces have 10 axioms that vectors follow when adding and multiplying.
+
+### Systems of linear equations
+
+Linear algebra examines linear functions, which have vectors as both the input and the output. A matrix is an example of a linear function when it is multiplied by transforming a vector into another vector. A system of linear equations changes to a matrix equation through an augmented matrix in a process called Gaussian elimination. To solve a system of linear equations, you use reduced row echelon form, which simplifies the system of equations into a matrix, getting the linear equation into a solvable form.
+
+### Matrices
+
+A matrix is the result of a s... [Content truncated for context window]
 
 
 ---
 
-### Source 2: Linear Algebra - Khan Academy
+### Source 2: What is Linear Algebra?
 
 **Content:**
-If you're seeing this message, it means we're having trouble loading external resources on our website.
+Resources
 
-If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+# What is Linear Algebra?
 
-## Oops. Something went wrong. Please try again.
+By [Wiingy](https://wiingy.com/review-board/) on Jun 26, 2024
 
-Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+Updated Jul 21, 2025
+
+In this article
+
+- [Linear Algebra topics](https://wiingy.com/wiingy.com#heading-15)
+- [What are the 3 types of Linear Algebra?](https://wiingy.com/wiingy.com#heading-39)
+- [Difference between Linear Algebra and Algebra](https://wiingy.com/wiingy.com#heading-73)
+- [Resources to learn Linear Algebra](https://wiingy.com/wiingy.com#heading-79)
+- [Importance of Linear Algebra in education and career](https://wiingy.com/wiingy.com#heading-139)
+- [Key takeaways on “What is Linear Algebra?”](https://wiingy.com/wiingy.com#heading-161)
+- [Frequently Asked Questions (FAQs)](https://wiingy.com/wiingy.com#heading-175)
+
+[Limited Offer\
+\
+Free trial with any tutor, sign up now!\
+\
+Explore 1100+ Math tutors to find your perfect match!\
+\
+Cyntia Szomyu\
+\
+Hello! I'm Cyntia Szomyu, a mathematics tutor with\
+\
+4.6(65)\
+\
+Karinna Cvijanovich\
+\
+Hi! I'm Karinna, a recent graduate of Amherst Coll\
+\
+4.7(45)\
+\
+Find your private math tutor](https://wiingy.com/search/?subject_id=563&utm_source=side_banner&utm_medium=Limited_Offer)
+
+Imagine you’re a builder, tasked with constructing a sturdy bridge across a river. You need to plot straight lines and calculate angles to ensure the bridge stands tall and strong.
+
+This is where linear algebra steps in! It offers you a toolbox filled with matrices and vectors to map out your design in a mathematical space.
+
+**Linear algebra is a type of math that solves straight-line problems. It uses grids of numbers called matrices to show these problems in vector space. Basically, it’s about how straight lines and vectors work in math.**
+
+Linear algebra is really important in fields like engineering and physics. It helps us figure out various natural phenomena.
+
+The main things we look at in linear algebra are straight-line problems, matrices, and spaces. Understanding these ideas is key to getting the basics of this subject.In this article, we will cover:
+
+- Linear-Algebra topics
+- Resources to learn Linear Algebra
+- 3 types of Linear Algebra
+- Difference between Linear-Algebra and Algebra
+- Importance of learning Linear Algebra
+- Importance of learning Linear Algebra
+
+**Looking to Learn Linear Algebra? Book a Free Trial Lesson and match with top** [**Linear Algebra Tutors**](https://wiingy.com/linear-algebra-tutor/) **for Concepts, Homework Help, and Test Prep.**
+
+## **Linear Algebra topics**
+
+Linear algebra covers three main areas: linear equations, matrices, and vectors. The areas are interconnected and understanding them is crucial for mastering linear algebra. Let’s break down the topics within each category:
+
+### **Linear Equations**
+
+A linear equation is a foundational concept of linear algebra. It’s a mathematical expression written in a standard form, like a1x1 + a2x2 + … + anxn. In Linear equations, you work with variables.
+
+Here are the key topics covered under linear equations:
+
+- Linear Equations in One... [Content truncated for context window]
+
+
+---
+
+### Source 3: Overview
+
+**Content:**
+[Skip to main content](https://services.math.duke.edu/~jdr/ila/overview.html#content)
+
+##### The Subject of This Textbook
+
+Before starting with the content of the text, we first ask the basic question: what _is_ linear algebra?
+
+- _Linear:_ having to do with lines, planes, etc.
+- _Algebra:_ solving equations involving unknowns.
+
+The name of the textbook highlights an important theme: the synthesis between algebra and geometry. It will be very important to us to understand systems of linear equations both _algebraically_ (writing equations for their solutions) and _geometrically_ (drawing pictures and visualizing).
+
+**Remark**
+
+The term “algebra” was coined by the 9th century mathematician Abu Ja’far Muhammad ibn Musa al-Khwarizmi. It comes from the Arabic word _al-jebr_, meaning reunion of broken parts.
+
+At the simplest level, solving a system of linear equations is not very hard. You probably learned in high school how to solve a system like
+
+Ax+3y−z=42x−y+3z=17y−4z=−3.
+
+However, in real life one usually has to be more clever.
+
+- Engineers need to solve many, many equations in many, many variables. Here is a tiny example:
+BEDEC3x1+4x2+10x3+19x4−2x5−3x6=1417x1+2x2−13x3−7x4+21x5+8x6=2567−x1+9x2+32x3+x4+14x5+27x6=2612x1+4x2+10x3+11x4+2x5+x6=−15.
+
+- Often it is enough to know some information about the set of solutions, without having to solve the equations in the first place. For instance, does there exist a solution? What does the solution set look like geometrically? Is there still a solution if we change the 26 to a 27?
+- Sometimes the coefficients also contain parameters, like the _eigenvalue equation_
+A(7−λ)x+y+3z=0−3x+(2−λ)y−3z=0−3x−2y+(−1−λ)z=0.
+
+- In data modeling, a system of equations generally does not actually have a solution. In that case, what is the best approximate solution?
+
+Accordingly, this text is organized into three main sections.
+
+1. Solve the matrix equation Ax=b (chapters 2–4).
+
+ - Solve systems of linear equations using matrices, row reduction, and inverses.
+ - Analyze systems of linear equations geometrically using the geometry of solution sets and linear transformations.
+2. Solve the matrix equation Ax=λx (chapters 5–6).
+
+ - Solve eigenvalue problems using the characteristic polynomial.
+ - Understand the geometry of matrices using similarity, eigenvalues, diagonalization, and complex numbers.
+3. Approximately solve the matrix equation Ax=b (chapter 7).
+
+ - Find best-fit solutions to systems of linear equations that have no actual solution using least-squares approximations.
+ - Study the geometry of closest vectors and orthogonal projections.
+
+This text is roughly half computational and half conceptual in nature. The main goal is to present a library of linear algebra tools, and more importantly, to teach a conceptual framework for understanding which tools should be applied in a given context.
+
+If Matlab can find the answer faster than you can, then your question is just an algorithm: this is not real problem solving.
+
+T... [Content truncated for context window]
+
+
+---
+
+### Source 4: Matrix Everywhere: Linear Algebra in Comp Sci
+
+**Content:**
+Disclosure: When you purchase through links on my site, I may earn an affiliate commission. As an Amazon Associate, I earn from qualifying purchases.
+
+> In this article, the author explores the relationship between mathematics and computer science, focusing on the core concepts of linear algebra and their various applications in computer science. Topics covered include linear systems, matrices, Gaussian elimination, vectors, vector spaces, vector-matrix multiplication, and transformations. These concepts are essential in fields such as machine learning, computer graphics, cryptography, and information theory.
+
+* * *
+
+## Introduction
+
+**This article is part of a series called "** [**Log Base Two**](https://scrappedscript.com/series/log-base-two) **", a series dedicated to the relationship between math and computer science**.
+
+Just to give a bit of background on my experience in math, I've **excelled** in a total of 10 college courses in math:
+
+01. Single-variable differential calculus
+
+02. Single-variable integral calculus
+
+03. Multi-variable differential and integral calculus
+
+04. Multi-variable differential and integral calculus of vector-valued functions
+
+05. Linear Algebra
+
+06. Differential equations
+
+07. Probability and statistics
+
+08. Data analysis using R programming language
+
+09. Multivariate statistics
+
+10. Discrete math
+
+
+For a large majority of those 10 classes, I ended up with A's.
+
+Although, before college, I struggled a lot with math in the classroom, even though math had always been my favorite subject since I was in elementary school. I found it hard to truly grasp the concepts taught because my high school teachers were too focused on skill assessment. Instead of focusing on the actual concept being taught, I was too worried about how I was going to pass the test the following week.
+
+Once I got to college, I realized that your math grade (or any grade for that matter) truly doesn't define your potential. Further, I'd argue that your success in math _education_ is heavily influenced by the quality of the teacher/professor's teaching.
+
+My mission with this series is to show other people that math isn't so scary if you break down mathematical concepts into digestible bouts of information and investigate use cases of math in your primary field of interest (in this case, computer science). Along the way, I hope to also supplement your math education with quality content. I believe that **everyone** is capable of learning and truly loving mathematics.
+
+**New articles in this series are posted every Thursday. If you have any suggestions for a specific topic I should write about, please comment it down below!**
+
+* * *
+
+## What Even is Linear Algebra?
+
+Linear algebra is a subfield of mathematics that concentrates on linear systems, matrices, and vectors. Through the employment of these three fundamental elements, a multitude of advancements have been achieved in various domains, both within and beyond the sphere of mathematics.
+
+## Why Hav... [Content truncated for context window]
+
+
+---
+
+### Source 5: Linear Algebra Review and Reference
+
+**Content:**
+Linear Algebra Review and Reference
+Zico Kolter (updated by Chuong Do)
+September 30, 2015
+Contents
+1 Basic Concepts and Notation 2
+1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2 Matrix Multiplication 3
+2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3 Operations and Properties 7
+3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
+3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
+3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
+4 Matrix Calculus 20
+4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
+4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+1
+1 Basic Concepts and Notation
+Linear algebra provides a way of compactly representing and operating on sets of linear
+equations. For example, consider the following system of equations:
+4x1 − 5x2 = −13
+−2x1 + 3x2 = 9.
+This is two equations and two variables, so as you know from high school algebra, you
+can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
+example if the second equation is simply a multiple of the first, but in the case above there
+is in fact a unique solution). In matrix notation, we can write the system more compactly
+as
+Ax = b
+with
+A =
+
+4 −5
+−2 3 
+, b =
+
+−13
+9
+
+.
+As we will see shortly, there are many advantages (including the obvious space savings)
+to analyzing linear equations in this for... [Content truncated for context window]
+
+
+---
+
+### Source 6: 2 Linear Algebra
+
+**Content:**
+Chapter2
+
+LinearAlgebra
+
+Linearalgebraisabranchofmathematicsthatiswidelyusedthroughoutscience
+
+andengineering.Yetbecauselinearalgebraisaformofcontinuousratherthan
+
+discretemathematics,manycomputerscientistshavelittleexperiencewithit.A
+
+goodunderstandingoflinearalgebraisessentialforunderstandingandworking
+
+withmanymachinelearningalgorithms,especiallydeeplearningalgorithms.We
+
+thereforeprecedeourintroductiontodeeplearningwithafocusedpresentationof
+
+thekeylinearalgebraprerequisites.
+
+Ifyouarealreadyfamiliarwithlinearalgebra,feelfreetoskipthischapter.If
+
+youhavepreviousexperiencewiththeseconceptsbutneedadetailedreference
+
+sheettoreviewkeyformulas,werecommendTheMatrixCookbook(Petersenand
+
+Pedersen,2006).Ifyouhavehadnoexposureatalltolinearalgebra,thischapter
+
+willteachyouenoughtoreadthisbook,butwehighlyrecommendthatyoualso
+
+consultanotherresourcefocusedexclusivelyonteachinglinearalgebra,suchas
+
+Shilov(1977).Thischaptercompletelyomitsmanyimportantlinearalgebratopics
+
+thatarenotessentialforunderstandingdeeplearning.
+
+2.1Scalars,Vectors,MatricesandTensors
+
+Thestudyoflinearalgebrainvolvesseveraltypesofmathematicalobjects:
+
+•Scalars
+
+:Ascalarisjustasinglenumber,incontrasttomostoftheother
+
+objectsstudiedinlinearalgebra,whichareusuallyarraysofmultiplenumbers.
+
+Wewritescalarsinitalics.Weusuallygivescalarslowercasevariablenames.
+
+Whenweintroducethem,wespecifywhatkindofnumbertheyare.For
+
+29
+
+CHAPTER2.LINEARALGEBRA
+
+example,wemightsay“Let
+
+s∈R
+
+betheslopeoftheline,”whiledeﬁninga
+
+real-valuedscalar,or“Let
+
+n∈N
+
+bethenumberofunits,”whiledeﬁninga
+
+naturalnumberscalar.
+
+•Vectors
+
+: Avectorisanarrayofnumbers.Thenumbersarearrangedin
+
+order.Wecanidentifyeachindividualnumberbyitsindexinthatordering.
+
+Typicallywegivevectorslowercasenamesinboldtypeface,suchas
+
+x
+
+.The
+
+elementsofthevectorareidentiﬁedbywritingitsnameinitalictypeface,
+
+withasubscript.Theﬁrstelementof
+
+x
+
+is
+
+x
+
+1
+
+,thesecondelementis
+
+x
+
+2
+
+,and
+
+soon.Wealsoneedtosaywhatkindofnumbersarestoredinthevector.If
+
+eachelementisin
+
+R
+
+,andthevectorhas
+
+n
+
+elements,thenthevectorliesin
+
+thesetformedbytakingtheCartesianproductof
+
+Rn
+
+times,denotedas
+
+R
+
+n
+
+.
+
+Whenweneedtoexplicitlyidentifytheelementsofavector,wewritethem
+
+asacolumnenclosedinsquarebrackets:
+
+x=
+
+
+
+
+
+
+
+
+
+
+
+x
+
+1
+
+x
+
+2
+
+.
+
+.
+
+.
+
+x
+
+n
+
+
+
+
+
+
+
+
+
+
+
+.(2.1)
+
+Wecanthinkofvectorsasidentifyingpointsinspace,witheachelement
+
+givingthecoordinatealongadiﬀerentaxis.
+
+Sometimesweneedtoindexasetofelementsofavector.Inthiscase,we
+
+deﬁneasetcontainingtheindicesandwritethesetasasubscript.For
+
+example,toaccess
+
+x
+
+1
+
+,
+
+x
+
+3
+
+and
+
+x
+
+6
+
+,wedeﬁnetheset
+
+S
+
+=
+
+{
+
+1
+
+,
+
+3
+
+,
+
+6
+
+}
+
+andwrite
+
+x
+
+S
+
+.Weusethe
+
+−
+
+signtoindexthecomplementofaset.Forexample
+
+x
+
+−1
+
+is
+
+thevectorcontainingallelementsof
+
+x
+
+exceptfor
+
+x
+
+1
+
+,and
+
+x
+
+−S
+
+isthevector
+
+containingallelementsofxexceptforx
+
+1
+
+,x
+
+3
+
+andx
+
+6
+
+.
+
+•Matrices
+
+:Amatrixisa2-Darrayofnumbers,soeachelementisidentiﬁed
+
+bytwoindicesinsteadofjustone.Weusuallygivematricesuppercase
+
+variablenameswithboldtypeface,suchas
+
+A
+
+.Ifar... [Content truncated for context window]
+
+
+---
+
+### Source 7: FCLA What is Linear Algebra?
+
+**Content:**
+[Skip to main content](https://runestone.academy/ns/books/published/fcla/section-WILA.html#content)
+
+\\(\\newcommand{\\orderof}\[1\]{\\sim #1}
+\\newcommand{\\Z}{\\mathbb{Z}}
+\\newcommand{\\reals}{\\mathbb{R}}
+\\newcommand{\\real}\[1\]{\\mathbb{R}^{#1}}
+\\newcommand{\\complexes}{\\mathbb{C}}
+\\newcommand{\\complex}\[1\]{\\mathbb{C}^{#1}}
+\\newcommand{\\conjugate}\[1\]{\\overline{#1}}
+\\newcommand{\\modulus}\[1\]{\\left\\lvert#1\\right\\rvert}
+\\newcommand{\\zerovector}{\\vect{0}}
+\\newcommand{\\zeromatrix}{\\mathcal{O}}
+\\newcommand{\\innerproduct}\[2\]{\\left\\langle#1,\\,#2\\right\\rangle}
+\\newcommand{\\norm}\[1\]{\\left\\lVert#1\\right\\rVert}
+\\newcommand{\\dimension}\[1\]{\\dim\\left(#1\\right)}
+\\newcommand{\\nullity}\[1\]{n\\left(#1\\right)}
+\\newcommand{\\rank}\[1\]{r\\left(#1\\right)}
+\\newcommand{\\ds}{\\oplus}
+\\newcommand{\\detname}\[1\]{\\det\\left(#1\\right)}
+\\newcommand{\\detbars}\[1\]{\\left\\lvert#1\\right\\rvert}
+\\newcommand{\\trace}\[1\]{t\\left(#1\\right)}
+\\newcommand{\\sr}\[1\]{#1^{1/2}}
+\\newcommand{\\spn}\[1\]{\\left\\langle#1\\right\\rangle}
+\\newcommand{\\nsp}\[1\]{\\mathcal{N}\\!\\left(#1\\right)}
+\\newcommand{\\csp}\[1\]{\\mathcal{C}\\!\\left(#1\\right)}
+\\newcommand{\\rsp}\[1\]{\\mathcal{R}\\!\\left(#1\\right)}
+\\newcommand{\\lns}\[1\]{\\mathcal{L}\\!\\left(#1\\right)}
+\\newcommand{\\per}\[1\]{#1^\\perp}
+\\newcommand{\\augmented}\[2\]{\\left\\lbrack\\left.#1\\,\\right\\rvert\\,#2\\right\\rbrack}
+\\newcommand{\\linearsystem}\[2\]{\\mathcal{LS}\\!\\left(#1,\\,#2\\right)}
+\\newcommand{\\homosystem}\[1\]{\\linearsystem{#1}{\\zerovector}}
+\\newcommand{\\rowopswap}\[2\]{R\_{#1}\\leftrightarrow R\_{#2}}
+\\newcommand{\\rowopmult}\[2\]{#1R\_{#2}}
+\\newcommand{\\rowopadd}\[3\]{#1R\_{#2}+R\_{#3}}
+\\newcommand{\\leading}\[1\]{\\boxed{#1}}
+\\newcommand{\\rref}{\\xrightarrow{\\text{RREF}}}
+\\newcommand{\\elemswap}\[2\]{E\_{#1,#2}}
+\\newcommand{\\elemmult}\[2\]{E\_{#2}\\left(#1\\right)}
+\\newcommand{\\elemadd}\[3\]{E\_{#2,#3}\\left(#1\\right)}
+\\newcommand{\\scalarlist}\[2\]{{#1}\_{1},\\,{#1}\_{2},\\,{#1}\_{3},\\,\\ldots,\\,{#1}\_{#2}}
+\\newcommand{\\vect}\[1\]{\\mathbf{#1}}
+\\newcommand{\\colvector}\[1\]{\\begin{bmatrix}#1\\end{bmatrix}}
+\\newcommand{\\vectorcomponents}\[2\]{\\colvector{#1\_{1}\\\#1\_{2}\\\#1\_{3}\\\\\vdots\\\#1\_{#2}}}
+\\newcommand{\\vectorlist}\[2\]{\\vect{#1}\_{1},\\,\\vect{#1}\_{2},\\,\\vect{#1}\_{3},\\,\\ldots,\\,\\vect{#1}\_{#2}}
+\\newcommand{\\vectorentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
+\\newcommand{\\matrixentry}\[2\]{\\left\\lbrack#1\\right\\rbrack\_{#2}}
+\\newcommand{\\lincombo}\[3\]{#1\_{1}\\vect{#2}\_{1}+#1\_{2}\\vect{#2}\_{2}+#1\_{3}\\vect{#2}\_{3}+\\cdots +#1\_{#3}\\vect{#2}\_{#3}}
+\\newcommand{\\matrixcolumns}\[2\]{\\left\\lbrack\\vect{#1}\_{1}\|\\vect{#1}\_{2}\|\\vect{#1}\_{3}\|\\ldots\|\\vect{#1}\_{#2}\\right\\rbrack}
+\\newcommand{\\transpose}\[1\]{#1^{t}}
+\\newcommand{\\inverse}\[1\]{#1^{-1}}
+\\newcommand{\\submatrix}\[3\]{#1\\left(#2\|#3\\right)}
+\\newcommand{\\adj}\[1\]{\\transpos... [Content truncated for context window]
+
+
+---
+
+### Source 8: Linear Algebra
+
+**Content:**
+- [Mathematics](https://www.geeksforgeeks.org/maths/maths/)
+- [Number System and Arithmetic](https://www.geeksforgeeks.org/engineering-mathematics/number-theory/)
+- [Algebra](https://www.geeksforgeeks.org/maths/algebra/)
+- [Trigonometry](https://www.geeksforgeeks.org/maths/math-trigonometry/)
+- [Statistics](https://www.geeksforgeeks.org/maths/statistics/)
+- [Probability](https://www.geeksforgeeks.org/maths/probability-in-maths/)
+- [Geometry](https://www.geeksforgeeks.org/maths/geometry/)
+- [Mensuration](https://www.geeksforgeeks.org/maths/mensuration/)
+- [Calculus](https://www.geeksforgeeks.org/maths/math-calculus/)
+- [Logarithms](https://www.geeksforgeeks.org/maths/logarithms/)
+
+Sign In
+
+▲
+
+[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/linear-algebra/?type%3Darticle%26id%3D1018801&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+
+# Linear Algebra
+
+Last Updated : 29 Aug, 2025
+
+Comments
+
+Improve
+
+Suggest changes
+
+Like Article
+
+Like
+
+Report
+
+Linear Algebra is the branch of mathematics that focuses on the study of vectors, vector spaces, matrices, and linear transformations. It deals with linear equations, linear functions, and their representations through matrices and determinants. It has a wide range of applications in Physics and Mathematics. It is the basic concept for machine learning and data science.
+
+Some applications of Linear Algebra are:
+
+**Linear Algebra Equations**
+
+> The general linear equation is represented as **u** ****1**** **x** ****1**** **\+ u** ****2**** **x** ****2**** **\+ ..... u** ****n**** **x** ****n**** **= v**
+
+Where,
+
+- u’s – represents the coefficients
+- x’s – represents the unknowns
+- v – represents the constant
+
+There is a collection of equations called a System of linear algebraic equations. It obeys the linear function such as -
+
+> (x1,……..xn) → u1x1 \+ ………. \+ unxn
+
+## Types of Linear Algebra Study
+
+Linear Algebra is divided into different branches based on the difficulty level of topics, which are,
+
+- Elementary Linear Algebra
+- Advanced Linear Algebra
+- Applied Linear Algebra
+
+## Foundations of Linear Algebra
+
+Elementary linear algebra introduces the foundational concepts that form the building blocks of the subject. It covers basic operations on matrices, solving systems of equations, and understanding vectors.
+
+- [**Scalars**](https://www.geeksforgeeks.org/maths/difference-between-scalar-and-vector-quantities/#:~:text=vs%20Vector%20Quantities-,Scalar%20Quantities,-Scalar%20quantities%20are) – Quantities with magnitude only (e.g., real numbers).
+- [**Vectors**](https://www.geeksforgeeks.org/maths/vectors-in-maths/) – Quantities with both direction and magnitude, elements of a vector space.
+- [**Vector Space**](https://www.geeksforgeeks.org/maths/vector-space/) – A collection of vectors that can be added and scaled by scalars.
+- [**Matrix**](https://www.geeksforgeeks.org/maths/introduction-to-matrices/) – A rectangular array of... [Content truncated for context window]
+
+
+---
+
+### Source 9: Lecture Notes for Linear Algebra
+
+**Content:**
+# Lecture Notes for Linear Algebra (2021)
+
+## [**Table of Contents**](https://math.mit.edu/toc.pdf)
+
+## [**Preface to the Notes**](https://math.mit.edu/preface.pdf)
+
+## [**Textbooks, Websites, and Video Lectures**](https://math.mit.edu/resources.pdf)
+
+## [**Sample Sections : 1.3  and  3.3  and  3.5  and  7.1**](https://math.mit.edu/samples.pdf)
+
+[**Linear Algebra @ OCW (video lectures from MIT  :  Math 18.06)**](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) [**Linear Algebra and Learning from Data @ OCW (video lectures  :  Math 18.065)**](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm) [**Gilbert Strang @ OpenCourseWare**](https://ocw.mit.edu/faculty/gilbert-strang/) [**Gilbert Strang's MIT Home Page**](http://math.mit.edu/~gs)
+
+## Other books by Gilbert Strang
+
+- ### [**Linear Algebra for Everyone (new textbook, September 2020)**](http://math.mit.edu/everyone)
+
+- ### [Linear Algebra and Learning from Data (2019)](http://math.mit.edu/learningfromdata)
+
+- ### [**Introduction to Linear Algebra, 5th Edition (2016)**](http://math.mit.edu/linearalgebra)
+
+- ### [Differential Equations and Linear Algebra](http://math.mit.edu/dela)
+
+- ### [Computational Science and Engineering](http://math.mit.edu/cse)
+
+- ### [Calculus](http://math.mit.edu/calculus)
+
+
+[\[top\]](https://math.mit.edu/math.mit.edu#top)
+
+## Ordering Gilbert Strang's books
+
+[**Direct Order in North America**](https://math.mit.edu/~gs/weborder.php) [**Book Order for SIAM members**](https://my.siam.org/Store/Product/viewproduct/?ProductId=27788546) [**Book Order from American Mathematical Society**](https://bookstore.ams.org/strang-2) [**Book Order from Cambridge University Press (outside North America)**](https://www.cambridge.org/academic/subjects/mathematics/algebra/introduction-linear-algebra-5th-edition) [**Wellesley-Cambridge Press (USA)**](http://www.wellesleycambridge.com/) [**Wellesley Publishers (India), select books**](http://www.wellesleypublishers.com/)
+( Contact: [gilstrang@gmail.com](mailto:gilstrang@gmail.com) )
+
+[\[top\]](https://math.mit.edu/math.mit.edu#top)
+
+# Detailed Table of Contents
+
+## Textbooks, Websites, and Video Lectures
+
+## Part 1 : Basic Ideas of Linear Algebra
+
+#### 1.1 Linear Combinations of Vectors
+
+#### 1.2 Dot Products _v · w_ and Lengths \|\| _v_ \|\| and Angles _θ_
+
+#### 1.3 Matrices Multiplying Vectors : _A_ times _x_
+
+#### 1.4 Column Space and Row Space of _A_
+
+#### 1.5 Dependent and Independent Columns
+
+#### 1.6 Matrix-Matrix Multiplication _AB_
+
+#### 1.7 Factoring _A_ into _CR_ : Column rank = _r_ = Row rank
+
+#### 1.8 Rank one matrices    _A_ =(1 column) times (1 row)
+
+## Part 2 : Solving Linear Equations _Ax = b : A_ is _n_ by _n_
+
+#### 2.1 Inverse Matrices _A_-1 and Solutions _x = A_-1 _b_
+
+#### 2.2 Triangular Matrix and Back Substitution for _Ux = c_
+
+#### 2.3 Elimination : Square _A_ to Triangular _U_ : _Ax = b_ to _Ux = c_
+
+#### ... [Content truncated for context window]
+
+
+---
+
+### Source 10: Tea Time Linear Algebra
+
+**Content:**
+[Table of Contents](https://lqbrin.github.io/contents.html) [Ancillaries](https://lqbrin.github.io/ancillaries.html) [Printed Copy](https://lqbrin.github.io/printCopy.html) [Changelog / revised PDF](https://lqbrin.github.io/changelog.html) [More Info](https://lqbrin.github.io/more.html)
+
+Also by L.Q. Brin: [Tea Time Numerical Analysis](https://lqbrin.github.io/tea-time-numerical/)
+
+#### Greetings! And thanks for visiting.
+
+This creation is an all-purpose open source textbook for linear algebra classes of all ilks. Inside you will find a complete and engaging introduction to linear algebra, making it a perfect primary resource for classroom study.
+
+_\[The\] writing is excellent ... sharp, to the point, and witty._\- Dick Pelosi
+
+Take a ride through the landscape of linear algebra from basic mechanics through inner product spaces.
+
+- 386 pages
+- Over 1000 exercises with over 200 detailed solutions and hundreds more answers
+- Over 250 illustrations
+- Nearly 150 live SageMathCell links
+- Open source
+- Now with online homework and course management at [MyOpenMath!](https://www.myopenmath.com/)
+
+Presented in a conversational style with plenty of motivation, illustrations, applications, and theory, this text should be a comfortable read for most beginning mathematicians. Readers and instructors alike will appreciate the numerous detailed exercise solutions accompanying each section.
+
+Examine the distribution of bicycles in the Capital Bikeshare system, model an un-preheated oven baking brownies, reproduce sounds via Fourier series, explore rep-tiles like the one decorating this cover, and more. Read proofs of the rank and nullity theorem, the determinant expansion formula, existence and uniqueness of solutions of linear systems and others.
+
+It's all here in Tea Time Linear Algebra.
 
 
 ---
@@ -92,7 +878,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -65,6 +65,11 @@ class LectureService:
             "type": "action", 
             "content": "LaTeX equation or mathematical expression",
             "description": "Brief description of what you're writing"
+        },
+        {
+            "type": "question",
+            "content": "Simple question for student to answer by writing on whiteboard",
+            "expected_answer": "Brief description of correct answer format"
         }
     ]
 }
@@ -74,9 +79,10 @@ class LectureService:
 - Total word count: 140-160 words across ALL segments
 - Alternate between "context" (spoken) and "action" (visual LaTeX)
 - Start with context, then action, then context, etc.
-- 4-6 segments total
+- 4-6 segments total, ALWAYS end with ONE "question" segment
 - Context: Natural professor speech, engaging and clear
 - Action: Valid LaTeX for equations, formulas, or key concepts
+- Question: Simple test question that student answers by writing on whiteboard
 - Keep explanations concise but pedagogically sound
 
 **LaTeX EXAMPLES** (Keep SHORT and SIMPLE):
@@ -192,13 +198,15 @@ Topic: {topic}"""
         for segment in segments:
             if isinstance(segment, dict) and "type" in segment and "content" in segment:
                 segment_type = segment["type"]
-                if segment_type in ["context", "action"]:
+                if segment_type in ["context", "action", "question"]:
                     validated_segment = {
                         "type": segment_type,
                         "content": segment["content"]
                     }
                     if segment_type == "action" and "description" in segment:
                         validated_segment["description"] = segment["description"]
+                    elif segment_type == "question" and "expected_answer" in segment:
+                        validated_segment["expected_answer"] = segment["expected_answer"]
                     validated_segments.append(validated_segment)
         
         return {
@@ -222,9 +230,14 @@ Topic: {topic}"""
                 {
                     "type": "context", 
                     "content": "Understanding this concept will help you solve many mathematical problems."
+                },
+                {
+                    "type": "question",
+                    "content": f"Now try writing a simple equation related to {topic} on the whiteboard.",
+                    "expected_answer": "Any basic mathematical equation or expression"
                 }
             ],
-            "total_segments": 3
+            "total_segments": 4
         }
 
 # Global service instance

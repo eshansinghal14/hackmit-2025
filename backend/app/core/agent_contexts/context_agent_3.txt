@@ -1,134 +1,495 @@
-You are Agent 3 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 3 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 3 Research Context
 
 ## Assignment
-You are Agent 3 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 3 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Data Subset
 - Agent ID: 3/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 5 to 6
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 21 to 30
 
 ## Your Research Sources
 
-### Source 5: [PDF] Linear Algebra Review and Reference
+### Source 21: Linear Algebra Roadmap For Data Science - Amit Yadav - Medium
 
 **Content:**
-Linear Algebra Review and Reference
-Zico Kolter (updated by Chuong Do)
-September 30, 2015
-Contents
-1 Basic Concepts and Notation 2
-1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-2 Matrix Multiplication 3
-2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-3 Operations and Properties 7
-3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
-3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
-3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
-3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
-3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
-4 Matrix Calculus 20
-4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
-4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
-4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
-4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-1
-1 Basic Concepts and Notation
-Linear algebra provides a way of compactly representing and operating on sets of linear
-equations. For example, consider the following system of equations:
-4x1 − 5x2 = −13
-−2x1 + 3x2 = 9.
-This is two equations and two variables, so as you know from high school algebra, you
-can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
-example if the second equation is simply a multiple of the first, but in the case above there
-is in fact a unique solution). In matrix notation, we can write the system more compactly
-as
-Ax = b
-with
-A =
-
-4 −5
-−2 3 
-, b =
-
-−13
-9
-
-.
-As we will see shortly, there are many advantages (including the obvious space savings)
-to analyzing linear equations in this for... [Content truncated for context window]
+[Sitemap](https://medium.com/sitemap/sitemap.xml)
+
+[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F377016db4dbc&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)
+
+Sign up
+
+[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+
+[Medium Logo](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)
+
+[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)
+
+Sign up
+
+[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40amit25173%2Flinear-algebra-roadmap-for-data-science-377016db4dbc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
+
+# Linear Algebra Roadmap For Data Science
+
+[Amit Yadav](https://medium.com/@amit25173?source=post_page---byline--377016db4dbc---------------------------------------)
+
+11 min read
+
+·
+
+Aug 15, 2024
+
+--
+
+Listen
+
+Share
+
+Hi there! Have you tried using ChatGPT+ for your projects?
+
+Press enter or click to view image in full size
+
+I’ve been using ChatGPT+ and it’s been amazing for my projects.
+
+If you want to experience ChatGPT’s newest models but aren’t ready to commit financially, you’re welcome to use my accounts.
+
+[**_Click here to get free GPT + accounts._**](https://rebrand.ly/XYS)
+
+Now let’s get back to the blog:
+
+Linear algebra isn’t just another subject you need to check off your list; it’s the backbone of data science. Whether you’re building machine learning models, performing data transformations, or diving into deep learning, linear algebra is the language that makes these processes possible. Think of it as the foundation upon which all advanced data science techniques are built. Mastering linear algebra isn’t optional — it’s essential. This blog will show you exactly why, and guide you through the key concepts you need to grasp.
+
+This blog is for you if you’re an aspiring data scientist, a student eager to break into the field, or a professional making a career transition into data science. You might have encountered linear algebra before, but this time, you’ll see it through the lens of data science. We’ll focus on the practical aspects that directly impact your work, so you can apply these concepts immediately in your projects.
+
+**_Brief Overview_**
+
+By the end of this blog, you’ll have a clear understanding of why linear algebra is so crucial in data science and how it’s applied in real-world scenarios. We’ll break down complex concepts like vectors, matrices, and eigenvalues into digestible pieces, always relating them back to da... [Content truncated for context window]
 
 
 ---
 
-### Source 6: An Intuitive Guide to Linear Algebra – BetterExplained
+### Source 22: Linear Algebra Concepts Every Data Scientist Should Know
 
 **Content:**
-Despite two linear algebra classes, my knowledge consisted of “Matrices, determinants, eigen something something”.
+[Sitemap](https://medium.com/sitemap/sitemap.xml)
 
-Why? Well, let’s try this course format:
+[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F18b00bd453dd&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderCollection&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)
 
-- Name the course _Linear Algebra_ but focus on things called matrices and vectors
-- Teach concepts like Row/Column order with mnemonics instead of explaining the reasoning
-- Favor abstract examples (2d vectors! 3d vectors!) and avoid real-world topics until the final week
+Sign up
 
-The survivors are physicists, graphics programmers and other masochists. We missed the key insight:
+[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fbitgrit-data-science-publication%2Flinear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
 
-**Linear algebra gives you mini-spreadsheets for your math equations.**
+[Medium Logo](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)
 
-We can take a table of data (a matrix) and create updated tables from the original. It’s the power of a spreadsheet written as an equation.
+[Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)
 
-Here’s the linear algebra introduction I wish I had, with a real-world stock market example.
+Sign up
 
-## What’s in a name?
+[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fbitgrit-data-science-publication%2Flinear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)
 
-“Algebra” means, roughly, “relationships”. Grade-school algebra explores the relationship between unknown numbers. Without knowing x and y, we can still work out that $(x + y)^2 = x^2 + 2xy + y^2$.
+[Mastodon](https://me.dm/@benedictxneo)
 
-“Linear Algebra” means, roughly, “line-like relationships”. Let’s clarify a bit.
+[**bitgrit Data Science Publication**](https://medium.com/bitgrit-data-science-publication?source=post_page---publication_nav-dc5e7c512acf-18b00bd453dd---------------------------------------)
 
-Straight lines are predictable. Imagine a rooftop: move forward 3 horizontal feet (relative to the ground) and you might rise 1 foot in elevation (The slope! Rise/run = 1/3). Move forward 6 feet, and you’d expect a rise of 2 feet. Contrast this with climbing a dome: each horizontal foot forward raises you a different amount.
+·
 
-Lines are nice and predictable:
+We’re democratizing AI with our online competition platform — [bitgrit.net](http://bitgrit.net). On our publication, we publish only high-quality data science-related topics. Become a writer by emailing us at: [info@bitgrit.net](mailto:info@bitgrit.net)
 
-- If 3 feet forward has a 1-foot rise, then going 10x as far should give a 10x rise (30 feet forward is a 10-foot rise)
-- If 3 feet forward has a 1-foot rise, and 6 feet has a 2-foot rise, then (3 + 6) feet should have a (1 + 2) foot rise
+## Data Science
 
-In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
+# Linear Algebra Concepts Every Data Scientist Should Know
 
-In our example, $F(x)$ calculates the rise when moving forward x feet, and the properties hold:
+## Do you know Linear Algebra well enough?
 
-## Linear Operations
+[Benedict Neo](https://medium.com/@benedictxneo?source=post_page---byline--18b00bd453dd---------------------------------------)
 
-An operation is a calculation based on some inputs. Which operations are linear and predictable? Multiplication, it seems.
+10 min read
 
-Exponents ($F(x) = x^2$) aren’t predictable: $10^2$ is 100, but $20^2$ is 400. We doubled the input but quadrupled the output.
+·
 
-Surprisingly, regular addition isn’t linear either. Consider the “add three” function $F(x) = x + 3$:
+Jun 18, 2024
 
-We doubled the input and did not double the output. (Yes, $F(x) = x + 3$ happens to be the equation for an _offset_ line, but it’s still not “linear” because $F(10) \\neq 10 \\cdot F(1)$. Fun.)
+--
 
-So, what types of functions are _actually_ linear? Plain-old scaling by a constant, or functions that look like: $F(x) = ax$. In our roof example, $a = 1/3$.
+21
 
-But life isn’t _too_ boring. We can still combine multiple linear functions ($A(x) = ax, B(x) = bx, C(x)=cx$) into a larger one, $G$:
+Listen
 
-$G$ is still linear, since doubling the input continues to double the output:
+Share
 
-We have “mini arithmetic”: multiply inputs by a constant, and add the results. It’s actually usefu... [Content truncated for context window]
+Press enter or click to view image in full size
+
+Linear algebra is a bedrock for all data science and machine learning tasks.
+
+It is the language that transforms theoretical models into practical solutions.
+
+It embodies principles that allow algorithms to learn from data.
+
+Press enter or click to view image in full size
+
+[xkcd](https://xkcd.com/1838/)
+
+They’re used for
+
+1. **Representation of data**: a structured way to organize and manipulate data, allowing complex datasets to be represented as matrices
+2. **dimensionality reduction**: techniques like PCA rely on linear algebra to reduce the number of variables to enhance model efficiency without losing important information
+3. **optimization**: gradient descent, the core engine for ML, uses linear algebra to find the minimum of a function.
+4. **Feature engineering**: linear transformation and matrix operations create new features from existing data
+5. **similarity measures**: embeddings are stored as vectors and are used in recom... [Content truncated for context window]
+
+
+---
+
+### Source 23: 1: What is linear algebra
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
+
+## 1.1 Introduction to MAT 67
+
+This class may well be one of your first mathematics classes that bridges the gap between the mainly computation-oriented lower division classes and the abstract mathematics encountered in more advanced mathematics courses. The goal of this class is threefold:
+
+1. You will learn **Linear Algebra**, which is one of the most widely used mathematical theories around. Linear Algebra finds applications in virtually every area of mathematics, including Multivariate Calculus, Differential Equations, and Probability Theory. It is also widely applied in fields like physics, chemistry, economics, psychology, and engineering. You are even relying on methods from Linear Algebra every time you use an Internet search like Google, the Global Positioning System (GPS), or a cellphone.
+2. You will acquire **computational skills** to solve linear systems of equations, perform operations on matrices, calculate eigenvalues, and find determinants of matrices.
+3. In the setting of Linear Algebra, you will be introduced to **abstraction**. We will develop the theory of Linear Algebra together, and you will learn to write proofs.
+
+The lectures will mainly develop the theory of Linear Algebra, and the discussion sessions will focus on the computational aspects. The lectures and the discussion sections go hand in hand, and it is important that you attend both. The exercises for each Chapter are divided into more computation-oriented exercises and exercises that focus on proof-writing. There are also some very short webwork homework sets to make sure you have some basic skills. You can already try the first one that introduces some logical concepts by clicking below: Webwork link.
+
+## 1.2 What is Linear Algebra?
+
+Linear Algebra is the branch of mathematics aimed at solving systems of linear equations with a ﬁnite number of unknowns. In particular, one would like to obtain answers to the following questions:
+
+- **Characterization of solutions**: Are there solutions to a given system of linear equations? How many solutions are there?
+- **Finding solutions:** How does the solution set look? What are the solutions?
+
+Linear Algebra is a systematic theory regarding the solutions of systems of linear equations.
+
+**Example 1.2.1.** Let us take the following system of two linear equations in the two unknowns \\(x\_1\\) and \\(x\_2\\) :
+
+\\begin{equation\*} \\left. \\begin{array}{rl} 2x\_1 + x\_2 &= 0 \\\ x\_1 - x\_2 &= 1 \\end{array} \\right\\}. \\end{equation\*}
+
+This system has a **unique solution** for \\(x\_1,x\_2 \\in \\mathbb{R}\\), namely \\(x\_1=\\frac{1}{3}\\) and \\(x\_2=-\\frac{2}{3}\\). This solution can be found in several different ways. One approach is to ﬁrst solve for one of the unknowns in one of the equations and then to substitute the result into the other equation. Here, for example, we might solve to obtain
+
+\\\[ x\_1 = 1 + x\_2 \\\]
+
+from th... [Content truncated for context window]
+
+
+---
+
+### Source 24: Linear Algebra
+
+**Content:**
+If you're seeing this message, it means we're having trouble loading external resources on our website.
+
+If you're behind a web filter, please make sure that the domains \*.kastatic.org and \*.kasandbox.org are unblocked.
+
+## Oops. Something went wrong. Please try again.
+
+Uh oh, it looks like we ran into an error. You need to [refresh](https://www.khanacademy.org/www.khanacademy.org). If this problem persists, [tell us](https://www.khanacademy.org/reportissue?type=Defect).
+
+
+---
+
+### Source 25: Essence of linear algebra
+
+**Content:**
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ · 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+---
+
+### Source 26: linearly.ai
+
+**Content:**
+[Math](https://linearly.ai/tags/?tag=math) [Abstraction](https://linearly.ai/tags/?tag=abstraction) [Turing](https://linearly.ai/tags/?tag=turing) [Computation](https://linearly.ai/tags/?tag=computation) [ML](https://linearly.ai/tags/?tag=ml)
+
+## [Lecture00: How Do Machines Learn?](https://linearly.ai/lecture/lecture-00)
+
+19 Aug, 2023 · 2 min read
+
+[Vectors](https://linearly.ai/tags/?tag=vectors) [Dimensions](https://linearly.ai/tags/?tag=dimensions) [Equations](https://linearly.ai/tags/?tag=equations) [Dot Product](https://linearly.ai/tags/?tag=dot+product)
+
+## [Lecture01: Fundamentals](https://linearly.ai/lecture/lecture-01)
+
+18 Aug, 2023 · 1 min read
+
+[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Singularity](https://linearly.ai/tags/?tag=singularity) [Numpy](https://linearly.ai/tags/?tag=numpy)
+
+## [Lecture02: Matrices & Transformations](https://linearly.ai/lecture/lecture-02)
+
+17 Aug, 2023 · 1 min read
+
+[Matrices](https://linearly.ai/tags/?tag=matrices) [Transformations](https://linearly.ai/tags/?tag=transformations) [Numpy](https://linearly.ai/tags/?tag=numpy) [Dimensions](https://linearly.ai/tags/?tag=dimensions)
+
+## [Lecture03: Matrices & Views & Numpy](https://linearly.ai/lecture/lecture-03)
+
+16 Aug, 2023 · 1 min read
+
+[Elimination](https://linearly.ai/tags/?tag=elimination) [Matrix Operations](https://linearly.ai/tags/?tag=matrix+operations) [Inverse](https://linearly.ai/tags/?tag=inverse)
+
+## [Lecture04: Elimination, Inverse Matrices & Permutations](https://linearly.ai/lecture/lecture-04)
+
+15 Aug, 2023 · 1 min read
+
+[Matrix Multiplication](https://linearly.ai/tags/?tag=matrix+multiplication) [Elimination](https://linearly.ai/tags/?tag=elimination) [Inverse Matrices](https://linearly.ai/tags/?tag=inverse+matrices)
+
+## [Lecture05: Unique Matrix Multiplication Methods](https://linearly.ai/lecture/lecture-05)
+
+14 Aug, 2023 · 1 min read
+
+[CR Decomposition](https://linearly.ai/tags/?tag=cr+decomposition) [LU Decomposition](https://linearly.ai/tags/?tag=lu+decomposition) [Invertibility](https://linearly.ai/tags/?tag=invertibility)
+
+## [Lecture06: CR & LU Decompositions](https://linearly.ai/lecture/lecture-06)
+
+13 Aug, 2023 · 1 min read
+
+[Vector Spaces](https://linearly.ai/tags/?tag=vector+spaces) [Subspaces](https://linearly.ai/tags/?tag=subspaces) [Column-Spaces](https://linearly.ai/tags/?tag=column-spaces)
+
+## [Lecture07: Vector Spaces Intro](https://linearly.ai/lecture/lecture-07)
+
+12 Aug, 2023 · 1 min read
+
+[Columnspace](https://linearly.ai/tags/?tag=columnspace) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rowspace](https://linearly.ai/tags/?tag=rowspace)
+
+## [Lecture7.5: Subspaces, Columnspace, Rowspace, Nullspace](https://linearly.ai/lecture/lecture-07-5)
+
+12 Aug, 2023 · 1 min read
+
+[Subspaces](https://linearly.ai/tags/?tag=subspaces) [Null Space](https://linearly.ai/tags/?tag=null+space) [Rank](https://linearly.ai/tags/?tag=rank) [Basis](https://linearly... [Content truncated for context window]
+
+
+---
+
+### Source 27: Practical Guide to Linear Algebra in Data Science and AI
+
+**Content:**
+[Tatev Aslanyan](https://www.freecodecamp.org/news/author/tatevaslanyan/)
+
+> "In God we trust; all others bring data." – W. Edwards Deming
+
+This famous quote from Edwards Deming perfectly captures the essence of modern Data Science and AI.
+
+Data is the lifeblood of Data Science and AI fields – Machine Learning, Deep Learning, Generative AI and much more. And understanding how to analyze and manipulate data it is key to unlocking its full potential.
+
+The key to understanding all these concepts is linear algebra – the unsung hero behind many powerful algorithms and techniques.
+
+If you've ever felt a disconnect between the linear algebra you learned in school and its practical use in your career, you're not alone. If you believe you should study and work your way through an entire book of Introduction to Linear Algebra, then you are again not alone.
+
+Many aspiring data science and AI professionals struggle to bridge this gap and think they need to spend countless hours to master mathematics for Data Science and AI. But don't worry, this guide is here to help.
+
+I'll show you how linear algebra isn't just a theoretical concept or old fashioned forgotten area of expertise. You'll learn how it's a practical tool that you can use to solve real-world problems in your field.
+
+Linear Algebra combined with Mathematical Analysis (called Calculus I and II in many undergrad studies) form the backbone of Machine Learning, Deep Learning, Computer Vision, and Generative AI. From building recommendation systems and training Neural Networks to analyzing medical images, understanding linear algebra opens up a world of possibilities.
+
+In this guide, you'll discover:
+
+- **Real-World Applications:** We'll explore how linear algebra is applied across various industries, from healthcare to finance, and everything in between (with a special and detailed focus on Data Science and AI).
+
+- **Practical Tips:** You'll learn how to translate theoretical concepts into actionable steps for your data science projects.
+
+- **Linear Algebra RoadMap 2024:** You will get a roadmap for Linear Algebra in 2024 – on paper and in a video tutorial.
+
+- **Career Development Resources:** I will provide you resources to help you learn linear algebra and accelerate your career in data science and AI.
+
+
+Whether you're a student, a recent graduate, or an experienced professional aspiring to become technical professional, this guide will equip you with the knowledge and skills to learn and leverage linear algebra effectively in your work. And you won't have to spend all your time on endless browsing and searching.
+
+> "Mathematics is like the producer of the movies: you don't see them but they are actually running the show." – Tatev Aslanyan
+
+## Table of Contents
+
+1. [Core Linear Algebra Concepts](https://www.freecodecamp.org/www.freecodecamp.org#heading-core-concepts-in-linear-algebra-that-you-will-actually-use)
+
+2. [Linear Algebra Roadmap](https://www.freecodecamp.org/www.freecodecamp.org#heading-li... [Content truncated for context window]
+
+
+---
+
+### Source 28: Matrix Theory and Linear Algebra
+
+**Content:**
+## Contents
+
+1Systems of linear equations
+
+2Vectors in ℝⁿ
+
+3Lines and planes in ℝⁿ
+
+4Matrices
+
+5Spans, linear independence, and bases in
+ℝⁿ
+
+6Linear transformations in ℝⁿ
+
+7Determinants
+
+8Eigenvalues, eigenvectors, and
+diagonalization
+
+9Vector spaces
+
+10Linear transformation of vector
+spaces
+
+11Inner product spaces
+
+Appendix AComplex numbers
+
+## List of applications
+
+- Balancing chemical reactions
+- Dimensionless variables
+- Resistor networks
+- Cryptography: The Hill cipher
+- Perspective rendering
+- Solving recurrences
+- Solving systems of linear differential equations
+- Error correcting codes
+- Fourier series
+- Simplification of quadratic forms
+- Principal component analysis
+
+## Downloading
+
+Download the textbook [here](https://www.mathstat.dal.ca/downloads/LinearAlgebra.pdf).
+
+## Obtaining a printed copy
+
+Printed copies of this textbook can be purchased inexpensively
+from Lulu.com:
+
+- [Matrix\
+Theory and Linear Algebra (black and white)](http://www.lulu.com/shop/peter-selinger/matrix-theory-and-linear-algebra-black-and-white/paperback/product-23838005.html), CAD $30.00.
+- [Matrix\
+Theory and Linear Algebra (color)](http://www.lulu.com/shop/peter-selinger/matrix-theory-and-linear-algebra-color/paperback/product-23838046.html), CAD $46.00.
+
+You can get an additional discount by searching the internet
+for [Lulu\
+coupons](https://www.google.ca/search?q=lulu.com+coupons). You can often find coupons for a 10-15% discount
+or for free shipping. Hint: the free shipping is often the
+better deal.
+
+## License
+
+_Matrix Theory and Linear Algebra_ is an open text,
+licensed under
+the [Creative\
+Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). This means that it can be
+freely downloaded, printed, and shared (subject to some
+conditions that are spelled out in the license). The license
+also permits making changes. This is ideal for instructors
+who would like to add their own material, change notations, or
+add more examples or exercises. Please see
+the [License](https://creativecommons.org/licenses/by/4.0/)
+for details. If you make revisions, please send them to me so
+that I can consider incorporating them in future versions of
+this book.
+
+## Reporting typos
+
+Since this is an open text, typos can be easily fixed and an
+updated version posted online. It is my intention to fix all
+typos. If you find a typo (no matter how small), please
+report it to
+[selinger@mathstat.dal.ca](mailto:selinger@mathstat.dal.ca).
+
+## Supplementary materials
+
+- Chapter 11.4 (Fourier series): Watch
+[this\
+video](https://www.youtube.com/watch?v=3IAMpH4xF9Q) for a demonstration of what the functions
+from Examples 11.44–46 sound like as audio
+signals.
+- Chapter 11.12 (Principal component analysis):
+Here is the [senate voting\
+data](https://www.mathstat.dal.ca/downloads/senate.zip) used in the textbook.
+
+## Instructor resources
+
+We have developed online homework assignments for this
+textbook using the
+MAA's [WeBWorK](http://webwork.maa.org/) system.
+We have also develo... [Content truncated for context window]
+
+
+---
+
+### Source 29: A short tutorial on linear algebra
+
+**Content:**
+# A short tutorial on linear algebra
+
+A short introduction to linear algebra is outlined in the following notes.
+
+- [Vector spaces](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_001_VectorSpaces.pdf)
+- [Linear maps and matrices](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_002_LinearMapsAndMatrices.pdf)
+- [Linear independence and bases](https://ricopic.one/linear-algebra-tutorial/LinearAlgebraTutorial_003_LinearIndependenceAndBases.pdf)
+
+
+---
+
+### Source 30: Linear Algebra - Intuitive Math
+
+**Content:**
+[Intuitive Math](https://intuitive-math.club/)
+
+Main
+
+[Home](https://intuitive-math.club/)
+
+Linear Algebra
+
+[1) Co-ordinate Systems](https://intuitive-math.club/linear-algebra/spaces)[2) Vectors](https://intuitive-math.club/linear-algebra/vectors)[3) Matrices](https://intuitive-math.club/linear-algebra/matrices)[4) Linear Independence](https://intuitive-math.club/linear-algebra/linear-independence)[5) Subspaces](https://intuitive-math.club/linear-algebra/subspaces)[6) Spans](https://intuitive-math.club/linear-algebra/spans)[7) Basis](https://intuitive-math.club/linear-algebra/basis)[8) Elementary Row Ops](https://intuitive-math.club/linear-algebra/elementary-row-operations)[9) Row Space](https://intuitive-math.club/linear-algebra/row-space)[10) Column Space / Range](https://intuitive-math.club/linear-algebra/column-space)[11) Null Space / Kernels](https://intuitive-math.club/linear-algebra/null-space)[12) Determinant](https://intuitive-math.club/linear-algebra/determinant)[13) Inverses](https://intuitive-math.club/linear-algebra/inverses)[14) Transpose](https://intuitive-math.club/linear-algebra/transpose)[15) Eigenvalues](https://intuitive-math.club/linear-algebra/eigenvalues)[16) Eigenvectors](https://intuitive-math.club/linear-algebra/eigenvectors)[17) Eigenbasis / Diagonalization](https://intuitive-math.club/linear-algebra/eigenbasis)[18) Homogeneous Co-ordinates](https://intuitive-math.club/linear-algebra/homogeneous)
+
+Geometry
+
+[1) Planes](https://intuitive-math.club/geometry/planes)[2) Integrals](https://intuitive-math.club/geometry/integrals)[3) Parametric Surfaces](https://intuitive-math.club/geometry/parametric)[4) Paths](https://intuitive-math.club/geometry/paths)[5) Surface Area](https://intuitive-math.club/geometry/surface-area)[6) Cylinders](https://intuitive-math.club/geometry/cylinders)[7) Spheres](https://intuitive-math.club/geometry/spheres)
+
+[Intuitive Math](https://intuitive-math.club/)
+
+Main
+
+[Home](https://intuitive-math.club/)
+
+Linear Algebra
+
+[1) Co-ordinate Systems](https://intuitive-math.club/linear-algebra/spaces)[2) Vectors](https://intuitive-math.club/linear-algebra/vectors)[3) Matrices](https://intuitive-math.club/linear-algebra/matrices)[4) Linear Independence](https://intuitive-math.club/linear-algebra/linear-independence)[5) Subspaces](https://intuitive-math.club/linear-algebra/subspaces)[6) Spans](https://intuitive-math.club/linear-algebra/spans)[7) Basis](https://intuitive-math.club/linear-algebra/basis)[8) Elementary Row Ops](https://intuitive-math.club/linear-algebra/elementary-row-operations)[9) Row Space](https://intuitive-math.club/linear-algebra/row-space)[10) Column Space / Range](https://intuitive-math.club/linear-algebra/column-space)[11) Null Space / Kernels](https://intuitive-math.club/linear-algebra/null-space)[12) Determinant](https://intuitive-math.club/linear-algebra/determinant)[13) Inverses](https://intuitive-math.club/linear-algebra/inverses)[14) Transpose](https://intuitive-math.club/linear-al... [Content truncated for context window]
 
 
 ---
@@ -162,7 +523,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

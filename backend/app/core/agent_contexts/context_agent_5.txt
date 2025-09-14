@@ -1,8 +1,531 @@
-You are Agent 5 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 5 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
-# Agent 5 Context
+# Agent 5 Research Context
 
-No search results available for this agent.
+## Assignment
+You are Agent 5 of 5 specialized research agents analyzing: "Linear Algebra"
+
+## Your Data Subset
+- Agent ID: 5/5
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 41 to 50
+
+## Your Research Sources
+
+### Source 41: Mastering Linear Algebra - Key concepts like matrices, determinants and linear transformations | Elevri
+
+**Content:**
+[Courses](https://www.elevri.com/courses)
+
+Linear algebra
+
+# Mastering Linear Algebra - Key concepts like matrices, determinants and linear transformations
+
+In this course, we'll provide a comprehensive overview of linear algebra, including key concepts like vector spaces, linear transformations, and matrix operations.
+
+Table of contents
+
+## What is included in a linear algebra course?
+
+The following 28 topics are typically included in a linear algebra course
+
+1\. Vectors
+
+A vector in physics represents a force with a given direction, magnitude and origin. But in linear algebra, a vector has the first two properties but lacks an origin. Therefore, it can be moved if you want.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/vectors)
+
+* * *
+
+2\. Lines and planes in space
+
+The equation for a straight line is only defined for two dimensions. It does not however stop them from existing in higher dimensions, where we define them in parametric or vector form.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/lines-and-planes-in-space)
+
+* * *
+
+3\. Linear systems of equations
+
+Bunching together several equations creates a system of equations, and a solution for the system must solve each of the system's equations. The system is said to be linear if each equation is of the form:
+$$
+a\_1x\_1 + a\_2x\_2 + \\ldots + a\_nx\_n
+$$
+
+[Show more](https://www.elevri.com/courses/linear-algebra/linear-systems-of-equations)
+
+* * *
+
+4\. Gauss-Jordan
+
+Gauss-Jordan is a method for solving a linear system of equations. Each system falls into one of three cases; unique solution, no solutions or infinitely many solutions.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/gauss-jordan)
+
+* * *
+
+5\. Matrix arithmetics
+
+Matrix arithmetics are defined for addition, subtraction and multiplication. For the two former the matrices must have equal dimensions and the operations are commutative. Multiplication is however not commutative, and is only defined for when the number of rows of the left matrix is equal to the number of columns of the right matrix.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/matrix-arithmetics)
+
+* * *
+
+6\. Inverse matrices
+
+The inverse to a matrix is another matrix, and the product of the matrix and its inverse is the identity matrix.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/inverse-matrices)
+
+* * *
+
+7\. Linear dependence
+
+If a vector can be expressed as a linear combination of other vectors, the bunch is then considered as linearly dependent. If not, the vectors are considered to be linearly independent.
+
+[Show more](https://www.elevri.com/courses/linear-algebra/linear-dependence)
+
+* * *
+
+8\. Solution space
+
+A solution space is the vector space containing all solutions to a given system. It does follow the properties of vector spaces, so if $\\vec{x}\_1$ and $\\vec{x}\_1$ are solutions to
+$$A\\vec{x} = \\vec{b}$$
+then we have that
+$$k\_1\\vec{x}\_1 + k\_2\\vec{x}\_2$$
+is a solution for any values o... [Content truncated for context window]
+
+
+---
+
+### Source 42: Mathonline
+
+**Content:**
+![linearalgebraheader.png](http://mathonline.wdfiles.com/local--files/admin%3Aimages/linearalgebraheader.png)
+
+![Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png](http://mathonline.wdfiles.com/local--files/linear-algebra/Screen%20Shot%202014-09-16%20at%202.55.17%20PM.png)
+
+# Linear Algebra Topics
+
+* * *
+
+## 1\. Systems of Linear Equations and Matrices
+
+###### 1.1. Systems of Linear Equations
+
+- [Linear Equations](http://mathonline.wikidot.com/linear-equations)
+- [Systems of Linear Equations](http://mathonline.wikidot.com/systems-of-linear-equations)
+- [Solutions to Systems of 2-Variables and 3-Variables](http://mathonline.wikidot.com/solutions-to-systems-of-2-variables-and-3-variables)
+- [Homogenous Linear Systems](http://mathonline.wikidot.com/homogenous-linear-systems)
+
+###### 1.2. Introduction to Matrices and Elementary Row Operations
+
+- [Matrices and Elementary Row Operations](http://mathonline.wikidot.com/matrices-and-elementary-row-operations)
+- [Row Echelon Form of a Matrix (REF)](http://mathonline.wikidot.com/row-echelon-form-of-a-matrix-ref)
+- [Gaussian Elimination and Back Substitution](http://mathonline.wikidot.com/gaussian-elimination-and-back-substitution)
+- [Reduced Row Echelon Form of a Matrix (RREF)](http://mathonline.wikidot.com/reduced-row-echelon-form-of-a-matrix-rref)
+- [Gauss-Jordan Elimination](http://mathonline.wikidot.com/gauss-jordan-elimination)
+
+###### 1.3. Operations on Matrices, and Special Types of Matrices
+
+- [Matrix Addition and Subtraction](http://mathonline.wikidot.com/matrix-addition-and-subtraction)
+- [Scalar Multiples of Matrices](http://mathonline.wikidot.com/scalar-multiples-of-matrices)
+- [The Transpose of a Matrix](http://mathonline.wikidot.com/the-transpose-of-a-matrix)
+- [The Trace of a Square Matrix](http://mathonline.wikidot.com/the-trace-of-a-square-matrix)
+- [Matrix Multiplication](http://mathonline.wikidot.com/matrix-multiplication)
+- [Zero Matrices](http://mathonline.wikidot.com/zero-matrices)
+- [Diagonal Matrices](http://mathonline.wikidot.com/diagonal-matrices)
+- [Triangular Matrices](http://mathonline.wikidot.com/triangular-matrices)
+- [Symmetric Matrices](http://mathonline.wikidot.com/symmetric-matrices)
+- [Identity Matrices](http://mathonline.wikidot.com/identity-matrices)
+- [Inverse of a Matrix](http://mathonline.wikidot.com/inverse-of-a-matrix)
+- [Inverse of Diagonal Matrices](http://mathonline.wikidot.com/inverse-of-diagonal-matrices)
+- [Powers of a Matrix](http://mathonline.wikidot.com/powers-of-a-matrix)
+- [Matrix Polynomials](http://mathonline.wikidot.com/matrix-polynomials)
+- [Elementary Matrices](http://mathonline.wikidot.com/elementary-matrices)
+- [Finding a Matrix's Inverse with Elementary Matrices](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-elementary-matrices)
+- [Finding a Matrix's Inverse with Row Operations](http://mathonline.wikidot.com/finding-a-matrix-s-inverse-with-row-operations)
+
+* * *
+
+## 2\. Determinants
+
+###### 2.1. The Determinant of Square Matrices... [Content truncated for context window]
+
+
+---
+
+### Source 43: How to Self Study Linear Algebra for Students
+
+**Content:**
+**Estimated Read Time:** 5 minute(s)
+
+**Common Topics:** algebra, linear, amazon, book, books
+
+In this insight, I will give a roadmap to learn the basics of linear algebra for students. Aside from calculus, linear algebra is one of the most applicable subjects of all of mathematics. It is used a lot in engineering, sciences, computer sciences, etc. The right way to see linear algebra is with a focus on vector spaces and linear transformations. So I will suggest books with this perspective in mind.
+
+Table of Contents
+
+Toggle
+
+## **Prerequisites**
+
+There are essentially two prerequisites for studying linear algebra, besides the usual high school courses which include algebra, geometry and trigonometry (no, calculus is not a formal prerequisite). Those are that you must be used to proofs, and that you must have seen the basics of matrices and determinants.
+
+For proofs, I recommend the following books in no particular order:
+Velleman “How to prove it: a structured approach” [http://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995?tag=pfamazon01-20)
+Bloch’s “Proofs and fundamentals: a first course in abstract mathematics” http://www.amazon.com/Proofs-Fundamentals-Abstract-Mathematics-Undergraduate/dp/1441971262
+Hammack’s “Book of proof” [http://www.people.vcu.edu/~rhammack/BookOfProof/](http://www.people.vcu.edu/~rhammack/BookOfProof/)
+
+These books will teach you the fundamentals of [proof based mathematics](https://www.physicsforums.com/insights/proofs-in-mathematics/), and they will teach you the basic notations and assumptions of set theory. Both will be very necessary for algebra.
+
+As for matrices and determinants, these should be covered in basic high school books. For example
+Lang’s “Basic Mathematics” [http://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877](https://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877?tag=pfamazon01-20)
+Openstaxcollege’s Algebra [https://openstaxcollege.org/textbooks/college-algebra](https://openstaxcollege.org/textbooks/college-algebra)
+Khan Academy’s Linear algebra [https://www.khanacademy.org/math/linear-algebra/matrix\_transformations](https://www.khanacademy.org/math/linear-algebra/matrix_transformations)
+
+Don’t worry, you don’t need to know matrices and determinants in full detail. Just knowing them for the 2×2 and 3×3 cases is already enough. In the linear algebra books which I’m going to mention, matrices and determinants will be treated in their full gory details. Also, don’t worry if you don’t have a lot of intuition for matrices and determinants, this intuition will come with studying vector spaces. Right now you are merely expected to being able to compute stuff like inverses of matrices and solving systems of equations.
+
+## **Linear algebra: Introduction**
+
+Proper linear algebra deals with vector spaces and linear transformations between them. It will rigorously develop the theory of nxn matrices and... [Content truncated for context window]
+
+
+---
+
+### Source 44: Vectors | Chapter 1, Essence of linear algebra
+
+**Content:**
+Beginning the linear algebra series with the basics.\nHelp fund future projects: / 3blue1brown \n\nMusic: https://vincerubinetti.bandcamp.com/t...\n\nThanks to Elo Marie Viennot and Ambros Gleixner from HTW Berlin (www.htw-berlin.de) for contributing German translations and dubbing.\n\nThanks also to these viewers for their contributions to the subtitles\nArabic: @Cewkins, Hazem\nBengali: Md Rasheduzzaman\nCzech: @Chnapak\nGreek: Nikolaos Tsagkas\nHebrew: Omer Tuchfeld\nItalian: mattiacolucci\nSpanish: Juan Carlos Largo\nThai: own doggoV●ᴥ●V\n\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. And you know the drill with YouTube, if you want to stay posted about new videos, subscribe, and click the bell to receive notifications (if you're into that).\n\nIf you are new to this channel and want to see more, a good place to start is this playlist: https://goo.gl/WmnCQZ\n\nVarious social media stuffs:\nWebsite: https://www.3blue1brown.com\nTwitter: / 3blue1brown \nPatreon: / 3blue1brown \nFacebook: / 3blue1brown \nReddit: / 3blue1brown
+| view_count: 10,240,371 views | short_view_count: 10M views | num_likes: 198 thousand | num_subscribers: 7.63 million
+
+
+---
+
+### Source 45: Free Linear Algebra textbook, from Jim Hefferon
+
+**Content:**
+_Linear Algebra_
+by Jim Hefferon
+is a text for a first undergraduate course.
+It is Free.
+Use it as the main book, as a supplement, or for independent study.
+
+### Get the book
+
+Clicking on this link offers you a chance to contribute to
+OpenIntro,
+who work to make Open materials more adoptable.
+You can get the electronic version of the
+text for free by just setting the slider to 0:
+[Download _Linear Algebra_](https://www.openintro.org/go?id=linalg4&referrer=hefferon.net).
+(If you do contribute to
+[OpenIntro.org](https://www.openintro.org)
+then note that the page wording is confusing.
+It says that the money
+goes to the author but instead it means OpenIntro.)
+
+### Text highlights
+
+- Standard coverage
+Linear systems and Gauss's method,
+vector spaces, linear maps and matrices, determinants,
+and eigenvectors and eigenvalues.
+- Developmental approach
+The book proves all of the results
+but does not start by assuming that
+students are already able at abstract work.
+Instead, it proceeds with a great deal of
+motivation, many computational examples,
+and many exercises.
+The goal is to raise
+each student's level of
+mathematical maturity.
+- Extensive exercise sets
+Each subsection has a wide range of exercises,
+from
+routine verifications to a few challenges.
+The
+[book of solutions](https://jheffero.w3.uvm.edu/linearalgebra/jhanswer.pdf)
+gives the answer to every one, completely worked.
+And, clicking on a problem
+takes you to its answer
+while clicking on the answer takes you back to the problem.
+- Popular
+Used in hundreds of classes at many schools,
+as well as by thousands of people
+for independent study.
+- Applications
+Each chapter finishes with four or five short
+supplemental topics
+for reading or projects, or for
+small group work.
+- Extras
+There are
+[beamer slides](https://jheffero.w3.uvm.edu/linearalgebra/slides.zip)
+for classroom presentations,
+a
+[lab manual](https://jheffero.w3.uvm.edu/linearalgebra/lab.pdf)
+using
+[_Sage_](https://www.sagemath.org/),
+and [videos](https://www.youtube.com/playlist?list=PLwF3A0R8OzMoMlE1-SaEh8h9VqUlO-r52).
+For more, see the page for [instructors](https://hefferon.net/teaching.html).
+- Prerequisite
+One semester of calculus.
+- Free
+Everything is
+[Freely available](https://hefferon.net/source.html),
+including the
+[LaTeX source](https://gitlab.com/jim.hefferon/linear-algebra).
+You can also buy a
+[paper copy of the book](https://hefferon.net/hardcopy.html).
+- Reviews
+Some from:
+[the Mathematical Association of America](https://mathdl.maa.org/mathDL/19/?pa=reviews&sa=viewBook&bookId=72055),
+[the American Institute of Mathematics](https://open.umn.edu/opentextbooks/textbooks/24),
+[the Open Textbook Library](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=24),
+[_The Assayer_, a longstanding site about free texts](https://www.theassayer.org/cgi-bin/asbook.cgi?book=29).
+- Award winning
+Recipient of the 2020 Solow Award
+from the Mathematical Association of America, for
+“impact on undergraduate education in mathematics.”
+
+### Mor... [Content truncated for context window]
+
+
+---
+
+### Source 46: Linear Algebra: Table of Contents
+
+**Content:**
+# Table of Contents
+
+### Chapter 1: What is Linear Algebra?
+
+### Chapter 2: Systems of Linear Equations
+
+### Chapter 3: The Simplex Method
+
+### Chapter 4: Vectors in Space, n-Vectors
+
+### Chapter 5: Vector Spaces
+
+### Chapter 6: Linear Transformations
+
+### Chapter 7: Matrices
+
+### Chapter 8: Determinants
+
+### Chapter 9: Subspaces and Spanning Sets
+
+### Chapter 10: Linear Independence
+
+### Chapter 11: Basis and Dimension
+
+### Chapter 12: Eigenvalues and Eigenvectors
+
+### Chapter 13: Diagonalization
+
+### Chapter 14: Orthonormal Bases and Complements
+
+### Chapter 15: Diagonalizing Symmetric Matrices
+
+### Chapter 16: Kernel, Range, Nullity, Rank
+
+### Chapter 17: Least Squares and Singular Values
+
+### Appendices: Symbols, Fields, Sample Exams, Online Resources, Movie Scripts
+
+### Index
+
+
+---
+
+### Source 47: Linear Algebra: Preface
+
+**Content:**
+# Preface
+
+This linear algebra textbook was originally designed to be presented as twenty five, fifty minute lectures
+suitable for sophomores likely to use the material for applications but still requiring
+a solid foundation in this fundamental branch of mathematics. The main idea of the course is
+to emphasize the concepts of vector spaces and linear transformations as mathematical
+structures that can be used to model the world around us. Once \`\`persuaded'' of this truth, students
+learn explicit skills such as Gaussian elimination and diagonalization in order that vectors and linear transformations
+become calculational tools, rather than abstract mathematics.
+
+In practical terms, the course aims to produce students who can perform computations with large linear systems
+while at the same time understand the concepts behind these techniques. Often-times when a problem can be
+reduced to one of linear algebra it is \`\`solved''. These notes
+do not devote much space to applications (there are already a plethora of textbooks with titles involving some
+permutation of the words \`\`linear'', \`\`algebra'' and \`\`applications''). Instead, they attempt to explain the fundamental
+concepts carefully enough that students will realize for their own selves when the particular application they encounter
+in future studies is ripe for a solution via linear algebra.
+
+The notes are designed to be used in conjunction with a set of online homework exercises which help the students read the
+lecture notes and learn
+basic linear algebra skills. Interspersed among the lecture notes are links to simple online problems that
+test whether students are actively reading the notes. In addition there are two sets of sample midterm problems with solutions as well
+as a sample final exam.
+There are also a set of ten online assignments which are collected weekly.
+The first assignment is designed to ensure familiarity with some basic mathematic notions (sets, functions, logical quantifiers and basic methods of proof). The remaining nine assignments are devoted to the usual matrix and vector gymnastics expected from
+any sophomore linear algebra class. These exercises are all available [here.](https://www.math.ucdavis.edu/homework.html)
+Webwork is an open source, online homework system which originated at the University of Rochester. It can efficiently check whether a student
+has answered an explicit, typically computation-based, problem correctly. The problem sets chosen to accompany these
+notes could contribute roughly 20% of a student's grade, and ensure that basic computational skills are mastered.
+Most students rapidly realize that it is best to print out the Webwork assignments and solve them on paper before
+entering the answers online. Those who do not tend to fare poorly on midterm examinations. We have found that there
+tend to be relatively few questions from students in office hours about the Webwork assignments. Instead, by assigning 20%
+of the grade to written assignments... [Content truncated for context window]
+
+
+---
+
+### Source 48: Linear Algebra - Klotz Online Math Notes
+
+**Content:**
+# Linear Algebra
+
+01. 1\. Vector Spaces [Lecture Notes](https://www.univmathnotes.com/linear-algebra/1-linear-algebra-vector-spaces-4/)[Homework](https://www.univmathnotes.com/linear-algebra/1-1-linear-algebra-vector-spaces-hw-4/)
+02. 2\. Subspaces [Lecture Notes](https://www.univmathnotes.com/linear-algebra/2-linear-algebra-subspaces-2/)[Homework](https://www.univmathnotes.com/linear-algebra/2-1-linear-algebra-subspaces-hw-2/)
+03. 3\. Linear Systems and Linear Combinations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/3-linear-algebra-linear-systems-and-linear-combinations-4/)[Homework](https://www.univmathnotes.com/linear-algebra/3-1-linear-algebra-linear-systems-and-linear-combinations-hw-2/)
+04. 4\. Linear Independence [Lecture Notes](https://www.univmathnotes.com/linear-algebra/4-linear-algebra-linear-independence-4/)[Homework](https://www.univmathnotes.com/linear-algebra/4-1-linear-algebra-linear-independence-hw-4/)
+05. 5\. Basis and Dimension [Lecture Notes](https://www.univmathnotes.com/linear-algebra/5-linear-algebra-basis-and-dimension-3/)[Homework](https://www.univmathnotes.com/linear-algebra/5-1-linear-algebra-basis-and-dimension-hw/)
+06. 6\. Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/6-linear-algebra-linear-transformations-4/)[Homework](https://www.univmathnotes.com/linear-algebra/6-1-linear-algebra-linear-transformations-hw/)
+07. 7\. The Matrix Representation of a Linear Transformation [Lecture Notes](https://www.univmathnotes.com/linear-algebra/7-linear-algebra-the-matrix-representation-of-a-linear-transformation-4/)[Homework](https://www.univmathnotes.com/linear-algebra/7-1-linear-algebra-the-matrix-representation-of-a-linear-transformation-hw/)
+08. 8\. Composition of Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/8-linear-algebra-composition-of-linear-transformations/)[Homework](https://www.univmathnotes.com/linear-algebra/8-1-linear-algebra-composition-of-linear-transformations-hw/)
+09. 9\. Isomorphisms [Lecture Notes](https://www.univmathnotes.com/linear-algebra/9-linear-algebra-isomorphisms/)[Homework](https://www.univmathnotes.com/linear-algebra/9-1-linear-algebra-isomorphisms-hw/)
+10. 10\. Elementary Matrices [Lecture Notes](https://www.univmathnotes.com/linear-algebra/10-linear-algebra-elementary-matrices/)[Homework](https://www.univmathnotes.com/linear-algebra/10-1-linear-algebra-elementary-matrices-hw-3/)
+11. 11\. A Matrix's Rank and Calculating Inverse Matrices [Lecture Notes](https://www.univmathnotes.com/linear-algebra/11-linear-algebra-a-matrixs-rank-and-calculating-inverse-matrices-3/)[Homework](https://www.univmathnotes.com/linear-algebra/11-1-linear-algebra-a-matrixs-rank-and-calculating-inverse-matrices-hw/)
+12. 12\. Solving Systems of Linear Equations Using Linear Transformations [Lecture Notes](https://www.univmathnotes.com/linear-algebra/12-linear-algebra-solving-systems-of-linear-equations-using-linear-transformations/... [Content truncated for context window]
+
+
+---
+
+### Source 49: University of California, Santa Barbara, Department of Mathematics
+
+**Content:**
+- [UCSB Math Home Page](http://math.ucsb.edu/)
+
+- [Graduate Information](http://math.ucsb.edu/grad/index.php)
+
+- [Undergraduate Information](http://math.ucsb.edu/ugrad/index.php)
+
+- [Colloquium and Seminars](javascript:toggle('mainmenu','colloqmenu'))
+[Colloquium](http://math.ucsb.edu/calendar/cal_cat.php?op=cat&id=24&catview=0)
+[Seminars](http://math.ucsb.edu/department/seminars.php)
+[Distinguished Lectures](http://math.ucsb.edu/~drm/distinguished-lecturers)
+[This Week in Math](http://math.ucsb.edu/calendar/cal_week?op=week&catview=0)
+ - [History and Search](http://math.ucsb.edu/calendar/cal_cat.php?op=cats&catview=0)
+
+- [Current Recruitment](http://math.ucsb.edu/department/recruit.php)
+
+- [People](javascript:toggle('mainmenu2','peoplemenu'))
+
+
+[Faculty](http://math.ucsb.edu/department/faculty.php)
+[Visiting Faculty](http://math.ucsb.edu/department/visiting.php)
+[Affiliated Faculty](http://math.ucsb.edu/department/affiliated.php)
+[Emeriti](http://math.ucsb.edu/department/emeriti.php)
+[Graduate Students](http://math.ucsb.edu/department/gradstudents.php)
+[Staff](http://math.ucsb.edu/department/staff.php)
+[Alumni](http://math.ucsb.edu/department/alumni.php)
+- [Faculty Awards](http://math.ucsb.edu/department/awards.php)
+
+- [Mathematics Centers](javascript:toggle('mainmenu3','mathmenu'))
+[Center for Mathematical\
+\
+   Inquiry](http://web.math.ucsb.edu/department/cmi)
+[Computational Science\
+\
+   and Engineering](http://www.cse.ucsb.edu/)
+[Center for Complex &\
+\
+   Nonlinear Science](http://repositories.cdlib.org/cnls/)
+[Complex Fluids Design\
+\
+   Consortium](http://www.mrl.ucsb.edu/cfdc/)
+[Center for Control, Dynamical\
+\
+   Systems and Computation](http://www.ece.ucsb.edu/ccdc/)
+[California Nanosystems\
+\
+    Institute](http://www.cnsi.ucsb.edu/)
+ - [UCSB Math Circle](http://www.math.ucsb.edu/mathcircle/)
+
+- [Preprint Series](http://math.ucsb.edu/preprints)
+
+- [Research](http://math.ucsb.edu/department/research.php)
+
+- [Other Information](javascript:toggle('mainmenu5','othermenu'))
+[WebMail](https://mail.math.ucsb.edu/webmail)
+[Math Personnel Info](http://math.ucsb.edu/htgtd/index.php)
+[WebWork](http://webwork.math.ucsb.edu)
+[Our Location](http://math.ucsb.edu/department/map.php)
+[Computing Resources](http://math.ucsb.edu/department/computing.php)
+[Math Sci Net](http://www.ams.org/mathscinet)
+ - [WWW Links](http://math.ucsb.edu/department/links.php)
+
+- [Giving to Mathematics](http://math.ucsb.edu/department/donate.php)
+
+[Follow us: ![](http://web.math.ucsb.edu/images/20px-facebook-favicon.jpg)](http://www.facebook.com/pages/Mathematics-Dept-UC-Santa-Barbara/388265455241?ref=mf)
+
+Department of Mathematics
+
+South Hall, Room 6607
+
+University of California
+
+Santa Barbara, CA 93106
+
+[Phone Numbers](http://math.ucsb.edu/department/staff.php)
+
+Fax (805) 893-2385
+
+Email: [www@math.ucsb.edu](mailto:www@math.ucsb.edu)
+
+Office Hours: Mon-Fri 9-12, 1-4
+
+Copyright (c) 2011 the Regents
+
+of the University of California,
+
+All Rights reserved. [Terms of Use](http:... [Content truncated for context window]
+
+
+---
+
+### Source 50: Introduction to Linear Algebra for Data Science
+
+**Content:**
+Tell us how we can help you?
+
+Name
+
+Country
+
+Select your countryAfghanistanAland IslandsAlbaniaAlgeriaAmerican SamoaAndorraAngolaAnguillaAntarcticaAntigua and BarbudaArgentinaArmeniaArubaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelgiumBelizeBeninBermudaBhutanBoliviaBosnia and HerzegovinaBotswanaBouvet IslandBrazilBritish Indian Ocean TerritoryBrunei DarussalamBulgariaBurkina FasoBurundiCambodiaCameroonCanadaCape VerdeCayman IslandsCentral African RepublicChadChileChinaChristmas IslandCocos (Keeling) IslandsColombiaComorosCongoCongo, The Democratic Republic of TheCook IslandsCosta RicaCote D'ivoireCroatiaCubaCyprusCzech RepublicDenmarkDjiboutiDominicaDominican RepublicEcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEthiopiaFalkland Islands (Malvinas)Faroe IslandsFijiFinlandFranceFrench GuianaFrench PolynesiaFrench Southern TerritoriesGabonGambiaGeorgiaGermanyGhanaGibraltarGreeceGreenlandGrenadaGuadeloupeGuamGuatemalaGuernseyGuineaGuinea-bissauGuyanaHaitiHeard Island and Mcdonald IslandsHoly See (Vatican City State)HondurasHong KongHungaryIcelandIndiaIndonesiaIran, Islamic Republic ofIraqIrelandIsle of ManIsraelItalyJamaicaJapanJerseyJordanKazakhstanKenyaKiribatiKorea, Democratic People's Republic ofKorea, Republic ofKuwaitKyrgyzstanLao People's Democratic RepublicLatviaLebanonLesothoLiberiaLibyan Arab JamahiriyaLiechtensteinLithuaniaLuxembourgMacaoMacedonia, The Former Yugoslav Republic ofMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall IslandsMartiniqueMauritaniaMauritiusMayotteMexicoMicronesia, Federated States ofMoldova, Republic ofMonacoMongoliaMontenegroMontserratMoroccoMozambiqueMyanmarNamibiaNauruNepalNetherlandsNetherlands AntillesNew CaledoniaNew ZealandNicaraguaNigerNigeriaNiueNorfolk IslandNorthern Mariana IslandsNorwayOmanPakistanPalauPalestinian Territory, OccupiedPanamaPapua New GuineaParaguayPeruPhilippinesPitcairnPolandPortugalPuerto RicoQatarReunionRomaniaRussian FederationRwandaSaint HelenaSaint Kitts and NevisSaint LuciaSaint Pierre and MiquelonSaint Vincent and The GrenadinesSamoaSan MarinoSao Tome and PrincipeSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth Georgia and The South Sandwich IslandsSpainSri LankaSudanSurinameSvalbard and Jan MayenSwazilandSwedenSwitzerlandSyrian Arab RepublicTaiwanTajikistanTanzania, United Republic ofThailandTimor-lesteTogoTokelauTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTurks and Caicos IslandsTuvaluUgandaUkraineUnited Arab EmiratesUnited KingdomUnited StatesUnited States Minor Outlying IslandsUruguayUzbekistanVanuatuVenezuelaViet NamVirgin Islands, BritishVirgin Islands, U.S.Wallis and FutunaWestern SaharaYemenZambiaZimbabwe
+
+Email
+
+Phone
+
+Message
+
+Receive updates on WhatsApp
+
+By tapping submit, you agree to Machine Learning Plus [Privacy Policy](https://www.machinelearningplus.com/privacy-policy/) & [Terms & Conditions](https://www.machinelearningplus.com/web-terms-of-use/)
+
+Submit
+
+Get a detai... [Content truncated for context window]
+
+
+---
+
+
 
 ## Your Mission as Agent 5:
 1. Analyze ONLY the research sources assigned to you above
@@ -31,7 +554,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 0
-- Agent Coverage: 0 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

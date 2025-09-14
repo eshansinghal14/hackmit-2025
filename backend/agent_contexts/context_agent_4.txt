@@ -1,9 +1,9 @@
-You are Agent 4 of 5, a specialized research expert analyzing "Data Structures". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 4 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 4 Research Context
 
 ## Assignment
-You are Agent 4 of 5 specialized research agents analyzing: "Data Structures"
+You are Agent 4 of 5 specialized research agents analyzing: "linear algebra"
 
 ## Your Data Subset
 - Agent ID: 4/5
@@ -13,676 +13,485 @@ You are Agent 4 of 5 specialized research agents analyzing: "Data Structures"
 
 ## Your Research Sources
 
-### Source 31: Data Structures Overview
+### Source 31: Linear Algebra Review and Reference
 
 **Content:**
-## Data Structures & Algorithms - Overview
-
-* * *
-
-* * *
-
-## What is Data Structure?
-
-Data Structure is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
-
-- **Interface** − Each data structure has an interface. Interface represents the set of operations that a data structure supports. An interface only provides the list of supported operations, type of parameters they can accept and return type of these operations.
-
-- **Implementation** − Implementation provides the internal representation of a data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
-
-
-### Types of Data Structures
-
-Here are different type of data structures which we are going to learn in this tutorial:
-
-- [Array Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm)
-
-- [String Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/string_data_structure.htm)
-
-- [Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
-
-- [Double Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_algorithm.htm)
-
-- [Circular Linked List Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/circular_linked_list_algorithm.htm)
-
-- [Stack Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
-
-- [Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
-
-- [Heap Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm)
-
-- [Hash Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm)
-
-- [Matrix/Grid Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/matrix_or_grid_data_structure.htm)
-
-- [Graph Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/graph_data_structure.htm)
-
-- [Tree Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
-
-
-## What is Algorithm?
-
-Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
-
-### Types of Algorithms
-
-Here are different type of algorithms which we are going to learn in this tutorial:
-
-- [DSA - Searching Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/searching_algorithms.htm)
-
-- [DSA - Sorting Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm)
-
-- [DSA - Approximation Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/dsa_approximation_algorithms.htm)
-
-- [DSA - Divide and Conquer Algori... [Content truncated for context window]
+Linear Algebra Review and Reference
+Zico Kolter (updated by Chuong Do)
+September 30, 2015
+Contents
+1 Basic Concepts and Notation 2
+1.1 Basic Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2 Matrix Multiplication 3
+2.1 Vector-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Matrix-Vector Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.3 Matrix-Matrix Products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3 Operations and Properties 7
+3.1 The Identity Matrix and Diagonal Matrices . . . . . . . . . . . . . . . . . . 8
+3.2 The Transpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.3 Symmetric Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3.4 The Trace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+3.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.6 Linear Independence and Rank . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.7 The Inverse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.8 Orthogonal Matrices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.9 Range and Nullspace of a Matrix . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.10 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.11 Quadratic Forms and Positive Semidefinite Matrices . . . . . . . . . . . . . . 17
+3.12 Eigenvalues and Eigenvectors . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.13 Eigenvalues and Eigenvectors of Symmetric Matrices . . . . . . . . . . . . . 19
+4 Matrix Calculus 20
+4.1 The Gradient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2 The Hessian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.3 Gradients and Hessians of Quadratic and Linear Functions . . . . . . . . . . 23
+4.4 Least Squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.5 Gradients of the Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.6 Eigenvalues as Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+1
+1 Basic Concepts and Notation
+Linear algebra provides a way of compactly representing and operating on sets of linear
+equations. For example, consider the following system of equations:
+4x1 − 5x2 = −13
+−2x1 + 3x2 = 9.
+This is two equations and two variables, so as you know from high school algebra, you
+can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
+example if the second equation is simply a multiple of the first, but in the case above there
+is in fact a unique solution). In matrix notation, we can write the system more compactly
+as
+Ax = b
+with
+A =
+
+4 −5
+−2 3 
+, b =
+
+−13
+9
+
+.
+As we will see shortly, there are many advantages (including the obvious space savings)
+to analyzing linear equations in this for... [Content truncated for context window]
 
 
 ---
 
-### Source 32: Data Structure and Types
+### Source 32: Practical Guide to Linear Algebra in Data Science and AI
 
 **Content:**
-Course Index
+[Tatev Aslanyan](https://www.freecodecamp.org/news/author/tatevaslanyan/)
 
-Tutorials
+> "In God we trust; all others bring data." – W. Edwards Deming
 
-Courses
+This famous quote from Edwards Deming perfectly captures the essence of modern Data Science and AI.
 
-[Python](javascript:void(0);) [JavaScript](javascript:void(0);) [TypeScript](javascript:void(0);) [SQL](javascript:void(0);) [HTML](javascript:void(0);) [CSS](javascript:void(0);) [C](javascript:void(0);) [C++](javascript:void(0);) [Java](javascript:void(0);) [R](javascript:void(0);) [Ruby](javascript:void(0);) [RUST](javascript:void(0);) [Golang](javascript:void(0);) [Kotlin](javascript:void(0);) [Swift](javascript:void(0);) [C#](javascript:void(0);) [DSA](javascript:void(0);)
+Data is the lifeblood of Data Science and AI fields – Machine Learning, Deep Learning, Generative AI and much more. And understanding how to analyze and manipulate data it is key to unlocking its full potential.
 
-Become a certified Python programmer.
+The key to understanding all these concepts is linear algebra – the unsung hero behind many powerful algorithms and techniques.
 
-[ENROLL](https://programiz.pro/learn/master-python)
+If you've ever felt a disconnect between the linear algebra you learned in school and its practical use in your career, you're not alone. If you believe you should study and work your way through an entire book of Introduction to Linear Algebra, then you are again not alone.
 
-#### Popular Tutorials
+Many aspiring data science and AI professionals struggle to bridge this gap and think they need to spend countless hours to master mathematics for Data Science and AI. But don't worry, this guide is here to help.
 
-[Getting Started With Python](https://www.programiz.com/python-programming/getting-started)
+I'll show you how linear algebra isn't just a theoretical concept or old fashioned forgotten area of expertise. You'll learn how it's a practical tool that you can use to solve real-world problems in your field.
 
-[Python if Statement](https://www.programiz.com/python-programming/if-elif-else)
+Linear Algebra combined with Mathematical Analysis (called Calculus I and II in many undergrad studies) form the backbone of Machine Learning, Deep Learning, Computer Vision, and Generative AI. From building recommendation systems and training Neural Networks to analyzing medical images, understanding linear algebra opens up a world of possibilities.
 
-[while Loop in Python](https://www.programiz.com/python-programming/while-loop)
+In this guide, you'll discover:
 
-[Python Lists](https://www.programiz.com/python-programming/list)
+- **Real-World Applications:** We'll explore how linear algebra is applied across various industries, from healthcare to finance, and everything in between (with a special and detailed focus on Data Science and AI).
 
-[Dictionaries in Python](https://www.programiz.com/python-programming/dictionary)
+- **Practical Tips:** You'll learn how to translate theoretical concepts into actionable steps for your data science projects.
 
-[Start Learning Python](https://www.programiz.com/python-programming)
+- **Linear Algebra RoadMap 2024:** You will get a roadmap for Linear Algebra in 2024 – on paper and in a video tutorial.
 
-#### Popular Examples
+- **Career Development Resources:** I will provide you resources to help you learn linear algebra and accelerate your career in data science and AI.
 
-[Add two numbers](https://www.programiz.com/python-programming/examples/add-number)
 
-[Check prime number](https://www.programiz.com/python-programming/examples/prime-number)
+Whether you're a student, a recent graduate, or an experienced professional aspiring to become technical professional, this guide will equip you with the knowledge and skills to learn and leverage linear algebra effectively in your work. And you won't have to spend all your time on endless browsing and searching.
 
-[Find the factorial of a number](https://www.programiz.com/python-programming/examples/factorial)
+> "Mathematics is like the producer of the movies: you don't see them but they are actually running the show." – Tatev Aslanyan
 
-[Print the Fibonacci sequence](https://www.programiz.com/python-programming/examples/fibonacci-sequence)
+## Table of Contents
 
-[Check leap year](https://www.programiz.com/python-programming/examples/leap-year)
+1. [Core Linear Algebra Concepts](https://www.freecodecamp.org/www.freecodecamp.org#heading-core-concepts-in-linear-algebra-that-you-will-actually-use)
 
-[Explore Python Examples](https://www.programiz.com/python-programming/examples)
-
-#### Reference Materials
-
-[Built-in Functions](https://www.programiz.com/python-programming/methods/built-in)
-
-[List Methods](https://www.programiz.com/python-programming/methods/list)
-
-[Dictionary Methods](https://www.programiz.com/python-programming/methods/dictionary)
-
-[String Methods](https://www.programiz.com/python-programming/methods/string)
-
-[View all](https://www.programiz.com/python-programming/methods)
-
-Created with over a decade of experience.
-
-- [Learn](javascript:void(0);)
-- [Practice](javascript:void(0);)
-- [Compete](javascript:void(0);)
-
-[Learn Python](https://programiz.pro/learn/master-python)
-
-[Learn HTML](https://programiz.pro/course/learn-html)
-
-[Learn JavaScript](https://programiz.pro/learn/master-javascript)
-
-[Learn SQL](https://programiz.pro/course/learn-sql-basics)
-
-[Learn DSA](https://programiz.pro/course/dsa-with-python)
-
-[Learn C](https://programiz.pro/learn/master-c-programming)
-
-[Learn C++](https://programiz.pro/learn/master-cpp)
-
-[Learn Java](https://programiz.pro/learn/master-java)
-
-[View all Courses on](https://programiz.pro/courses)
-
-[Python Basics](https://programiz.pro/course/practice-python-basics)
-
-[Python Intermediate](https://programiz.pro/course/practice-python-intermediate)
-
-[C++ Basics](https://programiz.pro/course/practice-cpp-basics)
-
-[C++ Intermediate](ht... [Content truncated for context window]
+2. [Linear Algebra Roadmap](https://www.freecodecamp.org/www.freecodecamp.org#heading-li... [Content truncated for context window]
 
 
 ---
 
-### Source 33: Data Structures: A Comprehensive Introduction
+### Source 33: Essence of linear algebra
 
 **Content:**
-A data structure is a specialized format for organizing, processing, retrieving, and storing data. It's like a blueprint that dictates how data elements are arranged and connected. Different data structures excel at different tasks. Some, like arrays, are fantastic for storing large collections of similar data with quick random access. Others, like linked lists, shine when frequent insertions and deletions are needed.
 
-The choice of data structure significantly impacts how efficiently algorithms can operate on the data. A well-matched data structure can dramatically speed up computations, while a poor choice can lead to sluggish performance.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ · 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
-Data structures offer several key benefits:
-
-- **Efficiency:** They optimize data access and manipulation, leading to faster programs.
-- **Organization:** They provide a structured way to store and manage complex data relationships.
-- **Reusability:** Well-defined data structures can be reused across different programs, saving development time.
-- **Clarity:** They improve code readability by making data organization explicit.
-
-## What Exactly Are Data Structures?
-
-At its core, a data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. Just as a library uses shelves, sections, and catalog systems to organize books, software uses data structures to organize and store data. The choice of a specific data structure often depends on the nature of the application and the kind of operations that need to be performed on the data.
-
-## Why are data structures important?
-
-Typical base data types, such as integers or floating-point values, that are available in most computer programming languages are generally insufficient to capture the logical intent for data processing and use. Yet applications that ingest, manipulate and produce information must understand how data should be organized to simplify processing. Data structures bring together the data elements in a logical way and facilitate the effective use, persistence and sharing of data. They provide a formal model that describes the way the data elements are organized.
-Their significance stems from a multitude of advantages that empower robust and performant software development.
-
-- **Optimized Performance:** Data structures are architected to facilitate the swift retrieval and modification of data elements. Consider a scenario where a grocery list is stored within an array. This structure allows for the instantaneous retrieval of any specific item, directly translating to faster program execution and enhanced responsiveness – critical factors for user satisfaction.
-
-- **Effective Representation of Complexities:** Data structures extend beyond mere data storage. They offer a powerful framework for modeling intricate relationships that exist between data elements. For instance, a tree structure excels at representing hierarchical relationships – akin to an organizational chart where employee... [Content truncated for context window]
 
 
 ---
 
-### Source 34: Data Structure & Design | LintCode & LeetCode
+### Source 34: As an Introduction to Abstract Mathematics (A Free Textbook)
 
 **Content:**
-## HashMap
+# **Linear Algebra - As an Introduction to Abstract Mathematics**
 
-[https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html](https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html)
+## **Free online text by Isaiah Lankham, Bruno Nachtergaele and Anne Schilling**
 
-HashMap 的两种遍历方式
-第一种
+**Linear Algebra - As an Introduction to Abstract Mathematics**
+is an introductory textbook designed for undergraduate mathematics majors
+with an emphasis on abstraction and in particular the concept of
+proofs in the setting of linear algebra. Typically such a student
+will have taken calculus, though the only prerequisite is suitable
+mathematical maturity. The purpose of this book is to bridge the gap
+between the more conceptual and computational oriented lower division
+undergraduate classes to the more abstract oriented upper division
+classes. The book begins with systems of linear equations and complex
+numbers, then relates these to the abstract notion of linear maps on
+finite-dimensional vector spaces, and covers diagonalization,
+eigenspaces, determinants, and the Spectral Theorem. Each chapter
+concludes with both proof-writing and computational exercises.
 
-Copy
+**Content:**
+1\. What is linear algebra
+2\. Introduction to complex numbers
+3\. The fundamental theorem of algebra and factoring polynomials
+4\. Vector spaces
+5\. Span and bases
+6\. Linear maps
+7\. Eigenvalues and eigenvectors
+8\. Permutations and the determinant
+9\. Inner product spaces
+10\. Change of bases
+11\. The spectral theorem for normal linear maps
+12\. Supplementary notes on matrices and linear systems
+Appendix: The language of sets and functions; algebraic structures encountered; common math symbols; notation used
 
-```
-Map map =newHashMap();Iterator iter =map.entrySet().iterator();while (iter.hasNext()) {Map.Entry entry = (Map.Entry) iter.next();Object key =entry.getKey();Object val =entry.getValue();　　}
-```
+[PDF version of book](http://www.math.ucdavis.edu/~anne/linear_algebra/mat67_course_notes.pdf)
 
-效率高,以后一定要使用此种方式！
+This book is also available as:
 
-第二种
+- [UC Davis MathWiki](http://mathwiki.ucdavis.edu/Wikitexts/UC_Davis/UCD_Mat_67%3a_Linear_Algebra)
+- in printed form published by [World Scientific](http://www.worldscientific.com/worldscibooks/10.1142/9808) in January 2016
 
-Copy
+This book has already been successfully used for the courses
 
-```
-Map map =newHashMap();Iterator iter =map.keySet().iterator();while (iter.hasNext()) {Object key =iter.next();Object val =map.get(key);　　}
-```
-
-效率低,以后尽量少使用！
-
-Map Traverse:
-
-Copy
-
-```
-Map map = new HashMap();// Keysfor(String str : map.keySet()){ Integer value = map.get(str);}// Map.Entryfor (Map.Entry e : map.entrySet()) System.out.println(e.getKey() + ": " + e.getValue());
-```
-
-The Collection view methods allow a **Map** to be viewed as a Collection in these three ways:
-
-- **keySet** — the Set of keys contained in the **Map**.
-
-- **values** — The Collection of values contained in the **Map**. This Collection is not a Set, because multiple keys can map to the same value.
-
-- **entrySet** — the Set of key-value pairs contained in the **Map**. The Map interface provides a small nested interface called **Map.Entry**, the type of the elements in this Set.
-
-
-**Differences Between HashMap Vs HashSet In Java**
-
-[https://javaconceptoftheday.com/differences-between-hashmap-vs-hashset-in-java/](https://javaconceptoftheday.com/differences-between-hashmap-vs-hashset-in-java/)
-
-## Union Find (Disjoint Set)
-
-**并查集**: 一种用来解决集合查询合并的数据结构 支持O(1) find / O(1) union
-
-### 并查集可以干什么?
-
-1. 判断在不在同一个集合中。
-
-
-
-- find 操作
-
-
-2. 关于集合合并
-
-
-
-- union 操作
-
-
-### 并查集的操作
-
-1. 查询 Find (递归? 非递归?)
-
-
-模板代码
-
-Copy
-
-```
-HashMap father = new HashMap ();int find(int x) { int parent = x; while (parent ! = father.get(parent)) { parent = father.get(parent); } return parent;}
-```
-
-1. 合并 Union
-
-
-老大哥之间合并
-跟小弟没关系
-
-Copy
-
-```
-HashMap father = new HashMap ();void union(int x, int y) { int fa_x = find(x); int fa_y = find(y); if (fa_x != fa_y) { father.put(fa_x, fa_y); }}
-```
-
-### 并查集完整模板
-
-Copy
-
-```
-class UnionFind { UnionFind() {} HashMap father = new HashMap (); int find(int x) { int parent = x; while (parent ! = father.get(parent)) { parent = father.get(parent); } return parent; } void union(int x, int y) { int fa_x = find(x); int fa_y = find(y); if (fa_x != fa_y) { father.put(fa_x, fa_y); } }}
-```
-
-## Trie
-
-## Linked List vs ArrayList
-
-`LinkedList` and `ArrayList` are two different implementations of the List interface. `LinkedList` implements it with a doubly-linked list. `ArrayList` implements it with a dynamically re-sizing array.
-
-`LinkedList ` allows for **constant-time insertions or removals** using iterators, but only sequential access of elements.
-
-`ArrayList `, on the other hand, allow **fast random read access**, so you can grab any element in constant time.
-
-- [When to use LinkedList over ArrayList?](http://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist)
-
-- [ArrayL... [Content truncated for context window]
+- [MAT67 Modern Linear Algebra](http://www.math.ucdavis.edu/courses/syllabi) at UC Davis
+- MATH2730 Linear Algebra at Simpson University
+- [Math 413/513 Linear Algebra](http://math.arizona.edu/~rsims/ma413/ma413.html) at Arizona University
+- [Lineare Algebra](http://www.mathematik.uni-leipzig.de/~netzer/) at Universitaet Leipzig
+- Module 32225: Linear Algebra and Groups at the University of Hull
+- MAT-1001/ CS-2210/ PHY-1001-2 Linear Algebra at [Ashoka University](http://www.math.ucdavis.edu/~anne/linear_algebra/www.ashoka.edu.in)
 
 
 ---
 
-### Source 35: Study Guide v2.0 - Data Structures
+### Source 35: How to Self Study Linear Algebra for Students
 
 **Content:**
-Search this site
+**Estimated Read Time:** 5 minute(s)
 
-Embedded Files
+**Common Topics:** algebra, linear, amazon, book, books
 
-Skip to main content
+In this insight, I will give a roadmap to learn the basics of linear algebra for students. Aside from calculus, linear algebra is one of the most applicable subjects of all of mathematics. It is used a lot in engineering, sciences, computer sciences, etc. The right way to see linear algebra is with a focus on vector spaces and linear transformations. So I will suggest books with this perspective in mind.
 
-Skip to navigation
+Table of Contents
 
-# Data Structures
+Toggle
 
-## Array
+## **Prerequisites**
 
-Normally, an array is a collection of similar type of elements that have a contiguous memory location.
+There are essentially two prerequisites for studying linear algebra, besides the usual high school courses which include algebra, geometry and trigonometry (no, calculus is not a formal prerequisite). Those are that you must be used to proofs, and that you must have seen the basics of matrices and determinants.
 
-**Java array** is an object which contains elements of a similar data type. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.
+For proofs, I recommend the following books in no particular order:
+Velleman “How to prove it: a structured approach” [http://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995?tag=pfamazon01-20)
+Bloch’s “Proofs and fundamentals: a first course in abstract mathematics” http://www.amazon.com/Proofs-Fundamentals-Abstract-Mathematics-Undergraduate/dp/1441971262
+Hammack’s “Book of proof” [http://www.people.vcu.edu/~rhammack/BookOfProof/](http://www.people.vcu.edu/~rhammack/BookOfProof/)
 
-Array in java is index-based, the first element of the array is stored at the 0 index.
+These books will teach you the fundamentals of [proof based mathematics](https://www.physicsforums.com/insights/proofs-in-mathematics/), and they will teach you the basic notations and assumptions of set theory. Both will be very necessary for algebra.
 
-## Advantages
+As for matrices and determinants, these should be covered in basic high school books. For example
+Lang’s “Basic Mathematics” [http://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877](https://www.amazon.com/Basic-Mathematics-Serge-Lang/dp/0387967877?tag=pfamazon01-20)
+Openstaxcollege’s Algebra [https://openstaxcollege.org/textbooks/college-algebra](https://openstaxcollege.org/textbooks/college-algebra)
+Khan Academy’s Linear algebra [https://www.khanacademy.org/math/linear-algebra/matrix\_transformations](https://www.khanacademy.org/math/linear-algebra/matrix_transformations)
 
-- **Code Optimization:** It makes the code optimized, we can retrieve or sort the data efficiently.
-- **Random access:** We can get any data located at an index position
+Don’t worry, you don’t need to know matrices and determinants in full detail. Just knowing them for the 2×2 and 3×3 cases is already enough. In the linear algebra books which I’m going to mention, matrices and determinants will be treated in their full gory details. Also, don’t worry if you don’t have a lot of intuition for matrices and determinants, this intuition will come with studying vector spaces. Right now you are merely expected to being able to compute stuff like inverses of matrices and solving systems of equations.
 
-## Disadvantages
+## **Linear algebra: Introduction**
 
-**Size Limit:** We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.
-
-## Types of Array
-
-There are two types of array.
-
-- Single Dimensional Array
-- Multidimensional Array
-
-## Example
-
-```
-//Java Program to illustrate how to declare, instantiate, initialize
-```
-
-```
-//and traverse the Java array.
-```
-
-```
-class Testarray{
-```
-
-```
-public static void main(String args[]){
-```
-
-```
-int a[]=new int[5]; //declaration and instantiation
-```
-
-```
-a[0]=10; //initialization
-```
-
-```
-a[1]=20;
-```
-
-```
-a[2]=70;
-```
-
-```
-a[3]=40;
-```
-
-```
-a[4]=50;
-```
-
-```
-//traversing array
-```
-
-```
-for(int i=0;i arrli = new ArrayList ();
-```
-
-Note : More examples are given below.
-
-## The Set Interface
-
-- A Set is a Collection that cannot contain duplicate elements. It models the mathematical set abstraction.
-- The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements are prohibited.
-- Set also adds a stronger contract on the behavior of the equals and hashCode operations, allowing Set instances to be compared meaningfully even if their implementation types differ.
-
-## The Map Interface
-
-The Map interface maps unique keys to values. A key is an object that you use to retrieve a value at a later date.
-
-- Given a key and a value, you can store the value in a Map object. After the value is stored, you can retrieve it by using its key.
-- Several methods throw a NoSuchElementException when no items exist in the invoking map.
-- A ClassCastException is thrown when an object is incompatible with the elements in a map.
-- A NullPointerException is thrown if an attempt is made to use a null object and null is not allowed in the map.
-- An UnsupportedOperationException is thrown when an attempt is made to change an unmodifiable map.
-
-## Example of List, Set, Map
-
-```
-import java.util.*; // All the classes and interfaces are part of the util package
-```
-
-```
-public class CollectionsDemo {
-```
-
-```
- public static void main(String[] args) {
-```
-
-```
- // ArrayList
-```
-
-```
- List a1 = new ArrayList();
-```
-
-```
- a1.add("Zara");
-```
-
-```
- a1.add("Mahnaz");
-```
-
-```
- a1.add("Ayan");
-```
-
-```
- System.out.println(" ArrayList Elements"... [Content truncated for context window]
+Proper linear algebra deals with vector spaces and linear transformations between them. It will rigorously develop the theory of nxn matrices and... [Content truncated for context window]
 
 
 ---
 
-### Source 36: Introduction to Data Structures and Algorithms
+### Source 36: Lecture Notes for Linear Algebra
 
 **Content:**
-[Menu](javascript:void(0))
+# Lecture Notes for Linear Algebra (2021)
 
-Search field
+## [**Table of Contents**](https://math.mit.edu/toc.pdf)
 
-_×_
+## [**Preface to the Notes**](https://math.mit.edu/preface.pdf)
 
-[__](javascript:void(0);)
+## [**Textbooks, Websites, and Video Lectures**](https://math.mit.edu/resources.pdf)
 
-Sign In
+## [**Sample Sections : 1.3  and  3.3  and  3.5  and  7.1**](https://math.mit.edu/samples.pdf)
 
-[★+1](https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fdsa%2Fdsa_intro.php) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://www.w3schools.com/spaces/index.php) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://spaces.w3schools.com/space/)
+[**Linear Algebra @ OCW (video lectures from MIT  :  Math 18.06)**](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) [**Linear Algebra and Learning from Data @ OCW (video lectures  :  Math 18.065)**](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm) [**Gilbert Strang @ OpenCourseWare**](https://ocw.mit.edu/faculty/gilbert-strang/) [**Gilbert Strang's MIT Home Page**](http://math.mit.edu/~gs)
 
-❮
+## Other books by Gilbert Strang
 
-     ❯
+- ### [**Linear Algebra for Everyone (new textbook, September 2020)**](http://math.mit.edu/everyone)
 
-[HTML](https://www.w3schools.com/html/default.asp) [CSS](https://www.w3schools.com/css/default.asp) [JAVASCRIPT](https://www.w3schools.com/js/default.asp) [SQL](https://www.w3schools.com/sql/default.asp) [PYTHON](https://www.w3schools.com/python/default.asp) [JAVA](https://www.w3schools.com/java/default.asp) [PHP](https://www.w3schools.com/php/default.asp) [HOW TO](https://www.w3schools.com/howto/default.asp) [W3.CSS](https://www.w3schools.com/w3css/default.asp) [C](https://www.w3schools.com/c/index.php) [C++](https://www.w3schools.com/cpp/default.asp) [C#](https://www.w3schools.com/cs/index.php) [BOOTSTRAP](https://www.w3schools.com/bootstrap/bootstrap_ver.asp) [REACT](https://www.w3schools.com/react/default.asp) [MYSQL](https://www.w3schools.com/mysql/default.asp) [JQUERY](https://www.w3schools.com/jquery/default.asp) [EXCEL](https://www.w3schools.com/excel/index.php) [XML](https://www.w3schools.com/xml/default.asp) [DJANGO](https://www.w3schools.com/django/index.php) [NUMPY](https://www.w3schools.com/python/numpy/default.asp) [PANDAS](https://www.w3schools.com/python/pandas/default.asp) [NODEJS](https://www.w3schools.com/nodejs/default.asp) [DSA](https://www.w3schools.com/dsa/index.php) [TYPESCRIPT](https://www.w3schools.com/typescript/index.php) [ANGULAR](https://www.w3schools.com/angular/default.asp) [GIT](https://www.w3schools.com/git/default.asp) [POSTGRESQL](https://www.w3schools.com/postgresql/index.php) [MONGODB](https://www.w3schools.com/mongodb/index.php) [ASP](https://www.w3schools.com/asp/default.asp) [AI](https://www.w3schools.com/ai/default.asp) [R](https://www.w3schools.com/r/default.asp) [GO](https://www.w3schools.com/go/index.php) [KOTLIN](https://www.w3schools.com/kotlin/index.php) [SASS](https://www.w3schools.com/sass/default.asp) [VUE](https://www.w3schools.com/vue/index.php) [GEN AI](https://www.w3schools.com/gen_ai/index.php) [SCIPY](https://www.w3schools.com/python/scipy/index.php) [CYBERSECURITY](https://www.w3schools.com/cybersecurity/index.php) [DATA SCIENCE](https://www.w3schools.com/datascience/default.asp) [INTRO TO PROGRAMMING](https://www.w3schools.com/programming/index.php) [BASH](https://www.w3schools.com/bash/index.php) [RUST](https://www.w3schools.com/rust/index.php)
+- ### [Linear Algebra and Learning from Data (2019)](http://math.mit.edu/learningfromdata)
 
-## DSA Tutorial
+- ### [**Introduction to Linear Algebra, 5th Edition (2016)**](http://math.mit.edu/linearalgebra)
 
-[DSA HOME](https://www.w3schools.com/index.php) [DSA Intro](https://www.w3sch... [Content truncated for context window]
+- ### [Differential Equations and Linear Algebra](http://math.mit.edu/dela)
+
+- ### [Computational Science and Engineering](http://math.mit.edu/cse)
+
+- ### [Calculus](http://math.mit.edu/calculus)
+
+
+[\[top\]](https://math.mit.edu/math.mit.edu#top)
+
+## Ordering Gilbert Strang's books
+
+[**Direct Order in North America**](https://math.mit.edu/~gs/weborder.php) [**Book Order for SIAM members**](https://my.siam.org/Store/Product/viewproduct/?ProductId=27788546) [**Book Order from American Mathematical Society**](https://bookstore.ams.org/strang-2) [**Book Order from Cambridge University Press (outside North America)**](https://www.cambridge.org/academic/subjects/mathematics/algebra/introduction-linear-algebra-5th-edition) [**Wellesley-Cambridge Press (USA)**](http://www.wellesleycambridge.com/) [**Wellesley Publishers (India), select books**](http://www.wellesleypublishers.com/)
+( Contact: [gilstrang@gmail.com](mailto:gilstrang@gmail.com) )
+
+[\[top\]](https://math.mit.edu/math.mit.edu#top)
+
+# Detailed Table of Contents
+
+## Textbooks, Websites, and Video Lectures
+
+## Part 1 : Basic Ideas of Linear Algebra
+
+#### 1.1 Linear Combinations of Vectors
+
+#### 1.2 Dot Products _v · w_ and Lengths \|\| _v_ \|\| and Angles _θ_
+
+#### 1.3 Matrices Multiplying Vectors : _A_ times _x_
+
+#### 1.4 Column Space and Row Space of _A_
+
+#### 1.5 Dependent and Independent Columns
+
+#### 1.6 Matrix-Matrix Multiplication _AB_
+
+#### 1.7 Factoring _A_ into _CR_ : Column rank = _r_ = Row rank
+
+#### 1.8 Rank one matrices    _A_ =(1 column) times (1 row)
+
+## Part 2 : Solving Linear Equations _Ax = b : A_ is _n_ by _n_
+
+#### 2.1 Inverse Matrices _A_-1 and Solutions _x = A_-1 _b_
+
+#### 2.2 Triangular Matrix and Back Substitution for _Ux = c_
+
+#### 2.3 Elimination : Square _A_ to Triangular _U_ : _Ax = b_ to _Ux = c_
+
+#### ... [Content truncated for context window]
 
 
 ---
 
-### Source 37: Data Structures & Algorithms
+### Source 37: 1: What is linear algebra
 
 **Content:**
-# Data Structures & Algorithms
+[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
 
-# Data Structures & Algorithms
+## 1.1 Introduction to MAT 67
 
-## Your Progress
+This class may well be one of your first mathematics classes that bridges the gap between the mainly computation-oriented lower division classes and the abstract mathematics encountered in more advanced mathematics courses. The goal of this class is threefold:
 
-- of itemitemsdone
+1. You will learn **Linear Algebra**, which is one of the most widely used mathematical theories around. Linear Algebra finds applications in virtually every area of mathematics, including Multivariate Calculus, Differential Equations, and Probability Theory. It is also widely applied in fields like physics, chemistry, economics, psychology, and engineering. You are even relying on methods from Linear Algebra every time you use an Internet search like Google, the Global Positioning System (GPS), or a cellphone.
+2. You will acquire **computational skills** to solve linear systems of equations, perform operations on matrices, calculate eigenvalues, and find determinants of matrices.
+3. In the setting of Linear Algebra, you will be introduced to **abstraction**. We will develop the theory of Linear Algebra together, and you will learn to write proofs.
 
+The lectures will mainly develop the theory of Linear Algebra, and the discussion sessions will focus on the computational aspects. The lectures and the discussion sections go hand in hand, and it is important that you attend both. The exercises for each Chapter are divided into more computation-oriented exercises and exercises that focus on proof-writing. There are also some very short webwork homework sets to make sure you have some basic skills. You can already try the first one that introduces some logical concepts by clicking below: Webwork link.
 
-## Learning goals
+## 1.2 What is Linear Algebra?
 
-Familiarize yourself with common data structures and algorithms such as lists, trees, maps, graphs, Big-O analysis, and more!
+Linear Algebra is the branch of mathematics aimed at solving systems of linear equations with a ﬁnite number of unknowns. In particular, one would like to obtain answers to the following questions:
 
-## Suggested prerequisites
+- **Characterization of solutions**: Are there solutions to a given system of linear equations? How many solutions are there?
+- **Finding solutions:** How does the solution set look? What are the solutions?
 
-Familiarity with basics programming concepts (e.g. if statements, loops, functions)
+Linear Algebra is a systematic theory regarding the solutions of systems of linear equations.
 
-[Data Structures & Algorithms](https://techdevguide.withgoogle.com/techdevguide.withgoogle.com)
+**Example 1.2.1.** Let us take the following system of two linear equations in the two unknowns \\(x\_1\\) and \\(x\_2\\) :
 
-## Topics
+\\begin{equation\*} \\left. \\begin{array}{rl} 2x\_1 + x\_2 &= 0 \\\ x\_1 - x\_2 &= 1 \\end{array} \\right\\}. \\end{equation\*}
 
-## Programming Languages
+This system has a **unique solution** for \\(x\_1,x\_2 \\in \\mathbb{R}\\), namely \\(x\_1=\\frac{1}{3}\\) and \\(x\_2=-\\frac{2}{3}\\). This solution can be found in several different ways. One approach is to ﬁrst solve for one of the unknowns in one of the equations and then to substitute the result into the other equation. Here, for example, we might solve to obtain
 
-[Java](https://techdevguide.withgoogle.com/resources/programming_languages/java/#!) Java
+\\\[ x\_1 = 1 + x\_2 \\\]
 
-[C++](https://techdevguide.withgoogle.com/resources/programming_languages/c-plus-plus/#!) C++
-
-[Python](https://techdevguide.withgoogle.com/resources/programming_languages/python/#!) Python
-
-[JavaScript](https://techdevguide.withgoogle.com/resources/programming_languages/javascript/#!) JavaScript
-
-Jump to resourceApply
+from th... [Content truncated for context window]
 
 
 ---
 
-### Source 38: Data Structures - Jessica's Corner of Cyberspace
+### Source 38: Tea Time Linear Algebra
 
 **Content:**
-[Skip to content](https://www.raebear.net/computer-science/data-structures/#content)
+[Table of Contents](https://lqbrin.github.io/contents.html) [Ancillaries](https://lqbrin.github.io/ancillaries.html) [Printed Copy](https://lqbrin.github.io/printCopy.html) [Changelog / revised PDF](https://lqbrin.github.io/changelog.html) [More Info](https://lqbrin.github.io/more.html)
 
-## Data Structures Review
+Also by L.Q. Brin: [Tea Time Numerical Analysis](https://lqbrin.github.io/tea-time-numerical/)
 
-> [Data Structures](https://www.geeksforgeeks.org/data-structures/)
+#### Greetings! And thanks for visiting.
 
-[iframe](https://www.geeksforgeeks.org/data-structures/embed/#?secret=L178D4wFL4)
+This creation is an all-purpose open source textbook for linear algebra classes of all ilks. Inside you will find a complete and engaging introduction to linear algebra, making it a perfect primary resource for classroom study.
 
-[Data Structures Interview Questions](http://www.careerride.com/Data-Structure-Interview-Questions-2.aspx)
+_\[The\] writing is excellent ... sharp, to the point, and witty._\- Dick Pelosi
 
-## Linear Data Structures – Lists
+Take a ride through the landscape of linear algebra from basic mechanics through inner product spaces.
 
-Array, Linked List (Single, Double, Circular), Stack, Queue
+- 386 pages
+- Over 1000 exercises with over 200 detailed solutions and hundreds more answers
+- Over 250 illustrations
+- Nearly 150 live SageMathCell links
+- Open source
+- Now with online homework and course management at [MyOpenMath!](https://www.myopenmath.com/)
 
-## Hierarchical – Trees
+Presented in a conversational style with plenty of motivation, illustrations, applications, and theory, this text should be a comfortable read for most beginning mathematicians. Readers and instructors alike will appreciate the numerous detailed exercise solutions accompanying each section.
 
-Binary Tree, Binary Search Tree (BST), B-Tree, Red-Black Tree
+Examine the distribution of bicycles in the Capital Bikeshare system, model an un-preheated oven baking brownies, reproduce sounds via Fourier series, explore rep-tiles like the one decorating this cover, and more. Read proofs of the rank and nullity theorem, the determinant expansion formula, existence and uniqueness of solutions of linear systems and others.
 
-## How Data Structures are used
-
-Storage structures (arrays, linked structures, hash tables)
-
-process-oriented data structures (stacks, queues, priority queues, iterators), and descriptive data structures (collections, sets, linear lists, binary trees, etc.)
-
-## Complex Structures
-
-Priority Queues
-
-Hash Tables
-
-## Graph
-
-“Nearly all graph problems will somehow use a grid or network in the problem, but sometimes these will be well disguised. Secondly, if you are required to find a path of any sort, it is usually a graph problem as well. Some common keywords associated with graph problems are: vertices, nodes, edges, connections, connectivity, paths, cycles and direction.” -TopCoder
-
-“They can range in difficulty from finding a path on a 2D grid from a start location to an end location, to something as hard as finding the maximum amount of water that you can route through a set of pipes, each of which has a maximum capacity (also known as the maximum-flow minimum-cut problem)” -TopCoder
-
-“An example of one of the simplest types of graphs is a singly linked list!” -TopCoder
-
-A tree only allows a node to have children, and there cannot be any loops in the tree, with a more general graph we can represent many different situations.
-
-[TopCoder – Introduction to Graphs and Their Data Structures](https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-graphs-and-their-data-structures-section-1/)
-
-## Matrix
-
-A multi-dimensional array.
-
-Uses:
-
-– To represent class hierarchy using Boolean square matrix
-
-– For data encryption and decryption
-
-– To represent traffic flow and plumbing in a network
-
-– To implement graph theory of node representation
-
-An adjacency matrix is often used in the representation of graphs as an alternative to adjacency lists
-
-## Data Structures Performance
-
-Chart from [http://bigocheatsheet.com/](http://bigocheatsheet.com/)
-
-| Data Structure | Time Complexity | Space Complexity |
-| --- | --- | --- |
-| | Average | Worst | Worst |
-| | Access | Search | Insertion | Deletion | Access | Search | Insertion | Deletion | |
-| [Array](http://en.wikipedia.org/wiki/Array_data_structure) | `Θ(1)` | `Θ(n)` | `Θ(n)` | `Θ(n)` | `O(1)` | `O(n)` | `O(n)` | `O(n)` | `O(n)` |
-| [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` | `O(n)` |
-| [Queue](http://en.wikipedia.org/wiki/Queue_(abstract_da... [Content truncated for context window]
+It's all here in Tea Time Linear Algebra.
 
 
 ---
 
-### Source 39: The Role of Data Structures in Programming
+### Source 39: Pauls Online Notes
 
 **Content:**
-Published on
-25 January 2024by [Grady Andersen](https://moldstud.com/authors/grady-andersen) & MoldStud Research Team
+[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd.jpg)](https://www.angelfire.lycos.com/)
 
-# The Role of Data Structures in Programming
+[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd2.jpg)](https://www.angelfire.lycos.com/)
 
-Data structures are the building blocks of any software application. As a developer, understanding and utilizing the right data structures is essential for efficient and optimized code. In this article, we will explore the power of data structures, their advantages, and how they can enhance your development process.
+| | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Paul's Online Math Notes |
+| | | | |
+| --- |
+| [Algebra](http://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) |
+| |
+| [Calculus I](http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx) |
+| |
+| [Calculus II](http://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx) |
+| |
+| [Calculus III](http://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx) |
+| |
+| [Linear Algebra](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
+| |
+| [Differential Equations](http://tutorial.math.lamar.edu/Classes/DE/DE.aspx) |
 
-![The Role of Data Structures in Programming](https://moldstud.com/uploads/images/the-role-of-data-structures-in-programming.webp?w=544&h=408)
-
-## Unleashing the Power of Data Structures: A Developer's Guide
-
-### The Importance of Data Structures
-
-Data structures define how data is organized, stored, and accessed within a program. Choosing the appropriate data structure for your application can greatly impact its performance and scalability. Here are a few key reasons why data structures are crucial for developers:
-
-- **Efficiency:** By selecting the right data structure, you can improve the performance and speed of your code. Efficient data structures reduce the time complexity of operations such as searching, inserting, and deleting elements.
-- **Memory Optimization:** Data structures help optimize memory usage by storing and organizing data in the most efficient way possible. This ensures that your application consumes the least amount of memory while still providing the required functionality.
-- **Organization and Maintenance:** Well-defined data structures make code more readable and maintainable. They provide a clear representation of how data is structured, making it easier to understand and modify code as needed.
-- **Scalability:** A well-designed data structure can handle large amounts of data and allow your application to scale seamlessly without compromising performance.
-
-### Types of Data Structures
-
-There are several types of data structures available, each tailored for specific use cases. Let's take a closer look at some commonly used data structures:
-
-#### 1\. Arrays
-
-Arrays are one of the simplest and most fundamental data structures. They store a fixed-size sequence of elements of the same type, accessible by their index. Arrays provide fast access to elements but have a fixed size, making them less flexible for dynamic data.
-
-#### 2\. Linked Lists
-
-Linked lists consist of nodes, each containing a value and a reference to the next node. They allow dynamic memory allocation, making them suitable for scenarios where the size of data may vary. Linked lists excel in insertions and deletions, but sequential access can be slower compared to arrays.
-
-#### 3\. Stacks
-
-Stacks are a type of data structure that follows the Last-In-First-Out (LIFO) principle. They allow adding and removing elements only from the top. Stacks are commonly used in programming languages for function calls, recursion, and handling undo/redo operations.
-
-#### 4\. Queues
-
-Queues implement t... [Content truncated for context window]
+| | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Home](http://tutorial.math.lamar.edu/) | | |
+| --- |
+| | | | | |
+| --- | --- |
+| [Class Notes](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
+| --- |
+| | | | | |
+| --- | --- |
+| [Extras/Reviews](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
+| --- |
+| | | [Cheat Sheets & Tables](http://tutorial.math.lamar.edu/cheat_table.aspx) | | |
+| --- |
+| | | [Downloads](http://tutorial.math.lamar.edu/download.aspx) | | |
+| |
+| | | |
+| --- | --- |
+| Chapters |
+| |
+| [Linear Algebra Home](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
+| |
+| | | |
+| --- | --- |
+| [Systems of Equations and Matrices](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Determinants](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Euclidean n-Space](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Vector Spaces](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Eigenvalues and Eigenvectors](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| Misc |
+| |
+| [Contact Me](http://tutorial.math.lamar.edu/contact.aspx) |
+| |
+| [Downloads](http://tutorial.math.lamar.edu/download.aspx) |
+| |
+| [FAQ](http://tutorial.math.lamar.edu/faq.aspx) |
+| |
+| [Links](http://tutorial.math.lamar.edu/links.aspx) |
+| |
+| [My Students](http://tutorial.math.lamar.edu/mystudents.aspx) |
+| |
+| [Site Map](http://tutorial.math.lamar.edu/sitemap.aspx) |
+| |
+| [Terms of Use](http://tutorial.math.lamar.edu/terms.aspx) | | | | | | |
+| --- | --- | -... [Content truncated for context window]
 
 
 ---
 
-### Source 40: 6 Essential Data Structures Java Programmer should Learn
+### Source 40: Introduction to Linear Algebra Using Python
 
 **Content:**
-## Pages
+## Guides
 
-- [Home](https://www.java67.com/)
-- [core java](https://www.java67.com/search/label/core%20java?&max-results=3)
-- [spring](https://www.java67.com/search/label/spring%20framework?&max-results=3)
-- [online courses](https://www.java67.com/search/label/courses?&max-results=3)
-- [thread](https://www.java67.com/search/label/Java%20Multithreading%20Tutorial?&max-results=3)
-- [java 8](https://www.java67.com/search/label/Java%208?&max-results=3)
-- [coding](https://www.java67.com/search/label/coding?&max-results=3)
-- [sql](https://www.java67.com/search/label/sql?&max-results=3)
-- [books](https://www.java67.com/search/label/books?&max-results=3)
-- [oop](https://www.java67.com/search/label/object%20oriented%20programming?&max-results=3)
-- [interview](https://www.java67.com/search/label/core%20java%20interview%20question%20answer?&max-results=3)
-- [certification](https://www.java67.com/search/label/Java%20Certification?&max-results=3)
-- [free resources](https://www.java67.com/search/label/free%20resources?&max-results=3)
-- [best](https://www.java67.com/search/label/best%20of%20java67?&max-results=3)
+- [Introduction](https://linearalgebra.xyz/guides/introduction)
+- [Linear Systems](https://linearalgebra.xyz/guides/linear-systems)
+- [Matrices](https://linearalgebra.xyz/guides/matrices)
+- [Solving Systems of Linear Equations](https://linearalgebra.xyz/guides/solving-systems-of-linear-equations)
+- [Vectors](https://linearalgebra.xyz/guides/vectors)
 
-# 6 Essential Data Structures Java Programmer should Learn
-
-Hello guys, Data Structure is a building block of programs. It's even said that **"Data Structure + Algorithms= Program"**. That's why a good knowledge of data structure is very important for any programmers, including Java developers. Data structure gives you the option to store your data so that you can access it based on your requirement. For example, if you want a fast search based upon the username then you can use [HashMap](https://www.java67.com/2013/02/10-examples-of-hashmap-in-java-programming-tutorial.html), but that's only possible if you know data structure and their implementations in the programming language you are using, and that's what you will learn in this article.
-
-Java API provides built-in support for common data structures, essential for writing programs like an array, linked list, map, set, stack, and queue. You don't need to implement these data structures by yourself, you can directly use them in your program, thanks to the rich and efficient implementation provided by Java API.
-
-This is also one reason [why Java is the best programming language](http://javarevisited.blogspot.sg/2013/04/10-reasons-to-learn-java-programming.html). Since data structure is core to any program and the choice of a particular data structure significantly affects both the functionality and performance of Java applications, it's worth an effort to explore different data structures available in Java.
-
-Many of these data structure is part of the hugely popular Java Collection Framework, and almost all Java programs maybe, except [hello world](http://java67.blogspot.sg/2013/03/helloworld-in-java-how-to-write-compile-example-tutorial.html) make use of Collection in one or another form.
-
-In this Java tutorial, we will take a look at a standard data structure. Array, linked list, Stack, Queue, Map, ... [Content truncated for context window]
+subscribe [via RSS](https://linearalgebra.xyz/feed/guides.xml)
 
 
 ---
@@ -707,7 +516,7 @@ In this Java tutorial, we will take a look at a standard data structure. Array, 
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 4 Knowledge Nodes for: Data Structures**
+**Agent 4 Knowledge Nodes for: Linear Algebra**
 
 1. [Node Name]
 2. [Node Name]

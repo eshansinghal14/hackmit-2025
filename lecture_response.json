@@ -1,0 +1,32 @@
+﻿{
+  "lecture": {
+    "lecture_segments": [
+      {
+        "content": "Welcome! Today we're exploring basic algebra - the foundation of all mathematics. Think of algebra as a language where letters represent unknown numbers we need to find.",
+        "type": "context"
+      },
+      {
+        "content": "x + 5 = 12",
+        "description": "Writing a simple algebraic equation",
+        "type": "action"
+      },
+      {
+        "content": "Here's our mystery! What number plus five equals twelve? To solve this, we need to isolate x by doing the same operation to both sides.",
+        "type": "context"
+      },
+      {
+        "content": "x = 7",
+        "description": "Showing the solution after subtracting 5 from both sides",
+        "type": "action"
+      },
+      {
+        "content": "Perfect! We subtracted five from both sides and found x equals seven. This balance principle is algebra's golden rule - whatever you do to one side, do to the other.",
+        "type": "context"
+      }
+    ],
+    "total_segments": 5
+  },
+  "status": "success",
+  "topic": "Basic Algebra"
+}
+

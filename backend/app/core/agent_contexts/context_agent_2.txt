@@ -1,19 +1,203 @@
-You are Agent 2 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 2 of 5, a specialized research expert analyzing "Linear Algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 2 Research Context
 
 ## Assignment
-You are Agent 2 of 5 specialized research agents analyzing: "linear algebra"
+You are Agent 2 of 5 specialized research agents analyzing: "Linear Algebra"
 
 ## Your Data Subset
 - Agent ID: 2/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 3 to 4
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 11 to 20
 
 ## Your Research Sources
 
-### Source 3: Linear Algebra | Mathematics - MIT OpenCourseWare
+### Source 11: Linear Algebra Without the Agonizing Pain
+
+**Content:**
+Table of Contents:
+
+- [Null Space](https://johnwlambert.github.io/johnwlambert.github.io#null-space)
+- [Column Space](https://johnwlambert.github.io/johnwlambert.github.io#column-space)
+- [Projection of a Vector onto a Vector](https://johnwlambert.github.io/johnwlambert.github.io#projection)
+- [Gram-Schmidt](https://johnwlambert.github.io/johnwlambert.github.io#gram-schmidt)
+- [Solving Systems of Equations](https://johnwlambert.github.io/johnwlambert.github.io#solving-systems-of-equations)
+- [Singular Value Theorem (SVD)](https://johnwlambert.github.io/johnwlambert.github.io#svd)
+- [Computation of the SVD](https://johnwlambert.github.io/johnwlambert.github.io#computation-svd)
+- [Sherman-Morrison](https://johnwlambert.github.io/johnwlambert.github.io#sherman-morrison)
+- [Sherman-Woodbury-Woodbury Formula](https://johnwlambert.github.io/johnwlambert.github.io#sww)
+
+## Linear Algebra Definitions
+
+Before we do anything interesting with machine learning or optimization, we’ll need to review some essential linear algebra concepts.
+
+Suppose we have two vectors \\(u,v \\in \\mathbf{R}^{n \\times 1}\\). Their _outer product_ is defined as \\(u \\cdot v^T\\), which is an \\(n \\times n\\) matrix. The inner product of \\(u\\) and \\(v\\) is defined \\(u^Tv \\in \\mathbf{R}^{1 \\times 1}\\), a scalar.
+
+Orthogonal vectors satisfy \\(v^Tu = 0\\). For all \\(x \\neq 0\\), if the quadratic form is positive \\(x^TAx > 0\\), then the matrix is symmetric positive matrix; if instead \\(x^TAx \\geq 0\\), the matrix is symmetric positive semi-definite.
+
+A vector norm assigns a scalar value to vector or matrix. It turns out that all norms are _equivalent_, meaning we can bound a certain norm above and below
+
+\\\[\\delta \\\|x\\\|\_0 \\leq \\\|x\\\|\_{\\square} \\leq \\gamma \\\|x\\\|\_0\\\]
+
+e.g. \\(\\\|x\\\|\_{\\alpha} \\leq C\_{\\alpha \\beta} \\\| x \\\|\_{\\beta}\\), or \\(\\\|x\\\|\_2 \\leq \\\|x\\\|\_1 \\leq \\sqrt{n} \\\|x\\\|\_2\\).
+
+Many matrix norms are _induced_ from vector norms.
+
+### Matrix Rank
+
+### Vector Space
+
+### Null Space of a Matrix
+
+Given \\(A \\in \\mathbb{R}^{m \\times n}\\), the **null space** of \\(A\\) is the set of vectors which are sent to the zero vector:
+
+\\\[\\mathcal{N}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\\\]
+
+Multiplication by \\(A\\) can be seen as a function which sends a vector \\(x \\in \\mathbb{R}^n\\) to a vector \\(Ax \\in \\mathbb{R}^m\\).
+
+Of course, \\(\\mathcal{N}(A)\\) always contains the zero vector, i.e. \\({0} \\in \\mathcal{N}(A)\\). But the question is, does it contain any other vectors? If the columns of \\(A\\) are linearly independent, then we can always say \\(\\mathcal{N}(A) = {0} \\).
+
+### Column Space (Range) of a Matrix
+
+Given an \\(m \\times n\\) matrix \\(A\\), we would like to know for which vectors \\(b \\in \\mathbb{R}^m\\) the system \\(Ax = b\\) has a solution. Let’s define the columns of \\(A\\) as:
+
+\\\[A = \\begin{bmatrix} \| & \| & & \| \\\ v\_1 & v\_2 & \\cdots & v\_n \\\ \| & \| & & \| \... [Content truncated for context window]
+
+
+---
+
+### Source 12: Linear Algebra for Everyone, Gilbert Strang
+
+**Content:**
+# Linear Algebra for Everyone      [Gilbert Strang](http://www-math.mit.edu/~gs/)
+
+ISBN 978-1-7331466-3-0               September 2020 [Wellesley-Cambridge Press](http://www.wellesleycambridge.com/) [gilstrang@gmail.com](mailto:gilstrang@gmail.com)
+
+[Other books by Gilbert Strang](https://math.mit.edu/math.mit.edu#othergs) Dummy
+
+- ## [Table of Contents and Preface](https://math.mit.edu/everyone_prefaceTOC01.pdf)
+
+- ## [Solution Manual : Linear Algebra for Everyone (November 2023)](https://math.mit.edu/lafesols.pdf)
+
+- ## [New ideas in Linear Algebra for Everyone](https://math.mit.edu/compare%20LAFE-ILA5I.pdf)
+
+- ## [Section 1.3](https://math.mit.edu/everyone_13.pdf) [Section 1.4](https://math.mit.edu/everyone_14.pdf)       of  this  book
+
+- ## [Image compression by the SVD, Tim Baumann's website](https://math.mit.edu/everyone_svd01.pdf)
+
+- ## [A 2020 Vision of Linear Algebra (videos)](https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/videos/)
+
+- ## [_LU_ and _CR_ Elimination (to appear in SIAM Review)](https://math.mit.edu/lucrweb.pdf)
+
+- ## [Errata in the First Printing](https://math.mit.edu/lafe_errata09.pdf)
+
+
+## We have improved the explanation of how to find the nullspace of any matrix _A_ :
+
+## We want all solutions to _Ax = 0_ : All combinations of columns leading to zero vector
+
+## There are _n - r_ special solutions after elimination simplifies the equations
+
+## New version of Section 3.2, in the next printing of Linear Algebra for Everyone
+
+## [New 3.2 : _A = CR_ and Computing the Nullspace by Elimination](https://math.mit.edu/lafe019)
+
+## [Original 3.2 : The Nullspace of _A_: Solving _Ax = 0_](https://math.mit.edu/lafe020)
+
+[Book Order Form](https://math.mit.edu/~gs/weborder.php)
+
+[Wellesley-Cambridge Press](http://www.wellesleycambridge.com/)           : All Gilbert Strang's textbooks
+
+[Cambridge University Press](https://www.cambridge.org/academic/subjects/mathematics/algebra/linear-algebra-everyone)          : Outside North America
+
+[Kyobo Books](https://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=BNT&mallGb=ENG&barcode=9781733146630) and Ting Lung          : Books in Korea and Taiwan
+
+[Wellesley Publishers (India)](http://www.wellesleypublishers.com/)         : Indian editions of select books
+
+## Lecture Notes for Linear Algebra (ebook, 2021)
+
+- ### [Buy the ebook from Google Playstore](https://play.google.com/store/books/details/Gilbert%20Strang%20Lecture%20Notes%20for%20Linear%20Algebra?id=uJhEEAAAQBAJ&hl)
+
+- ### [The Art of Linear Algebra,\ by Kenji Hiranabe](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/The-Art-of-Linear-Algebra.pdf)
+
+
+## Interesting Links
+
+- ### [Matrix World : The Picture of All Matrices, by Kenji Hiranabe (appears in this book)](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/MatrixWorld.pdf)
+
+
+## Other books by Gilbert Strang
+
+- ### [Introduction to Linear Algebra](http://math.mit.edu/linearalgebra)
+
+- ### [Linear Algebr... [Content truncated for context window]
+
+
+---
+
+### Source 13: 1: What is Linear Algebra?
+
+**Content:**
+[Skip to main content](https://math.libretexts.org/math.libretexts.org#elm-main-content)
+
+Many difficult science problems can handled using the powerful, yet easy to use, mathematics of linear algebra. Unfortunately, because the subject (at least for those learning it) requires seemingly arcane and tedious computations involving large arrays of number known as matrices, the key concepts and the wide applicability of linear algebra are easily missed. Therefore, before we equip you with matrix skills, let us give some hints about what linear algebra is. The takeaway message is
+
+> ﻿Linear algebra is the study of vectors and linear transformations.
+
+﻿In broad terms, vectors are things you can add and linear transformations are very special functions of vectors that respect vector addition. To understand this a little better, lets try some examples. Please be prepared to change the way you think about some familiar mathematical objects and keep a pencil and piece of paper handy!
+
+- [1.1: What Are Vectors?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.01%3A_What_Are_Vectors)Vectors are things you can add and scalar multiply.
+- [1.2: What Are Linear Functions?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.02%3A_What_Are_Linear_Functions)In calculus classes, the main subject of investigation was functions and their rates of change. In linear algebra, functions will again be focus of your attention, but now functions of a very special type.
+- [1.3: What is a Matrix?](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.03%3A_What_is_a_Matrix)Matrices are linear functions of a certain kind. One way to learn about them is by studying systems of linear equations.
+- [1.4: Review Problems](https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_(Waldron_Cherney_and_Denton)/01%3A_What_is_Linear_Algebra/1.04%3A_Review_Problems)
+
+## Contributor
+
+- [David Cherney](http://www.math.ucdavis.edu/research/profiles/?fac_id=cherney), [Tom Denton,](http://www.researchgate.net/profile/Tom_Denton) and [Andrew Waldron](http://www.math.ucdavis.edu/~wally/) (UC Davis)
+
+- Thumbnail: In three-dimensional Euclidean space, these three planes represent solutions of linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations. (CC BY-SA 3.0; Alksentrs via Wikipedia)
+
+
+---
+
+### Source 14: Linear algebra
+
+**Content:**
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+
+From Wikipedia, the free encyclopedia
+
+Branch of mathematics
+
+**Linear algebra** is the branch of [mathematics](https://en.wikipedia.org/wiki/Mathematics) concerning [linear equations](https://en.wikipedia.org/wiki/Linear_equation) such as
+
+a1x1+⋯+anxn=b,{\\displaystyle a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n}=b,}
+
+[linear maps](https://en.wikipedia.org/wiki/Linear_map) such as
+
+(x1,…,xn)↦a1x1+⋯+anxn,{\\displaystyle (x\_{1},\\ldots ,x\_{n})\\mapsto a\_{1}x\_{1}+\\cdots +a\_{n}x\_{n},}
+
+and their representations in [vector spaces](https://en.wikipedia.org/wiki/Vector_space) and through [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)).[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-2)[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-3)
+
+In three-dimensional [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space), these three planes represent solutions to linear equations, and their intersection represents the set of common solutions: in this case, a unique point. The blue line is the common solution to two of these equations.
+
+Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of [geometry](https://en.wikipedia.org/wiki/Geometry), including for defining basic objects such as [lines](https://en.wikipedia.org/wiki/Line_(geometry)), [planes](https://en.wikipedia.org/wiki/Plane_(geometry)) and [rotations](https://en.wikipedia.org/wiki/Rotation_(mathematics)). Also, [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis), a branch of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), may be viewed as the application of linear algebra to [function spaces](https://en.wikipedia.org/wiki/Space_of_functions).
+
+Linear algebra is also used in most sciences and fields of [engineering](https://en.wikipedia.org/wiki/Engineering) because it allows [modeling](https://en.wikipedia.org/wiki/Mathematical_model) many natural phenomena, and computing efficiently with such models. For [nonlinear systems](https://en.wikipedia.org/wiki/Nonlinear_system), which cannot be modeled with linear algebra, it is often used for dealing with [first-order approximations](https://en.wikipedia.org/wiki/First-order_approximation), using the fact that the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of a [multivariate function](https://en.wikipedia.org/wiki/Multivariate_function) at a point is the linear map that best approximates the function near that point.
+
+## History
+
+\[ [edit](https://en.wikipedia.org/w/index.php?title=Linear_algebra&action=edit&section=1)\]
+
+See also: [Determinant § History](https://en.wikipedia.org/wiki/Determinant#History), and [Gaussian elimination § History](https://en.wikipedia.org/wiki/Gaussian_elimination#History)
+
+The procedure (using c... [Content truncated for context window]
+
+
+---
+
+### Source 15: Linear Algebra | Mathematics | MIT OpenCourseWare
 
 **Content:**
 ### Browse Course Material
@@ -100,95 +284,398 @@ These windows in Philadelphia represent a beautiful block matrix. (Courtesy Gail
 
 ---
 
-### Source 4: Free Linear Algebra textbook, from Jim Hefferon
+### Source 16: Linear Algebra for Computer Science
 
 **Content:**
-_Linear Algebra_
-by Jim Hefferon
-is a text for a first undergraduate course.
-It is Free.
-Use it as the main book, as a supplement, or for independent study.
+[Skip to content](https://la4cs.com/la4cs.com#content)
 
-### Get the book
+###### LA4CS
 
-Clicking on this link offers you a chance to contribute to
-OpenIntro,
-who work to make Open materials more adoptable.
-You can get the electronic version of the
-text for free by just setting the slider to 0:
-[Download _Linear Algebra_](https://www.openintro.org/go?id=linalg4&referrer=hefferon.net).
-(If you do contribute to
-[OpenIntro.org](https://www.openintro.org)
-then note that the page wording is confusing.
-It says that the money
-goes to the author but instead it means OpenIntro.)
+# _Essential_  Math for CS
 
-### Text highlights
+An enjoyable and readable textbook on mathematics, LA4CS introduces the essential concepts and practice of Linear Algebra to the undergraduate student of computer science.
 
-- Standard coverage
-Linear systems and Gauss's method,
-vector spaces, linear maps and matrices, determinants,
-and eigenvectors and eigenvalues.
-- Developmental approach
-The book proves all of the results
-but does not start by assuming that
-students are already able at abstract work.
-Instead, it proceeds with a great deal of
-motivation, many computational examples,
-and many exercises.
-The goal is to raise
-each student's level of
-mathematical maturity.
-- Extensive exercise sets
-Each subsection has a wide range of exercises,
-from
-routine verifications to a few challenges.
-The
-[book of solutions](https://jheffero.w3.uvm.edu/linearalgebra/jhanswer.pdf)
-gives the answer to every one, completely worked.
-And, clicking on a problem
-takes you to its answer
-while clicking on the answer takes you back to the problem.
-- Popular
-Used in hundreds of classes at many schools,
-as well as by thousands of people
-for independent study.
-- Applications
-Each chapter finishes with four or five short
-supplemental topics
-for reading or projects, or for
-small group work.
-- Extras
-There are
-[beamer slides](https://jheffero.w3.uvm.edu/linearalgebra/slides.zip)
-for classroom presentations,
-a
-[lab manual](https://jheffero.w3.uvm.edu/linearalgebra/lab.pdf)
-using
-[_Sage_](https://www.sagemath.org/),
-and [videos](https://www.youtube.com/playlist?list=PLwF3A0R8OzMoMlE1-SaEh8h9VqUlO-r52).
-For more, see the page for [instructors](https://hefferon.net/teaching.html).
-- Prerequisite
-One semester of calculus.
-- Free
-Everything is
-[Freely available](https://hefferon.net/source.html),
-including the
-[LaTeX source](https://gitlab.com/jim.hefferon/linear-algebra).
-You can also buy a
-[paper copy of the book](https://hefferon.net/hardcopy.html).
-- Reviews
-Some from:
-[the Mathematical Association of America](https://mathdl.maa.org/mathDL/19/?pa=reviews&sa=viewBook&bookId=72055),
-[the American Institute of Mathematics](https://open.umn.edu/opentextbooks/textbooks/24),
-[the Open Textbook Library](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=24),
-[_The Assayer_, a longstanding site about free texts](https://www.theassayer.org/cgi-bin/asbook.cgi?book=29).
-- Award winning
-Recipient of the 2020 Solow Award
-from the Mathematical Association of America, for
-“impact on undergraduate education in mathematics.”
+The focus of this book is on the elegance and beauty of the numerical techniques and algorithms originating from Linear Algebra. As a practical handbook for computer and data scientists, LA4CS restricts itself mostly to real fields and tractable discourses, rather than deep and theoretical mathematics.
 
-### Mor... [Content truncated for context window]
+The full book is available for [**download** as a PDF file](https://la4cs.com/files/LA4CS-Free.pdf). **For free**. No strings attached.
+Or you can **read** the whole book as a flip book.
+
+[Get PDF Now](https://la4cs.com/files/LA4CS-Free.pdf)
+
+[Video: Why Learn LA for CS?](https://youtu.be/g6LdgzHtGjo)
+
+[Video: Full Playlist](https://youtube.com/playlist?list=PL1VvHem4QmRITdWw_Uu2QV-a5S3n8uFhL)
+
+#### **Various Editions of LA4CS available:**
+
+- Free Edition: About 280 pages. Contains all the text and examples, but not exercises and their solutions. Freely [downloadable](https://la4cs.com/files/LA4CS-Free.pdf).
+- Full Edition: About 340 pages. Contains everything in the free version plus chapter summaries, exercises and solutions. [Buy it for $7.95](https://buy.thulasidas.com/LA4CS)
+- Solution Manual: About 100 pages. Only the chapter summaries, exercises and solutions. (Full Version minus the Free one) [Get it for $4.95](https://buy.thulasidas.com/LA4CS-Soln)
+
+## Welcome to the Wonderful World of Linear Algebra!
+
+In today’s age of machine learning and artificial intelligence, Linear Algebra is the branch of mathematics that holds the most relevance to computing.
+
+Why learn Linear Algebra in computer science and data analytics? Its role is similar to that of the alphabet or vocabulary or grammar in learning a language. If we want to be a writer, for instance, we have to be good at all these aspects of the language of our choice. Having these background skills alone is not enough; it will not make us a writer. But what is absolutely certain is that _without_ these skills, we will _never_ be a writer, not a good one at any rate.Linear Algebra, in much the same way, is really the basic backdrop of several of the pivotal numerical algorithms in computer science and machine learning.
+
+### Lecture Videos (from the course for which this book was written)
+
+**- [Chapter 1: Functions, Equations and Linearity](https://youtube.com/playlist?list=PL1VvHem4QmRLhEdOsR3fqG7tLWJr_rDeU) (August 20, 2021)**
+**- [Chapter 2: Vectors, Matrices and Their Operations](https://youtube.com/playlist?list=PL1VvHem4QmRL2WJ4t8AnbouInhVJDRobJ) (August 27, 2021)**
+**- [Chapter 3: Transposes and Determinants](https://youtube.com/playlist?list=PL1VvHem4QmRJtygKsTsFJzd7aLThS6nn4) (Sept 03, 2021)**
+**- [Chapter 4: Gaussian Elimination](https://youtube.com/playlist?list=PL1VvHem4QmRJvWkelvEh4whZzmBAKM0vA) (Sept 10, 2021)**... [Content truncated for context window]
+
+
+---
+
+### Source 17: Introduction to Linear Algebra Using Python
+
+**Content:**
+## Guides
+
+- [Introduction](https://linearalgebra.xyz/guides/introduction)
+- [Linear Systems](https://linearalgebra.xyz/guides/linear-systems)
+- [Matrices](https://linearalgebra.xyz/guides/matrices)
+- [Solving Systems of Linear Equations](https://linearalgebra.xyz/guides/solving-systems-of-linear-equations)
+- [Vectors](https://linearalgebra.xyz/guides/vectors)
+
+subscribe [via RSS](https://linearalgebra.xyz/feed/guides.xml)
+
+
+---
+
+### Source 18: Pauls Online Notes
+
+**Content:**
+[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd.jpg)](https://www.angelfire.lycos.com/)
+
+[![Site hosted by Angelfire.com: Build your free website today!](https://www.angelfire.com/adm/ad/angelfire-freeAd2.jpg)](https://www.angelfire.lycos.com/)
+
+| | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Paul's Online Math Notes |
+| | | | |
+| --- |
+| [Algebra](http://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) |
+| |
+| [Calculus I](http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx) |
+| |
+| [Calculus II](http://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx) |
+| |
+| [Calculus III](http://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx) |
+| |
+| [Linear Algebra](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
+| |
+| [Differential Equations](http://tutorial.math.lamar.edu/Classes/DE/DE.aspx) |
+
+| | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Home](http://tutorial.math.lamar.edu/) | | |
+| --- |
+| | | | | |
+| --- | --- |
+| [Class Notes](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
+| --- |
+| | | | | |
+| --- | --- |
+| [Extras/Reviews](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_horiz_out.gif) | | | |
+| --- |
+| | | [Cheat Sheets & Tables](http://tutorial.math.lamar.edu/cheat_table.aspx) | | |
+| --- |
+| | | [Downloads](http://tutorial.math.lamar.edu/download.aspx) | | |
+| |
+| | | |
+| --- | --- |
+| Chapters |
+| |
+| [Linear Algebra Home](http://tutorial.math.lamar.edu/Classes/LinAlg/LinAlg.aspx) |
+| |
+| | | |
+| --- | --- |
+| [Systems of Equations and Matrices](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Determinants](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Euclidean n-Space](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Vector Spaces](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| | | |
+| --- | --- |
+| [Eigenvalues and Eigenvectors](javascript:void(0);) | ![](https://www.angelfire.com/crazy/coolgraphics/paula%20home_files/arrow_vert_out.gif) | |
+| |
+| Misc |
+| |
+| [Contact Me](http://tutorial.math.lamar.edu/contact.aspx) |
+| |
+| [Downloads](http://tutorial.math.lamar.edu/download.aspx) |
+| |
+| [FAQ](http://tutorial.math.lamar.edu/faq.aspx) |
+| |
+| [Links](http://tutorial.math.lamar.edu/links.aspx) |
+| |
+| [My Students](http://tutorial.math.lamar.edu/mystudents.aspx) |
+| |
+| [Site Map](http://tutorial.math.lamar.edu/sitemap.aspx) |
+| |
+| [Terms of Use](http://tutorial.math.lamar.edu/terms.aspx) | | | | | | |
+| --- | --- | -... [Content truncated for context window]
+
+
+---
+
+### Source 19: Introduction to Linear Algebra
+
+**Content:**
+# Introduction to Linear Algebra
+
+![list of linear algebra problems](https://i1.wp.com/yutsumura.com/wp-content/uploads/2016/07/list-of-linear-algebra-problems-eye-catch-e1497213291742.jpg?fit=720%2C360&ssl=1)
+
+# Introduction to Linear Algebra
+
+Some problems and solutions by the topics that are taught in the undergraduate linear algebra course (Math 2568) in the Ohio State University.
+
+The number of chapters/sections are based on the textbook [Introduction to Linear Algebra, 5th edition,](http://amzn.to/2aLC5xy)
+
+by L.W. Johnson, R.D. Riess, and J.T. Arnold.
+
+Contents
+
+- [Chapter 1. Matrices and Systems of Linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_1_Matrices_and_Systems_of_Linear_Equations)
+ - [1.1 Introduction to Matrices and Systems of linear equations](https://yutsumura.com/introduction-to-linear-algebra/#11_Introduction_to_Matrices_and_Systems_of_linear_equations)
+ - [1.2 Echelon Form and Gaussian-Jordan Elimination](https://yutsumura.com/introduction-to-linear-algebra/#12_Echelon_Form_and_Gaussian-Jordan_Elimination)
+ - [1.3 Consistent Systems of linear Equations](https://yutsumura.com/introduction-to-linear-algebra/#13_Consistent_Systems_of_linear_Equations)
+ - [1.5 Matrix Operations](https://yutsumura.com/introduction-to-linear-algebra/#15_Matrix_Operations)
+ - [1.6 Algebraic Properties of Matrix operations](https://yutsumura.com/introduction-to-linear-algebra/#16_Algebraic_Properties_of_Matrix_operations)
+ - [1.7 Linear Independence and Nonsingular Matrices](https://yutsumura.com/introduction-to-linear-algebra/#17_Linear_Independence_and_Nonsingular_Matrices)
+ - [1.9 Matrix Inverses and Their Properties](https://yutsumura.com/introduction-to-linear-algebra/#19_Matrix_Inverses_and_Their_Properties)
+- [Midterm Exam 1 (covers Chapter 1)](https://yutsumura.com/introduction-to-linear-algebra/#Midterm_Exam_1_covers_Chapter_1)
+- [Chapter 2. Vectors in 2-Space and 3-Space](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_2_Vectors_in_2-Space_and_3-Space)
+ - [2.1 Vectors in The Plane](https://yutsumura.com/introduction-to-linear-algebra/#21_Vectors_in_The_Plane)
+ - [2.2 Vectors in Space](https://yutsumura.com/introduction-to-linear-algebra/#22_Vectors_in_Space)
+ - [2.3 The Dot Product and The Cross Product](https://yutsumura.com/introduction-to-linear-algebra/#23_The_Dot_Product_and_The_Cross_Product)
+- [Chapter 3. The Vector Space $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#Chapter_3_The_Vector_Space_92Rn)
+ - [3.2 Vector Space Properties of $\\R^n$](https://yutsumura.com/introduction-to-linear-algebra/#32_Vector_Space_Properties_of_92Rn)
+ - [3.3 Examples of Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#33_Examples_of_Subspaces)
+ - [3.4 Bases for Subspaces](https://yutsumura.com/introduction-to-linear-algebra/#34_Bases_for_Subspaces)
+ - [3.5 Dimension](https://yutsumura.com/introduction-to-linear-algebra/#35_Dimension)
+ - [3.6 Orthogonal Bases for Subspaces](h... [Content truncated for context window]
+
+
+---
+
+### Source 20: linalg.dvi
+
+**Content:**
+Linear Algebra Review and Reference
+Zico Kolter
+October 16, 2007
+1 Basic Concepts and Notation
+Linear algebra provides a way of compactly representing and operating on sets of linear
+equations. For example, consider the following system of equations:
+4x1 − 5x2 = −13
+−2x1 + 3x2 = 9 .
+This is two equations and two variables, so as you know from high school algebra, you
+can find a unique solution for x1 and x2 (unless the equations are somehow degenerate, for
+example if the second equation is simply a multiple of the first, but in the case above there
+is in fact a unique solution). In matrix notation, we can write the system more compactly
+as:
+Ax = b
+with A =
+
+4 −5
+−2 3 
+, b =
+
+13
+−9
+
+.
+As we will see shortly, there are many advantages (including the obvious space savings)
+to analyzing linear equations in this form.
+1.1 Basic Notation
+We use the following notation:
+• By A ∈ R
+m×n we denote a matrix with m rows and n columns, where the entries of A
+are real numbers.
+• By x ∈ R
+n
+, we denote a vector with n entries. Usually a vector x will denote a column
+vector — i.e., a matrix with n rows and 1 column. If we want to explicitly represent
+a row vector — a matrix with 1 row and n columns — we typically write x
+T
+(here
+x
+T denotes the transpose of x, which we will define shortly).
+1
+• The ith element of a vector x is denoted xi
+:
+x =
+
+
+
+
+
+x1
+x2
+.
+.
+.
+xn
+
+
+
+
+
+.
+• We use the notation aij (or Aij , Ai,j , etc) to denote the entry of A in the ith row and
+jth column:
+A =
+
+
+
+
+
+a11 a12 · · · a1n
+a21 a22 · · · a2n
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+am1 am2 · · · amn
+
+
+
+
+
+.
+• We denote the jth column of A by aj or A:,j :
+A =
+
+
+| | |
+a1 a2 · · · an
+| | |
+
+.
+• We denote the ith row of A by a
+T
+i
+or Ai,::
+A =
+
+
+
+
+
+— a
+T
+1 —
+— a
+T
+2 —
+.
+.
+.
+— a
+T
+m —
+
+
+
+
+
+.
+• Note that these definitions are ambiguous (for example, the a1 and a
+T
+1
+in the previous
+two definitions are not the same vector). Usually the meaning of the notation should
+be obvious from its use.
+2 Matrix Multiplication
+The product of two matrices A ∈ R
+m×n and B ∈ Rn×p
+is the matrix
+C = AB ∈ R
+m×p
+,
+where
+Cij =
+Xn
+k=1
+AikBkj .
+Note that in order for the matrix product to exist, the number of columns in A must equal
+the number of rows in B. There are many ways of looking at matrix multiplication, and
+we’ll start by examining a few special cases.
+2
+2.1 Vector-Vector Products
+Given two vectors x, y ∈ R
+n
+, the quantity x
+T
+y, sometimes called the inner product or dot
+product of the vectors, is a real number given by
+x
+T
+y ∈ R =
+Xn
+i=1
+xiyi.
+Note that it is always the case that x
+T
+y = y
+T x.
+Given vectors x ∈ R
+m, y ∈ Rn
+(they no longer have to be the same size), xyTis called
+the outer product of the vectors. It is a matrix whose entries are given by (xyT)ij = xiyj,
+i.e.,
+xyT ∈ R
+m×n =
+
+
+
+
+
+x1y1 x1y2 · · · x1yn
+x2y1 x2y2 · · · x2yn
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+xmy1 xmy2 · · · xmyn
+
+
+
+
+
+.
+2.2 Matrix-Vector Products
+Given a matrix A ∈ R
+m×n and a vector x ∈ Rn
+, their product is a... [Content truncated for context window]
 
 
 ---
@@ -222,7 +709,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

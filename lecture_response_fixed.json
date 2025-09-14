@@ -1,0 +1,37 @@
+﻿{
+  "lecture": {
+    "lecture_segments": [
+      {
+        "content": "Welcome! Today we're exploring basic algebra - the foundation of all higher mathematics. Think of algebra as a language where letters represent unknown numbers we need to find.",
+        "type": "context"
+      },
+      {
+        "content": "x + 5 = 12",
+        "description": "Writing a simple linear equation",
+        "type": "action"
+      },
+      {
+        "content": "Here's our first equation. The key insight is that whatever we do to one side, we must do to the other to keep it balanced. Let's solve by subtracting 5 from both sides.",
+        "type": "context"
+      },
+      {
+        "content": "x = 7",
+        "description": "Showing the solution after isolating x",
+        "type": "action"
+      },
+      {
+        "content": "Perfect! We isolated x and found our answer. This process of maintaining balance while manipulating equations is the heart of algebra. It's like a mathematical scale - keep both sides equal.",
+        "type": "context"
+      },
+      {
+        "content": "Now solve this equation for y: y - 3 = 8",
+        "expected_answer": "y = 11",
+        "type": "question"
+      }
+    ],
+    "total_segments": 6
+  },
+  "status": "success",
+  "topic": "Basic Algebra"
+}
+

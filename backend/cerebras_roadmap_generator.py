@@ -351,11 +351,11 @@ CRITICAL RULE:
 - "NO" (doesn't know) = ONLY POSITIVE or ZERO adjustments (never negative)
 
 IF STUDENT ANSWERED "YES" (shows knowledge):
-- NEGATIVE (-0.2 to -0.1): Topics directly related to the question - reduce priority since student understands
+- NEGATIVE (-0.4 to -0.1): Topics directly related to the question - reduce priority since student understands
 - ZERO (0.0): Topics not related to this specific question
 
 IF STUDENT ANSWERED "NO" (shows lack of knowledge):
-- POSITIVE (0.1 to 0.2): Topics directly related to the question - increase priority since student needs help
+- POSITIVE (0.1 to 0.4): Topics directly related to the question - increase priority since student needs help
 - ZERO (0.0): Topics not related to this specific question
 
 NEVER give positive adjustments for "YES" answers or negative adjustments for "NO" answers. Most topics should be 0.0 unless directly relevant.

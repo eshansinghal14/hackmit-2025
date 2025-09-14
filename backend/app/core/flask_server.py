@@ -153,6 +153,64 @@ def analyze_diagnostic_response():
         print(f"❌ Error in diagnostic analysis: {e}")
         return jsonify({"success": False, "error": str(e)})
 
+@app.route('/api/draw-latex', methods=['POST'])
+def draw_latex():
+    """Draw LaTeX equation directly using ai_drawing module"""
+    try:
+        data = request.json
+        latex = data.get('latex', '')
+        x = data.get('x', 100)
+        y = data.get('y', 100)
+        
+        print(f"🎨 Drawing LaTeX: {latex} at position ({x}, {y})")
+        
+        # Import the function here to avoid circular imports
+        sys.path.append(os.path.dirname(__file__))
+        from ai_drawing import draw_latex_to_tldraw
+        
+        # Call the LaTeX drawing function
+        success = draw_latex_to_tldraw(latex, x, y)
+        
+        return jsonify({
+            'status': 'success' if success else 'failed',
+            'success': success,
+            'latex': latex,
+            'position': {'x': x, 'y': y}
+        })
+        
+    except Exception as e:
+        print(f"❌ Error drawing LaTeX: {e}")
+        return jsonify({'status': 'error', 'error': str(e)}), 500
+
+@app.route('/api/validate-answer', methods=['POST'])
+def validate_answer():
+    """Validate student's whiteboard answer using Claude vision"""
+    try:
+        data = request.json
+        screenshot = data.get('screenshot', '')
+        expected_answer = data.get('expected_answer', '')
+        
+        print(f"🔍 Validating student answer. Expected: {expected_answer}")
+        
+        # Import Claude service
+        sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'services'))
+        from claude import ClaudeService
+        
+        claude_service = ClaudeService()
+        
+        # Analyze the screenshot
+        result = claude_service.validate_whiteboard_answer(screenshot, expected_answer)
+        
+        return jsonify(result)
+        
+    except Exception as e:
+        print(f"❌ Error validating answer: {e}")
+        return jsonify({
+            'correct': False,
+            'feedback': 'Unable to validate answer',
+            'explanation': str(e)
+        }), 500
+
 @app.route('/api/process-annotations', methods=['POST'])
 def process_annotations():
     """Process Claude annotations and execute them with topic context"""
@@ -315,6 +373,8 @@ if __name__ == '__main__':
     print("🚀 Starting Flask tldraw server...")
     print("📍 API available at: http://localhost:5001")
     print("📏 Draw line: POST /api/draw-line")
+    print("🎨 Draw LaTeX: POST /api/draw-latex")
+    print("✅ Validate answer: POST /api/validate-answer")
     print("📋 Get commands: GET /api/commands")
     print("🧹 Clear: POST /api/clear")
     print("🎓 Start lesson: POST /api/start-lesson")
