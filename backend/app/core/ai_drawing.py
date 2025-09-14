@@ -264,6 +264,49 @@ def _draw_connected_paths(drawing_segments):
     
     return True
 
+def draw_text_to_tldraw(text: str, x: float, y: float) -> bool:
+    """
+    Draw regular text (not LaTeX) to tldraw using simple text shapes
+    
+    Args:
+        text: Plain text string to display
+        x: X coordinate for text position
+        y: Y coordinate for text position
+    
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    print(f"✍️ Drawing text: {text}")
+    
+    try:
+        # Create text shape command for tldraw
+        command = {
+            'type': 'create_text',
+            'text': text,
+            'x': x,
+            'y': y,
+            'color': 'black',
+            'size': 'm'
+        }
+        
+        # Send to tldraw API
+        url = "http://localhost:5001/api/draw-text"
+        response = requests.post(url, json=command)
+        
+        if response.status_code == 200:
+            print(f"✅ Text drawn successfully: {text}")
+            return True
+        else:
+            print(f"❌ Error drawing text: {response.status_code}")
+            return False
+            
+    except requests.exceptions.ConnectionError:
+        print("❌ Flask server not running. Start with: python flask_server.py")
+        return False
+    except Exception as e:
+        print(f"❌ Error drawing text: {e}")
+        return False
+
 def clear_tldraw():
     """Clear all drawings on tldraw"""
     try:

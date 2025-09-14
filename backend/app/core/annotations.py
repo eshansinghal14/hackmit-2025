@@ -75,6 +75,9 @@ def process_claude_annotations(claude_output: Dict[str, Any]) -> bool:
         ]
     }
     """
+    import sys
+    import os
+    sys.path.append(os.path.dirname(__file__))
     from ai_drawing import draw_latex_to_tldraw
     
     manager = SimplifiedAnnotationManager()
@@ -88,7 +91,7 @@ def process_claude_annotations(claude_output: Dict[str, Any]) -> bool:
             x = annotation.get("x", 100)
             y = annotation.get("y", 100)
             
-            if annotation_type == "latex" or annotation_type == "text":
+            if annotation_type == "latex":
                 content = annotation.get("content", "")
                 if content:
                     success = draw_latex_to_tldraw(content, x, y)
@@ -97,6 +100,17 @@ def process_claude_annotations(claude_output: Dict[str, Any]) -> bool:
                         print(f"✅ Drew LaTeX: {content} at ({x}, {y})")
                     else:
                         print(f"❌ Failed to draw LaTeX: {content}")
+            
+            elif annotation_type == "text":
+                content = annotation.get("content", "")
+                if content:
+                    # Treat all text as LaTeX for consistent rendering
+                    success = draw_latex_to_tldraw(content, x, y)
+                    if success:
+                        success_count += 1
+                        print(f"✅ Drew text as LaTeX: {content} at ({x}, {y})")
+                    else:
+                        print(f"❌ Failed to draw text as LaTeX: {content}")
             
             elif annotation_type == "circle":
                 radius = annotation.get("radius", 50)

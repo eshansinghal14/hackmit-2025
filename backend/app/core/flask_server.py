@@ -85,6 +85,7 @@ def draw_circle():
         
     return jsonify({'status': 'success', 'command': command})
 
+
 @app.route('/api/nodes', methods=['GET'])
 def get_nodes():
     """Get the current node data with weights"""
@@ -176,6 +177,121 @@ def process_annotations():
         
     except Exception as e:
         print(f"❌ Error processing annotations: {e}")
+        return jsonify({'status': 'error', 'error': str(e)}), 500
+
+@app.route('/api/process-tutoring-session', methods=['POST'])
+def process_tutoring_session():
+    """Process tutoring session with LLM - screenshot + speech -> adaptive response + annotations"""
+    try:
+        data = request.json
+        
+        # Extract session data
+        speech_text = data.get('speech', '')
+        screenshot_data = data.get('screenshot', '')
+        topic = data.get('topic', 'General Learning')
+        conversation_history = data.get('conversationHistory', [])
+        current_question = data.get('currentQuestion', '')
+        
+        print(f"  Processing tutoring session for: {topic}")
+        print(f"  User said: {speech_text}")
+        
+        # Use Claude API for dynamic responses instead of hardcoded ones
+        try:
+            import anthropic
+            client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+            
+            # Build conversation context
+            system_prompt = f"""You are an interactive AI tutor teaching {topic}. 
+
+CRITICAL: Respond with natural, conversational language that varies based on what the student says. Don't repeat the same responses.
+
+VISUAL RULES:
+- Use mostly circles and basic shapes for annotations 
+- Minimize text annotations - prefer visual/geometric representations
+- Only use LaTeX for key mathematical expressions
+- Each circle represents a concept, data point, or step
+
+When student says: "{speech_text}"
+- Give a unique, contextual response 
+- Ask follow-up questions to continue the conversation
+- Create 2-4 visual annotations maximum (prefer circles over text)
+- Make it feel like a real tutoring conversation"""
+
+            message = client.messages.create(
+                model="claude-3-haiku-20240307",
+                max_tokens=300,
+                system=system_prompt,
+                messages=[{
+                    "role": "user", 
+                    "content": f"Student just said: '{speech_text}'. Respond as their tutor and provide 2-3 simple visual annotations (prefer circles). Return JSON with: speech_response, next_question, annotations (type/content/x/y/radius), teaching_notes"
+                }]
+            )
+            
+            # Parse Claude's response 
+            try:
+                import json
+                response_content = message.content[0].text
+                # Extract JSON from response
+                json_start = response_content.find('{')
+                json_end = response_content.rfind('}')+1
+                if json_start != -1 and json_end != -1:
+                    response_data = json.loads(response_content[json_start:json_end])
+                else:
+                    raise ValueError("No JSON found")
+            except:
+                # Fallback if JSON parsing fails
+                response_data = {
+                    "speech_response": f"That's interesting! Tell me more about your thoughts on {topic}. What specific part would you like to explore?",
+                    "next_question": "What would you like to focus on next?",
+                    "annotations": [
+                        {"type": "circle", "x": 300, "y": 200, "radius": 30}
+                    ],
+                    "teaching_notes": f"Continuing conversation about {topic}"
+                }
+                
+        except Exception as e:
+            print(f"  Claude API failed: {e}")
+            # Simple fallback without repetitive responses
+            response_data = {
+                "speech_response": f"I heard you say '{speech_text}'. What aspect of {topic} interests you most?",
+                "next_question": "Can you elaborate on that?",
+                "annotations": [
+                    {"type": "circle", "x": 250, "y": 150, "radius": 25}
+                ],
+                "teaching_notes": "API fallback - continuing conversation"
+            }
+        
+        # Clear previous annotations before drawing new ones
+        try:
+            clear_response = requests.post("http://localhost:5001/api/clear")
+            if clear_response.status_code == 200:
+                print("  Cleared previous annotations")
+        except Exception as e:
+            print(f"⚠️ Could not clear annotations: {e}")
+        
+        # Process annotations if present (but don't let failures block the response)
+        annotations = response_data.get('annotations', [])
+        annotation_success = False
+        if annotations:
+            try:
+                # Import the function here to avoid circular imports
+                sys.path.append(os.path.dirname(__file__))
+                from annotations import process_claude_annotations
+                
+                annotation_success = process_claude_annotations({'annotations': annotations})
+                print(f"📝 Processed {len(annotations)} annotations, success: {annotation_success}")
+            except Exception as e:
+                print(f"⚠️ Annotation processing failed: {e}")
+                annotation_success = False
+        
+        return jsonify({
+            'status': 'success',
+            'response': response_data,
+            'annotations_processed': annotation_success
+        })
+        
+    except Exception as e:
+        print(f"❌ Error in tutoring session: {e}")
         return jsonify({'status': 'error', 'error': str(e)}), 500
 
 @app.route('/api/generate-roadmap', methods=['POST'])

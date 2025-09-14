@@ -46,7 +46,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const pollCommands = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/commands')
+        const response = await fetch('http://localhost:5001/api/commands')
         const commands = await response.json()
         
         if (commands.length > 0 && editorRef.current) {
@@ -89,7 +89,7 @@ const App: React.FC = () => {
           })
           
           // Clear processed commands
-          await fetch('http://localhost:5000/api/commands', { method: 'DELETE' })
+          await fetch('http://localhost:5001/api/commands', { method: 'DELETE' })
         }
       } catch (error: unknown) {
         // Only log if it's not a network error (server actually down)

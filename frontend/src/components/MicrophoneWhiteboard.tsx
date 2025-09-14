@@ -100,21 +100,64 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
     }
   }
 
-  const askInitialQuestion = () => {
-    const question = selectedTopic 
-      ? `Hi! Let's explore ${selectedTopic}. What would you like to know about this topic?`
-      : "Hi! I see we have x² on the board. Can you tell me what you know about quadratic functions?"
-    setCurrentQuestion(question)
+  const askInitialQuestion = async () => {
+    try {
+      // Get initial screenshot for context
+      const screenshot = await captureScreenshot()
+      
+      // Send initial tutoring request to get adaptive first question
+      const initialData = {
+        speech: `Starting lesson on ${selectedTopic || 'learning'}`,
+        screenshot: screenshot,
+        topic: selectedTopic || 'General Learning',
+        conversationHistory: [],
+        currentQuestion: '',
+        isInitial: true
+      }
+      
+      const response = await fetch('http://localhost:5001/api/process-tutoring-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(initialData)
+      })
+      
+      if (response.ok) {
+        const result = await response.json()
+        if (result.status === 'success') {
+          const initialResponse = result.response
+          setCurrentQuestion(initialResponse.next_question || initialResponse.speech_response)
+          
+          // Speak the initial question
+          if ('speechSynthesis' in window && initialResponse.speech_response) {
+            const utterance = new SpeechSynthesisUtterance(initialResponse.speech_response)
+            utterance.rate = 0.9
+            utterance.pitch = 1.0
+            speechSynthesis.speak(utterance)
+          }
+          
+          console.log('🤖 AI adaptive initial question:', initialResponse.speech_response)
+          return
+        }
+      }
+    } catch (error) {
+      console.error('Error getting initial question from LLM:', error)
+    }
     
-    // Speak the question using text-to-speech
+    // Fallback to simple question if LLM fails
+    const fallbackQuestion = selectedTopic 
+      ? `Hi! Let's explore ${selectedTopic}. What would you like to know about this topic?`
+      : "Hi! I see we have some content on the board. What would you like to learn?"
+    
+    setCurrentQuestion(fallbackQuestion)
+    
     if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(question)
+      const utterance = new SpeechSynthesisUtterance(fallbackQuestion)
       utterance.rate = 0.9
       utterance.pitch = 1.0
       speechSynthesis.speak(utterance)
     }
     
-    console.log('🤖 AI asked:', question)
+    console.log('🤖 AI fallback question:', fallbackQuestion)
   }
 
   const captureScreenshot = useCallback(async () => {
@@ -146,39 +189,76 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
       // Get current screenshot
       const screenshot = await captureScreenshot()
       
-      // Prepare context data
-      const contextData = {
+      // Prepare tutoring session data
+      const tutorData = {
         speech: speech,
         screenshot: screenshot,
-        microphoneHistory: microphoneHistory.slice(-5), // Last 5 utterances
+        topic: selectedTopic || 'General Learning',
+        conversationHistory: microphoneHistory.slice(-5), // Last 5 utterances
         currentQuestion: currentQuestion,
         timestamp: new Date().toISOString()
       }
       
-      console.log('🧠 Processing speech with context...', contextData)
+      console.log('🧠 Processing speech with LLM tutoring system...', {
+        speech: speech,
+        topic: tutorData.topic,
+        hasScreenshot: !!screenshot
+      })
       
-      // Here you would send to Claude/AI for processing
-      // For now, just log the context
+      // Send to LLM tutoring API
+      const response = await fetch('http://localhost:5001/api/process-tutoring-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(tutorData)
+      })
       
-      // Example response processing:
-      setTimeout(() => {
-        const responses = [
-          "Great! Can you solve x² = 4?",
-          "Interesting! What happens when x² = 9?",
-          "Let me draw the graph of y = x²",
-          "Can you tell me about the vertex of this parabola?"
-        ]
-        const nextQuestion = responses[Math.floor(Math.random() * responses.length)]
-        setCurrentQuestion(nextQuestion)
+      if (!response.ok) {
+        throw new Error(`Tutoring API error: ${response.status}`)
+      }
+      
+      const result = await response.json()
+      
+      if (result.status === 'success') {
+        const tutorResponse = result.response
         
-        if ('speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(nextQuestion)
+        // Use speech_response for BOTH TTS and display to avoid mismatch
+        setCurrentQuestion(tutorResponse.speech_response)
+        
+        // Speak the AI's response (same as displayed)
+        if ('speechSynthesis' in window && tutorResponse.speech_response) {
+          const utterance = new SpeechSynthesisUtterance(tutorResponse.speech_response)
+          utterance.rate = 0.9
+          utterance.pitch = 1.0
           speechSynthesis.speak(utterance)
         }
-      }, 2000)
+        
+        // Log teaching progress
+        if (tutorResponse.teaching_notes) {
+          console.log('📚 Teaching Notes:', tutorResponse.teaching_notes)
+        }
+        
+        console.log('✅ LLM tutoring response processed successfully')
+        
+        // Note: Annotations are automatically processed by the backend
+        if (result.annotations_processed) {
+          console.log('🎨 Whiteboard annotations were drawn by the AI tutor')
+        }
+        
+      } else {
+        throw new Error(result.error || 'Tutoring session failed')
+      }
       
     } catch (error) {
-      console.error('Error processing speech with context:', error)
+      console.error('Error in LLM tutoring session:', error)
+      
+      // Fallback to encourage continued interaction
+      const fallbackQuestion = `I'm having trouble processing that. Could you tell me more about ${selectedTopic || 'what you\'re thinking'}?`
+      setCurrentQuestion(fallbackQuestion)
+      
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(fallbackQuestion)
+        speechSynthesis.speak(utterance)
+      }
     }
   }
 
@@ -191,6 +271,24 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
     }
   }
 
+  // Add manual clear function
+  const clearWhiteboard = async () => {
+    try {
+      // Clear via API
+      await fetch('http://localhost:5001/api/clear', { method: 'POST' })
+      
+      // Also clear locally in tldraw
+      if (editorRef.current) {
+        editorRef.current.selectAll()
+        editorRef.current.deleteShapes(editorRef.current.getSelectedShapeIds())
+      }
+      
+      console.log('🧹 Cleared whiteboard manually')
+    } catch (error) {
+      console.error('Error clearing whiteboard:', error)
+    }
+  }
+
   // Poll for drawing commands from Flask server (existing logic)
   useEffect(() => {
     const pollCommands = async () => {
@@ -199,7 +297,17 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
         const commands = await response.json()
         
         if (commands.length > 0 && editorRef.current) {
-          commands.forEach((command: { type: string; symbols?: Array<Array<[number, number]>>; center?: {x: number, y: number}; radius?: number }) => {
+          commands.forEach((command: { 
+          type: string; 
+          symbols?: Array<Array<[number, number]>>; 
+          center?: {x: number, y: number}; 
+          radius?: number;
+          text?: string;
+          x?: number;
+          y?: number;
+          color?: string;
+          size?: string;
+        }) => {
             if (command.type === 'create_shape' && command.symbols) {
               let totalDelay = 0
               command.symbols.forEach((points) => {
@@ -223,7 +331,7 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
                         }
                       }
                     }])
-                  }, totalDelay * 5)
+                  }, totalDelay * 1)
                   
                   totalDelay++
                 }
@@ -339,6 +447,25 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
         ← Back
       </button>
       
+      <button
+        onClick={clearWhiteboard}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '80px',
+          background: 'rgba(220, 53, 69, 0.8)',
+          color: 'white',
+          border: 'none',
+          padding: '8px 12px',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          fontSize: '12px',
+          zIndex: 1000
+        }}
+      >
+        🧹 Clear
+      </button>
+
       <button
         onClick={() => setShowSettings(true)}
         style={{
