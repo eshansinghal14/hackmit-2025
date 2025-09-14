@@ -1,15 +1,20 @@
 **Agent 2 Knowledge Nodes for: Basic_Calculus**
 
-1. **Core Visual Foundations of Calculus** – Illustrated concepts such as limits, slopes of tangents (derivatives), and areas under curves (integrals) that provide an intuitive, picture‑based entry point to calculus fundamentals.  
+1. **Derivatives as the Fundamental Measure of Instantaneous Change**  
+   - Definition and intuition behind the derivative as the rate of change of a function at a point; essential for interpreting slopes, velocities, and marginal quantities.
 
-2. **Progressive Math Pathway Toward Calculus** – A structured learning sequence (Pre‑Algebra → Algebra → Geometry → Algebra 2 → Pre‑Calculus → Calculus) that builds the prerequisite skills necessary for successful calculus study.  
+2. **Core Differentiation Rules (Power, Product, Quotient, Chain)**  
+   - Systematic techniques for computing derivatives of basic algebraic expressions, products of functions, quotients, and composite functions, enabling rapid symbolic differentiation.
 
-3. **Why Calculus Is Powerful: Real‑World Modeling** – Emphasizes calculus as the mathematical engine behind change‑based modeling (e.g., motion, growth, optimization) and highlights its central role in science, engineering, economics, and data analysis.  
+3. **The Chain Rule for Composite Functions**  
+   - Step‑by‑step method to differentiate nested functions by multiplying outer‑derivative and inner‑derivative; critical for handling functions like \(f(g(x))\).
 
-4. **Online Learning Ecosystem for Calculus** – Consolidated resources from TC Math Academy (course catalogs, video lessons, and downloadable notes) that deliver self‑paced, multimedia instruction for both beginners and advanced learners.  
+4. **Implicit Differentiation for Non‑Explicit Relationships**  
+   - Procedure to differentiate equations where the dependent variable isn’t isolated, allowing derivative extraction from curves defined implicitly (e.g., \(x^2 + y^2 = r^2\)).
 
-5. **Targeted Skill‑Rebuilder Modules** – Short, focused courses designed to fill gaps in foundational topics (e.g., limits, functions, trigonometry) before tackling full‑scale calculus, ensuring learners have the necessary conceptual scaffolding.  
+5. **Related‑Rates Problems Linking Multiple Changing Quantities**  
+   - Application of differentiation to situations where several variables change together; solves real‑world scenarios such as moving objects, expanding geometries, and dynamic systems.
 
 **Source Summary:**
-- Sources Analyzed: 2 (Basic Calculus portal images; TC Math Academy promotional overview)
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 2 (Basic Calculus portal images & Calculus Primer – Derivatives)
+- Agent Coverage: 2 of 8 total sources (Sites 3‑4)

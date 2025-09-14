@@ -13,69 +13,94 @@ You are Agent 3 of 5 specialized research agents analyzing: "basic_calculus"
 
 ## Your Research Sources
 
-### Source 5: You can Understand Simple Calculus with just Basic Math! - YouTube
+### Source 5: Calculus Foundations | Calculus and Statistics Methods Class Notes
 
 **Content:**
-A basic introduction to Calculus with basic math. Learn more math at https://TCMathAcademy.com/. \n\nTabletClass Math Academy - https://TCMathAcademy.com/\nHelp with Middle and High School Math\nTest Prep for High School Math, College Math, Teacher Certification Math and More! \n\nPopular Math Courses:\n\nMath Foundations \nhttps://tabletclass-academy.teachable...\n\nMath Skills Rebuilder Course:\nhttps://tabletclass-academy.teachable...\n\nPre-Algebra\nhttps://tabletclass-academy.teachable...\n\nAlgebra\nhttps://tabletclass-academy.teachable...\n\nGeometry \nhttps://tabletclass-academy.teachable...\n\nAlgebra 2\nhttps://tabletclass-academy.teachable...\n\nPre-Calculus \nhttps://tabletclass-academy.teachable...\n\nIf you’re looking for a math course for any of the following, check out my full Course Catalog at: https://TCMathAcademy.com/courses/\n\n• MIDDLE \u0026 HIGH SCHOOL MATH\n• HOMESCHOOL MATH\n• COLLEGE MATH\n• TEST PREP MATH\n• TEACHER CERTIFICATION TEST MATH
-| view_count: 661,335 views | short_view_count: 661K views | num_likes: 8.3 thousand | num_subscribers: 865 thousand
+[![Fiveable](https://fiveable.me/_next/image?url=%2Fimg%2Flogos%2Flibrary_logo_lightmode.png&w=384&q=75)](https://fiveable.me/)
+
+[![Fiveable](https://fiveable.me/_next/image?url=%2Fimg%2Flogos%2Flibrary_5_logo_lightmode.png&w=96&q=75)](https://fiveable.me/)
+
+NEW
+ap style practice
+NEW
+homework tools
+
+log insign up
+
+[turn on cram mode](https://fiveable.me/unlock?item=annual-unlimited-cram)
+
+[![Fiveable](https://fiveable.me/_next/image?url=%2Fimg%2Flogos%2Flibrary_logo_lightmode.png&w=384&q=75)](https://fiveable.me/)
+
+[![Fiveable](https://fiveable.me/_next/image?url=%2Fimg%2Flogos%2Flibrary_5_logo_lightmode.png&w=96&q=75)](https://fiveable.me/)
+
+collapse
+
+[turn on cram mode](https://fiveable.me/unlock?item=annual-unlimited-cram)
+
+Calculus and Statistics Methods
+
+Calculus Foundations
+
+[Unit 1 Overview: Calculus Foundations](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1)
+
+[1.1 Limits and Continuity](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/limits-continuity/study-guide/HD8HMHSnF6B202tw)
+
+[1.2 Derivatives and Differentiation Rules](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/derivatives-differentiation-rules/study-guide/bxiBQ8Y1B0rNgkws)
+
+[1.3 Applications of Derivatives](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/applications-derivatives/study-guide/3FbF7JHyxx0Xa8ZZ)
+
+[1.4 Integrals and Integration Techniques](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/integrals-integration-techniques/study-guide/J96Z0oAuvKT8aPsY)
+
+[1.5 Applications of Integration](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/applications-integration/study-guide/wZ2p8vMGBdi2mhio)
+
+Advanced Calculus
+
+Differential Equations
+
+Probability Foundations
+
+Descriptive Statistics
+
+Inferential Statistics
+
+Applied Statistics
+
+Combinatorics Foundations
+
+Recurrence Relations & Generating Functions
+
+Graph Theory Fundamentals
+
+Counting Techniques in Combinatorics
+
+Combinatorial Optimization Techniques
+
+# 🧮Calculus and Statistics Methods Unit 1 – Calculus Foundations
+
+Calculus Foundations lay the groundwork for understanding how quantities change and accumulate. This unit covers key concepts like limits, continuity, derivatives, and integrals, which are essential for modeling real-world phenomena and solving complex problems.
+Students learn to analyze functions, calculate rates of change, and find areas under curves. These skills are crucial in fields like physics, engineering, and economics, where calculus is used to optimize designs, predict outcomes, and model dynamic systems.
+
+## Study Guides for Unit 1
+
+[1.1\
+\
+Limits and Continuity\
+\
+6 min read](https://fiveable.me/methods-of-mathematics-calculus-statistics-and-combinatorics/unit-1/limits-continuity/study-guide/HD8HMHSnF6B202tw)
+
+[1.2\
+\
+Derivatives and Differentiation Rules\
+\
+4 min... [Content truncated for context window]
 
 
 ---
 
-### Source 6: Calculus I - Review
+### Source 6: Basic Calculus Types, Formulas & Rules - Lesson - Study.com
 
 **Content:**
-- Go To
-- Notes
-- [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx)
-- [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx)
-- Show/Hide
-- [Show all Solutions/Steps/ _etc._](javascript:SHPrintPage(1,0))
-- [Hide all Solutions/Steps/ _etc._](javascript:SHPrintPage(0,0))
-
-- Sections
-- [Functions](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
-- Chapters
-- [Limits](https://tutorial.math.lamar.edu/Classes/CalcI/limitsIntro.aspx)
-- Classes
-- [Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx)
-- Calculus I
-- [Calculus II](https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx)
-- [Calculus III](https://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
-- [Differential Equations](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx)
-- Extras
-- [Algebra & Trig Review](https://tutorial.math.lamar.edu/Extras/AlgebraTrigReview/AlgebraTrig.aspx)
-- [Common Math Errors](https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx)
-- [Complex Number Primer](https://tutorial.math.lamar.edu/Extras/ComplexPrimer/ComplexNumbers.aspx)
-- [How To Study Math](https://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx)
-- [Cheat Sheets & Tables](https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx)
-- Misc
-- [Contact Me](https://tutorial.math.lamar.edu/contact.aspx)
-- [MathJax Help and Configuration](https://tutorial.math.lamar.edu/mathjax.aspx)
-
-- Notes Downloads
-- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,N)
-- Practice Problems Downloads
-- [Complete Book - Problems Only](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,P)
-- [Complete Book - Solutions](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,S)
-- Assignment Problems Downloads
-- [Complete Book](https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,A)
-- Other Items
-- [Get URL's for Download Items](https://tutorial.math.lamar.edu/DownloadURLs.aspx?bi=20)
-
-- [Print Page in Current Form (Default)](javascript:SHPrintPage())
-- [Show all Solutions/Steps and Print Page](javascript:SHPrintPage(1,1))
-- [Hide all Solutions/Steps and Print Page](javascript:SHPrintPage(0,1))
-
-Paul's Online Notes[Home](https://tutorial.math.lamar.edu/)/ [Calculus I](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)/ Review
-
-Notes [Practice Problems](https://tutorial.math.lamar.edu/Problems/CalcI/ReviewIntro.aspx) [Assignment Problems](https://tutorial.math.lamar.edu/ProblemsNS/CalcI/ReviewIntro.aspx) [Next Section](https://tutorial.math.lamar.edu/Classes/CalcI/Functions.aspx)
-
-Show Mobile NoticeShow All NotesHide All Notes
-
-Mobile Notice
-
-You appear to be on a device with a "narrow" screen width ( _i.e._ you are probably on a mobile phone). Due to the nature of the mathematics on this site it is best viewed in landscape mode. If your device is not in landscape mode many of the equations will run off the side of your device (you should be able to scroll/swipe to see... [Content truncated for context window]
+In order to continue enjoying our site, we ask that you confirm your identity as a human. Thank you very much for your cooperation.
 
 
 ---

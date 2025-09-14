@@ -30,11 +30,48 @@ Report abuse
 
 ---
 
-### Source 4: BASIC Calculus – Understand Why Calculus is so POWERFUL!
+### Source 4: Calculus Primer - Derivatives
 
 **Content:**
-An introduction to Calculus. Learn more math at https://TCMathAcademy.com/. \n\nTabletClass Math Academy - https://TCMathAcademy.com/\nHelp with Middle and High School Math\nTest Prep for High School Math, College Math, Teacher Certification Math and More! \n\nPopular Math Courses:\n\nMath Foundations \nhttps://tabletclass-academy.teachable...\n\nMath Skills Rebuilder Course:\nhttps://tabletclass-academy.teachable...\n\nPre-Algebra\nhttps://tabletclass-academy.teachable...\n\nAlgebra\nhttps://tabletclass-academy.teachable...\n\nGeometry \nhttps://tabletclass-academy.teachable...\n\nAlgebra 2\nhttps://tabletclass-academy.teachable...\n\nPre-Calculus \nhttps://tabletclass-academy.teachable...\n\nMath Notes: https://tcmathshop.com/\n\nIf you’re looking for a math course for any of the following, check out my full Course Catalog at: https://TCMathAcademy.com/courses/\n\n• MIDDLE \u0026 HIGH SCHOOL MATH\n• HOMESCHOOL MATH\n• COLLEGE MATH\n• TEST PREP MATH\n• TEACHER CERTIFICATION TEST MATH
-| view_count: 1,443,784 views | short_view_count: 1.4M views | num_likes: 34 thousand | num_subscribers: 866 thousand
+Search this site
+
+Embedded Files
+
+Skip to main content
+
+Skip to navigation
+
+# Derivatives
+
+## Unravel the mysteries of change with an elegant mathematical tool — derivatives.
+
+# Introduction to Derivatives
+
+Derivatives are core concepts in calculus, representing the rate of change of a function at a specific point. Derivatives have wide applications across physics, economics, and engineering. Calculating derivatives is a fundamental skill for solving problems involving rates, slopes, and instantaneous changes. In this handout, you will be introduced to derivatives and gain an intuitive understanding of this somewhat-complex concept.
+
+[Read now](https://www.google.com/url?q=https%3A%2F%2Fpyukey.github.io%2FPandoraxpdfs%2FPandorax%2FCalcPrimer%2FDerivatives%2FIntro_to_Derivatives.pdf&sa=D&sntz=1&usg=AOvVaw1LLnlJqntHzyQeMxxRAWHm)
+
+# Differentiation Rules
+
+Differentiation rules are essential tools in calculus that provide systematic ways to find derivatives of various functions. These rules include techniques like the power rule, product rule, quotient rule, and chain rule. By applying these rules, we can efficiently calculate derivatives and analyze the behavior of complex functions.
+
+[Read now](https://www.google.com/url?q=https%3A%2F%2Fpyukey.github.io%2FPandoraxpdfs%2FPandorax%2FCalcPrimer%2FDerivatives%2Fdifferentiation_rules.pdf&sa=D&sntz=1&usg=AOvVaw2KmwGV_IUXtiJzzkMAMBAU)
+
+# The Chain Rule
+
+The chain rule facilitates the differentiation of composite functions. It allows us to break down complex functions into simpler components and find their derivatives. By applying the chain rule, we can analyze intricate relationships between variables and understand how changes in one variable affect the overall function. Mastering the chain rule is essential for tackling dynamic systems and optimizing various processes.
+
+[Read now](https://www.google.com/url?q=https%3A%2F%2Fpyukey.github.io%2FPandoraxpdfs%2FPandorax%2FCalcPrimer%2FDerivatives%2FChain_Rule.pdf&sa=D&sntz=1&usg=AOvVaw3co7vsHHlas8SlPxbNV_46)
+
+# Implicit Differentiation
+
+Implicit differentiation is a method used to find derivatives of equations where variables are not isolated. It's indispensable for handling curves and surfaces that can't be directly expressed as functions. By differentiating both sides of an equation while treating variables as related, implicit differentiation helps analyze rates of change and relationships within complex system.
+
+[Read now](https://www.google.com/url?q=https%3A%2F%2Fpyukey.github.io%2FPandoraxpdfs%2FPandorax%2FCalcPrimer%2FDerivatives%2FImplicit_Differentiation.pdf&sa=D&sntz=1&usg=AOvVaw1GTi8S8gO4pIJn56oyAhgV)
+
+# Related Rates
+
+Related rates, a fundamental concept in calculus, deal with the changes in variables that are interconnected. It involves finding the rates of change of multiple variables within a system. This technique is crucial for analyzing dynamic scenarios, such as objects in motion or changing geometric shapes, and understanding how their v... [Content truncated for context window]
 
 
 ---

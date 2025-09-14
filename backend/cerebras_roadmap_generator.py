@@ -275,22 +275,15 @@ Create a comprehensive learning system with:
 
 The graph MUST be connected (all nodes reachable) and represent logical learning progression.
 
-Output ONLY a valid JSON array with exactly 3 elements in this format:
+Output ONLY a valid JSON array with exactly 2 elements in this format:
 
 [
   {{
-    "1": "Lesson Name 1",
-    "2": "Lesson Name 2",
-    "3": "Lesson Name 3", 
-    "4": "Lesson Name 4",
-    "5": "Lesson Name 5"
-  }},
-  {{
-    "1": [2, 3],
-    "2": [4],
-    "3": [4, 5],
-    "4": [],
-    "5": []
+    "1": {{"name": "Lesson Name 1", "weight": 1, "prerequisites": [2, 3]}},
+    "2": {{"name": "Lesson Name 2", "weight": 1, "prerequisites": [4]}},
+    "3": {{"name": "Lesson Name 3", "weight": 1, "prerequisites": [4, 5]}},
+    "4": {{"name": "Lesson Name 4", "weight": 1, "prerequisites": []}},
+    "5": {{"name": "Lesson Name 5", "weight": 1, "prerequisites": []}}
   }},
   [
     "Do you know what a limit is in calculus? (Yes/No)",
@@ -302,9 +295,8 @@ Output ONLY a valid JSON array with exactly 3 elements in this format:
 ]
 
 CRITICAL REQUIREMENTS:
-- First dict: Node numbers (as strings) mapped to lesson names
-- Second dict: Node numbers (as strings) mapped to arrays of prerequisite node numbers (as integers)
-- Third element: Array of exactly 5 diagnostic questions
+- First dict: Node numbers (as strings) mapped to objects with "name", "weight", and "prerequisites" array (weight always 1)
+- Second element: Array of exactly 5 diagnostic questions
 - Graph must be connected (every node reachable from node 1)
 - Focus on TEACHABLE CONCEPTS only
 - Return valid JSON array only, no markdown formatting"""

@@ -183,13 +183,51 @@ def test_final_consolidation(agent_outputs: List[str], topic: str):
                     clean_output = clean_output.replace('```json', '').replace('```', '').strip()
                 json_data = json.loads(clean_output)
                 
-                # Handle new array format: [lessons_dict, adjacency_dict, questions_array]
-                if isinstance(json_data, list) and len(json_data) == 3:
+                # Handle new array format: [combined_dict, questions_array]
+                if isinstance(json_data, list) and len(json_data) == 2:
+                    combined_dict, questions = json_data
+                    
+                    # Extract lesson names from the combined format
+                    if isinstance(list(combined_dict.values())[0], dict):
+                        # New combined format: {"1": {"name": "Lesson Name", "weight": 1, "prerequisites": [...]}}
+                        lessons = [lesson_obj["name"] for lesson_obj in combined_dict.values()]
+                        print_step("Using new combined format with name, weight, and prerequisites", "success")
+                    else:
+                        # Old format: {"1": "Lesson Name"}
+                        lessons = list(combined_dict.values())
+                        print_step("Using legacy format", "warning")
+                    
+                    print_step(f"Generated {len(lessons)} curated lessons", "success")
+                    print_step(f"Combined graph with {len(combined_dict)} nodes", "success")
+                    print_step(f"Generated {len(questions)} diagnostic questions", "success")
+                    
+                    # Show first few lessons
+                    print("\n📚 Sample Lessons:")
+                    for i, lesson in enumerate(lessons[:3], 1):
+                        print(f"   {i}. {lesson}")
+                    if len(lessons) > 3:
+                        print(f"   ... and {len(lessons) - 3} more")
+                    
+                    # Show sample questions
+                    print("\n❓ Sample Questions:")
+                    for i, question in enumerate(questions[:2], 1):
+                        print(f"   {i}. {question}")
+                    if len(questions) > 2:
+                        print(f"   ... and {len(questions) - 2} more")
+                elif isinstance(json_data, list) and len(json_data) == 3:
+                    # Legacy 3-element format
                     lessons_dict, adjacency_dict, questions = json_data
-                    lessons = list(lessons_dict.values())
+                    
+                    # Extract lesson names from the old format
+                    if isinstance(list(lessons_dict.values())[0], dict):
+                        lessons = [lesson_obj["name"] for lesson_obj in lessons_dict.values()]
+                    else:
+                        lessons = list(lessons_dict.values())
+                    
                     print_step(f"Generated {len(lessons)} curated lessons", "success")
                     print_step(f"Created adjacency graph with {len(adjacency_dict)} nodes", "success")
                     print_step(f"Generated {len(questions)} diagnostic questions", "success")
+                    print_step("Using legacy 3-element format", "warning")
                     
                     # Show first few lessons
                     print("\n📚 Sample Lessons:")
