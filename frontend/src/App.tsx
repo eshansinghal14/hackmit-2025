@@ -1,38 +1,11 @@
 import React, { useEffect, useRef } from 'react'
 import { Tldraw } from 'tldraw'
-import React, { useState, useEffect, useRef } from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import { Box, AppBar, Toolbar, Typography, IconButton, Tooltip } from '@mui/material'
-import { 
-  Mic, 
-  MicOff, 
-  Settings, 
-  AccountTree, 
-  School, 
-  Fullscreen,
-  FullscreenExit
-} from '@mui/icons-material'
-import { motion, AnimatePresence } from 'framer-motion'
 import 'tldraw/tldraw.css'
 
 const App: React.FC = () => {
   const editorRef = useRef<any>(null)
   
   // Poll for drawing commands from Flask server
-  useEffect(() => {
-    initialize()
-  }, []) // Empty dependency array - only run once on mount
-  
-  // Connect WebSocket on mount
-  useEffect(() => {
-    if (sessionId) {
-      connect(sessionId)
-    }
-    
-    return () => disconnect()
-  }, [sessionId]) // Only depend on sessionId, not the functions
-
-  // AI drawing use effect
   useEffect(() => {
     const pollCommands = async () => {
       try {
@@ -98,50 +71,6 @@ const App: React.FC = () => {
     return () => clearInterval(interval)
   }, [])
   
-  // Keyboard shortcuts - memoize the shortcuts object to prevent re-renders
-  const keyboardShortcuts = React.useMemo(() => ({
-    'Space': () => {
-      if (speechSupported) {
-        toggleListening()
-      }
-    },
-    'Escape': () => setIsFullscreen(false),
-    'F11': () => toggleFullscreen(),
-    'KeyS': (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey) {
-        e.preventDefault()
-        setShowSettings(true)
-      }
-    },
-    'KeyG': (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey) {
-        e.preventDefault()
-        setShowKnowledgeGraph(true)
-      }
-    }
-  }), [toggleListening, speechSupported])
-  
-  useKeyboardShortcuts(keyboardShortcuts)
-  
-  // Fullscreen handling
-  const toggleFullscreen = () => {
-    if (!isFullscreen) {
-      document.documentElement.requestFullscreen?.()
-      setIsFullscreen(true)
-    } else {
-      document.exitFullscreen?.()
-      setIsFullscreen(false)
-    }
-  }
-  
-  useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement)
-    }
-    
-    document.addEventListener('fullscreenchange', handleFullscreenChange)
-    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange)
-  }, [])
 
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
