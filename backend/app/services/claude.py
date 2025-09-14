@@ -70,22 +70,24 @@ TUTORING PRINCIPLES:
 RESPONSE FORMAT:
 Respond with a JSON object containing:
 {
-    "say": "Your spoken response (keep under 20 words for hints)",
-    "mode": "hint|affirm|correction|explanation", 
+    "content": "Your spoken response to the user (keep under 30 words for hints)",
+    "action": [
+        {
+            "action_type": "latex|circle",
+            "position": [0.5, 0.3],
+            "content": "LaTeX expression or circle indicator"
+        }
+    ] or null,
+    "mode": "hint|affirm|correction|explanation",
     "priority": "low|medium|high|urgent",
     "concepts": ["concept1", "concept2"],
-    "outcome": "success|error|neutral|progress",
-    "annotations": [
-        {
-            "type": "highlight|circle|arrow|underline|text|math",
-            "position": {"x": 100, "y": 200},
-            "content": "annotation content",
-            "color": "#color"
-        }
-    ],
-    "next_steps": ["step1", "step2"],
-    "reasoning": "Brief explanation of your decision"
+    "outcome": "success|error|neutral|progress"
 }
+
+ACTION TYPES:
+- "latex": Draw LaTeX expression at position. Content should be valid LaTeX.
+- "circle": Draw red hand-drawn circle at position. Content can be empty.
+- Position format: [x_proportion, y_proportion] where 0.0-1.0 represents screen percentage
 
 INTERVENTION CRITERIA:
 - Critical error or misconception: immediate correction needed
@@ -316,7 +318,8 @@ CRITICAL: Only identify concepts that are actually mathematical content. Ignore 
                 except json.JSONDecodeError:
                     # Fallback: create simple plan from text
                     return {
-                        "say": text_content[:100],  # Truncate if too long
+                        "content": text_content[:100],  # Truncate if too long
+                        "action": None,
                         "mode": "hint",
                         "priority": "low",
                         "concepts": [],
@@ -333,26 +336,35 @@ CRITICAL: Only identify concepts that are actually mathematical content. Ignore 
         """Validate and clean up tutoring plan"""
         # Ensure required fields exist
         validated_plan = {
-            "say": plan.get("say", "Let me help you with this."),
+            "content": plan.get("content", plan.get("say", "Let me help you with this.")),  # Support both old and new format
             "mode": plan.get("mode", "hint"),
             "priority": plan.get("priority", "low"),
             "concepts": plan.get("concepts", []),
             "outcome": plan.get("outcome", "neutral"),
-            "duration": min(8000, len(plan.get("say", "")) * 150)  # Reading time estimation
+            "duration": min(8000, len(plan.get("content", plan.get("say", ""))) * 150)  # Reading time estimation
         }
         
-        # Validate and include annotations
-        if "annotations" in plan and isinstance(plan["annotations"], list):
-            validated_annotations = []
-            for ann in plan["annotations"]:
-                if isinstance(ann, dict) and "type" in ann:
-                    validated_annotations.append(ann)
-            if validated_annotations:
-                validated_plan["annotations"] = validated_annotations
-        
-        # Include next steps if provided
-        if "next_steps" in plan and isinstance(plan["next_steps"], list):
-            validated_plan["next_steps"] = plan["next_steps"]
+        # Validate and include actions
+        if "action" in plan:
+            if plan["action"] is None:
+                validated_plan["action"] = None
+            elif isinstance(plan["action"], list):
+                validated_actions = []
+                for action in plan["action"]:
+                    if isinstance(action, dict) and "action_type" in action and "position" in action:
+                        # Validate position is [x, y] with values 0-1
+                        pos = action["position"]
+                        if isinstance(pos, list) and len(pos) == 2:
+                            x, y = pos
+                            if 0 <= x <= 1 and 0 <= y <= 1:
+                                validated_actions.append({
+                                    "action_type": action["action_type"],
+                                    "position": pos,
+                                    "content": action.get("content", "")
+                                })
+                validated_plan["action"] = validated_actions if validated_actions else None
+        else:
+            validated_plan["action"] = None
         
         return validated_plan
     
@@ -463,13 +475,22 @@ CRITICAL: Only identify concepts that are actually mathematical content. Ignore 
         user_text = context.get("user_text", "")
         
         if temporal.get("is_stalled", False):
-            return create_simple_hint_plan("Would you like me to give you a hint?")
+            content = "Would you like me to give you a hint?"
         elif "help" in user_text.lower():
-            return create_simple_hint_plan("I'm here to help! What specifically are you working on?")
+            content = "I'm here to help! What specifically are you working on?"
         elif "?" in user_text:
-            return create_simple_hint_plan("That's a great question. Let's think through it step by step.")
+            content = "That's a great question. Let's think through it step by step."
         else:
-            return create_simple_hint_plan("Keep going, you're on the right track!")
+            content = "Keep going, you're on the right track!"
+        
+        return {
+            "content": content,
+            "action": None,
+            "mode": "hint",
+            "priority": "low",
+            "concepts": [],
+            "outcome": "neutral"
+        }
 
 # Additional specialized tutoring methods
 class MathTutoringSpecialist:

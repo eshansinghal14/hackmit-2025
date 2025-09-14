@@ -13,6 +13,9 @@ const AIDrawingOverlay = () => {
   const editor = useEditor()
   const { handleVoiceActivity, captureOnSpeechEnd } = useVoiceScreenshotIntegration(editor) as any
   
+  // Note: AI drawing actions will be handled via the API drawing endpoints
+  // The backend will process LaTeX and circle actions directly
+  
   // Set up global handlers for voice recording integration
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -69,9 +72,14 @@ const TldrawWhiteboard: React.FC<TldrawWhiteboardProps> = ({ className }) => {
       }}
       className={className}
     >
-      <Tldraw onMount={handleMount} />
+      <Tldraw onMount={handleMount}>
+        <AIDrawingOverlay />
+      </Tldraw>
     </Box>
   )
 }
+
+// Note: AI drawing actions (LaTeX and circles) are now handled by the backend
+// via the API endpoints at /api/draw-line and processed automatically
 
 export default TldrawWhiteboard

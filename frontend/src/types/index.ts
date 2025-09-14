@@ -119,6 +119,27 @@ export interface KnowledgeGraphUpdateMessage extends WebSocketMessage {
   edges: KnowledgeEdge[]
 }
 
+export interface AIDrawingActionMessage extends WebSocketMessage {
+  type: 'ai_drawing_action'
+  actions: AIDrawingAction[]
+}
+
+export interface AIDrawingAction {
+  action_type: 'latex' | 'circle'
+  position: [number, number] // proportional coordinates (0-1)
+  content?: string // LaTeX expression for latex type
+}
+
+export interface DrawingCommandMessage extends WebSocketMessage {
+  type: 'drawing_command'
+  command: DrawingCommand
+}
+
+export interface DrawingCommand {
+  type: 'create_shape' | 'clear_all'
+  symbols?: Array<Array<[number, number]>>
+}
+
 // Knowledge Graph Types
 export interface KnowledgeNode {
   id: string

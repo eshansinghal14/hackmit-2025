@@ -1,7 +1,7 @@
 """
 AI Whiteboard Tutor - Main FastAPI Application
 """
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.concurrency import run_in_threadpool
 import asyncio
@@ -19,6 +19,7 @@ from .services.audio import handle_voice_input
 from .core.conversation import ConversationManager
 from .core.annotations import animate_annotation, realize_tutor_plan
 from .core.knowledge_graph import KnowledgeGraph
+from .services.action_handler import process_ai_actions
 
 # FastAPI App
 app = FastAPI(
@@ -173,10 +174,19 @@ async def handle_canvas_update(ws: WebSocket, state: SessionState, msg: dict, kg
                 
                 await ws.send_json({
                     "type": "subtitle",
-                    "text": tutor_response.get("say", "I can see your work! Let me analyze it."),
+                    "text": tutor_response.get("content", "I can see your work! Let me analyze it."),
                     "mode": tutor_response.get("mode", "explanation"),
                     "ttlMs": 8000
                 })
+                
+                # Handle AI drawing actions
+                if tutor_response.get("action"):
+                    await ws.send_json({
+                        "type": "ai_drawing_action",
+                        "actions": tutor_response["action"]
+                    })
+                    # Process actions in background
+                    asyncio.create_task(process_ai_actions_background(tutor_response["action"], ws))
                 
                 # Update knowledge graph based on visual analysis
                 if "concepts" in tutor_response:
@@ -195,10 +205,19 @@ async def handle_canvas_update(ws: WebSocket, state: SessionState, msg: dict, kg
             
             await ws.send_json({
                 "type": "subtitle", 
-                "text": tutor_response["message"],
+                "text": tutor_response.get("content", tutor_response.get("message", "Let me help you with this.")),
                 "mode": "urgent",
                 "ttlMs": 6000
             })
+            
+            # Handle AI drawing actions
+            if tutor_response.get("action"):
+                await ws.send_json({
+                    "type": "ai_drawing_action",
+                    "actions": tutor_response["action"]
+                })
+                # Process actions in background
+                asyncio.create_task(process_ai_actions_background(tutor_response["action"], ws))
             
             # Send visual annotations if any
             if tutor_response.get("visual_annotations"):
@@ -258,10 +277,19 @@ async def handle_user_intent(ws: WebSocket, state: SessionState, text: str, kg: 
         # Send tutoring response to client
         await ws.send_json({
             "type": "subtitle",
-            "text": tutor_response["message"],
-            "mode": tutor_response["feedback_type"],
+            "text": tutor_response.get("content", tutor_response.get("message", "Let me help you with this.")),
+            "mode": tutor_response.get("mode", tutor_response.get("feedback_type", "hint")),
             "ttlMs": 8000
         })
+        
+        # Handle AI drawing actions
+        if tutor_response.get("action"):
+            await ws.send_json({
+                "type": "ai_drawing_action",
+                "actions": tutor_response["action"]
+            })
+            # Process actions in background
+            asyncio.create_task(process_ai_actions_background(tutor_response["action"], ws))
         
         # Send visual annotations if any
         if tutor_response.get("visual_annotations"):
@@ -367,10 +395,19 @@ async def handle_screenshot_context(ws: WebSocket, state: SessionState, msg: dic
         # Send AI response based on visual analysis
         await ws.send_json({
             "type": "subtitle",
-            "text": tutor_response.get("say", "I can see your work now! Let me take a look..."),
+            "text": tutor_response.get("content", "I can see your work now! Let me take a look..."),
             "mode": tutor_response.get("mode", "analysis"),
             "ttlMs": 8000
         })
+        
+        # Handle AI drawing actions
+        if tutor_response.get("action"):
+            await ws.send_json({
+                "type": "ai_drawing_action",
+                "actions": tutor_response["action"]
+            })
+            # Process actions in background
+            asyncio.create_task(process_ai_actions_background(tutor_response["action"], ws))
         
         # Update knowledge graph based on visual analysis
         if "concepts" in tutor_response:
@@ -427,6 +464,53 @@ async def inject_ai_intervention(ws: WebSocket, state: SessionState, reason: str
     # After intervention, return control
     await asyncio.sleep(1.5)
     state.speaking = False
+
+# Store drawing commands in memory for real-time updates  
+drawing_commands = []
+
+# Flask-compatible drawing API endpoints
+@app.post("/api/draw-line")
+async def draw_line(request: Request):
+    """API endpoint to draw a line in tldraw"""
+    data = await request.json()
+    
+    # Extract points from request
+    symbols = data.get('symbols')  # [x, y]
+    
+    # Create tldraw line shape
+    command = {
+        'type': 'create_shape',
+        'symbols': symbols
+    }
+    
+    # Add command to queue
+    drawing_commands.append(command)
+        
+    return {'status': 'success', 'command': command}
+
+@app.get("/api/commands")
+async def get_commands():
+    """Get all pending drawing commands"""
+    return drawing_commands
+
+@app.delete("/api/commands")
+async def clear_commands():
+    """Clear processed commands"""
+    global drawing_commands
+    drawing_commands = []
+    return {'status': 'cleared'}
+
+@app.post("/api/clear")
+async def clear_canvas():
+    """Clear all drawings"""
+    global drawing_commands
+    command = {
+        'type': 'clear_all',
+        'timestamp': time.time()
+    }
+    drawing_commands.append(command)
+    print("🧹 Clearing canvas")
+    return {'status': 'cleared'}
 
 # Additional utility endpoints
 @app.get("/api/session/{session_id}/status")
@@ -525,6 +609,128 @@ async def update_knowledge_graph_background(context: Dict[str, Any], kg: Knowled
         
     except Exception as e:
         print(f"❌ Error updating knowledge graph: {e}")
+
+async def process_ai_actions_background(actions: list, ws: WebSocket):
+    """Process AI actions in background and send directly via WebSocket"""
+    try:
+        # Get screen dimensions from WebSocket or use defaults
+        screen_width = 1920
+        screen_height = 1080
+        
+        for action in actions:
+            action_type = action.get("action_type")
+            position = action.get("position", [0.5, 0.5])
+            content = action.get("content", "")
+            
+            # Convert proportional position to pixel coordinates
+            margin_x = screen_width * 0.05
+            margin_y = screen_height * 0.05
+            usable_width = screen_width - (2 * margin_x)
+            usable_height = screen_height - (2 * margin_y)
+            
+            pixel_x = int(margin_x + (position[0] * usable_width))
+            pixel_y = int(margin_y + (position[1] * usable_height))
+            
+            if action_type == "latex":
+                # Process LaTeX and send drawing commands directly
+                success = await process_latex_action(content, pixel_x, pixel_y, ws)
+                if success:
+                    print(f"✅ LaTeX action sent via WebSocket: {content}")
+                else:
+                    print(f"❌ Failed to process LaTeX action: {content}")
+                    
+            elif action_type == "circle":
+                # Send circle drawing command directly
+                await send_circle_drawing(pixel_x, pixel_y, ws)
+                print(f"✅ Circle drawing sent via WebSocket at ({pixel_x}, {pixel_y})")
+            
+    except Exception as e:
+        print(f"❌ Error processing AI actions in background: {e}")
+
+async def process_latex_action(latex_content: str, x: int, y: int, ws: WebSocket) -> bool:
+    """Process LaTeX and send drawing commands via WebSocket"""
+    try:
+        from .core.ai_writing import latex_to_pixel_grid, extract_skeleton_from_pixels, order_strokes, generate_splines_from_ordered_strokes
+        
+        print(f"🔤 Processing LaTeX '{latex_content}' at ({x}, {y})")
+        
+        # Convert LaTeX to pixel grid
+        pixel_grid = latex_to_pixel_grid(latex_content)
+        if not pixel_grid or len(pixel_grid) == 0:
+            print(f"❌ Could not convert LaTeX to pixels: {latex_content}")
+            return False
+            
+        # Extract skeleton
+        skeleton_pixels = extract_skeleton_from_pixels(pixel_grid)
+        if not skeleton_pixels:
+            print(f"❌ Could not extract skeleton from LaTeX")
+            return False
+            
+        # Generate drawing segments
+        ordered_strokes = order_strokes(skeleton_pixels)
+        splines = generate_splines_from_ordered_strokes(ordered_strokes)
+        
+        # Convert to drawing segments and offset by position
+        drawing_segments = []
+        for spline in splines:
+            for i in range(len(spline) - 1):
+                start = [spline[i][0] + x, spline[i][1] + y]
+                end = [spline[i + 1][0] + x, spline[i + 1][1] + y]
+                drawing_segments.append([start, end])
+        
+        if drawing_segments:
+            # Send drawing command via WebSocket
+            await ws.send_json({
+                "type": "drawing_command",
+                "command": {
+                    "type": "create_shape",
+                    "symbols": [drawing_segments]
+                }
+            })
+            print(f"✅ Sent {len(drawing_segments)} LaTeX drawing segments via WebSocket")
+            return True
+        else:
+            print(f"❌ No drawing segments generated for LaTeX: {latex_content}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ Error processing LaTeX action: {e}")
+        return False
+
+async def send_circle_drawing(x: int, y: int, ws: WebSocket, radius: int = 50):
+    """Send circle drawing command via WebSocket"""
+    try:
+        import math
+        import random
+        
+        segments = []
+        num_points = 32
+        
+        # Generate hand-drawn circle points
+        previous_point = None
+        for i in range(num_points + 1):
+            angle = (2 * math.pi * i) / num_points
+            jittered_radius = radius + random.uniform(-radius * 0.05, radius * 0.05)
+            
+            point_x = int(x + jittered_radius * math.cos(angle))
+            point_y = int(y + jittered_radius * math.sin(angle))
+            current_point = [point_x, point_y]
+            
+            if previous_point is not None:
+                segments.append([previous_point, current_point])
+            previous_point = current_point
+        
+        # Send circle drawing command
+        await ws.send_json({
+            "type": "drawing_command",
+            "command": {
+                "type": "create_shape",
+                "symbols": [segments]
+            }
+        })
+        
+    except Exception as e:
+        print(f"❌ Error sending circle drawing: {e}")
 
 if __name__ == "__main__":
     import uvicorn

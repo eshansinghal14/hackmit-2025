@@ -8,6 +8,7 @@ interface VoiceScreenshotConfig {
   silenceThreshold?: number // ms of silence before triggering screenshot
   vadThreshold?: number // voice activity detection threshold
   enabled?: boolean
+  throttleInterval?: number // minimum ms between screenshots to prevent rate limiting
 }
 
 interface UseVoiceScreenshotIntegrationReturn {
@@ -19,7 +20,8 @@ interface UseVoiceScreenshotIntegrationReturn {
 const DEFAULT_CONFIG: Required<VoiceScreenshotConfig> = {
   silenceThreshold: 1500, // 1.5 seconds of silence
   vadThreshold: 0.01,
-  enabled: true
+  enabled: true,
+  throttleInterval: 10000 // 10 seconds minimum between screenshots
 }
 
 export const useVoiceScreenshotIntegration = (
@@ -33,6 +35,7 @@ export const useVoiceScreenshotIntegration = (
   const silenceTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const lastSpeechTimeRef = useRef<number>(0)
   const isCapturingRef = useRef(false)
+  const lastScreenshotTimeRef = useRef<number>(0)
   
   // Hooks
   const { captureWhiteboardArea } = useScreenshotCapture()
@@ -49,6 +52,13 @@ export const useVoiceScreenshotIntegration = (
       return
     }
     
+    // Check throttle interval to prevent rate limiting
+    const currentTime = Date.now()
+    if (currentTime - lastScreenshotTimeRef.current < finalConfig.throttleInterval) {
+      console.log(`🎤📸 Screenshot throttled - last capture was ${Math.round((currentTime - lastScreenshotTimeRef.current) / 1000)}s ago`)
+      return
+    }
+    
     try {
       isCapturingRef.current = true
       console.log('🎤📸 Capturing screenshot after speech ended...')
@@ -61,12 +71,15 @@ export const useVoiceScreenshotIntegration = (
       })
       
       if (screenshotDataUrl) {
+        // Update last screenshot time
+        lastScreenshotTimeRef.current = currentTime
+        
         // Send screenshot as AI context via WebSocket
         sendMessage({
           type: 'screenshot_context',
           image: screenshotDataUrl,
           trigger: 'speech_end',
-          timestamp: Date.now(),
+          timestamp: currentTime,
           metadata: {
             captureTime: new Date().toISOString(),
             source: 'voice_activity_detection'

@@ -3,7 +3,7 @@ import json
 import numpy as np
 from skimage import morphology, measure
 import cv2
-from ai_writing import latex_to_pixels
+from .ai_writing import latex_to_pixels
 
 def draw_latex_to_tldraw(latex_text, start_x=100, start_y=100):
     """
@@ -171,7 +171,7 @@ def _dfs_drawing_path(component_pixels):
 
 def _draw_connected_paths(drawing_segments):
     """
-    Draw connected paths as line segments via Flask API
+    Draw connected paths as line segments via FastAPI
     
     Args:
         drawing_segments: list of [start, end] coordinate pairs
@@ -179,7 +179,7 @@ def _draw_connected_paths(drawing_segments):
     Returns:
         bool: True if successful, False otherwise
     """
-    url = "http://localhost:5000/api/draw-line"
+    url = "http://localhost:8000/api/draw-line"
     
     # Use batch size of 700 segments
     batch_size = 700
@@ -196,7 +196,7 @@ def _draw_connected_paths(drawing_segments):
                 print(f"❌ Error in batch {batch_idx + 1}: {response.json()}")
                 return False
         except requests.exceptions.ConnectionError:
-            print("❌ Flask server not running. Start with: python flask_server.py")
+            print("❌ FastAPI server not running. Start with: python main.py")
             return False
         except Exception as e:
             print(f"❌ Error in batch {batch_idx + 1}: {e}")
@@ -207,7 +207,7 @@ def _draw_connected_paths(drawing_segments):
 def clear_tldraw():
     """Clear all drawings on tldraw"""
     try:
-        response = requests.post("http://localhost:5000/api/clear")
+        response = requests.post("http://localhost:8000/api/clear")
         if response.status_code == 200:
             print("🧹 Cleared tldraw canvas")
             return True

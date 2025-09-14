@@ -79,14 +79,18 @@ const App: React.FC = () => {
     return () => disconnect()
   }, [sessionId]) // Only depend on sessionId, not the functions
 
-  // AI drawing use effect
+  // AI drawing use effect - now handles both WebSocket commands and API polling
   useEffect(() => {
-    const pollCommands = async () => {
+    const processDrawingCommands = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/commands')
-        const commands = await response.json()
-        
-        if (commands.length > 0 && editorRef.current) {
+        // Check for WebSocket drawing commands first
+        const win = window as any
+        if (win.pendingDrawingCommands && win.pendingDrawingCommands.length > 0 && editorRef.current) {
+          const commands = [...win.pendingDrawingCommands]
+          win.pendingDrawingCommands = [] // Clear processed commands
+          
+          console.log(`🎨 Processing ${commands.length} WebSocket drawing commands`)
+          
           commands.forEach((command: { type: string; symbols?: Array<Array<[number, number]>> }) => {
             if (command.type === 'create_shape') {
               // Calculate total delay counter for consistent timing
@@ -99,22 +103,24 @@ const App: React.FC = () => {
                   const end = points[i + 1];
                   
                   setTimeout(() => {
-                    editorRef.current.createShapes([{
-                      type: 'line',
-                      x: 0,
-                      y: 0,
-                      props: {
-                        color: 'black',
-                        dash: 'solid',
-                        size: 's', 
-                        spline: 'line',
-                        points: {
-                          'a1': { id: 'a1', index: 'a1', x: start[0], y: start[1] },
-                          'a2': { id: 'a2', index: 'a2', x: end[0], y: end[1] }
+                    if (editorRef.current) {
+                      editorRef.current.createShapes([{
+                        type: 'line',
+                        x: 0,
+                        y: 0,
+                        props: {
+                          color: 'red', // AI drawings in red
+                          dash: 'solid',
+                          size: 's', 
+                          spline: 'line',
+                          points: {
+                            'a1': { id: 'a1', index: 'a1', x: start[0], y: start[1] },
+                            'a2': { id: 'a2', index: 'a2', x: end[0], y: end[1] }
+                          }
                         }
-                      }
-                    }]);
-                  }, totalDelay * 5); // 3ms delay between each line
+                      }]);
+                    }
+                  }, totalDelay * 3); // 3ms delay between each line
                   
                   totalDelay++; // Increment for next line
                 }
@@ -125,23 +131,70 @@ const App: React.FC = () => {
             }
           })
           
+          return // Skip API polling if we processed WebSocket commands
+        }
+        
+        // Fallback: Check API commands (legacy support)
+        const response = await fetch('http://localhost:8000/api/commands')
+        const apiCommands = await response.json()
+        
+        if (apiCommands.length > 0 && editorRef.current) {
+          console.log(`🎨 Processing ${apiCommands.length} API drawing commands`)
+          
+          apiCommands.forEach((command: { type: string; symbols?: Array<Array<[number, number]>> }) => {
+            if (command.type === 'create_shape') {
+              let totalDelay = 0;
+              
+              command.symbols?.forEach((points) => {
+                for (let i = 0; i < points.length - 1; i++) {
+                  const start = points[i];
+                  const end = points[i + 1];
+                  
+                  setTimeout(() => {
+                    if (editorRef.current) {
+                      editorRef.current.createShapes([{
+                        type: 'line',
+                        x: 0,
+                        y: 0,
+                        props: {
+                          color: 'red',
+                          dash: 'solid',
+                          size: 's', 
+                          spline: 'line',
+                          points: {
+                            'a1': { id: 'a1', index: 'a1', x: start[0], y: start[1] },
+                            'a2': { id: 'a2', index: 'a2', x: end[0], y: end[1] }
+                          }
+                        }
+                      }]);
+                    }
+                  }, totalDelay * 3);
+                  
+                  totalDelay++;
+                }
+              })
+            } else if (command.type === 'clear_all') {
+              editorRef.current.selectAll()
+              editorRef.current.deleteShapes(editorRef.current.getSelectedShapeIds())
+            }
+          })
+          
           // Clear processed commands
-          await fetch('http://localhost:5000/api/commands', { method: 'DELETE' })
+          await fetch('http://localhost:8000/api/commands', { method: 'DELETE' })
         }
       } catch (error: unknown) {
         // Only log if it's not a network error (server actually down)
         if (error instanceof TypeError && error.message.includes('fetch')) {
           // Network error - server likely not running
-          console.log('Flask server not running')
+          console.log('API server not running - using WebSocket commands only')
         } else if (error instanceof Error) {
-          // Other errors - log the actual error
-          console.error('Error polling commands:', error.message)
+          console.error('Error processing drawing commands:', error.message)
         }
       }
     }
 
-    // Poll every 5ms for new commands (fastest response)
-    const interval = setInterval(pollCommands, 500)
+    // Check for drawing commands frequently
+    const interval = setInterval(processDrawingCommands, 100)
     return () => clearInterval(interval)
   }, [])
   

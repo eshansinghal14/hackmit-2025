@@ -1,12 +1,14 @@
 import { useEffect, useCallback, useRef } from 'react'
 import { useAppStore, useAIActions, useErrorActions } from '@/store/appStore'
-import type { 
+import {
   WebSocketMessage,
   SubtitleMessage,
   AICursorMoveMessage,
   AnnotationMessage,
   KnowledgeGraphUpdateMessage,
-  ToastMessage
+  ToastMessage,
+  AIDrawingActionMessage,
+  DrawingCommandMessage
 } from '@/types'
 
 interface UseWebSocketReturn {
@@ -56,7 +58,7 @@ export const useWebSocket = (): UseWebSocketReturn => {
           }, subtitleMsg.ttlMs || 5000)
           break
           
-        case 'ai_cursor_move':
+        case 'cursor_move':
           const cursorMsg = message as AICursorMoveMessage
           moveAICursor({ x: cursorMsg.x, y: cursorMsg.y })
           
@@ -95,6 +97,31 @@ export const useWebSocket = (): UseWebSocketReturn => {
           const toastMsg = message as ToastMessage
           // Handle toast notifications
           console.log(`📢 ${toastMsg.kind}: ${toastMsg.text}`)
+          break
+          
+        case 'ai_drawing_action':
+          const aiDrawingMsg = message as AIDrawingActionMessage
+          console.log(`🎨 AI Drawing Action:`, aiDrawingMsg.actions)
+          // Process each drawing action
+          aiDrawingMsg.actions?.forEach(action => {
+            console.log(`🎯 Drawing ${action.action_type} at [${action.position[0]}, ${action.position[1]}]`)
+            // The backend will handle the actual drawing via API calls
+            // This is just for logging/debugging
+          })
+          break
+          
+        case 'drawing_command':
+          const drawingMsg = message as DrawingCommandMessage
+          console.log(`🖊️ Drawing Command:`, drawingMsg.command)
+          // Trigger drawing execution by setting a flag that the polling system can pick up
+          // Store the command in window object for App.tsx to consume
+          if (typeof window !== 'undefined') {
+            const win = window as any
+            if (!win.pendingDrawingCommands) {
+              win.pendingDrawingCommands = []
+            }
+            win.pendingDrawingCommands.push(drawingMsg.command)
+          }
           break
           
         case 'pong':
