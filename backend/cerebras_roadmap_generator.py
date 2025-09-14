@@ -137,6 +137,9 @@ def run_multi_agent_cerebras(search_results_file: str = None):
             elif "research topic:" in content.lower():
                 topic_line = [line for line in content.split('\n') if "research topic:" in line.lower()][0]
                 topic = topic_line.split(":")[-1].strip().replace(" ", "_").lower()
+            
+            # Clean up topic name - remove asterisks and other unwanted characters
+            topic = topic.replace("*", "").replace("**", "").strip()
         print(f"📋 Detected topic: {topic}")
     except Exception as e:
         print(f"⚠️ Could not extract topic from context files, using 'unknown_topic': {e}")
