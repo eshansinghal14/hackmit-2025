@@ -136,14 +136,39 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
             <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
               {error ? 'Please check your connection and try again.' : 'No diagnostic questions could be generated from the roadmap data.'}
             </Typography>
-            <Button variant="outlined" onClick={onClose}>
-              Close
-            </Button>
-            {error && (
-              <Button variant="contained" onClick={loadQuestions} sx={{ ml: 2 }}>
-                Retry
+            <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+              <Button 
+                variant="outlined" 
+                onClick={onClose}
+                sx={{
+                  borderRadius: 2,
+                  borderColor: '#d1d5db',
+                  color: '#6e6e80',
+                  '&:hover': {
+                    borderColor: '#9ca3af',
+                    backgroundColor: '#f8fafc'
+                  }
+                }}
+              >
+                ← Back to Search
               </Button>
-            )}
+              {error && (
+                <Button 
+                  variant="contained" 
+                  onClick={loadQuestions}
+                  sx={{
+                    borderRadius: 2,
+                    backgroundColor: '#2d333a',
+                    color: '#ffffff',
+                    '&:hover': {
+                      backgroundColor: '#1f2329'
+                    }
+                  }}
+                >
+                  Retry
+                </Button>
+              )}
+            </Box>
           </CardContent>
         </Card>
       </Box>
@@ -164,6 +189,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
         overflow: 'auto',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         p: 2
       }}>
         <Card sx={{ width: '100%', maxWidth: 500 }}>
@@ -186,14 +212,26 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
             {!isComplete ? (
               <>
                 {/* Current Question */}
-                <Box sx={{ mb: 4, minHeight: 120 }}>
+                <Box sx={{ 
+                  mb: 4, 
+                  p: 4,
+                  backgroundColor: '#ffffff',
+                  borderRadius: 3,
+                  border: '1px solid #e5e7eb',
+                  boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+                  minHeight: 120,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
                   <Typography 
                     variant="h6" 
                     sx={{ 
-                      mb: 3, 
                       textAlign: 'center',
-                      fontSize: '1.2rem',
-                      lineHeight: 1.4
+                      fontSize: '1.1rem',
+                      lineHeight: 1.6,
+                      color: '#374151',
+                      fontWeight: 400
                     }}
                   >
                     {questions[currentQuestionIndex] || 'Question not available'}
@@ -203,9 +241,11 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                 {/* Answer Buttons */}
                 <Box sx={{ 
                   display: 'flex', 
-                  gap: 3, 
+                  gap: 2, 
                   justifyContent: 'center',
-                  flexDirection: 'column'
+                  flexDirection: 'row',
+                  maxWidth: 400,
+                  margin: '0 auto'
                 }}>
                   <Button
                     variant="contained"
@@ -213,34 +253,56 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                     startIcon={<CheckCircle />}
                     onClick={() => handleAnswer(true)}
                     sx={{
-                      backgroundColor: '#4caf50',
-                      '&:hover': {
-                        backgroundColor: '#45a049'
-                      },
-                      py: 2,
+                      flex: 1,
+                      backgroundColor: '#10b981',
+                      color: '#ffffff',
+                      borderRadius: 2,
+                      py: 2.5,
                       px: 4,
-                      fontSize: '1.1rem'
+                      fontSize: '0.95rem',
+                      fontWeight: 600,
+                      fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+                      textTransform: 'none',
+                      boxShadow: '0 2px 8px rgba(16, 185, 129, 0.25)',
+                      '&:hover': {
+                        backgroundColor: '#059669',
+                        boxShadow: '0 4px 12px rgba(16, 185, 129, 0.35)',
+                        transform: 'translateY(-1px)'
+                      },
+                      transition: 'all 0.2s ease-in-out'
                     }}
                   >
-                    Yes
+                    Yes, I know this
                   </Button>
                   
                   <Button
-                    variant="contained"
+                    variant="outlined"
                     size="large"
                     startIcon={<Cancel />}
                     onClick={() => handleAnswer(false)}
                     sx={{
-                      backgroundColor: '#f44336',
-                      '&:hover': {
-                        backgroundColor: '#da190b'
-                      },
-                      py: 2,
+                      flex: 1,
+                      borderColor: '#d1d5db',
+                      color: '#6b7280',
+                      backgroundColor: '#ffffff',
+                      borderRadius: 2,
+                      py: 2.5,
                       px: 4,
-                      fontSize: '1.1rem'
+                      fontSize: '0.95rem',
+                      fontWeight: 600,
+                      fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+                      textTransform: 'none',
+                      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+                      '&:hover': {
+                        borderColor: '#9ca3af',
+                        backgroundColor: '#f9fafb',
+                        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
+                        transform: 'translateY(-1px)'
+                      },
+                      transition: 'all 0.2s ease-in-out'
                     }}
                   >
-                    No
+                    No, I need to learn
                   </Button>
                 </Box>
               </>
@@ -305,16 +367,33 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                     <Button
                       variant="outlined"
                       onClick={resetTest}
-                      sx={{ px: 3 }}
+                      sx={{ 
+                        px: 3,
+                        borderRadius: 2,
+                        borderColor: '#d1d5db',
+                        color: '#6e6e80',
+                        '&:hover': {
+                          borderColor: '#9ca3af',
+                          backgroundColor: '#f8fafc'
+                        }
+                      }}
                     >
                       Retake Test
                     </Button>
                     <Button
                       variant="contained"
                       onClick={onClose}
-                      sx={{ px: 3 }}
+                      sx={{ 
+                        px: 3,
+                        borderRadius: 2,
+                        backgroundColor: '#2d333a',
+                        color: '#ffffff',
+                        '&:hover': {
+                          backgroundColor: '#1f2329'
+                        }
+                      }}
                     >
-                      Continue
+                      ← Back to Search
                     </Button>
                   </Box>
                 </Box>
