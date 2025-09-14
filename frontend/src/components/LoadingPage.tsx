@@ -83,123 +83,119 @@ const LoadingPage: React.FC<LoadingPageProps> = ({ topic, onComplete }) => {
 
   const overallProgress = ((currentStep + (progress / 100)) / analysisSteps.length) * 100
 
-  return (
-    <Container maxWidth="md" sx={{ 
-      minHeight: '100vh', 
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'center',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      py: 4
-    }}>
-      <Card sx={{ 
-        width: '100%', 
-        maxWidth: 600, 
-        boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-        borderRadius: 3
+    return (
+      <Box sx={{ 
+        minHeight: '100vh', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        bgcolor: '#FFFFFF',
+        px: 3
       }}>
-        <CardContent sx={{ p: 6, textAlign: 'center' }}>
+        <Box sx={{ 
+          width: '100%',
+          maxWidth: '440px',
+          textAlign: 'center'
+        }}>
           {/* Header */}
-          <Typography variant="h4" gutterBottom sx={{ 
-            fontWeight: 'bold',
-            background: 'linear-gradient(45deg, #667eea, #764ba2)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            mb: 1
+          <Typography variant="h1" sx={{ 
+            fontSize: { xs: '2rem', sm: '2.25rem' },
+            color: '#111827',
+            fontWeight: 600,
+            mb: 1.5,
+            letterSpacing: '-0.025em'
           }}>
             Preparing Your Lesson
           </Typography>
           
-          <Typography variant="h6" color="text.secondary" sx={{ mb: 4 }}>
+          <Typography sx={{
+            fontSize: '1.125rem',
+            color: '#6B7280',
+            fontWeight: 400,
+            mb: 8,
+            letterSpacing: '-0.01em'
+          }}>
             Topic: {topic}
           </Typography>
 
-          {/* Overall Progress */}
-          <Box sx={{ mb: 4 }}>
-            <LinearProgress 
-              variant="determinate" 
-              value={overallProgress} 
-              sx={{ 
-                height: 8, 
-                borderRadius: 4,
-                backgroundColor: 'grey.200',
-                '& .MuiLinearProgress-bar': {
-                  background: 'linear-gradient(45deg, #667eea, #764ba2)',
-                  borderRadius: 4
-                }
-              }}
-            />
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              {Math.round(overallProgress)}% Complete
-            </Typography>
-          </Box>
-
-          {/* Current Step */}
-          <Box sx={{ mb: 4 }}>
-            <Box sx={{ mb: 3 }}>
-              {analysisSteps[currentStep]?.icon}
-            </Box>
-            
-            <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
-              {analysisSteps[currentStep]?.title}
-            </Typography>
-            
-            <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-              {analysisSteps[currentStep]?.description}
-            </Typography>
-
-            {/* Step Progress */}
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-              <CircularProgress 
-                variant="determinate" 
-                value={progress}
-                size={24}
+          {/* Progress Section */}
+          <Box sx={{ mb: 8 }}>
+            {/* Progress Bar */}
+            <Box sx={{ 
+              width: '100%',
+              height: 2,
+              bgcolor: '#F3F4F6',
+              borderRadius: 1,
+              overflow: 'hidden',
+              mb: 4
+            }}>
+              <Box 
                 sx={{
-                  color: 'primary.main'
+                  height: '100%',
+                  width: `${overallProgress}%`,
+                  bgcolor: '#000000',
+                  transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
               />
-              <Typography variant="body2" color="text.secondary">
-                {Math.round(progress)}%
+            </Box>
+
+            {/* Progress Text */}
+            <Box sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              mb: 2
+            }}>
+              <Typography sx={{ 
+                fontSize: '1rem',
+                color: '#111827',
+                fontWeight: 500
+              }}>
+                {Math.round(overallProgress)}% Complete
+              </Typography>
+
+              <Typography sx={{
+                fontSize: '0.875rem',
+                color: '#6B7280',
+                fontWeight: 400
+              }}>
+                Step {currentStep + 1} of {analysisSteps.length}
               </Typography>
             </Box>
+
+            {/* Current Step */}
+            <Typography sx={{
+              fontSize: '0.875rem',
+              color: '#4B5563',
+              fontWeight: 400,
+              fontStyle: 'italic'
+            }}>
+              {currentStep === 0 && "Analyzing content..."}
+              {currentStep === 1 && "Generating questions..."}
+              {currentStep === 2 && "Finalizing..."}
+            </Typography>
           </Box>
 
           {/* Step Indicators */}
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
+          <Box sx={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            gap: 2
+          }}>
             {analysisSteps.map((_, index) => (
               <Box
                 key={index}
                 sx={{
-                  width: 12,
-                  height: 12,
+                  width: 4,
+                  height: 4,
                   borderRadius: '50%',
-                  backgroundColor: index <= currentStep ? 'primary.main' : 'grey.300',
-                  transition: 'all 0.3s ease',
-                  ...(index === currentStep && {
-                    animation: 'pulse 1.5s infinite',
-                    '@keyframes pulse': {
-                      '0%': {
-                        transform: 'scale(1)',
-                        opacity: 1,
-                      },
-                      '50%': {
-                        transform: 'scale(1.2)',
-                        opacity: 0.7,
-                      },
-                      '100%': {
-                        transform: 'scale(1)',
-                        opacity: 1,
-                      },
-                    }
-                  })
+                  bgcolor: index <= currentStep ? '#111827' : '#E5E7EB'
                 }}
               />
             ))}
           </Box>
-        </CardContent>
-      </Card>
-    </Container>
+        </Box>
+      </Box>
   )
 }
 
