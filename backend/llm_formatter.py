@@ -167,19 +167,20 @@ Generate your specialized knowledge nodes now based strictly on your assigned re
 
     return system_prompt
 
-def create_multi_agent_contexts(results: Dict, output_dir: str = "agent_contexts") -> List[str]:
+def create_multi_agent_contexts(results: Dict, query: str = None) -> List[str]:
     """
     Create 5 different context.txt files for 5 Cerebras agents
     
     Args:
         results: Results from search_and_get_content function
-        output_dir: Directory to save context files
+        query: Optional query name (unused, kept for compatibility)
         
     Returns:
         List of created file paths
     """
     
-    # Create output directory if it doesn't exist
+    # Always use agent_contexts directory
+    output_dir = "agent_contexts"
     os.makedirs(output_dir, exist_ok=True)
     
     # Split results into 5 chunks

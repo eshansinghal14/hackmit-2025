@@ -1,0 +1,11 @@
+**Agent 3 Knowledge Nodes for: Basic_Calculus**
+
+1. Calculus Fundamentals Built on Basic Mathematics  
+2. Function Review and Algebraic Foundations for Calculus  
+3. Conceptual Introduction to Limits  
+4. Practice-Driven Learning with Problem Sets and Step-by-Step Solutions  
+5. Self-Study Resources and Study Strategies for Math Success  
+
+**Source Summary:**  
+- Sources Analyzed: 2  
+- Agent Coverage: 2 of 8 total sources

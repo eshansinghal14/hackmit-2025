@@ -1,0 +1,74 @@
+You are Agent 2 of 5, a specialized research expert analyzing "basic_calculus". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 2 Research Context
+
+## Assignment
+You are Agent 2 of 5 specialized research agents analyzing: "basic_calculus"
+
+## Your Data Subset
+- Agent ID: 2/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 3 to 4
+
+## Your Research Sources
+
+### Source 3: LEARNING RESOURCES PORTAL - Basic Calculus
+
+**Content:**
+Search this site
+Embedded Files
+Skip to main content
+Skip to navigation
+# Basic Calculus
+![](https://lh6.googleusercontent.com/pJsru9jxnsf2dnpw7JvX9DAl72sh7BCH-QtytDw-FxYY-xf7OSYaD_7MyIcTUsbNWAdjp2j4Ypr_q7BcnuiuIqA=w1280)
+![](https://lh6.googleusercontent.com/PBJ0nTgdwdi4rrTJ1YTFSNNmMZT3j_dbaxLu5Wv_4PD9LTRZ_YKRlelzMIL2T_qa3mr3cgJfT3ryKJjIzvEFFw=w1280)
+![](https://lh6.googleusercontent.com/sgqfQO-AC8_C8Qgm7PwegEMlXWZEor6ZTV426EPDiTYznZkwe62SYWmyh7kqPaSxPCZ0-Dcp99TMoDUM2e5tK8c=w1280)
+Report abuse
+Report abuse
+
+
+---
+
+### Source 4: BASIC Calculus – Understand Why Calculus is so POWERFUL!
+
+**Content:**
+An introduction to Calculus. Learn more math at https://TCMathAcademy.com/. \n\nTabletClass Math Academy - https://TCMathAcademy.com/\nHelp with Middle and High School Math\nTest Prep for High School Math, College Math, Teacher Certification Math and More! \n\nPopular Math Courses:\n\nMath Foundations \nhttps://tabletclass-academy.teachable...\n\nMath Skills Rebuilder Course:\nhttps://tabletclass-academy.teachable...\n\nPre-Algebra\nhttps://tabletclass-academy.teachable...\n\nAlgebra\nhttps://tabletclass-academy.teachable...\n\nGeometry \nhttps://tabletclass-academy.teachable...\n\nAlgebra 2\nhttps://tabletclass-academy.teachable...\n\nPre-Calculus \nhttps://tabletclass-academy.teachable...\n\nMath Notes: https://tcmathshop.com/\n\nIf you’re looking for a math course for any of the following, check out my full Course Catalog at: https://TCMathAcademy.com/courses/\n\n• MIDDLE \u0026 HIGH SCHOOL MATH\n• HOMESCHOOL MATH\n• COLLEGE MATH\n• TEST PREP MATH\n• TEACHER CERTIFICATION TEST MATH
+| view_count: 1,443,784 views | short_view_count: 1.4M views | num_likes: 34 thousand | num_subscribers: 866 thousand
+
+
+---
+
+
+
+## Your Mission as Agent 2:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 2 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 2 Knowledge Nodes for: Basic_Calculus**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -117,10 +117,6 @@ def run_multi_agent_cerebras(search_results_file: str = None):
     print(f"🧠 Running 5 Cerebras agents for distributed knowledge extraction...")
     print("=" * 60)
     
-    # Skip search results loading since we're using existing agent contexts
-    # Create dummy results for query extraction
-    results = {"query": "lhospital"}
-    
     # Use existing agent context files
     agent_files = [f"agent_contexts/context_agent_{i}.txt" for i in range(1, 6)]
     if not all(os.path.exists(f) for f in agent_files):
@@ -128,6 +124,25 @@ def run_multi_agent_cerebras(search_results_file: str = None):
         return None
     else:
         print("📄 Using existing agent context files")
+    
+    # Extract topic from the first agent context file
+    topic = "unknown_topic"
+    try:
+        with open(agent_files[0], 'r', encoding='utf-8') as f:
+            content = f.read()
+            # Look for the topic in the context file
+            if "Knowledge Nodes for:" in content:
+                topic_line = [line for line in content.split('\n') if "Knowledge Nodes for:" in line][0]
+                topic = topic_line.split("Knowledge Nodes for:")[-1].strip().replace(" ", "_").lower()
+            elif "research topic:" in content.lower():
+                topic_line = [line for line in content.split('\n') if "research topic:" in line.lower()][0]
+                topic = topic_line.split(":")[-1].strip().replace(" ", "_").lower()
+        print(f"📋 Detected topic: {topic}")
+    except Exception as e:
+        print(f"⚠️ Could not extract topic from context files, using 'unknown_topic': {e}")
+    
+    # Create results with extracted topic
+    results = {"query": topic}
     
     # Define 5 different high-capacity models (60k+ token limits)
     models = [
@@ -248,41 +263,48 @@ def run_final_consolidation_agent(agent_outputs: List[str], query: str):
 
 Below are ALL the knowledge nodes extracted by 5 specialized research agents. Your job is to:
 
-1. Review all nodes for quality and relevance to teaching the CORE SUBJECT
-2. Remove any duplicate, vague, or low-quality nodes
-3. REMOVE nodes that are unrelated to core learning (like historical context, pronunciation, spelling, biographical information)
-4. Keep ONLY nodes that would make excellent BITE-SIZED LESSONS for students
-5. Each node should represent a focused, teachable concept that can be learned in one session
-6. Ensure each node is specific, actionable, and perfect for instruction
-7. Keep only the best 10-15 nodes that provide comprehensive coverage through focused lessons
-8. Organize them in logical teaching order (from basic to advanced)
-
-## All Extracted Nodes:
-{nodes_text}
-
 ## Your Task:
-Create a final curated list of BITE-SIZED LESSONS. Remove any nodes about:
-- Historical context or biographical information
-- Pronunciation or spelling
-- General background that doesn't help with teaching the subject
-- Vague or redundant concepts
+Create a comprehensive learning system with:
 
-Each final node should be a focused lesson that a teacher could use to instruct students.
+1. **Curated Lessons**: Select the best 8-12 focused lessons
+2. **Prerequisites Graph**: Create adjacency list showing which lessons must be learned before others  
+3. **Diagnostic Questions**: Generate 5 assessment questions to test understanding across all lessons
 
-Output ONLY a valid JSON object in this exact format:
+The graph MUST be connected (all nodes reachable) and represent logical learning progression.
 
-{{
-  "topic": "{query.title()}",
-  "lessons": [
-    "Lesson Name 1",
-    "Lesson Name 2", 
-    "Lesson Name 3",
-    "Lesson Name 4",
-    "Lesson Name 5"
+Output ONLY a valid JSON array with exactly 3 elements in this format:
+
+[
+  {{
+    "1": "Lesson Name 1",
+    "2": "Lesson Name 2",
+    "3": "Lesson Name 3", 
+    "4": "Lesson Name 4",
+    "5": "Lesson Name 5"
+  }},
+  {{
+    "1": [2, 3],
+    "2": [4],
+    "3": [4, 5],
+    "4": [],
+    "5": []
+  }},
+  [
+    "Do you know what a limit is in calculus? (Yes/No)",
+    "Do you know how to find the derivative of a function? (Yes/No)", 
+    "Do you know how to apply the chain rule? (Yes/No)",
+    "Do you know how to solve optimization problems? (Yes/No)",
+    "Do you know the fundamental theorem of calculus? (Yes/No)"
   ]
-}}
+]
 
-Focus on TEACHABLE CONCEPTS only. Output ONLY the JSON with lesson titles (no descriptions). Each lesson should be essential for understanding and applying {query}. Return valid JSON only."""
+CRITICAL REQUIREMENTS:
+- First dict: Node numbers (as strings) mapped to lesson names
+- Second dict: Node numbers (as strings) mapped to arrays of prerequisite node numbers (as integers)
+- Third element: Array of exactly 5 diagnostic questions
+- Graph must be connected (every node reachable from node 1)
+- Focus on TEACHABLE CONCEPTS only
+- Return valid JSON array only, no markdown formatting"""
 
     try:
         print("🤖 Running final consolidation with Cerebras...")
@@ -313,7 +335,7 @@ if __name__ == "__main__":
         print(f"🤖 Agents completed: {len([o for o in agent_outputs if not o.startswith('Agent') or 'failed' not in o])}/5")
         
         # Run final consolidation agent
-        final_result = run_final_consolidation_agent(agent_outputs, "lhospital")
+        final_result = run_final_consolidation_agent(agent_outputs, roadmap.split('\n')[0].replace('# Comprehensive Knowledge Roadmap: ', '').strip().lower().replace(' ', '_'))
         
         if final_result:
             final_output, final_file = final_result

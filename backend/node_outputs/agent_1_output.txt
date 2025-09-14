@@ -1,0 +1,11 @@
+**Agent 1 Knowledge Nodes for: Basic_Calculus**
+
+1. **Limits and Continuity**: Understanding limits is crucial for defining derivatives and integrals. A limit describes the value a function approaches as the input approaches a certain point. Continuity means a function has no breaks, jumps, or holes in its graph.
+2. **Derivatives and Differentiation Rules**: Derivatives represent the rate of change of a function with respect to its variable. Common differentiation rules include the power rule, product rule, and quotient rule. Derivatives can be used to find slopes of tangent lines to curves at specific points.
+3. **Functions and Graphs**: A function is a relationship that assigns exactly one output for each input. Graphs visually represent functions, showing how outputs change with inputs. Key features of graphs include intercepts, slopes, and asymptotes.
+4. **Applications of Derivatives**: Derivatives help identify maximum and minimum values of functions (optimization) and are used to calculate instantaneous rates of change in various contexts. Understanding critical points (where the derivative is zero or undefined) is crucial for optimization.
+5. **Introduction to Integrals**: Integrals represent the accumulation of quantities, such as area under a curve. Basic techniques include the power rule for integration and substitution. Definite integrals provide numerical values, while indefinite integrals yield general functions.
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
