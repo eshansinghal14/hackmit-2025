@@ -27,7 +27,7 @@ class SimplifiedAnnotationManager:
     def draw_circle(self, center_x: float, center_y: float, radius: float = 50) -> bool:
         """Draw a circle at specified coordinates using tldraw API"""
         try:
-            url = "http://localhost:5000/api/draw-circle"
+            url = "http://localhost:5001/api/draw-circle"
             data = {
                 "center": {"x": center_x, "y": center_y},
                 "radius": radius

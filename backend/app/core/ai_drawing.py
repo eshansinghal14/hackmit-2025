@@ -237,7 +237,7 @@ def _draw_connected_paths(drawing_segments):
     Returns:
         bool: True if successful, False otherwise
     """
-    url = "http://localhost:5000/api/draw-line"
+    url = "http://localhost:5001/api/draw-line"
     
     # Use batch size of 700 segments
     batch_size = 700
@@ -265,7 +265,7 @@ def _draw_connected_paths(drawing_segments):
 def clear_tldraw():
     """Clear all drawings on tldraw"""
     try:
-        response = requests.post("http://localhost:5000/api/clear")
+        response = requests.post("http://localhost:5001/api/clear")
         if response.status_code == 200:
             print("🧹 Cleared tldraw canvas")
             return True
