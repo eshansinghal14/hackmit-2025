@@ -1,23 +1,32 @@
-**Agent 4 Knowledge Nodes for: Data Structures**
+**Agent 4 Knowledge Nodes for: Potatoes**
 
-1. **Interface ↔ Implementation Separation** – Every data structure should expose a clear *interface* (the set of supported operations, their signatures, and expected behavior) while hiding its *implementation* details (internal representation and algorithms). This abstraction enables interchangeable implementations, easier testing, and better modularity.  
+1. **Comprehensive Nutrient Profile & Core Health Benefits**  
+   - Potatoes deliver ~45 % DV vitamin C, 620 mg potassium (more than a banana), 10 % DV B6, and measurable amounts of thiamine, riboflavin, folate, magnesium, phosphorus, iron, and zinc—all within ≈ 110 kcal and **zero fat, sodium, or cholesterol**.  
+   - The flesh supplies most vitamin C and potassium; the skin provides the bulk of dietary fiber and additional antioxidants (carotenoids, anthocyanins).  
+   - As a **complex carbohydrate**, potatoes supply steady energy without triggering the “carb‑spike” myth, supporting muscle performance and brain function.
 
-2. **Efficient HashMap Traversal** – When iterating over a Java `HashMap`, using `entrySet()` with a `for‑each` loop (or an iterator) is markedly faster than iterating over `keySet()` and calling `get(key)` for each key. The `entrySet` provides direct access to key‑value pairs, avoiding extra hash look‑ups.  
+2. **Safe Selection, Storage, and Prep Practices**  
+   - **Selection:** Choose firm, smooth‑skinned tubers with few shallow eyes; avoid green‑tinged, sprouted, or soft spots.  
+   - **Storage:** Keep in a cool, dark, well‑ventilated area (burlap, brown paper, or perforated plastic) – not refrigerated – to prevent sprouting and greening.  
+   - **Preparation:** Scrub, remove deep eyes/sprouts/green areas, and cook by boiling, baking, steaming, microwaving, grilling, or frying. Removing green spots and sprouts eliminates solanine (the toxin that forms when potatoes turn green).  
 
-3. **Union‑Find (Disjoint Set) Template** – A Union‑Find structure supports near‑constant‑time **find** (determine the representative of a set) and **union** (merge two sets). A typical implementation uses a `HashMap<Integer,Integer>` for parent links and optionally path‑compression/rank heuristics. This structure is essential for connectivity, Kruskal’s MST, and equivalence‑class problems.  
+3. **Integrating Potatoes into Balanced Diets & Weight‑Loss Plans**  
+   - One medium (150 g) skin‑on potato counts as **1 cup of starchy vegetables** and satisfies a vegetable serving.  
+   - Pair with low‑fat toppings (salsa, Greek yogurt, steamed veggies) or mash with low‑fat broth to keep calories low while boosting satiety.  
+   - Including potatoes increases overall diet quality by adding potassium, fiber, and vitamin C, and can support weight‑loss when total caloric intake is managed.
 
-4. **Choosing the Right Structural Category** – Data structures fall into three practical categories:  
-   *Linear* (arrays, linked lists, stacks, queues) – optimal for ordered, sequential access and simple insert/delete patterns.  
-   *Hierarchical* (binary trees, BSTs, B‑trees, Red‑Black trees) – enable logarithmic search, ordered traversal, and balanced height guarantees.  
-   *Complex* (hash tables, priority queues, graphs) – provide constant‑time look‑ups, ordered priority handling, or relationship modeling. Selecting a category aligns the data‑access pattern with performance goals.  
+4. **Cultivar Choice & Home‑Garden Production Guidelines**  
+   - **Cultivar selection** (red‑skinned, white‑skinned, russet) should match climate, soil, and intended culinary use.  
+   - **Planting & care:** Seed tubers are planted after soil warms; apply balanced fertilizer, ensure consistent irrigation, and monitor for common pests (e.g., Colorado potato beetle).  
+   - **Harvest & storage** timing influences nutrient retention; harvest when vines die back, cure in a dark, ventilated space before long‑term storage.
 
-5. **Java Collections Framework Core Structures & When to Use Them** –  
-   - **ArrayList** – fast random access (`O(1)`), slower insert/delete in middle (`O(n)`). Ideal for read‑heavy lists.  
-   - **LinkedList** – constant‑time insert/delete at ends (`O(1)`), sequential access (`O(n)`). Best for frequent modifications.  
-   - **HashMap / HashSet** – average‑case `O(1)` look‑ups, insert, delete. Use for key‑value mappings or deduplication.  
-   - **Stack (Deque)** – LIFO operations (`push`, `pop`) in `O(1)`. Suitable for recursion, backtracking.  
-   - **Queue (ArrayDeque, LinkedList)** – FIFO operations (`offer`, `poll`) in `O(1)`. Good for breadth‑first traversals, task scheduling.  
+5. **Versatile Culinary Applications & Recipe Development**  
+   - Core methods: baked, microwave‑baked, roasted (olive oil, garlic, herbs), onion‑roasted, oven fries, rosemary‑roasted, grilled skewers, and “potato packets” for outdoor cooking.  
+   - Emphasize **skin‑on** preparations to preserve fiber and antioxidants.  
+   - Example actionable recipe: *Roasted Potato Wedges* – toss cubed potatoes with 1 Tbsp olive oil, minced garlic, rosemary, and sea salt; roast at 220 °C for 25 min, turning halfway. This yields a nutrient‑dense side dish suitable for meal planning.
 
 **Source Summary:**
-- Sources Analyzed: 10 (31 – 40)
-- Agent Coverage: 10 of 50 total sources
+- Sources Analyzed: 10 (31 – 40)  
+- Agent Coverage: 10 of 49 total sources  
+
+These nodes capture the most actionable, evidence‑based concepts across nutrition, safety, culinary use, and production that emerged from the assigned research material.

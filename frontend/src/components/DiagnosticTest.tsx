@@ -21,6 +21,7 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
   const [questions, setQuestions] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [isProcessingAnswer, setIsProcessingAnswer] = useState(false) // New state for tracking answer processing
 
   // Load questions from roadmap data
   const loadQuestions = async () => {
@@ -56,11 +57,14 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
   }, [])
 
   const handleAnswer = async (answer: boolean) => {
+    if (isProcessingAnswer) return // Prevent multiple clicks while processing
+
+    setIsProcessingAnswer(true) // Disable buttons
     const newAnswers = [...answers, answer]
     setAnswers(newAnswers)
 
-    // Send diagnostic answer to backend for analysis
     try {
+      // Send diagnostic answer to backend for analysis
       const response = await fetch('http://localhost:5001/api/diagnostic/analyze', {
         method: 'POST',
         headers: {
@@ -83,18 +87,20 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
       } else {
         console.error('❌ Failed to update weights:', result.error)
       }
+
+      // Add bounds checking to prevent crashes
+      if (currentQuestionIndex < questions.length - 1) {
+        // Move to next question
+        setCurrentQuestionIndex(currentQuestionIndex + 1)
+      } else {
+        // Test complete
+        setIsComplete(true)
+        onComplete?.(newAnswers)
+      }
     } catch (error) {
       console.error('❌ Error calling diagnostic API:', error)
-    }
-
-    // Add bounds checking to prevent crashes
-    if (currentQuestionIndex < questions.length - 1) {
-      // Move to next question
-      setCurrentQuestionIndex(currentQuestionIndex + 1)
-    } else {
-      // Test complete
-      setIsComplete(true)
-      onComplete?.(newAnswers)
+    } finally {
+      setIsProcessingAnswer(false) // Re-enable buttons
     }
   }
 
@@ -250,8 +256,9 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                   <Button
                     variant="contained"
                     size="large"
-                    startIcon={<CheckCircle />}
+                    startIcon={isProcessingAnswer ? <CircularProgress size={20} color="inherit" /> : <CheckCircle />}
                     onClick={() => handleAnswer(true)}
+                    disabled={isProcessingAnswer}
                     sx={{
                       flex: 1,
                       backgroundColor: '#10b981',
@@ -269,17 +276,23 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                         boxShadow: '0 4px 12px rgba(16, 185, 129, 0.35)',
                         transform: 'translateY(-1px)'
                       },
+                      '&:disabled': {
+                        backgroundColor: '#10b981',
+                        opacity: 0.7,
+                        cursor: 'not-allowed'
+                      },
                       transition: 'all 0.2s ease-in-out'
                     }}
                   >
-                    Yes, I know this
+                    {isProcessingAnswer ? 'Processing...' : 'Yes, I know this'}
                   </Button>
                   
                   <Button
                     variant="outlined"
                     size="large"
-                    startIcon={<Cancel />}
+                    startIcon={isProcessingAnswer ? <CircularProgress size={20} /> : <Cancel />}
                     onClick={() => handleAnswer(false)}
+                    disabled={isProcessingAnswer}
                     sx={{
                       flex: 1,
                       borderColor: '#d1d5db',
@@ -299,10 +312,15 @@ const DiagnosticTest: React.FC<DiagnosticTestProps> = ({
                         boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
                         transform: 'translateY(-1px)'
                       },
+                      '&:disabled': {
+                        borderColor: '#d1d5db',
+                        color: '#9ca3af',
+                        cursor: 'not-allowed'
+                      },
                       transition: 'all 0.2s ease-in-out'
                     }}
                   >
-                    No, I need to learn
+                    {isProcessingAnswer ? 'Processing...' : 'No, I need to learn'}
                   </Button>
                 </Box>
               </>

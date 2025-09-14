@@ -1,672 +1,333 @@
-You are Agent 1 of 5, a specialized research expert analyzing "Data Structures". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "potatoes". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "Data Structures"
+You are Agent 1 of 5 specialized research agents analyzing: "potatoes"
 
 ## Your Data Subset
 - Agent ID: 1/5
 - Sites Assigned: 10
-- Total Sites Across All Agents: 50
+- Total Sites Across All Agents: 49
 - Your Coverage: Sites 1 to 10
 
 ## Your Research Sources
 
-### Source 1: DSA Tutorial - Learn Data Structures and Algorithms
+### Source 1: Are Potatoes Healthy? - The Nutrition Source
 
 **Content:**
-- [Algorithms](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
-- [Array](https://www.geeksforgeeks.org/dsa/introduction-to-arrays-data-structure-and-algorithm-tutorials/)
-- [Strings](https://www.geeksforgeeks.org/dsa/string-data-structure/)
-- [Linked List](https://www.geeksforgeeks.org/dsa/linked-list-data-structure/)
-- [Stack](https://www.geeksforgeeks.org/dsa/stack-data-structure/)
-- [Queue](https://www.geeksforgeeks.org/dsa/queue-data-structure/)
-- [Tree](https://www.geeksforgeeks.org/dsa/introduction-to-tree-data-structure/)
-- [Graph](https://www.geeksforgeeks.org/dsa/graph-data-structure-and-algorithms/)
-- [Searching](https://www.geeksforgeeks.org/dsa/searching-algorithms/)
-- [Sorting](https://www.geeksforgeeks.org/dsa/sorting-algorithms/)
-- [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-2/)
-- [Dynamic Programming](https://www.geeksforgeeks.org/competitive-programming/dynamic-programming/)
-- [Binary Tree](https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/)
-- [Binary Search Tree](https://www.geeksforgeeks.org/dsa/binary-search-tree-data-structure/)
-- [Heap](https://www.geeksforgeeks.org/dsa/heap-data-structure/)
-- [Hashing](https://www.geeksforgeeks.org/dsa/hashing-data-structure/)
+[Skip to content](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#site-content)
 
-Sign In
+![Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/wp-content/themes/theme-nutrition-source-go-child/assets/images/hsph-logo-white.svg)
 
-▲
+[![The Nutrition Source logo](https://nutritionsource.hsph.harvard.edu/wp-content/themes/theme-nutrition-source-go-child/assets/images/TNS_Logo_Primary1.png)](https://nutritionsource.hsph.harvard.edu)
 
-[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/?type%3Darticle%26id%3D1103752&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+[The Nutrition Source](https://nutritionsource.hsph.harvard.edu/) Menu
 
-# DSA Tutorial - Learn Data Structures and Algorithms
+Search for:
 
-Last Updated : 06 Sep, 2025
+![A variety of potatoes in baskets, including yellow, red, purple, and russet potatoes](https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2025/08/AdobeStock_220333438-1.jpeg)
 
-Comments
+America loves potatoes, but they are also a global favorite and the [fourth most popular food worldwide](https://pubmed.ncbi.nlm.nih.gov/23674809/). Potatoes grow wild but were first cultivated as a crop in South America about 7,000 years ago. They require [less land and water](https://pubmed.ncbi.nlm.nih.gov/30441846/) than other staple crops like rice and wheat.
 
-Improve
+Because fresh potatoes are relatively inexpensive and easy to grow, they once had a daily presence on American dinner plates. But popularity of fresh potatoes has gradually declined while processed potato products like French fries have increased. While often cited as the most consumed vegetable in the U.S., many health experts disagree with this categorization because of its lower nutrient content compared with other vegetables. For example, potatoes don’t count as vegetables on the [Healthy Eating Plate](https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/).
 
-Suggest changes
+**Contents** [hide](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu)
 
-Like Article
+[Notable Nutrients](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#notable-nutrients)
 
-Like
+[Potatoes and Your Health](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#potatoes-and-your-health)
 
-Report
+[Impacts on blood sugar](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#impacts-on-blood-sugar)
 
-**Data structures** manage how data is stored and accessed, while **Algorithms** focus on processing this data. Examples of data structures are Array, Linked List, Tree and Heap, and examples of algorithms are Binary Search, Quick Sort and Merge Sort.
+[How is the potato served?](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#how-is-the-potato-served)
 
-## Why to Learn DSA?
+[Compared with other carbohydrates](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#compared-with-other-carbohydrates)
 
-- Foundation for almost every software like GPS, Search Engines, AI ChatBots, Gaming Apps, Databases, Web Applications, etc
-- Top Companies like **Google, Microsoft, Amazon, Apple, Meta** and many other heavily focus on DSA **i** n interviews.
-- Learning DSA boosts your problem-solving abilities and make you a stronger programmer.
+[Bottom line](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#bottom-line)
 
-> Try our free courses [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series) and [DSA Skillup](https://www.geeksforgeeks.org/courses/dsa-skill-up) with daily topic coverage, notes, quizzes and most asked coding problems.
+[Practical Tips](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#practical-tips)
 
-## How to learn DSA?
+[Purchase](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#purchase)
 
-1. Learn at-least one programming language ( [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/), [Java](https://www.geeksforgeeks.org/java/java/), [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) or [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)) and build your basic logic.
-2. Learn about Time and Space complexities
-3. Learn Data Structures (Arrays, Linked List, etc) an... [Content truncated for context window]
+[Starchy potatoes](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#starchy-potatoes)
+
+[Waxy potatoes](https://nutritionsource.hsph.harvard.edu/nutritionsource.hsph.harvard.edu#waxy-potatoes)
+
+[All-purpose potatoes](https://nutritions... [Content truncated for context window]
 
 
 ---
 
-### Source 2: Java Data Structures
+### Source 2: Nutrition Facts – The Alliance for Potato Research & Education
 
 **Content:**
-![Java Tutorial](https://www.tutorialspoint.com/java/images/java-mini-logo.jpg)
+[X](https://apre.org/apre.org)
 
-## Java Tutorial
+- [About APRE](https://apre.org/about-apre/)
+- [APRE Research Library](https://apre.org/research/)
+- [Potatoes & Public Health](https://apre.org/potatoes-and-public-health/)
+- [APRE Grant Program](https://apre.org/grant-program/)
+- [Contact Us](https://apre.org/contact/)
 
-- [Java - Home](https://www.tutorialspoint.com/java/index.htm)
-- [Java - Overview](https://www.tutorialspoint.com/java/java_overview.htm)
-- [Java - History](https://www.tutorialspoint.com/java/java-history.htm)
-- [Java - Features](https://www.tutorialspoint.com/java/java-features.htm)
-- [Java vs C++](https://www.tutorialspoint.com/java/java-vs-cpp.htm)
-- [Java Virtual Machine (JVM)](https://www.tutorialspoint.com/java/java_jvm.htm)
-- [Java - JDK vs JRE vs JVM](https://www.tutorialspoint.com/java/java-jdk-jre-jvm.htm)
-- [Java - Hello World Program](https://www.tutorialspoint.com/java/java_hello_world.htm)
-- [Java - Environment Setup](https://www.tutorialspoint.com/java/java_environment_setup.htm)
-- [Java - Basic Syntax](https://www.tutorialspoint.com/java/java_basic_syntax.htm)
-- [Java - Variable Types](https://www.tutorialspoint.com/java/java_variable_types.htm)
-- [Java - Data Types](https://www.tutorialspoint.com/java/java_basic_datatypes.htm)
-- [Java - Type Casting](https://www.tutorialspoint.com/java/java_type_casting.htm)
-- [Java - Unicode System](https://www.tutorialspoint.com/java/java_unicode_system.htm)
-- [Java - Basic Operators](https://www.tutorialspoint.com/java/java_basic_operators.htm)
-- [Java - Comments](https://www.tutorialspoint.com/java/java_comments.htm)
-- [Java - User Input](https://www.tutorialspoint.com/java/util/java_util_scanner.htm)
+Search for:
 
-## Java Control Statements
+ [Skip to content](https://apre.org/apre.org#content)
 
-- [Java - Loop Control](https://www.tutorialspoint.com/java/java_loop_control.htm)
-- [Java - Decision Making](https://www.tutorialspoint.com/java/java_decision_making.htm)
-- [Java - If-else](https://www.tutorialspoint.com/java/if_else_statement_in_java.htm)
-- [Java - Switch](https://www.tutorialspoint.com/java/switch_statement_in_java.htm)
-- [Java - For Loops](https://www.tutorialspoint.com/java/java_for_loop.htm)
-- [Java - For-Each Loops](https://www.tutorialspoint.com/java/java_foreach_loop.htm)
-- [Java - While Loops](https://www.tutorialspoint.com/java/java_while_loop.htm)
-- [Java - do-while Loops](https://www.tutorialspoint.com/java/java_do_while_loop.htm)
-- [Java - Break](https://www.tutorialspoint.com/java/java_break_statement.htm)
-- [Java - Continue](https://www.tutorialspoint.com/java/java_continue_statement.htm)
+Potatoes are nutrient-rich vegetables providing significant amounts of key shortfall nutrients. The white potato is an important source of essential nutrients, including potassium, vitamin C, vitamin B6, dietary fiber and magnesium, as well as important phytonutrients.
 
-## Object Oriented Programming
+- Potatoes contain nutrients of public health concern including fiber and potassium. Read [Potatoes and Childhood Nutrition](https://apre.org/potato-science/healthy-lifestyles/potatoes-and-childhood-nutrition/) and [Healthy Dietary Patterns](https://apre.org/nutrition-science/healthy-dietary-patterns/) for more information.
+- Potatoes provide about 20 percent of the potassium in the American diet. Based on research supported by APRE, the bioavailability of potassium is as high from potatoes as from potassium gluconate supplements (1).
+- A collection of studies published in an _Advances in Nutrition_ supplement, supported by APRE, identified a substantial body of evidence that demonstrates how the inclusion of white vegetables, such as potatoes, can increase intake of shortfall nutrients as well as help increase overall vegetable consumption (2). The open-access supplement can be viewed [here](http://advances.nutrition.org/content/4/3/318S.full).
+- Potatoes are one of the best nutritional values in the produce department, providing valuable nutrients such as vitamin C and significantly better nutritional value per dollar than many other raw vegetables. A 2013 analysis examined the nutrient density per unit cost of the 46 most frequently consumed vegetables as part of the National School Lunch Program (NSLP), and found that potatoes and beans were the least expensive sources of not only potassium but also fiber. Specifically, potassium-rich white potatoes were almost half the cost of most other vegetables, making it more affordable to meet key dietary guidelines for good health (3).
+- Potatoes contain surprisingly high-quality protein with a biological value between 90-100, which is considered very good, especially for a non-animal source (2).
 
-- [Java - OOPs Concepts](https://www.tutorialspoint.com/java/java_oops_concepts.htm)
-- [Java - Object & Classes](https://www.tutorialspoint.com/java/java_object_classes.htm)
-- [Java - Class Attributes](https://www.tutorialspoint.com/java/java_class_attributes.htm)
-- [Java - Class Methods](https://www.tutorialspoint.com/java/java_class_methods.htm)
-- [Java - Methods](https://www.tutorialspoint.com/java/java_methods.htm)
-- [Java - Variables Scope](https://www.tutorialspoint.com/java/java_variable_scope.htm)
-- [Java - Constructors](https://www.tutorialspoint.com/java/java_constructors.htm)
-- [Java - Access Modifiers](https... [Content truncated for context window]
+**For more information on the nutritional contributions and benefits of potatoes, read:**
+
+- [Scientific Brief: The White Potato – An Affordable, Nutrient-Dense Vegetable](https://apre.org/wp-content/uploads/2018/07/scientific-brief-1_062512.pdf)
+- [Potatoes, Nutrition and Health: A Review](https://apre.org/wp-content/uploads/2018/07/Potato-White-Paper-Final.pdf)
+- [Potato Nutrition Handbook](https://www.potatogoodness.com/wp-content/uploads/2018/04/Potato-Nutrition-Handbook-2015.pdf)
+- [Press release](https://apre.org/wp-content/uploads/2018/07/apre_pressrelease_may15_advnutr... [Content truncated for context window]
 
 
 ---
 
-### Source 3: Advanced Data Structures Explained
+### Source 3: Potato
 
 **Content:**
-Understanding data structures
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
 
-# Advanced Data Structures Explained
+From Wikipedia, the free encyclopedia
 
-Learn how advanced data structures allow businesses to create more efficient algorithms and effective programs to gain a competitive edge and enhance their growth.
+Starchy tuber used as a staple food
 
-Table of Contents
+For other uses, see [Potato (disambiguation)](https://en.wikipedia.org/wiki/Potato_(disambiguation)).
 
-- What are data structures?
-- Why are data structures important?
-- Types of data structures explained
-- Wrapping up
+| Potato |
+| --- |
+| Potato [cultivars](https://en.wikipedia.org/wiki/List_of_potato_cultivars) appear in a variety of colors, shapes, and sizes. |
+| [Scientific classification](https://en.wikipedia.org/wiki/Taxonomy_(biology)) |
+| Kingdom: | [Plantae](https://en.wikipedia.org/wiki/Plant) |
+| _Clade_: | [Tracheophytes](https://en.wikipedia.org/wiki/Vascular_plant) |
+| _Clade_: | [Angiosperms](https://en.wikipedia.org/wiki/Flowering_plant) |
+| _Clade_: | [Eudicots](https://en.wikipedia.org/wiki/Eudicots) |
+| _Clade_: | [Asterids](https://en.wikipedia.org/wiki/Asterids) |
+| Order: | [Solanales](https://en.wikipedia.org/wiki/Solanales) |
+| Family: | [Solanaceae](https://en.wikipedia.org/wiki/Solanaceae) |
+| Genus: | [_Solanum_](https://en.wikipedia.org/wiki/Solanum) |
+| Species: | _**S. tuberosum**_ |
+| [Binomial name](https://en.wikipedia.org/wiki/Binomial_nomenclature) |
+| **_Solanum tuberosum_** [L.](https://en.wikipedia.org/wiki/Carl_Linnaeus) |
+| [Synonyms](https://en.wikipedia.org/wiki/Synonym_(taxonomy)) |
+| _see_ [list](https://en.wikipedia.org/wiki/Taxonomic_synonyms_of_Solanum_tuberosum) |
 
-## What are data structures?
+The **potato** ([/pəˈteɪtoʊ/](https://en.wikipedia.org/wiki/Help:IPA/English)) is a [starchy](https://en.wikipedia.org/wiki/Starch#Food) [tuberous vegetable](https://en.wikipedia.org/wiki/Root_vegetable) native to the Americas that is consumed as a [staple food](https://en.wikipedia.org/wiki/Staple_food) in many parts of the world. Potatoes are underground [stem tubers](https://en.wikipedia.org/wiki/Tuber#Stem_tuber) of the plant _**Solanum tuberosum**_, a [perennial](https://en.wikipedia.org/wiki/Perennial_plant) in the nightshade family [Solanaceae](https://en.wikipedia.org/wiki/Solanaceae).
 
-Data structures are a way of organizing, processing, retrieving, and storing data on a computer.
+Wild potato [species](https://en.wikipedia.org/wiki/Species) can be found from the southern United States to [southern Chile](https://en.wikipedia.org/wiki/Southern_Chile). Genetic studies show that the cultivated potato has a single origin, in the area of present-day southern [Peru](https://en.wikipedia.org/wiki/Peru) and extreme northwestern [Bolivia](https://en.wikipedia.org/wiki/Bolivia). Potatoes were domesticated there about 7,000–10,000 years ago from a species in the _[S. brevicaule](https://en.wikipedia.org/wiki/Solanum_brevicaule)_ complex. Many [varieties](https://en.wikipedia.org/wiki/Variety_(botany)) of the potato are cultivated in the [Andes](https://en.wikipedia.org/wiki/Andes) region of South America, where the species is [indigenous](https://en.wikipedia.org/wiki/Indigenous_species).
 
-Users can quickly access and update arranged information, enabling them to manipulate and use the data easily.
-
-There are several types of basic and advanced data structures — which one an organization chooses depends on specific system requirements.
-
-## Why are data structures important?
-
-Businesses have an increasing amount of data and need structured ways of managing it. By organizing information in an easy-to-understand way, data structures allow users to access and utilize data as needed.
-
-Data structures help create robust, efficient, and maintainable software systems — integral to an organization’s performance. They are the foundation for various algorithms and processing techniques, allowing for effective problem-solving in computer and software development domains.
-
-They are useful to businesses for several reasons, providing a wealth of benefits for their growth, integrity, and efficiency.
-
-### Data storage and retrieval
-
-Efficient data storage is the top-level benefit of data structures. They provide optimized algorithms and data organization techniques for faster access and information processing. This improves system performance and responsiveness, which is crucial for businesses with substantial data volumes.
-
-### Data abstraction
-
-With data structures, businesses work with data more intuitively and logically. This means developers can focus on their programs' overall design and functionality without getting bogged down with data storage details.
-
-### Data analysis
-
-Advanced data structures let businesses perform complex data analysis and gain valuable insights. They represent and analyze relationships between data points, enabling businesses to uncover patterns, trends, and correlations.
-
-### Algorithms
-
-Different data structures help optimize algorithms businesses use to solve complex problems efficiently. For example, specific advanced data structures can process tasks based on priority, ensuring critical operations are handled quickly.
-
-### Real-time processing
-
-Businesses often deal with real-time data streams that need quick processing and analysis. Advanced data structures help by efficiently inserting, retrieving, and manipulating data. This is particularly useful in finance, e-commerce, and logistics industries.
-
-### Data integrity and security
-
-Advanced data structures offer techniques to ensure data integrity and security. Different structures can secure data storage and retrieval or enforce access control and permissions. By leverag... [Content truncated for context window]
+The Spanish [introduced potatoes to Europe](https://en.wikipedia.org/wiki/Columbian_exchange) in the second half of the 16th century from the Americas. They are a staple food in many parts of the world and an integra... [Content truncated for context window]
 
 
 ---
 
-### Source 4: Must-Know Data Structures for Coding Interviews - Level Up Coding
+### Source 4: The Best Pan-Roasted Potatoes
 
 **Content:**
-## Must-Know Data Structures for Coding Interviews
-
-If you prefer to follow along via my YouTube video, you can watch it here:
-
-Data structures are used to store information in our code. We use different data structures to allow us to add, access, and delete data in the most efficient and applicable ways to solve our problems. In interviews, choosing the right data structure could allow you to reduce the time complexity of your solution, something that is greatly valued by companies. I know I have been stuck unable to optimize some of my interview questions just because I used the wrong data structure. Therefore, today we will be going over the must-know data structures for coding interviews.
-
-If this post is helpful, please consider [subscribing to my YouTube channel](http://bit.ly/sub2rahul) or following me on medium for more content like this! If you’re looking for a good resource to learn these data structures, I recommend picking up a copy of [Cracking the Coding Interview](https://amzn.to/2YBZWJ3) which goes over all of these and more in detail! Also if you haven’t already, check out my last article on the [Must Know Algorithms for Coding Interviews](http://bit.ly/interviewalgorithms)!
-
-> Disclaimer: This post is created based off my experience looking for internships and entry level (new grad) roles. At any point if I state you need to know a data structure, this means you should understand reasons to use it, time complexity to insert, lookup, and delete elements, tradeoffs between it and others, and know how to implement it in the language of your choice. If I mention Big-O at any point in the article, I am referring to the industry usage of the term (it is equivalent to Big-Theta in academia). Also, the link to Cracking the Coding Interview on Amazon is an affiliate link and I will receive a commission if you purchase anything on Amazon using my link. Now that we have that out of the way, let’s get to the list!
-
-## 1\. Array
-
-Arrays are a basic data structure that is usually built into most languages. They are important for two main reasons. First, arrays are often the parameters to your coding questions in interviews. Therefore, having a strong understanding of them will ensure you can be successful in interviews. Second, you can implement most other data structures with an array, so you cannot understand how many other data structures are implemented without having a fundamental understanding of arrays.
-
-## 2\. Linked List
-
-Linked Lists are similar to arrays in that they are common in interviews and can be used to implement some other data structures. For this one, I highly recommend understanding how to implement this as well as adding methods to add, lookup, and delete values from the list. I have had interviews in which I have been asked to implement a Linked List from scratch, so I know it has a chance of coming up in your interviews!
-
-## 3\. Stack & Queue
-
-Stack and queues are opposite data structures. Each can be implemented with... [Content truncated for context window]
+Featured Video The Best Pan-Roasted Potatoes "Gretchen wasn’t kidding when she named her potato dish 'The Best Pan-Roasted Potatoes.' The dish is absurdly simple in terms of ingredients, but it’s the contrasting play of colors and textures that make it worthy of a community pick. The step of keeping the wedges stuck together while the spuds fry results in a striking contrast of light and dark surfaces. One bite through a wedge leaves a delightful confusion on your palate, simultaneously chip-like in crunchiness and mashed potato-like in fluffiness, all in one bite. The flavor of the potatoes shines through in the absence of potentially overwhelming spices, but feel free to indulge yourself with a dash of your favorite seasonings." —Panfusine "I have long documented in this space my antipathy for side dishes, and my family has learned to accept a constant round of broccoli, green beans, and yeah, I’ll say it, sweet potato fries straight from the freezer bag. But sides got a whole new lease on life chez moi with The Best Pan Roasted Potatoes. The best thing here is the reminder to work with waxy potatoes, which really do make a difference in these pan roasted dishes. Yes, you do need patience, and that may not seem like a weeknight virtue—but while these are doing their thing for 12 minutes or so you can be chopping, stirring, or doing whatever else you need to do to get dinner on the table. Alternatively, you can ask your teenager about her boyfriend, her math homework, or the boyfriend who isn’t really her boyfriend, she says. That took 12 minutes! Okay, it took three. So now go ask another kid why their room looks like a Superfund site. Okay now you can check your potatoes. Brown! Spitting oil a little! Be careful. Once covered watch them carefully. Mine took 20 minutes to achieve that delicious sort of salty yield between the teeth. Eat on." —Jestei
 
 
 ---
 
-### Source 5: Chandan Singh | Data Structures
+### Source 5: Prairie Fare: Pick Some Potatoes for Potassium
 
 **Content:**
-* * *
+## [Extension and Ag Research News](https://www.ag.ndsu.edu/news)
 
-Data Structures [view\
-markdown](https://github.com/csinva/csinva.github.io/blob/master/_notes/cs/data_structures.md)
+[Accessibility](https://www.ag.ndsu.edu/news/columns/prairie-fare/accessibility-info)
 
-Some notes on advanced data structures, based on UVA's "Program and Data Representation" course.
+By Julie Garden-Robinson, Food and Nutrition Specialist
 
-* * *
+NDSU Extension
 
-## lists
+When I was young, my midsummer task was to “sneak” potatoes from the sides of the potato hills in our garden.
 
-## arrays and strings
+We all liked cooked baby red potatoes served with butter, salt and pepper. We usually had fresh green beans and a lettuce salad along with some type of meat to complete our meal from the garden.
 
-- start by checking for null, length 0
-- _ascii_ is 128, extended is 256
+As I was looking at my towering potato plants in my backyard garden the other day, I felt a little nostalgic. I didn’t steal any potatoes from the hills, though.
 
-## queue - linkedlist
+I will let them grow to be large potatoes. I bought some baby red potatoes at the store to make this week’s recipe.
 
-- has insert at back (enqueue) and remove from front (dequeue)
+Potatoes sometimes get a bad rap related to their role in a healthful diet. Some people avoid them. However, avoiding potatoes could shortchange you on several important nutrients, including potassium, complex carbohydrates, vitamin C, fiber (especially if you eat the skin) and other nutrients.
 
+If you slather a lot of extra ingredients on your cooked or baked potato, you may please your taste buds. However, you are not doing your overall health a huge favor by adding a lot of calories and, most likely, saturated fat.
 
-```
-class Node {
-Node next;
-int val;
-public Node(int d) { val = d; }
-}
+Potassium is found in abundance in potatoes. You might be aware that bananas are a potassium source. A medium banana has 425 milligrams of potassium. One medium baked potato with the skin has 925 milligrams of potassium, which is more than twice as much potassium as a similar amount of banana.
 
-```
+Potassium is so important to our overall health that the latest Nutrition Facts labels now feature potassium as one of the listed nutrients. You also will see vitamin D and added sugar on the new labels.
 
-- finding a loop is tricky, use visited
-- reverse a linked list
- - requires 3 ptrs (one temporary to store next)
- - return pointer to new end
+The changes to the label crowded out vitamins A and C. We still need these nutrients, of course.
 
-## stack
+The nutrition labels were adjusted to focus on nutrients of concern and also keep the nutrition label the same size. You will notice that serving size is in a larger font so it catches our attention.
 
-```
-class Stack {
- Node top;
- Node pop() {
- if (top != null) {
- Object item = top.data;
- top = top.next;
- return item;
- }
- return null;
- }
- void push(Object item) {
- Node t = new Node(item);
- t.next = top;
- top = t;
- }
-}
+On average, an adult healthy male age 19 and older needs 3,400 milligrams of potassium and an adult healthy female needs 2,600 milligrams. Aim to get your nutrients from food, and be sure to eat a variety of fruits and vegetables. Milk, yogurt and salmon also contribute significant amounts of potassium to our diet.
 
-```
+Why is potassium so important, anyway?
 
-- sort a stack with 2 stacks
- - make a new stack called ans
- - pop from old
- - while old element is > ans.peek(), old.push(ans.pop())
- - then new.push(old element)
-- stack with min - each el stores min of things below it
-- queue with 2 stacks - keep popping everything off of one and putting them on the other
-- sort with 2 stacks
+Potassium is an essential mineral and electrolyte. Our body needs potassium to help our heart and kidneys function. Maintaining the right level of potassium is important for your muscles and organs to function at their best. Having an adequate amount of potassium may help with blood pressure management.
 
-## trees
-
-- Balanced binary trees are generally logarithmic
- - Root: a node with no parent; there can only be one root
- - Leaf: a node with no children
- - Siblings: two nodes with the same parent
- - Height of a node: length of the longest path from that node to a leaf
- - Thus, all leaves have height of zero
- - Height of a tree: maximum depth of a node in that tree = height of the root
- - Depth of a node: length of the path from the root to that node
- - Path: sequence of nodes n1, n2, …, nk such that ni is parent of ni+1 for 1 ≤ i ≤ k
- - Length: number of edges in the path
- - Internal path length: sum of the depths of all the nodes
-- Binary Tree - every node has at most 2 children
-- Binary Search Tree - Each node has a key value that can be compared
- - Every node in left subtree has a key whose value is less than the root’s key value
- - Every node in right subtree has a key whose value is greater than the root’s key value
-
-```
-void BST::insert(int x, BinaryNode * & curNode){ //we pass in by reference because we want a change in the method to actually modify the parameter (the parameter is the curNode *)
- //left associative so this is a reference to a pointer
- if (curNode==NULL)
- curNode = new BinaryNode(x,NULL,NULL);
- else if(x element)
- insert(x,curNode->left);
- else if(x>curNode->element)
- insert(x,curNode->right);
-}
-
-```
-
-- BST Remove
- - if no children: remove node (reclaiming memory), set parent pointer to null
- \- one child: Adjust pointer of parent to point at child, and reclaim memory
- \- two children: successor is min of right subtree
- \- replace node with successor, then remove successor from tree
- - worst-case depth = n-1 (this happens when the data is already sorted)
- - maximum number of nodes in tree of height h is 2^(h+1) - 1
- - minimum height... [Content truncated for context window]
+Many Americans do not get the recommended amount of potassium from their diet as a result of shortchanging themselves on fruits and vegetables. About 90% of adults do not meet the daily recommendat... [Content truncated for context window]
 
 
 ---
 
-### Source 6: Data Structures · soft-eng-interview-prep
+### Source 6: The Goodness in Potatoes
 
 **Content:**
-[Powered by **GitBook**](https://www.gitbook.com?utm_source=public_site_legacy&utm_medium=referral&utm_campaign=trademark&utm_term=orrsella&utm_content=powered_by)
+[![The Goodness in Potatoes](https://en.sabriulkerfoundation.org/files/article/133614642822305357-133608660652333276-patates-1.png)](javascript:;)
 
-# [Data Structures](https://orrsella.gitbooks.io/soft-eng-interview-prep/content/)
+## The Goodness in Potatoes
 
-# Data Structures
+Potatoes are a very common food in the diets of most Europeans, but perhaps sometimes the nutrition contribution of this staple crop is overlooked. To start with, there are considerable nutritional differences between potato dishes depending on how they are cooked, and this may have an impact on how potatoes as a food are perceived by consumers. What makes potatoes special is that they combine the characteristics of starchy foods with those of vegetables.
 
-- Contiguously-allocated structures are composed of single slabs of memory, and include arrays, matrices, heaps, and hash tables.
-- Linked data structures are composed of distinct chunks of memory bound together by _pointers_, and include lists, trees, and graph adjacency lists.
+![](https://en.sabriulkerfoundation.org/files/editor/133614642902953028-133608660652333276-patates-1.png)
 
-## Arrays
+First imported from South America in the 16th century, potatoes took another 150 years before actually becoming one of the most important staple food crops in Europe. Nowadays, Central and Eastern Europeans are the highest consumers, but potatoes play a role in diets all across the continent, with an average per capita consumption of 94 kg in 2005.1 Listed below are important and interesting nutritional aspects that are worth considering in the discussion on the contribution of potatoes towards a healthy balanced diet.2
 
-- Built from fixed-size records.
-- Constant access time given the index.
-- Space efficient – arrays consist only of the data, so no space is wasted with links or formatting info.
-- Easy to iterate over quickly, because of memory locality.
-- Cannot adjust their size in the middle of a program's execution.
-- _Dynamic arrays_ double in size whenever insert index is out of bound (Java's `ArrayList` is dynamic, while `int[]` isn't).
-- Java array max length is `Integer.MAX_VALUE = 2^31-1` (but could actually be a bit shorter because of reserved memory).
+1\. When boiled or baked, potatoes are a virtually fat-free food. The main energy-providing nutrient in potatoes is carbohydrate, in the form of starch. Carbohydrates are the primary source of energy for the body, and should supply at least half of your calories for the day. The advantage of getting carbohydrates from potatoes is that you will be getting a considerable amount of certain micronutrients as well. Potatoes contain a small amount of protein: about 3 g in a boiled medium portion of 180 g (see Table 1). Although this is less than 10% of the daily adult requirement, potatoes are a good source of the amino acids lysine and tryptophan and combined with milk or eggs make for a high quality protein food.
 
-## Linked Lists
+2\. Potatoes are a source of fibre, which contributes to the feeling of fullness, and supports healthy digestive functions. A 180 g portion of boiled potatoes provides about 3 grams of fibre, which equates to more than 10% of the daily recommended intake of fibre, namely 25 grams.3Some people enjoy the stronger taste of eating cooked potatoes with skins on, and in this form they contain even more fibre. However care must be taken not to eat skins that are discoloured or marked. Green patches indicate higher levels of glycoalkaloids such as solanine, which may lead to ill health if consumed in large amounts. A small amount of the starch in potatoes resists digestion (this is called ‘resistant starch’): this particularly occurs when potatoes are eaten cold after being cooked, such as in a potato salad. Resistant starch acts in the body in a similar way to fibre, and may aid in the control of blood glucose and blood lipid levels.4
 
-- Singly-linked – each elements links to the next one.
-- Doubly-linked – each elements links to the next and previous elements (Java's `LinkedList` is doubly-linked).
-- Operations supported: search, insert, delete.
-- Cannot overflow (as opposed to static arrays which have a finite length).
-- Simpler insertion/deletion than arrays.
-- Requires extra memory for pointers than arrays.
-- Not efficient for random access to items.
-- Worse memory locality than arrays.
-
-## Stacks and Queues
-
-- Stacks – LIFO (push, pop)
- - Very efficient, good to use when retrieval order doesn't matter at all (like for batch jobs).
- - LIFO usually happens in recursive algorithms.
-- Queues – FIFO (enqueue, dequeue)
- - Average "waiting time" for jobs is identical for FIFO and LIFO. Maximum time varies (FIFO minimizes max waiting time).
- - Harder to implement, appropriate when order is important.
- - Used for searches in graphs.
-- Stacks and Queues can be effectively implemented by dynamic arrays or linked lists. If upper bound of size is known, static arrays can also be used.
-
-## Dictionary Structures
-
-- Enable access to data items by content (key).
-- Operations: search, insert, delete, max, min, predecessor/successor (next or previous element in sorted order).
-- Implementations include: **hash tables**, **(binary) search trees**.
-
-## Binary Search Trees
-
-- Each node has a key, and _all_ keys in the left subtree are smaller than the node's key, _all_ those in the right are bigger.
-- Operations: search, traversal, insert, delete.
-- Searching is `O(log(n)) = O(h)`, where `h = height` of the tree ( `log(n)` for 2 child nodes in each tree root, if tree is perfectly balanced).
-- The min element is the leftmost descendant of the root, the max is the rightmost.
-- Traversal in `O(n)`, by traversing the left node, processing the item and traversing the right node, recursively... [Content truncated for context window]
+3\. Potatoes are a steady reliable source of vitamin C – a medium... [Content truncated for context window]
 
 
 ---
 
-### Source 7: 5. Data Structures — Python 3.13.7 documentation
+### Source 7: Potato - International Potato Center
 
 **Content:**
-### Navigation
+# Potato
 
-- [index](https://docs.python.org/genindex.html)
-- [modules](https://docs.python.org/py-modindex.html) \|
-- [next](https://docs.python.org/modules.html) \|
-- [previous](https://docs.python.org/controlflow.html) \|
-- [Python](https://www.python.org/) »
-- [3.13.7 Documentation](https://docs.python.org/index.html) »
-- [The Python Tutorial](https://docs.python.org/index.html) »
-- 5\. Data Structures
-- \|
-- Theme
-AutoLightDark \|
+PotatoPotato Facts and FiguresHow Potato GrowsPotato NutritionNative Potato VarietiesWild Potato SpeciesPotato Processing and UsesPotato Pests and Diseases
 
-# 5\. Data Structures [¶](https://docs.python.org/docs.python.org\#data-structures)
+Potato
 
-This chapter describes some things you’ve learned about already in more detail,
-and adds some new things as well.
+### POTATO
 
-## 5.1. More on Lists [¶](https://docs.python.org/docs.python.org\#more-on-lists)
+There are over 4,000 edible varieties of potato, mostly found in the Andes of South America. Potato is the third most important food crop in the world after rice and wheat in terms of human consumption. More than a billion people worldwide eat potato, and global total crop production exceeds 300 million metric tons. Potato is a critical crop in terms of food security in the face of population growth and increased hunger rates. For example, China, the world’s biggest consumer of potatoes, expects that fully 50% of the increased food production it will need to meet demand in the next 20 years will come from potatoes.
 
-The list data type has some more methods. Here are all of the methods of list
-objects:
+Potato Facts and Figures
 
-list.append( _x_)
+### POTATO FACTS AND FIGURES
 
-Add an item to the end of the list. Similar to `a[len(a):] = [x]`.
+The potato (Solanum tuberosum) belongs to the solanaceae family of flowering plants. It originated and was first domesticated in the Andes mountains of South America.The potato is the third most important food crop in the world after rice and wheat in terms of human consumption. More than a billion people worldwide eat potato, and global total crop Production exceeds 374 million metric tons. There are more than 4,500 varieties of native potatoes, mostly found in the Andes. They come in many sizes and shapes. There are also between 100-180 wild potato species. Though they are too bitter to eat, their important biodiversity includes natural resistances to pests, diseases, and climatic conditions.
 
-list.extend( _iterable_)
+[read more](https://cipotato.org/?page_id=23876)
 
-Extend the list by appending all the items from the iterable. Similar to
-`a[len(a):] = iterable`.
+How Potato Grows
 
-list.insert( _i_, _x_)
+### HOW POTATO GROWS
 
-Insert an item at a given position. The first argument is the index of the
-element before which to insert, so `a.insert(0, x)` inserts at the front of
-the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.
+The potato (Solanum tuberosum) is an herbaceous annual that grows up to 100 cm (40 inches) tall. As the potato plant grows, its compound leaves manufacture starch that is transferred to the ends of its underground stems (or stolons). The stems thicken to form a few or as many as 20 tubers close to the soil surface. The number of tubers that actually reach maturity depends on available moisture and soil nutrients. Tubers may vary in shape and size, and normally weigh up to 300 g (10.5 oz) each. At the end of the growing season, the plant’s leaves and stems die down to the soil level and its new tubers detach from their stolons. The tubers then serve as a nutrient store that allows the plant to survive the cold and later regrow and reproduce. Each tuber has from two to as many as 10 buds (or “eyes”), arranged in a spiral pattern around its surface. The buds generate shoots that grow into new plants when conditions are again favorable.
 
-list.remove( _x_)
+[read more](https://cipotato.org/?page_id=23664)
 
-Remove the first item from the list whose value is equal to _x_. It raises a
-[`ValueError`](https://docs.python.org/library/exceptions.html#ValueError) if there is no such item.
+Potato Nutrition
 
-list.pop(\[ _i_\])
+### POTATO NUTRITION
 
-Remove the item at the given position in the list, and return it. If no index
-is specified, `a.pop()` removes and returns the last item in the list.
-It raises an [`IndexError`](https://docs.python.org/library/exceptions.html#IndexError) if the list is empty or the index is
-outside the list range.
+Potatoes are an excellent, low-fat source of carbohydrates, with one-fourth the calories of bread. Boiled, they have more protein than maize and nearly twice the calcium. An average serving of potatoes with the skin on provides about 10 percent of the recommended daily intake of fiber.
 
-list.clear()
-
-Remove all items from the list. Similar to `del a[:]`.
-
-list.index( _x_\[, _start_\[, _end_\]\])
-
-Return zero-based index of the first occurrence of _x_ in the list.
-Raises a [`ValueError`](https://docs.python.org/library/exceptions.html#ValueError) if there is no such item.
-
-The optional arguments _start_ and _end_ are interpreted as in the slice
-notation and are used to limit the search to a particular subsequence of
-the list. The returned index is computed relative to the beginning of the full
-sequence rather than the _start_ argument.
-
-list.count( _x_)
-
-Return the number of times _x_ appears in the list.
-
-list.sort( _\*_, _key=None_, _reverse=False_)
-
-Sort the items of the list in place (the arguments can be used for sort
-customization, see [`sorted()`](https://docs.python.org/library/functions.html#sorted) for their explanation).
-
-list.reverse()
-
-Reverse the elements of the list in place.
-
-list.copy()
-
-Return a shallow copy of the list. Similar to `a[:]`.
-
-An example that uses most of the list methods:
-
-```
->>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
->>> fruits.count('apple')
-2
->>> fruits.count('tangerine')
-0
->>> fruits.index('banana')
-3
->... [Content truncated for context window]
+[read more](... [Content truncated for context window]
 
 
 ---
 
-### Source 8: Data Structures
+### Source 8: Potatoes - BBC Bitesize
 
 **Content:**
-[Clojure](https://clojure.org/index)
-
-clojure.orgask.clojure.org
-
-Data Structures
-
-
-
-
-
-# Data Structures
-
-Table of Contents
-
-- [nil](https://clojure.org/clojure.org#nil)
-- [Numbers](https://clojure.org/clojure.org#Numbers)
-- [Strings](https://clojure.org/clojure.org#Strings)
-- [Characters](https://clojure.org/clojure.org#Characters)
-- [Keywords](https://clojure.org/clojure.org#Keywords)
-- [Symbols](https://clojure.org/clojure.org#Symbols)
-- [Collections](https://clojure.org/clojure.org#Collections)
-- [Lists (IPersistentList)](https://clojure.org/clojure.org#Lists)
-- [Vectors (IPersistentVector)](https://clojure.org/clojure.org#Vectors)
-- [Maps (IPersistentMap)](https://clojure.org/clojure.org#Maps)
-- [StructMaps](https://clojure.org/clojure.org#StructMaps)
-- [ArrayMaps](https://clojure.org/clojure.org#ArrayMaps)
-- [Sets](https://clojure.org/clojure.org#Sets)
-
-Clojure has a rich set of data structures. They share a set of properties:
-
-- They are immutable
-
-- They are read-able
-
-- They support proper value equality semantics in their implementation of equals
-
-- They provide good hash values
-
-- In addition, the collections:
-
-
-
-- Are manipulated via interfaces.
-
-- Support sequencing
-
-- Support persistent manipulation.
-
-- Support metadata
-
-- Implement java.lang.Iterable
-
-- Implement the non-optional (read-only) portion of java.util.Collection or java.util.Map
-
-
-## nil
-
-nil is a possible value of any data type in Clojure. nil has the same value as Java null. The Clojure conditional system is based around nil and false, with nil and false representing the values of logical falsity in conditional tests - anything else is logical truth. In addition, nil is used as the end-of-sequence sentinel value in the sequence protocol.
-
-## Numbers
-
-Clojure provides full support for JVM primitive values by default, allowing high performance, idiomatic Clojure code for numeric applications.
-
-Clojure also supports the Java boxed number types derived from java.lang.Number, including BigInteger and BigDecimal, plus its own Ratio type. There is some special handling:
-
-### Longs
-
-By default Clojure operates with natural numbers as instances of Java’s long primitive type. When a primitive integer operation results in a value that is too large to be contained in a primitive value, a java.lang.ArithmeticException is thrown. Clojure provides a set of alternative math operators suffixed with an apostrophe: +', -', \*', inc', and dec'. These operators auto-promote to BigInt upon overflow, but are less efficient than the regular math operators.
-
-### Ratio
-
-Represents a ratio between integers. Division of integers that can’t be reduced to an integer yields a ratio, i.e. 22/7 = 22/7, rather than a floating point or truncated value.
-
-### Contagion
-
-BigInts and floating point types are "contagious" across operations. That is, any integer operation involving a BigInt will result in a BigInt, and any operation involving a double or float will result in a double.
-
-### BigInt and BigDec... [Content truncated for context window]
+Wanda and the 'Big Book of Things to Know by 8¾' learn all about her favourite vegetable, the potato Where do potatoes come from? Nearly everyone loves potatoes. Where would mealtimes be without them? Because of all the potatoes we eat on this island, you would think they came from here. They don’t! Archaeologists have discovered potato remains in South America from 2,500 years ago. If you think you love potatoes, you should see the pottery people made back then. They obviously adored potatoes. Some of the pots that were found had pictures of potato humans! But not much has changed in the way we eat potatoes today from the way people back then ate them. They mashed, baked, boiled and stewed their potatoes, just like we do. How do potatoes grow? Potatoes don’t grow from a simple seed. They grow from a seed potato. The seed potato has small sprouts on it and is ready to grow. When you forget about potatoes in the cupboard for a while, they might start sprouting like a seed potato. Before planting, the farmer ploughs the land and pushes the soil into ridges. After that, the farmer removes any stones. This is done to stop the stones squashing the potatoes as they grow underground. The farmer then plants the seed potatoes into the ridges and covers them with soil to protect them. Like many other vegetables grown here, potatoes are sown in the spring so the warmer weather can help them grow. After the potatoes are planted, they grow roots down into the soil. Then new shoots reach up through the soil towards sunlight, and soon there are green leaves above ground. The shoots produce energy to help the roots grow bigger and eventually become potatoes. Potatoes can only be grown in a field one year out of five years. This is because they take so many nutrients from the soil. Each year the farmer grows potatoes in a different field. Moving the potato crop around means the soil stays healthy for other crops. How did the potato come to Ireland? Even though potatoes had been eaten in other places for thousands of years, they didn’t appear in Europe until 1570. That’s over 450 years ago. Soon after, a famous explorer called Sir Walter Raleigh brought potatoes to Ireland. Potatoes were easier to grow for Irish farmers than other crops, such as wheat and oats. And, they soon discovered that the potato plant was really nutritious and gave you loads of energy for a full day's work. In the 1800s nearly half of Ireland’s population - mostly poor families - depended on the potato for their daily food. The potato was the perfect crop for Irish farmers to produce and for everyone to eat. Every year in Northern Ireland we spend more than £50 million on potatoes, so we need to grow a lot of them. Crisps! You might love potatoes best in the form of crisps! There are lots of different varieties of potatoes grown in Ireland. Some are suitable for making crisps, while others are used to make mash or chips. Once the potatoes have been harvested, they are stored in big wooden c... [Content truncated for context window]
 
 
 ---
 
-### Source 9: Data structures
+### Source 9: Potatoes - Food Technology & Processing Food Technology & Processing
 
 **Content:**
-[CS Notes](https://notes.eddyerburgh.me) Menu
+# [Food Technology & Processing](https://aggie-horticulture.tamu.edu/food-technology/)
 
-Search
+# Potatoes
 
-- [view on GitHub](https://github.com/eddyerburgh/notes)
+## ![](https://aggie-horticulture.tamu.edu/food-technology/wp-content/uploads/sites/8/2011/10/potatoes.jpg)Nutrition Information
 
-# Data structures
+Potatoes are rich in carbohydrates, dietary fiber, and potassium. They are moderately rich in Vitamin C (if not boiled), calcium, and folate (folic acid). When potatoes are compared with other vegetables, they are higher in calories (133 calories per medium potato) than others (excluding sweet corn) due to their starch composition, but they are naturally low in fat and sodium. Care needs to be taken, however, when adding high fat condiments to a baked potato (such as sour cream, butter, or margarine) because these items are the culprits that add excessive calories to the finished product.
 
-Data structures affect how long it takes to access and update data. Selecting appropriate data structures for a problem is in an important skill for software engineers to develop.
+## Planting and Harvesting Potatoes
 
-## Table of contents
+The ideal time to plant seed potatoes in Central Texas in the spring is February to March; therefore, harvesting would occur May to June. In the fall, planting should occur August to September and harvest would then occur November to December.
 
-1. [Introduction](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#introduction)
-1. [Abstract data types](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#abstract-data-types)
-2. [Contiguous vs Linked data structures](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#contiguous-vs-linked-data-structures)
-1. [Arrays](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#arrays)
-2. [Pointers and linked structures](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#pointers-and-linked-structures)
-3. [Comparison](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#comparison)
-3. [Stacks and queues](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#stacks-and-queues)
-4. [Dictionaries](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#dictionaries)
-1. [Hash tables](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#hash-tables)
-5. [Binary Search Trees](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#binary-search-trees)
-6. [References](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#references)
+| Plant Potatoes | Harvest Potatoes |
+| --- | --- |
+| February to March | May to June |
+| August to September | November to December |
 
-## Introduction
+Planting and Harvesting Potatoes
 
-A data structure is a representation of data and a collection of associated operations [\[1, P. 5\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+## Storing Harvested Potatoes
 
-Data structures are implementations of abstract data types [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+Store in a cool, humid (but not wet), dark place. Do not wash before storing. Do not refrigerate.
 
-### Abstract data types
+## Choosing and Freezing Potatoes
 
-ADTs (Abstract Data Types) define the set of operations supported by a data structure [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+Choose firm, and fairly smooth potatoes that are free from blemishes and sunburn (a green discoloration under the skin). Avoid potatoes that have sprouted or have wilted or wrinkled skin, green or dark areas, and ones with the presence of decay. To prepare potatoes for freezing, peel or scrape and wash. If frozen, diced potatoes are desired, dice the washed potatoes and blanch for 2-3 minutes. Drain and cool before placing in the appropriate freezer bags or containers; freeze, leaving 1/2″ head-space.
 
-An ADT is the interface of a data structure, it doesn’t define how a data structure implements the operations [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+### Steps for Freezing Diced Potatoes
 
-There can be many implementations of an ADT [\[1, P. 4\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#open-data-structures).
+- Peel, scrape, and wash potatoes.
+- Dice the potatoes to the desired size.
+- Blanch for 2-3 minutes.
+- Drain and cool before placing in freezer bags; freeze, leaving 1/2″ head-space.
 
-## Contiguous vs Linked data structures
+If frozen French-fried potatoes are desired, peel mature potatoes and slice into 1/3″ X 3/8″ strips. Rinse in cold water and keep covered with water until ready to fry. Dry the potato strips. Fry small amounts of the potato strips in deep hot fat (360°F about 5 minutes until tender but not brown. Drain, cool, package in freezer bags, and freeze.
 
-Data structures can be either **contiguous** in memory, or **linked** with pointers.
+### Steps for Freezing French-fried Potatoes
 
-Contiguously allocated structures are built from a single slab of memory. They include arrays, matrices, and heaps [\[2, P. 66\]](https://notes.eddyerburgh.me/data-structures-and-algorithms/data-structures#algorithm-design-manual).
+- Peel the mature potatoes.
+- Slice into 1/3″ X 3/8″ strips.
+- Rinse in cold water and keep covered with water until ready to fry.
+- Dry right before frying.
+- Fry small amounts in deep hot fat (360°F for about 5 minutes until tender but not brown.
+- Drain, cool, package, and freeze.
 
-Linked data struct... [Content truncated for context window]
+The following recipe is given for your enjoyment.
+
+**Scalloped Potatoes with Ham**
+
+**(Serves 6)**
+
+**Ingredients**
+
+- 5 potatoes, sliced thinl... [Content truncated for context window]
 
 
 ---
 
-### Source 10: Data Structure Tutorial
+### Source 10: About the potato
 
 **Content:**
-- [![](https://www.tutorialride.com/images/facebookIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
-- [![](https://www.tutorialride.com/images/twitterIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
-- [![](https://www.tutorialride.com/images/linkedinIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
-- [![](https://www.tutorialride.com/images/googlePlusIcon.png)](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
-
-# Data Structure Tutorial
-
-- [Home](https://www.tutorialride.com/) \> [Programming languages](https://www.tutorialride.com/programming-languages.htm) \> Data Structures
-
-
-- [« Previous](https://www.tutorialride.com/data-structures/file-organization-in-data-structure.htm)
-- [Next »](https://www.tutorialride.com/data-structures/linked-list-in-data-structure.htm)
-
-###### Tutorial
-
-- [Data Structure Introduction](https://www.tutorialride.com/data-structures/data-structure-tutorial.htm)
-- [Linked List](https://www.tutorialride.com/data-structures/linked-list-in-data-structure.htm)
-- [Types of Linked List](https://www.tutorialride.com/data-structures/linked-list-types-in-data-structure.htm)
-- [Stack](https://www.tutorialride.com/data-structures/stack-in-data-structure.htm)
-- [Queue](https://www.tutorialride.com/data-structures/queue-in-data-structure.htm)
-- [Types of Queue](https://www.tutorialride.com/data-structures/types-of-queue-in-data-structure.htm)
-- [Searching](https://www.tutorialride.com/data-structures/searching-in-data-structure.htm)
-- [Sorting](https://www.tutorialride.com/data-structures/sorting-in-data-structure.htm)
-- [Trees](https://www.tutorialride.com/data-structures/trees-in-data-structure.htm)
-- [Graphs](https://www.tutorialride.com/data-structures/graphs-in-data-structure.htm)
-- [Hashing](https://www.tutorialride.com/data-structures/hashing-in-data-structure.htm)
-- [File Organization](https://www.tutorialride.com/data-structures/file-organization-in-data-structure.htm)
-
-Data is organized in a particular fashion for the computer to be able to use it efficiently & this structure is called as Data Structure. We are going to see the importance, utility and various concepts of Data Structure in this tutorial.
-
-## Data Structure Tutorial
-
-Learn Data Structure with our complete and easy to understand Data Structure Tutorial. Beginning with the basics of Data Structure, this tutorial goes on to explain you advance concepts like Graphs, Hashing and File Organization with the help of practical examples and programs.
-
-## Who is this Data Structure Tutorial designed for?
-
-This tutorial will be very useful for both beginners and professionals. All the freshers, BCA, BE, BTech, MCA and college students, will find this tutorial extremely useful for their notes, exam preparation, lab exercises, assignments and viva questions.
-
-## What do I need to know to begin with?
-
-A basic knowledge of C will be very helpful... [Content truncated for context window]
+[Skip to content](https://lovingpotatoes.com/en/about-the-potato/#content)
+About the potato[admin](https://lovingpotatoes.com/en/author/gebrlpjvdop2v5f4uo/)2021-08-26T15:58:16+00:00
+# ABOUT THE POTATO
+The potato is a typical Dutch food: everyone knows what a potato is and virtually everyone eats potato products on a regular basis. But we also come across this amazing tuber in many sectors besides food. Potato starch is used in numerous applications, ranging from plastics to medicines.
+The world of the potato is much more extensive and more complex than many of us realize. The history of the potato, information on the cultivation and processing, nutritional values and health aspects: go to MijnAardappel.nl and read all about it.
+We have divided the information into a number of categories that you can find by clicking on the links below.
+- [Nutritional values and health aspects](https://lovingpotatoes.com/en/about-the-potato/nutritional-values-and-health-aspects/)
+- [The history of the potato](https://lovingpotatoes.com/en/about-the-potato/the-history-of-the-potato/)
+- [Questions and Answers (FAQ / Q&A)](https://lovingpotatoes.com/en/about-the-potato/questions-and-answers-faq-qa/)
+- [Fun potato facts](https://lovingpotatoes.com/en/about-the-potato/fun-potato-facts/)
+- [For pupils: presentation on the potato](https://lovingpotatoes.com/en/about-the-potato/for-pupils-presentation-on-the-potato/)
+- [For children: potato colouring pictures](https://lovingpotatoes.com/en/about-the-potato/for-children-potato-colouring-pictures/)
+Close product quick view×
+[Go to Top](https://lovingpotatoes.com/en/about-the-potato/)
 
 
 ---
@@ -691,7 +352,7 @@ A basic knowledge of C will be very helpful... [Content truncated for context wi
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 1 Knowledge Nodes for: Data Structures**
+**Agent 1 Knowledge Nodes for: Potatoes**
 
 1. [Node Name]
 2. [Node Name]
@@ -701,6 +362,6 @@ Generate your knowledge nodes in this exact format:
 
 **Source Summary:**
 - Sources Analyzed: 10
-- Agent Coverage: 10 of 50 total sources
+- Agent Coverage: 10 of 49 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -1,20 +1,20 @@
-**Agent 5 Knowledge Nodes for: Data Structures**
+**Agent 5 Knowledge Nodes for: Potatoes**
 
-1. **Abstract Data Types (ADTs) and Their Implementations**  
-   An abstract data type (ADT) defines a conceptual model for data storage and operations without specifying implementation details. For example, a "bottle" ADT describes behaviors like storing liquid and allowing consumption, while concrete implementations (plastic bottle, thermos) represent different underlying structures. In data structures, this concept applies to types like stacks, queues, and lists—where the interface (e.g., push/pop for stacks) is standardized, but the implementation (array-based vs. linked list-based) can vary. Choosing the right implementation affects performance, memory use, and suitability for specific tasks.
+1. **Resistant Starch and Glycemic Impact Reduction Through Cooling Cooked Potatoes**  
+   Cooling cooked potatoes increases their resistant starch content, which lowers their glycaemic index (GI), slows digestion, stabilises blood sugar levels, and enhances insulin sensitivity. This makes cooled potatoes a beneficial option for metabolic health and type 2 diabetes management.
 
-2. **Stacks as FILO Structures with Real-World Applications**  
-   A stack is an ADT that follows the First-In-Last-Out (FILO) principle, where the last element added is the first to be removed. Operations include *push* (insert) and *pop* (remove), both typically executed in O(1) time. Stacks are used to manage function calls in program memory (call stack), enabling recursion and backtracking. Visual metaphors like a stack of plates help illustrate insertion and removal from the top only, reinforcing constrained access patterns critical for control flow in algorithms.
+2. **Prebiotic Gut Health Benefits of Potato Fibre and Resistant Starch**  
+   Potatoes contain both soluble and insoluble fibre, with resistant starch acting as a prebiotic that supports beneficial gut bacteria (e.g., *Bifidobacteria* and *Lactobacilli*), improves gut barrier integrity, promotes short-chain fatty acid (SCFA) production, and may reduce the risk of colorectal cancer.
 
-3. **Linked Lists for Dynamic Data Management**  
-   Linked lists consist of nodes, each containing data and a pointer to the next node. Unlike arrays, they do not require contiguous memory, allowing efficient insertions and deletions in O(1) when the position is known. Singly linked lists support forward traversal, while advanced forms (e.g., doubly or circular) enhance flexibility. They are ideal for dynamic datasets of unknown size, such as real-time financial records or task scheduling, where frequent modifications make array resizing inefficient.
+3. **Potato Sprouting and Greening: Identification, Causes, and Safe Handling Practices**  
+   Exposure to light causes greening in potatoes due to chlorophyll and concurrent solanin accumulation—a toxic alkaloid. Green spots or sprouts should be trimmed or discarded; storage in cool, dark, well-ventilated conditions prevents greening and sprouting, ensuring food safety.
 
-4. **Hash Tables for Fast Data Retrieval via Key-Value Mapping**  
-   Hash tables (or hash maps) store data as key-value pairs, using a hash function to compute an index into an array of buckets. This enables average-case O(1) time complexity for search, insert, and delete operations. They are widely used in databases, caches, and programming language libraries (e.g., Python dictionaries). Collisions (different keys mapping to the same index) must be resolved via chaining or open addressing, making design choices crucial for performance.
+4. **Leaching and Soaking Techniques to Reduce Potassium Content for Renal Diets**  
+   Slicing, grating, or cutting potatoes into small pieces and soaking them in warm or room-temperature water significantly reduces potassium content. Boiling after soaking further lowers potassium by at least 50%, making potatoes safer for individuals on low-potassium diets, such as those with chronic kidney disease.
 
-5. **Time Complexity Analysis Using Big O Notation in Data Structure Selection**  
-   Understanding time complexity through Big O notation is essential for evaluating data structure efficiency. Key complexities include O(1) for constant-time operations (e.g., array indexing), O(n) for linear scans (e.g., linked list traversal), O(log n) for binary search trees, and O(n²) for inefficient nested loops. Selecting the appropriate structure depends on operation frequency—e.g., use arrays for fast indexing, stacks/queues for ordered processing, and heaps for priority-based access.
+5. **Historical and Cultural Significance of Potatoes in the Andes and Europe**  
+   Potatoes originated on the Titicaca Plateau in Peru and Bolivia, where the Aymara and Inca cultivated over 200 varieties. They played a central role in Incan culture, influencing timekeeping, weather prediction, and pottery. Later, their adoption in Europe contributed to the agrarian and industrial revolutions, while dependence on a single variety led to the Irish Potato Famine in the 1840s.
 
 **Source Summary:**  
-- Sources Analyzed: 10  
-- Agent Coverage: 10 of 50 total sources
+- Sources Analyzed: 9  
+- Agent Coverage: 9 of 49 total sources
