@@ -147,13 +147,13 @@ def run_multi_agent_cerebras(search_results_file: str = None):
     # Create results with extracted topic
     results = {"query": topic}
     
-    # Define 5 different high-capacity models (60k+ token limits)
+    # Define 5 models optimized for rate limits (tokens/min)
     models = [
-        "llama-3.3-70b",           # Agent 1 - 65,536 tokens, 64k/min
-        "gpt-oss-120b",            # Agent 2 - 65,536 tokens, 64k/min  
-        "qwen-3-235b-a22b-instruct-2507",  # Agent 3 - 65,536 tokens, 60k/min
-        "qwen-3-235b-a22b-thinking-2507",  # Agent 4 - 65,536 tokens, 60k/min
-        "qwen-3-32b"               # Agent 5 - 65,536 tokens, 64k/min
+        "qwen-3-coder-480b",       # Agent 1 - 150,000 tokens/min (highest throughput)
+        "llama-3.3-70b",          # Agent 2 - 64,000 tokens/min, 65k context
+        "qwen-3-32b",             # Agent 3 - 64,000 tokens/min, 65k context  
+        "gpt-oss-120b",           # Agent 4 - 64,000 tokens/min, 65k context
+        "qwen-3-235b-a22b-instruct-2507"  # Agent 5 - 60,000 tokens/min, 65k context
     ]
     
     # Run all agents in parallel with different models

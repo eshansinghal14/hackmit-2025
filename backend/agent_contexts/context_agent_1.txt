@@ -1,43 +1,402 @@
-You are Agent 1 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 1 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 1 Research Context
 
 ## Assignment
-You are Agent 1 of 5 specialized research agents analyzing: "Machine Learning Basics"
+You are Agent 1 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Data Subset
 - Agent ID: 1/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 1 to 2
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 1 to 10
 
 ## Your Research Sources
 
-### Source 1: Machine Learning Tutorial - GeeksforGeeks
+### Source 1: Python Full Course for Beginners [2025]
 
 **Content:**
-- [Python for Machine Learning](https://www.geeksforgeeks.org/machine-learning/python-for-machine-learning/)
-- [Machine Learning with R](https://www.geeksforgeeks.org/r-machine-learning/introduction-to-machine-learning-in-r/)
-- [Machine Learning Algorithms](https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/)
-- [EDA](https://www.geeksforgeeks.org/data-analysis/what-is-exploratory-data-analysis/)
-- [Math for Machine Learning](https://www.geeksforgeeks.org/machine-learning/machine-learning-mathematics/)
-- [Machine Learning Interview Questions](https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/)
-- [ML Projects](https://www.geeksforgeeks.org/machine-learning/machine-learning-projects/)
-- [Deep Learning](https://www.geeksforgeeks.org/deep-learning/deep-learning-tutorial/)
-- [NLP](https://www.geeksforgeeks.org/nlp/natural-language-processing-nlp-tutorial/)
-- [Computer vision](https://www.geeksforgeeks.org/computer-vision/computer-vision/)
-- [Data Science](https://www.geeksforgeeks.org/data-science/data-science-for-beginners/)
-- [Artificial Intelligence](https://www.geeksforgeeks.org/artificial-intelligence/artificial-intelligence/)
+Master Python from scratch 🚀 No fluff—just clear, practical coding skills to kickstart your journey! \n\n❤️ Join this channel to get access to perks:\n / @programmingwithmosh \n\n🚀 Want to dive deeper?\nCheck out my Python mastery course: https://mosh.link/python-course\nSubscribe for more awesome Python content: https://goo.gl/6PYaGF\n\n🔗 Related videos \n • Python Projects for Beginners – Master Pro... \n\n✋ Stay connected:\nFull Courses: https://codewithmosh.com\nTwitter: / moshhamedani \nFacebook: / programmingwithmosh \nInstagram: / codewithmosh.official \nLinkedIn: / codewithmosh \n\n📖 Table of Content\n0:00:00 Introduction\n0:00:56 What is Python?\n0:04:11 Installing Python\n0:05:36 Python Interpreter\n0:07:30 Code Editors\n0:08:49 Your First Python Program\n0:12:25 Python Extension\n0:14:26 Linting Python Code\n0:18:40 Formatting Python Code\n0:22:51 Running Python Code\n0:24:30 Python Implementations\n0:26:59 How Python Code is Executed\n0:29:45 Quiz\n0:31:17 Python Mastery Course\n0:31:44 Variables\n0:34:48 Variable Names\n0:37:51 Strings\n0:43:20 Escape Sequences\n0:46:01 Formatted Strings\n0:48:09 String Methods\n0:54:03 Numbers\n0:56:50 Working With Numbers\n0:58:59 Type Conversion\n1:04:03 Quiz\n1:06:43 Comparison Operators\n1:08:46 Conditional Statements\n1:12:56 Ternary Operator\n1:15:04 Logical Operators\n1:19:07 Short-circuit Evaluations\n1:21:13 Chaining Comparison Operators\n1:22:35 Quiz\n1:24:18 For Loops\n1:27:56 For..Else\n1:30:42 Nested Loops\n1:33:26 Iterables\n1:36:34 While Loops\n1:41:33 Infinite Loops\n1:43:10 Exercise\n1:45:13 Defining Functions\n1:47:37 Arguments\n1:49:57 Types of Functions\n1:53:59 Keyword Arguments\n1:55:59 Default Arguments\n1:57:34 xargs\n\n#Python #AI #MachineLearning #WebDevelopment
+| view_count: 3,065,486 views | short_view_count: 3M views | num_likes: 77 thousand | num_subscribers: 4.76 million
+
+
+---
+
+### Source 2: Python Tutorials: Learn Python Step-by-Step
+
+**Content:**
+Follow Us
+
+- [Python - Get Started](https://www.tutorialsteacher.com/python)
+- [What is Python?](https://www.tutorialsteacher.com/python/python-overview)
+- [Where to use Python?](https://www.tutorialsteacher.com/python/where-to-use-python)
+- [Python Version History](https://www.tutorialsteacher.com/python/python-version-history)
+- [Install Python](https://www.tutorialsteacher.com/python/install-python)
+- [Python - Shell/REPL](https://www.tutorialsteacher.com/python/python-interective-shell)
+- [Python IDLE](https://www.tutorialsteacher.com/python/python-idle)
+- [Python Editors](https://www.tutorialsteacher.com/python/python-ides)
+- [Python Syntax](https://www.tutorialsteacher.com/python/python-syntax)
+- [Python Keywords](https://www.tutorialsteacher.com/python/python-keywords)
+- [Python Variables](https://www.tutorialsteacher.com/python/python-variables)
+- [Python Data Types](https://www.tutorialsteacher.com/python/python-data-types)
+- [Number](https://www.tutorialsteacher.com/python/python-number-type)
+- [String](https://www.tutorialsteacher.com/python/python-string)
+- [List](https://www.tutorialsteacher.com/python/python-list)
+- [Tuple](https://www.tutorialsteacher.com/python/python-tuple)
+- [Set](https://www.tutorialsteacher.com/python/python-set)
+- [Dictionary](https://www.tutorialsteacher.com/python/python-dictionary)
+- [Python Operators](https://www.tutorialsteacher.com/python/python-operators)
+- [Python Conditions - if, elif](https://www.tutorialsteacher.com/python/python-if-elif)
+- [Python While Loop](https://www.tutorialsteacher.com/python/python-while-loop)
+- [Python For Loop](https://www.tutorialsteacher.com/python/python-for-loop)
+- [User Defined Functions](https://www.tutorialsteacher.com/python/python-user-defined-function)
+- [Lambda Functions](https://www.tutorialsteacher.com/python/python-lambda-function)
+- [Variable Scope](https://www.tutorialsteacher.com/python/local-and-global-variables-in-python)
+- [Python Modules](https://www.tutorialsteacher.com/python/python-module)
+- [Module Attributes](https://www.tutorialsteacher.com/python/python-module-attributes)
+- [Python Packages](https://www.tutorialsteacher.com/python/python-package)
+- [Python PIP](https://www.tutorialsteacher.com/python/pip-in-python)
+- [\_\_main\_\_, \_\_name\_\_](https://www.tutorialsteacher.com/python/main-in-python)
+- [Python Built-in Modules](https://www.tutorialsteacher.com/python/python-builtin-modules)
+- [OS Module](https://www.tutorialsteacher.com/python/os-module)
+- [Sys Module](https://www.tutorialsteacher.com/python/sys-module)
+- [Math Module](https://www.tutorialsteacher.com/python/math-module)
+- [Statistics Module](https://www.tutorialsteacher.com/python/statistics-module)
+- [Collections Module](https://www.tutorialsteacher.com/python/collections-module)
+- [Random Module](https://www.tutorialsteacher.com/python/random-module)
+- [Python Generator Function](https://www.tutorialsteacher.com/python/python-generator)
+- [Python List Comprehension](https://... [Content truncated for context window]
+
+
+---
+
+### Source 3: Programming: The Basics (Python Edition)
+
+**Content:**
+# Programming: The BasicsPython Edition
+
+## [George Ferguson](https://www.cs.rochester.edu/u/ferguson/)
+
+## Summer 2020(Minor edits Summer 2022, Summer 2025)
+
+> _This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)_
+
+ [Introduction](https://www.cs.rochester.edu/www.cs.rochester.edu#Intro) \|
+[Statements](https://www.cs.rochester.edu/www.cs.rochester.edu#Statements) \|
+[Values](https://www.cs.rochester.edu/www.cs.rochester.edu#Values) \|
+[Expressions](https://www.cs.rochester.edu/www.cs.rochester.edu#Expressions) \|
+[Variables](https://www.cs.rochester.edu/www.cs.rochester.edu#Variables) \|
+[Conditionals](https://www.cs.rochester.edu/www.cs.rochester.edu#Conditionals) \|
+[Comments](https://www.cs.rochester.edu/www.cs.rochester.edu#Comments) \|
+[Iteration](https://www.cs.rochester.edu/www.cs.rochester.edu#Iteration) \|
+[Functions](https://www.cs.rochester.edu/www.cs.rochester.edu#Functions) \|
+[Input](https://www.cs.rochester.edu/www.cs.rochester.edu#Input) \|
+[Lists](https://www.cs.rochester.edu/www.cs.rochester.edu#Lists) \|
+[Summary](https://www.cs.rochester.edu/www.cs.rochester.edu#Summary)
+
+### Introduction
+
+_Computation_ is the process of _computing_ new values from old ones. That’s it. The values may be numbers or text or many other things, and a _computer_ is given some values and asked to compute new ones. For example, it could be given your grades in your courses and asked to compute your GPA (grade point average). Or it could be given the prices of the items in your shopping cart and asked to compute the total including tax. Or it could be given the positions of pieces on a chess board and asked to compute the best move for one of the players.
+
+You probably knew that. But did you know that until quite recently, a computer was _someone_ that computes. That’s right. Computers were people who worked with (mostly) numerical values: counting votes, managing financial ledgers, solving scientific equations, etc. They often had mechanical devices such as old-fashioned adding machines or slide rules to help them, but the people were the ones who knew how to compute whatever it was they were computing.
+
+Now, if you want to tell a human how to do something, first you need to know how to do it yourself. And then you need to be able to describe it to them in a language that they understand, using steps that they know how to do. If I want you to prepare a meal of spaghetti, first I need to know how to make spaghetti myself, and then I also need to be able to explain it to you in way that you understand and can follow. If I want you to compute a student’s GPA given their grades, first I need to know how to do it and then I need to tell you how to do it in a way that you understand and can do for yourself.
+
+Of course, we’re not really interested in telling humans how to compute things. Since the mid-twentieth century, we have been able to build computing devices... [Content truncated for context window]
+
+
+---
+
+### Source 4: Python Programming Tutorial for Beginners (PDF)
+
+**Content:**
+[Skip to content](https://www.guru99.com/www.guru99.com#main)
+
+## Python Tutorial Summary
+
+In this Python tutorial for beginners, you will learn Python programming basics and advanced concepts. This Python course contains all the Python basics from installation to advanced stuff like Python data science. This Python programming tutorial helps you to learn Python free with Python notes and Python tutorial PDF. These Python tutorials will help you learn the basics of Python.
+
+## What is Python Programming Language?
+
+**Python** is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries and is extensible to C or C++. Many large companies use the Python programming language, including NASA, Google, YouTube, BitTorrent, etc.
+
+Python Programming
+
+## Python Syllabus
+
+### Python Programming Basics for Beginners
+
+| | |
+| --- | --- |
+| 👉 **Lesson 1** | **[Install Python IDE](https://www.guru99.com/how-to-install-python.html)** — How to Install Python on Windows \[Pycharm IDE\] |
+| 👉 **Lesson 2** | **[Python Hello World](https://www.guru99.com/creating-your-first-python-program.html)** — Create Your First Python Program |
+| 👉 **Lesson 3** | **[Python print() Function](https://www.guru99.com/print-python-examples.html)** — How to Print in Python with Examples |
+| 👉 **Lesson 4** | **[Python Variables](https://www.guru99.com/variables-in-python.html)** — How to Define/Declare String Variable Types |
+| 👉 **Lesson 5** | **[Escape Character Sequences](https://www.guru99.com/python-escape-characters.html)** — Python Escape Character Sequences (Examples) |
+| 👉 **Lesson 6** | **[How to check the Python Version](https://www.guru99.com/check-python-version.html)** — Windows, Mac, Linux, Script, Command Line |
+| 👉 **Lesson 7** | **[How to Run Python Scripts](https://www.guru99.com/run-python-scripts.html)** — Step by Step Guide |
+
+### Python Data Structure
+
+| | |
+| --- | --- |
+| 👉 **Lesson 1** | **[Python TUPLE](https://www.guru99.com/python-tuples-tutorial-comparing-deleting-slicing-keys-unpacking.html)** — Pack, Unpack, Compare, Slicing, Delete, Key |
+| 👉 **Lesson 2** | **[Python Dictionary(Dict)](https://www.guru99.com/python-dictionary-beginners-tutorial.html)** — Update, Cmp, Len, Sort, Copy, Items, str Example |
+| 👉 **Lesson 3** | **[Python Dictionary Append](https://www.guru99.com/python-dictionary-append.html)** — How to Add Key/Value Pair |
+| 👉 **Lesson 4** | **[Python Operators](https://www.guru99.com/python-operators-complete-tutorial.html)** — Arithmetic, Logical, Comparison, Assignment, Bitwise & Precedence |
+| 👉 **Lesson 5** | **[Python Not Equal (!=)](https://www.guru99.com/python-not-equal-operator.html)** — Python Not Equal (!=) Operator with Examples |
+| 👉 **Lesson 6** | **[Python Arrays](https://www.guru99.com/python-arrays.html)** — Create, Reverse, Pop with Python Array Examples |
+| 👉 **Lesson 7** | **[Python... [Content truncated for context window]
+
+
+---
+
+### Source 5: How to Become a Python Developer Without a Degree in 2025
+
+**Content:**
+Succeeding as a Python Developer doesn't require a degree. With the right training and a strong portfolio, you can forge your career in Python development, working in roles such as Web Developer, Back-End Developer, or Database Engineer.
+
+## Key Insights
+
+- Python Developers can work on a range of projects such as websites, software, games, or digital applications, and can hold titles like Web Developer, Back-End Developer, and Database Engineer.
+- While a degree can be beneficial, many employers consider a bootcamp or certificate program as valuable for entry-level Python positions.
+- Python Development skills can vary by industry and role, with common requirements including HTML and CSS, Django/Django REST, and Git/GitHub.
+- Building a professional portfolio is a crucial step in demonstrating your Python Development skills, and is a major component in certificate programs like the Python Developer Certificate from Noble Desktop.
+- Making industry connections can be critical in advancing your career and can be achieved through resources like Python's international support community and networking groups.
+- Noble Desktop offers a range of online and in-person Python classes and bootcamps for Development, data science and analytics, FinTech, and cybersecurity, led by instructors with practical expertise.
+
+You might want to become a Python Developer but have not attended a college or university. You might also have a degree in an unrelated field. That doesn't mean you can't still find a great job in Python Development.
+
+Some Development Pros freelance, some start through internships, and others get entry-level work after attending a Python bootcamp or certificate program. Read on to learn more.
+
+## What is a Python Developer?
+
+Python Developers are tech professionals who can work on websites, software, games, or digital applications. Unlike some career tracks, those who fit the requirements of Python Developer often hold alternate titles; these can include Web Developer, Back-End Developer, and Database Engineer, to name a few. Therefore, while most of these tech pros know tools like Django, SQL, and Git, not all Python Development Positions require the same skill set.
+
+Responsibilities for Python Developers vary by industry as well as position. Some have to implement and maintain cybersecurity or integrate data storage solutions, while others mainly design and integrate Front-End elements with Back-End applications. Additional responsibilities can include web scraping, automation testing, and data visualization. Check online job postings for detailed lists of industry-specific Python Development skills and responsibilities.
+
+Read more about [what a Python Developer does](https://www.nobledesktop.com/careers/python-developer/job-description).
+
+## Can You Really Become a Python Developer Without a Degree?
+
+The short answer is: yes.
+
+While jobs for beginner Development Pros with no college may not be abundant, they do exist. You might get hired on th... [Content truncated for context window]
+
+
+---
+
+### Source 6: Python (programming language)
+
+**Content:**
+[Jump to content](https://en.wikipedia.org/en.wikipedia.org#bodyContent)
+
+From Wikipedia, the free encyclopedia
+
+General-purpose programming language
+
+| Python |
+| --- |
+| [Paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) | [Multi-paradigm](https://en.wikipedia.org/wiki/Multi-paradigm): [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming),[\[1\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-1) [procedural](https://en.wikipedia.org/wiki/Procedural_programming) ( [imperative](https://en.wikipedia.org/wiki/Imperative_programming)), [functional](https://en.wikipedia.org/wiki/Functional_programming), [structured](https://en.wikipedia.org/wiki/Structured_programming), [reflective](https://en.wikipedia.org/wiki/Reflective_programming) |
+| [Designed by](https://en.wikipedia.org/wiki/Software_design) | [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum) |
+| [Developer](https://en.wikipedia.org/wiki/Software_developer) | [Python Software Foundation](https://en.wikipedia.org/wiki/Python_Software_Foundation) |
+| First appeared | 20 February 1991; 34 years ago (1991-02-20)[\[2\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-alt-sources-history-2) |
+| [Stable release](https://en.wikipedia.org/wiki/Software_release_life_cycle) | 3.13.7[\[3\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-wikidata-94d5b2798914e50f7103b872a798e54cb7cdf1fe-v20-3)  / 14 August 2025; 30 days ago (14 August 2025) |
+| [Preview release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) | 3.14.0rc2 / 14 August 2025; 30 days ago (2025-08-14) |
+| [Typing discipline](https://en.wikipedia.org/wiki/Type_system) | [duck](https://en.wikipedia.org/wiki/Duck_typing), [dynamic](https://en.wikipedia.org/wiki/Dynamic_typing), [strong](https://en.wikipedia.org/wiki/Strong_and_weak_typing);[\[4\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-4) [optional type annotations](https://en.wikipedia.org/wiki/Optional_typing)[\[a\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-6) |
+| [OS](https://en.wikipedia.org/wiki/Operating_system) | [Cross-platform](https://en.wikipedia.org/wiki/Cross-platform)[\[b\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-12) |
+| [License](https://en.wikipedia.org/wiki/Software_license) | [Python Software Foundation License](https://en.wikipedia.org/wiki/Python_Software_Foundation_License) |
+| [Filename extensions](https://en.wikipedia.org/wiki/Filename_extension) | .py, .pyw, .pyz,[\[11\]](https://en.wikipedia.org/en.wikipedia.org#cite_note-13).pyi, .pyc, .pyd |
+| Website | [python.org](https://www.python.org/) |
+| Major [implementations](https://en.wikipedia.org/wiki/Programming_language_implementation) |
+| [CPython](https://en.wikipedia.org/wiki/CPython), [PyPy](https://en.wikipedia.org/wiki/PyPy), [MicroPython](https://en.wikipedia.org/wiki/MicroPython), [CircuitPython](https://en.wikipedia.org/wiki/CircuitPython), [IronPython](https://en.wikipedia.org/wiki/IronPython), ... [Content truncated for context window]
+
+
+---
+
+### Source 7: Best Python Courses + Tutorials
+
+**Content:**
+[Skip to Content](https://www.codecademy.com/www.codecademy.com#catalog-heading)
+
+# Python courses
+
+## About Python
+
+Python is a general-purpose, versatile, and powerful programming language. It's a great first language because Python code is concise and easy to read. Whatever you want to do, python can do it. From web development to machine learning to data science, Python is the language for you.
+
+Tell me more
+
+## Related topics
+
+- [Data science](https://www.codecademy.com/catalog/subject/data-science)
+- [AI](https://www.codecademy.com/catalog/subject/artificial-intelligence)
+- [Computer science](https://www.codecademy.com/catalog/subject/computer-science)
+- [Machine learning](https://www.codecademy.com/catalog/subject/machine-learning)
+- [Data visualization](https://www.codecademy.com/catalog/subject/data-visualization)
+- [Cybersecurity](https://www.codecademy.com/catalog/subject/cybersecurity)
+- [Django](https://www.codecademy.com/search?query=django)
+
+## Python courses
+
+**Filters**123 results
+
+### Level
+
+Beginner
+
+Intermediate
+
+Advanced
+
+### Price
+
+[View plans](https://www.codecademy.com/pricing)
+
+Free
+
+Paid
+
+### Type
+
+Career path
+
+Learn all the skills you need to land a new career in tech.
+
+Skill path
+
+Learn all the concepts you need to gain a new technical skill.
+
+Certification path
+
+Prepare and practice for top industry certifications.
+
+Course
+
+Learn concepts used for specific languages or technologies.
+
+### Average time to complete
+
+Average based on combined completion rates — individual pacing in lessons, projects, and quizzes may vary.
+
+Less than 5 hours
+
+5-10 hours
+
+10-20 hours
+
+20-60 hours
+
+60+ hours
+
+Clear filters
+
+Most relevant
+
+**Filters**123 results
+
+Clear filters
+
+Most relevant
+
+- [Free course\
+\
+**Getting Started with Python for Data Science**](https://www.codecademy.com/learn/getting-started-with-python-for-data-science)
+
+
+
+Work hands-on with real datasets while learning Python for data science.
+
+- Beginner Friendly.**Beginner** Friendly
+
+7 hours**7** hours
+
+
+- [Course\
+\
+**Learn Python 3**](https://www.codecademy.com/learn/learn-python-3)
+
+
+
+Learn the basics of Python 3.12, one of the most powerful, versatile, and in-demand programming languages today.
+
+- With CertificateWith **Certificate**
+
+- Beginner Friendly.**Beginner** Friendly
+
+24 hours**24** hours
+
+
+- [Skill path\
+\
+**Learn Python for Data Science**](https://www.codecademy.com/learn/paths/learn-python-for-data-science)
+
+
+
+Get started with Python for Data Science in this beginner-friendly skill path.
+
+- Includes 5 CoursesIncludes **5 Courses**
+- With CertificateWith **Certificate**
+
+- Beginner Friendly.**Beginner** Friendly
+
+16 hours**16** hours
+
+
+- [Free course\
+\
+**Machine Learning: Introduction with Regression**](https://www.codecademy.com/learn/machine-learning-introduction-with-regression)
+
+
+
+Get started with machine learning and learn how to build, implement, and evaluate linear regression models.
+
+- Beginner Friendly.**Beginner** Friendly
+
+3 hours**3** hours
+
+
+-... [Content truncated for context window]
+
+
+---
+
+### Source 8: Python Tutorial | Learn Python Programming Language
+
+**Content:**
+- [Free Python 3 Tutorial](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
+- [Data Types](https://www.geeksforgeeks.org/python/python-data-types/)
+- [Control Flow](https://www.geeksforgeeks.org/python/python-if-else/)
+- [Functions](https://www.geeksforgeeks.org/python/python-functions/)
+- [List](https://www.geeksforgeeks.org/python/python-lists/)
+- [String](https://www.geeksforgeeks.org/python/python-string/)
+- [Set](https://www.geeksforgeeks.org/python/python-sets/)
+- [Tuple](https://www.geeksforgeeks.org/python/python-tuples/)
+- [Dictionary](https://www.geeksforgeeks.org/python/python-dictionary/)
+- [Oops](https://www.geeksforgeeks.org/python/python-oops-concepts/)
+- [Exception Handling](https://www.geeksforgeeks.org/python/python-exception-handling/)
+- [Python Programs](https://www.geeksforgeeks.org/python/python-programming-examples/)
+- [Python Projects](https://www.geeksforgeeks.org/python/python-projects-beginner-to-advanced/)
+- [Python Interview Questions](https://www.geeksforgeeks.org/python/python-interview-questions/)
+- [Python MCQ](https://www.geeksforgeeks.org/python/python-multiple-choice-questions/)
+- [NumPy](https://www.geeksforgeeks.org/python/numpy-tutorial/)
+- [Pandas](https://www.geeksforgeeks.org/pandas/pandas-tutorial/)
+- [Python Database](https://www.geeksforgeeks.org/python/python-database-tutorial/)
+- [Data Science With Python](https://www.geeksforgeeks.org/data-science/data-science-with-python-tutorial/)
+- [Machine Learning with Python](https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/)
+- [Django](https://www.geeksforgeeks.org/python/django-tutorial/)
+- [Flask](https://www.geeksforgeeks.org/python/flask-tutorial/)
+- [R](https://www.geeksforgeeks.org/r-language/r-tutorial/)
 
 Sign In
 
 ▲
 
-[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/machine-learning/?type%3Darticle%26id%3D1268561&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
+[Open In App](https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/python-programming-language-tutorial/?type%3Darticle%26id%3D1179442&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1)
 
-# Machine Learning Tutorial
+# Python Tutorial - Learn Python Programming Language
 
-Last Updated : 28 Aug, 2025
+Last Updated : 10 Sep, 2025
 
 Comments
 
@@ -51,53 +410,178 @@ Like
 
 Report
 
-**Machine learning** is a branch of Artificial Intelligence that focuses on developing models and algorithms that let computers learn from data without being explicitly programmed for every task. In simple words, ML teaches the systems to think and understand like humans by learning from the data.
+Python is one of the most popular programming languages. It’s simple to use, packed with features and supported by a wide range of libraries and frameworks. Its clean syntax makes it beginner-friendly.
 
-> _Try our ongoing free course_ [Data Science Skillup](https://www.geeksforgeeks.org/courses/ds-16) _with weekly topic coverage, notes, daily quizzes and coding problems._
+- A high-level language, used in web development, data science, automation, AI and more.
+- Known for its readability, which means code is easier to write, understand and maintain.
+- Backed by library support, so we don’t have to build everything from scratch, there’s probably a library that already does what we need.
 
-Machine Learning is mainly divided into three core types: Supervised, Unsupervised and Reinforcement Learning along with two additional types, Semi-Supervised and Self-Supervised Learning.
+## Why to Learn Python?
 
-- [**Supervised Learning**](https://www.geeksforgeeks.org/machine-learning/supervised-machine-learning/) **:** Trains models on labeled data to predict or classify new, unseen data.
-- [**Unsupervised Learning**](https://www.geeksforgeeks.org/machine-learning/unsupervised-learning/): Finds patterns or groups in unlabeled data, like clustering or dimensionality reduction.
-- [**Reinforcement Learning**](https://www.geeksforgeeks.org/machine-learning/what-is-reinforcement-learning/): Learns through trial and error to maximize rewards, ideal for decision-making tasks.
-
-> **Note:** The following are not part of the original three core types of ML, but they have become increasingly important in real-world applications, especially in deep learning.
->
-> **Additional Type... [Content truncated for context window]
+- Requires fewer lines of code compared to other programming languages like Java.
+- Provides Libraries / Frameworks like Django, Flask and many more for Web Development, and Pandas, Tensorflow, Scikit-learn and many more for, AI/ML, Data Science and Data Analys... [Content truncated for context window]
 
 
 ---
 
-### Source 2: What Is Machine Learning? (2025 Guide)
+### Source 9: Ram Krishn Mishra - Python for Analytics
 
 **Content:**
-Machine learning uses statistics to find patterns in massive amounts of data, including numbers, words, images, clicks, and anything else that can be stored digitally.
+Search this site
 
-Machine learning technology powers many of the services we rely on today, including recommendation systems like those found on Netflix, Disney+, YouTube, and Spotify. Machine learning is also key to the functionality of search engines, social media feeds like Facebook and Twitter, and voice assistants like Siri and Alexa.
+Embedded Files
 
-In all of these instances, these platforms use machine learning to collect as much data about you as possible — which directors you like, what links you’re clicking, which statuses have provoked a reaction from you — and then make a highly educated guess about what you might want to buy, watch, or click next. Voice assistants, meanwhile, use machine learning to surmise which words match best with the sounds coming out of your mouth.
+Skip to main content
 
-The process is, in fact, not that complicated: find the pattern, apply the pattern. But it pretty much runs the world. That’s in big part thanks to an invention in 1986, courtesy of Geoffrey Hinton, today known as the father of deep learning.
+Skip to navigation
 
-## Machine Learning Methods
+[UNIT I: Introduction to Python:](https://www.mishrark.com/www.mishrark.com#h.yvade9o96nh3)
 
-There are several main basic types of machine learning methods or ML paradigms:
+[Python versus Java](https://www.mishrark.com/www.mishrark.com#h.nvrc8mvj02nb)
 
-### Supervised learning
+[Python Interpreter and it’s Environment](https://www.mishrark.com/www.mishrark.com#h.mdwt7aex5jdz)
 
-**Supervised learning** (SL) allows you to collect data or produce a data output from a previous machine learning deployment. With supervised tasks, we give the computer a collection of labeled input-output data points called a training set that are used to train a system to classify data or make accurate outcome predictions. Supervised machine learning actually works in much the same way humans learn. The most popular paradigm for machine learning, supervised learning involves feeding input data into a machine learning algorithm or model, which adjusts its weights until the model has been fitted appropriately.
+[Python basics:](https://www.mishrark.com/www.mishrark.com#h.6nrmpukfvupt)
 
-Some common applications for supervised learning algorithms include email spam filters, face recognition tech, and Internet ad placement.
+[Data structures: lists and dictionaries;](https://www.mishrark.com/www.mishrark.com#h.f8imlaes08k4)
 
-### Unsupervised learning
+[functions: global functions,](https://www.mishrark.com/www.mishrark.com#h.nfkql3gmvot4)
 
-**Unsupervised learning** helps you find all kinds of unknown patterns in data. The opposite of SL, unsupervised machine learning involves combing through unlabeled data to discover patterns that ultimately solve association or clustering problems. Machine learning algorithms are fed large amounts of data and equipped with the tools to understand the data. It then learns to cluster or organize that data in such a way that a human could understand it. Two common unsupervised learning tasks are clustering and dimensionality reduction.
+[local functions,](https://www.mishrark.com/www.mishrark.com#h.d9emrcg0yweq)
 
-You might see unsupervised learning in the recommendation systems on a streaming service or targeted ads based on buying habits or browsing data.
+[lambda functions and methods.](https://www.mishrark.com/www.mishrark.com#h.abm7hailp5tt)
 
-### Reinforcement learning
+[UNIT II: Object Oriented Programming Concepts:](https://www.mishrark.com/www.mishrark.com#h.6mbw7cmtemzd)
 
-Reinforcement learning is the training of machine learning models to make a series of decisions. Where supervised and unsupervised learning are associated based on the presence or lack of ... [Content truncated for context window]
+[UNIT III: Numpy:](https://www.mishrark.com/www.mishrark.com#h.fq56tentz0v4)
+
+[UNIT IV: Pandas:](https://www.mishrark.com/www.mishrark.com#h.s9nm09d4jf0i)
+
+**Python for Analytical Skills**
+
+## UNIT I: Introduction to Python:
+
+- ### Python versus Java
+
+
+Java is a statically typed and compiled language, and Python is a dynamically typed and interpreted language. This single difference makes Java faster at runtime and easier to debug, but Python is easier to use and easier to read. (Ref: [https://www.bmc.com/blogs/python-vs-java/](https://www.google.com/url?q=https%3A%2F%2Fwww.bmc.com%2Fblogs%2Fpython-vs-java%2F&sa=D&sntz=1&usg=AOvVaw0RvZMjC-FNSLYfp0SBfc2P))
+
+- ### Python Interpreter and it’s Environment
+
+
+Translator (Converting High level language such as english to computer readable form because computer can understand binary(0 or1) language only)
+
+a) Compiler : IT reads all program then convert whole code into machine level language. ( Example : C programming, C++, Core Java)
+
+b) **Interpreter :**
+
+Its reads line by line and convert line by line into machine level language. (Example : Python3) : it helps to run the program.
+
+c) **Assembler**: (covert Assembly level language to machine level language )
+
+- Python installation
+
+
+[https://www.python.org/downloads/release/python-3101/](https://www.google.com/url?q=https%3A%2F%2Fwww.python.org%2Fdownloads%2Frelease%2Fpython-3101%2F&sa=D&sntz=1&usg=AOvVaw2ifG49OLk1JQ8Bv0H8X7or)
+
+Step to run python program in command prompt:
+
+1. Open Notebook
+
+2. Write python code in notebook file
+
+3. Save File with .py extension in any folder ( Example : program1.py)
+
+4. Open Command Propmpt
+
+5. Locate folder where python file is saved( for example : **cd C:\\Users\\rkmis\\OneDrive\\Desktop\\Python-File**
+
+6. **run the code using below command**
+
+**python program1.py**
+
+- ### Python basics:
+
+
+1. variables
+
+2. operators
+
+3. Strings,
+
+4. Conditional and
+
+5. Control Statements,
+
+6. loops;
+- ### Data structures: lists and dictionaries;
+
+- ### functions: global functions,
+
+- ### local functions,
+
+- ### lambda functions and methods.
+
+
+## **UNIT II:... [Content truncated for context window]
+
+
+---
+
+### Source 10: Python – W3schools Learn Code
+
+**Content:**
+# Python
+
+## Learn Python Language Coding
+
+See how to learn Python language coding tutorial code on the Python editor website online computer programming complete basics for beginners and advanced.
+
+[← Previous](https://w3schools.work/php) [Next →](https://w3schools.work/w3schools.work)
+
+Python is most of the time known as a helping language for programming designers, for developing control and the board, testing, and in numerous alternate ways.
+
+Python coding for construct control of our functions and different programming purposes to get results.
+
+### Python Language Base
+
+Basic framework and Apache access for mechanized nonstop creation and testing. Startup or advanced for bug following and undertaking the executive’s problems and the solutions.
+
+Python is a multi-purpose and deep-level programming language for advanced programming solutions.
+
+Object-oriented programming in python and organized coding on computer programs are completely done in this, and large numbers of its functionalities are there.
+
+It Supports practical programming and perspective arranged programming counting multiple functions and objects with the magic methods accessibility.
+
+### How Python Works
+
+There are different standards are frameworks of python language which deal with deep-level system access by means of expansions, including configuration by agreement and deep programming.
+
+Python utilizes dynamic programming and a mix of reference coding projects.
+
+And a cycle-recognizing bugs for the memory of the executive’s system.
+
+It utilizes a dynamic function name goal error restricting. Which program ties strategy and variable names during code execution time.
+
+Its plan offers some help for using programming in the program’s custom features. It has a filter, roadmap capabilities, and a list of appreciations, code references, function sets, and generator expressions.
+
+The standard library of python has two modules iterations tools and functions that carry out using the instruments acquired from basic and standard programming.
+
+### Python Language History
+
+Python language’s central way of thinking is to grow up in the record and data manipulation with deep-level computer system access.
+
+At the start, python was very limited in using language but now according to incorporating python language usage into every center of the programming project.
+
+Python was intended to be more extensible by means of its features.
+
+This minimal python set has made it especially famous for adding programmable connection that points to existing or new applications.
+
+Python’s latest version of the release centers language with a huge standard library.
+
+This effectively extensible coding originated from its framework with all features, which helps the language methodology and accessibility.
+
+[← Previous](https://w3schools.work/php) [Next →](https://w3schools.work/w3schools.work)
 
 
 ---
@@ -122,7 +606,7 @@ Reinforcement learning is the training of machine learning models to make a seri
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 1 Knowledge Nodes for: Machine Learning Basics**
+**Agent 1 Knowledge Nodes for: Python Programming**
 
 1. [Node Name]
 2. [Node Name]
@@ -131,7 +615,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

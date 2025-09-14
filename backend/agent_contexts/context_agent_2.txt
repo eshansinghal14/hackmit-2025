@@ -1,54 +1,417 @@
-You are Agent 2 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 2 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 2 Research Context
 
 ## Assignment
-You are Agent 2 of 5 specialized research agents analyzing: "Machine Learning Basics"
+You are Agent 2 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Data Subset
 - Agent ID: 2/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 3 to 4
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 11 to 20
 
 ## Your Research Sources
 
-### Source 3: What is Machine Learning?
+### Source 11: Best Python Programming Course - Python Certification | Network Rhinos
 
 **Content:**
-- [ML - Home](https://www.tutorialspoint.com/machine_learning/index.htm)
-- [ML - Introduction](https://www.tutorialspoint.com/machine_learning/machine_learning_introduction.htm)
-- [ML - Getting Started](https://www.tutorialspoint.com/machine_learning/machine_learning_getting_started.htm)
-- [ML - Basic Concepts](https://www.tutorialspoint.com/machine_learning/machine_learning_basics.htm)
-- [ML - Ecosystem](https://www.tutorialspoint.com/machine_learning/machine_learning_ecosystem.htm)
-- [ML - Python Libraries](https://www.tutorialspoint.com/machine_learning/machine_learning_python_libraries.htm)
-- [ML - Applications](https://www.tutorialspoint.com/machine_learning/machine_learning_applications.htm)
-- [ML - Life Cycle](https://www.tutorialspoint.com/machine_learning/machine_learning_life_cycle.htm)
-- [ML - Required Skills](https://www.tutorialspoint.com/machine_learning/machine_learning_skills.htm)
-- [ML - Implementation](https://www.tutorialspoint.com/machine_learning/machine_learning_implementing.htm)
-- [ML - Challenges & Common Issues](https://www.tutorialspoint.com/machine_learning/machine_learning_challenges_common_issues.htm)
-- [ML - Limitations](https://www.tutorialspoint.com/machine_learning/machine_learning_limitations.htm)
-- [ML - Reallife Examples](https://www.tutorialspoint.com/machine_learning/machine_learning_real_life_examples.htm)
-- [ML - Data Structure](https://www.tutorialspoint.com/machine_learning/machine_learning_data_structure.htm)
-- [ML - Mathematics](https://www.tutorialspoint.com/machine_learning/machine_learning_mathematics.htm)
-- [ML - Artificial Intelligence](https://www.tutorialspoint.com/machine_learning/machine_learning_traditional_ai.htm)
-- [ML - Neural Networks](https://www.tutorialspoint.com/machine_learning/machine_learning_artificial_neural_networks.htm)
-- [ML - Deep Learning](https://www.tutorialspoint.com/machine_learning/deep_machine_learning.htm)
-- [ML - Getting Datasets](https://www.tutorialspoint.com/machine_learning/machine_learning_getting_datasets.htm)
-- [ML - Categorical Data](https://www.tutorialspoint.com/machine_learning/machine_learning_categorical_data.htm)
-- [ML - Data Loading](https://www.tutorialspoint.com/machine_learning/machine_learning_data_loading.htm)
-- [ML - Data Understanding](https://www.tutorialspoint.com/machine_learning/machine_learning_data_understanding.htm)
-- [ML - Data Preparation](https://www.tutorialspoint.com/machine_learning/machine_learning_preparing_data.htm)
-- [ML - Models](https://www.tutorialspoint.com/machine_learning/machine_learning_models.htm)
-- [ML - Supervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_supervised.htm)
-- [ML - Unsupervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_unsupervised.htm)
-- [ML - Semi-supervised Learning](https://www.tutorialspoint.com/machine_learning/machine_learning_semi_supervised_learning.htm)
-- [ML - Reinforcement Learning](https://www.tutorialspoint.com/machine_learnin... [Content truncated for context window]
+# Python Full Stack Course
+
+###### Learn Python step by step and become a skilled developer. This course is for beginners who want to start their journey in programming and create amazing software and apps.
+
+- Online Session
+- Classroom Session
+- Certificate Course
+
+[Enroll Now](https://show.forms.app/networkrhinos/network-rhinos-registration-form) [Download Curriculum](https://networkrhinos.com/python-course#form-popup)
+
+![Python Full Stack](https://networkrhinos.com/images/course-single/banner/python.webp)
+
+## About Python Development Course
+
+Overview of the course
+
+The Python Development course teaches you how to write code, solve problems, and build
+software. Python is easy to learn and very popular in many fields like web development, data science, and automation. You will start with the basics and move on to advanced topics. By the end of this course, you will be confident in using Python to create real-world projects.
+
+![Python](https://networkrhinos.com/images/course-about/Python.jpg)
+
+## Flexible batches for you
+
+- Online Training
+- Class Room Training
+- Corporate Training
+
+Learn from anywhere with interactive online sessions.
+
+Required fields are marked \*
+
+NameEmail
+
+Phone
+
+CCIE CourseCCNA CourseCCNP CourseAWS DevOps CourseCybersecurity CourseCertified Ethical Hacking V13Java Full Stack CourseLinux AdministrationPython CourseAzure DevOps CourseCompTIA Security+ CourseAWS Solution Architect CourseSelect Course
+
+Message
+
+Submit
+
+Experience hands-on learning in a structured classroom environment.
+
+Required fields are marked \*
+
+NameEmail
+
+Phone
+
+CCIE CourseCCNA CourseCCNP CourseAWS DevOps CourseCybersecurity CourseCertified Ethical Hacking V13Java Full Stack CourseLinux AdministrationPython CourseAzure DevOps CourseCompTIA Security+ CourseAWS Solution Architect CourseSelect Course
+
+Message
+
+Submit
+
+Customized training programs to enhance your team's skills and productivity.
+
+Required fields are marked \*
+
+NameEmail
+
+Phone
+
+CCIE CourseCCNA CourseCCNP CourseAWS DevOps CourseCybersecurity CourseCertified Ethical Hacking V13Java Full Stack CourseLinux AdministrationPython CourseAzure DevOps CourseCompTIA Security+ CourseAWS Solution Architect CourseSelect Course
+
+Message
+
+Submit
+
+## Why Study With Us?
+
+Become a valuable expert with Network Rhinos.
+
+#### [Experienced Instructors](javascript:void(0);)
+
+Learn from experts who simplify complex topics.
+
+#### [Hands-On Projects](javascript:void(0);)
+
+Build real projects to create a strong portfolio.
+
+#### [Flexible Learning](javascript:void(0);)
+
+Study at your own pace with on-demand video lessons.
+
+#### [Job-Ready Skills](javascript:void(0);)
+
+Gain practical skills and certifications for better job opportunities.
+
+#### [Learn Anytime, Anywhere](javascript:void(0);)
+
+Study anytime, anywhere, at your own speed.
+
+## Python Full Stack Course Benefits
+
+- Python Developer
+- Web Developer
+- Data Analyst
+- Full Stack Developer
+
+#### Benefits
+
+- High demand in industries like tech, finance, and healthcare.... [Content truncated for context window]
 
 
 ---
 
-### Source 4: Python Machine Learning - W3Schools
+### Source 12: Python Fundamentals for Beginners
+
+**Content:**
+[Back to Catalog](https://catalog.skills.network/#catalogitem_4551)
+
+# Python Fundamentals for Beginners
+
+Premium
+BeginnerCourse
+
+This Python course provides a beginner-friendly introduction to Python for Data Science. Practice through lab exercises, and you'll be ready to create your first Python scripts on your own!
+
+4.9 (37 Reviews)
+
+## Language
+
+- English
+
+
+## Topic
+
+- Python
+
+
+## Industries
+
+- Information Technology
+
+
+## Enrollment Count
+
+- 321
+
+
+## Skills You Will Learn
+
+- Data Science, Artificial Intelligence, Software Development, Numpy, Pandas, Python
+
+
+## Offered By
+
+- IBMSkillsNetwork
+
+
+## Estimated Effort
+
+- 25 hours
+
+
+## Platform
+
+- SkillsNetwork
+
+
+## Last Update
+
+- September 10, 2025
+
+
+About this Course
+
+Kickstart your Python learning and get started with data science at the same time with this beginner-friendly, self-paced course. No prior programming skills are required. Python is the standard programming language used by data scientists and the demand for skilled individuals who can apply their Python knowledge to data science has never been higher.
+
+You will learn basic programming concepts using Python such as native data types; data structures like lists, tuples, and dictionaries; programming logic including conditions, branching, and loops; and the gears that make up the engine of your application: functions and classes, those chunks of executable, reusable code that control the behavior of your application.
+
+You will use a variety of Python libraries commonly used in data science such as Pandas, Numpy, and BeautifulSoup. You’ll also automate data collection with Python using a technique called web scraping and application programming interfaces, or APIs. This course uses Jupyter Notebooks for your hands-on labs, another popular data science tool. By the end of this course, you’ll feel comfortable creating basic programs, working with data, and automating tasks using Python by producing several artifacts for your portfolio to prove it.
+
+# What You'll Learn
+
+- Combine fundamental programming concepts such as data types, data structures, expressions, and variables to write Python code that executes simple tasks
+- Write Python code using programming logic including branching, loops, functions, objects, and classes
+- Construct data science models using Python libraries including Pandas, Numpy, and BeautifulSoup
+- Import web data into a Python application using APIs and web scraping
+
+# Prerequisites
+
+Basic computer skills
+
+# Course Syllabus:
+
+**Module 1: Python Basics**
+
+- Types
+- Expressions and Variables
+- Hands-On Lab: Your First Program, Types, Expressions, and Variables
+- String Operations
+- Hands-On Lab: Strings
+
+**Module 2: Python Data Structures**
+
+- List and Tuples
+- Hands-On Lab: Lists
+- Hands-On Lab: Tuples
+- Dictionaries
+- Hands-On Lab: Dictionaries
+- Sets
+- Hands-On Lab: Sets
+- Python Data Structure
+
+**Module 3: Python Programming Fundamentals**
+
+- Conditions and Branching
+- Hands-On Lab: Conditions and Branching
+- Lo... [Content truncated for context window]
+
+
+---
+
+### Source 13: Python Programming Made Simple
+
+**Content:**
+Python Engineer Courses
+
+[🚀\
+\
+Python Basics\
+\
+Coming Soon!](https://edupython.com/)
+
+[🧱\
+\
+Beginner Algorithms & Data Structures\
+\
+Coming Soon!](https://edupython.com/)
+
+[⚛️\
+\
+Advanced Algorithms & Data Structures\
+\
+Coming Soon!](https://edupython.com/)
+
+[🏭\
+\
+Production Python\
+\
+Available now!](https://edupython.com/courses/production-python)
+
+Press enter or space to select a node.You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.
+
+Press enter or space to select an edge. You can then press delete to remove it or escape to cancel.
+
+
+---
+
+### Source 14: Python Programming for Kids - Bynahry
+
+**Content:**
+## Python Programming for Kids
+
+## Python Programming for Kids
+
+Book A Class
+
+Python is a robust and user-friendly programming language trusted and used across various industries for web development, software development, artificial intelligence, data analytics etc. Easy to learn because of its ‘English-like’ syntax, it is an ideal first programming language for beginners transitioning from block-based languages like Scratch.
+
+## Why Learn Python Programming?
+
+Builds logical thinking and computational knowledge and skills
+
+Increases kid’s ability to break down problems and create solutions
+
+Lays a strong foundation for future coding opportunities
+
+Boosts their confidence in using technology as a tool for creativity
+
+## Python Courses on Bynahry
+
+Bynahry is Canada’s no.1 online coding school for children, where they learn and build comprehensive coding skills, using kid-friendly methods and platforms like Python Programming.
+
+## Beginner Module
+
+- Python Fundamentals
+- Functions and Modules
+- Working with Strings and Files
+- Data Structures
+- And Lots More!
+
+### **Fee: $219**
+
+[Pay Now](https://bynahry.ca/product/python-programming-beginner/)
+
+## Intermediate Module
+
+- Classes and Objects
+- File Handling and OOP
+- Broadcasting and Messaging
+- Tuples and Sets
+- And Lots More!
+
+### Fee: $239
+
+[Pay Now](https://bynahry.ca/product/python-programming-intermediate/)
+
+## Advanced Module
+
+- Flask Fundamentals
+- Introduction to Django
+- Machine Learning Basics
+- Time Series Analysis
+- And Lots More!
+
+### **Fee: $260**
+
+[Pay Now](https://bynahry.ca/product/python-programming-advanced/)
+
+## **Still wondering if Python Programming is for your kid?**
+
+Speak With Us
+
+## What Our Students and Parents Say
+
+\[wp-testimonials widget-id=1\]
+
+0
+
+0
+
+Your Cart
+
+Your cart is empty [Return to Shop](https://bynahry.ca/shop/)
+
+[Continue Shopping](https://bynahry.ca/bynahry.ca)
+
+Loading Comments...
+
+Write a Comment...
+
+Email (Required)Name (Required)Website
+
+
+---
+
+### Source 15: Python 3 Programming Fundamentals
+
+**Content:**
+# Python 3 Programming Fundamentals
+
+Now Only
+
+$389
+
+AUD
+
+35% off
+
+$599 AUD
+
+Enrol Now
+
+**Quick Facts**
+
+- Delivery Method Online
+- Professional Certificate
+- 24hrs Suggested Study Time
+- 3 Months Access
+- Tutor Support
+- Study On Any Device
+- 1077 Students
+
+## Enhance your resume by adding Python to your programming skills.
+
+Enhance your rÃ©sumÃ© by adding Python to your programming skills! The Python programming language was developed to provide a way to develop code that's easy to create and understand. While Python contains the same basic structures as other languages, it also offers unique functionality that makes your life as a programmer easier.
+
+This course will show you how to create basic programming structures including decisions and loops. Then you'll move on to more advanced topics such as object-oriented programming with classes and exceptions. In addition, you'll explore unique Python data structures such as tuples and dictionaries. You'll even learn how to create Python programs with graphic elements that range from simple circles and squares to graphical user interface (GUI) objects like buttons and labels.
+
+Whether you're interested in writing simple scripts, full programs, or graphical user interfaces, this course will give you the tools you need to use Python with skill and confidence.
+
+Courses are delivered to you through expertly executed lessons, online instruction and interaction with like-minded students. Our courses are designed to deliver all of the benefits of studying in a classroom whilst giving you the flexibility to study at a time and place to suit your needs. You can access your classroom 24/7 from any device with an internet connection.
+
+This course has a 3 month duration. You'll complete comprehensive lessons, quizzes and assignments before submitting your final exam at the end of the course to achieve your certificate. Courses must be completed within the 3 month access period.
+
+## \#\# Course Modules
+
+## Lesson 1- Welcome to Python!
+
+Two things that make Python attractive are that it's a free download and that it comes with a free development environment, IDLE. In our first lesson, we'll start off right by going on a brief tour of both the language and the environment. You'll see that with IDLE, you can either execute individual statements directly at the interpreter's prompt or save your commands in a program file to be run later. By the end of Lesson 1, you'll be fully prepared to work in IDLE using either method.
+
+## Lesson 2- Get Interactive With Variables and User Input
+
+Programs aren't terribly useful unless you have some way to store values in memory. In Lesson 2, you'll get up to speed with Python variables, and then you'll learn how to use these variables to get input from the user. With this, you'll be able to write Python code to make your programs interactive, making them more useful and a lot more interesting.
+
+## Lesson 3- Decisions, Decisions
+
+There are many times when you'll want one set of st... [Content truncated for context window]
+
+
+---
+
+### Source 16: Introduction to Python
 
 **Content:**
 [Menu](javascript:void(0))
@@ -57,21 +420,111 @@ Search field
 
 _×_
 
-[__](javascript:void(0);)
+[See More](javascript:void(0))
 
 Sign In
 
-[★+1](https://profile.w3schools.com/log-in) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://www.w3schools.com/spaces/index.php) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://spaces.w3schools.com/space/)
+[★+1](https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fpython%2Fpython_intro.asp) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://www.w3schools.com/spaces/index.php) [Get Certified](https://campus.w3schools.com/collections/course-catalog) [Upgrade](https://order.w3schools.com/plans) [For Teachers](https://www.w3schools.com/academy/index.php) [Spaces](https://spaces.w3schools.com/space/)
 
 ❮
 
      ❯
 
-[HTML](https://www.w3schools.com/html/default.asp) [CSS](https://www.w3schools.com/css/default.asp) [JAVASCRIPT](https://www.w3schools.com/js/default.asp) [SQL](https://www.w3schools.com/sql/default.asp) [PYTHON](https://www.w3schools.com/python/default.asp) [JAVA](https://www.w3schools.com/java/default.asp) [PHP](https://www.w3schools.com/php/default.asp) [HOW TO](https://www.w3schools.com/howto/default.asp) [W3.CSS](https://www.w3schools.com/w3css/default.asp) [C](https://www.w3schools.com/c/index.php) [C++](https://www.w3schools.com/cpp/default.asp) [C#](https://www.w3schools.com/cs/index.php) [BOOTSTRAP](https://www.w3schools.com/bootstrap/bootstrap_ver.asp) [REACT](https://www.w3schools.com/react/default.asp) [MYSQL](https://www.w3schools.com/mysql/default.asp) [JQUERY](https://www.w3schools.com/jquery/default.asp) [EXCEL](https://www.w3schools.com/excel/index.php) [XML](https://www.w3schools.com/xml/default.asp) [DJANGO](https://www.w3schools.com/django/index.php) [NUMPY](https://www.w3schools.com/python/numpy/default.asp) [PANDAS](https://www.w3schools.com/python/pandas/default.asp) [NODEJS](https://www.w3schools.com/nodejs/default.asp) [DSA](https://www.w3schools.com/dsa/index.php) [TYPESCRIPT](https://www.w3schools.com/typescript/index.php) [ANGULAR](https://www.w3schools.com/angular/default.asp) [GIT](https://www.w3schools.com/git/default.asp) [POSTGRESQL](https://www.w3schools.com/postgresql/index.php) [MONGODB](https://www.w3schools.com/mongodb/index.php) [ASP](https://www.w3schools.com/asp/default.asp) [AI](https://www.w3schools.com/ai/default.asp) [R](https://www.w3schools.com/r/default.asp) [GO](https://www.w3schools.com/go/index.php) [KOTLIN](https://www.w3schools.com/kotlin/index.php) [SASS](https://www.w3schools.com/sass/default.php) [VUE](https://www.w3schools.com/vue/index.php) [GEN AI](https://www.w3schools.com/gen_ai/index.php) [SCIPY](https://www.w3schools.com/python/scipy/index.php) [CYBERSECURITY](https://www.w3schools.com/cybersecurity/index.php) [DATA SCIENCE](https://www.w3schools.com/datascience/default.asp) [INTRO TO PROGRAMMING](https://www.w3schools.com/programming/index.php) [BASH](https://www.w3schools.com/bash/index.php) [RUST](https://www.w3schools.com/rust/index.php)
+[HTML](https://www.w3schools.com/html/default.asp) [CSS](https://www.w3schools.com/css/default.asp) [JAVASCRIPT](https://www.w3schools.com/js/default.asp) [SQL](https://www.w3schools.com/sql/default.asp) [PYTHON](https://www.w3schools.com/python/default.asp) [JAVA](https://www.w3schools.com/java/default.asp) [PHP](https://www.w3schools.com/php/default.asp) [HOW TO](https://www.w3schools.com/howto/default.asp) [W3.CSS](https://www.w3schools.com/w3css/default.asp) [C](https://www.w3schools.com/c/index.php) [C++](https://www.w3schools.com/cpp/default.asp) [C#](https://www.w3schools.com/cs/index.php) [BOOTSTRAP](https://www.w3schools.com/bootstrap/bootstrap_ver.asp) [REACT](https://www.w3schools.com/react/default.asp) [MYSQL](https://www.w3schools.com/mysql/default.asp) [JQUERY](https://www.w3schools.com/jquery/default.asp) [EXCEL](https://www.w3schools.com/excel/index.php) [XML](https://www.w3schools.com/xml/default.asp) [DJANGO](https://www.w3schools.com/django/index.php) [NUMPY](https://www.w3schools.com/python/numpy/default.asp) [PANDAS](https://www.w3schools.com/python/pandas/default.asp) [NODEJS](https://www.w3schools.com/nodejs/default.asp) [DSA](https://www.w3schools.com/dsa/index.php) [TYPESCRIPT](https://www.w3schools.com/typescript/index.php) [ANGULAR](https://www.w3schools.com/angular/default.asp) [GIT](https://www.w3schools.com/git/default.asp) [POSTGRESQL](https://www.w3schools.com/postgresql/index.php) [MONGODB](https://www.w3schools.com/mongodb/index.php) [ASP](https://www.w3schools.com/asp/default.asp) [AI](https://www.w3schools.com/ai/default.asp) [R](https://www.w3schools.com/r/default.asp) [GO](https://www.w3schools.com/go/index.php) [KOTLIN](https://www.w3schools.com/kotlin/index.php) [SASS](https://www.w3schools.com/sass/default.asp) [VUE](https://www.w3schools.com/vue/index.php) [GEN AI](https://www.w3schools.com/gen_ai/index.php) [SCIPY](https://www.w3schools.com/python/scipy/index.php) [CYBERSECURITY](https://www.w3schools.com/cybersecurity/index.php) [DATA SCIENCE](https://www.w3schools.com/datascience/default.asp) [INTRO TO PROGRAMMING](https://www.w3schools.com/programming/index.php) [BASH](https://www.w3schools.com/bash/index.php) [RUST](https://www.w3schools.com/rust/index.php)
 
 ## Python Tutorial
 
-[Python HOME](https://www.w3schools.com/default.asp) [Python Intro](https://www.w3schools.com/python_intro.asp) [Python Get Started](https://... [Content truncated for context window]
+[Python HOME](https://www.w3schools.com/default.asp) [Python Int... [Content truncated for context window]
+
+
+---
+
+### Source 17: Python Programming Tutorials
+
+**Content:**
+[**Machine Learning**\
+\
+Employ both supervised and unsupervised machine learning, to make predictions or to understand data.](https://pythonprogramming.net/machine-learning-tutorials/)
+
+[View](https://pythonprogramming.net/machine-learning-tutorials/)
+
+[**Data Analysis**\
+\
+Learn how to use Python with Pandas, Matplotlib, and other modules to gather insights from and about your data.](https://pythonprogramming.net/data-analysis-tutorials/)
+
+[View](https://pythonprogramming.net/data-analysis-tutorials/)
+
+[**Quantum Computer Programming**\
+\
+Learn the basics and concepts of working with quantum computers and qubits through practical applications and the Qiskit package.](https://pythonprogramming.net/quantum-computer-programming-tutorial/)
+
+[Start](https://pythonprogramming.net/quantum-computer-programming-tutorial/)
+
+[**Game Development**\
+\
+Create your own games with Python's PyGame library, or check out the multi-platform Kivy.](https://pythonprogramming.net/game-development-tutorials/)
+
+[View](https://pythonprogramming.net/game-development-tutorials/)
+
+[**Python Fundamentals**\
+\
+Learn the basic and intermediate Python fundamentals.](https://pythonprogramming.net/python-fundamental-tutorials/)
+
+[View](https://pythonprogramming.net/python-fundamental-tutorials/)
+
+[**Web Development**\
+\
+How to develop websites with either the Flask or Django frameworks for Python.](https://pythonprogramming.net/web-development-tutorials/)
+
+[View](https://pythonprogramming.net/web-development-tutorials/)
+
+[**Bots & AI**\
+\
+Creating various software bots, like bots in games, in chats, and to interact with the web. Not to be confused with robotics!](https://pythonprogramming.net/bot-tutorials/)
+
+[View](https://pythonprogramming.net/bot-tutorials/)
+
+[**Robotics**\
+\
+Control hardware with Python programming and the Raspberry Pi.](https://pythonprogramming.net/robotics-tutorials/)
+
+[View](https://pythonprogramming.net/robotics-tutorials/)
+
+[**GUIs**\
+\
+Create software with a user interface using Tkinter, PyQt, or Kivy.](https://pythonprogramming.net/gui-development-tutorials/)
+
+[View](https://pythonprogramming.net/gui-development-tutorials/)
+
+- [Golang](https://pythonprogramming.net/pythonprogramming.net#golang)
+
+Go is a programming language aimed at being simple, easy to work with, and capable of high performance.
+
+[View Tutorial](https://pythonprogramming.net/go/)
+
+
+---
+
+### Source 18: Python Programming An Introduction To Computer Science
+
+**Content:**
+### You are now being redirected to atozpdfbooks.com shortly.....
+
+
+---
+
+### Source 19: oldsite.kernpublichealth.com - Python Programming For Automation
+
+**Content:**
+### You are now being redirected to easypdfs.cloud....
+
+
+---
+
+### Source 20: Python Basics A Practical Introduction To Python 3
+
+**Content:**
+### You are now being redirected to atozpdfbooks.com shortly.....
 
 
 ---
@@ -96,7 +549,7 @@ Sign In
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 2 Knowledge Nodes for: Machine Learning Basics**
+**Agent 2 Knowledge Nodes for: Python Programming**
 
 1. [Node Name]
 2. [Node Name]
@@ -105,7 +558,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

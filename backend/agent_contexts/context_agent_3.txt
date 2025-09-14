@@ -1,24 +1,338 @@
-You are Agent 3 of 5, a specialized research expert analyzing "Machine Learning Basics". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 3 of 5, a specialized research expert analyzing "Python Programming". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 3 Research Context
 
 ## Assignment
-You are Agent 3 of 5 specialized research agents analyzing: "Machine Learning Basics"
+You are Agent 3 of 5 specialized research agents analyzing: "Python Programming"
 
 ## Your Data Subset
 - Agent ID: 3/5
-- Sites Assigned: 2
-- Total Sites Across All Agents: 8
-- Your Coverage: Sites 5 to 6
+- Sites Assigned: 10
+- Total Sites Across All Agents: 50
+- Your Coverage: Sites 21 to 30
 
 ## Your Research Sources
 
-### Source 5: Machine Learning Crash Course - Google for Developers
+### Source 21: Learn Python Programming Language
+
+**Content:**
+- [Python Programming](https://www.codesansar.com/python-programming)
+- [C Programming](https://www.codesansar.com/c-programming)
+- [Numerical Methods](https://www.codesansar.com/numerical-methods)
+- [Dart Language](https://www.codesansar.com/dart)
+- [Computer Basics](https://www.codesansar.com/computer-basics)
+- [Flutter](https://www.codesansar.com/flutter)
+- [Linux](https://www.codesansar.com/linux)
+- [Deep Learning](https://www.codesansar.com/deep-learning)
+
+- [Python Programming](https://www.codesansar.com/python-programming)
+- [C Programming](https://www.codesansar.com/c-programming)
+- [Numerical Methods](https://www.codesansar.com/numerical-methods)
+- [Dart Language](https://www.codesansar.com/dart)
+- [Computer Basics](https://www.codesansar.com/computer-basics)
+- [Flutter](https://www.codesansar.com/flutter)
+- [Linux](https://www.codesansar.com/linux)
+- [Deep Learning](https://www.codesansar.com/deep-learning)
+
+- [C Programming Examples](https://www.codesansar.com/c-programming-examples)
+- [Python Programming Examples](https://www.codesansar.com/python-programming-examples)
+
+- [C Programming Examples](https://www.codesansar.com/c-programming-examples)
+- [Python Programming Examples](https://www.codesansar.com/python-programming-examples)
+
+# Learn Python Programming Language
+
+TOC ☵
+
+- [Python Basic](https://www.codesansar.com/python-programming#basic)
+- [Python Opeartors](https://www.codesansar.com/python-programming#operators)
+- [Python Loops](https://www.codesansar.com/python-programming#loop)
+- [Python Function](https://www.codesansar.com/python-programming#function)
+- [Python String](https://www.codesansar.com/python-programming#string)
+- [Python Files](https://www.codesansar.com/python-programming#files)
+- [Python Closures](https://www.codesansar.com/python-programming#closures)
+- [Interview Question](https://www.codesansar.com/python-programming#interview)
+
+Coding has become the **new literacy for 21st century**. Everyone in the 21st century will have to **learn to code**.
+
+**So, what is coding?** Coding is basically writing instructions which can be understood by computers to accomplish certain task. Task can be anything like generating prime numbers, sending email to all employee in the organization whose email addresses are stored in excel sheet, detecting human face in given image to auto tagging person in Facebook post by recognizing face from uploaded photo.
+
+Learning to code **increases your productivity and it is still a fun creative skill**. To code, we need to know programming languages. Programming languages are basic building block for creating software.
+
+Programming languages allow us to write code (instructions) which can be processed or understood by computer.
+
+This course uses the python programming language. Python programming language is the best **first language** to learn because it has **simple elegant syntax and gentle learning curve** (you can write and understand python code quickly and easily).
+
+Many universit... [Content truncated for context window]
+
+
+---
+
+### Source 22: Python Tutorials for Beginners (Ultimate Guide)
+
+**Content:**
+# Python Tutorial For Beginners
+
+[❮ Home](https://www.tutorialstonight.com/) [Next ❯](https://www.tutorialstonight.com/python/python-versions)
+
+* * *
+
+## Python Tutorial
+
+Welcome! to the Python tutorial.
+
+If you are new to programming or an intermediate programmer and want to learn the new generation language **Python** then start now right here.
+
+We will cover topics of python in every detail and yet very easy to understand. We believe in learning with examples so you will see lots of examples with pictures which clears your concept very easily.
+
+We also have an FAQ at the end of each topic for you in any doubt.
+
+* * *
+
+## What is Python?
+
+**Python is a widely used high-level programming language**. It is often compared to Tcl, Perl, Scheme, or Java. However, Python is much more flexible, powerful, and readable than these other systems.
+
+Python is so versatile that it can be used to write a simple computer program to create a complex AI algorithm.
+
+Python is a programming language that lets you work more quickly and **integrate your systems** more effectively. You can use Python as your base language for your own applications, either interactively in a text editor or non-interactively as a scripting language.
+
+![python tutorial](https://www.tutorialstonight.com/assets/python/python-tutorial.webp)
+
+Python is an **interpreted language**. This means that Python is read as a sequence of characters, and the interpreter does the work of translating the characters into the appropriate actions. This allows Python to be a very powerful language, but also means that Python is not a compiled language. Compiled languages are typically compiled to machine code, which is faster and more efficient than source code.
+
+Python is a **free and open-source language**.
+
+Python is **multi-platform**.
+
+Python is **cross-platform**.
+
+Python support multiple [programming paradigms](https://www.tutorialstonight.com/programming-paradigm) like Object Oriented, Procedure Functional, etc.
+
+Python is the most useful programming language of the current era. It was created by **Guido Van Rossum** and was released in the year 1991.
+
+Python is a **dynamic programming language** and has an **automatic memory management system**, which means it requires less rigid coding and hence is a beginner-friendly language.
+
+The motive of python language is to let programmers and developers focus on creating logic rather than worrying about syntax memory management.
+
+Python is very **rich in its standard libraries** it is also called to be "batteries included" because of this.
+
+### Python Example Codes
+
+The python code syntax is very easy to read, write and understand.
+
+python codes are so easy that you can understand code very much just by reading it.
+
+To print something on the screen you just have to use the `print` method in python.
+
+```
+print("Hello World!")
+```
+
+Output:
+
+```
+Hello World!
+```
+
+Similarly repeating a task by creating a loop in python is also easy and readable.
+
+```
+for i in ... [Content truncated for context window]
+
+
+---
+
+### Source 23: Python - Introduction | Introduction to Software Systems
+
+**Content:**
+Python is a high-level, general-purpose programming language that has gained immense popularity since its creation by Guido van Rossum in the late 1980s and its official release in 1991. Known for its simplicity and readability, Python is designed to emphasize code clarity, making it an excellent choice for both beginners and experienced programmers alike.
+
+### **Key Features of Python**
+
+- **Readability**: Python's syntax closely resembles English, which makes it easier to understand and write code. This focus on readability allows developers to express concepts in fewer lines of code compared to other programming languages.
+
+- **Versatility**: Python is a multi-paradigm language that supports procedural, object-oriented, and functional programming styles. This flexibility enables developers to choose the approach that best suits their project needs.
+
+- **Interpreted Language**: As an interpreted language, Python executes code line by line, which simplifies debugging and allows for rapid prototyping. This feature is particularly beneficial for beginners who are learning programming concepts.
+
+- **Extensive Libraries**: Python comes with a comprehensive standard library that supports various tasks, from web development to data analysis and machine learning. There are also numerous third-party libraries available that extend its functionality even further.
+
+- **Cross-Platform Compatibility**: Python can run on various operating systems, including Windows, macOS, and Linux, making it highly portable.
+
+
+### **Applications of Python**
+
+Python's versatility allows it to be used in a wide range of applications:
+
+- **Web Development**: Frameworks like Django and Flask enable developers to build robust web applications efficiently.
+
+- **Data Science and Machine Learning**: Libraries such as Pandas, NumPy, and TensorFlow make Python a popular choice for data analysis and machine learning projects.
+
+- **Automation and Scripting**: Python is often used for automating repetitive tasks and system scripting due to its ease of use.
+
+- **Game Development**: Tools like Pygame allow developers to create games using Python.
+
+- **Scientific Computing**: Python is widely used in scientific research for simulations and complex calculations due to libraries like SciPy.
+
+
+### **Getting Started with Python**
+
+To begin programming in Python, you can download the latest version from the official Python website. You can write Python code using a simple text editor or an Integrated Development Environment (IDE) like PyCharm or Visual Studio Code. Here’s a basic example of a Python program:
+
+Copy
+
+```
+print("Hello, World!")
+```
+
+This simple program outputs "Hello, World!" to the console, demonstrating how easy it is to get started with Python.
+
+### Installation
+
+- Download Python from here - [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+- Beginners Guide for Python - [https://wiki.python.org/moin/BeginnersGuide/Download](https://wiki.python.org/moin/... [Content truncated for context window]
+
+
+---
+
+### Source 24: Python Overview
+
+**Content:**
+# Python Overview
+
+## Python Programming Tutorials
+
+Overview of PythonPython FundamentalsControl StatementsArrays and StringsFunctionsLists and TuplesClasses and ObjectsExceptionsFiles HandlingPython Advanced
+
+Python is an advanced, interpreted programming language known for its readability and simplicity. It supports various programming paradigms, such as procedural, object-oriented, and functional. Python's wide range of applications, from web development and app creation to data analytics and artificial intelligence, underscore its usefulness. Its robust assortment of libraries and frameworks contributes to its popularity among novices and professionals.
+
+Python is a programming language that includes features of C and Java. It provides the style of writing elegant code like C, and for object-oriented programming, it offers classes and objects like Java.
+
+In Python, the program to add two numbers will be as follows:
+
+Example:
+
+```
+#program to add two numbers in python
+a = b = 20 #declare two variables and store 20 in them
+print (a+b) #final output
+```
+
+Output:
+
+```
+40
+```
+
+## Some Facts About Python
+
+- At the National Research Institute for **Mathematics and Computer Science in the Netherlands**, **Guido van Rossum** created Python in the **late 1980s** as an alternative to the ABC language that could handle exceptions and interfaces.
+- Python is derived from programming languages such as ABC, Modula 3, small talk, and Algol-68.
+- Van Rossum picked the name Python for the new language from a TV show, Monty Python's Flying Circus.
+- A Python page is a file with a **.py** extension that can contain a combination of HTML tags and Python scripts.
+- In December 1989, Creator first developed the Python interpreter as a hobby, and then on October 16, 2000, Python 2.0 was released with many new features.
+- Python 3.0 was released on **December 3, 2008**, with more testing and new features.
+- Python is an open-source scripting language.
+- Python is open-source, meaning anyone can download it freely from **www.Python.org** and use it to develop programs. Its source code can be accessed and modified as required in the project.
+- Python is one of the official languages used by the tech giant Google.
+
+## Python Why? Characteristics and Features of Python
+
+Python is gaining popularity in the programming community; there are many reasons behind this.
+
+- **Interpreted Language:** Python is processed at runtime by Python Interpreter.
+- **Object-Oriented Language:** It supports object-oriented features and techniques of programming.
+- **Interactive Programming Language:** Users can directly interact with the Python interpreter to write programs.
+- **Easy language:** Python is simple to learn, particularly for newcomers.
+- **Straightforward Syntax:** The formation of Python syntax is simple, making it popular.
+- **Easy to read:** Python source code is clearly defined and visible.
+- **Portable:** Python codes can be run on various hardware platforms with the same... [Content truncated for context window]
+
+
+---
+
+### Source 25: Python Full Course Online - Complete Beginner to Advanced
+
+**Content:**
+- Courses
+
+- Placement
+
+- Data Science
+
+IBM
+
+
+## Our website uses cookies
+
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our [Cookie Policy](https://www.geeksforgeeks.org/legal/privacy-policy/#:~:text=the%20appropriate%20measures.-,COOKIE%20POLICY,-A%20cookie%20is) & [Privacy Policy](https://www.geeksforgeeks.org/privacy-policy/)
+
+Got it!
+
+1. [All Courses](https://www.geeksforgeeks.org/courses)
+2. [Self-Paced](https://www.geeksforgeeks.org/courses/category/all?courseType=online&courseFeeType=all&itm_source=geeksforgeeks&itm_medium=course_landingpage&itm_campaign=courses)
+
+# Python Full Course Online - Complete Beginner to Advanced
+
+Self-Paced Course
+
+400k+ interested Geeks
+
+Learn Python Programming from scratch with our beginner-friendly **complete Python course**! Learn Python key concepts like Python basics, Variables, Data types, Input/output, Operators, OOP concepts, and more. Gain hands-on experience with practical exercises to build a solid foundation in Python programming. **Enrol now to learn and master Python!**
+
+Beginner and Intermediate6 Weeks
+400k+ interested Geeks
+
+Comprehensive LearningBeginner FriendlyCourse CertificateAssessment Tests
+
+## Course Overview
+
+## Python Course Online - Overview
+
+This **online Python course** is designed to take you from a beginner to an advanced level in Python programming. It covers all the essential Python concepts, including basic syntax, data types, variables, and operators, as well as more advanced Python topics such as functions, modules, and file handling.
+
+You will learn to work with data structures like lists, tuples, sets, and dictionaries, and understand the principles of object-oriented programming (OOPs) with classes and objects.
+
+Along with this, the Python programming full course has hands-on projects and coding challenges, that will help you to gain practical experience and develop problem-solving skills. Whether you're looking to start a career in software development, data science, or automation, this **complete Python course** provides a comprehensive foundation in Python, preparing you for various job opportunities in the tech industry.
+
+## GFG Python Programming Course - Highlights
+
+- Curated by CEO Mr. Sandeep Jain and industry experts.
+- 10+ hours of recorded content
+- 50+ Practice Problems
+- 100+ questions including output-based programs
+- Learn Functions, Loops, Strings, and Lists efficiently.
+- Gain command over Object Oriented Programming
+- Suitable for both new programmers and experienced coders.
+- Practice Python programming examples for skill development.
+- Strengthen Python foundations before advancing to DSA using Python.
+- Explore Complete Machine Learning & Data Science Program
+
+Read more
+
+## Course Content
+
+01Python Basics
+
+- ### Background Part 1 (IO Devices, CPU and Memory)
+
+- ### Background Part 2 (Computer Organization)
+
+- ### Why Do We Need Programming Languages
+... [Content truncated for context window]
+
+
+---
+
+### Source 26: Google's Python Class | Python Education
 
 **Content:**
 [Skip to main content](https://developers.google.com/developers.google.com#main-content)
 
-- [**Machine Learning**](https://developers.google.com/machine-learning)
+- [for Education](https://developers.google.com/edu)
+- [Python](https://developers.google.com/edu/python)
 
 `/`
 
@@ -34,7 +348,6 @@ You are Agent 3 of 5 specialized research agents analyzing: "Machine Learning Ba
 - Tiếng Việt
 - Türkçe
 - Русский
-- Українська
 - עברית
 - العربيّة
 - فارسی
@@ -50,95 +363,365 @@ Sign in
 
 - [Home](https://developers.google.com/)
 - [Products](https://developers.google.com/products)
-- [Machine Learning](https://developers.google.com/machine-learning)
-- [ML Concepts](https://developers.google.com/machine-learning/crash-course)
+- [Google for Education](https://developers.google.com/edu)
+- [Python](https://developers.google.com/edu/python)
 
-Send feedback
+# Google's Python Class Stay organized with collections Save and categorize content based on your preferences.
 
-Stay organized with collections
-Save and categorize content based on your preferences.
+Welcome to Google's Python Class -- this is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding. These materials are used within Google to introduce Python to people who have just a little programming experience. The first exercises work on basic Python concepts like strings and lists, building up to the later exercises which are full programs dealing with text files, processes, and http connections. The class is geared for people who have a little bit of programming experience in some language, enough to know what a "variable" or "if statement" is. Beyond that, you do not need to be an expert programmer to use this material.
 
-### What's new in Machine Learning Crash Course?
+To get started, the Python sections are linked at the left -- [Python Set Up](https://developers.google.com/edu/python/set-up) to get Python installed on your machine, [Python Introduction](https://developers.google.com/edu/python/introduction) for an introduction to the language, and then [Python Strings](https://developers.google.com/edu/python/strings) starts the coding material, leading to the first exercise. The end of each written section includes a link to the code exercise for that section's material. The lecture videos parallel the written materials, introducing Python, then strings, then first exercises, and so on. At Google, all this material makes up an intensive 2-day class, so the videos are organized as the day-1 and day-2 sections.
 
-Since 2018, millions of people worldwide have relied on Machine Learning Crash Course to learn how machine learning works, and how machine learning can work for them. We're delighted to announce the launch of a refreshed version of MLCC that covers recent advances in AI, with an increased focus on interactive learning. Watch this video to learn more about the new-and-improved MLCC.
+This material was created by [Nick Parlante](http://www-cs-faculty.stanford.edu/%7enick/) working in the engEDU group at Google. Special thanks for the help from my Google colleagues John Cox, Steve Glassman, Piotr Kaminski, and Antoine Picard. And finally thanks to Google and my director Maggie Johnson for the enlightened generosity to put these materials out on the internet for free under the [Creative Commons Attribution 2.5](http://creativecommons.org/licenses/by/2.5/) license -- share and enjoy!
 
-### [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression)
+**Tip:** Check out the [Python Google Code University Forum](https://groups.google.com/forum/?fromgroups#!forum/python-gcu-forum) to ask and answer questions.
 
-An introduction to linear regression, covering linear models, loss, gradient descent, and hyperparameter tuning.
-
-### [Logistic Regression](https://developers.google.com/machine-learning/crash-course/logistic-regression)
-
-An introduction to logistic regression, where ML models are designed to predict the probability of a given outcome.
-
-### [Classification](https://developers.google.com/machine-learning/crash-course/classification)
-
-An introduction to binary classification models, covering thresholding, confusion matrices, and metrics like accuracy, precision, recall, and AUC.
-
-### [Working with Numerical Data](https://developers.google.com/machine-learning/crash-course/numerical-data)
-
-Learn how to analyze and transform numerical data to help train ML models more effectively.
-
-### [Working with Categorical Data](https://developers.google.com/machine-learning/crash-course/categorical-data)
-
-Learn the fundamentals of working with categorical data: how to distinguish categorical data from numerical data; how to represent categorical data numerically using one-hot encoding, feature hashing, and mean encoding; and how to perform feature crosses.
-
-### [Datasets, Generalization, and Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting)
-
-An introduction to the characteristics of machine learning datasets, and how to prepare your data to ensure high-quality results when training and evaluating your model.
-
-### [Neural Networks](https://developers.google.com/machine-learning/crash-course/neural-networks)
-
-An introduction to the fundamental principles of neural network architectures, including perceptrons, hidden layers, and activatio... [Content truncated for context window]
+Except as otherwis... [Content truncated for context window]
 
 
 ---
 
-### Source 6: What is Machine Learning? ML Tutorial for Beginners
+### Source 27: Art of Problem Solving
 
 **Content:**
-[‘Funmi](https://www.freecodecamp.org/news/author/Heyfunmi/)
+[Art of Problem Solving](https://artofproblemsolving.com/company)
 
-The term “Machine Learning” was coined by a computer gamer named Arthur Samuel in 1959. He defined it like this:
+[AoPS Online](https://artofproblemsolving.com)
 
-> "\[Machine learning is a\] Field of study that gives computers the ability to learn and make predictions without being explicitly programmed."
+Math texts, online classes, and more
+for students in grades 5-12.
 
-ML is a sub-field of Artificial Intelligence. It's based on the idea that computers can learn from historical experiences, make vital decisions, and predict future happenings without human intervention.
+[Visit AoPS Online ‚](https://artofproblemsolving.com)
 
-Machine Learning is behind product suggestions on e-commerce sites, your movie suggestions on Netflix, and so many more things. The computer is able to make these suggestions and predictions by learning from your previous data input and past experiences.
+[Books for Grades 5-12](https://artofproblemsolving.com/store) [Online Courses](https://artofproblemsolving.com/school)
 
-In recent years, Machine Learning has garnered a lot of attention around the world, it has become one of the most important ways that people use Artificial Intelligence.
+[Beast Academy](https://beastacademy.com)
 
-## How Does Machine Learning Work?
+Engaging math books and online learning
+for students ages 6-13.
 
-Machine Learning involves building algorithms. Data Scientists build these algorithms, and the type of algorithm they build depends on the type of data they're working on.
+[Visit Beast Academy ‚](https://beastacademy.com)
 
-The Machine Learning process begins with gathering data (numbers, text, photos, comments, letters, and so on). These data, often called “training data,” are used in training the Machine Learning algorithm. Training essentially "teaches" the algorithm how to learn by using tons of data.
+[Books for Ages 6-13](https://beastacademy.com/books) [Beast Academy Online](https://beastacademy.com/online)
 
-Following the end of the “training”, new input data is then fed into the algorithm and the algorithm uses the previously developed model to make predictions.
+[AoPS Academy](https://aopsacademy.org)
 
-The algorithm is trained several times until it reaches a desired outcome. This enables the Machine Learning algorithms to continually learn on their own. This produces optimal answers and increasing accuracy and predictions over time.
+Small live classes for advanced math
+and language arts learners in grades 2-12.
 
-Here's a helpful [overview of Machine Learning basics for developers](https://www.freecodecamp.org/news/machine-learning-basics-for-developers/) to get you started.
+[Visit AoPS Academy ‚](https://aopsacademy.org)
 
-## Types Of Machine Learning
+[Find a Physical Campus](https://aopsacademy.org/campuses) [Visit the Virtual Campus](https://virtual.aopsacademy.org)
 
-There are three types of Machine Learning, which include:
+# Page
 
-- Supervised Learning
-- Unsupervised Learning
-- Reinforcement Learning
+[Article](https://artofproblemsolving.com/wiki/index.php/Basic_Programming_With_Python)[Discussion](https://artofproblemsolving.com/wiki/index.php/Talk:Basic_Programming_With_Python)[View source](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=edit)[History](https://artofproblemsolving.com/wiki/index.php?title=Basic_Programming_With_Python&action=history)
 
-Let's look at each one briefly.
+# Toolbox
 
-### What is Supervised Learning?
+[Recent changes](https://artofproblemsolving.com/wiki/index.php/Special:RecentChanges)[Random page](https://artofproblemsolving.com/wiki/index.php/Special:Random)[Help](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents)[What links here](https://artofproblemsolving.com/wiki/index.php/Special:WhatLinksHere/Basic_Programming_With_Python)[Special pages](https://artofproblemsolving.com/wiki/index.php/Special:SpecialPages)
 
-Supervised Learning is the most common type of Machine Learning. It involves training the algorithm with a “labelled” dataset. The labelled training data helps the Machine Learning algorithm make accurate predictions in the future.
+# Search
 
-A practical example of supervised learning is training a Machine Learning algorithm with pictures of an apple. After that training, the algorithm is able to identify and retain this information and is able to give accurate predictions of an apple in the future. That is, it will typically be able to correctly identify if an image is of an apple.
+# Basic Programming With Python
 
-### What is Unsupervised Learning?
+**Important: It is extremely recommended that you read [Getting Started With Python Programming](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming) before reading this unless you already know some programming knowledge.**
 
-In Unsupervised Learning, the training data is **NOT** labelled or named. The unlabeled data are used in training the Machine Learning algorith... [Content truncated for context window]
+(Note: This is a really long article. To learn the most from this article, you need to read everything in order and skip nothing, unless you are **absolutely absolutely sure that that content is way too easy for you.**)
+
+This article will talk about some basic Python programming. If you don't even know how to install Python, look [here](https://artofproblemsolving.com/wiki/index.php/Getting_Started_With_Python_Programming).
+
+Note that this article has lots of program examples. It is recommended (but not required) to try these on your own before looking at the solutions.
+
+## Contents
+
+- [1Booleans](https://artofproblemsolving.com/artofproblemsolving.com#Booleans)
+ - [1.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#Program_Example)
+- [2Flow](https://artofproblemsolving.com/artofproblemsolving.com#Flow)
+ - [2.1Program Example](https://artofproblemsolving.com/artofproblemsolving.com#P... [Content truncated for context window]
+
+
+---
+
+### Source 28: Learn Python Programming - Python Tutorial
+
+**Content:**
+# Learn Python Programming
+
+This site contains materials and exercises for the Python 3 programming language.In this course you will learn how to write code, the basics and see examples.
+
+Python is a programming language supports several programming paradigms including Object-Orientated Programming (OOP) and functional programming.
+
+**Related course:** [Complete Python Programming Course & Exercises](https://gum.co/dcsp)
+
+## Table of Contents:
+
+Overview of articles and exercises:
+
+### Introduction
+
+- [7 reasons to learn Python](https://pythonbasics.org/7-reasons-to-learn-python/)
+- [Why Python is Awesome](https://pythonbasics.org/why-python-is-awesome/)
+
+### Learn Python
+
+- [Getting started](https://pythonbasics.org/getting-started/)
+- [Execute Python scripts](https://pythonbasics.org/execute-python-scripts/)
+- [Variables](https://pythonbasics.org/variables/)
+- [Strings](https://pythonbasics.org/strings/)
+- [Replace](https://pythonbasics.org/replace/)
+- [Join](https://pythonbasics.org/join/)
+- [String find](https://pythonbasics.org/string-find/)
+- [Split](https://pythonbasics.org/split/)
+- [Random numbers](https://pythonbasics.org/random-numbers/)
+- [Keyboard input](https://pythonbasics.org/keyboard-input/)
+
+### Control structures
+
+- [If statements](https://pythonbasics.org/if-statements/)
+- [For Loops](https://pythonbasics.org/for-loops/)
+- [While loop](https://pythonbasics.org/while-loop/)
+
+### Data and operations
+
+- [Functions](https://pythonbasics.org/functions/)
+- [List](https://pythonbasics.org/list/)
+- [List operations](https://pythonbasics.org/list-operations/)
+- [Sort list](https://pythonbasics.org/sort-list/)
+- [Range function](https://pythonbasics.org/range-function/)
+- [Dictionary](https://pythonbasics.org/dictionary/)
+- [Read file](https://pythonbasics.org/read-file/)
+- [Write file](https://pythonbasics.org/write-file/)
+- [Nested loops](https://pythonbasics.org/nested-loops/)
+- [Slices](https://pythonbasics.org/slices/)
+- [Multiple return](https://pythonbasics.org/multiple-return/)
+- [Scope](https://pythonbasics.org/scope/)
+- [time and date](https://pythonbasics.org/time-and-date/)
+- [Try exception](https://pythonbasics.org/try-except/)
+- [How to use pip and pypi](https://pythonbasics.org/how-to-use-pip-and-pypi/)
+
+### OOP
+
+- [Class](https://pythonbasics.org/class/)
+- [Constructor](https://pythonbasics.org/constructor/)
+- [Getter and setter](https://pythonbasics.org/getter-and-setter/)
+- [Modules](https://pythonbasics.org/modules/)
+- [Inheritance](https://pythonbasics.org/inheritance/)
+- [Static method](https://pythonbasics.org/static-method/)
+- [Iterable](https://pythonbasics.org/iterable/)
+- [Class method](https://pythonbasics.org/classmethod/)
+- [Multiple Inheritance](https://pythonbasics.org/multiple-inheritance/)
+
+### Advanced
+
+- [Virtualenv](https://pythonbasics.org/virtualenv/)
+- [Enumerate](https://pythonbasics.org/enumerate/)
+- [Pickle](https://pythonbasics.org/pickle/)
+- [Regular Expressions](https://pythonbasics.org/regula... [Content truncated for context window]
+
+
+---
+
+### Source 29: School of Computing - Learning Python
+
+**Content:**
+### Python Programming
+
+- [1\. Computers and Programs](https://comp.mga.edu/learning/python/module/1)
+
+ - [1-1. Computers](https://comp.mga.edu/learning/python/module/1/topic/1)
+ - [1-2. Computer Programs](https://comp.mga.edu/learning/python/module/1/topic/2)
+ - [1-3. What is Computer Science?](https://comp.mga.edu/learning/python/module/1/topic/3)
+ - [1-4. Programming Languages](https://comp.mga.edu/learning/python/module/1/topic/4)
+ - [1-5. Discovering Python](https://comp.mga.edu/learning/python/module/1/topic/5)
+ - [1-6. Setting Up Python Windows and macOS](https://comp.mga.edu/learning/python/module/1/topic/6)
+ - [1.7 Hardware](https://comp.mga.edu/learning/python/module/1/topic/161)
+ - [1.8 Software](https://comp.mga.edu/learning/python/module/1/topic/162)
+ - [1.9 High-Level Language](https://comp.mga.edu/learning/python/module/1/topic/163)
+ - [Summary](https://comp.mga.edu/learning/python/module/1/topic/7)
+- [2\. Input & Output](https://comp.mga.edu/learning/python/module/2)
+
+ - [2-1. The Software Development Process](https://comp.mga.edu/learning/python/module/2/topic/8)
+ - [2.2 The Five Steps of Software Development: Understanding the Problem](https://comp.mga.edu/learning/python/module/2/topic/164)
+ - [2.3 The Five Steps of Software Development: Defining Program Specifications](https://comp.mga.edu/learning/python/module/2/topic/165)
+ - [2.4 The Five Steps of Software Development: Planning the Solution](https://comp.mga.edu/learning/python/module/2/topic/166)
+ - [2.5 The Five Steps of Software Development: Writing the Code](https://comp.mga.edu/learning/python/module/2/topic/167)
+ - [2.6 The Five Steps of Software Development: Testing and Debugging](https://comp.mga.edu/learning/python/module/2/topic/168)
+ - [2.7 Design a Program](https://comp.mga.edu/learning/python/module/2/topic/169)
+ - [2-8. Input, Processing, and Output](https://comp.mga.edu/learning/python/module/2/topic/10)
+ - [2-9. Example Program: Grade Calculator](https://comp.mga.edu/learning/python/module/2/topic/9)
+ - [2-10. Variables](https://comp.mga.edu/learning/python/module/2/topic/11)
+ - [2-11. Expressions](https://comp.mga.edu/learning/python/module/2/topic/12)
+ - [2-12. Output Statements - The print() Function](https://comp.mga.edu/learning/python/module/2/topic/13)
+ - [2-13. Assignment Statements](https://comp.mga.edu/learning/python/module/2/topic/14)
+ - [Summary](https://comp.mga.edu/learning/python/module/2/topic/15)
+ - [Programming Exercises](https://comp.mga.edu/learning/python/module/2/topic/16)
+- [3\. Understanding Data Type](https://comp.mga.edu/learning/python/module/3)
+
+ - [3-1.  Numeric Data Types](https://comp.mga.edu/learning/python/module/3/topic/17)
+ - [3-2. Strings](https://comp.mga.edu/learning/python/module/3/topic/18)
+ - [3-3. Boolean](https://comp.mga.edu/learning/python/module/3/topic/19)
+ - [3-4. Type Conversion](https://comp.mga.edu/learning/python/module/3/topic/20)
+ - [3-5. Operators](https://comp.mga.edu/learning/python/module/3/topic/21)... [Content truncated for context window]
+
+
+---
+
+### Source 30: Online Python Developer from Southwestern College
+
+**Content:**
+**Loading, please wait...**
+
+- [CATALOG](https://careertraining.swccd.edu/training-programs/)
+- [MILITARY](https://careertraining.swccd.edu/military-information/)
+- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
+- [AFFIRM](https://careertraining.swccd.edu/affirm/)
+- [LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+
+
+
+Username or Password is invalid.
+
+Username
+
+Username is required
+
+
+
+Username must be 200 characters or less
+
+Password
+
+Password is required
+
+
+
+Password must be 64 characters or less
+
+[Forget your password?](javascript:void(0))
+
+
+
+Email
+
+Email is required
+
+
+
+Email is invalid
+
+
+
+Email must be 200 characters or less
+
+
+
+
+
+
+
+Thank you. You should be receiving a reset link at the email address you provided shortly.
+
+CLOSE
+
+- Search Career Training ProgramsGo
+[Open Search Dialog](javascript:void(0);)
+
+Username or Password is invalid.
+
+Username
+
+Username is required
+
+Username must be 200 characters or less
+
+Password
+
+Password is required
+
+Password must be 64 characters or less
+
+[Forget your password?](javascript:void(0))
+
+Password
+
+Email is required
+
+Email is invalid
+
+Email must be 200 characters or less
+
+Thank you. You should be receiving a reset link at the email address you provided shortly.
+
+CLOSE
+
+- [☰](javascript:void(0);)
+
+[LOGIN](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+- [CATALOG](https://careertraining.swccd.edu/training-programs/)
+- [MILITARY](https://careertraining.swccd.edu/military-information/)
+- [FINANCIAL ASSISTANCE](https://careertraining.swccd.edu/financial-assistance/)
+- [ACCOUNT](https://careertraining.swccd.edu/student-login/?returnurl=%2ftraining-programs%2fpython-language-training%2f)
+
+Go
+
+Search Career Training Programs
+
+[Training Programs](https://careertraining.swccd.edu/training-programs/) [Programming](https://careertraining.swccd.edu/computer-science-programming-programs/) Python Developer
+
+[phone  Call Us: 855.520.6806](tel:+18555206806)
+
+x
+
+## You already have a course in your cart
+
+You can only add one course to your cart at a time! By adding this course, you will replace the existing course from your cart. How would you like to proceed?
+
+[Keep existing course](javascript:__doPostBack('ctrlPrograms$ctl00','')) [Replace course](javascript:__doPostBack('ctrlPrograms$ctl01',''))
+
+×
+
+# Thanks for reaching out!
+
+# We will call you within the next business day.
+
+# Business hours are Monday to Friday, 9am to 9pm Eastern Time.
+
+# Ready to get started?
+
+LIVE CHAT[855.520.6806](tel:+18555206806)
+
+×
+
+# Oops!
+
+# Form could not be submitted due to an error.
+
+×
+
+You've got questions. We're here to help.
+
+An enrollment specialist will contact you with more information.
+
+First name \*
+
+Enter your first name.
+
+Last name \*
+
+Enter your last name.
+
+Email \*
+
+Enter your email.
+
+Phone number \*
+
+Enter your phone number.
+
+By submitting this form, you acknowledge... [Content truncated for context window]
 
 
 ---
@@ -163,7 +746,7 @@ In Unsupervised Learning, the training data is **NOT** labelled or named. The un
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 3 Knowledge Nodes for: Machine Learning Basics**
+**Agent 3 Knowledge Nodes for: Python Programming**
 
 1. [Node Name]
 2. [Node Name]
@@ -172,7 +755,7 @@ Generate your knowledge nodes in this exact format:
 5. [Node Name]
 
 **Source Summary:**
-- Sources Analyzed: 2
-- Agent Coverage: 2 of 8 total sources
+- Sources Analyzed: 10
+- Agent Coverage: 10 of 50 total sources
 
 Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

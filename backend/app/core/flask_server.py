@@ -191,7 +191,7 @@ def generate_roadmap():
         try:
             # Step 1: Research with Exa API
             print("🔍 Step 1: Researching topic with Exa...")
-            research_results = search_and_get_content(topic, num_results=8)
+            research_results = search_and_get_content(topic, num_results=50)
             
             if not research_results or research_results.get('error'):
                 return jsonify({'error': 'Research failed', 'details': research_results.get('error', 'Unknown error')}), 500
