@@ -1,0 +1,147 @@
+You are Agent 4 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 4 Research Context
+
+## Assignment
+You are Agent 4 of 5 specialized research agents analyzing: "linear algebra"
+
+## Your Data Subset
+- Agent ID: 4/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 7 to 8
+
+## Your Research Sources
+
+### Source 7: Practical Guide to Linear Algebra in Data Science and AI
+
+**Content:**
+[Tatev Aslanyan](https://www.freecodecamp.org/news/author/tatevaslanyan/)
+
+> "In God we trust; all others bring data." – W. Edwards Deming
+
+This famous quote from Edwards Deming perfectly captures the essence of modern Data Science and AI.
+
+Data is the lifeblood of Data Science and AI fields – Machine Learning, Deep Learning, Generative AI and much more. And understanding how to analyze and manipulate data it is key to unlocking its full potential.
+
+The key to understanding all these concepts is linear algebra – the unsung hero behind many powerful algorithms and techniques.
+
+If you've ever felt a disconnect between the linear algebra you learned in school and its practical use in your career, you're not alone. If you believe you should study and work your way through an entire book of Introduction to Linear Algebra, then you are again not alone.
+
+Many aspiring data science and AI professionals struggle to bridge this gap and think they need to spend countless hours to master mathematics for Data Science and AI. But don't worry, this guide is here to help.
+
+I'll show you how linear algebra isn't just a theoretical concept or old fashioned forgotten area of expertise. You'll learn how it's a practical tool that you can use to solve real-world problems in your field.
+
+Linear Algebra combined with Mathematical Analysis (called Calculus I and II in many undergrad studies) form the backbone of Machine Learning, Deep Learning, Computer Vision, and Generative AI. From building recommendation systems and training Neural Networks to analyzing medical images, understanding linear algebra opens up a world of possibilities.
+
+In this guide, you'll discover:
+
+- **Real-World Applications:** We'll explore how linear algebra is applied across various industries, from healthcare to finance, and everything in between (with a special and detailed focus on Data Science and AI).
+
+- **Practical Tips:** You'll learn how to translate theoretical concepts into actionable steps for your data science projects.
+
+- **Linear Algebra RoadMap 2024:** You will get a roadmap for Linear Algebra in 2024 – on paper and in a video tutorial.
+
+- **Career Development Resources:** I will provide you resources to help you learn linear algebra and accelerate your career in data science and AI.
+
+
+Whether you're a student, a recent graduate, or an experienced professional aspiring to become technical professional, this guide will equip you with the knowledge and skills to learn and leverage linear algebra effectively in your work. And you won't have to spend all your time on endless browsing and searching.
+
+> "Mathematics is like the producer of the movies: you don't see them but they are actually running the show." – Tatev Aslanyan
+
+## Table of Contents
+
+1. [Core Linear Algebra Concepts](https://www.freecodecamp.org/www.freecodecamp.org#heading-core-concepts-in-linear-algebra-that-you-will-actually-use)
+
+2. [Linear Algebra Roadmap](https://www.freecodecamp.org/www.freecodecamp.org#heading-li... [Content truncated for context window]
+
+
+---
+
+### Source 8: Linear Algebra Without the Agonizing Pain
+
+**Content:**
+Table of Contents:
+
+- [Null Space](https://johnwlambert.github.io/johnwlambert.github.io#null-space)
+- [Column Space](https://johnwlambert.github.io/johnwlambert.github.io#column-space)
+- [Projection of a Vector onto a Vector](https://johnwlambert.github.io/johnwlambert.github.io#projection)
+- [Gram-Schmidt](https://johnwlambert.github.io/johnwlambert.github.io#gram-schmidt)
+- [Solving Systems of Equations](https://johnwlambert.github.io/johnwlambert.github.io#solving-systems-of-equations)
+- [Singular Value Theorem (SVD)](https://johnwlambert.github.io/johnwlambert.github.io#svd)
+- [Computation of the SVD](https://johnwlambert.github.io/johnwlambert.github.io#computation-svd)
+- [Sherman-Morrison](https://johnwlambert.github.io/johnwlambert.github.io#sherman-morrison)
+- [Sherman-Woodbury-Woodbury Formula](https://johnwlambert.github.io/johnwlambert.github.io#sww)
+
+## Linear Algebra Definitions
+
+Before we do anything interesting with machine learning or optimization, we’ll need to review some essential linear algebra concepts.
+
+Suppose we have two vectors \\(u,v \\in \\mathbf{R}^{n \\times 1}\\). Their _outer product_ is defined as \\(u \\cdot v^T\\), which is an \\(n \\times n\\) matrix. The inner product of \\(u\\) and \\(v\\) is defined \\(u^Tv \\in \\mathbf{R}^{1 \\times 1}\\), a scalar.
+
+Orthogonal vectors satisfy \\(v^Tu = 0\\). For all \\(x \\neq 0\\), if the quadratic form is positive \\(x^TAx > 0\\), then the matrix is symmetric positive matrix; if instead \\(x^TAx \\geq 0\\), the matrix is symmetric positive semi-definite.
+
+A vector norm assigns a scalar value to vector or matrix. It turns out that all norms are _equivalent_, meaning we can bound a certain norm above and below
+
+\\\[\\delta \\\|x\\\|\_0 \\leq \\\|x\\\|\_{\\square} \\leq \\gamma \\\|x\\\|\_0\\\]
+
+e.g. \\(\\\|x\\\|\_{\\alpha} \\leq C\_{\\alpha \\beta} \\\| x \\\|\_{\\beta}\\), or \\(\\\|x\\\|\_2 \\leq \\\|x\\\|\_1 \\leq \\sqrt{n} \\\|x\\\|\_2\\).
+
+Many matrix norms are _induced_ from vector norms.
+
+### Matrix Rank
+
+### Vector Space
+
+### Null Space of a Matrix
+
+Given \\(A \\in \\mathbb{R}^{m \\times n}\\), the **null space** of \\(A\\) is the set of vectors which are sent to the zero vector:
+
+\\\[\\mathcal{N}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\\\]
+
+Multiplication by \\(A\\) can be seen as a function which sends a vector \\(x \\in \\mathbb{R}^n\\) to a vector \\(Ax \\in \\mathbb{R}^m\\).
+
+Of course, \\(\\mathcal{N}(A)\\) always contains the zero vector, i.e. \\({0} \\in \\mathcal{N}(A)\\). But the question is, does it contain any other vectors? If the columns of \\(A\\) are linearly independent, then we can always say \\(\\mathcal{N}(A) = {0} \\).
+
+### Column Space (Range) of a Matrix
+
+Given an \\(m \\times n\\) matrix \\(A\\), we would like to know for which vectors \\(b \\in \\mathbb{R}^m\\) the system \\(Ax = b\\) has a solution. Let’s define the columns of \\(A\\) as:
+
+\\\[A = \\begin{bmatrix} \| & \| & & \| \\\ v\_1 & v\_2 & \\cdots & v\_n \\\ \| & \| & & \| \... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 4:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 4 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 4 Knowledge Nodes for: Linear Algebra**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

@@ -1,4 +1,4 @@
-You are Agent 5 of 5, a specialized research expert analyzing "basic_calculus". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+You are Agent 5 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
 
 # Agent 5 Context
 
@@ -22,7 +22,7 @@ No search results available for this agent.
 ## Output Format:
 Generate your knowledge nodes in this exact format:
 
-**Agent 5 Knowledge Nodes for: Basic_Calculus**
+**Agent 5 Knowledge Nodes for: Linear Algebra**
 
 1. [Node Name]
 2. [Node Name]

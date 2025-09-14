@@ -1,11 +1,13 @@
-**Agent 1 Knowledge Nodes for: Basic_Calculus**
+**Agent 1 Knowledge Nodes for: Linear Algebra**
 
-1. **Limits and Continuity**: Understanding limits is crucial for defining derivatives and integrals. A limit describes the value a function approaches as the input approaches a certain point. Continuity means a function has no breaks, jumps, or holes in its graph. This concept is foundational for calculus and is covered in Week one and Week two of the Fall 2024 class materials.
-2. **Derivatives and Differentiation Rules**: Derivatives represent the rate of change of a function with respect to its variable. Common differentiation rules include the power rule, product rule, and quotient rule. These rules are essential for finding slopes of tangent lines to curves at specific points and are introduced in Week three of the Fall 2024 class materials.
-3. **Functions and Their Graphs**: A function is a relationship that assigns exactly one output for each input. Graphs visually represent functions, showing how outputs change with inputs. Key features of graphs include intercepts, slopes, and asymptotes. This concept is a fundamental building block for calculus and is discussed in the context of Basic Calculus Concepts to Know for Math for Non-Math Majors.
-4. **Applications of Derivatives**: Derivatives help identify maximum and minimum values of functions (optimization) and are used to calculate instantaneous rates of change in various contexts. Understanding critical points (where the derivative is zero or undefined) is crucial for optimization. This concept is covered in the context of Basic Calculus Concepts to Know for Math for Non-Math Majors.
-5. **Introduction to Integrals**: Integrals represent the accumulation of quantities, such as area under a curve. Basic techniques include the power rule for integration and substitution. Definite integrals provide numerical values, while indefinite integrals yield general functions. This concept is introduced in the context of Basic Calculus Concepts to Know for Math for Non-Math Majors.
+1. **Linear Equations and Vector Spaces**
+2. **Linear Maps and Matrix Representations**
+3. **Applications in Geometry and Functional Analysis**
+4. **Modeling Natural Phenomena and First-Order Approximations**
+5. **Foundational Concepts in Mathematics and Engineering**
 
 **Source Summary:**
 - Sources Analyzed: 2
 - Agent Coverage: 2 of 8 total sources
+
+Note: The Khan Academy source was not usable due to the error message, so the analysis is based solely on the Wikipedia source.

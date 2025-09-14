@@ -1,0 +1,228 @@
+You are Agent 2 of 5, a specialized research expert analyzing "linear algebra". You are part of a distributed team where each agent analyzes a subset of research data to generate comprehensive knowledge nodes.
+
+# Agent 2 Research Context
+
+## Assignment
+You are Agent 2 of 5 specialized research agents analyzing: "linear algebra"
+
+## Your Data Subset
+- Agent ID: 2/5
+- Sites Assigned: 2
+- Total Sites Across All Agents: 8
+- Your Coverage: Sites 3 to 4
+
+## Your Research Sources
+
+### Source 3: Linear Algebra | Mathematics - MIT OpenCourseWare
+
+**Content:**
+### Browse Course Material
+
+## Course Info
+
+##### Instructor
+
+- [Prof. Gilbert Strang](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
+
+##### Departments
+
+- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+
+##### As Taught In
+
+Spring
+2010
+
+##### Level
+
+[Undergraduate](https://ocw.mit.edu/search/?l=Undergraduate)
+
+##### Topics
+
+- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
+
+ - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
+
+##### Learning Resource Types
+
+_theaters_ Lecture Videos
+
+_assignment\_turned\_in_ Problem Sets with Solutions
+
+_grading_ Exams with Solutions
+
+_co\_present_ Instructor Insights
+
+[Download Course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/download)
+
+[_search_](https://ocw.mit.edu/search/) [GIVE NOW](https://giving.mit.edu/give/to/ocw/?utm_source=ocw&utm_medium=homepage_banner&utm_campaign=nextgen_home) [about ocw](https://ocw.mit.edu/about) [help & faqs](https://mitocw.zendesk.com/hc/en-us) [contact us](https://ocw.mit.edu/contact)
+
+18.06 \| Spring 2010 \| Undergraduate
+
+# [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
+
+Menu
+
+#### Course Description
+
+This is a basic subject on matrix theory and linear algebra. Emphasis is given to topics that will be useful in other disciplines, including systems of equations, vector spaces, determinants, eigenvalues, similarity, and positive definite matrices.
+
+## Course Info
+
+##### Instructor
+
+- [Prof. Gilbert Strang](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
+
+##### Departments
+
+- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+
+##### Topics
+
+- [Mathematics](https://ocw.mit.edu/search/?t=Mathematics)
+
+ - [Linear Algebra](https://ocw.mit.edu/search/?t=Linear+Algebra)
+
+##### Learning Resource Types
+
+_theaters_ Lecture Videos
+
+_assignment\_turned\_in_ Problem Sets with Solutions
+
+_grading_ Exams with Solutions
+
+_co\_present_ Instructor Insights
+
+These windows in Philadelphia represent a beautiful block matrix. (Courtesy Gail Corbett. Used with permission.)
+
+[Download Course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/download)
+
+
+---
+
+### Source 4: Free Linear Algebra textbook, from Jim Hefferon
+
+**Content:**
+_Linear Algebra_
+by Jim Hefferon
+is a text for a first undergraduate course.
+It is Free.
+Use it as the main book, as a supplement, or for independent study.
+
+### Get the book
+
+Clicking on this link offers you a chance to contribute to
+OpenIntro,
+who work to make Open materials more adoptable.
+You can get the electronic version of the
+text for free by just setting the slider to 0:
+[Download _Linear Algebra_](https://www.openintro.org/go?id=linalg4&referrer=hefferon.net).
+(If you do contribute to
+[OpenIntro.org](https://www.openintro.org)
+then note that the page wording is confusing.
+It says that the money
+goes to the author but instead it means OpenIntro.)
+
+### Text highlights
+
+- Standard coverage
+Linear systems and Gauss's method,
+vector spaces, linear maps and matrices, determinants,
+and eigenvectors and eigenvalues.
+- Developmental approach
+The book proves all of the results
+but does not start by assuming that
+students are already able at abstract work.
+Instead, it proceeds with a great deal of
+motivation, many computational examples,
+and many exercises.
+The goal is to raise
+each student's level of
+mathematical maturity.
+- Extensive exercise sets
+Each subsection has a wide range of exercises,
+from
+routine verifications to a few challenges.
+The
+[book of solutions](https://jheffero.w3.uvm.edu/linearalgebra/jhanswer.pdf)
+gives the answer to every one, completely worked.
+And, clicking on a problem
+takes you to its answer
+while clicking on the answer takes you back to the problem.
+- Popular
+Used in hundreds of classes at many schools,
+as well as by thousands of people
+for independent study.
+- Applications
+Each chapter finishes with four or five short
+supplemental topics
+for reading or projects, or for
+small group work.
+- Extras
+There are
+[beamer slides](https://jheffero.w3.uvm.edu/linearalgebra/slides.zip)
+for classroom presentations,
+a
+[lab manual](https://jheffero.w3.uvm.edu/linearalgebra/lab.pdf)
+using
+[_Sage_](https://www.sagemath.org/),
+and [videos](https://www.youtube.com/playlist?list=PLwF3A0R8OzMoMlE1-SaEh8h9VqUlO-r52).
+For more, see the page for [instructors](https://hefferon.net/teaching.html).
+- Prerequisite
+One semester of calculus.
+- Free
+Everything is
+[Freely available](https://hefferon.net/source.html),
+including the
+[LaTeX source](https://gitlab.com/jim.hefferon/linear-algebra).
+You can also buy a
+[paper copy of the book](https://hefferon.net/hardcopy.html).
+- Reviews
+Some from:
+[the Mathematical Association of America](https://mathdl.maa.org/mathDL/19/?pa=reviews&sa=viewBook&bookId=72055),
+[the American Institute of Mathematics](https://open.umn.edu/opentextbooks/textbooks/24),
+[the Open Textbook Library](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=24),
+[_The Assayer_, a longstanding site about free texts](https://www.theassayer.org/cgi-bin/asbook.cgi?book=29).
+- Award winning
+Recipient of the 2020 Solow Award
+from the Mathematical Association of America, for
+“impact on undergraduate education in mathematics.”
+
+### Mor... [Content truncated for context window]
+
+
+---
+
+
+
+## Your Mission as Agent 2:
+1. Analyze ONLY the research sources assigned to you above
+2. Extract 3-5 key knowledge nodes from YOUR assigned sources
+3. Each node should be a distinct concept, technique, or methodology
+4. Base nodes strictly on the content provided in your sources
+5. Focus on the most important and well-supported concepts
+6. Ensure nodes are specific and actionable
+7. Include both foundational and advanced concepts if present
+
+## Agent Coordination:
+- You are Agent 2 of 5 total agents
+- Each agent analyzes different sources to avoid duplication
+- Your findings will be combined with other agents' results
+- Focus on quality over quantity from your assigned sources
+
+## Output Format:
+Generate your knowledge nodes in this exact format:
+
+**Agent 2 Knowledge Nodes for: Linear Algebra**
+
+1. [Node Name]
+2. [Node Name]
+3. [Node Name]
+4. [Node Name]
+5. [Node Name]
+
+**Source Summary:**
+- Sources Analyzed: 2
+- Agent Coverage: 2 of 8 total sources
+
+Generate your specialized knowledge nodes now based strictly on your assigned research sources above.

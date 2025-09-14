@@ -1,20 +1,15 @@
-**Agent 2 Knowledge Nodes for: Basic_Calculus**
+**Agent 2 Knowledge Nodes for: Linear Algebra**
 
-1. **Derivatives as the Fundamental Measure of Instantaneous Change**  
-   - Definition and intuition behind the derivative as the rate of change of a function at a point; essential for interpreting slopes, velocities, and marginal quantities.
+1. **Gaussian Elimination & System Solving** – Core method for solving linear systems; emphasized in MIT’s 18.06 lectures and reinforced through Hefferon’s extensive problem sets and solution manual.  
 
-2. **Core Differentiation Rules (Power, Product, Quotient, Chain)**  
-   - Systematic techniques for computing derivatives of basic algebraic expressions, products of functions, quotients, and composite functions, enabling rapid symbolic differentiation.
+2. **Vector Spaces, Subspaces & Linear Maps** – Formal definition of vector spaces, basis, dimension, and linear transformations; presented with geometric intuition in Strang’s videos and developed rigorously in Hefferon’s textbook.  
 
-3. **The Chain Rule for Composite Functions**  
-   - Step‑by‑step method to differentiate nested functions by multiplying outer‑derivative and inner‑derivative; critical for handling functions like \(f(g(x))\).
+3. **Determinants & Matrix Properties** – Computation techniques, multilinearity, and the role of determinants in invertibility and volume scaling; covered in both the MIT syllabus and Hefferon’s chapter on determinants.  
 
-4. **Implicit Differentiation for Non‑Explicit Relationships**  
-   - Procedure to differentiate equations where the dependent variable isn’t isolated, allowing derivative extraction from curves defined implicitly (e.g., \(x^2 + y^2 = r^2\)).
+4. **Eigenvalues, Eigenvectors & Diagonalization** – Theory of spectral decomposition, similarity transformations, and applications to stability and dynamics; highlighted in MIT’s course topics and reinforced with proofs and exercises in Hefferon’s text.  
 
-5. **Related‑Rates Problems Linking Multiple Changing Quantities**  
-   - Application of differentiation to situations where several variables change together; solves real‑world scenarios such as moving objects, expanding geometries, and dynamic systems.
+5. **Positive‑Definite Matrices & Applications** – Characterization, Cholesky factorization, and use in optimization and statistics; included as a distinct topic in Strang’s curriculum and supported by Hefferon’s applied supplemental sections.  
 
 **Source Summary:**
-- Sources Analyzed: 2 (Basic Calculus portal images & Calculus Primer – Derivatives)
-- Agent Coverage: 2 of 8 total sources (Sites 3‑4)
+- Sources Analyzed: 2 (MIT OpenCourseWare Linear Algebra – Spring 2010; Jim Hefferon’s Free Linear Algebra Textbook)
+- Agent Coverage: 2 of 8 total sources
