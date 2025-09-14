@@ -1,15 +1,11 @@
 **Agent 2 Knowledge Nodes for: Linear Algebra**
 
-1. **Gaussian Elimination & System Solving** – Core method for solving linear systems; emphasized in MIT’s 18.06 lectures and reinforced through Hefferon’s extensive problem sets and solution manual.  
+1. **Gaussian Elimination & System Solving** – Master the step‑by‑step Gauss (row‑reduction) method to solve linear equation systems, compute rank, and determine consistency; reinforced by MIT lecture videos and Hefferon’s extensive problem sets.
 
-2. **Vector Spaces, Subspaces & Linear Maps** – Formal definition of vector spaces, basis, dimension, and linear transformations; presented with geometric intuition in Strang’s videos and developed rigorously in Hefferon’s textbook.  
+2. **Vector Spaces & Linear Transformations** – Understand the definition of vector spaces, subspaces, bases, dimension, and the representation of linear maps as matrices; supported by conceptual explanations in the MIT course and Hefferon’s motivated development.
 
-3. **Determinants & Matrix Properties** – Computation techniques, multilinearity, and the role of determinants in invertibility and volume scaling; covered in both the MIT syllabus and Hefferon’s chapter on determinants.  
+3. **Determinants & Matrix Invertibility** – Learn determinant computation (cofactor expansion, row‑operations), its geometric interpretation (volume scaling), and its role in testing matrix invertibility and solving systems; both sources provide theory and worked examples.
 
-4. **Eigenvalues, Eigenvectors & Diagonalization** – Theory of spectral decomposition, similarity transformations, and applications to stability and dynamics; highlighted in MIT’s course topics and reinforced with proofs and exercises in Hefferon’s text.  
+4. **Eigenvalues, Eigenvectors & Diagonalization** – Study how to find eigenvalues/eigenvectors, the concept of similarity, diagonalization of matrices, and special cases such as positive‑definite matrices; covered in MIT lectures and Hefferon’s chapters with proofs and applications.
 
-5. **Positive‑Definite Matrices & Applications** – Characterization, Cholesky factorization, and use in optimization and statistics; included as a distinct topic in Strang’s curriculum and supported by Hefferon’s applied supplemental sections.  
-
-**Source Summary:**
-- Sources Analyzed: 2 (MIT OpenCourseWare Linear Algebra – Spring 2010; Jim Hefferon’s Free Linear Algebra Textbook)
-- Agent Coverage: 2 of 8 total sources
+5. **Integrated Learning Resources & Computational Practice** – Leverage the full suite of MIT OCW materials (lecture videos, problem sets, exams) together with Hefferon’s free textbook, solution manual, Sage lab manual, and supplemental videos to reinforce theory through hands‑on computation and extensive exercises.

@@ -1,19 +1,10 @@
 **Agent 3 Knowledge Nodes for: Linear Algebra**
 
-1. **Matrix Multiplication via Vector Products**  
-   Matrix-vector and matrix-matrix products can be interpreted through vector operations: a matrix-vector product is equivalent to taking linear combinations of matrix columns weighted by vector entries, while matrix-matrix multiplication computes outer products of columns and rows or inner products of rows and columns. These interpretations clarify computational structure and support efficient implementation in numerical linear algebra.
-
-2. **Properties of Special Matrices and Matrix Operations**  
-   Key matrix properties include transposition (swapping rows and columns), symmetry (when \( A = A^T \)), orthogonality (columns are orthonormal, so \( Q^T Q = I \)), and the role of the identity and diagonal matrices. These properties are foundational for simplifying matrix computations, preserving norms under transformation, and enabling factorizations.
-
-3. **Matrix Rank, Invertibility, and Linear Independence**  
-   The rank of a matrix is the maximum number of linearly independent rows or columns, determining the dimensionality of the range space. A square matrix is invertible if and only if it has full rank, meaning its columns span the entire output space and its nullspace contains only the zero vector. These concepts are critical for solving linear systems and assessing uniqueness of solutions.
-
-4. **Eigenvalues and Eigenvectors in Symmetric Matrices**  
-   For symmetric matrices, eigenvalues are real and eigenvectors can be chosen orthonormal, enabling spectral decomposition \( A = Q \Lambda Q^T \). This property is central to optimization, quadratic form analysis, and principal component analysis, where eigenvalues represent scaling factors along principal directions.
-
-5. **Matrix Calculus: Gradients and Hessians of Quadratic Forms**  
-   The gradient of a quadratic form \( x^T A x \) is \( (A + A^T)x \), simplifying to \( 2Ax \) when \( A \) is symmetric. The Hessian is constant and equal to \( A + A^T \). These derivatives are essential in optimization problems such as least squares, where minimizing \( \|Ax - b\|^2 \) leads to the normal equations via gradient analysis.
+1. Matrix Multiplication via Vector and Matrix Products  
+2. Fundamental Matrix Properties (Transpose, Symmetry, Trace, Norms)  
+3. Rank, Linear Independence, and Matrix Inverse  
+4. Eigenvalues, Eigenvectors, and Spectral Properties of Symmetric Matrices  
+5. Matrix Calculus: Gradients, Hessians, and Optimization Applications  
 
 **Source Summary:**  
 - Sources Analyzed: 2  

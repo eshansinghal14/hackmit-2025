@@ -63,13 +63,12 @@ def clear_canvas():
     print("🧹 Clearing canvas")
     return jsonify({'status': 'cleared'})
 
-<<<<<<< HEAD
 @app.route('/api/nodes', methods=['GET'])
 def get_nodes():
     """Get the current node data with weights"""
     try:
         json_file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
-                                     'node_outputs/final_consolidated_nodes_basic_calculus.json')
+                                     'node_outputs/final_consolidated_roadmap.json')
         
         with open(json_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -86,7 +85,7 @@ def analyze_diagnostic_response():
         data = request.json
         question = data.get("question", "")
         answer = data.get("answer", False)
-        json_file_path = data.get("json_file_path", "node_outputs/final_consolidated_nodes_basic_calculus.json")
+        json_file_path = data.get("json_file_path", "node_outputs/final_consolidated_roadmap.json")
         
         # Convert relative path to absolute path from backend directory
         if not os.path.isabs(json_file_path):
@@ -128,7 +127,6 @@ def analyze_diagnostic_response():
     except Exception as e:
         print(f"❌ Error in diagnostic analysis: {e}")
         return jsonify({"success": False, "error": str(e)})
-=======
 @app.route('/api/generate-roadmap', methods=['POST'])
 def generate_roadmap():
     """Generate a complete learning roadmap using Cerebras multi-agent system"""
@@ -204,7 +202,6 @@ def generate_roadmap():
     except Exception as e:
         print(f"❌ Error generating roadmap: {str(e)}")
         return jsonify({'error': 'Internal server error', 'details': str(e)}), 500
->>>>>>> 2125e7fb2783890941baac7b70eddd2761ddfadc
 
 if __name__ == '__main__':
     print("🚀 Starting Flask tldraw server...")

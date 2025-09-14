@@ -17,9 +17,10 @@ interface Edge {
 
 interface KnowledgeGraphProps {
   onLearnTopic?: (topic: string) => void
+  refreshKey?: number // Add refresh key to force updates
 }
 
-const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
+const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic, refreshKey }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [selectedNode, setSelectedNode] = useState<Node | null>(null)
@@ -29,46 +30,62 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
   const [animatingToNode, setAnimatingToNode] = useState<string | null>(null)
   const [nodeWeights, setNodeWeights] = useState<{[key: string]: number}>({})
+  const [nodeData, setNodeData] = useState<{[key: string]: {name: string, weight: number, prerequisites: string[]}}>({})
   const [weightsLoaded, setWeightsLoaded] = useState(false)
 
   // Load node data and weights from JSON file
-  useEffect(() => {
-    const loadNodeWeights = async () => {
-      try {
-        setWeightsLoaded(false)
-        const response = await fetch('http://localhost:5000/api/nodes')
-        const data = await response.json()
-        const weights: {[key: string]: number} = {}
-        
-        Object.entries(data[0]).forEach(([nodeId, nodeInfo]: [string, any]) => {
-          weights[nodeId] = nodeInfo.weight || 1.0
-        })
-        
-        setNodeWeights(weights)
-        setWeightsLoaded(true)
-        console.log('📊 Loaded node weights:', weights)
-        
-        // Print colors for all nodes
-        console.log('🎨 Node colors:')
-        Object.keys(weights).forEach(nodeId => {
-          const weight = weights[nodeId]
-          const color = getNodeColorForWeight(weight)
-          console.log(`Node ${nodeId}: weight=${weight}, color=${color}`)
-        })
-      } catch (error) {
-        console.error('❌ Failed to load node weights:', error)
-        // Fallback to default weights
-        const defaultWeights: {[key: string]: number} = {}
-        for (let i = 1; i <= 12; i++) {
-          defaultWeights[i.toString()] = 1.0
+  const loadNodeWeights = async () => {
+    try {
+      setWeightsLoaded(false)
+      const response = await fetch('http://localhost:5001/api/nodes')
+      const data = await response.json()
+      const weights: {[key: string]: number} = {}
+      const nodes: {[key: string]: {name: string, weight: number, prerequisites: string[]}} = {}
+      
+      Object.entries(data[0]).forEach(([nodeId, nodeInfo]: [string, any]) => {
+        weights[nodeId] = nodeInfo.weight || 0.0
+        nodes[nodeId] = {
+          name: nodeInfo.name || `Node ${nodeId}`,
+          weight: nodeInfo.weight || 0.0,
+          prerequisites: nodeInfo.prerequisites || []
         }
-        setNodeWeights(defaultWeights)
-        setWeightsLoaded(true)
+      })
+      
+      setNodeWeights(weights)
+      setNodeData(nodes)
+      setWeightsLoaded(true)
+      console.log('📊 Loaded node data:', nodes)
+      console.log('📊 Loaded node weights:', weights)
+      
+      // Print colors for all nodes
+      console.log('🎨 Node colors:')
+      Object.keys(weights).forEach(nodeId => {
+        const weight = weights[nodeId]
+        const color = getNodeColorForWeight(weight)
+        console.log(`Node ${nodeId}: weight=${weight}, color=${color}`)
+      })
+    } catch (error) {
+      console.error('❌ Failed to load node weights:', error)
+      // Fallback to default data
+      const defaultNodes: {[key: string]: {name: string, weight: number, prerequisites: string[]}} = {}
+      const defaultWeights: {[key: string]: number} = {}
+      for (let i = 1; i <= 10; i++) {
+        defaultNodes[i.toString()] = {
+          name: `Node ${i}`,
+          weight: 0.0,
+          prerequisites: []
+        }
+        defaultWeights[i.toString()] = 0.0
       }
+      setNodeData(defaultNodes)
+      setNodeWeights(defaultWeights)
+      setWeightsLoaded(true)
     }
+  }
 
+  useEffect(() => {
     loadNodeWeights()
-  }, []) // Loads once on mount, will re-mount when key changes
+  }, [refreshKey]) // Reload when refreshKey changes
 
   // Helper function to calculate color for a given weight (for logging)
   const getNodeColorForWeight = (weight: number): string => {
@@ -84,24 +101,14 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`
   }
 
-  // Data from final_consolidated_nodes_basic_calculus.json
-  const nodeData = {
-    "1": {"name": "Introduction to Limits", "weight": 1, "prerequisites": []},
-    "2": {"name": "Basic Derivative Rules", "weight": 1, "prerequisites": ["1"]},
-    "3": {"name": "Differentiation of Trigonometric Functions", "weight": 1, "prerequisites": ["2"]},
-    "4": {"name": "Chain Rule and Implicit Differentiation", "weight": 1, "prerequisites": ["2", "3"]},
-    "5": {"name": "Applications of Derivatives", "weight": 1, "prerequisites": ["4"]},
-    "6": {"name": "Introduction to Integrals", "weight": 1, "prerequisites": ["1"]},
-    "7": {"name": "Basic Integration Rules", "weight": 1, "prerequisites": ["6"]},
-    "8": {"name": "Fundamental Theorem of Calculus", "weight": 1, "prerequisites": ["5", "7"]},
-    "9": {"name": "Optimization Problems", "weight": 1, "prerequisites": ["5", "8"]},
-    "10": {"name": "Advanced Integration Techniques", "weight": 1, "prerequisites": ["8"]},
-    "11": {"name": "Parametric and Polar Functions", "weight": 1, "prerequisites": ["10"]},
-    "12": {"name": "Calculus in Real-World Applications", "weight": 1, "prerequisites": ["9", "11"]}
-  }
+  // Node data is now loaded dynamically from the API
 
   // Create nodes with positions in a hierarchical layout
   const createNodes = (): Node[] => {
+    if (!weightsLoaded || Object.keys(nodeData).length === 0) {
+      return []
+    }
+    
     const nodes: Node[] = []
     const levels: { [key: number]: string[] } = {}
     
@@ -125,7 +132,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
         
         nodes.push({
           id,
-          label: nodeData[id as keyof typeof nodeData].name,
+          label: nodeData[id].name,
           x,
           y: levelY,
           level: parseInt(id)
@@ -144,7 +151,7 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
       if (visited.has(id)) return 0 // Avoid cycles
       visited.add(id)
       
-      const node = nodeData[id as keyof typeof nodeData]
+      const node = nodeData[id]
       if (!node || node.prerequisites.length === 0) return 0
       
       const maxPrereqDepth = Math.max(...node.prerequisites.map(prereqId => getDepth(prereqId)))
@@ -155,6 +162,10 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
   }
 
   const createEdges = (): Edge[] => {
+    if (!weightsLoaded || Object.keys(nodeData).length === 0) {
+      return []
+    }
+    
     const edges: Edge[] = []
     Object.entries(nodeData).forEach(([nodeId, nodeInfo]) => {
       nodeInfo.prerequisites.forEach(prereqId => {
@@ -442,6 +453,15 @@ const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onLearnTopic }) => {
           sx={{ minWidth: 40 }}
         >
           <CenterFocusStrong />
+        </Button>
+        <Button
+          variant="contained"
+          size="small"
+          onClick={loadNodeWeights}
+          sx={{ minWidth: 40, ml: 1 }}
+          title="Refresh Data"
+        >
+          🔄
         </Button>
       </Box>
 

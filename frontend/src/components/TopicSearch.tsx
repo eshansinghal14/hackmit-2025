@@ -10,7 +10,6 @@ interface TopicSearchProps {
 const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
   const [topic, setTopic] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  const [roadmapData, setRoadmapData] = useState(null)
   const [error, setError] = useState('')
 
   const generateRoadmap = async (searchTopic: string) => {
@@ -45,7 +44,7 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
           roadmap: data.roadmap,
           timestamp: new Date().toISOString()
         }))
-        setRoadmapData(data.roadmap)
+        // Roadmap data is stored in localStorage for LoadingPage to access
       } else {
         // Save error to localStorage
         localStorage.setItem('roadmapError', data.error || 'Failed to generate roadmap')
@@ -248,23 +247,6 @@ const TopicSearch: React.FC<TopicSearchProps> = ({ onSearch }) => {
               fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
             }}>
               {error}
-            </Typography>
-          </Box>
-        )}
-
-        {/* Success Display */}
-        {roadmapData && (
-          <Box sx={{ mb: 4, textAlign: 'center' }}>
-            <Typography variant="body2" sx={{ 
-              color: '#059669',
-              backgroundColor: '#f0fdf4',
-              border: '1px solid #bbf7d0',
-              borderRadius: 2,
-              px: 3,
-              py: 2,
-              fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
-            }}>
-              ✅ Roadmap generated successfully! Check the console for details.
             </Typography>
           </Box>
         )}
