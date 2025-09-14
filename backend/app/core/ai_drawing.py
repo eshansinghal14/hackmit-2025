@@ -3,6 +3,8 @@ import json
 import numpy as np
 from skimage import morphology, measure
 import cv2
+import matplotlib
+matplotlib.use('Agg')  # Use non-GUI backend to prevent window creation
 import matplotlib.pyplot as plt
 import io
 from PIL import Image

@@ -75,7 +75,7 @@ def process_claude_annotations(claude_output: Dict[str, Any]) -> bool:
         ]
     }
     """
-    from .ai_drawing import draw_latex_to_tldraw
+    from ai_drawing import draw_latex_to_tldraw
     
     manager = SimplifiedAnnotationManager()
     
