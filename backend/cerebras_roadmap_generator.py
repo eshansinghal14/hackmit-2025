@@ -319,6 +319,147 @@ CRITICAL REQUIREMENTS:
         print(f"❌ Final consolidation failed: {e}")
         return None, None
 
+def analyze_diagnostic_answer(question: str, answer: bool, node_names: dict) -> dict:
+    """
+    Analyze a diagnostic answer and return weight adjustments for nodes.
+    
+    Args:
+        question: The diagnostic question asked
+        answer: True if user answered "Yes", False if "No"
+        node_names: Dictionary of node_id -> node_name
+    
+    Returns:
+        Dictionary of node_id -> weight_offset (-0.2 to 0.2)
+    """
+    
+    # Create prompt for analyzing the diagnostic answer
+    analysis_prompt = f"""You are an educational assessment expert. Analyze a student's diagnostic answer and determine how it affects their understanding of different calculus topics.
+
+DIAGNOSTIC QUESTION: "{question}"
+STUDENT ANSWER: {"Yes" if answer else "No"}
+
+AVAILABLE TOPICS:
+{json.dumps(node_names, indent=2)}
+
+Based on the student's answer, provide weight adjustments for each topic from -0.2 to 0.2:
+
+CRITICAL RULE: 
+- "YES" (knows something) = ONLY NEGATIVE or ZERO adjustments (never positive)
+- "NO" (doesn't know) = ONLY POSITIVE or ZERO adjustments (never negative)
+
+IF STUDENT ANSWERED "YES" (shows knowledge):
+- NEGATIVE (-0.2 to -0.1): Topics directly related to the question - reduce priority since student understands
+- ZERO (0.0): Topics not related to this specific question
+
+IF STUDENT ANSWERED "NO" (shows lack of knowledge):
+- POSITIVE (0.1 to 0.2): Topics directly related to the question - increase priority since student needs help
+- ZERO (0.0): Topics not related to this specific question
+
+NEVER give positive adjustments for "YES" answers or negative adjustments for "NO" answers. Most topics should be 0.0 unless directly relevant.
+
+Consider:
+1. Direct relevance of the question to each topic
+2. Prerequisites and dependencies between topics  
+3. Whether "Yes" shows mastery or "No" shows gaps
+4. Balance positive and negative adjustments appropriately
+
+Return ONLY a valid JSON object with this exact format:
+{{
+  "1": -0.2,
+  "2": 0.0,
+  "3": 0.2,
+  "4": 0.1,
+  "5": 0.0,
+  "6": -0.1,
+  "7": 0.0,
+  "8": 0.2,
+  "9": 0.0,
+  "10": 0.0,
+  "11": 0.0,
+  "12": 0.0
+}}
+
+Include ALL node IDs from the available topics, even if the adjustment is 0.0."""
+
+    try:
+        print(f"🧠 Analyzing diagnostic answer: '{question}' -> {'Yes' if answer else 'No'}")
+        response = call_cerebras_api(analysis_prompt)
+        
+        # Print the LLM response for debugging
+        print(f"🤖 LLM Analysis Response:")
+        print(f"Question: {question}")
+        print(f"Answer: {answer}")
+        print(f"Raw LLM Response: {response}")
+        print("-" * 50)
+        
+        # Parse the response to extract weight adjustments
+        try:
+            # Clean the response - remove markdown code blocks if present
+            cleaned_response = response.strip()
+            if cleaned_response.startswith('```json'):
+                # Extract JSON from markdown code block
+                start_idx = cleaned_response.find('{')
+                end_idx = cleaned_response.rfind('}') + 1
+                if start_idx != -1 and end_idx != -1:
+                    cleaned_response = cleaned_response[start_idx:end_idx]
+            elif cleaned_response.startswith('```'):
+                # Handle generic code blocks
+                lines = cleaned_response.split('\n')
+                # Remove first and last lines (``` markers)
+                if len(lines) > 2:
+                    cleaned_response = '\n'.join(lines[1:-1])
+            
+            weight_adjustments = json.loads(cleaned_response)
+            print(f"✅ Parsed weight adjustments: {weight_adjustments}")
+            return weight_adjustments
+        except json.JSONDecodeError as e:
+            print(f"❌ Error parsing Cerebras response: {e}")
+            print(f"Raw response: {response}")
+            print(f"Cleaned response: {cleaned_response}")
+            # Return default adjustments if parsing fails
+            return {node_id: 0.0 for node_id in node_names.keys()}
+        
+    except Exception as e:
+        print(f"❌ Diagnostic analysis failed: {e}")
+        # Return zero adjustments as fallback
+        return {str(i): 0.0 for i in range(1, len(node_names) + 1)}
+
+def update_node_weights(json_file_path: str, weight_adjustments: dict) -> bool:
+    """
+    Update the weights in the JSON file based on diagnostic analysis.
+    
+    Args:
+        json_file_path: Path to the JSON file to update
+        weight_adjustments: Dictionary of node_id -> weight_offset
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        # Load current JSON data
+        with open(json_file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Update weights in the first element (nodes dictionary)
+        nodes = data[0]
+        for node_id, weight_offset in weight_adjustments.items():
+            if node_id in nodes:
+                current_weight = nodes[node_id].get('weight', 0.0)
+                new_weight = max(-1.0, min(1.0, current_weight + weight_offset))  # Clamp between -1.0 and 1.0
+                nodes[node_id]['weight'] = round(new_weight, 2)
+                print(f"📊 Node {node_id}: {current_weight} -> {new_weight} (Δ{weight_offset:+.1f})")
+        
+        # Save updated JSON data
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        
+        print(f"✅ Updated weights saved to {json_file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Failed to update node weights: {e}")
+        return False
+
 if __name__ == "__main__":
     # Run multi-agent system from the most recent search results
     result = run_multi_agent_cerebras()
