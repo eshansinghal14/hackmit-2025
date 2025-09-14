@@ -178,6 +178,60 @@ def process_annotations():
         print(f"❌ Error processing annotations: {e}")
         return jsonify({'status': 'error', 'error': str(e)}), 500
 
+@app.route('/api/start-lesson', methods=['POST'])
+def start_lesson():
+    """Auto-start lesson generation for whiteboard"""
+    try:
+        data = request.json
+        topic = data.get('topic', 'Basic Mathematics')
+        
+        print(f"🎓 Starting lesson for topic: {topic}")
+        
+        # Import the lecture service
+        sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'services'))
+        from lecture import LectureService
+        
+        # Generate lecture content
+        lecture_service = LectureService()
+        lecture_content = lecture_service.generate_lecture(topic)
+        
+        return jsonify({
+            'status': 'success',
+            'topic': topic,
+            'lecture': lecture_content
+        })
+        
+    except Exception as e:
+        print(f"❌ Error starting lesson: {e}")
+        return jsonify({'status': 'error', 'error': str(e)}), 500
+
+@app.route('/api/generate-lecture', methods=['POST'])
+def generate_lecture():
+    """Generate structured lecture content for a given topic"""
+    try:
+        data = request.json
+        topic = data.get('topic', 'Basic Mathematics')
+        
+        print(f"📚 Generating lecture for topic: {topic}")
+        
+        # Import the lecture service
+        sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'services'))
+        from lecture import LectureService
+        
+        # Generate lecture content
+        lecture_service = LectureService()
+        lecture_content = lecture_service.generate_lecture(topic)
+        
+        return jsonify({
+            'status': 'success',
+            'topic': topic,
+            'lecture': lecture_content
+        })
+        
+    except Exception as e:
+        print(f"❌ Error generating lecture: {e}")
+        return jsonify({'status': 'error', 'error': str(e)}), 500
+
 @app.route('/api/generate-roadmap', methods=['POST'])
 def generate_roadmap():
     """Generate a complete learning roadmap using Cerebras multi-agent system"""
@@ -260,5 +314,7 @@ if __name__ == '__main__':
     print("📏 Draw line: POST /api/draw-line")
     print("📋 Get commands: GET /api/commands")
     print("🧹 Clear: POST /api/clear")
+    print("🎓 Start lesson: POST /api/start-lesson")
+    print("📚 Generate lecture: POST /api/generate-lecture")
     print("🎯 Generate roadmap: POST /api/generate-roadmap")
     app.run(debug=True, port=5001)

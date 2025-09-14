@@ -59,7 +59,7 @@
     },
     "9": {
       "name": "Overfitting and Regularization",
-      "weight": -0.2,
+      "weight": -1.0,
       "prerequisites": [
         "8"
       ]

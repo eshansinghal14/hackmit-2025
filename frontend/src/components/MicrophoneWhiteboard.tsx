@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Tldraw } from 'tldraw'
 import 'tldraw/tldraw.css'
 import SettingsPanel from './SettingsPanel'
@@ -11,185 +11,184 @@ interface MicrophoneWhiteboardProps {
 const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, selectedTopic }) => {
   const editorRef = useRef<any>(null)
   const [showSettings, setShowSettings] = useState(false)
-  const [isListening, setIsListening] = useState(false)
   const [currentQuestion, setCurrentQuestion] = useState('')
-  const [microphoneHistory, setMicrophoneHistory] = useState<string[]>([])
-  const [lastScreenshot, setLastScreenshot] = useState<string | null>(null)
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
-  const recognitionRef = useRef<any>(null)
+  const [lectureSegments, setLectureSegments] = useState<any[]>([])
+  const [currentSegmentIndex, setCurrentSegmentIndex] = useState(0)
+  const [isLectureMode, setIsLectureMode] = useState(false)
 
-  // Initialize microphone and ask first question
+  // Initialize and start lecture
   useEffect(() => {
-    initializeMicrophone()
-    drawInitialLatex()
-    askInitialQuestion()
-    startScreenshotCapture()
-    
-    return () => {
-      cleanup()
+    if (selectedTopic) {
+      startLecture()
     }
-  }, [])
+  }, [selectedTopic])
 
-  const initializeMicrophone = async () => {
+
+
+  const startLecture = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+      console.log('🎓 Starting lecture for topic:', selectedTopic)
       
-      // Set up speech recognition
-      if ('webkitSpeechRecognition' in window) {
-        const recognition = new (window as any).webkitSpeechRecognition()
-        recognition.continuous = true
-        recognition.interimResults = true
-        recognition.lang = 'en-US'
+      const response = await fetch('http://localhost:5001/api/generate-lecture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          topic: selectedTopic || 'Basic Mathematics'
+        })
+      })
+      
+      if (response.ok) {
+        const data = await response.json()
+        console.log('📚 Lecture generated:', data)
         
-        recognition.onresult = (event: any) => {
-          let finalTranscript = ''
-          for (let i = event.resultIndex; i < event.results.length; i++) {
-            if (event.results[i].isFinal) {
-              finalTranscript += event.results[i][0].transcript
-            }
-          }
+        if (data.lecture && data.lecture.lecture_segments) {
+          setLectureSegments(data.lecture.lecture_segments)
+          setIsLectureMode(true)
+          setCurrentSegmentIndex(0)
           
-          if (finalTranscript) {
-            setMicrophoneHistory(prev => [...prev, finalTranscript])
-            console.log('🎤 User said:', finalTranscript)
-            // Process the speech with context
-            processSpeechWithContext(finalTranscript)
-          }
+          // Start presenting the first segment
+          presentSegment(data.lecture.lecture_segments[0], 0)
         }
-        
-        recognition.onerror = (event: any) => {
-          console.error('Speech recognition error:', event.error)
-        }
-        
-        recognitionRef.current = recognition
-        recognition.start()
-        setIsListening(true)
-        console.log('🎤 Microphone is now always listening...')
+      } else {
+        console.error('Failed to generate lecture')
+        setCurrentQuestion('Failed to generate lecture. Please try again.')
       }
     } catch (error) {
-      console.error('Error accessing microphone:', error)
+      console.error('Error starting lecture:', error)
+      setCurrentQuestion('Error starting lecture. Please try again.')
     }
   }
-
-  const drawInitialLatex = async () => {
-    try {
-      // Draw initial content based on selected topic
-      const topicContent = selectedTopic ? `Let's learn ${selectedTopic}!` : 'x²'
+  
+  
+  const presentSegment = async (segment: any, index: number) => {
+    console.log(`📖 Presenting segment ${index + 1}:`, segment)
+    
+    if (segment.type === 'context') {
+      // Display context as text and speak it
+      setCurrentQuestion(segment.content)
       
+      // Draw context as text on whiteboard
+      await drawTextToWhiteboard(segment.content, { x: 100, y: 100 + (index * 80) })
+      
+      // Speak the context using text-to-speech
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(segment.content)
+        utterance.rate = 0.9
+        utterance.pitch = 1.0
+        
+        utterance.onend = () => {
+          // Move to next segment after speech finishes
+          const nextIndex = index + 1
+          if (nextIndex < lectureSegments.length) {
+            setCurrentSegmentIndex(nextIndex)
+            presentSegment(lectureSegments[nextIndex], nextIndex)
+          } else {
+            // Lecture finished
+            setIsLectureMode(false)
+            setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
+          }
+        }
+        
+        utterance.onerror = () => {
+          // Fallback if speech fails - continue after delay
+          setTimeout(() => {
+            const nextIndex = index + 1
+            if (nextIndex < lectureSegments.length) {
+              setCurrentSegmentIndex(nextIndex)
+              presentSegment(lectureSegments[nextIndex], nextIndex)
+            } else {
+              setIsLectureMode(false)
+              setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
+            }
+          }, 2000)
+        }
+        
+        speechSynthesis.speak(utterance)
+      } else {
+        // No speech synthesis available - use delay
+        setTimeout(() => {
+          const nextIndex = index + 1
+          if (nextIndex < lectureSegments.length) {
+            setCurrentSegmentIndex(nextIndex)
+            presentSegment(lectureSegments[nextIndex], nextIndex)
+          } else {
+            setIsLectureMode(false)
+            setCurrentQuestion('Lecture completed! Click anywhere to continue exploring.')
+          }
+        }, 3000)
+      }
+    } else if (segment.type === 'action') {
+      // Display action as LaTeX using existing drawing function
+      await drawLatexToWhiteboard(segment.content, { x: 400, y: 150 + (index * 80) })
+      
+      // Move to next segment after a delay (no speech for LaTeX)
+      setTimeout(() => {
+        const nextIndex = index + 1
+        if (nextIndex < lectureSegments.length) {
+          setCurrentSegmentIndex(nextIndex)
+          presentSegment(lectureSegments[nextIndex], nextIndex)
+        } else {
+          // Lecture finished
+          setIsLectureMode(false)
+          setCurrentQuestion('Lecture completed! You can now explore the whiteboard.')
+        }
+      }, 2000)
+    }
+  }
+  
+  const drawTextToWhiteboard = async (text: string, position: {x: number, y: number}) => {
+    try {
       const response = await fetch('http://localhost:5001/api/process-annotations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          topic: selectedTopic || 'Basic Calculus',
+          topic: selectedTopic || 'Basic Mathematics',
           annotations: [
             {
               type: 'text',
-              position: { x: 400, y: 300 },
-              content: topicContent,
-              color: '#000000'
+              position: position,
+              content: text,
+              color: '#2563eb',
+              fontSize: 16
             }
           ]
         })
       })
       
       if (response.ok) {
-        console.log('✅ Drew initial x^2 equation')
+        console.log('✅ Drew text to whiteboard:', text)
       }
     } catch (error) {
-      console.error('Error drawing initial LaTeX:', error)
+      console.error('Error drawing text:', error)
     }
   }
-
-  const askInitialQuestion = () => {
-    const question = selectedTopic 
-      ? `Hi! Let's explore ${selectedTopic}. What would you like to know about this topic?`
-      : "Hi! I see we have x² on the board. Can you tell me what you know about quadratic functions?"
-    setCurrentQuestion(question)
-    
-    // Speak the question using text-to-speech
-    if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(question)
-      utterance.rate = 0.9
-      utterance.pitch = 1.0
-      speechSynthesis.speak(utterance)
-    }
-    
-    console.log('🤖 AI asked:', question)
-  }
-
-  const captureScreenshot = useCallback(async () => {
+  
+  const drawLatexToWhiteboard = async (latex: string, position: {x: number, y: number}) => {
     try {
-      if (editorRef.current) {
-        // Get the canvas element from tldraw
-        const canvas = document.querySelector('canvas')
-        if (canvas) {
-          const dataUrl = canvas.toDataURL('image/png')
-          setLastScreenshot(dataUrl)
-          console.log('📸 Screenshot captured')
-          return dataUrl
-        }
+      const response = await fetch('http://localhost:5001/api/process-annotations', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          topic: selectedTopic || 'Basic Mathematics',
+          annotations: [
+            {
+              type: 'latex',
+              position: position,
+              content: latex,
+              color: '#dc2626'
+            }
+          ]
+        })
+      })
+      
+      if (response.ok) {
+        console.log('✅ Drew LaTeX to whiteboard:', latex)
       }
     } catch (error) {
-      console.error('Error capturing screenshot:', error)
-    }
-    return null
-  }, [])
-
-  const startScreenshotCapture = () => {
-    // Capture screenshot every 10 seconds
-    const interval = setInterval(captureScreenshot, 10000)
-    return () => clearInterval(interval)
-  }
-
-  const processSpeechWithContext = async (speech: string) => {
-    try {
-      // Get current screenshot
-      const screenshot = await captureScreenshot()
-      
-      // Prepare context data
-      const contextData = {
-        speech: speech,
-        screenshot: screenshot,
-        microphoneHistory: microphoneHistory.slice(-5), // Last 5 utterances
-        currentQuestion: currentQuestion,
-        timestamp: new Date().toISOString()
-      }
-      
-      console.log('🧠 Processing speech with context...', contextData)
-      
-      // Here you would send to Claude/AI for processing
-      // For now, just log the context
-      
-      // Example response processing:
-      setTimeout(() => {
-        const responses = [
-          "Great! Can you solve x² = 4?",
-          "Interesting! What happens when x² = 9?",
-          "Let me draw the graph of y = x²",
-          "Can you tell me about the vertex of this parabola?"
-        ]
-        const nextQuestion = responses[Math.floor(Math.random() * responses.length)]
-        setCurrentQuestion(nextQuestion)
-        
-        if ('speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(nextQuestion)
-          speechSynthesis.speak(utterance)
-        }
-      }, 2000)
-      
-    } catch (error) {
-      console.error('Error processing speech with context:', error)
+      console.error('Error drawing LaTeX:', error)
     }
   }
 
-  const cleanup = () => {
-    if (recognitionRef.current) {
-      recognitionRef.current.stop()
-    }
-    if (mediaRecorderRef.current) {
-      mediaRecorderRef.current.stop()
-    }
-  }
 
   // Poll for drawing commands from Flask server (existing logic)
   useEffect(() => {
@@ -271,13 +270,13 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
         />
       </div>
       
-      {/* Microphone Status */}
+      {/* Lecture Status */}
       <div style={{
         position: 'absolute',
         top: '10px',
         left: '50%',
         transform: 'translateX(-50%)',
-        background: isListening ? 'rgba(76, 175, 80, 0.9)' : 'rgba(244, 67, 54, 0.9)',
+        background: isLectureMode ? 'rgba(76, 175, 80, 0.9)' : 'rgba(33, 150, 243, 0.9)',
         color: 'white',
         padding: '8px 16px',
         borderRadius: '20px',
@@ -293,9 +292,9 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
           height: '8px',
           borderRadius: '50%',
           backgroundColor: 'white',
-          animation: isListening ? 'pulse 1s infinite' : 'none'
+          animation: isLectureMode ? 'pulse 1s infinite' : 'none'
         }} />
-        {isListening ? '🎤 Listening...' : '🎤 Microphone Off'}
+        {isLectureMode ? `📚 Lecture in Progress (${currentSegmentIndex + 1}/${lectureSegments.length})` : '📚 Lecture Ready'}
       </div>
 
       {/* Current Question Display */}
@@ -315,7 +314,7 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
           zIndex: 1000,
           boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
         }}>
-          🤖 {currentQuestion}
+          📚 {currentQuestion}
         </div>
       )}
       
@@ -339,6 +338,25 @@ const MicrophoneWhiteboard: React.FC<MicrophoneWhiteboardProps> = ({ onBack, sel
         ← Back
       </button>
       
+      <button
+        onClick={onBack}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '60px',
+          background: 'rgba(0, 0, 0, 0.8)',
+          color: 'white',
+          border: 'none',
+          padding: '8px 12px',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          fontSize: '12px',
+          zIndex: 1000
+        }}
+      >
+        📊 Graph
+      </button>
+
       <button
         onClick={() => setShowSettings(true)}
         style={{
